@@ -54,6 +54,8 @@ const SVCS = [
   { k: 'youtube', n: 'YouTube', c: '#ff4e45', tint: 'rgba(255,78,69,.14)' },
 ];
 const MONO = "'JetBrains Mono',monospace";
+/** Dark halo around label glyphs so names stay readable where edges cross them, without a box that hides the lines. */
+const LABEL_HALO = '0 0 2px #0a0c10, 0 0 2px #0a0c10, 0 0 4px #0a0c10, 0 1px 3px rgba(0,0,0,.9)';
 const SERIF = "'Spectral',serif";
 
 const btnStyle = css("font-family:'Schibsted Grotesk';font-size:12.5px;padding:9px 15px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);color:#dbe0e6;border-radius:9px;cursor:pointer;display:flex;align-items:center;gap:7px;");
@@ -962,9 +964,9 @@ export class Atlas extends React.Component<Record<string, never>, State> {
                   <div onMouseEnter={() => this.setHover(g.id)} onMouseLeave={() => this.setHover(null)} style={{ position: 'relative', width: (2 * r) + 'px', height: (2 * r) + 'px', borderRadius: '50%', background: bg, border, boxShadow, transition: 'box-shadow .3s ease, border-color .3s ease' }}>
                     <div style={{ position: 'absolute', inset: '-7px', borderRadius: '50%', border: (g.role === 'revival' ? '1.5px dotted ' : '2px solid ') + hx, opacity: ringOn ? (g.role === 'rising' ? 0.9 : 0.55) : 0, display: ringOn ? 'block' : 'none', animation: g.role === 'rising' ? 'gxpulse 2.6s ease-out infinite' : 'none', pointerEvents: 'none' }}></div>
                   </div>
-                  <div style={{ textAlign: 'center', transition: 'opacity .4s', maxWidth: (2 * r + 150) + 'px', background: 'rgba(11,13,17,.84)', padding: '2px 6px 3px', borderRadius: '6px' }}>
-                    <div style={{ fontSize: (isSel ? 14.5 : 12.5) + 'px', fontWeight: 600, color: isSel ? '#ffffff' : (dim ? '#5a626d' : '#e7eaee'), letterSpacing: '.005em', lineHeight: 1.12, transition: 'color .4s, font-size .3s', textShadow: '0 1px 4px rgba(0,0,0,.7)' }}>{g.name}</div>
-                    <div style={{ fontFamily: MONO, fontSize: '9.5px', color: g.role === 'rising' ? hx : (dim ? '#454c56' : '#7b828d'), letterSpacing: '.06em', marginTop: '2px', transition: 'color .4s' }}>{g.role === 'rising' ? (this.fmtYear(g.year) + ' · rising') : this.fmtYear(g.year)}</div>
+                  <div style={{ textAlign: 'center', transition: 'opacity .4s', maxWidth: (2 * r + 150) + 'px', padding: '0 4px' }}>
+                    <div style={{ fontSize: (isSel ? 14.5 : 12.5) + 'px', fontWeight: 600, color: isSel ? '#ffffff' : (dim ? '#5a626d' : '#e7eaee'), letterSpacing: '.005em', lineHeight: 1.12, transition: 'color .4s, font-size .3s', textShadow: LABEL_HALO }}>{g.name}</div>
+                    <div style={{ fontFamily: MONO, fontSize: '9.5px', color: g.role === 'rising' ? hx : (dim ? '#454c56' : '#7b828d'), letterSpacing: '.06em', marginTop: '2px', transition: 'color .4s', textShadow: LABEL_HALO }}>{g.role === 'rising' ? (this.fmtYear(g.year) + ' · rising') : this.fmtYear(g.year)}</div>
                   </div>
                 </div>
               );
