@@ -12,9 +12,8 @@ body{font-family:'Schibsted Grotesk',system-ui,sans-serif;-webkit-font-smoothing
 .gx-root button{font-family:'Schibsted Grotesk',system-ui,sans-serif;}
 .gx-panel{-webkit-user-select:text;user-select:text;}
 
-/* perf degrade while a touch pan/pinch/glide is live: glows + label text are what blow the iOS tile re-raster budget */
+/* perf degrade while a pinch is live: node glows are what blow the iOS tile re-raster budget when the scale changes */
 .gx-perf [data-node] div{box-shadow:none !important;transition:none !important;}
-.gx-perf svg text{display:none !important;}
 
 @keyframes gxpulse{0%{transform:scale(1);opacity:.6;}70%{transform:scale(1.7);opacity:0;}100%{opacity:0;}}
 @keyframes gxeq{0%,100%{height:4px;}50%{height:15px;}}

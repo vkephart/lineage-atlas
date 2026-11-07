@@ -13,7 +13,8 @@ import type { Edge, Family, FamilyId, Genre, Journey, Rel, Role } from './data';
 import { css } from './css';
 
 type GNode = Genre & { x: number; y: number; _root?: boolean };
-type GEdge = Edge & { _i: string; _d: string; _mx: number; _my: number };
+/** Edge with precomputed world-space geometry: _p = cubic control points [x0,y0,c1x,c1y,c2x,c2y,x1,y1], _bb = bbox. */
+type GEdge = Edge & { _i: string; _mx: number; _my: number; _p: number[]; _bb: number[]; _color: string; _dash: number[] };
 type Fam = Family & { y: number };
 
 interface State {
@@ -70,6 +71,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
   viewportRef = React.createRef<HTMLDivElement>();
   worldRef = React.createRef<HTMLDivElement>();
   rootRef = React.createRef<HTMLDivElement>();
+  canvasRef = React.createRef<HTMLCanvasElement>();
 
   view = { x: 0, y: 0, k: 0.5 };
   dragging = false;
@@ -106,7 +108,15 @@ export class Atlas extends React.Component<Record<string, never>, State> {
   private _hoverT: ReturnType<typeof setTimeout> | undefined;
   private _hoverId: string | null = null;
   private _hoverDimOn = false;
-  private _hEls: { nodes: HTMLElement[]; gs: SVGGElement[] } | null = null;
+  private _hEls: { nodes: HTMLElement[] } | null = null;
+  // Edge rendering state: target/current opacity per edge (animated in drawEdges), plus per-edge width/label opacity.
+  private _edgeTarget = new Float32Array(0);
+  private _edgeCur = new Float32Array(0);
+  private _edgeStyle: { w: number; lop: number }[] = [];
+  private _hoverEdgeId: string | null = null;
+  private _drawReq: number | null = null;
+  private _animUntil = 0;
+  private _perfOn = false;
   private _fitDone = false;
   private _onDown!: (e: PointerEvent) => void;
   private _onMove!: (e: PointerEvent) => void;
@@ -136,7 +146,9 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     D.families.forEach((f) => { this.FAM[f.id] = { ...f }; });
     this.famOrder = D.families.map((f) => f.id);
     this.GENRES = D.genres.map((g) => ({ ...g, x: 0, y: 0 }));
-    this.EDGES = D.edges.map((e, i) => ({ ...e, _i: 'ed' + i, _d: '', _mx: 0, _my: 0 }));
+    this.EDGES = D.edges.map((e, i) => ({ ...e, _i: 'ed' + i, _mx: 0, _my: 0, _p: [], _bb: [], _color: '', _dash: [] }));
+    this._edgeTarget = new Float32Array(this.EDGES.length); this._edgeCur = new Float32Array(this.EDGES.length);
+    this._edgeStyle = this.EDGES.map(() => ({ w: 1, lop: 0 }));
     this.JOURNEYS = D.journeys;
     this.byId = {}; this.outDeg = {}; this.inDeg = {};
     // Densest rows (rock, electronic) get extra height so the declutter pass can separate them without crossing dividers.
@@ -155,7 +167,11 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     this.declutter();
     this.EDGES.forEach((e) => {
       const a = this.byId[e.from], b = this.byId[e.to];
-      e._d = this.bez(a, b); e._mx = (a.x + b.x) / 2; e._my = (a.y + b.y) / 2 - 7; // geometry is static — compute once, not per render
+      const dx = b.x - a.x; // geometry is static — compute once, not per render
+      e._p = [a.x, a.y, a.x + dx * 0.42, a.y, a.x + dx * 0.58, b.y, b.x, b.y];
+      e._bb = [Math.min(a.x, b.x), Math.min(a.y, b.y), Math.max(a.x, b.x), Math.max(a.y, b.y)];
+      e._mx = (a.x + b.x) / 2; e._my = (a.y + b.y) / 2 - 7;
+      e._color = this.hex(a.fam); e._dash = this.dashArr(e.rel);
     });
     // Main lineage: each genre's strongest same-family parent link (origin preferred), used when a family is focused.
     this.backbone = {};
@@ -258,13 +274,20 @@ export class Atlas extends React.Component<Record<string, never>, State> {
       try { window.location.href = 'spotify:search:' + encodeURIComponent(q); } catch { cleanup(); window.open(web, '_blank', 'noopener'); }
     };
   }
-  bez(a: { x: number; y: number }, b: { x: number; y: number }) { const dx = b.x - a.x; return 'M ' + a.x + ' ' + a.y + ' C ' + (a.x + dx * 0.42) + ' ' + a.y + ', ' + (a.x + dx * 0.58) + ' ' + b.y + ', ' + b.x + ' ' + b.y; }
-  dashFor(rel: Rel) { return rel === 'origin' ? 'none' : rel === 'stylistic' ? '9 7' : rel === 'production' ? '2 6' : rel === 'scene' ? '1 8' : rel === 'revival' ? '12 5 2 6' : '14 5'; }
+  dashArr(rel: Rel): number[] { return rel === 'origin' ? [] : rel === 'stylistic' ? [9, 7] : rel === 'production' ? [2, 6] : rel === 'scene' ? [1, 8] : rel === 'revival' ? [12, 5, 2, 6] : [14, 5]; }
   baseR(role: Role) { return role === 'foundational' ? 30 : role === 'hybrid' ? 25 : role === 'revival' ? 23 : role === 'rising' ? 24 : 23; }
   nodeR(g: Genre) { return this.baseR(g.role) + Math.min(9, ((this.outDeg[g.id] || 0) + (this.inDeg[g.id] || 0)) * 0.9); }
 
   // ── view transform ───────────────────────────────────────────────────────
-  private _setPerf(on: boolean) { const r = this.rootRef.current; if (!r) return; if (on) r.classList.add('gx-perf'); else r.classList.remove('gx-perf'); }
+  /** Reduced-cost drawing while a gesture is live. `heavy` (pinch) also strips node glows, which forces a
+   *  re-raster of the node layer, so plain pans leave the DOM alone and only simplify the canvas edges. */
+  private _setPerf(on: boolean, heavy = false) {
+    if (this._perfOn !== on) this._edgesDirty = true;
+    this._perfOn = on;
+    const r = this.rootRef.current;
+    if (r) { if (on && heavy) r.classList.add('gx-perf'); else if (!on) r.classList.remove('gx-perf'); }
+    this.requestDraw();
+  }
   private _stopGlide() { if (this._glide) { cancelAnimationFrame(this._glide); this._glide = null; this._setPerf(false); } }
   private _startGlide() {
     const v = this._vel || { x: 0, y: 0 };
@@ -282,7 +305,154 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     };
     this._glide = requestAnimationFrame(step);
   }
-  applyTransform(animated: boolean) { const w = this.worldRef.current; if (!w) return; w.style.transition = animated ? 'transform .7s cubic-bezier(.22,.61,.36,1)' : 'none'; w.style.transform = 'translate(' + this.view.x + 'px,' + this.view.y + 'px) scale(' + this.view.k + ')'; }
+  applyTransform(animated: boolean) {
+    const w = this.worldRef.current; if (!w) return;
+    w.style.transition = animated ? 'transform .7s cubic-bezier(.22,.61,.36,1)' : 'none';
+    w.style.transform = 'translate(' + this.view.x + 'px,' + this.view.y + 'px) scale(' + this.view.k + ')';
+    // The edge canvas follows the world's *rendered* transform, so during an animated move it keeps redrawing until the CSS transition ends.
+    if (animated) this._animUntil = performance.now() + 760;
+    this.requestDraw();
+  }
+
+  // ── edge canvas ──────────────────────────────────────────────────────────
+  // Edges are drawn on a viewport-sized canvas instead of as SVG inside the pannable layer. Panning then moves a
+  // layer that only holds the nodes (a compositor-only operation on iOS) while the ~700 curves are redrawn per frame
+  // at screen resolution with viewport culling, which is far cheaper than WebKit re-rasterising dashed SVG tiles.
+  requestDraw() { if (this._drawReq == null) this._drawReq = requestAnimationFrame(this.drawEdges); }
+  private _renderedView(): { x: number; y: number; k: number } {
+    const w = this.worldRef.current;
+    if (w && this._animUntil > performance.now()) {
+      const m = getComputedStyle(w).transform;
+      if (m && m.startsWith('matrix(')) { const v = m.slice(7, -1).split(',').map(parseFloat); return { k: v[0], x: v[4], y: v[5] }; }
+    }
+    return this.view;
+  }
+  // Offscreen cache: the edges are rendered once into a bitmap that extends half a viewport beyond every side, then
+  // blitted while panning (and scaled while pinching / during animated moves). It is re-rendered only when the
+  // picture changes (targets dirty, opacity animation), the zoom settles at a new level, or the pan leaves the margin.
+  private _off: { c: HTMLCanvasElement; x: number; y: number; k: number; w: number; h: number } | null = null;
+  private _edgesDirty = true;
+  private _opAnim = false;
+  drawEdges = () => {
+    this._drawReq = null;
+    const c = this.canvasRef.current, vp = this.viewportRef.current; if (!c || !vp || !this._ready) return;
+    const r = vp.getBoundingClientRect(); if (r.width < 2 || r.height < 2) return;
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const W = Math.round(r.width * dpr), H = Math.round(r.height * dpr);
+    if (c.width !== W || c.height !== H) { c.width = W; c.height = H; c.style.width = r.width + 'px'; c.style.height = r.height + 'px'; this._edgesDirty = true; }
+    const ctx = c.getContext('2d'); if (!ctx) return;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, r.width, r.height);
+    const view = this._renderedView();
+    const animating = this._animUntil > performance.now(), transient = animating || !!this._pinch;
+    const off = this._off;
+    if (!this._edgesDirty && !this._opAnim && off) {
+      const dx = view.x - off.x, dy = view.y - off.y;
+      const covers = off.k === view.k && dx <= 0 && dy <= 0 && dx + off.w >= r.width && dy + off.h >= r.height;
+      if (covers) { ctx.drawImage(off.c, dx, dy, off.w, off.h); if (animating) this.requestDraw(); return; }
+      if (transient) { const f = view.k / off.k; ctx.drawImage(off.c, view.x - off.x * f, view.y - off.y * f, off.w * f, off.h * f); this.requestDraw(); return; }
+    }
+    // (re)render the offscreen bitmap around the current view
+    const mX = Math.round(r.width * 0.5), mY = Math.round(r.height * 0.5);
+    const ow = r.width + 2 * mX, oh = r.height + 2 * mY;
+    const oc = off ? off.c : document.createElement('canvas');
+    if (oc.width !== Math.round(ow * dpr) || oc.height !== Math.round(oh * dpr)) { oc.width = Math.round(ow * dpr); oc.height = Math.round(oh * dpr); }
+    const o = { c: oc, x: view.x + mX, y: view.y + mY, k: view.k, w: ow, h: oh };
+    this._off = o;
+    const octx = oc.getContext('2d'); if (!octx) return;
+    octx.setTransform(dpr, 0, 0, dpr, 0, 0); octx.clearRect(0, 0, ow, oh);
+    const { x: vx, y: vy, k } = o;
+    const perf = this._perfOn, fontPx = 12.5 * k, showLabels = !perf && fontPx >= 6;
+    let more = false;
+    const E = this.EDGES, T = this._edgeTarget, C = this._edgeCur, S = this._edgeStyle;
+    octx.lineCap = 'round';
+    if (showLabels) { octx.font = fontPx + 'px ' + MONO; octx.textAlign = 'center'; }
+    let lastDash: number[] | null = null;
+    for (let i = 0; i < E.length; i++) {
+      let cur = C[i]; const tgt = T[i];
+      if (cur !== tgt) { if (Math.abs(cur - tgt) < 0.006) cur = tgt; else { cur += (tgt - cur) * 0.2; more = true; } C[i] = cur; }
+      if (cur <= 0.004) continue;
+      const e = E[i], bb = e._bb;
+      if (bb[2] * k + vx < -24 || bb[0] * k + vx > ow + 24 || bb[3] * k + vy < -24 || bb[1] * k + vy > oh + 24) continue;
+      const st = S[i], p = e._p;
+      octx.globalAlpha = cur; octx.strokeStyle = e._color; octx.lineWidth = st.w * k;
+      // dashes are the expensive part of stroking: drop them in perf mode and when the pattern is sub-pixel anyway
+      const dash = (perf || (e._dash.length && (e._dash[0] + e._dash[1]) * k < 3)) ? [] : e._dash;
+      if (dash !== lastDash) { octx.setLineDash(dash.length ? dash.map((v) => v * k) : []); lastDash = dash; }
+      octx.beginPath(); octx.moveTo(p[0] * k + vx, p[1] * k + vy); octx.bezierCurveTo(p[2] * k + vx, p[3] * k + vy, p[4] * k + vx, p[5] * k + vy, p[6] * k + vx, p[7] * k + vy); octx.stroke();
+      if (showLabels && st.lop > 0 && tgt > 0) {
+        octx.setLineDash([]); lastDash = null;
+        octx.globalAlpha = st.lop * Math.min(1, cur / tgt); octx.fillStyle = e._color;
+        octx.fillText(REL_LABEL[e.rel], e._mx * k + vx, e._my * k + vy);
+      }
+    }
+    octx.globalAlpha = 1;
+    this._edgesDirty = false; this._opAnim = more;
+    ctx.drawImage(oc, -mX, -mY, ow, oh);
+    if (more || animating) this.requestDraw();
+  };
+  /** Nearest visible edge within ~10 screen px of a tap, or null. Replaces the SVG hit paths. */
+  hitEdge(clientX: number, clientY: number): string | null {
+    const vp = this.viewportRef.current; if (!vp) return null;
+    const r = vp.getBoundingClientRect(); const { x: vx, y: vy, k } = this.view;
+    const wx = (clientX - r.left - vx) / k, wy = (clientY - r.top - vy) / k, th = 10 / k;
+    // While something is highlighted, only the lit edges are tappable so a background tap still closes the panel;
+    // in the neutral view every resting edge can be tapped to inspect it.
+    const s = this.state, busy = !!(s.selectedNodeId || s.selectedEdgeId || s.focusFam || s.bridgeMode || s.mode === 'journey');
+    const minOp = busy ? 0.3 : 0.06;
+    let best: string | null = null, bestD = th;
+    this.EDGES.forEach((e, i) => {
+      if (this._edgeTarget[i] < minOp) return;
+      const bb = e._bb; if (wx < bb[0] - th || wx > bb[2] + th || wy < bb[1] - th || wy > bb[3] + th) return;
+      const p = e._p; let px = p[0], py = p[1];
+      for (let s = 1; s <= 32; s++) {
+        const t = s / 32, u = 1 - t;
+        const x = u * u * u * p[0] + 3 * u * u * t * p[2] + 3 * u * t * t * p[4] + t * t * t * p[6];
+        const y = u * u * u * p[1] + 3 * u * u * t * p[3] + 3 * u * t * t * p[5] + t * t * t * p[7];
+        // distance from (wx,wy) to segment (px,py)-(x,y)
+        const dx = x - px, dy = y - py, L2 = dx * dx + dy * dy || 1;
+        const tt = Math.max(0, Math.min(1, ((wx - px) * dx + (wy - py) * dy) / L2));
+        const d = Math.hypot(wx - (px + tt * dx), wy - (py + tt * dy));
+        if (d < bestD) { bestD = d; best = e._i; }
+        px = x; py = y;
+      }
+    });
+    return best;
+  }
+  /** Recompute each edge's target opacity, width and label opacity from state (+ an optional hovered node). */
+  edgeTargets(hoverId: string | null) {
+    this._edgesDirty = true;
+    const s = this.state, year = s.year;
+    const inJourney = s.mode === 'journey' && !!s.activeJourney;
+    const active = s.selectedNodeId || (s.selectedEdgeId || s.bridgeMode || s.focusFam || s.playing || inJourney ? null : hoverId);
+    const famOnly = !inJourney && !s.bridgeMode && !active && s.focusFam;
+    const famRank: Record<string, number> = {}; let famStep = 0, famElapsed = 0;
+    if (famOnly) {
+      const intra = this.EDGES.filter((e) => { const a = this.byId[e.from], b = this.byId[e.to]; return a.fam === s.focusFam && b.fam === s.focusFam && a.year <= year && b.year <= year && this.backbone[e._i]; });
+      intra.sort((x, y) => Math.max(this.byId[x.from].year, this.byId[x.to].year) - Math.max(this.byId[y.from].year, this.byId[y.to].year));
+      intra.forEach((e, i) => { famRank[e._i] = i; });
+      famStep = Math.min(220, 3200 / Math.max(1, intra.length));
+      famElapsed = Date.now() - (this._focusT || 0);
+    }
+    this.EDGES.forEach((e, i) => {
+      const a = this.byId[e.from], b = this.byId[e.to];
+      const vis = a.year <= year && b.year <= year;
+      let act = false, side = false;
+      if (inJourney) act = this.jEdge(e);
+      else if (s.bridgeMode) act = (e.rel === 'bridge');
+      else if (active) act = (e.from === active || e.to === active);
+      else if (s.focusFam) { act = (e._i in famRank); side = !act && (a.fam === s.focusFam || b.fam === s.focusFam); }
+      if (active && s.focusFam && !act && (a.fam === s.focusFam && b.fam === s.focusFam)) side = true;
+      const anyMode = inJourney || s.bridgeMode || active || s.focusFam;
+      const dim = anyMode ? !act : false;
+      const selE = e._i === s.selectedEdgeId, hot = act || selE;
+      let op = !vis ? 0 : (side ? ((a.fam === b.fam) ? 0.16 : 0.07) : (dim ? 0.04 : (hot ? 0.95 : (e.rel === 'bridge' ? 0.12 : 0.08))));
+      const lop = !vis ? 0 : ((hot && !famOnly) || selE ? 0.92 : (ALWAYS_LABELS && !dim ? 0.38 : 0));
+      if (famOnly && act && famElapsed < famRank[e._i] * famStep) { op = vis ? 0.04 : 0; }
+      this._edgeTarget[i] = op;
+      this._edgeStyle[i].w = (1 + e.strength * 2.7) + (e.rel === 'bridge' ? 0.6 : 0) + (hot ? 1.2 : 0);
+      this._edgeStyle[i].lop = lop;
+    });
+  }
 
   fitView(animated: boolean) {
     const vp = this.viewportRef.current; if (!vp || !this.GENRES.length) return;
@@ -370,7 +540,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
   private _hoverEls() {
     const w = this.worldRef.current; if (!w) return null;
     if (!this._hEls || this._hEls.nodes.length !== this.GENRES.length) {
-      this._hEls = { nodes: Array.prototype.slice.call(w.querySelectorAll('[data-node]')), gs: Array.prototype.slice.call(w.querySelectorAll('svg > g')) };
+      this._hEls = { nodes: Array.prototype.slice.call(w.querySelectorAll('[data-node]')) };
     }
     return this._hEls;
   }
@@ -378,9 +548,9 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     this._hoverId = null;
     if (!this._hoverDimOn) return;
     this._hoverDimOn = false;
+    if (this._hoverEdgeId) { this._hoverEdgeId = null; if (this._ready) { this.edgeTargets(null); this.requestDraw(); } }
     const E = this._hEls; if (!E) return;
     E.nodes.forEach((el) => { el.style.opacity = ''; });
-    E.gs.forEach((g) => { const c = g.children as HTMLCollectionOf<SVGElement>; if (c[0]) c[0].style.opacity = ''; if (c[2]) c[2].style.opacity = ''; });
   }
   private _applyHover(id: string | null) {
     const s = this.state;
@@ -392,14 +562,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     this.EDGES.forEach((e) => { if (e.from === id) rel.add(e.to); if (e.to === id) rel.add(e.from); });
     this._hoverDimOn = true;
     this.GENRES.forEach((g, i) => { const el = E.nodes[i]; if (!el || g.year > s.year) return; el.style.opacity = rel.has(g.id) ? '1' : String(DIM_INACTIVE); });
-    this.EDGES.forEach((e, i) => {
-      const gEl = E.gs[i]; if (!gEl) return;
-      const a = this.byId[e.from], b = this.byId[e.to];
-      if (a.year > s.year || b.year > s.year) return;
-      const act = (e.from === id || e.to === id), c = gEl.children as HTMLCollectionOf<SVGElement>;
-      if (c[0]) c[0].style.opacity = act ? '0.95' : '0.05';
-      if (c[2]) { if (act) { c[2].style.display = 'block'; c[2].style.opacity = '0.92'; } else { c[2].style.opacity = ''; } }
-    });
+    this._hoverEdgeId = id; this.edgeTargets(id); this.requestDraw();
   }
   setHover(id: string | null) {
     if (this.dragging || this.state.playing) return;
@@ -505,7 +668,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
         const dist = Math.hypot(a.x - b.x, a.y - b.y); if (dist < 1) return;
         const r = vp.getBoundingClientRect();
         const midX = (a.x + b.x) / 2 - r.left, midY = (a.y + b.y) / 2 - r.top;
-        if (!this._pinch) { this._pinch = { dist, k: this.view.k, vx: this.view.x, vy: this.view.y }; this._setPerf(true); return; }
+        if (!this._pinch) { this._pinch = { dist, k: this.view.k, vx: this.view.x, vy: this.view.y }; this._setPerf(true, true); return; }
         const nk = Math.min(this.KMAX, Math.max(0.12, this._pinch.k * (dist / this._pinch.dist)));
         const wx = (midX - this._pinch.vx) / this._pinch.k, wy = (midY - this._pinch.vy) / this._pinch.k;
         this.view = { x: midX - wx * nk, y: midY - wy * nk, k: nk }; this.applyTransform(false);
@@ -516,7 +679,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
       const thresh = e.pointerType === 'mouse' ? 4 : 7;
       if (!this._moved && Math.abs(dx) + Math.abs(dy) > thresh) {
         this._moved = true; this._suppressClick = true;
-        if (e.pointerType !== 'mouse') this._setPerf(true);
+        // plain pans need no perf mode any more: the node layer is compositor-moved and the edges are blitted from cache
         const w0 = this.worldRef.current; if (w0) w0.style.pointerEvents = 'none';
       }
       if (this._moved) {
@@ -538,7 +701,11 @@ export class Atlas extends React.Component<Record<string, never>, State> {
         if (this._moved) { this._startGlide(); }
         if (!this._glide) this._setPerf(false);
         const s = this.state;
-        if (!this._moved && s.mode !== 'journey') { if (s.selectedNodeId || s.selectedEdgeId || s.showListen || s.showPaths || s.focusFam) { this.setState({ selectedNodeId: null, selectedEdgeId: null, breadcrumb: [], showListen: false, showPaths: false, focusFam: null }); } }
+        if (!this._moved) {
+          const tgt = e.target as Element;
+          if (!(tgt.closest && tgt.closest('[data-node],[data-band]'))) { const hit = this.hitEdge(e.clientX, e.clientY); if (hit) { this.selectEdge(hit); return; } }
+          if (s.mode !== 'journey' && (s.selectedNodeId || s.selectedEdgeId || s.showListen || s.showPaths || s.focusFam)) { this.setState({ selectedNodeId: null, selectedEdgeId: null, breadcrumb: [], showListen: false, showPaths: false, focusFam: null }); }
+        }
       }
     };
     this._onWheel = (e) => {
@@ -588,6 +755,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     document.addEventListener('fullscreenchange', this._onFs);
     document.addEventListener('webkitfullscreenchange', this._onFs);
 
+    (window as any).__atlas = this; // handy for debugging from the console / Playwright
     this._fitDone = false;
     requestAnimationFrame(() => { this.doFit(); });
     setTimeout(() => { this.doFit(); }, 120);
@@ -598,10 +766,12 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     if (this._ready && !this._fitDone) { this.doFit(); return; }
     const w = this.worldRef.current;
     if (w && !w.style.transform) { this.applyTransform(false); }
+    this.requestDraw();
   }
 
   componentWillUnmount() {
     clearInterval(this._t); clearTimeout(this._hoverT); this._stopGlide(); clearInterval(this._focusTick);
+    if (this._drawReq != null) cancelAnimationFrame(this._drawReq);
     const vp = this.viewportRef.current;
     if (vp) vp.removeEventListener('click', this._onClickCapture, true);
     window.removeEventListener('pointermove', this._onMove);
@@ -637,16 +807,8 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     let bridgeSet: Set<string> | null = null;
     if (s.bridgeMode && ok) { bridgeSet = new Set(); this.EDGES.forEach((e) => { if (e.rel === 'bridge') { bridgeSet!.add(e.from); bridgeSet!.add(e.to); } }); }
 
-    // Family focus: light the family's internal lineage in chronological order instead of all at once.
-    const famOnly = !inJourney && !s.bridgeMode && !active && s.focusFam;
-    const famRank: Record<string, number> = {}; let famStep = 0, famElapsed = 0;
-    if (famOnly && ok) {
-      const intra = this.EDGES.filter((e) => { const a = this.byId[e.from], b = this.byId[e.to]; return a.fam === s.focusFam && b.fam === s.focusFam && a.year <= year && b.year <= year && this.backbone[e._i]; });
-      intra.sort((x, y) => Math.max(this.byId[x.from].year, this.byId[x.to].year) - Math.max(this.byId[y.from].year, this.byId[y.to].year));
-      intra.forEach((e, i) => { famRank[e._i] = i; });
-      famStep = Math.min(220, 3200 / Math.max(1, intra.length));
-      famElapsed = Date.now() - (this._focusT || 0);
-    }
+    // Edge appearance is computed into typed arrays and painted by drawEdges() after this render commits.
+    if (ok) this.edgeTargets(this._hoverEdgeId);
 
     const curSvc = SVCS.find((v) => v.k === s.svc) || SVCS[0];
     const visCount = this.GENRES.filter((g) => g.year <= year).length;
@@ -738,6 +900,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
       <div ref={this.rootRef} className={rootClass} style={css('position:fixed;inset:0;overflow:hidden;background:radial-gradient(125% 95% at 72% -5%, #11151c 0%, #0a0c10 52%, #07080b 100%);color:#e7eaee;')}>
 
         <div ref={this.viewportRef} style={css('position:absolute;inset:0;cursor:grab;overflow:hidden;touch-action:none;')}>
+          <canvas ref={this.canvasRef} aria-hidden="true" style={css('position:absolute;left:0;top:0;pointer-events:none;')}></canvas>
           <div ref={this.worldRef} style={{ position: 'absolute', left: 0, top: 0, width: this.WW + 'px', height: this.WH + 'px', transformOrigin: '0 0', willChange: 'transform', backfaceVisibility: 'hidden' }}>
 
             {ok && this.famOrder.slice(0, -1).map((k, di) => {
@@ -765,33 +928,6 @@ export class Atlas extends React.Component<Record<string, never>, State> {
               <div key={'band' + k} data-band="" onClick={() => this.focusFamily(k)} style={{ position: 'absolute', left: this.LBX + 'px', top: fam.y + 'px', transform: 'translate(-50%,-50%) rotate(-90deg)', transformOrigin: 'center', whiteSpace: 'nowrap', fontFamily: SERIF, fontSize: '13px', letterSpacing: '.12em', color: s.focusFam === k ? this.rgba(k, 1) : this.rgba(k, 0.62), cursor: 'pointer', pointerEvents: 'auto', transition: 'color .4s' }}>{fam.short.toUpperCase()}</div>
             ); })}
 
-            <svg width={this.WW} height={this.WH} style={css('position:absolute;left:0;top:0;overflow:visible;pointer-events:none;')}>
-              {ok && this.EDGES.map((e) => {
-                const a = this.byId[e.from], b = this.byId[e.to];
-                const vis = a.year <= year && b.year <= year;
-                let act = false, side = false;
-                if (inJourney) act = this.jEdge(e);
-                else if (s.bridgeMode) act = (e.rel === 'bridge');
-                else if (active) act = (e.from === active || e.to === active);
-                else if (s.focusFam) { act = (e._i in famRank); side = !act && (a.fam === s.focusFam || b.fam === s.focusFam); }
-                if (active && s.focusFam && !act && (a.fam === s.focusFam && b.fam === s.focusFam)) side = true;
-                const anyMode = inJourney || s.bridgeMode || active || s.focusFam;
-                const dim = anyMode ? !act : false;
-                const selE = e._i === s.selectedEdgeId, hot = act || selE;
-                let op = !vis ? 0 : (side ? ((a.fam === b.fam) ? 0.16 : 0.07) : (dim ? 0.04 : (hot ? 0.95 : (e.rel === 'bridge' ? 0.12 : 0.08))));
-                const lop = !vis ? 0 : ((hot && !famOnly) || selE ? 0.92 : (ALWAYS_LABELS && !dim ? 0.38 : 0));
-                if (famOnly && act && famElapsed < famRank[e._i] * famStep) { op = vis ? 0.04 : 0; }
-                const w = (1 + e.strength * 2.7) + (e.rel === 'bridge' ? 0.6 : 0) + (hot ? 1.2 : 0);
-                const color = this.hex(a.fam);
-                return (
-                  <g key={e._i}>
-                    <path d={e._d} fill="none" stroke={color} strokeWidth={w} strokeDasharray={this.dashFor(e.rel)} strokeLinecap="round" opacity={op} style={{ transition: 'opacity .45s ease', pointerEvents: 'none' }}></path>
-                    <path d={e._d} fill="none" stroke="transparent" strokeWidth={16} style={{ pointerEvents: 'stroke', cursor: 'pointer' }} onClick={() => this.selectEdge(e._i)}></path>
-                    <text x={e._mx} y={e._my} fill={color} fontSize={12.5} textAnchor="middle" opacity={lop} style={{ display: lop > 0 ? 'block' : 'none', pointerEvents: 'none', fontFamily: MONO, letterSpacing: '.05em' }}>{REL_LABEL[e.rel]}</text>
-                  </g>
-                );
-              })}
-            </svg>
 
             {ok && this.GENRES.map((g) => {
               const vis = g.year <= year;

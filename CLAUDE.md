@@ -80,6 +80,9 @@ genre to its first canonical records, not its naming or commercial peak. Keep "r
   dash-dot revival, heavy dash bridge). Line weight encodes strength. Keep that mapping intact.
 - The map transform, pinch/pan and hover highlighting are imperative DOM writes on purpose (see the comment at the
   top of `src/Atlas.tsx`); routing them through React state re-introduces visible flicker and iOS drag lag.
+- Edges are drawn on a viewport-sized `<canvas>` (see `drawEdges` in `src/Atlas.tsx`), cached in an offscreen bitmap
+  and blitted while panning. Do not move them back into the pannable DOM layer as SVG: WebKit re-rasterises that
+  layer tile by tile on the main thread and the map lags behind the finger on iPhone. Edge taps use `hitEdge`.
 - Any visual or interaction change must be checked in a real browser at a desktop width (≥1200px) and a phone
   width (≤430px). Use Playwright screenshots; `npm run dev` then script against `http://localhost:5173`.
 - Mobile rules live in the `@media (max-width:720px)` block of `src/atlas.css`; `isMobile` in the component is the
