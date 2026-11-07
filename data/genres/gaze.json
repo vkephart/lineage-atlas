@@ -1,0 +1,1096 @@
+[
+  {
+    "id": "postpunk",
+    "name": "Post-Punk",
+    "fam": "gaze",
+    "fam2": "rock",
+    "year": 1978,
+    "role": "branch",
+    "yOff": -120,
+    "def": "Punk's energy redirected into art-school experimentation — angular basslines, cavernous production, dub space and emotional ambiguity.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Cold, cavernous, reverb-and-dub-treated space."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Angular, melodic, lead basslines."
+      },
+      {
+        "k": "Harmony",
+        "v": "Minor-key, dissonant, art-damaged."
+      }
+    ],
+    "why": "It keeps punk's tension but opens it into cold, spacious production and angular, bass-led arrangements.",
+    "artists": [
+      "Joy Division",
+      "Siouxsie and the Banshees",
+      "Wire"
+    ],
+    "albums": [
+      {
+        "t": "Unknown Pleasures",
+        "a": "Joy Division"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "She's Lost Control",
+        "a": "Joy Division",
+        "why": "Hannett's icy, spacious production invented the cold atmosphere dream pop later warmed."
+      },
+      {
+        "t": "Spellbound",
+        "a": "Siouxsie and the Banshees"
+      },
+      {
+        "t": "Outdoor Miner",
+        "a": "Wire"
+      }
+    ],
+    "tempo": "110–150 BPM"
+  },
+  {
+    "id": "gothrock",
+    "name": "Gothic Rock",
+    "fam": "gaze",
+    "year": 1982,
+    "role": "branch",
+    "yOff": -50,
+    "def": "Post-punk's gloom made theatre — tribal drums, chorused bass, cavernous reverb and baritone drama in black lace.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Chorused, flanged guitar in cathedral reverb."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Tribal toms and driving, melodic bass."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Low, theatrical baritone croon."
+      },
+      {
+        "k": "Scene / context",
+        "v": "The Batcave and black-clad club culture."
+      }
+    ],
+    "why": "It aestheticises post-punk's darkness — romantic, macabre and ritualistic rather than austere.",
+    "artists": [
+      "Bauhaus",
+      "The Sisters of Mercy",
+      "The Cure"
+    ],
+    "albums": [
+      {
+        "t": "Pornography",
+        "a": "The Cure"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Bela Lugosi's Dead",
+        "a": "Bauhaus",
+        "why": "Nine minutes of dub-spaced dread that founded goth in one take."
+      },
+      {
+        "t": "Temple of Love",
+        "a": "The Sisters of Mercy"
+      },
+      {
+        "t": "A Forest",
+        "a": "The Cure"
+      }
+    ],
+    "tempo": "90–130 BPM"
+  },
+  {
+    "id": "industrial",
+    "name": "Industrial",
+    "fam": "gaze",
+    "fam2": "electronic",
+    "year": 1977,
+    "role": "branch",
+    "yOff": 60,
+    "def": "Anti-music from the factory floor — tape loops, machine noise, synth rot and transgressive performance, weaponising the sounds of industry.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Metal percussion, tape hiss, corroded synths."
+      },
+      {
+        "k": "Production",
+        "v": "Loops, cut-ups and studio-as-weapon process."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Mail-art networks, provocation and post-industrial decay."
+      }
+    ],
+    "why": "It treats noise, machinery and tape manipulation as the music itself — the studio turned against comfort.",
+    "artists": [
+      "Throbbing Gristle",
+      "Einstürzende Neubauten",
+      "Nine Inch Nails"
+    ],
+    "albums": [
+      {
+        "t": "20 Jazz Funk Greats",
+        "a": "Throbbing Gristle"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Hamburger Lady",
+        "a": "Throbbing Gristle",
+        "why": "Queasy tape-and-synth dread — anti-music as pure atmosphere."
+      },
+      {
+        "t": "Halber Mensch",
+        "a": "Einstürzende Neubauten"
+      },
+      {
+        "t": "Head Like a Hole",
+        "a": "Nine Inch Nails"
+      }
+    ],
+    "tempo": "110–140 BPM"
+  },
+  {
+    "id": "dreampop",
+    "name": "Dream Pop",
+    "fam": "gaze",
+    "year": 1983,
+    "role": "branch",
+    "yOff": 90,
+    "def": "Gauzy, reverb-soaked pop prioritising texture and mood over riffs — breathy vocals floating in shimmering, effects-laden guitar.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Reverb-drenched, chorused, shimmering guitar."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Breathy, melodic, mixed into the haze."
+      },
+      {
+        "k": "Production",
+        "v": "Atmosphere foregrounded over attack."
+      }
+    ],
+    "why": "It warms post-punk's cold space into lush reverb, with vocals and guitar blurred into mood.",
+    "artists": [
+      "Cocteau Twins",
+      "Mazzy Star",
+      "Galaxie 500"
+    ],
+    "albums": [
+      {
+        "t": "Heaven or Las Vegas",
+        "a": "Cocteau Twins"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Cherry-Coloured Funk",
+        "a": "Cocteau Twins",
+        "why": "A wordless vocal used as pure texture showed melody could dissolve into atmosphere."
+      },
+      {
+        "t": "Fade Into You",
+        "a": "Mazzy Star"
+      },
+      {
+        "t": "Strange",
+        "a": "Galaxie 500"
+      }
+    ],
+    "tempo": "80–120 BPM"
+  },
+  {
+    "id": "noisepop",
+    "name": "Noise Pop",
+    "fam": "gaze",
+    "year": 1985,
+    "role": "branch",
+    "yOff": -20,
+    "def": "Sweet pop melodies buried under squalls of feedback and distortion — sugar and noise in equal, deliberate measure.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Pop hooks drowned in feedback and fuzz."
+      },
+      {
+        "k": "Melody",
+        "v": "Bright girl-group and bubblegum melody."
+      },
+      {
+        "k": "Production",
+        "v": "Distortion treated as a pop sweetener."
+      }
+    ],
+    "why": "It fuses bubblegum melody with walls of feedback so that noise and pop become a single gesture.",
+    "artists": [
+      "The Jesus and Mary Chain",
+      "Yo La Tengo",
+      "The Vaselines"
+    ],
+    "albums": [
+      {
+        "t": "Psychocandy",
+        "a": "The Jesus and Mary Chain"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Just Like Honey",
+        "a": "The Jesus and Mary Chain"
+      },
+      {
+        "t": "Sugarcube",
+        "a": "Yo La Tengo"
+      },
+      {
+        "t": "Son of a Gun",
+        "a": "The Vaselines"
+      }
+    ],
+    "tempo": "100–140 BPM"
+  },
+  {
+    "id": "ethereal",
+    "name": "Ethereal Wave",
+    "fam": "gaze",
+    "year": 1984,
+    "role": "branch",
+    "yOff": -110,
+    "def": "The gothic-adjacent, cathedral-reverb wing of dream pop — wordless, operatic vocals over shimmering, melancholic guitar and synth.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Soaring, often wordless soprano used as texture."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Vast reverb, chorus-drenched guitar, cold synth pads."
+      },
+      {
+        "k": "Harmony",
+        "v": "Romantic, melancholic, modal."
+      }
+    ],
+    "why": "Massed reverb and a vocal used purely as floating texture create a weightless, cathedral-like space.",
+    "artists": [
+      "Cocteau Twins",
+      "Dead Can Dance",
+      "This Mortal Coil"
+    ],
+    "albums": [
+      {
+        "t": "Treasure",
+        "a": "Cocteau Twins"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Lorelei",
+        "a": "Cocteau Twins"
+      },
+      {
+        "t": "The Host of Seraphim",
+        "a": "Dead Can Dance"
+      },
+      {
+        "t": "Song to the Siren",
+        "a": "This Mortal Coil"
+      }
+    ],
+    "tempo": "70–110 BPM"
+  },
+  {
+    "id": "shoegaze",
+    "name": "Shoegaze",
+    "fam": "gaze",
+    "year": 1988,
+    "role": "branch",
+    "yOff": 40,
+    "aka": "Dream Rock",
+    "def": "Walls of layered, effects-saturated guitar where melody, vocal and noise blur into one overwhelming texture — named for the pedalboard stare. Also called 'dream rock', it grew up inside the UK indie scene as its dreamiest wing.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Pitch-bending glide guitar and dense layered fuzz."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Androgynous vocals buried inside the wall of sound."
+      },
+      {
+        "k": "Production",
+        "v": "Maximal layering; the mix as the instrument."
+      },
+      {
+        "k": "Harmony",
+        "v": "Major-key drift smeared by detune and tremolo."
+      }
+    ],
+    "why": "Washed-out guitar layering and glide-based lead phrasing dissolve melody, vocal and noise into a single overwhelming texture.",
+    "artists": [
+      "My Bloody Valentine",
+      "Slowdive",
+      "Ride"
+    ],
+    "albums": [
+      {
+        "t": "Loveless",
+        "a": "My Bloody Valentine"
+      },
+      {
+        "t": "Souvlaki",
+        "a": "Slowdive"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Only Shallow",
+        "a": "My Bloody Valentine",
+        "why": "Shields' pitch-bending glide guitar is the defining timbre the genre is measured against."
+      },
+      {
+        "t": "Alison",
+        "a": "Slowdive"
+      },
+      {
+        "t": "Vapour Trail",
+        "a": "Ride"
+      }
+    ],
+    "tempo": "90–130 BPM"
+  },
+  {
+    "id": "neopsych",
+    "name": "Neo-Psychedelia",
+    "fam": "gaze",
+    "fam2": "rock",
+    "year": 1987,
+    "role": "hybrid",
+    "yOff": 110,
+    "def": "A modern reworking of 60s psychedelia's drones, fuzz and studio haze through post-punk and indie sensibilities.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Fuzz, phasing and reverb recombined with indie jangle."
+      },
+      {
+        "k": "Harmony",
+        "v": "Modal, drone-leaning vamps."
+      },
+      {
+        "k": "Production",
+        "v": "Hazy, layered, lo-fi-to-lush."
+      }
+    ],
+    "why": "It reapplies 60s psychedelic studio textures — drones, fuzz, phasing — within a post-punk and indie framework.",
+    "artists": [
+      "The Jesus and Mary Chain",
+      "Spacemen 3",
+      "Tame Impala"
+    ],
+    "albums": [
+      {
+        "t": "Lonerism",
+        "a": "Tame Impala"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Feels Like We Only Go Backwards",
+        "a": "Tame Impala"
+      },
+      {
+        "t": "Taste of Cindy",
+        "a": "The Jesus and Mary Chain"
+      },
+      {
+        "t": "Walkin' with Jesus",
+        "a": "Spacemen 3"
+      }
+    ],
+    "tempo": "90–130 BPM"
+  },
+  {
+    "id": "nugaze",
+    "name": "Nu-Gaze",
+    "fam": "gaze",
+    "year": 2006,
+    "role": "revival",
+    "yOff": -30,
+    "aka": "Second-Wave Shoegaze",
+    "def": "The second shoegaze wave — mid-2000s bands reviving the wall of sound with alt-rock scale and electronic gloss, a decade after the first wave burned out. Also called 'second-wave shoegaze'.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Classic glide-guitar wash rebuilt with modern high-gain and synth layers."
+      },
+      {
+        "k": "Production",
+        "v": "Bigger and cleaner than the first wave — alt-radio scale."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Blog-era indie; the bridge generation that kept the sound alive."
+      }
+    ],
+    "why": "It revives shoegaze's glide-guitar textures at alt-rock scale, carrying the sound across the 2000s and 2010s.",
+    "artists": [
+      "Silversun Pickups",
+      "M83",
+      "A Place to Bury Strangers"
+    ],
+    "albums": [
+      {
+        "t": "Saturdays = Youth",
+        "a": "M83"
+      },
+      {
+        "t": "Oshin",
+        "a": "DIIV"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Lazy Eye",
+        "a": "Silversun Pickups",
+        "why": "The second wave’s breakout — Loveless textures rebuilt for 2000s alt radio."
+      },
+      {
+        "t": "We Own the Sky",
+        "a": "M83"
+      },
+      {
+        "t": "Doused",
+        "a": "DIIV"
+      }
+    ],
+    "tempo": "90–130 BPM"
+  },
+  {
+    "id": "slowcore",
+    "name": "Slowcore",
+    "fam": "gaze",
+    "fam2": "rock",
+    "year": 1990,
+    "role": "branch",
+    "yOff": 160,
+    "aka": "Sadcore",
+    "def": "Indie rock slowed to a crawl and stripped bare — hushed vocals, clean guitar and glacial tempos that leave silence as part of the arrangement. The quiet refusal of grunge's loudness.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Glacial tempos; every beat left exposed."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Hushed, close-mic, often harmonised."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Clean, sparse guitar with room and reverb doing the arranging."
+      },
+      {
+        "k": "Scene / context",
+        "v": "90s American indie playing quiet rooms while grunge filled arenas."
+      }
+    ],
+    "why": "It inverts the era's volume — dream pop's haze slowed and hollowed out until restraint itself becomes the intensity.",
+    "artists": [
+      "Low",
+      "Codeine",
+      "Acetone"
+    ],
+    "albums": [
+      {
+        "t": "I Could Live in Hope",
+        "a": "Low"
+      },
+      {
+        "t": "Frigid Stars LP",
+        "a": "Codeine"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Words",
+        "a": "Low",
+        "why": "Two voices over near-silence — slowcore's restraint as its own intensity."
+      },
+      {
+        "t": "D",
+        "a": "Codeine"
+      },
+      {
+        "t": "Dear Sunshine",
+        "a": "Acetone"
+      }
+    ],
+    "tempo": "40–80 BPM"
+  },
+  {
+    "id": "coldwave",
+    "name": "Coldwave",
+    "fam": "gaze",
+    "year": 1980,
+    "role": "branch",
+    "yOff": 10,
+    "def": "The French cousin of post-punk — cheap synths, drum machines and detached, minor-key vocals delivering an icy, minimal chill.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Thin, icy synths and clattering drum machines."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Detached, deadpan, often French-language delivery."
+      },
+      {
+        "k": "Harmony",
+        "v": "Stark minor-key minimalism."
+      },
+      {
+        "k": "Scene / context",
+        "v": "French DIY cassette and small-label culture."
+      }
+    ],
+    "why": "It freezes post-punk further — machine rhythm and affectless vocals stripped of all warmth or gloss.",
+    "artists": [
+      "KaS Product",
+      "Asylum Party",
+      "Trisomie 21"
+    ],
+    "albums": [
+      {
+        "t": "Borderline",
+        "a": "Asylum Party"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Play Loud",
+        "a": "Asylum Party"
+      },
+      {
+        "t": "Never Come Back",
+        "a": "KaS Product"
+      },
+      {
+        "t": "The Last Song",
+        "a": "Trisomie 21"
+      }
+    ],
+    "tempo": "100–140 BPM"
+  },
+  {
+    "id": "newpostpunk",
+    "name": "New Post-Punk",
+    "fam": "gaze",
+    "fam2": "rock",
+    "year": 2017,
+    "role": "rising",
+    "yOff": -120,
+    "def": "The post-punk revival that began in Bristol, South London and Dublin around 2017 — IDLES, Shame and Fontaines D.C. pairing punk abrasion, spoken-sung vocals and literate, political lyrics with a return to post-punk's bass-led tension.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Shouted or spoken-sung, accent-forward, wry and political."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Driving, bass-led post-punk drive with hardcore-punk attack."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Bristol, the Brixton Windmill and Dublin, 2017 on — a DIY guitar-band resurgence scaled to festival headliner."
+      }
+    ],
+    "why": "It revives post-punk's angular, bass-led tension and deadpan vocal for a new generation of literary guitar bands.",
+    "artists": [
+      "IDLES",
+      "Shame",
+      "Fontaines D.C.",
+      "Dry Cleaning"
+    ],
+    "albums": [
+      {
+        "t": "Brutalism",
+        "a": "IDLES"
+      },
+      {
+        "t": "Dogrel",
+        "a": "Fontaines D.C."
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Mother",
+        "a": "IDLES",
+        "why": "Bristol 2017 — a one-chord bass pulse, bellowed class politics and hardcore attack announcing the wave."
+      },
+      {
+        "t": "One Rizla",
+        "a": "Shame"
+      },
+      {
+        "t": "Starburster",
+        "a": "Fontaines D.C."
+      }
+    ],
+    "tempo": "110–150 BPM"
+  },
+  {
+    "id": "artpop",
+    "name": "Art Pop",
+    "fam": "gaze",
+    "fam2": "rock",
+    "year": 1975,
+    "role": "hybrid",
+    "yOff": -45,
+    "def": "Pop songcraft as a canvas for high-concept art — auteur voices, surreal imagery and production experiment inside the three-minute song.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "Auteur-controlled, experiment-forward studio craft."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Idiosyncratic, theatrical, instantly identifiable voices."
+      },
+      {
+        "k": "Song structure",
+        "v": "Pop forms warped by concept — songs as short films."
+      }
+    ],
+    "why": "It keeps pop’s hooks but hands the whole frame to a single auteur vision, so the production concept is the song.",
+    "artists": [
+      "Kate Bush",
+      "Björk",
+      "FKA twigs"
+    ],
+    "albums": [
+      {
+        "t": "Hounds of Love",
+        "a": "Kate Bush"
+      },
+      {
+        "t": "Homogenic",
+        "a": "Björk"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Running Up That Hill (A Deal with God)",
+        "a": "Kate Bush",
+        "why": "A Fairlight-built art song that is also an undeniable pop single — the genre’s balance in one track."
+      },
+      {
+        "t": "Hyperballad",
+        "a": "Björk"
+      },
+      {
+        "t": "Cellophane",
+        "a": "FKA twigs"
+      }
+    ],
+    "tempo": "80–130 BPM",
+    "tempoNote": "Song-by-song — the production concept outranks tempo."
+  },
+  {
+    "id": "sprechgesang",
+    "name": "Sprechgesang",
+    "fam": "gaze",
+    "year": 2020,
+    "role": "rising",
+    "yOff": 75,
+    "def": "Deadpan spoken-sung delivery over wiry post-punk — Schoenberg’s speech-song reborn as the defining voice of 2020s art rock.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Dry, conversational speech pitched against the band."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Angular, bass-led post-punk drive."
+      },
+      {
+        "k": "Lyrics",
+        "v": "Observational, ironic, hyper-specific detail."
+      },
+      {
+        "k": "Scene / context",
+        "v": "The Brixton Windmill circuit and its diaspora."
+      }
+    ],
+    "why": "Removing melody from the voice puts all expression into rhythm and text — speech becomes the lead instrument.",
+    "artists": [
+      "Dry Cleaning",
+      "Yard Act",
+      "Black Country, New Road"
+    ],
+    "albums": [
+      {
+        "t": "New Long Leg",
+        "a": "Dry Cleaning"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Scratchcard Lanyard",
+        "a": "Dry Cleaning",
+        "why": "Florence Shaw’s flat, found-text monotone over taut post-punk defined the wave."
+      },
+      {
+        "t": "The Overload",
+        "a": "Yard Act"
+      },
+      {
+        "t": "Sunglasses",
+        "a": "Black Country, New Road"
+      }
+    ],
+    "tempo": "100–145 BPM"
+  },
+  {
+    "id": "zoomergaze",
+    "name": "Zoomergaze",
+    "fam": "gaze",
+    "year": 2021,
+    "role": "rising",
+    "yOff": -30,
+    "def": "The fourth shoegaze wave — Gen-Z bedroom producers building the wall of sound in a DAW, breaking songs on TikTok and SoundCloud before ever playing a show.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "DAW-native — plugin fuzz walls and programmed drums from a laptop."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Digital glide-guitar smear, often heavier and more compressed than the first wave."
+      },
+      {
+        "k": "Scene / context",
+        "v": "TikTok, SoundCloud and Discord scenes; the song travels before the band exists."
+      }
+    ],
+    "why": "It rebuilds shoegaze's overwhelming texture with bedroom-pop tools and internet-native distribution — the wall of sound as a solo laptop project.",
+    "artists": [
+      "Wisp",
+      "julie",
+      "quannnic"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Your Face",
+        "a": "Wisp",
+        "why": "A TikTok-born wall of sound — the fourth wave announcing itself."
+      },
+      {
+        "t": "flutter",
+        "a": "julie"
+      },
+      {
+        "t": "life imitates life",
+        "a": "quannnic"
+      }
+    ],
+    "tempo": "80–130 BPM"
+  },
+  {
+    "id": "darkpostpunk",
+    "name": "Dark Post-Punk",
+    "fam": "gaze",
+    "year": 2016,
+    "role": "revival",
+    "yOff": -160,
+    "def": "The coldwave and goth strain of post-punk revived for a global generation — icy drum machines, chorused bass and grey-concrete melancholy.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Chorused bass, icy synths, drum-machine pulse."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Low, detached, often non-English baritone."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Post-Soviet and Latin American scenes gone global via streaming."
+      }
+    ],
+    "why": "It re-runs 1980–83 coldwave through modern doomer aesthetics — the same cold palette, recharged by new geographies.",
+    "artists": [
+      "Molchat Doma",
+      "She Past Away",
+      "Lebanon Hanover"
+    ],
+    "albums": [
+      {
+        "t": "Этажи (Etazhi)",
+        "a": "Molchat Doma"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Судно (Sudno)",
+        "a": "Molchat Doma",
+        "why": "A Belarusian coldwave song going TikTok-viral announced the revival’s reach."
+      },
+      {
+        "t": "Ritüel",
+        "a": "She Past Away"
+      },
+      {
+        "t": "Gallowdance",
+        "a": "Lebanon Hanover"
+      }
+    ],
+    "tempo": "100–140 BPM"
+  },
+  {
+    "id": "darkwave",
+    "name": "Darkwave",
+    "fam": "gaze",
+    "year": 1988,
+    "role": "branch",
+    "yOff": -170,
+    "def": "Goth’s atmosphere carried onto synthesizers — minor-key electronic melancholy between gothic rock, synth pop and ethereal wave.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Synth pads and drum machines under gothic guitar and bass."
+      },
+      {
+        "k": "Harmony",
+        "v": "Minor keys and suspended, unresolved pads."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Solemn, reverb-draped, often duetted."
+      }
+    ],
+    "why": "It proves the goth sensibility survives the loss of the rock band — mood carried entirely by electronics.",
+    "artists": [
+      "Clan of Xymox",
+      "Deine Lakaien",
+      "Diary of Dreams"
+    ],
+    "albums": [
+      {
+        "t": "Medusa",
+        "a": "Clan of Xymox"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "A Day",
+        "a": "Clan of Xymox",
+        "why": "4AD gloom on sequencers — the bridge from goth rock into electronic darkness."
+      },
+      {
+        "t": "Love Me to the End",
+        "a": "Deine Lakaien"
+      },
+      {
+        "t": "The Curse",
+        "a": "Diary of Dreams"
+      }
+    ],
+    "tempo": "90–130 BPM"
+  },
+  {
+    "id": "witchhouse",
+    "name": "Witch House",
+    "fam": "gaze",
+    "fam2": "electronic",
+    "year": 2009,
+    "role": "branch",
+    "yOff": 135,
+    "aka": "Drag / Screwgaze",
+    "def": "Occult-themed internet electronics — ethereal, pitched-down vocals and blown-out drum-machine beats buried in heavy reverb, noise and darkwave gloom.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Dense reverb, tape hiss and corroded, noisy synths."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Ethereal, screwed or reversed, often unintelligible."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Slow, screwed hip-hop and trap drum-machine patterns."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Blog- and SoundCloud-native; triangle-and-cross typography."
+      }
+    ],
+    "why": "It runs goth atmosphere through Houston's screwed tempo — darkwave's mood rebuilt from slowed rap production instead of a band.",
+    "artists": [
+      "Salem",
+      "Crystal Castles",
+      "oOoOO"
+    ],
+    "albums": [
+      {
+        "t": "King Night",
+        "a": "Salem"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "King Night",
+        "a": "Salem",
+        "why": "A screwed choral sample over trap drums — the whole genre in one track."
+      },
+      {
+        "t": "Not in Love",
+        "a": "Crystal Castles"
+      },
+      {
+        "t": "Seaww",
+        "a": "oOoOO"
+      }
+    ],
+    "tempo": "60–90 BPM",
+    "tempoNote": "Often a 120–140 trap pulse heard at half time."
+  },
+  {
+    "id": "postpunkrevival",
+    "name": "2000s Post-Punk Revival",
+    "fam": "gaze",
+    "fam2": "rock",
+    "year": 2002,
+    "role": "revival",
+    "yOff": -100,
+    "aka": "Garage-Rock Revival · Indie Sleaze",
+    "def": "New York and British guitar bands reviving 1978–82 — Joy Division basslines, Television and Gang of Four guitar, tight trousers and a dancefloor pulse — from Is This It and Turn On the Bright Lights to Franz Ferdinand and Bloc Party.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Driving, disco-tinged hi-hat eighths under melodic lead bass."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Clean, trebly, interlocking guitars; reverb and chorus in the Interpol/Editors wing."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Detached baritone croon or clipped, nervy yelp."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Lower East Side New York 2001–03, then Glasgow, London and Leeds; NME-fuelled and festival-scaled by 2005."
+      }
+    ],
+    "why": "It rebuilt post-punk's angular guitar and bass interplay with the tighter, brighter production of the 2000s, trading the original's dread for dancefloor energy.",
+    "artists": [
+      "Interpol",
+      "The Strokes",
+      "Yeah Yeah Yeahs",
+      "Franz Ferdinand",
+      "The Rapture",
+      "Bloc Party",
+      "Editors"
+    ],
+    "albums": [
+      {
+        "t": "Turn On the Bright Lights",
+        "a": "Interpol"
+      },
+      {
+        "t": "Franz Ferdinand",
+        "a": "Franz Ferdinand"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Obstacle 1",
+        "a": "Interpol",
+        "why": "Lead bass, chiming guitars and a flat baritone — the Joy Division template rerun with 2002 clarity."
+      },
+      {
+        "t": "Take Me Out",
+        "a": "Franz Ferdinand"
+      },
+      {
+        "t": "Banquet",
+        "a": "Bloc Party"
+      }
+    ],
+    "tempo": "120–160 BPM",
+    "tempoNote": "Dancefloor-fast; 'Take Me Out' famously halves its tempo for the main riff."
+  },
+  {
+    "id": "windmill",
+    "name": "Windmill Art-Punk",
+    "aka": "Post-Brexit New Wave · Crank Wave",
+    "fam": "gaze",
+    "fam2": "rock",
+    "year": 2019,
+    "role": "rising",
+    "yOff": 150,
+    "def": "The South London scene centred on the Windmill pub in Brixton and producer Dan Carey — black midi, Squid, Black Country, New Road and Dry Cleaning — fusing post-punk with math rock, no wave, krautrock and chamber instrumentation into through-composed, often improvised art-rock.",
+    "traits": [
+      {
+        "k": "Song structure",
+        "v": "Through-composed, multi-section pieces that build from improvisation rather than verse–chorus."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Odd meters, abrupt tempo shifts and motorik lock-grooves, often with a virtuoso drummer leading."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Clean, angular guitars against saxophone, violin and synth; dynamics from whisper to full noise."
+      },
+      {
+        "k": "Scene / context",
+        "v": "The Windmill, Brixton, and Speedy Wunderground, 2017–22 — a small venue scene signed en masse to Rough Trade, Warp, 4AD and Ninja Tune."
+      }
+    ],
+    "why": "A single tiny venue let bands develop by playing to each other, so technical ambition and formal experiment were rewarded over hooks, and post-punk's tension was re-routed through math rock and no wave.",
+    "artists": [
+      "black midi",
+      "Squid",
+      "Black Country, New Road",
+      "Dry Cleaning"
+    ],
+    "albums": [
+      {
+        "t": "Schlagenheim",
+        "a": "black midi"
+      },
+      {
+        "t": "For the first time",
+        "a": "Black Country, New Road"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "bmbmbm",
+        "a": "black midi",
+        "why": "A single bass note, Morgan Simpson's drumming and Geordie Greep's strangled sprechgesang — the Windmill sound at its most reduced and most extreme."
+      },
+      {
+        "t": "Narrator",
+        "a": "Squid"
+      },
+      {
+        "t": "Sunglasses",
+        "a": "Black Country, New Road"
+      }
+    ]
+  }
+]

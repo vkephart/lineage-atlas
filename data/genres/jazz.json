@@ -1,0 +1,1583 @@
+[
+  {
+    "id": "bebop",
+    "name": "Bebop",
+    "fam": "jazz",
+    "year": 1945,
+    "role": "foundational",
+    "yOff": -130,
+    "def": "Jazz reclaimed as virtuoso art music — fast tempos, intricate heads and harmonically dense improvised solos over rapid chord changes.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "Extended chords, ii–V–I substitutions and chromatic alterations."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Fast swing with comping and dropped bombs."
+      },
+      {
+        "k": "Melody",
+        "v": "Angular, eighth-note bebop lines."
+      },
+      {
+        "k": "Song structure",
+        "v": "Head–solos–head over fast changes."
+      }
+    ],
+    "why": "Improvisation navigates rapid, substituted chord changes with angular eighth-note lines — virtuosity over danceability.",
+    "artists": [
+      "Charlie Parker",
+      "Dizzy Gillespie",
+      "Thelonious Monk"
+    ],
+    "albums": [
+      {
+        "t": "Jazz at Massey Hall",
+        "a": "The Quintet"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Ko-Ko",
+        "a": "Charlie Parker"
+      },
+      {
+        "t": "A Night in Tunisia",
+        "a": "Dizzy Gillespie"
+      },
+      {
+        "t": "'Round Midnight",
+        "a": "Thelonious Monk"
+      }
+    ],
+    "tempo": "180–300 BPM",
+    "tempoNote": "Very wide — ballads sit far below the famous up-tempo burners."
+  },
+  {
+    "id": "cool",
+    "name": "Cool Jazz",
+    "fam": "jazz",
+    "year": 1949,
+    "role": "branch",
+    "yOff": 60,
+    "def": "Bebop relaxed and refined — slower, lighter, with arranged textures, restrained tone and a more lyrical, spacious feel.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Light, airy timbres; muted brass, understated dynamics."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Relaxed, even swing."
+      },
+      {
+        "k": "Harmony",
+        "v": "Lush, arranged, sometimes classical-leaning."
+      }
+    ],
+    "why": "It cools bebop's heat into spacious, lightly arranged lines with soft timbre and understated phrasing.",
+    "artists": [
+      "Miles Davis",
+      "Chet Baker",
+      "Gerry Mulligan"
+    ],
+    "albums": [
+      {
+        "t": "Birth of the Cool",
+        "a": "Miles Davis"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Boplicity",
+        "a": "Miles Davis"
+      },
+      {
+        "t": "My Funny Valentine",
+        "a": "Chet Baker"
+      },
+      {
+        "t": "Bernie's Tune",
+        "a": "Gerry Mulligan"
+      }
+    ],
+    "tempo": "100–160 BPM"
+  },
+  {
+    "id": "modal",
+    "name": "Modal Jazz",
+    "fam": "jazz",
+    "year": 1958,
+    "role": "branch",
+    "yOff": -50,
+    "def": "Jazz built on scales and vamps instead of fast chord changes — fewer chords, more space and improvisation over modes.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "Static modal vamps; few, slow-changing chords."
+      },
+      {
+        "k": "Song structure",
+        "v": "Open, spacious forms over one or two modes."
+      },
+      {
+        "k": "Melody",
+        "v": "Scale- and motif-based improvisation."
+      }
+    ],
+    "why": "Replacing dense changes with sustained modes gives solos open space and a meditative, vamp-based momentum.",
+    "artists": [
+      "Miles Davis",
+      "John Coltrane",
+      "Bill Evans"
+    ],
+    "albums": [
+      {
+        "t": "Kind of Blue",
+        "a": "Miles Davis"
+      },
+      {
+        "t": "A Love Supreme",
+        "a": "John Coltrane"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "So What",
+        "a": "Miles Davis",
+        "why": "Two chords across the whole tune let modal harmony and vamp-based improvisation breathe."
+      },
+      {
+        "t": "Acknowledgement",
+        "a": "John Coltrane"
+      },
+      {
+        "t": "Peace Piece",
+        "a": "Bill Evans"
+      }
+    ],
+    "tempo": "100–160 BPM",
+    "tempoNote": "Variable — open vamps invite tempo freedom."
+  },
+  {
+    "id": "free",
+    "name": "Free Jazz",
+    "fam": "jazz",
+    "year": 1960,
+    "role": "branch",
+    "yOff": 120,
+    "def": "Jazz freed from fixed chords, meter and form — collective, often atonal improvisation prioritising energy and interaction.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "Atonal or pantonal; no fixed changes."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Free or pulse-implied, non-metric."
+      },
+      {
+        "k": "Song structure",
+        "v": "Collective, open-form improvisation."
+      }
+    ],
+    "why": "Abandoning set changes and meter, players improvise collectively on timbre and energy rather than harmony.",
+    "artists": [
+      "Ornette Coleman",
+      "Albert Ayler",
+      "Cecil Taylor"
+    ],
+    "albums": [
+      {
+        "t": "The Shape of Jazz to Come",
+        "a": "Ornette Coleman"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Lonely Woman",
+        "a": "Ornette Coleman"
+      },
+      {
+        "t": "Ghosts",
+        "a": "Albert Ayler"
+      },
+      {
+        "t": "Enter Evening",
+        "a": "Cecil Taylor"
+      }
+    ]
+  },
+  {
+    "id": "spiritual",
+    "name": "Spiritual Jazz",
+    "fam": "jazz",
+    "year": 1965,
+    "role": "branch",
+    "yOff": -115,
+    "def": "Modal and free jazz charged with devotional, Afrocentric and cosmic themes — hypnotic vamps, hand percussion and ecstatic build.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "Modal vamps and pedal-point drones."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Hand percussion and rolling, ritualistic momentum."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Devotional, Afrocentric, cosmic."
+      }
+    ],
+    "why": "Long modal vamps and ritual percussion build toward ecstatic, devotional release rather than virtuoso display.",
+    "artists": [
+      "Alice Coltrane",
+      "Pharoah Sanders",
+      "Sun Ra"
+    ],
+    "albums": [
+      {
+        "t": "Journey in Satchidananda",
+        "a": "Alice Coltrane"
+      },
+      {
+        "t": "Karma",
+        "a": "Pharoah Sanders"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Journey in Satchidananda",
+        "a": "Alice Coltrane"
+      },
+      {
+        "t": "The Creator Has a Master Plan",
+        "a": "Pharoah Sanders"
+      },
+      {
+        "t": "Space Is the Place",
+        "a": "Sun Ra"
+      }
+    ],
+    "tempo": "60–140 BPM",
+    "tempoNote": "Highly variable — devotional vamps range from meditative to ecstatic."
+  },
+  {
+    "id": "jazzfunk",
+    "name": "Jazz-Funk",
+    "fam": "jazz",
+    "fam2": "soul",
+    "year": 1970,
+    "role": "hybrid",
+    "yOff": 50,
+    "def": "Jazz harmony and improvisation locked to funk's syncopated groove and electric instrumentation.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Funk's syncopated, downbeat-anchored groove."
+      },
+      {
+        "k": "Harmony",
+        "v": "Jazz extensions over static funk vamps."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Electric piano, clavinet, synth, slap bass."
+      }
+    ],
+    "why": "It marries jazz's extended-chord soloing to funk's locked, syncopated groove and electric textures.",
+    "artists": [
+      "Herbie Hancock",
+      "Roy Ayers",
+      "Donald Byrd"
+    ],
+    "albums": [
+      {
+        "t": "Head Hunters",
+        "a": "Herbie Hancock"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Chameleon",
+        "a": "Herbie Hancock"
+      },
+      {
+        "t": "Everybody Loves the Sunshine",
+        "a": "Roy Ayers"
+      },
+      {
+        "t": "(Fallin' Like) Dominoes",
+        "a": "Donald Byrd"
+      }
+    ],
+    "tempo": "95–120 BPM"
+  },
+  {
+    "id": "fusion",
+    "name": "Jazz Fusion",
+    "fam": "jazz",
+    "fam2": "rock",
+    "year": 1969,
+    "role": "branch",
+    "yOff": -40,
+    "def": "Jazz improvisation electrified and fused with rock and funk — amplified, virtuosic and rhythmically aggressive.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Electric guitar, Rhodes, synth, amplified rhythm section."
+      },
+      {
+        "k": "Harmony",
+        "v": "Jazz extensions plus rock and funk vamps."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Rock backbeat and odd meters with jazz interplay."
+      },
+      {
+        "k": "Song structure",
+        "v": "Long, virtuosic riff-and-solo arcs."
+      }
+    ],
+    "why": "Jazz harmony and improvisation are plugged into rock's volume, backbeat and electric timbre for high-energy interplay.",
+    "artists": [
+      "Miles Davis",
+      "Weather Report",
+      "Mahavishnu Orchestra"
+    ],
+    "albums": [
+      {
+        "t": "Bitches Brew",
+        "a": "Miles Davis"
+      },
+      {
+        "t": "Heavy Weather",
+        "a": "Weather Report"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Birdland",
+        "a": "Weather Report"
+      },
+      {
+        "t": "Meeting of the Spirits",
+        "a": "Mahavishnu Orchestra"
+      },
+      {
+        "t": "Miles Runs the Voodoo Down",
+        "a": "Miles Davis"
+      }
+    ],
+    "tempo": "100–160 BPM",
+    "tempoNote": "Variable — virtuosic pieces move through many tempos."
+  },
+  {
+    "id": "ambientjazz",
+    "name": "Ambient Jazz",
+    "fam": "jazz",
+    "year": 1975,
+    "role": "hybrid",
+    "yOff": 115,
+    "def": "Spacious, reverberant 'ECM-style' jazz where tone, silence and atmosphere matter as much as the line — chamber-like and introspective.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Crystalline reverb, sustained tones, lots of space."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Rubato or gently floating pulse."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Introspective, pastoral, cinematic."
+      }
+    ],
+    "why": "Reverb, silence and slow-evolving tone become the subject, pushing jazz toward ambient atmosphere.",
+    "artists": [
+      "Keith Jarrett",
+      "Jan Garbarek",
+      "Eberhard Weber"
+    ],
+    "albums": [
+      {
+        "t": "The Köln Concert",
+        "a": "Keith Jarrett"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "My Song",
+        "a": "Keith Jarrett"
+      },
+      {
+        "t": "Parce Mihi Domine",
+        "a": "Jan Garbarek"
+      },
+      {
+        "t": "Yellow Fields",
+        "a": "Eberhard Weber"
+      }
+    ]
+  },
+  {
+    "id": "krautrock",
+    "name": "Krautrock",
+    "fam": "jazz",
+    "fam2": "rock",
+    "year": 1971,
+    "role": "hybrid",
+    "yOff": -125,
+    "def": "German experimental rock built on hypnotic 'motorik' repetition, synthesizers and studio process — a bridge between rock, electronics and the avant-garde.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Motorik: steady, repetition-driven 4/4 momentum."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Analog synths, tape edits, treated guitar drones."
+      },
+      {
+        "k": "Song structure",
+        "v": "Long, gradually evolving, loop-like."
+      }
+    ],
+    "why": "A relentless even motorik pulse and tape and synth experimentation trade verse-chorus for hypnotic forward motion.",
+    "artists": [
+      "Can",
+      "Neu!",
+      "Kraftwerk",
+      "Cluster"
+    ],
+    "albums": [
+      {
+        "t": "Tago Mago",
+        "a": "Can"
+      },
+      {
+        "t": "Neu!",
+        "a": "Neu!"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Hallogallo",
+        "a": "Neu!",
+        "why": "The endless motorik pulse is the template for repetition-based electronic music."
+      },
+      {
+        "t": "Vitamin C",
+        "a": "Can"
+      },
+      {
+        "t": "Autobahn",
+        "a": "Kraftwerk"
+      }
+    ],
+    "tempo": "110–130 BPM"
+  },
+  {
+    "id": "ambient",
+    "name": "Ambient",
+    "fam": "jazz",
+    "fam2": "electronic",
+    "year": 1978,
+    "role": "foundational",
+    "yOff": 40,
+    "def": "Music as atmosphere and tone-colour — slow, often beatless soundscapes designed to tint a space, as ignorable as they are interesting.",
+    "traits": [
+      {
+        "k": "Song structure",
+        "v": "Beatless or near-static; no narrative arc."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Sustained drones, soft synth pads, processed field sound."
+      },
+      {
+        "k": "Harmony",
+        "v": "Slow, suspended, consonant pools of tone."
+      },
+      {
+        "k": "Orientation",
+        "v": "Listening and environment, not dancefloor."
+      }
+    ],
+    "why": "Beat and progression recede so that timbre, drift and slow harmonic change become the entire content.",
+    "artists": [
+      "Brian Eno",
+      "Harold Budd",
+      "Laraaji"
+    ],
+    "albums": [
+      {
+        "t": "Ambient 1: Music for Airports",
+        "a": "Brian Eno"
+      },
+      {
+        "t": "The Pearl",
+        "a": "Harold Budd & Brian Eno"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "1/1",
+        "a": "Brian Eno"
+      },
+      {
+        "t": "The Pearl",
+        "a": "Harold Budd & Brian Eno"
+      },
+      {
+        "t": "Dance No. 1",
+        "a": "Laraaji"
+      }
+    ]
+  },
+  {
+    "id": "minimalism",
+    "name": "Minimalism",
+    "fam": "jazz",
+    "year": 1964,
+    "role": "foundational",
+    "yOff": 125,
+    "def": "Composition from small repeating cells, gradual phase and additive process and a steady pulse — hypnotic, process-driven music.",
+    "traits": [
+      {
+        "k": "Song structure",
+        "v": "Repeating cells transformed by phasing and addition."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Steady, insistent pulse."
+      },
+      {
+        "k": "Harmony",
+        "v": "Static or slowly shifting tonal centres."
+      }
+    ],
+    "why": "Tiny motifs repeat and slowly phase against each other, so change emerges from process rather than melody.",
+    "artists": [
+      "Steve Reich",
+      "Terry Riley",
+      "Philip Glass"
+    ],
+    "albums": [
+      {
+        "t": "Music for 18 Musicians",
+        "a": "Steve Reich"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Electric Counterpoint",
+        "a": "Steve Reich"
+      },
+      {
+        "t": "A Rainbow in Curved Air",
+        "a": "Terry Riley"
+      },
+      {
+        "t": "Opening",
+        "a": "Philip Glass"
+      }
+    ],
+    "tempo": "≈ 100–180 BPM",
+    "tempoNote": "Pulse-based but tempo is piece-specific, not genre-defining."
+  },
+  {
+    "id": "drone",
+    "name": "Drone",
+    "fam": "jazz",
+    "year": 1966,
+    "role": "branch",
+    "yOff": -60,
+    "def": "Sustained, slowly-changing tones held for long durations — harmony frozen so the ear hears overtones, beating and timbre.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "Sustained single pitches or chords with minimal change."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Rich overtones and microtonal beating."
+      },
+      {
+        "k": "Song structure",
+        "v": "Extreme duration, near-static."
+      }
+    ],
+    "why": "Holding tones for extreme lengths foregrounds overtones and subtle timbral shift over any melodic motion.",
+    "artists": [
+      "La Monte Young",
+      "Sunn O)))",
+      "Éliane Radigue"
+    ],
+    "albums": [
+      {
+        "t": "Monoliths & Dimensions",
+        "a": "Sunn O)))"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Big Church",
+        "a": "Sunn O)))"
+      },
+      {
+        "t": "The Well-Tuned Piano",
+        "a": "La Monte Young"
+      },
+      {
+        "t": "Kyema",
+        "a": "Éliane Radigue"
+      }
+    ]
+  },
+  {
+    "id": "darkambient",
+    "name": "Dark Ambient",
+    "fam": "jazz",
+    "fam2": "gaze",
+    "year": 1985,
+    "role": "branch",
+    "yOff": -120,
+    "aka": "Ambient Industrial",
+    "def": "Ambient turned ominous — sub-bass drones, discordant overtones and subterranean field recordings that emerged from the post-industrial scene in mid-1980s Europe. The name was coined in the early 1990s by Cold Meat Industry founder Roger Karmanik for raison d'être and related artists.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Sub-bass rumble, dissonant drones and processed field recordings."
+      },
+      {
+        "k": "Song structure",
+        "v": "Beatless, slowly evolving long-form pieces."
+      },
+      {
+        "k": "Production",
+        "v": "Location recordings from caves, crypts and mines layered with synthesis."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Post-industrial labels, chiefly Cold Meat Industry in Sweden."
+      }
+    ],
+    "why": "It keeps ambient's beatless, environmental form and fills it with industrial's dread, using drone and recorded-space texture to create unease instead of calm.",
+    "artists": [
+      "Lustmord",
+      "raison d'être",
+      "Zoviet France"
+    ],
+    "albums": [
+      {
+        "t": "Heresy",
+        "a": "Lustmord"
+      },
+      {
+        "t": "Prospectus I",
+        "a": "raison d'être"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Heresy Part I",
+        "a": "Lustmord",
+        "why": "Recordings from crypts, caverns and mines under deep, sustained bass — widely regarded as the record that defined the genre."
+      },
+      {
+        "t": "Katharsis",
+        "a": "raison d'être"
+      },
+      {
+        "t": "Black Star",
+        "a": "Lustmord"
+      }
+    ]
+  },
+  {
+    "id": "ragtime",
+    "name": "Ragtime",
+    "fam": "jazz",
+    "year": 1897,
+    "role": "foundational",
+    "yOff": -40,
+    "def": "America's first written, syncopated popular music — jaunty, march-derived piano with a steady left hand under a 'ragged', off-beat right hand.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Syncopated right hand over a steady march left hand."
+      },
+      {
+        "k": "Song structure",
+        "v": "Multi-strain march and cakewalk form."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Solo parlour and saloon piano."
+      }
+    ],
+    "why": "A steady striding left hand under a syncopated right hand is the rhythmic seed early jazz would swing.",
+    "artists": [
+      "Scott Joplin",
+      "James Scott",
+      "Joseph Lamb"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Maple Leaf Rag",
+        "a": "Scott Joplin"
+      },
+      {
+        "t": "The Entertainer",
+        "a": "Scott Joplin"
+      },
+      {
+        "t": "Grace and Beauty",
+        "a": "James Scott"
+      }
+    ],
+    "tempo": "90–120 BPM"
+  },
+  {
+    "id": "modernclassical",
+    "name": "Modern Classical",
+    "fam": "jazz",
+    "year": 1908,
+    "role": "foundational",
+    "yOff": 90,
+    "def": "Early-20th-century art music breaking from tonality and Romantic form — impressionism, atonality and serialism that reframed what music could be.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "Extended, atonal or non-functional."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Timbre and colour foregrounded over melody."
+      },
+      {
+        "k": "Song structure",
+        "v": "Anti-Romantic; often abstract or systematic."
+      }
+    ],
+    "why": "By dissolving functional harmony and foregrounding colour and system, it opened the door for minimalism, drone and electronic experiment.",
+    "artists": [
+      "Claude Debussy",
+      "Erik Satie",
+      "Arnold Schoenberg"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Gymnopédie No.1",
+        "a": "Erik Satie"
+      },
+      {
+        "t": "Clair de Lune",
+        "a": "Claude Debussy"
+      },
+      {
+        "t": "Pierrot Lunaire",
+        "a": "Arnold Schoenberg"
+      }
+    ]
+  },
+  {
+    "id": "noladixie",
+    "name": "New Orleans Jazz",
+    "fam": "jazz",
+    "year": 1915,
+    "role": "foundational",
+    "yOff": -150,
+    "def": "The first jazz — collective, polyphonic improvisation by a front line of cornet, clarinet and trombone over a ragtime-and-blues rhythm section.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Collective front-line polyphony."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "A two-beat, ragtime-derived swing."
+      },
+      {
+        "k": "Harmony",
+        "v": "Blues and rag chord changes."
+      }
+    ],
+    "why": "Several horns improvise at once over a ragtime-blues pulse, inventing jazz's collective, swinging language.",
+    "artists": [
+      "Louis Armstrong",
+      "King Oliver",
+      "Jelly Roll Morton"
+    ],
+    "albums": [
+      {
+        "t": "The Hot Fives and Sevens",
+        "a": "Louis Armstrong"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "West End Blues",
+        "a": "Louis Armstrong"
+      },
+      {
+        "t": "Dipper Mouth Blues",
+        "a": "King Oliver"
+      },
+      {
+        "t": "Black Bottom Stomp",
+        "a": "Jelly Roll Morton"
+      }
+    ],
+    "tempo": "140–200 BPM",
+    "tempoNote": "Wide range — slow drags to hot stomps."
+  },
+  {
+    "id": "stride",
+    "name": "Stride Piano",
+    "fam": "jazz",
+    "year": 1919,
+    "role": "branch",
+    "yOff": 150,
+    "def": "A virtuosic Harlem piano style extending ragtime — a leaping 'striding' left hand under dazzling improvised right-hand runs.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "A leaping left hand alternating bass note and chord."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Virtuosic, improvised right-hand ornament."
+      },
+      {
+        "k": "Scene / context",
+        "v": "1920s Harlem rent parties."
+      }
+    ],
+    "why": "It turns ragtime's striding bass into an improvised showcase, bridging notated rag and swinging jazz piano.",
+    "artists": [
+      "James P. Johnson",
+      "Fats Waller",
+      "Willie The Lion Smith"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Carolina Shout",
+        "a": "James P. Johnson"
+      },
+      {
+        "t": "Handful of Keys",
+        "a": "Fats Waller"
+      },
+      {
+        "t": "Echoes of Spring",
+        "a": "Willie \"The Lion\" Smith"
+      }
+    ],
+    "tempo": "140–250 BPM",
+    "tempoNote": "Wide range — show-piece tempos vary with the player."
+  },
+  {
+    "id": "swing",
+    "name": "Swing / Big Band",
+    "fam": "jazz",
+    "year": 1935,
+    "role": "branch",
+    "yOff": -80,
+    "def": "Jazz scaled up for the dancehall — arranged big bands, a smooth four-to-the-bar swing and call-and-response between brass and reed sections.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "A smooth, propulsive four-beat swing."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Arranged big band of brass, reeds and rhythm."
+      },
+      {
+        "k": "Orientation",
+        "v": "Mass dancehall entertainment."
+      }
+    ],
+    "why": "A relaxed four-to-the-bar pulse and section arranging turn jazz into popular dance music — the order bebop rebelled against.",
+    "artists": [
+      "Duke Ellington",
+      "Count Basie",
+      "Benny Goodman"
+    ],
+    "albums": [
+      {
+        "t": "The Blanton-Webster Band",
+        "a": "Duke Ellington"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "It Don't Mean a Thing",
+        "a": "Duke Ellington"
+      },
+      {
+        "t": "One O'Clock Jump",
+        "a": "Count Basie"
+      },
+      {
+        "t": "Sing, Sing, Sing",
+        "a": "Benny Goodman"
+      }
+    ],
+    "tempo": "120–200 BPM",
+    "tempoNote": "Wide range — ballroom sways to killer-diller flag-wavers."
+  },
+  {
+    "id": "concrete",
+    "name": "Musique Concrète",
+    "fam": "jazz",
+    "year": 1948,
+    "role": "foundational",
+    "yOff": 145,
+    "def": "Post-war French studio practice composing directly with recorded sound — tape splicing, loops and manipulation treating any noise as musical material.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "Tape splicing, looping and speed manipulation."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Recorded real-world sound as raw material."
+      },
+      {
+        "k": "Song structure",
+        "v": "Studio-composed rather than performed."
+      }
+    ],
+    "why": "Composing from spliced and looped tape made the studio itself the instrument — the method ambient, krautrock and IDM all inherit.",
+    "artists": [
+      "Pierre Schaeffer",
+      "Pierre Henry",
+      "François Bayle"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Étude aux chemins de fer",
+        "a": "Pierre Schaeffer"
+      },
+      {
+        "t": "Variations pour une porte et un soupir",
+        "a": "Pierre Henry"
+      },
+      {
+        "t": "Presque rien No. 1",
+        "a": "Luc Ferrari"
+      }
+    ]
+  },
+  {
+    "id": "electroacoustic",
+    "name": "Tape Music / Electroacoustic",
+    "fam": "jazz",
+    "fam2": "electronic",
+    "year": 1951,
+    "role": "foundational",
+    "yOff": -15,
+    "aka": "Elektronische Musik",
+    "def": "The post-war oscillator-and-tape tradition — sine tones, filtered noise and modulated signals generated in the studio, then layered, spliced and shaped on magnetic tape. Founded at West German Radio in Cologne in 1951 and carried to Utrecht's Studio voor Elektronische Muziek (1960, renamed the Institute of Sonology in 1967), it was the synthesized rival to Paris's recorded-sound musique concrète.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Sine and pulse generators, noise generators, filters and ring modulators — no microphone required."
+      },
+      {
+        "k": "Production",
+        "v": "Multitrack tape layering, splicing, speed change and tape delay; the finished tape is the work."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Synthetic tones and filtered pink and white noise, often with no stable pitch."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Radio and university studios: WDR Cologne, Philips Eindhoven, STEM Utrecht."
+      }
+    ],
+    "why": "Building sound from electrical signals instead of recording it made timbre itself the material to compose with — the sustained, slowly shifting synthetic texture that drone and dark ambient later inherit.",
+    "artists": [
+      "Karlheinz Stockhausen",
+      "Herbert Eimert",
+      "Gottfried Michael Koenig",
+      "Jaap Vink"
+    ],
+    "albums": [
+      {
+        "t": "Electronic Panorama: Paris, Tokyo, Utrecht, Warszawa",
+        "a": "Various (Philips, 1970)"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Screen",
+        "a": "Jaap Vink",
+        "why": "Vink's first piece (Utrecht, 1968): pink and white noise and unpitched tones, with two identical tapes played at slightly different speeds. It reached the public on the Utrecht disc of Philips' Electronic Panorama box."
+      },
+      {
+        "t": "Studie II",
+        "a": "Karlheinz Stockhausen",
+        "why": "Built entirely from sine-tone mixtures on tape (Cologne, 1954) — the pure-synthesis ideal of the Cologne school."
+      },
+      {
+        "t": "Funktion Grün",
+        "a": "Gottfried Michael Koenig"
+      }
+    ]
+  },
+  {
+    "id": "ancientgreek",
+    "name": "Ancient Greek Music",
+    "fam": "jazz",
+    "year": -380,
+    "role": "foundational",
+    "yOff": -90,
+    "aka": "Hellenic Modal Music",
+    "def": "The monophonic lyre-and-aulos music of the Greek world — a single sung line doubled by string or reed, governed by poetic meter and organised by the tetrachord system that gave the Western modes their names.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "None in the modern sense — monophony, with at most a held drone note."
+      },
+      {
+        "k": "Melody",
+        "v": "Modal harmoniai built from stacked tetrachords, including microtonal enharmonic genera."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Quantitative poetic meter — long and short syllables rather than a repeating beat."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Lyre and kithara (plucked), aulos (double reed-pipe), voice."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Theatre, symposium, athletic festival and religious rite."
+      }
+    ],
+    "why": "Its tetrachord theory and named harmoniai — Dorian, Phrygian, Lydian — are the literal source of Western modal vocabulary, carried forward through medieval chant into all later theory.",
+    "artists": [
+      "Mesomedes of Crete",
+      "Athenaeus",
+      "Limenios"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Seikilos Epitaph",
+        "a": "Anonymous (c. 100 CE)",
+        "why": "The oldest complete surviving notated song — pitch and rhythm both legible, the clearest window we have into ancient practice."
+      },
+      {
+        "t": "Delphic Hymn to Apollo",
+        "a": "Athenaeus"
+      },
+      {
+        "t": "Hymn to the Muse",
+        "a": "Mesomedes of Crete"
+      }
+    ]
+  },
+  {
+    "id": "plainchant",
+    "name": "Plainchant",
+    "fam": "jazz",
+    "year": 900,
+    "role": "foundational",
+    "yOff": -42,
+    "aka": "Gregorian Chant",
+    "def": "The monophonic liturgical song of the medieval Latin church — unaccompanied, unmeasured melody set to sacred text and codified into the eight church modes.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "Monophonic and unaccompanied; no simultaneity at all."
+      },
+      {
+        "k": "Melody",
+        "v": "Stepwise modal lines confined to the eight church modes."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Unmeasured, following the cadence of spoken Latin."
+      },
+      {
+        "k": "Song structure",
+        "v": "Text-governed — antiphon, psalm tone and responsory."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Monastic hours and the Mass across Latin Christendom."
+      }
+    ],
+    "why": "It carries Greek modal theory into the Christian West, and the staff notation invented to preserve it becomes the writing system every later Western composition depends on.",
+    "artists": [
+      "Hildegard von Bingen",
+      "Guido of Arezzo",
+      "Pérotin"
+    ],
+    "albums": [
+      {
+        "t": "A Feather on the Breath of God",
+        "a": "Hildegard von Bingen"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Dies Irae",
+        "a": "Anonymous (Gregorian)",
+        "why": "Its four-note opening became the most quoted melody in Western music, from Berlioz to modern horror scoring."
+      },
+      {
+        "t": "O Virga Ac Diadema",
+        "a": "Hildegard von Bingen"
+      },
+      {
+        "t": "Veni Creator Spiritus",
+        "a": "Anonymous (Gregorian)"
+      }
+    ]
+  },
+  {
+    "id": "renpoly",
+    "name": "Renaissance Polyphony",
+    "fam": "jazz",
+    "year": 1550,
+    "role": "foundational",
+    "yOff": -12,
+    "def": "Independent voices woven into consonant simultaneity — imitative counterpoint, smooth voice-leading, and the triad established as the resting sound of Western music.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "Consonant triads reached by voice-leading rather than chord progression."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Four to six equal, interlocking vocal lines."
+      },
+      {
+        "k": "Song structure",
+        "v": "Imitative points of entry through the mass and motet."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Cathedral choirs and courtly chapels across Europe."
+      }
+    ],
+    "why": "It turns monophony into harmony — the moment vertical consonance becomes a governing principle, which functional tonality then organises into keys.",
+    "artists": [
+      "Giovanni Pierluigi da Palestrina",
+      "Josquin des Prez",
+      "Thomas Tallis"
+    ],
+    "albums": [
+      {
+        "t": "Missa Papae Marcelli",
+        "a": "Palestrina"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Spem in Alium",
+        "a": "Thomas Tallis",
+        "why": "Forty independent voices sounding at once — the outer limit of what polyphonic thinking could hold."
+      },
+      {
+        "t": "Kyrie (Missa Papae Marcelli)",
+        "a": "Palestrina"
+      },
+      {
+        "t": "Ave Maria … Virgo Serena",
+        "a": "Josquin des Prez"
+      }
+    ]
+  },
+  {
+    "id": "opera",
+    "name": "Opera",
+    "fam": "jazz",
+    "year": 1607,
+    "role": "foundational",
+    "yOff": -6,
+    "aka": "Bel Canto / Music Drama",
+    "def": "Sung drama staged with orchestra — born in Florence and Mantua around 1600 when composers abandoned polyphony for a single expressive voice over accompaniment, so that words and feeling could be heard.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Trained, unamplified projection; bel canto legato and the aria as showpiece."
+      },
+      {
+        "k": "Harmony",
+        "v": "Basso continuo and figured bass — chords as accompaniment, the seed of functional tonality."
+      },
+      {
+        "k": "Song structure",
+        "v": "Recitative for action, aria for reflection; later through-composed music drama."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "The theatre orchestra, which grows into the symphony orchestra."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Courts of Mantua and Venice, then the public opera houses of Venice, Naples and Paris."
+      }
+    ],
+    "why": "Monody over a bass line is where chords stop being a by-product of voice-leading and become accompaniment — the harmonic habit Classical formalises — and its aria-and-orchestra dramaturgy resurfaces in film scoring, canzone and every theatrical rock persona since.",
+    "artists": [
+      "Claudio Monteverdi",
+      "Wolfgang Amadeus Mozart",
+      "Giuseppe Verdi",
+      "Richard Wagner",
+      "Giacomo Puccini"
+    ],
+    "albums": [
+      {
+        "t": "L'Orfeo",
+        "a": "Claudio Monteverdi"
+      },
+      {
+        "t": "La Traviata",
+        "a": "Giuseppe Verdi"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Possente spirto (L’Orfeo)",
+        "a": "Claudio Monteverdi",
+        "why": "A solo voice ornamenting over a bass line — the moment melody-plus-accompaniment replaces equal-voice polyphony."
+      },
+      {
+        "t": "Nessun dorma (Turandot)",
+        "a": "Giacomo Puccini"
+      },
+      {
+        "t": "Vorspiel (Tristan und Isolde)",
+        "a": "Richard Wagner"
+      }
+    ]
+  },
+  {
+    "id": "classical",
+    "name": "Classical",
+    "fam": "jazz",
+    "year": 1750,
+    "role": "foundational",
+    "yOff": 0,
+    "def": "The European art-music tradition of the common-practice era — functional tonal harmony, notated form and the symphony orchestra — the deep well from which modern classical, minimalism and much of Western music theory flow.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "Functional tonal harmony and long-range key structure."
+      },
+      {
+        "k": "Song structure",
+        "v": "Notated sonata, symphony and concerto forms."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "The symphony orchestra and the concert piano."
+      },
+      {
+        "k": "Scene / context",
+        "v": "The 18th–19th-century European concert hall."
+      }
+    ],
+    "why": "Its notated forms and functional harmony are the theoretical bedrock that modern classical, minimalism and film scoring all extend or react against.",
+    "artists": [
+      "Ludwig van Beethoven",
+      "Johann Sebastian Bach",
+      "Pyotr Ilyich Tchaikovsky"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Symphony No. 5",
+        "a": "Ludwig van Beethoven",
+        "why": "Its four-note cell generating a whole movement is the motivic logic minimalism later industrialised."
+      },
+      {
+        "t": "Air on the G String",
+        "a": "Johann Sebastian Bach"
+      },
+      {
+        "t": "Swan Lake (Scene)",
+        "a": "Pyotr Ilyich Tchaikovsky"
+      }
+    ]
+  },
+  {
+    "id": "filmscore",
+    "name": "Film Score",
+    "fam": "jazz",
+    "year": 1933,
+    "role": "foundational",
+    "yOff": 45,
+    "aka": "Soundtrack / Cinematic",
+    "def": "Orchestral music composed to picture — leitmotif, cue-length form and mood-on-demand, from Steiner's Hollywood to Morricone's Rome; the late-Romantic orchestra's second life and a vast sampling quarry.",
+    "traits": [
+      {
+        "k": "Song structure",
+        "v": "Cues timed to the cut — 30 seconds to 6 minutes, built on recurring leitmotifs."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Full orchestra, later joined by twangy guitar, whistling, choir, harmonica and synthesizer."
+      },
+      {
+        "k": "Harmony",
+        "v": "Late-Romantic chromaticism and modal colour, chosen for mood rather than form."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Hollywood studio system; Cinecittà and RCA Italiana; the spaghetti western."
+      }
+    ],
+    "why": "Freed from concert form and told to serve emotion frame by frame, the orchestra became a mood machine — and its isolated, dramatic gestures made ideal raw material for library music, trip-hop and post-rock.",
+    "artists": [
+      "Ennio Morricone",
+      "Bernard Herrmann",
+      "Max Steiner",
+      "John Williams",
+      "Nino Rota"
+    ],
+    "albums": [
+      {
+        "t": "The Good, the Bad and the Ugly (OST)",
+        "a": "Ennio Morricone"
+      },
+      {
+        "t": "Vertigo (OST)",
+        "a": "Bernard Herrmann"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "The Ecstasy of Gold",
+        "a": "Ennio Morricone",
+        "why": "Wordless soprano, choir and a slow orchestral build — the cinematic crescendo post-rock and Metallica alike borrowed."
+      },
+      {
+        "t": "Prelude (Psycho)",
+        "a": "Bernard Herrmann"
+      },
+      {
+        "t": "Man with a Harmonica",
+        "a": "Ennio Morricone"
+      }
+    ]
+  },
+  {
+    "id": "newage",
+    "name": "New Age",
+    "fam": "jazz",
+    "year": 1975,
+    "role": "branch",
+    "yOff": -70,
+    "def": "Consonant, meditative instrumental music for healing and contemplation — acoustic and electronic textures unfolding slowly, without tension or resolution.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "Purely consonant, tension-free modal washes."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Soft synth pads, solo piano, harp, nature sound."
+      },
+      {
+        "k": "Orientation",
+        "v": "Meditation, healing and home listening."
+      }
+    ],
+    "why": "It removes dissonance and drama entirely, leaving slow consonant drift aimed at calm rather than attention.",
+    "artists": [
+      "Kitaro",
+      "George Winston",
+      "Enya"
+    ],
+    "albums": [
+      {
+        "t": "December",
+        "a": "George Winston"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Silk Road",
+        "a": "Kitaro",
+        "why": "Its glowing synth serenity defined the new-age palette worldwide."
+      },
+      {
+        "t": "Thanksgiving",
+        "a": "George Winston"
+      },
+      {
+        "t": "Watermark",
+        "a": "Enya"
+      }
+    ]
+  },
+  {
+    "id": "ukjazz",
+    "name": "New Spiritual Jazz",
+    "fam": "jazz",
+    "year": 2026,
+    "role": "rising",
+    "yOff": -115,
+    "def": "A new wave of spiritual jazz led from London and beyond — modal vamps and devotional energy fused with Afro-Caribbean rhythm, broken beat and club sensibility.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "Modal, pedal-point vamps."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Afrobeat, broken-beat and dub-inflected grooves."
+      },
+      {
+        "k": "Scene / context",
+        "v": "London club-jazz and diaspora scenes."
+      }
+    ],
+    "why": "It revives spiritual jazz's modal, devotional vamps and charges them with Afro-diasporic rhythm and club energy.",
+    "artists": [
+      "Nubya Garcia",
+      "Shabaka Hutchings",
+      "Kamasi Washington"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Source",
+        "a": "Nubya Garcia",
+        "why": "Its dub-soaked modal vamp shows spiritual jazz reborn through the London club."
+      },
+      {
+        "t": "Fields",
+        "a": "Kamasi Washington"
+      },
+      {
+        "t": "My Queen Is Ada Eastman",
+        "a": "Sons of Kemet"
+      }
+    ],
+    "tempo": "90–140 BPM",
+    "tempoNote": "Variable — broken-beat club cuts beside meditative modal vamps."
+  },
+  {
+    "id": "jazzrock",
+    "name": "Jazz-Rock",
+    "fam": "jazz",
+    "fam2": "rock",
+    "year": 1968,
+    "role": "hybrid",
+    "yOff": -180,
+    "def": "Rock bands with jazz horn sections and harmony — big-band charts, extended solos and odd meters inside radio-friendly rock songs.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Full horn sections arranged over a rock rhythm section."
+      },
+      {
+        "k": "Harmony",
+        "v": "Extended jazz chords and key-shifting charts in pop forms."
+      },
+      {
+        "k": "Song structure",
+        "v": "Suites and solo sections inside hit singles."
+      }
+    ],
+    "why": "It imported swing-era horn arranging into rock's instrumentation — the pop-facing twin of fusion's jazz-facing experiment.",
+    "artists": [
+      "Blood, Sweat & Tears",
+      "Chicago",
+      "The Electric Flag"
+    ],
+    "albums": [
+      {
+        "t": "Chicago Transit Authority",
+        "a": "Chicago"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Spinning Wheel",
+        "a": "Blood, Sweat & Tears",
+        "why": "Jazz horn charts and changes on top-40 rock radio."
+      },
+      {
+        "t": "25 or 6 to 4",
+        "a": "Chicago"
+      },
+      {
+        "t": "Groovin' Is Easy",
+        "a": "The Electric Flag"
+      }
+    ],
+    "tempo": "100–150 BPM",
+    "tempoNote": "Variable — horn-chart pop to odd-meter workouts."
+  },
+  {
+    "id": "experimental",
+    "name": "Experimental",
+    "fam": "jazz",
+    "year": 1955,
+    "role": "foundational",
+    "yOff": 190,
+    "def": "Music built to test what music can be — chance operations, graphic scores, prepared instruments and noise admitted as material.",
+    "traits": [
+      {
+        "k": "Method",
+        "v": "Chance, process and indeterminacy over fixed composition."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Any sound is material — silence, noise, prepared piano, tape."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Post-war new-music circles: Cage, Darmstadt, Fluxus."
+      }
+    ],
+    "why": "By treating every sound (and silence) as music, it opened the doors ambient, noise, minimalism and the studio avant-garde walked through.",
+    "artists": [
+      "John Cage",
+      "Karlheinz Stockhausen",
+      "Laurie Anderson"
+    ],
+    "albums": [
+      {
+        "t": "Sonatas and Interludes",
+        "a": "John Cage"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "4'33\"",
+        "a": "John Cage",
+        "why": "Silence framed as performance — the boldest statement of sound-as-material ever staged."
+      },
+      {
+        "t": "Gesang der Jünglinge",
+        "a": "Karlheinz Stockhausen"
+      },
+      {
+        "t": "O Superman",
+        "a": "Laurie Anderson"
+      }
+    ]
+  }
+]

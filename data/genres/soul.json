@@ -1,0 +1,934 @@
+[
+  {
+    "id": "gospel",
+    "name": "Gospel",
+    "fam": "soul",
+    "year": 1920,
+    "role": "foundational",
+    "yOff": -130,
+    "def": "Sacred African American vocal music of call-and-response, ecstatic melisma, and church-band backing — the vocal and emotional source of soul and R&B.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Melismatic, impassioned lead answered by a congregational choir."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Hand-clap backbeat over a swung 12/8 church feel."
+      },
+      {
+        "k": "Harmony",
+        "v": "Plagal amen cadences and bluesy added sevenths."
+      },
+      {
+        "k": "Scene / context",
+        "v": "The Black church as performance and community space."
+      }
+    ],
+    "why": "Its full-throated melismatic lead and call-and-response exchange are the vocal blueprint soul and R&B inherited wholesale.",
+    "artists": [
+      "Mahalia Jackson",
+      "Sister Rosetta Tharpe",
+      "The Staple Singers"
+    ],
+    "albums": [
+      {
+        "t": "Gospel Train",
+        "a": "Sister Rosetta Tharpe"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Down by the Riverside",
+        "a": "Sister Rosetta Tharpe",
+        "why": "Her overdriven electric gospel guitar directly prefigures rock lead playing."
+      },
+      {
+        "t": "Take My Hand, Precious Lord",
+        "a": "Mahalia Jackson"
+      },
+      {
+        "t": "I'll Take You There",
+        "a": "The Staple Singers"
+      }
+    ],
+    "tempo": "60–120 BPM",
+    "tempoNote": "Highly variable — spans slow devotional ballads to uptempo shout numbers."
+  },
+  {
+    "id": "blues",
+    "name": "Blues",
+    "fam": "soul",
+    "year": 1908,
+    "role": "foundational",
+    "yOff": 30,
+    "def": "The foundational African American form of the early 1900s — 12-bar I–IV–V harmony, blue notes, and call-and-response that underpin nearly all popular music to follow.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "12-bar I–IV–V with flattened blue thirds and sevenths."
+      },
+      {
+        "k": "Melody",
+        "v": "Bent, vocalised blue notes and call-and-response phrasing."
+      },
+      {
+        "k": "Song structure",
+        "v": "Three-line AAB verse over a repeating 12-bar cycle."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Southern Black work-song and vaudeville roots."
+      }
+    ],
+    "why": "The 12-bar cycle and bent blue notes set a harmonic and expressive grammar that rock, soul and R&B all build on.",
+    "artists": [
+      "Bessie Smith",
+      "W.C. Handy",
+      "Ma Rainey"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "St. Louis Blues",
+        "a": "Bessie Smith"
+      },
+      {
+        "t": "See See Rider Blues",
+        "a": "Ma Rainey"
+      },
+      {
+        "t": "Careless Love",
+        "a": "Bessie Smith"
+      }
+    ],
+    "tempo": "60–120 BPM",
+    "tempoNote": "Wide range — slow blues to uptempo shuffles."
+  },
+  {
+    "id": "delta",
+    "name": "Delta Blues",
+    "fam": "soul",
+    "year": 1928,
+    "role": "foundational",
+    "yOff": -30,
+    "def": "The raw, rural Mississippi root of blues — solo voice and slide or fingerpicked guitar, bent notes and a haunted, percussive drive.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Loose, percussive solo-guitar drive, often free of strict meter."
+      },
+      {
+        "k": "Harmony",
+        "v": "Sparse one- to three-chord blues anchored on the I chord."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Buzzing bottleneck slide and overdriven acoustic tone."
+      }
+    ],
+    "why": "Bottleneck slide and bent blue notes over a single droning chord set the expressive vocabulary all blues guitar grew from.",
+    "artists": [
+      "Robert Johnson",
+      "Son House",
+      "Charley Patton"
+    ],
+    "albums": [
+      {
+        "t": "King of the Delta Blues Singers",
+        "a": "Robert Johnson"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Cross Road Blues",
+        "a": "Robert Johnson",
+        "why": "The bent thirds and slide became the DNA of rock lead guitar."
+      },
+      {
+        "t": "Death Letter",
+        "a": "Son House"
+      },
+      {
+        "t": "Pony Blues",
+        "a": "Charley Patton"
+      }
+    ],
+    "tempo": "70–110 BPM",
+    "tempoNote": "Often loose or free of strict meter — treat as approximate."
+  },
+  {
+    "id": "chicago",
+    "name": "Chicago Blues",
+    "fam": "soul",
+    "year": 1948,
+    "role": "branch",
+    "yOff": -120,
+    "def": "Delta blues electrified and urbanised — amplified guitar and harmonica, a full rhythm section, and a louder, band-driven sound built for city clubs.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Amplified guitar and harp, bass, drums, piano."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Overdriven amp grit and reverb-soaked harmonica."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Heavy shuffle and an insistent backbeat."
+      }
+    ],
+    "why": "Plugging the Delta into an amplifier produced the distorted, sustaining guitar tone that rock would push further.",
+    "artists": [
+      "Muddy Waters",
+      "Howlin Wolf",
+      "Little Walter"
+    ],
+    "albums": [
+      {
+        "t": "The Best of Muddy Waters",
+        "a": "Muddy Waters"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Hoochie Coochie Man",
+        "a": "Muddy Waters"
+      },
+      {
+        "t": "Smokestack Lightnin'",
+        "a": "Howlin' Wolf"
+      },
+      {
+        "t": "My Babe",
+        "a": "Little Walter"
+      }
+    ],
+    "tempo": "80–130 BPM"
+  },
+  {
+    "id": "rnb",
+    "name": "Rhythm & Blues",
+    "fam": "soul",
+    "year": 1947,
+    "role": "branch",
+    "yOff": 90,
+    "def": "Electrified, urban, and groove-forward — blues amplified with a backbeat, horns, and dancefloor intent. The pivot from rural lament to city celebration.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Strong backbeat and a danceable shuffle."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Electric guitar, piano, and punchy horn sections."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Shouting, gospel-tinged lead delivery."
+      }
+    ],
+    "why": "It gives the blues a backbeat, horns and amplification, turning lament into urban dance music.",
+    "artists": [
+      "Big Joe Turner",
+      "Ruth Brown",
+      "Louis Jordan"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Shake, Rattle and Roll",
+        "a": "Big Joe Turner",
+        "why": "Its driving backbeat is the literal template rock 'n' roll copied."
+      },
+      {
+        "t": "(Mama) He Treats Your Daughter Mean",
+        "a": "Ruth Brown"
+      },
+      {
+        "t": "Caldonia",
+        "a": "Louis Jordan"
+      }
+    ],
+    "tempo": "100–140 BPM"
+  },
+  {
+    "id": "soul",
+    "name": "Soul",
+    "fam": "soul",
+    "year": 1961,
+    "role": "branch",
+    "yOff": -110,
+    "def": "Gospel fervour secularised — the raw, melismatic church voice applied to love and life over tight R&B bands.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Gospel-derived melisma, ad-libs and call-and-response with horns."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Tight backbeat, syncopated bass, punchy horn stabs."
+      },
+      {
+        "k": "Scene / context",
+        "v": "1960s Black pride and the civil-rights era."
+      }
+    ],
+    "why": "It transplants gospel's ecstatic vocal phrasing onto secular song, keeping the church's call-and-response interplay.",
+    "artists": [
+      "Aretha Franklin",
+      "Otis Redding",
+      "Sam Cooke"
+    ],
+    "albums": [
+      {
+        "t": "I Never Loved a Man the Way I Love You",
+        "a": "Aretha Franklin"
+      },
+      {
+        "t": "Otis Blue",
+        "a": "Otis Redding"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Respect",
+        "a": "Aretha Franklin"
+      },
+      {
+        "t": "(Sittin' On) The Dock of the Bay",
+        "a": "Otis Redding"
+      },
+      {
+        "t": "A Change Is Gonna Come",
+        "a": "Sam Cooke"
+      }
+    ],
+    "tempo": "75–115 BPM"
+  },
+  {
+    "id": "funk",
+    "name": "Funk",
+    "fam": "soul",
+    "year": 1967,
+    "role": "branch",
+    "yOff": 60,
+    "def": "Rhythm stripped to 'the One' — interlocking syncopated guitar, bass and drums prioritising groove and repetition over chord change.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Syncopated sixteenth-note interlock locked to a strong downbeat."
+      },
+      {
+        "k": "Harmony",
+        "v": "Static one- or two-chord vamps."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Slap bass, clipped wah guitar, tight horns."
+      },
+      {
+        "k": "Song structure",
+        "v": "Open, vamp-based jams rather than verse-chorus."
+      }
+    ],
+    "why": "Everything serves a repeating syncopated groove anchored on the first beat, harmony frozen so rhythm can dominate.",
+    "artists": [
+      "James Brown",
+      "Sly & the Family Stone",
+      "Parliament-Funkadelic"
+    ],
+    "albums": [
+      {
+        "t": "Maggot Brain",
+        "a": "Funkadelic"
+      },
+      {
+        "t": "Stand!",
+        "a": "Sly & the Family Stone"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Sex Machine",
+        "a": "James Brown",
+        "why": "The locked one-chord vamp is the rhythmic cell funk and much dance music spin from."
+      },
+      {
+        "t": "Thank You (Falettinme Be Mice Elf Agin)",
+        "a": "Sly & the Family Stone"
+      },
+      {
+        "t": "Flash Light",
+        "a": "Parliament"
+      }
+    ],
+    "tempo": "90–115 BPM"
+  },
+  {
+    "id": "phillysoul",
+    "name": "Philadelphia Soul",
+    "fam": "soul",
+    "year": 1971,
+    "role": "branch",
+    "yOff": 10,
+    "def": "Soul made lush and orchestral in Philadelphia — Gamble & Huff and Thom Bell's sweeping strings, horns and vibraphone over a smooth, gliding rhythm section, cut at Sigma Sound for Philadelphia International.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Full string and horn sections, vibraphone and glockenspiel over a soul rhythm section."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Smooth, steady, hi-hat-driven groove that edges toward four-on-the-floor."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Sweet falsetto leads and close vocal-group harmony beside gruff baritone testifying."
+      },
+      {
+        "k": "Production",
+        "v": "House-band studio sound — MFSB at Sigma Sound, arranged and producer-led."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Philadelphia International Records, early-to-mid 1970s."
+      }
+    ],
+    "why": "It trades southern soul's grit for symphonic polish, and its MFSB house band's steady, string-laden groove is the sound disco was built from.",
+    "artists": [
+      "The O'Jays",
+      "Harold Melvin & the Blue Notes",
+      "The Spinners",
+      "The Stylistics",
+      "Teddy Pendergrass",
+      "MFSB"
+    ],
+    "albums": [
+      {
+        "t": "Back Stabbers",
+        "a": "The O'Jays"
+      },
+      {
+        "t": "Wake Up Everybody",
+        "a": "Harold Melvin & the Blue Notes"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "TSOP (The Sound of Philadelphia)",
+        "a": "MFSB",
+        "why": "The Soul Train theme: a strings-and-hi-hat instrumental that sits right on the line between Philly soul and disco."
+      },
+      {
+        "t": "Love Train",
+        "a": "The O'Jays"
+      },
+      {
+        "t": "If You Don't Know Me by Now",
+        "a": "Harold Melvin & the Blue Notes"
+      },
+      {
+        "t": "Betcha by Golly, Wow",
+        "a": "The Stylistics"
+      }
+    ]
+  },
+  {
+    "id": "disco",
+    "name": "Disco",
+    "fam": "soul",
+    "fam2": "electronic",
+    "year": 1974,
+    "role": "branch",
+    "yOff": -40,
+    "def": "Four-on-the-floor dance music born in queer, Black and Latino clubs — lush orchestration, syncopated bass and the 12-inch extended mix.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Four-on-the-floor kick under syncopated octave bass."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "String and horn sections, wah guitar, early synths."
+      },
+      {
+        "k": "Song structure",
+        "v": "Extended 12-inch arrangements for the DJ."
+      },
+      {
+        "k": "Orientation",
+        "v": "Dancefloor, peak-time."
+      }
+    ],
+    "why": "It puts a steady four-on-the-floor kick under funk's syncopation and lush orchestration, built for the extended club mix.",
+    "artists": [
+      "Donna Summer",
+      "Chic",
+      "Giorgio Moroder"
+    ],
+    "albums": [
+      {
+        "t": "I Remember Yesterday",
+        "a": "Donna Summer"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "I Feel Love",
+        "a": "Donna Summer",
+        "why": "Moroder's all-synth arpeggio pointed straight at the machine-made future of dance music."
+      },
+      {
+        "t": "Good Times",
+        "a": "Chic"
+      },
+      {
+        "t": "The Chase",
+        "a": "Giorgio Moroder"
+      }
+    ],
+    "tempo": "110–130 BPM"
+  },
+  {
+    "id": "spirituals",
+    "name": "Spirituals & Work Songs",
+    "fam": "soul",
+    "year": 1867,
+    "role": "foundational",
+    "yOff": 0,
+    "def": "African American spirituals and work songs — communal, a cappella call-and-response born in slavery, the field and the church, and the deepest root of gospel, blues and jazz.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Communal call-and-response, frequently a cappella."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "A labour pulse of hand-claps and foot-stomps."
+      },
+      {
+        "k": "Scene / context",
+        "v": "The plantation, field and church of the 19th-century South."
+      }
+    ],
+    "why": "Communal call-and-response sung over a labour pulse is the ancestral cell from which gospel, blues and jazz all descend.",
+    "artists": [
+      "Fisk Jubilee Singers",
+      "Paul Robeson",
+      "Traditional"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Swing Low, Sweet Chariot",
+        "a": "Fisk Jubilee Singers"
+      },
+      {
+        "t": "Wade in the Water",
+        "a": "Fisk Jubilee Singers"
+      },
+      {
+        "t": "Go Down Moses",
+        "a": "Paul Robeson"
+      }
+    ]
+  },
+  {
+    "id": "boogie",
+    "name": "Boogie-Woogie",
+    "fam": "soul",
+    "year": 1928,
+    "role": "branch",
+    "yOff": 130,
+    "def": "A rolling, up-tempo blues piano style built on a repeating walking-bass ostinato — raucous, percussive and made for dancing.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "A repeating eight-to-the-bar walking-bass ostinato."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Percussive, driving, two-fisted piano."
+      },
+      {
+        "k": "Orientation",
+        "v": "Rent-party and dancehall."
+      }
+    ],
+    "why": "Its rolling eight-to-the-bar bass became the engine of jump blues, R&B and early rock 'n' roll piano.",
+    "artists": [
+      "Meade Lux Lewis",
+      "Albert Ammons",
+      "Pinetop Smith"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Pinetop's Boogie Woogie",
+        "a": "Pinetop Smith"
+      },
+      {
+        "t": "Honky Tonk Train Blues",
+        "a": "Meade Lux Lewis"
+      },
+      {
+        "t": "Boogie Woogie Stomp",
+        "a": "Albert Ammons"
+      }
+    ],
+    "tempo": "120–170 BPM"
+  },
+  {
+    "id": "futurefunk",
+    "name": "Future Funk",
+    "fam": "soul",
+    "fam2": "electronic",
+    "year": 2026,
+    "role": "rising",
+    "yOff": 0,
+    "def": "A sample-based revival that speeds up and chops disco, funk and Japanese city-pop into glossy, nostalgic dance loops — a streaming-era descendant of disco by way of vaporwave.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "Sped-up, filtered samples of disco, funk and city-pop."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Four-on-the-floor bounce under chopped vocal cuts."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Online, meme- and anime-adjacent net-label culture."
+      }
+    ],
+    "why": "It rebuilds disco and funk from sped-up, filtered samples, extending the dancefloor into vaporwave-era internet nostalgia.",
+    "artists": [
+      "Yung Bae",
+      "Night Tempo",
+      "Macross 82-99"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Bad Boy",
+        "a": "Yung Bae",
+        "why": "Its chopped, sped-up disco sample is the future-funk formula in miniature."
+      },
+      {
+        "t": "Plastic Love (Showa Groove)",
+        "a": "Night Tempo"
+      },
+      {
+        "t": "Sailorwave",
+        "a": "Macross 82-99"
+      }
+    ],
+    "tempo": "110–135 BPM"
+  },
+  {
+    "id": "psychsoul",
+    "name": "Psychedelic Soul",
+    "fam": "soul",
+    "fam2": "rock",
+    "year": 1967,
+    "role": "hybrid",
+    "yOff": -175,
+    "def": "Soul wired through the psychedelic studio — wah and fuzz guitar, echo, long-form arrangements and social commentary over gospel-rooted vocals.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Wah and fuzz guitar, phasing and studio echo over soul rhythm sections."
+      },
+      {
+        "k": "Song structure",
+        "v": "Extended, multi-part productions beyond the 3-minute single."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Late-60s Black pop responding to psychedelia and social upheaval."
+      }
+    ],
+    "why": "Producers like Norman Whitfield ran Motown's vocal-group formula through rock's effects rack and lengthened the groove into a trip.",
+    "artists": [
+      "The Temptations",
+      "Sly & the Family Stone",
+      "The Chambers Brothers"
+    ],
+    "albums": [
+      {
+        "t": "Cloud Nine",
+        "a": "The Temptations"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Cloud Nine",
+        "a": "The Temptations",
+        "why": "Whitfield wiring wah, echo and social realism into the Motown machine."
+      },
+      {
+        "t": "Time Has Come Today",
+        "a": "The Chambers Brothers"
+      },
+      {
+        "t": "Everyday People",
+        "a": "Sly & the Family Stone"
+      }
+    ],
+    "tempo": "90–115 BPM"
+  },
+  {
+    "id": "deepfunk",
+    "name": "Deep Funk",
+    "fam": "soul",
+    "year": 1969,
+    "role": "branch",
+    "yOff": 165,
+    "def": "Raw, regional funk 45s — small labels, live-in-the-room drums and open breaks; the crate-digger's funk that later fed hip-hop's sample banks.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Hard, unquantised drum breaks left open in the arrangement."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Lo-fi, live-to-tape small-studio grit."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Regional 45 scenes — New Orleans, Memphis, the chitlin circuit."
+      }
+    ],
+    "why": "Away from major-label polish, small bands cut groove-first singles whose open drum breaks became sampling's raw material.",
+    "artists": [
+      "The Meters",
+      "Eddie Bo",
+      "Marva Whitney"
+    ],
+    "albums": [
+      {
+        "t": "Look-Ka Py Py",
+        "a": "The Meters"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Cissy Strut",
+        "a": "The Meters",
+        "why": "Its strutting break is one of the most sampled grooves ever cut."
+      },
+      {
+        "t": "Hook and Sling",
+        "a": "Eddie Bo"
+      },
+      {
+        "t": "It's My Thing",
+        "a": "Marva Whitney"
+      }
+    ],
+    "tempo": "95–115 BPM"
+  },
+  {
+    "id": "psychfunk",
+    "name": "Psychedelic Funk",
+    "fam": "soul",
+    "fam2": "rock",
+    "year": 1970,
+    "role": "hybrid",
+    "yOff": -85,
+    "def": "Funk's locked groove stretched into acid-rock space — screaming fuzz leads, studio effects and cosmic theatrics over 'the One'.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Overdriven fuzz guitar and synth squall over funk rhythm sections."
+      },
+      {
+        "k": "Song structure",
+        "v": "Long-form jams and concept-album sprawl."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Post-Hendrix Black rock — Funkadelic, post-Riot Sly."
+      }
+    ],
+    "why": "Funkadelic put Hendrix's guitar language on top of James Brown's rhythm section and refused to choose between them.",
+    "artists": [
+      "Funkadelic",
+      "Sly & the Family Stone",
+      "Betty Davis"
+    ],
+    "albums": [
+      {
+        "t": "Free Your Mind... and Your Ass Will Follow",
+        "a": "Funkadelic"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Maggot Brain",
+        "a": "Funkadelic",
+        "why": "A ten-minute fuzz-guitar elegy over a funk band — the fusion in one track."
+      },
+      {
+        "t": "Family Affair",
+        "a": "Sly & the Family Stone"
+      },
+      {
+        "t": "If I'm in Luck I Might Get Picked Up",
+        "a": "Betty Davis"
+      }
+    ],
+    "tempo": "95–120 BPM"
+  },
+  {
+    "id": "libraryfunk",
+    "name": "Library Funk",
+    "fam": "soul",
+    "fam2": "jazz",
+    "year": 1973,
+    "role": "hybrid",
+    "yOff": 95,
+    "def": "Production-music funk cut for film and TV libraries — KPM, De Wolfe and Bruton session players writing tight, mood-labelled grooves never meant for the charts.",
+    "traits": [
+      {
+        "k": "Scene / context",
+        "v": "Licensed library LPs for broadcast use, anonymous session elite."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Punchy, clean-cut breaks engineered to sit under dialogue."
+      },
+      {
+        "k": "Song structure",
+        "v": "Short cues by mood — 30 seconds to 3 minutes."
+      }
+    ],
+    "why": "Written to order and pressed obscure, its pristine breaks and horn stabs resurfaced decades later as prime sampling material.",
+    "artists": [
+      "Keith Mansfield",
+      "Alan Hawkshaw",
+      "Janko Nilović"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Funky Fanfare",
+        "a": "Keith Mansfield",
+        "why": "A library cue that ended up in trailers, turntables and hip-hop records alike."
+      },
+      {
+        "t": "The Champ",
+        "a": "The Mohawks"
+      },
+      {
+        "t": "Xenos Cosmos",
+        "a": "Janko Nilović"
+      }
+    ],
+    "tempo": "90–125 BPM",
+    "tempoNote": "Variable — production cues span moods by design."
+  },
+  {
+    "id": "cosmicdisco",
+    "name": "Cosmic Disco",
+    "fam": "soul",
+    "fam2": "electronic",
+    "year": 1978,
+    "role": "hybrid",
+    "yOff": 55,
+    "def": "The Italian lakeside answer to disco — DJs pitching records down into a slow, hypnotic, synth-heavy churn that mixed disco with krautrock, African and dub records.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Slow, rolling tempos far below disco’s peak-time pulse."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Late-70s Italian clubs — Baldelli at Cosmic, Loda at Typhoon."
+      },
+      {
+        "k": "Orientation",
+        "v": "Hypnosis over euphoria — the long blend as instrument."
+      }
+    ],
+    "why": "By playing disco at the wrong speed and mixing in anything electronic or African, cosmic DJs invented a slower, weirder dancefloor.",
+    "artists": [
+      "Daniele Baldelli",
+      "Beppe Loda",
+      "Cerrone"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Supernature",
+        "a": "Cerrone",
+        "why": "Synth disco the cosmic DJs pitched down into slow-motion hypnosis."
+      },
+      {
+        "t": "Spacer Woman",
+        "a": "Charlie"
+      },
+      {
+        "t": "I Feel Space",
+        "a": "Lindstrøm"
+      }
+    ],
+    "tempo": "90–110 BPM"
+  },
+  {
+    "id": "doowop",
+    "name": "Doo-Wop",
+    "fam": "soul",
+    "fam2": "rock",
+    "year": 1952,
+    "role": "branch",
+    "yOff": 200,
+    "def": "R&B vocal-group harmony from the street corners of New York, Philadelphia and Chicago: nonsense-syllable backing voices, a bass anchor and a falsetto lead over I–vi–IV–V changes.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Falsetto or tenor lead over blended backing voices and a bass singer."
+      },
+      {
+        "k": "Harmony",
+        "v": "The I–vi–IV–V \"50s progression\", often in a slow 12/8."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Voices first; sparse piano, guitar and a soft backbeat."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Street-corner rehearsal and small independent R&B labels."
+      }
+    ],
+    "why": "It fixed the chord changes and the falsetto slow-dance ballad that Spector, Orbison and every retro-noir act since have reused.",
+    "artists": [
+      "The Platters",
+      "The Penguins",
+      "The Flamingos",
+      "The Five Satins",
+      "The Drifters"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Earth Angel",
+        "a": "The Penguins",
+        "why": "A 1954 independent single that crossed to the pop chart and set the slow I–vi–IV–V ballad template."
+      },
+      {
+        "t": "I Only Have Eyes for You",
+        "a": "The Flamingos"
+      },
+      {
+        "t": "In the Still of the Night",
+        "a": "The Five Satins"
+      }
+    ],
+    "tempo": "60–150 BPM",
+    "tempoNote": "Two speeds — slow 12/8 ballads and up-tempo jump numbers."
+  }
+]

@@ -1,0 +1,389 @@
+[
+  {
+    "id": "hiphop",
+    "name": "Hip-Hop",
+    "fam": "hiphop",
+    "fam2": "soul",
+    "year": 1979,
+    "role": "foundational",
+    "yOff": -30,
+    "def": "Music built from the break — looped funk and soul samples, programmed beats and rhythmic spoken rhyme over the groove.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Looped breakbeats with rhyme locked to the groove."
+      },
+      {
+        "k": "Production",
+        "v": "Sample-based loop construction and drum programming."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Rhythmic, rhymed speech (MCing)."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Block-party, turntable and DJ culture."
+      }
+    ],
+    "why": "It is loop-based construction: funk and soul breaks are looped and chopped, with rhyme riding the groove rather than melody.",
+    "artists": [
+      "Grandmaster Flash",
+      "Public Enemy",
+      "A Tribe Called Quest"
+    ],
+    "albums": [
+      {
+        "t": "The Low End Theory",
+        "a": "A Tribe Called Quest"
+      },
+      {
+        "t": "It Takes a Nation of Millions to Hold Us Back",
+        "a": "Public Enemy"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Rebel Without a Pause",
+        "a": "Public Enemy"
+      },
+      {
+        "t": "The Message",
+        "a": "Grandmaster Flash & the Furious Five"
+      },
+      {
+        "t": "Check the Rhime",
+        "a": "A Tribe Called Quest"
+      }
+    ],
+    "tempo": "80–100 BPM",
+    "tempoNote": "Era-dependent — boom bap sits here; trap-era production runs 130–170 in half-time."
+  },
+  {
+    "id": "contempornb",
+    "name": "Contemporary R&B",
+    "fam": "hiphop",
+    "fam2": "soul",
+    "year": 1991,
+    "role": "hybrid",
+    "yOff": 60,
+    "def": "Soul updated with hip-hop production — programmed beats, sampled loops and melismatic singing over swung, sub-heavy grooves.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "Hip-hop drum programming and sampling."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Melismatic, gospel-rooted lead and stacked harmony."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Swung, sub-bass-heavy groove."
+      }
+    ],
+    "why": "Gospel-rooted soul singing is set over hip-hop's programmed, sample-based beats rather than a live band.",
+    "artists": [
+      "Mary J. Blige",
+      "D Angelo",
+      "Aaliyah"
+    ],
+    "albums": [
+      {
+        "t": "Voodoo",
+        "a": "D Angelo"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Untitled (How Does It Feel)",
+        "a": "D Angelo"
+      },
+      {
+        "t": "Real Love",
+        "a": "Mary J. Blige"
+      },
+      {
+        "t": "Are You That Somebody?",
+        "a": "Aaliyah"
+      }
+    ],
+    "tempo": "60–100 BPM"
+  },
+  {
+    "id": "triphop",
+    "name": "Trip-Hop",
+    "fam": "hiphop",
+    "fam2": "electronic",
+    "year": 1993,
+    "role": "hybrid",
+    "yOff": -95,
+    "def": "Downtempo, cinematic fusion of hip-hop's sampled breaks, dub bass and space and moody jazz and soul textures — head-nod music for headphones.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Slow, swung hip-hop breakbeats."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Dub bass and space, vinyl crackle, jazzy samples."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Nocturnal, cinematic, melancholic."
+      },
+      {
+        "k": "Orientation",
+        "v": "Listening / late-night."
+      }
+    ],
+    "why": "Hip-hop's sampled breaks are slowed and wrapped in dub bass and noir jazz atmosphere for listening rather than rapping.",
+    "artists": [
+      "Massive Attack",
+      "Portishead",
+      "Tricky"
+    ],
+    "albums": [
+      {
+        "t": "Dummy",
+        "a": "Portishead"
+      },
+      {
+        "t": "Blue Lines",
+        "a": "Massive Attack"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Glory Box",
+        "a": "Portishead"
+      },
+      {
+        "t": "Teardrop",
+        "a": "Massive Attack"
+      },
+      {
+        "t": "Hell Is Round the Corner",
+        "a": "Tricky"
+      }
+    ],
+    "tempo": "60–90 BPM"
+  },
+  {
+    "id": "altrnb",
+    "name": "Alternative R&B",
+    "fam": "hiphop",
+    "fam2": "gaze",
+    "year": 2026,
+    "role": "rising",
+    "yOff": -95,
+    "def": "A moody, atmospheric strain of R&B — spacious, alternative production and confessional songwriting that blurs soul with indie, ambient and electronic texture.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Spacious, reverb-heavy, atmospheric production."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Intimate, confessional, often falsetto-led."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Post-2010 online, genre-agnostic R&B."
+      }
+    ],
+    "why": "It pulls contemporary R&B toward atmosphere and introspection, borrowing dream-pop space and trip-hop's nocturnal mood.",
+    "artists": [
+      "Frank Ocean",
+      "SZA",
+      "The Weeknd"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Self Control",
+        "a": "Frank Ocean",
+        "why": "Its hazy, guitar-lit intimacy set the template for a decade of atmospheric R&B."
+      },
+      {
+        "t": "Snooze",
+        "a": "SZA"
+      },
+      {
+        "t": "Wicked Games",
+        "a": "The Weeknd"
+      }
+    ],
+    "tempo": "60–100 BPM"
+  },
+  {
+    "id": "screwed",
+    "name": "Chopped & Screwed",
+    "fam": "hiphop",
+    "year": 1993,
+    "role": "branch",
+    "yOff": 130,
+    "aka": "Screwed & Chopped / Slowed and Throwed",
+    "def": "Houston's remix technique turned genre — records dragged down to a crawl, beats stopped and doubled back by hand, the whole mix smeared into a syrupy haze.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "Turntable and tape pitched down to roughly 60–70% speed."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Chopped stutters — beats doubled, skipped and rewound live."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Deepened, blurred vocals over smeared low end."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Houston mixtape culture and DJ Screw's Screwed Up Click."
+      }
+    ],
+    "why": "It proves tempo and pitch alone can make a different music — the same record, slowed, becomes narcotic and unfamiliar.",
+    "artists": [
+      "DJ Screw",
+      "Big Moe",
+      "Michael Watts"
+    ],
+    "albums": [
+      {
+        "t": "3 'N the Mornin' (Part Two)",
+        "a": "DJ Screw"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "June 27th Freestyle",
+        "a": "DJ Screw",
+        "why": "The most famous screwtape of all — thirty-odd minutes that defined the Houston sound."
+      },
+      {
+        "t": "Barre Baby",
+        "a": "Big Moe"
+      },
+      {
+        "t": "Sailin' Da South",
+        "a": "DJ Screw"
+      }
+    ],
+    "tempo": "50–70 BPM",
+    "tempoNote": "Whatever the source record was, at roughly 60–70% speed."
+  },
+  {
+    "id": "miamibass",
+    "name": "Miami Bass",
+    "fam": "hiphop",
+    "fam2": "electronic",
+    "year": 1985,
+    "role": "branch",
+    "yOff": 100,
+    "aka": "Booty Bass",
+    "def": "South Florida's party rap — Roland TR-808 drums, long sustained kicks and sub-bass at dance tempos under call-and-response chants and explicit lyrics.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Electro-derived 808 patterns pushed to roughly 125–140 BPM."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Long, boomy 808 kick and sub-bass built for car and club systems."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Chanted, call-and-response party hooks, often sexually explicit."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Miami clubs, car-audio culture and independent labels like Luke Records."
+      }
+    ],
+    "why": "It turned electro's drum machine into a bass-first party format, and its records became the raw material for Rio's funk carioca.",
+    "artists": [
+      "2 Live Crew",
+      "DJ Magic Mike",
+      "MC A.D.E."
+    ],
+    "albums": [
+      {
+        "t": "As Nasty As They Wanna Be",
+        "a": "2 Live Crew"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Throw the D",
+        "a": "2 Live Crew",
+        "why": "The 808 kick and chant template the scene was built on."
+      },
+      {
+        "t": "Bass Rock Express",
+        "a": "MC A.D.E."
+      },
+      {
+        "t": "Drop the Bass",
+        "a": "DJ Magic Mike"
+      }
+    ],
+    "tempo": "125–140 BPM"
+  },
+  {
+    "id": "phonk",
+    "name": "Phonk",
+    "fam": "hiphop",
+    "fam2": "electronic",
+    "year": 2012,
+    "role": "branch",
+    "yOff": -80,
+    "aka": "Memphis Phonk / Drift Phonk",
+    "def": "Internet-born hip-hop rebuilt from 90s Memphis rap tapes — lo-fi cassette grit, slowed and chopped vocal samples and TR-808 cowbell, later sped up into drift phonk.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "Samples of 90s Memphis rap tapes, pitched down and chopped."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Lo-fi hiss, blown-out 808s and the 808 cowbell as lead."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Slow Memphis bounce; drift phonk pushes it to fast, distorted club tempo."
+      },
+      {
+        "k": "Scene / context",
+        "v": "SoundCloud, then TikTok and car-edit videos; a large Russian and Eastern European producer base."
+      }
+    ],
+    "why": "It revived Memphis tape culture as an online genre, and its drift strain became one of the most-streamed sounds of the 2020s.",
+    "artists": [
+      "SpaceGhostPurrp",
+      "Kordhell",
+      "DVRST"
+    ],
+    "albums": [
+      {
+        "t": "Mysterious Phonk: The Chronicles of SpaceGhostPurrp",
+        "a": "SpaceGhostPurrp"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Murder in My Mind",
+        "a": "Kordhell",
+        "why": "Cowbell lead and distorted bass — drift phonk at its streaming peak."
+      },
+      {
+        "t": "Close Eyes",
+        "a": "DVRST"
+      },
+      {
+        "t": "Phonky Town",
+        "a": "PlayaPhonk"
+      }
+    ]
+  }
+]

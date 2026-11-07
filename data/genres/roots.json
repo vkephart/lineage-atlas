@@ -1,0 +1,479 @@
+[
+  {
+    "id": "folk",
+    "name": "Folk",
+    "fam": "roots",
+    "year": 1958,
+    "role": "foundational",
+    "yOff": -40,
+    "def": "Acoustic song rooted in traditional and topical material — voice, guitar and storytelling foregrounded over production.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Acoustic guitar, voice, banjo, fiddle."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Narrative, plain-spoken, lyric-forward."
+      },
+      {
+        "k": "Song structure",
+        "v": "Strophic, verse-driven song."
+      }
+    ],
+    "why": "Stripped acoustic backing keeps the focus on lyric, melody and storytelling tradition.",
+    "artists": [
+      "Woody Guthrie",
+      "Bob Dylan",
+      "Joan Baez"
+    ],
+    "albums": [
+      {
+        "t": "The Freewheelin Bob Dylan",
+        "a": "Bob Dylan"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "A Hard Rains a-Gonna Fall",
+        "a": "Bob Dylan"
+      },
+      {
+        "t": "This Land Is Your Land",
+        "a": "Woody Guthrie"
+      },
+      {
+        "t": "Diamonds & Rust",
+        "a": "Joan Baez"
+      }
+    ],
+    "tempo": "70–130 BPM",
+    "tempoNote": "Wide range — tempo follows the song, not the genre."
+  },
+  {
+    "id": "country",
+    "name": "Country",
+    "fam": "roots",
+    "year": 1948,
+    "role": "foundational",
+    "yOff": 70,
+    "def": "White Southern roots music of fiddle, steel guitar and plain-spoken song — descended from folk balladry and the blues.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Pedal steel, fiddle, acoustic and electric guitar."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Twangy, narrative, often close-harmony."
+      },
+      {
+        "k": "Harmony",
+        "v": "Simple I–IV–V with blue-note inflection."
+      }
+    ],
+    "why": "Steel guitar and fiddle over simple chords frame a plain, narrative vocal rooted in folk and blues.",
+    "artists": [
+      "Hank Williams",
+      "Johnny Cash",
+      "Patsy Cline"
+    ],
+    "albums": [
+      {
+        "t": "At Folsom Prison",
+        "a": "Johnny Cash"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "I Walk the Line",
+        "a": "Johnny Cash"
+      },
+      {
+        "t": "Your Cheatin' Heart",
+        "a": "Hank Williams"
+      },
+      {
+        "t": "Crazy",
+        "a": "Patsy Cline"
+      }
+    ],
+    "tempo": "80–130 BPM",
+    "tempoNote": "Variable — weepers to two-steps."
+  },
+  {
+    "id": "cosmicamerican",
+    "name": "Cosmic American Music",
+    "fam": "roots",
+    "fam2": "rock",
+    "year": 1968,
+    "role": "hybrid",
+    "yOff": -95,
+    "def": "Gram Parsons' name for his fusion of country, soul, R&B and rock — honky-tonk and pedal steel played by long-haired rock musicians for a counterculture audience.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Pedal steel, fiddle and Telecaster twang with a rock rhythm section."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Close, mournful country harmony."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Late-60s Los Angeles, between the Sunset Strip and Bakersfield."
+      }
+    ],
+    "why": "It brought straight country songcraft into the rock counterculture at a time when the two scenes kept apart.",
+    "artists": [
+      "Gram Parsons",
+      "The Flying Burrito Brothers",
+      "Emmylou Harris"
+    ],
+    "albums": [
+      {
+        "t": "Sweetheart of the Rodeo",
+        "a": "The Byrds"
+      },
+      {
+        "t": "Grievous Angel",
+        "a": "Gram Parsons"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Hickory Wind",
+        "a": "The Byrds",
+        "why": "Parsons' ballad on Sweetheart of the Rodeo, the record that turned a rock band toward Nashville."
+      },
+      {
+        "t": "Sin City",
+        "a": "The Flying Burrito Brothers"
+      },
+      {
+        "t": "Return of the Grievous Angel",
+        "a": "Gram Parsons"
+      }
+    ],
+    "tempo": "70–125 BPM",
+    "tempoNote": "Ballads to honky-tonk shuffles."
+  },
+  {
+    "id": "americana",
+    "name": "Americana",
+    "fam": "roots",
+    "fam2": "rock",
+    "year": 1996,
+    "role": "hybrid",
+    "yOff": -5,
+    "def": "A modern blend of folk, country, blues and rock — roots instrumentation and songwriting filtered through indie sensibility.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Roots palette — acoustic, steel, organ — with a rock band."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Weathered, narrative songwriting."
+      },
+      {
+        "k": "Production",
+        "v": "Warm, organic, mid-fi."
+      }
+    ],
+    "why": "It recombines folk, country and blues roots within a rock and indie framework, foregrounding songcraft and warmth.",
+    "artists": [
+      "Wilco",
+      "Gillian Welch",
+      "Ryan Adams"
+    ],
+    "albums": [
+      {
+        "t": "Yankee Hotel Foxtrot",
+        "a": "Wilco"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Jesus, Etc.",
+        "a": "Wilco"
+      },
+      {
+        "t": "Time (The Revelator)",
+        "a": "Gillian Welch"
+      },
+      {
+        "t": "New York, New York",
+        "a": "Ryan Adams"
+      }
+    ],
+    "tempo": "70–120 BPM",
+    "tempoNote": "Variable across its roots sources."
+  },
+  {
+    "id": "oldtime",
+    "name": "Old-Time / Hillbilly",
+    "fam": "roots",
+    "year": 1923,
+    "role": "foundational",
+    "yOff": -120,
+    "def": "Rural Southern white string-band music of fiddle and banjo — Appalachian ballads and dance tunes that seeded country, bluegrass and the folk revival.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Fiddle, clawhammer banjo and guitar."
+      },
+      {
+        "k": "Repertoire",
+        "v": "Appalachian ballads and breakdowns."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Rural front-porch and barn-dance."
+      }
+    ],
+    "why": "The fiddle-and-banjo string-band tradition is the Anglo-American root that country and bluegrass grow directly out of.",
+    "artists": [
+      "The Carter Family",
+      "Charlie Poole",
+      "Uncle Dave Macon"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Wildwood Flower",
+        "a": "The Carter Family"
+      },
+      {
+        "t": "Can the Circle Be Unbroken",
+        "a": "The Carter Family"
+      },
+      {
+        "t": "Cumberland Gap",
+        "a": "Uncle Dave Macon"
+      }
+    ],
+    "tempo": "90–140 BPM"
+  },
+  {
+    "id": "bluegrass",
+    "name": "Bluegrass",
+    "fam": "roots",
+    "year": 1946,
+    "role": "branch",
+    "yOff": 120,
+    "def": "A fast, virtuosic acoustic string music codified by Bill Monroe — breakneck breakdowns, high-lonesome harmony and hot instrumental solos.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "A driving, up-tempo acoustic pulse."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Virtuosic banjo, fiddle and mandolin solos."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "High-lonesome close harmony."
+      }
+    ],
+    "why": "It accelerates old-time string-band music into a virtuosic, solo-trading form, with high-lonesome harmony as its signature.",
+    "artists": [
+      "Bill Monroe",
+      "Flatt & Scruggs",
+      "The Stanley Brothers"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Blue Moon of Kentucky",
+        "a": "Bill Monroe"
+      },
+      {
+        "t": "Foggy Mountain Breakdown",
+        "a": "Flatt & Scruggs"
+      },
+      {
+        "t": "Man of Constant Sorrow",
+        "a": "The Stanley Brothers"
+      }
+    ],
+    "tempo": "130–180 BPM"
+  },
+  {
+    "id": "cosmiccountry",
+    "name": "Cosmic Country",
+    "fam": "roots",
+    "fam2": "rock",
+    "year": 2014,
+    "role": "rising",
+    "yOff": 60,
+    "def": "A psychedelic, genre-blurring update of country and Americana — pedal steel and traditional song filtered through synths, soul and an outsider, cosmic sensibility.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Pedal steel and twang beside synths and strings."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Confessional, tradition-aware songwriting."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Genre-fluid, Nashville-adjacent outsiders."
+      }
+    ],
+    "why": "It reimagines country and Americana through psychedelic production and soul, blurring roots tradition with modern pop.",
+    "artists": [
+      "Sturgill Simpson",
+      "Kacey Musgraves",
+      "Orville Peck"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Turtles All the Way Down",
+        "a": "Sturgill Simpson",
+        "why": "Its psychedelic strings under classic country songwriting defined the cosmic turn."
+      },
+      {
+        "t": "Slow Burn",
+        "a": "Kacey Musgraves"
+      },
+      {
+        "t": "Dead of Night",
+        "a": "Orville Peck"
+      }
+    ],
+    "tempo": "70–120 BPM",
+    "tempoNote": "Variable across its country, soul and psych sources."
+  },
+  {
+    "id": "countryrock",
+    "name": "Country Rock",
+    "fam": "roots",
+    "fam2": "rock",
+    "year": 1968,
+    "role": "hybrid",
+    "yOff": 60,
+    "def": "Rock bands playing country — pedal steel, Telecaster twang and close harmony over a rock rhythm section, from the Byrds' Nashville turn in 1968 to the Eagles' radio dominance in the early 70s.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Pedal steel, banjo and Telecaster beside a rock bass-and-drums backbeat."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Stacked three- and four-part country-style harmony on the chorus."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Relaxed mid-tempo shuffle or straight 4/4 — never honky-tonk fast."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Los Angeles 1968–74: the Troubadour, Laurel Canyon and the Asylum Records roster."
+      }
+    ],
+    "why": "It keeps country's instruments and harmony singing but plays them with a rock band's volume and a counterculture audience in mind, so the twang reads as warmth rather than tradition.",
+    "artists": [
+      "The Byrds",
+      "Poco",
+      "The Flying Burrito Brothers",
+      "Eagles",
+      "Linda Ronstadt"
+    ],
+    "albums": [
+      {
+        "t": "Sweetheart of the Rodeo",
+        "a": "The Byrds"
+      },
+      {
+        "t": "Eagles",
+        "a": "Eagles"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Take It Easy",
+        "a": "Eagles",
+        "why": "Banjo, Telecaster and stacked harmony on a 1972 top-20 single — country rock reaching the mainstream it was built for."
+      },
+      {
+        "t": "You Ain't Goin' Nowhere",
+        "a": "The Byrds"
+      },
+      {
+        "t": "Pickin' Up the Pieces",
+        "a": "Poco"
+      }
+    ],
+    "tempo": "90–130 BPM",
+    "tempoNote": "Mid-tempo shuffles and easy 4/4 — the lope of 'Take It Easy' rather than honky-tonk drive."
+  },
+  {
+    "id": "singersongwriter",
+    "name": "Singer-Songwriter",
+    "fam": "roots",
+    "fam2": "rock",
+    "year": 1970,
+    "role": "branch",
+    "yOff": -160,
+    "aka": "Confessional Folk-Pop",
+    "def": "The solo writer-performer as the whole point — confessional first-person lyrics, acoustic guitar or piano up front, and restrained studio backing that stays out of the voice's way.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Intimate, conversational, close-miked; the words carry the performance."
+      },
+      {
+        "k": "Harmony",
+        "v": "Open tunings, suspended chords and jazz-tinged piano voicings beneath simple melodies."
+      },
+      {
+        "k": "Production",
+        "v": "Dry, warm and uncluttered — acoustic instrument, voice and a light rhythm section."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Laurel Canyon and the Troubadour, 1968–72 — Joni Mitchell, James Taylor, Carole King and Jackson Browne writing within walking distance of each other."
+      }
+    ],
+    "why": "Folk's lyric-first plainness is turned inward: private experience replaces topical protest, and the arrangement is built to frame one voice telling the truth.",
+    "artists": [
+      "James Taylor",
+      "Joni Mitchell",
+      "Carole King",
+      "Jackson Browne",
+      "Leonard Cohen",
+      "Nick Drake"
+    ],
+    "albums": [
+      {
+        "t": "Blue",
+        "a": "Joni Mitchell"
+      },
+      {
+        "t": "Tapestry",
+        "a": "Carole King"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Fire and Rain",
+        "a": "James Taylor",
+        "why": "Confessional lyric, fingerpicked acoustic and a discreet rhythm section — the 1970 record that put the format on the radio."
+      },
+      {
+        "t": "A Case of You",
+        "a": "Joni Mitchell"
+      },
+      {
+        "t": "Pink Moon",
+        "a": "Nick Drake"
+      }
+    ],
+    "tempo": "60–110 BPM",
+    "tempoNote": "Ballad to easy mid-tempo; rubato and conversational phrasing are common."
+  }
+]

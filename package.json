@@ -1,0 +1,27 @@
+{
+  "name": "lineage-atlas",
+  "private": true,
+  "version": "1.0.0",
+  "description": "The Music Genre Lineage Atlas — an interactive map of how music genres evolved and influenced one another.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run validate && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "validate": "tsx scripts/validate-data.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^6.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vite": "^8.0.0"
+  }
+}

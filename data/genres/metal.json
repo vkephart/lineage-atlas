@@ -1,0 +1,748 @@
+[
+  {
+    "id": "heavymetal",
+    "name": "Heavy Metal",
+    "fam": "metal",
+    "year": 1970,
+    "role": "foundational",
+    "yOff": -40,
+    "def": "Blues rock darkened, downtuned and amplified into ritual heaviness — tritone riffs, doom-laden lyrics and the guitar riff as monolith.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Distorted, downtuned, riff-centred guitar."
+      },
+      {
+        "k": "Harmony",
+        "v": "Minor keys, tritones and power chords."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Heavy, deliberate backbeat built around the riff."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Industrial-Midlands gloom over hippie optimism."
+      }
+    ],
+    "why": "It slows and darkens electrified blues until the distorted riff itself becomes the composition's core.",
+    "artists": [
+      "Black Sabbath",
+      "Judas Priest",
+      "Iron Maiden"
+    ],
+    "albums": [
+      {
+        "t": "Paranoid",
+        "a": "Black Sabbath"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Black Sabbath",
+        "a": "Black Sabbath",
+        "why": "Its tritone riff over a tolling bell is the founding gesture of metal."
+      },
+      {
+        "t": "Paranoid",
+        "a": "Black Sabbath"
+      },
+      {
+        "t": "Breaking the Law",
+        "a": "Judas Priest"
+      }
+    ],
+    "tempo": "100–140 BPM"
+  },
+  {
+    "id": "thrash",
+    "name": "Thrash Metal",
+    "fam": "metal",
+    "year": 1983,
+    "role": "branch",
+    "yOff": -110,
+    "def": "Metal accelerated by hardcore punk — palm-muted riffing at breakneck tempo, precision aggression and an underground tape-trading ethos.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Fast, palm-muted downpicking and double-kick drive."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Tight, percussive, scooped-mid distortion."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Underground tape-trading and DIY metal clubs."
+      }
+    ],
+    "why": "It fuses punk's velocity with metal's riff discipline into fast, precise aggression.",
+    "artists": [
+      "Metallica",
+      "Slayer",
+      "Megadeth"
+    ],
+    "albums": [
+      {
+        "t": "Master of Puppets",
+        "a": "Metallica"
+      },
+      {
+        "t": "Reign in Blood",
+        "a": "Slayer"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Master of Puppets",
+        "a": "Metallica",
+        "why": "Eight minutes of riff architecture that made thrash the new metal standard."
+      },
+      {
+        "t": "Raining Blood",
+        "a": "Slayer"
+      },
+      {
+        "t": "Peace Sells",
+        "a": "Megadeth"
+      }
+    ],
+    "tempo": "160–220 BPM"
+  },
+  {
+    "id": "glammetal",
+    "name": "Glam / Hair Metal",
+    "fam": "metal",
+    "fam2": "rock",
+    "year": 1983,
+    "role": "branch",
+    "yOff": -10,
+    "def": "Metal teased, lacquered and aimed at MTV — pop hooks and power ballads under hard rock riffs, delivered with Sunset Strip spectacle.",
+    "traits": [
+      {
+        "k": "Melody",
+        "v": "Huge pop choruses and stacked gang vocals."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Bright high-gain riffs and shredding solos."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Sunset Strip clubs and the MTV video age."
+      }
+    ],
+    "why": "It points metal's riff and shred at the pop chart — image, hooks and the power ballad as commercial art.",
+    "artists": [
+      "Mötley Crüe",
+      "Ratt",
+      "Def Leppard"
+    ],
+    "albums": [
+      {
+        "t": "Shout at the Devil",
+        "a": "Mötley Crüe"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Pour Some Sugar on Me",
+        "a": "Def Leppard",
+        "why": "Mutt Lange's stacked-chorus production is the hair-metal hit machine distilled."
+      },
+      {
+        "t": "Round and Round",
+        "a": "Ratt"
+      },
+      {
+        "t": "Kickstart My Heart",
+        "a": "Mötley Crüe"
+      }
+    ],
+    "tempo": "110–140 BPM"
+  },
+  {
+    "id": "doom",
+    "name": "Doom Metal",
+    "fam": "metal",
+    "year": 1984,
+    "role": "branch",
+    "yOff": 90,
+    "def": "Sabbath's slowest instincts made a genre — glacial tempos, mournful melody and riffs stretched until heaviness becomes atmosphere.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Crawling, dirge-like tempos."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Massive, sustained, downtuned riffs."
+      },
+      {
+        "k": "Harmony",
+        "v": "Mournful minor and modal lament."
+      }
+    ],
+    "why": "It slows metal to a crawl so weight and dread, not speed, carry the music.",
+    "artists": [
+      "Candlemass",
+      "Saint Vitus",
+      "Electric Wizard"
+    ],
+    "albums": [
+      {
+        "t": "Epicus Doomicus Metallicus",
+        "a": "Candlemass"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Solitude",
+        "a": "Candlemass"
+      },
+      {
+        "t": "Born Too Late",
+        "a": "Saint Vitus"
+      },
+      {
+        "t": "Funeralopolis",
+        "a": "Electric Wizard"
+      }
+    ],
+    "tempo": "40–80 BPM"
+  },
+  {
+    "id": "desertrock",
+    "name": "Desert Rock",
+    "fam": "metal",
+    "fam2": "rock",
+    "year": 1992,
+    "role": "hybrid",
+    "yOff": 145,
+    "def": "The Palm Desert sound — Sabbath riffs detuned and jammed at generator parties in the California desert: fuzzy, groove-heavy and sun-baked psychedelic.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Thick, downtuned fuzz, guitars through bass amps."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Rolling, hypnotic, mid-tempo groove."
+      },
+      {
+        "k": "Song structure",
+        "v": "Open-ended, jam-born riff cycles."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Generator parties in the Coachella Valley."
+      }
+    ],
+    "why": "It loosens metal's riff into a hypnotic, psychedelic groove — heaviness played for trance rather than aggression.",
+    "artists": [
+      "Kyuss",
+      "Queens of the Stone Age",
+      "Fu Manchu"
+    ],
+    "albums": [
+      {
+        "t": "Welcome to Sky Valley",
+        "a": "Kyuss"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Gardenia",
+        "a": "Kyuss",
+        "why": "Downtuned fuzz rolling in an endless groove — the desert sound defined."
+      },
+      {
+        "t": "No One Knows",
+        "a": "Queens of the Stone Age"
+      },
+      {
+        "t": "Evil Eye",
+        "a": "Fu Manchu"
+      }
+    ],
+    "tempo": "90–130 BPM"
+  },
+  {
+    "id": "sludge",
+    "name": "Sludge Metal",
+    "fam": "metal",
+    "year": 1993,
+    "role": "branch",
+    "yOff": -30,
+    "def": "Doom's crawl poisoned by hardcore's rage — tarry, feedback-caked riffs, screamed bile and a swampy Southern heaviness.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Tarry, feedback-caked, downtuned sludge."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Dirge crawls that lurch into hardcore bursts."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Screamed, corroded, misanthropic."
+      },
+      {
+        "k": "Scene / context",
+        "v": "New Orleans and the post-Melvins underground."
+      }
+    ],
+    "why": "It welds doom's glacial weight to hardcore's fury — heaviness as abjection rather than ritual.",
+    "artists": [
+      "Melvins",
+      "Eyehategod",
+      "Crowbar"
+    ],
+    "albums": [
+      {
+        "t": "Take as Needed for Pain",
+        "a": "Eyehategod"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Boris",
+        "a": "Melvins",
+        "why": "One riff dragged to breaking point — the founding document of sludge."
+      },
+      {
+        "t": "Dixie Whiskey",
+        "a": "Eyehategod"
+      },
+      {
+        "t": "Planets Collide",
+        "a": "Crowbar"
+      }
+    ],
+    "tempo": "50–90 BPM"
+  },
+  {
+    "id": "stonerrock",
+    "name": "Stoner Rock / Metal",
+    "fam": "metal",
+    "fam2": "rock",
+    "year": 1999,
+    "role": "branch",
+    "yOff": 145,
+    "def": "The desert sound gone worldwide — huge, fuzzy, Sabbath-derived riffs slowed to a heavy-lidded groove, from Sleep's monolithic drones to Monster Magnet's space rock.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Cranked fuzz and cavernous, vintage-amp warmth."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Slow-to-mid tempo, head-nodding riff cycles."
+      },
+      {
+        "k": "Harmony",
+        "v": "Pentatonic, blues-rooted Sabbath worship."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Man’s Ruin, Rise Above and the 90s riff underground."
+      }
+    ],
+    "why": "It universalises desert rock's recipe — the giant fuzzed riff, repeated until hypnotic, as an end in itself.",
+    "artists": [
+      "Sleep",
+      "Electric Wizard",
+      "Monster Magnet"
+    ],
+    "albums": [
+      {
+        "t": "Dopesmoker",
+        "a": "Sleep"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Dragonaut",
+        "a": "Sleep",
+        "why": "A riff the size of a planet at a stoned crawl — the stoner metal blueprint."
+      },
+      {
+        "t": "Return Trip",
+        "a": "Electric Wizard"
+      },
+      {
+        "t": "Space Lord",
+        "a": "Monster Magnet"
+      }
+    ],
+    "tempo": "70–110 BPM"
+  },
+  {
+    "id": "death",
+    "name": "Death Metal",
+    "fam": "metal",
+    "year": 1987,
+    "role": "branch",
+    "yOff": -20,
+    "def": "Thrash pushed past its limits — guttural vocals, blast beats, downtuned tremolo riffing and virtuosic, labyrinthine song structures.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Guttural, pitchless growl."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Blast beats and double-kick extremity."
+      },
+      {
+        "k": "Song structure",
+        "v": "Dense, riff-chaining, through-composed forms."
+      }
+    ],
+    "why": "It extends thrash's speed and precision into deliberate extremity — growled vocals, blast beats and riff labyrinths.",
+    "artists": [
+      "Death",
+      "Morbid Angel",
+      "Obituary"
+    ],
+    "albums": [
+      {
+        "t": "Symbolic",
+        "a": "Death"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Pull the Plug",
+        "a": "Death",
+        "why": "Schuldiner's riffcraft defined death metal's balance of brutality and composition."
+      },
+      {
+        "t": "Immortal Rites",
+        "a": "Morbid Angel"
+      },
+      {
+        "t": "Slowly We Rot",
+        "a": "Obituary"
+      }
+    ],
+    "tempo": "180–250 BPM",
+    "tempoNote": "Blast sections push higher; doom-death passages far lower."
+  },
+  {
+    "id": "black",
+    "name": "Black Metal",
+    "fam": "metal",
+    "year": 1991,
+    "role": "branch",
+    "yOff": -130,
+    "def": "The Norwegian second wave — shrieked vocals, lo-fi production and icy tremolo riffing aimed at atmosphere, misanthropy and the sublime.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Treble-heavy, lo-fi wall of tremolo guitar."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Shrieked, buried, inhuman."
+      },
+      {
+        "k": "Production",
+        "v": "Deliberately raw and cold."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Norwegian underground extremity and mystique."
+      }
+    ],
+    "why": "Lo-fi tremolo walls and shrieked vocals trade death metal's precision for freezing atmosphere.",
+    "artists": [
+      "Mayhem",
+      "Darkthrone",
+      "Emperor"
+    ],
+    "albums": [
+      {
+        "t": "De Mysteriis Dom Sathanas",
+        "a": "Mayhem"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Freezing Moon",
+        "a": "Mayhem",
+        "why": "Its raw tremolo chill is the blueprint of second-wave black metal."
+      },
+      {
+        "t": "Transilvanian Hunger",
+        "a": "Darkthrone"
+      },
+      {
+        "t": "I Am the Black Wizards",
+        "a": "Emperor"
+      }
+    ],
+    "tempo": "160–250 BPM",
+    "tempoNote": "Wide range — blast-beat fury beside slow atmospheric passages."
+  },
+  {
+    "id": "postmetal",
+    "name": "Post-Metal",
+    "fam": "metal",
+    "fam2": "rock",
+    "year": 2000,
+    "role": "hybrid",
+    "yOff": 45,
+    "def": "Metal's weight applied to post-rock's patience — long, tidal builds where crushing riffs arrive as crescendo rather than constant assault.",
+    "traits": [
+      {
+        "k": "Song structure",
+        "v": "Long quiet-to-crushing dynamic arcs."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Layered, textural guitar beneath tectonic riffs."
+      },
+      {
+        "k": "Orientation",
+        "v": "Immersive, album-length listening."
+      }
+    ],
+    "why": "It borrows post-rock's crescendo form and lets metal's heaviness land as a wave instead of a wall.",
+    "artists": [
+      "Isis",
+      "Neurosis",
+      "Cult of Luna"
+    ],
+    "albums": [
+      {
+        "t": "Oceanic",
+        "a": "Isis"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "The Beginning and the End",
+        "a": "Isis"
+      },
+      {
+        "t": "Through Silver in Blood",
+        "a": "Neurosis"
+      },
+      {
+        "t": "Finland",
+        "a": "Cult of Luna"
+      }
+    ],
+    "tempo": "60–120 BPM"
+  },
+  {
+    "id": "blackgaze",
+    "name": "Blackgaze",
+    "fam": "metal",
+    "fam2": "gaze",
+    "year": 2013,
+    "role": "hybrid",
+    "yOff": -30,
+    "def": "Black metal's shriek and blast beats flooded with shoegaze's blissed-out wall of sound — extremity and euphoria in the same wash.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Tremolo walls blurred into major-key shimmer."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Buried shrieks used as texture."
+      },
+      {
+        "k": "Harmony",
+        "v": "Euphoric, post-rock-leaning progressions."
+      }
+    ],
+    "why": "It runs black metal's tremolo wall through shoegaze's dream-soaked layering, turning fury into bliss.",
+    "artists": [
+      "Deafheaven",
+      "Alcest",
+      "Lantlôs"
+    ],
+    "albums": [
+      {
+        "t": "Sunbather",
+        "a": "Deafheaven"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Dream House",
+        "a": "Deafheaven",
+        "why": "Black-metal shriek over pink-hued shoegaze bliss — the genre in one track."
+      },
+      {
+        "t": "Autre Temps",
+        "a": "Alcest"
+      },
+      {
+        "t": "Melting Sun",
+        "a": "Lantlôs"
+      }
+    ],
+    "tempo": "140–200 BPM"
+  },
+  {
+    "id": "progmetal",
+    "name": "Progressive Metal",
+    "fam": "metal",
+    "fam2": "rock",
+    "year": 1990,
+    "role": "hybrid",
+    "yOff": 40,
+    "def": "Prog rock's odd meters and suite forms fused with metal's weight — virtuosic, conceptual and rhythmically labyrinthine.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Odd meters, polyrhythm and syncopated riff cycles."
+      },
+      {
+        "k": "Song structure",
+        "v": "Long, multi-part conceptual epics."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Precise, articulate high-gain guitar."
+      }
+    ],
+    "why": "It sets prog's compositional ambition inside metal's riff discipline — complexity delivered at full weight.",
+    "artists": [
+      "Dream Theater",
+      "Queensrÿche",
+      "Meshuggah"
+    ],
+    "albums": [
+      {
+        "t": "Images and Words",
+        "a": "Dream Theater"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Pull Me Under",
+        "a": "Dream Theater"
+      },
+      {
+        "t": "Bleed",
+        "a": "Meshuggah",
+        "why": "Its polyrhythmic riff grid spawned the entire djent movement."
+      },
+      {
+        "t": "Eyes of a Stranger",
+        "a": "Queensrÿche"
+      }
+    ],
+    "tempo": "80–200 BPM",
+    "tempoNote": "Highly variable — odd meters and multi-section suites defy a single tempo."
+  },
+  {
+    "id": "metalcore",
+    "name": "Metalcore",
+    "fam": "metal",
+    "fam2": "rock",
+    "year": 2002,
+    "role": "hybrid",
+    "yOff": -60,
+    "def": "Hardcore punk's breakdowns welded to melodic metal riffing — scream-and-sing dynamics built around the mosh-part drop.",
+    "traits": [
+      {
+        "k": "Song structure",
+        "v": "Riff → breakdown architecture; scream verses, sung hooks."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Half-time breakdowns as the climactic payoff."
+      },
+      {
+        "k": "Scene / context",
+        "v": "2000s hardcore venues gone mainstream-metal."
+      }
+    ],
+    "why": "It grafts hardcore's breakdown culture onto melodic metal riffing, making the drop the destination.",
+    "artists": [
+      "Killswitch Engage",
+      "Converge",
+      "As I Lay Dying"
+    ],
+    "albums": [
+      {
+        "t": "Alive or Just Breathing",
+        "a": "Killswitch Engage"
+      },
+      {
+        "t": "Jane Doe",
+        "a": "Converge"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "My Last Serenade",
+        "a": "Killswitch Engage"
+      },
+      {
+        "t": "Concubine",
+        "a": "Converge"
+      },
+      {
+        "t": "94 Hours",
+        "a": "As I Lay Dying"
+      }
+    ],
+    "tempo": "120–180 BPM",
+    "tempoNote": "Half-time breakdowns make the felt tempo swing widely within one song."
+  },
+  {
+    "id": "newmetalcore",
+    "name": "Modern Metalcore",
+    "fam": "metal",
+    "year": 2026,
+    "role": "rising",
+    "yOff": 30,
+    "def": "The 2020s metal resurgence — metalcore re-armed with pop-grade production, deathcore extremity and genre-fluid features, filling arenas again.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "Polished, modern, drop-tuned and sample-layered."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Extreme lows and soaring cleans in one song."
+      },
+      {
+        "k": "Scene / context",
+        "v": "TikTok- and festival-scale metal revival."
+      }
+    ],
+    "why": "It fuses metalcore's breakdown architecture with modern production and extremity, pulling metal back into the mainstream.",
+    "artists": [
+      "Knocked Loose",
+      "Spiritbox",
+      "Lorna Shore"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Suffocate",
+        "a": "Knocked Loose feat. Poppy",
+        "why": "A pop-crossover breakdown that put extreme metal back on award-show stages."
+      },
+      {
+        "t": "Circle With Me",
+        "a": "Spiritbox"
+      },
+      {
+        "t": "To the Hellfire",
+        "a": "Lorna Shore"
+      }
+    ],
+    "tempo": "100–160 BPM",
+    "tempoNote": "Variable — genre-fluid songs shift tempo and feel section to section."
+  }
+]

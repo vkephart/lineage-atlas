@@ -1,0 +1,2114 @@
+{
+  "Chris Isaak": [
+    "noircrooner",
+    "rockabilly"
+  ],
+  "Richard Hawley": [
+    "noircrooner",
+    "baroquepop"
+  ],
+  "Dead Man’s Bones": [
+    "noircrooner",
+    "indie"
+  ],
+  "Dead Man's Bones": [
+    "noircrooner",
+    "indie"
+  ],
+  "Marlon Williams": [
+    "noircrooner",
+    "americana"
+  ],
+  "Timber Timbre": [
+    "noircrooner",
+    "americana"
+  ],
+  "Orville Peck": [
+    "noircrooner",
+    "country"
+  ],
+  "The Last Shadow Puppets": [
+    "noircrooner",
+    "baroquepop"
+  ],
+  "Roy Orbison": [
+    "rockabilly",
+    "noircrooner",
+    "doowop"
+  ],
+  "Scott Walker": [
+    "baroquepop",
+    "noircrooner"
+  ],
+  "Lee Hazlewood": [
+    "country",
+    "noircrooner"
+  ],
+  "Supergrass": [
+    "britpop"
+  ],
+  "Suede": [
+    "britpop",
+    "glamrock"
+  ],
+  "Elastica": [
+    "britpop",
+    "postpunk"
+  ],
+  "Manic Street Preachers": [
+    "britpop",
+    "alternative"
+  ],
+  "Swervedriver": [
+    "shoegaze",
+    "alternative"
+  ],
+  "Foals": [
+    "mathpop",
+    "indiedance"
+  ],
+  "Youthmovies": [
+    "mathpop"
+  ],
+  "This Town Needs Guns": [
+    "mathpop",
+    "midwestemo"
+  ],
+  "Minus the Bear": [
+    "mathpop"
+  ],
+  "Tera Melos": [
+    "mathpop",
+    "mathrock"
+  ],
+  "tricot": [
+    "mathpop"
+  ],
+  "Maria Callas": [
+    "opera"
+  ],
+  "Luciano Pavarotti": [
+    "opera"
+  ],
+  "Enrico Caruso": [
+    "opera"
+  ],
+  "Gioachino Rossini": [
+    "opera"
+  ],
+  "Georges Bizet": [
+    "opera"
+  ],
+  "Richard Strauss": [
+    "opera",
+    "classical"
+  ],
+  "Ennio Morricone": [
+    "filmscore",
+    "canzone"
+  ],
+  "Mina": [
+    "canzone"
+  ],
+  "Domenico Modugno": [
+    "canzone"
+  ],
+  "Lucio Battisti": [
+    "canzone"
+  ],
+  "Fabrizio De André": [
+    "canzone"
+  ],
+  "Lucio Dalla": [
+    "canzone"
+  ],
+  "Gino Paoli": [
+    "canzone"
+  ],
+  "Giorgio Moroder": [
+    "disco",
+    "italodisco"
+  ],
+  "Gazebo": [
+    "italodisco"
+  ],
+  "Ryan Paris": [
+    "italodisco"
+  ],
+  "Righeira": [
+    "italodisco"
+  ],
+  "Klein & M.B.O.": [
+    "italodisco",
+    "house"
+  ],
+  "John Williams": [
+    "filmscore"
+  ],
+  "Bernard Herrmann": [
+    "filmscore"
+  ],
+  "Nino Rota": [
+    "filmscore"
+  ],
+  "Hans Zimmer": [
+    "filmscore"
+  ],
+  "The Beatles": [
+    "beat",
+    "rocknroll",
+    "psych",
+    "baroquepop"
+  ],
+  "The Rolling Stones": [
+    "rocknroll",
+    "hardrock",
+    "blues"
+  ],
+  "The Beach Boys": [
+    "baroquepop",
+    "rocknroll"
+  ],
+  "The Kinks": [
+    "beat",
+    "garage",
+    "baroquepop"
+  ],
+  "The Who": [
+    "beat",
+    "hardrock",
+    "powerpop"
+  ],
+  "Bob Dylan": [
+    "folk",
+    "rocknroll"
+  ],
+  "Big Star": [
+    "powerpop"
+  ],
+  "Badfinger": [
+    "powerpop"
+  ],
+  "Raspberries": [
+    "powerpop"
+  ],
+  "Todd Rundgren": [
+    "powerpop"
+  ],
+  "Cheap Trick": [
+    "skinnytie",
+    "arenarock"
+  ],
+  "The Knack": [
+    "skinnytie"
+  ],
+  "The Records": [
+    "skinnytie"
+  ],
+  "The Romantics": [
+    "skinnytie"
+  ],
+  "Matthew Sweet": [
+    "powerpoprevival"
+  ],
+  "The Posies": [
+    "powerpoprevival"
+  ],
+  "Jellyfish": [
+    "powerpoprevival"
+  ],
+  "Fountains of Wayne": [
+    "powerpoprevival"
+  ],
+  "The Association": [
+    "sunshinepop"
+  ],
+  "The Turtles": [
+    "sunshinepop"
+  ],
+  "The 5th Dimension": [
+    "sunshinepop"
+  ],
+  "The Free Design": [
+    "sunshinepop"
+  ],
+  "Harpers Bizarre": [
+    "sunshinepop"
+  ],
+  "The Archies": [
+    "bubblegum"
+  ],
+  "Ohio Express": [
+    "bubblegum"
+  ],
+  "1910 Fruitgum Company": [
+    "bubblegum"
+  ],
+  "Tommy Roe": [
+    "bubblegum"
+  ],
+  "The Hollies": [
+    "beat"
+  ],
+  "The Searchers": [
+    "beat"
+  ],
+  "The Zombies": [
+    "beat",
+    "baroquepop"
+  ],
+  "David Bowie": [
+    "artrock",
+    "glamrock",
+    "artpop"
+  ],
+  "Lou Reed": [
+    "protopunk",
+    "artrock"
+  ],
+  "Bruce Springsteen": [
+    "heartland",
+    "rocknroll",
+    "arenarock"
+  ],
+  "John Mellencamp": [
+    "heartland"
+  ],
+  "Bob Seger": [
+    "heartland",
+    "rocknroll"
+  ],
+  "John Fogerty": [
+    "heartland",
+    "rocknroll"
+  ],
+  "Elton John": [
+    "rocknroll",
+    "arenarock"
+  ],
+  "Fleetwood Mac": [
+    "softrock",
+    "yachtrock",
+    "blues"
+  ],
+  "Eagles": [
+    "yachtrock",
+    "country",
+    "countryrock",
+    "softrock"
+  ],
+  "Hall & Oates": [
+    "yachtrock",
+    "soul"
+  ],
+  "Tom Petty": [
+    "heartland",
+    "rocknroll",
+    "americana"
+  ],
+  "The Doors": [
+    "psych",
+    "acidrock"
+  ],
+  "The Byrds": [
+    "folkrock",
+    "psych",
+    "janglepop",
+    "cosmicamerican",
+    "countryrock"
+  ],
+  "Fairport Convention": [
+    "folkrock",
+    "folk"
+  ],
+  "Buffalo Springfield": [
+    "folkrock",
+    "psych"
+  ],
+  "Simon & Garfunkel": [
+    "folkrock",
+    "folk"
+  ],
+  "The Mamas & the Papas": [
+    "folkrock",
+    "sunshinepop"
+  ],
+  "Sandy Denny": [
+    "folkrock",
+    "folk"
+  ],
+  "The Allman Brothers Band": [
+    "southernrock",
+    "blues"
+  ],
+  "Lynyrd Skynyrd": [
+    "southernrock"
+  ],
+  "ZZ Top": [
+    "southernrock",
+    "hardrock"
+  ],
+  "The Marshall Tucker Band": [
+    "southernrock",
+    "country"
+  ],
+  "Duane Allman": [
+    "southernrock",
+    "blues"
+  ],
+  "The Black Crowes": [
+    "southernrock",
+    "hardrock"
+  ],
+  "Cream": [
+    "acidrock",
+    "blues",
+    "hardrock"
+  ],
+  "Janis Joplin": [
+    "acidrock",
+    "blues"
+  ],
+  "Grateful Dead": [
+    "psych",
+    "folk",
+    "americana"
+  ],
+  "Jefferson Airplane": [
+    "acidrock",
+    "psych"
+  ],
+  "Iron Maiden": [
+    "heavymetal"
+  ],
+  "Metallica": [
+    "thrash"
+  ],
+  "Megadeth": [
+    "thrash"
+  ],
+  "Pantera": [
+    "thrash",
+    "heavymetal"
+  ],
+  "Guns N' Roses": [
+    "hardrock",
+    "glammetal"
+  ],
+  "Van Halen": [
+    "hardrock",
+    "glammetal"
+  ],
+  "Bon Jovi": [
+    "glammetal",
+    "arenarock"
+  ],
+  "Def Leppard": [
+    "glammetal",
+    "arenarock"
+  ],
+  "Aerosmith": [
+    "hardrock",
+    "arenarock"
+  ],
+  "KISS": [
+    "hardrock",
+    "glamrock",
+    "glammetal"
+  ],
+  "Rush": [
+    "progrock",
+    "hardrock"
+  ],
+  "Pink Floyd": [
+    "progrock",
+    "psych",
+    "spacerock"
+  ],
+  "Peter Gabriel": [
+    "artrock",
+    "progrock"
+  ],
+  "Kate Bush": [
+    "artpop",
+    "artrock"
+  ],
+  "U2": [
+    "arenarock",
+    "postpunk"
+  ],
+  "Coldplay": [
+    "arenarock",
+    "indie"
+  ],
+  "Muse": [
+    "arenarock",
+    "progrock"
+  ],
+  "Radiohead": [
+    "artrock",
+    "alternative",
+    "idm",
+    "elecrock"
+  ],
+  "The Slits": [
+    "postpunk",
+    "punk",
+    "dub"
+  ],
+  "The Raincoats": [
+    "postpunk"
+  ],
+  "Gang of Four": [
+    "postpunk",
+    "indiedance"
+  ],
+  "Public Image Ltd": [
+    "postpunk",
+    "dub"
+  ],
+  "X-Ray Spex": [
+    "punk"
+  ],
+  "ESG": [
+    "postpunk",
+    "funk",
+    "protohouse"
+  ],
+  "The Pastels": [
+    "indiepop"
+  ],
+  "Belle and Sebastian": [
+    "indiepop"
+  ],
+  "Camera Obscura": [
+    "indiepop"
+  ],
+  "Television Personalities": [
+    "indiepop",
+    "postpunk"
+  ],
+  "Teenage Fanclub": [
+    "indiepop",
+    "janglepop",
+    "powerpoprevival"
+  ],
+  "Orange Juice": [
+    "janglepop",
+    "indiepop"
+  ],
+  "The Smiths": [
+    "janglepop",
+    "postpunk"
+  ],
+  "The Cure": [
+    "gothrock",
+    "postpunk",
+    "dreampop"
+  ],
+  "New Order": [
+    "synthpop",
+    "postpunk",
+    "indiedance"
+  ],
+  "Depeche Mode": [
+    "synthpop",
+    "darkwave"
+  ],
+  "Duran Duran": [
+    "synthpop",
+    "newwave"
+  ],
+  "Pet Shop Boys": [
+    "synthpop",
+    "disco"
+  ],
+  "The Human League": [
+    "synthpop",
+    "newwave"
+  ],
+  "Tears for Fears": [
+    "synthpop",
+    "newwave"
+  ],
+  "Siouxsie and the Banshees": [
+    "gothrock",
+    "postpunk"
+  ],
+  "The Sisters of Mercy": [
+    "gothrock",
+    "darkwave"
+  ],
+  "Nine Inch Nails": [
+    "industrial",
+    "industrialrock"
+  ],
+  "Ministry": [
+    "industrial",
+    "industrialrock"
+  ],
+  "The Stone Roses": [
+    "madchester",
+    "janglepop"
+  ],
+  "Happy Mondays": [
+    "madchester",
+    "indiedance"
+  ],
+  "Primal Scream": [
+    "gospelrock",
+    "madchester",
+    "indiedance",
+    "psych"
+  ],
+  "The Band": [
+    "gospelrock",
+    "americana"
+  ],
+  "Spiritualized": [
+    "gospelrock",
+    "spacerock"
+  ],
+  "Spacemen 3": [
+    "spacerock",
+    "gospelrock"
+  ],
+  "Dexys Midnight Runners": [
+    "gospelrock",
+    "newwave"
+  ],
+  "Alabama Shakes": [
+    "gospelrock",
+    "americana"
+  ],
+  "Geese": [
+    "gospelrock",
+    "newpostpunk",
+    "postpunkrevival"
+  ],
+  "Nick Cave & the Bad Seeds": [
+    "gothrock",
+    "postpunk",
+    "gospelrock",
+    "noircrooner"
+  ],
+  "Nick Cave": [
+    "gothrock",
+    "postpunk",
+    "noircrooner",
+    "ozpubpunk"
+  ],
+  "The Birthday Party": [
+    "ozpubpunk",
+    "postpunk",
+    "gothrock"
+  ],
+  "Oasis": [
+    "britpop",
+    "alternative",
+    "indie"
+  ],
+  "Blur": [
+    "britpop",
+    "indie",
+    "artrock"
+  ],
+  "Pulp": [
+    "britpop",
+    "indie",
+    "artpop"
+  ],
+  "Pearl Jam": [
+    "grunge",
+    "alternative"
+  ],
+  "Alice in Chains": [
+    "grunge",
+    "heavymetal"
+  ],
+  "Stone Temple Pilots": [
+    "grunge",
+    "hardrock"
+  ],
+  "The Smashing Pumpkins": [
+    "alternative",
+    "shoegaze"
+  ],
+  "Foo Fighters": [
+    "alternative",
+    "hardrock"
+  ],
+  "Weezer": [
+    "alternative",
+    "indie",
+    "powerpoprevival",
+    "poppunk"
+  ],
+  "Rites of Spring": [
+    "emocore",
+    "hardcore"
+  ],
+  "Embrace": [
+    "emocore"
+  ],
+  "Fugazi": [
+    "posthardcore",
+    "emocore"
+  ],
+  "Green Day": [
+    "poppunk",
+    "punk"
+  ],
+  "Blink-182": [
+    "poppunk",
+    "skatepunk"
+  ],
+  "The Offspring": [
+    "skatepunk",
+    "poppunk"
+  ],
+  "NOFX": [
+    "skatepunk"
+  ],
+  "Bad Religion": [
+    "skatepunk",
+    "hardcore"
+  ],
+  "Pennywise": [
+    "skatepunk"
+  ],
+  "Descendents": [
+    "poppunk",
+    "hardcore"
+  ],
+  "Sum 41": [
+    "poppunk",
+    "skatepunk"
+  ],
+  "My Chemical Romance": [
+    "emo",
+    "posthardcore"
+  ],
+  "Fall Out Boy": [
+    "poppunk",
+    "emo"
+  ],
+  "Paramore": [
+    "poppunk",
+    "emo"
+  ],
+  "The Strokes": [
+    "postpunkrevival",
+    "indie",
+    "garage"
+  ],
+  "The White Stripes": [
+    "garage",
+    "blues"
+  ],
+  "Arctic Monkeys": [
+    "indie",
+    "postpunk",
+    "postpunkrevival"
+  ],
+  "Interpol": [
+    "postpunkrevival",
+    "postpunk",
+    "indie"
+  ],
+  "LCD Soundsystem": [
+    "indiedance",
+    "electroclash",
+    "postpunk",
+    "postpunkrevival"
+  ],
+  "Hot Chip": [
+    "indiedance",
+    "synthpop",
+    "indietronica"
+  ],
+  "Fontaines D.C.": [
+    "newpostpunk",
+    "sprechgesang"
+  ],
+  "IDLES": [
+    "newpostpunk",
+    "posthardcore"
+  ],
+  "Dry Cleaning": [
+    "sprechgesang",
+    "newpostpunk",
+    "windmill"
+  ],
+  "Squid": [
+    "windmill",
+    "newpostpunk",
+    "mathrock"
+  ],
+  "black midi": [
+    "windmill",
+    "mathrock",
+    "experimental"
+  ],
+  "Black Country, New Road": [
+    "windmill",
+    "experimental",
+    "postrock",
+    "emorevival"
+  ],
+  "Tame Impala": [
+    "neopsych",
+    "psych"
+  ],
+  "King Gizzard & the Lizard Wizard": [
+    "neopsych",
+    "garage"
+  ],
+  "MGMT": [
+    "neopsych",
+    "synthpop"
+  ],
+  "Animal Collective": [
+    "neopsych",
+    "experimental"
+  ],
+  "Beach House": [
+    "dreampop"
+  ],
+  "DIIV": [
+    "nugaze",
+    "dreampop"
+  ],
+  "Alvvays": [
+    "nugaze",
+    "janglepop"
+  ],
+  "Wednesday": [
+    "grungegaze"
+  ],
+  "Duster": [
+    "slowcore",
+    "spacerock",
+    "indie"
+  ],
+  "Low": [
+    "slowcore",
+    "dreampop"
+  ],
+  "Codeine": [
+    "slowcore"
+  ],
+  "Acetone": [
+    "slowcore",
+    "dreampop"
+  ],
+  "Bedhead": [
+    "slowcore"
+  ],
+  "Red House Painters": [
+    "slowcore",
+    "folk"
+  ],
+  "Sun Kil Moon": [
+    "slowcore",
+    "folk"
+  ],
+  "Silversun Pickups": [
+    "nugaze",
+    "alternative"
+  ],
+  "M83": [
+    "nugaze",
+    "dreampop",
+    "synthpop"
+  ],
+  "A Place to Bury Strangers": [
+    "nugaze",
+    "noiserock"
+  ],
+  "Hatchie": [
+    "nugaze",
+    "dreampop"
+  ],
+  "Nothing": [
+    "grungegaze",
+    "nugaze"
+  ],
+  "Softcult": [
+    "grungegaze"
+  ],
+  "Wisp": [
+    "zoomergaze"
+  ],
+  "julie": [
+    "zoomergaze",
+    "grungegaze"
+  ],
+  "quannnic": [
+    "zoomergaze"
+  ],
+  "Built to Spill": [
+    "indie"
+  ],
+  "Modest Mouse": [
+    "indie"
+  ],
+  "Death Cab for Cutie": [
+    "indie",
+    "emo"
+  ],
+  "Sufjan Stevens": [
+    "folk",
+    "indie",
+    "baroquepop"
+  ],
+  "Bon Iver": [
+    "folk",
+    "indie"
+  ],
+  "Fleet Foxes": [
+    "folk",
+    "baroquepop"
+  ],
+  "Big Thief": [
+    "indie",
+    "folk"
+  ],
+  "Phoebe Bridgers": [
+    "indie",
+    "folk"
+  ],
+  "boygenius": [
+    "indie",
+    "folk"
+  ],
+  "Wilco": [
+    "americana",
+    "indie"
+  ],
+  "Mac DeMarco": [
+    "bedroompop",
+    "indie"
+  ],
+  "Men I Trust": [
+    "bedroompop",
+    "dreampop"
+  ],
+  "Toro y Moi": [
+    "bedroompop",
+    "indiedance"
+  ],
+  "Mk.gee": [
+    "nuyacht",
+    "bedroompop"
+  ],
+  "Turnstile": [
+    "hardcore",
+    "posthardcore"
+  ],
+  "Touché Amoré": [
+    "screamo",
+    "posthardcore"
+  ],
+  "La Dispute": [
+    "posthardcore",
+    "screamo"
+  ],
+  "Converge": [
+    "mathcore",
+    "metalcore"
+  ],
+  "Every Time I Die": [
+    "metalcore",
+    "mathcore"
+  ],
+  "Knocked Loose": [
+    "newmetalcore",
+    "hardcore"
+  ],
+  "Bring Me the Horizon": [
+    "newmetalcore",
+    "metalcore"
+  ],
+  "Architects": [
+    "newmetalcore"
+  ],
+  "Killswitch Engage": [
+    "metalcore"
+  ],
+  "Slipknot": [
+    "metalcore",
+    "heavymetal"
+  ],
+  "Korn": [
+    "heavymetal",
+    "funkrock"
+  ],
+  "Deftones": [
+    "heavymetal",
+    "shoegaze"
+  ],
+  "System of a Down": [
+    "heavymetal",
+    "thrash"
+  ],
+  "Rage Against the Machine": [
+    "funkrock",
+    "hiphop"
+  ],
+  "Red Hot Chili Peppers": [
+    "funkrock",
+    "alternative"
+  ],
+  "Tool": [
+    "progmetal"
+  ],
+  "Meshuggah": [
+    "progmetal",
+    "death"
+  ],
+  "Opeth": [
+    "progmetal",
+    "death"
+  ],
+  "Gojira": [
+    "progmetal",
+    "death"
+  ],
+  "Mastodon": [
+    "sludge",
+    "progmetal"
+  ],
+  "Electric Wizard": [
+    "doom",
+    "sludge"
+  ],
+  "Candlemass": [
+    "doom"
+  ],
+  "Sleep": [
+    "stonerrock",
+    "doom"
+  ],
+  "Queens of the Stone Age": [
+    "desertrock",
+    "stonerrock"
+  ],
+  "Cannibal Corpse": [
+    "death"
+  ],
+  "Morbid Angel": [
+    "death"
+  ],
+  "Emperor": [
+    "black"
+  ],
+  "Darkthrone": [
+    "black"
+  ],
+  "Alcest": [
+    "blackgaze",
+    "shoegaze"
+  ],
+  "Ray Charles": [
+    "soul",
+    "rnb",
+    "gospel"
+  ],
+  "Nina Simone": [
+    "soul",
+    "gospel"
+  ],
+  "Marvin Gaye": [
+    "soul",
+    "psychsoul"
+  ],
+  "Stevie Wonder": [
+    "soul",
+    "funk"
+  ],
+  "The Temptations": [
+    "psychsoul",
+    "soul"
+  ],
+  "Curtis Mayfield": [
+    "psychsoul",
+    "soul",
+    "funk"
+  ],
+  "Isaac Hayes": [
+    "psychsoul",
+    "soul"
+  ],
+  "The O'Jays": [
+    "phillysoul"
+  ],
+  "Harold Melvin & the Blue Notes": [
+    "phillysoul"
+  ],
+  "The Spinners": [
+    "phillysoul",
+    "soul"
+  ],
+  "The Stylistics": [
+    "phillysoul"
+  ],
+  "Teddy Pendergrass": [
+    "phillysoul",
+    "soul"
+  ],
+  "MFSB": [
+    "phillysoul",
+    "disco"
+  ],
+  "Al Green": [
+    "soul"
+  ],
+  "Prince": [
+    "funk",
+    "funkrock",
+    "synthpop"
+  ],
+  "Michael Jackson": [
+    "disco",
+    "contempornb",
+    "soul"
+  ],
+  "Whitney Houston": [
+    "contempornb",
+    "soul"
+  ],
+  "Mariah Carey": [
+    "contempornb"
+  ],
+  "D'Angelo": [
+    "contempornb",
+    "soul",
+    "funk"
+  ],
+  "Erykah Badu": [
+    "contempornb",
+    "soul",
+    "hiphop"
+  ],
+  "Lauryn Hill": [
+    "contempornb",
+    "hiphop"
+  ],
+  "Beyoncé": [
+    "contempornb",
+    "hiphop",
+    "house"
+  ],
+  "Rihanna": [
+    "contempornb"
+  ],
+  "Usher": [
+    "contempornb"
+  ],
+  "Aaliyah": [
+    "contempornb"
+  ],
+  "Frank Ocean": [
+    "altrnb",
+    "contempornb"
+  ],
+  "The Weeknd": [
+    "altrnb",
+    "synthwave"
+  ],
+  "SZA": [
+    "altrnb",
+    "contempornb"
+  ],
+  "Solange": [
+    "altrnb",
+    "soul"
+  ],
+  "FKA twigs": [
+    "altrnb",
+    "artpop"
+  ],
+  "Bruno Mars": [
+    "funk",
+    "contempornb",
+    "disco"
+  ],
+  "Anderson .Paak": [
+    "contempornb",
+    "funk",
+    "hiphop"
+  ],
+  "Silk Sonic": [
+    "soul",
+    "funk"
+  ],
+  "Thundercat": [
+    "jazzfunk",
+    "fusion",
+    "nuyacht"
+  ],
+  "Grandmaster Flash": [
+    "hiphop"
+  ],
+  "Run-D.M.C.": [
+    "hiphop"
+  ],
+  "Public Enemy": [
+    "hiphop"
+  ],
+  "Beastie Boys": [
+    "hiphop",
+    "punk"
+  ],
+  "A Tribe Called Quest": [
+    "hiphop",
+    "jazzfunk"
+  ],
+  "Wu-Tang Clan": [
+    "hiphop"
+  ],
+  "Nas": [
+    "hiphop"
+  ],
+  "Jay-Z": [
+    "hiphop"
+  ],
+  "The Notorious B.I.G.": [
+    "hiphop"
+  ],
+  "2Pac": [
+    "hiphop"
+  ],
+  "Dr. Dre": [
+    "hiphop",
+    "funk"
+  ],
+  "Snoop Dogg": [
+    "hiphop",
+    "funk"
+  ],
+  "Eminem": [
+    "hiphop"
+  ],
+  "OutKast": [
+    "hiphop",
+    "funk"
+  ],
+  "Missy Elliott": [
+    "hiphop",
+    "contempornb"
+  ],
+  "MF DOOM": [
+    "hiphop"
+  ],
+  "J Dilla": [
+    "hiphop",
+    "jazzfunk"
+  ],
+  "Madlib": [
+    "hiphop",
+    "libraryfunk"
+  ],
+  "Kendrick Lamar": [
+    "hiphop",
+    "jazzfunk"
+  ],
+  "Kanye West": [
+    "hiphop"
+  ],
+  "Drake": [
+    "hiphop",
+    "contempornb"
+  ],
+  "Travis Scott": [
+    "hiphop"
+  ],
+  "Tyler, the Creator": [
+    "hiphop",
+    "altrnb"
+  ],
+  "Doechii": [
+    "hiphop"
+  ],
+  "Kraftwerk": [
+    "krautrock",
+    "synthpop"
+  ],
+  "Larry Levan": [
+    "protohouse",
+    "disco"
+  ],
+  "Frankie Knuckles": [
+    "house",
+    "protohouse"
+  ],
+  "Larry Heard": [
+    "deephouse",
+    "house"
+  ],
+  "Juan Atkins": [
+    "detroit",
+    "techno"
+  ],
+  "Derrick May": [
+    "detroit"
+  ],
+  "Jeff Mills": [
+    "detroit",
+    "techno"
+  ],
+  "Carl Craig": [
+    "detroit",
+    "techno"
+  ],
+  "Carl Cox": [
+    "techno",
+    "techhouse"
+  ],
+  "Richie Hawtin": [
+    "techno"
+  ],
+  "Green Velvet": [
+    "techhouse",
+    "house"
+  ],
+  "Daft Punk": [
+    "frenchtouch",
+    "house",
+    "disco"
+  ],
+  "Justice": [
+    "frenchtouch",
+    "electroclash"
+  ],
+  "The Chemical Brothers": [
+    "acid",
+    "techno"
+  ],
+  "The Prodigy": [
+    "acid",
+    "techno"
+  ],
+  "Fatboy Slim": [
+    "house",
+    "acid"
+  ],
+  "Aphex Twin": [
+    "idm",
+    "ambienttechno",
+    "acid"
+  ],
+  "Boards of Canada": [
+    "idm",
+    "ambient"
+  ],
+  "Autechre": [
+    "idm"
+  ],
+  "Squarepusher": [
+    "idm"
+  ],
+  "Four Tet": [
+    "idm",
+    "house"
+  ],
+  "Caribou": [
+    "idm",
+    "house",
+    "indiedance",
+    "indietronica"
+  ],
+  "Burial": [
+    "twostep",
+    "ukgarage",
+    "ambienttechno"
+  ],
+  "James Blake": [
+    "twostep",
+    "altrnb"
+  ],
+  "Jamie xx": [
+    "ukgarage",
+    "house"
+  ],
+  "Disclosure": [
+    "ukgarage",
+    "deephouse"
+  ],
+  "Bicep": [
+    "house",
+    "ukgarage"
+  ],
+  "deadmau5": [
+    "proghouse",
+    "techno"
+  ],
+  "Eric Prydz": [
+    "proghouse",
+    "trance"
+  ],
+  "Armin van Buuren": [
+    "trance"
+  ],
+  "Tiësto": [
+    "trance",
+    "proghouse"
+  ],
+  "Solomun": [
+    "melodictechno",
+    "deephouse"
+  ],
+  "Tale of Us": [
+    "melodictechno"
+  ],
+  "Charli XCX": [
+    "hyperpop",
+    "electroclash",
+    "electropop"
+  ],
+  "100 gecs": [
+    "hyperpop"
+  ],
+  "Grimes": [
+    "artpop",
+    "synthpop",
+    "hyperpop"
+  ],
+  "Björk": [
+    "artpop",
+    "idm",
+    "experimental"
+  ],
+  "Lady Gaga": [
+    "electropop",
+    "artpop",
+    "electroclash"
+  ],
+  "Lorde": [
+    "altpop",
+    "artpop",
+    "electropop"
+  ],
+  "Lana Del Rey": [
+    "altpop",
+    "dreampop"
+  ],
+  "The Psychedelic Furs": [
+    "postpunk",
+    "newwave"
+  ],
+  "Madonna": [
+    "synthpop",
+    "disco",
+    "house"
+  ],
+  "Robyn": [
+    "electropop",
+    "synthpop"
+  ],
+  "La Roux": [
+    "electropop",
+    "synthpop"
+  ],
+  "Carly Rae Jepsen": [
+    "electropop",
+    "synthpop"
+  ],
+  "ABBA": [
+    "disco",
+    "synthpop"
+  ],
+  "Bee Gees": [
+    "disco"
+  ],
+  "Dua Lipa": [
+    "electropop",
+    "disco",
+    "synthpop"
+  ],
+  "Taylor Swift": [
+    "synthpop",
+    "country",
+    "folk"
+  ],
+  "Ariana Grande": [
+    "contempornb",
+    "synthpop"
+  ],
+  "Billie Eilish": [
+    "altpop",
+    "bedroompop",
+    "altrnb"
+  ],
+  "The Midnight": [
+    "synthwave"
+  ],
+  "Com Truise": [
+    "synthwave"
+  ],
+  "Perturbator": [
+    "synthwave",
+    "darkwave",
+    "industrial"
+  ],
+  "Salem": [
+    "witchhouse"
+  ],
+  "Crystal Castles": [
+    "witchhouse",
+    "electroclash"
+  ],
+  "oOoOO": [
+    "witchhouse"
+  ],
+  "Balam Acab": [
+    "witchhouse"
+  ],
+  "White Ring": [
+    "witchhouse"
+  ],
+  "Pictureplane": [
+    "witchhouse"
+  ],
+  "Sidewalks and Skeletons": [
+    "witchhouse"
+  ],
+  "Pastel Ghost": [
+    "witchhouse",
+    "darkwave"
+  ],
+  "DJ Screw": [
+    "screwed",
+    "hiphop"
+  ],
+  "Big Moe": [
+    "screwed"
+  ],
+  "Michael Watts": [
+    "screwed"
+  ],
+  "Molchat Doma": [
+    "darkwave",
+    "coldwave"
+  ],
+  "Boy Harsher": [
+    "darkwave",
+    "coldwave"
+  ],
+  "Macintosh Plus": [
+    "futurefunk"
+  ],
+  "Miles Davis": [
+    "modal",
+    "cool",
+    "fusion",
+    "bebop"
+  ],
+  "John Coltrane": [
+    "spiritual",
+    "modal",
+    "free",
+    "bebop"
+  ],
+  "Charlie Parker": [
+    "bebop"
+  ],
+  "Dizzy Gillespie": [
+    "bebop"
+  ],
+  "Thelonious Monk": [
+    "bebop",
+    "stride"
+  ],
+  "Bill Evans": [
+    "modal",
+    "cool"
+  ],
+  "Dave Brubeck": [
+    "cool"
+  ],
+  "Chet Baker": [
+    "cool"
+  ],
+  "Herbie Hancock": [
+    "jazzfunk",
+    "fusion",
+    "modal"
+  ],
+  "Sun Ra": [
+    "free",
+    "spiritual"
+  ],
+  "Ornette Coleman": [
+    "free"
+  ],
+  "Kamasi Washington": [
+    "ukjazz",
+    "spiritual"
+  ],
+  "Ezra Collective": [
+    "ukjazz",
+    "afrobeat"
+  ],
+  "Nubya Garcia": [
+    "ukjazz"
+  ],
+  "Shabaka Hutchings": [
+    "ukjazz",
+    "spiritual"
+  ],
+  "BADBADNOTGOOD": [
+    "ukjazz",
+    "jazzfunk",
+    "hiphop"
+  ],
+  "Louis Armstrong": [
+    "noladixie",
+    "swing"
+  ],
+  "Duke Ellington": [
+    "swing"
+  ],
+  "Count Basie": [
+    "swing"
+  ],
+  "Ella Fitzgerald": [
+    "swing",
+    "bebop"
+  ],
+  "Frank Sinatra": [
+    "tradpop",
+    "swing"
+  ],
+  "Scott Joplin": [
+    "ragtime"
+  ],
+  "Brian Eno": [
+    "ambient",
+    "artrock",
+    "artpop"
+  ],
+  "Steve Reich": [
+    "minimalism"
+  ],
+  "Philip Glass": [
+    "minimalism",
+    "modernclassical"
+  ],
+  "Terry Riley": [
+    "minimalism"
+  ],
+  "Max Richter": [
+    "modernclassical",
+    "ambient"
+  ],
+  "Nils Frahm": [
+    "modernclassical",
+    "ambient"
+  ],
+  "Ólafur Arnalds": [
+    "modernclassical",
+    "ambient"
+  ],
+  "Arvo Pärt": [
+    "modernclassical"
+  ],
+  "Johann Sebastian Bach": [
+    "classical"
+  ],
+  "Mozart": [
+    "classical"
+  ],
+  "Beethoven": [
+    "classical"
+  ],
+  "Claude Debussy": [
+    "classical"
+  ],
+  "Erik Satie": [
+    "classical"
+  ],
+  "Jaap Vink": [
+    "electroacoustic"
+  ],
+  "Gottfried Michael Koenig": [
+    "electroacoustic",
+    "computermusic"
+  ],
+  "Max Mathews": [
+    "computermusic"
+  ],
+  "John Chowning": [
+    "computermusic"
+  ],
+  "Klaus Schulze": [
+    "kosmische"
+  ],
+  "Herbert Eimert": [
+    "electroacoustic"
+  ],
+  "Karlheinz Stockhausen": [
+    "electroacoustic",
+    "experimental"
+  ],
+  "Lustmord": [
+    "darkambient",
+    "industrial"
+  ],
+  "raison d'être": [
+    "darkambient"
+  ],
+  "Zoviet France": [
+    "darkambient"
+  ],
+  "Nurse With Wound": [
+    "darkambient",
+    "industrial"
+  ],
+  "Stars of the Lid": [
+    "drone",
+    "ambient"
+  ],
+  "Tim Hecker": [
+    "drone",
+    "ambient"
+  ],
+  "Grouper": [
+    "ambient",
+    "dreampop",
+    "drone"
+  ],
+  "William Basinski": [
+    "ambient",
+    "experimental"
+  ],
+  "Enya": [
+    "newage",
+    "ethereal"
+  ],
+  "Vangelis": [
+    "newage",
+    "ambient"
+  ],
+  "Tangerine Dream": [
+    "krautrock",
+    "ambient",
+    "newage"
+  ],
+  "Joni Mitchell": [
+    "singersongwriter",
+    "folk",
+    "jazzrock"
+  ],
+  "Nick Drake": [
+    "singersongwriter",
+    "folk"
+  ],
+  "Johnny Cash": [
+    "country",
+    "americana"
+  ],
+  "Hank Williams": [
+    "country"
+  ],
+  "Dolly Parton": [
+    "country"
+  ],
+  "Willie Nelson": [
+    "country",
+    "americana"
+  ],
+  "Waylon Jennings": [
+    "country"
+  ],
+  "Gram Parsons": [
+    "cosmicamerican",
+    "cosmiccountry",
+    "country",
+    "americana",
+    "countryrock"
+  ],
+  "The Flying Burrito Brothers": [
+    "cosmicamerican",
+    "country",
+    "countryrock"
+  ],
+  "Emmylou Harris": [
+    "cosmicamerican",
+    "americana",
+    "country"
+  ],
+  "Sturgill Simpson": [
+    "cosmiccountry",
+    "country"
+  ],
+  "Kacey Musgraves": [
+    "cosmiccountry",
+    "country"
+  ],
+  "Tyler Childers": [
+    "country",
+    "americana",
+    "bluegrass"
+  ],
+  "Chris Stapleton": [
+    "country",
+    "americana"
+  ],
+  "Zach Bryan": [
+    "americana",
+    "country"
+  ],
+  "Jason Isbell": [
+    "americana",
+    "country"
+  ],
+  "Gillian Welch": [
+    "americana",
+    "bluegrass",
+    "folk"
+  ],
+  "Billy Strings": [
+    "bluegrass",
+    "cosmiccountry"
+  ],
+  "Bill Monroe": [
+    "bluegrass"
+  ],
+  "Woody Guthrie": [
+    "folk"
+  ],
+  "Bob Marley": [
+    "reggae",
+    "ska",
+    "dub"
+  ],
+  "Toots and the Maytals": [
+    "reggae",
+    "ska"
+  ],
+  "The Specials": [
+    "twotone",
+    "ska",
+    "punk"
+  ],
+  "The Selecter": [
+    "twotone",
+    "ska"
+  ],
+  "Madness": [
+    "twotone",
+    "ska",
+    "newwave"
+  ],
+  "The Beat": [
+    "twotone",
+    "ska"
+  ],
+  "Operation Ivy": [
+    "skapunk",
+    "hardcore"
+  ],
+  "Rancid": [
+    "skapunk",
+    "punk"
+  ],
+  "Sublime": [
+    "skapunk",
+    "reggae"
+  ],
+  "The Mighty Mighty Bosstones": [
+    "skapunk"
+  ],
+  "Peter Tosh": [
+    "reggae"
+  ],
+  "Lee Scratch Perry": [
+    "dub",
+    "reggae"
+  ],
+  "King Tubby": [
+    "dub"
+  ],
+  "Fela Kuti": [
+    "afrobeat",
+    "afrofunk"
+  ],
+  "Tony Allen": [
+    "afrobeat",
+    "afrofunk"
+  ],
+  "Ebo Taylor": [
+    "highlife",
+    "afrofunk"
+  ],
+  "Burna Boy": [
+    "afrobeats",
+    "afrobeat"
+  ],
+  "Wizkid": [
+    "afrobeats"
+  ],
+  "Davido": [
+    "afrobeats"
+  ],
+  "Rema": [
+    "afrobeats"
+  ],
+  "Tems": [
+    "afrobeats",
+    "altrnb"
+  ],
+  "Tyla": [
+    "amapiano",
+    "afrobeats"
+  ],
+  "Kabza De Small": [
+    "amapiano"
+  ],
+  "Uncle Waffles": [
+    "amapiano"
+  ],
+  "Tinariwen": [
+    "desertblues"
+  ],
+  "Mdou Moctar": [
+    "desertblues",
+    "psych"
+  ],
+  "Bombino": [
+    "desertblues"
+  ],
+  "Ali Farka Touré": [
+    "desertblues",
+    "blues"
+  ],
+  "Mulatu Astatke": [
+    "ethiojazz"
+  ],
+  "Ravi Shankar": [
+    "hindustani"
+  ],
+  "Anoushka Shankar": [
+    "hindustani"
+  ],
+  "João Gilberto": [
+    "bossanova"
+  ],
+  "Antônio Carlos Jobim": [
+    "bossanova"
+  ],
+  "Astrud Gilberto": [
+    "bossanova"
+  ],
+  "Anitta": [
+    "bailefunk"
+  ],
+  "Tatsuro Yamashita": [
+    "citypop"
+  ],
+  "Mariya Takeuchi": [
+    "citypop"
+  ],
+  "Casiopea": [
+    "citypop",
+    "fusion"
+  ],
+  "Khruangbin": [
+    "psychfunk",
+    "dub"
+  ],
+  "Los Bitchos": [
+    "latinpsych"
+  ],
+  "Altın Gün": [
+    "anatolian",
+    "psych"
+  ],
+  "Adam and the Ants": [
+    "newwave",
+    "postpunk",
+    "burundi"
+  ],
+  "Bow Wow Wow": [
+    "newwave",
+    "burundi"
+  ],
+  "Echo & the Bunnymen": [
+    "postpunk",
+    "burundi"
+  ],
+  "Royal Drummers of Burundi": [
+    "burundi"
+  ],
+  "Kikagaku Moyo": [
+    "japanesepsych",
+    "psych"
+  ],
+  "WITCH": [
+    "zamrock"
+  ],
+  "T. Rex": [
+    "glamrock"
+  ],
+  "Slade": [
+    "glamrock"
+  ],
+  "Sweet": [
+    "glamrock"
+  ],
+  "New York Dolls": [
+    "glamrock",
+    "protopunk"
+  ],
+  "Roxy Music": [
+    "artrock",
+    "glamrock"
+  ],
+  "Silver Apples": [
+    "elecrock"
+  ],
+  "The United States of America": [
+    "elecrock"
+  ],
+  "Suicide": [
+    "elecrock",
+    "protopunk"
+  ],
+  "Gary Numan": [
+    "synthpop",
+    "newwave"
+  ],
+  "KMFDM": [
+    "industrialrock"
+  ],
+  "The Postal Service": [
+    "indietronica"
+  ],
+  "Joywave": [
+    "indietronica"
+  ],
+  "Passion Pit": [
+    "indietronica",
+    "electropop"
+  ],
+  "Simian Mobile Disco": [
+    "house",
+    "electroclash"
+  ],
+  "DNA": [
+    "nowave"
+  ],
+  "Mars": [
+    "nowave"
+  ],
+  "The Contortions": [
+    "nowave",
+    "funk"
+  ],
+  "Teenage Jesus and the Jerks": [
+    "nowave"
+  ],
+  "Poco": [
+    "countryrock",
+    "country"
+  ],
+  "Linda Ronstadt": [
+    "countryrock",
+    "softrock",
+    "country"
+  ],
+  "James Taylor": [
+    "singersongwriter",
+    "folk",
+    "softrock"
+  ],
+  "Carole King": [
+    "singersongwriter",
+    "softrock"
+  ],
+  "Jackson Browne": [
+    "singersongwriter",
+    "countryrock"
+  ],
+  "Leonard Cohen": [
+    "singersongwriter",
+    "folk"
+  ],
+  "Crosby, Stills, Nash & Young": [
+    "folkrock",
+    "singersongwriter",
+    "countryrock"
+  ],
+  "Bread": [
+    "softrock"
+  ],
+  "Carpenters": [
+    "softrock",
+    "sunshinepop"
+  ],
+  "America": [
+    "softrock",
+    "folkrock"
+  ],
+  "The Saints": [
+    "ozpubpunk",
+    "punk"
+  ],
+  "Radio Birdman": [
+    "ozpubpunk",
+    "protopunk"
+  ],
+  "The Scientists": [
+    "ozpubpunk",
+    "noiserock"
+  ],
+  "Beasts of Bourbon": [
+    "ozpubpunk",
+    "blues"
+  ],
+  "The Drones": [
+    "ozpubpunk",
+    "noiserock"
+  ],
+  "Tropical Fuck Storm": [
+    "ozpubpunk",
+    "noiserock",
+    "experimental"
+  ],
+  "Amyl and the Sniffers": [
+    "ozpubpunk",
+    "punk"
+  ],
+  "Yeah Yeah Yeahs": [
+    "postpunkrevival",
+    "garage",
+    "indie"
+  ],
+  "Franz Ferdinand": [
+    "postpunkrevival",
+    "indiedance"
+  ],
+  "The Rapture": [
+    "indiedance",
+    "postpunkrevival"
+  ],
+  "Bloc Party": [
+    "postpunkrevival",
+    "indie"
+  ],
+  "Editors": [
+    "postpunkrevival",
+    "gothrock"
+  ],
+  "The Killers": [
+    "postpunkrevival",
+    "newwave",
+    "arenarock"
+  ],
+  "Shame": [
+    "newpostpunk",
+    "punk"
+  ]
+}

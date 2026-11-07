@@ -1,0 +1,1238 @@
+[
+  {
+    "id": "dub",
+    "name": "Dub",
+    "fam": "global",
+    "fam2": "electronic",
+    "year": 1973,
+    "role": "foundational",
+    "yOff": -30,
+    "def": "Jamaican studio art of remixing reggae into bass, space and echo — the mixing desk played as an instrument, vocals dropped for cavernous effect.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "Mixing desk as instrument: drop-out, echo, reverb, EQ."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Heavy bass and vast spring-reverb and tape-delay space."
+      },
+      {
+        "k": "Song structure",
+        "v": "Stripped, version-based; space over song."
+      }
+    ],
+    "why": "The studio itself becomes the instrument — drops, echo and reverb sculpt bass and space from an existing track.",
+    "artists": [
+      "King Tubby",
+      "Lee Scratch Perry",
+      "Augustus Pablo"
+    ],
+    "albums": [
+      {
+        "t": "King Tubbys Meets Rockers Uptown",
+        "a": "Augustus Pablo"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "King Tubby Meets Rockers Uptown",
+        "a": "Augustus Pablo"
+      },
+      {
+        "t": "Blackboard Jungle Dub",
+        "a": "Lee \"Scratch\" Perry"
+      },
+      {
+        "t": "Dub Fi Gwan",
+        "a": "King Tubby"
+      }
+    ],
+    "tempo": "60–90 BPM"
+  },
+  {
+    "id": "afrobeat",
+    "name": "Afrobeat",
+    "fam": "global",
+    "fam2": "soul",
+    "year": 1970,
+    "role": "foundational",
+    "yOff": 175,
+    "def": "Nigerian fusion of Yoruba rhythm, highlife and American funk and jazz — long, polyrhythmic, horn-driven grooves with political fire.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Interlocking West-African polyrhythm over a funk pulse."
+      },
+      {
+        "k": "Song structure",
+        "v": "Extended, vamp-based, slow-building jams."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Big band — horns, percussion, organ, guitars."
+      },
+      {
+        "k": "Harmony",
+        "v": "Static modal vamps."
+      }
+    ],
+    "why": "West-African polyrhythm is locked to funk and jazz horns over long, vamp-based, gradually building grooves.",
+    "artists": [
+      "Fela Kuti",
+      "Tony Allen",
+      "Antibalas"
+    ],
+    "albums": [
+      {
+        "t": "Expensive Shit",
+        "a": "Fela Kuti"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Water No Get Enemy",
+        "a": "Fela Kuti"
+      },
+      {
+        "t": "Zombie",
+        "a": "Fela Kuti"
+      },
+      {
+        "t": "Afro Disco Beat",
+        "a": "Tony Allen"
+      }
+    ],
+    "tempo": "100–130 BPM"
+  },
+  {
+    "id": "hindustani",
+    "name": "Hindustani Classical",
+    "fam": "global",
+    "year": 1905,
+    "role": "foundational",
+    "yOff": -120,
+    "def": "The North Indian classical tradition of raga and tala — modal melodic frameworks over a sustained drone, improvised across long, meditative arcs.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "A sustained tonic-and-fifth drone (tanpura)."
+      },
+      {
+        "k": "Melody",
+        "v": "Raga — modal, microtonal, improvised."
+      },
+      {
+        "k": "Song structure",
+        "v": "A long, unfolding alap-to-climax arc."
+      }
+    ],
+    "why": "Its sustained drone and long modal improvisation directly shaped Western drone, minimalism and raga-rock psychedelia.",
+    "artists": [
+      "Ravi Shankar",
+      "Ali Akbar Khan",
+      "Nikhil Banerjee"
+    ],
+    "albums": [
+      {
+        "t": "Three Ragas",
+        "a": "Ravi Shankar"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Raga Jog",
+        "a": "Ravi Shankar"
+      },
+      {
+        "t": "Raga Bhairavi",
+        "a": "Ali Akbar Khan"
+      },
+      {
+        "t": "Raga Megh",
+        "a": "Nikhil Banerjee"
+      }
+    ]
+  },
+  {
+    "id": "highlife",
+    "name": "Highlife",
+    "fam": "global",
+    "fam2": "soul",
+    "year": 1954,
+    "role": "foundational",
+    "yOff": -50,
+    "def": "West African dance music marrying Akan melody and rhythm with jazz-band horns and guitars — buoyant, urbane and guitar-and-horn-led.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Lilting palm-wine and dance-band grooves."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Interlocking guitars and jazzy horns."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Coastal West-African urban nightlife."
+      }
+    ],
+    "why": "Its guitar-and-horn dance-band template is the bedrock Fela Kuti fused with funk to invent Afrobeat.",
+    "artists": [
+      "E.T. Mensah",
+      "Nana Ampadu",
+      "Osibisa"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "All For You",
+        "a": "E.T. Mensah"
+      },
+      {
+        "t": "Sunshine Day",
+        "a": "Osibisa"
+      },
+      {
+        "t": "Ebi Te Yie",
+        "a": "Nana Ampadu"
+      }
+    ],
+    "tempo": "100–130 BPM"
+  },
+  {
+    "id": "ska",
+    "name": "Ska",
+    "fam": "global",
+    "year": 1962,
+    "role": "foundational",
+    "yOff": 130,
+    "def": "Jamaica's first home-grown pop — a skipping off-beat guitar 'chop', walking bass and jubilant horns fusing American R&B with mento and calypso.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "An off-beat 'skank' guitar chop over walking bass."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Bright, punchy horn sections."
+      },
+      {
+        "k": "Orientation",
+        "v": "Up-tempo dance."
+      }
+    ],
+    "why": "Its emphatic off-beat guitar chop is the rhythmic root that slows into rocksteady, reggae and ultimately dub.",
+    "artists": [
+      "The Skatalites",
+      "Prince Buster",
+      "Desmond Dekker"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Guns of Navarone",
+        "a": "The Skatalites"
+      },
+      {
+        "t": "Al Capone",
+        "a": "Prince Buster"
+      },
+      {
+        "t": "007 (Shanty Town)",
+        "a": "Desmond Dekker"
+      }
+    ],
+    "tempo": "110–140 BPM"
+  },
+  {
+    "id": "reggae",
+    "name": "Reggae",
+    "fam": "global",
+    "year": 1968,
+    "role": "branch",
+    "yOff": -170,
+    "def": "Jamaica's defining groove — a laid-back tempo, a heavy 'one drop' drum-and-bass emphasis and an off-beat skank, carrying Rastafari and roots consciousness.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "One-drop drums stressing beat three; off-beat skank."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Deep, melodic, foregrounded bass."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Roots and Rastafari culture."
+      }
+    ],
+    "why": "Foregrounding deep bass and a one-drop groove with space in the mix sets up dub's remix-the-space approach.",
+    "artists": [
+      "Bob Marley",
+      "Burning Spear",
+      "Toots & the Maytals"
+    ],
+    "albums": [
+      {
+        "t": "Catch a Fire",
+        "a": "The Wailers"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Stir It Up",
+        "a": "The Wailers"
+      },
+      {
+        "t": "Get Up, Stand Up",
+        "a": "The Wailers"
+      },
+      {
+        "t": "Pressure Drop",
+        "a": "Toots & the Maytals"
+      }
+    ],
+    "tempo": "60–90 BPM"
+  },
+  {
+    "id": "burundi",
+    "name": "Burundi Drumming",
+    "fam": "global",
+    "year": 1967,
+    "role": "foundational",
+    "yOff": -255,
+    "aka": "Ingoma / The Burundi Beat",
+    "def": "The ceremonial drum ensemble of Burundi — two dozen or more large ingoma drums played in a semicircle, with a lead drummer at the centre calling the changes over a rolling, relentless low-drum pulse. A 1967 field recording carried it into Western pop.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Large hollowed-log ingoma drums; a centre drum leads while the ring holds a continuous beat."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "A heavy, rolling, repetitive pulse with unison accents on the lead drummer's cue."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Royal court ritual; recorded by Michel Vuylsteke and Charles Duvelle in 1967 for Ocora's Musique du Burundi (1968)."
+      }
+    ],
+    "why": "Heard in the West through a single field recording, its massed rolling tom pattern became 'the Burundi beat' — a rhythm UK new wave and post-punk drummers used in place of the rock backbeat.",
+    "artists": [
+      "Les Tambourinaires du Burundi",
+      "Burundi Steiphenson Black"
+    ],
+    "albums": [
+      {
+        "t": "Musique du Burundi",
+        "a": "Ocora (1968)"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Ingoma",
+        "a": "Ensemble de Tambours (Musique du Burundi)",
+        "why": "The 1967 recording itself — every later Burundi-beat record starts here."
+      },
+      {
+        "t": "Burundi Black",
+        "a": "Burundi Steiphenson Black",
+        "why": "Michel Bernholc overdubbed piano and guitar onto the field recording; it reached No. 31 in the UK in 1971."
+      },
+      {
+        "t": "The Jungle Line",
+        "a": "Joni Mitchell"
+      }
+    ]
+  },
+  {
+    "id": "twotone",
+    "name": "2 Tone",
+    "fam": "global",
+    "fam2": "rock",
+    "year": 1979,
+    "role": "hybrid",
+    "yOff": 60,
+    "aka": "Ska Revival",
+    "def": "First-wave Jamaican ska played at punk tempo and volume by Coventry bands on their own label — deliberately racially mixed line-ups making the fusion itself an anti-racist statement.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Ska's off-beat chop driven at punk tempos."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Horn sections and organ over overdriven guitar and bass."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Shouted, toasted, traded between singers."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Coventry, the 2 Tone label, Rude Boy style and Rock Against Racism."
+      }
+    ],
+    "why": "It runs ska's off-beat chop through punk's tempo, distortion and DIY label economics — the literal hinge between the Jamaican and British punk lineages.",
+    "artists": [
+      "The Specials",
+      "The Selecter",
+      "Madness",
+      "The Beat"
+    ],
+    "albums": [
+      {
+        "t": "Specials",
+        "a": "The Specials"
+      },
+      {
+        "t": "Too Much Pressure",
+        "a": "The Selecter"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Gangsters",
+        "a": "The Specials",
+        "why": "Built over Prince Buster's 'Al Capone' at punk urgency — 2 Tone's founding single, on 2 Tone's first release."
+      },
+      {
+        "t": "On My Radio",
+        "a": "The Selecter"
+      },
+      {
+        "t": "Mirror in the Bathroom",
+        "a": "The Beat"
+      }
+    ]
+  },
+  {
+    "id": "canzone",
+    "name": "Canzone Italiana",
+    "fam": "global",
+    "year": 1958,
+    "role": "foundational",
+    "yOff": 240,
+    "aka": "Italian Song / Cantautori",
+    "def": "Italy's post-war popular song — bel canto-derived melody, orchestral or piano-led arrangement and lyric-first writing, with the Sanremo Festival as its stage and engine from Modugno through the cantautori.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Open, sustained bel canto phrasing; the big held note as emotional climax."
+      },
+      {
+        "k": "Harmony",
+        "v": "Rich diatonic progressions with an operatic lift into the final refrain."
+      },
+      {
+        "k": "Song structure",
+        "v": "Verse building to a soaring ritornello — the chorus as destination."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Sanremo (from 1951), RCA Italiana, and the 1960s–70s cantautore movement."
+      }
+    ],
+    "why": "Opera's melodic sweep and a poetic lyric tradition met the 45 rpm single, producing a national ballad style whose oversized choruses Italo disco later set to drum machines.",
+    "artists": [
+      "Domenico Modugno",
+      "Mina",
+      "Lucio Battisti",
+      "Fabrizio De André",
+      "Lucio Dalla"
+    ],
+    "albums": [
+      {
+        "t": "Anima latina",
+        "a": "Lucio Battisti"
+      },
+      {
+        "t": "Studio Uno",
+        "a": "Mina"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Nel blu dipinto di blu (Volare)",
+        "a": "Domenico Modugno",
+        "why": "The 1958 Sanremo winner that took canzone to the world — its soaring refrain is the template."
+      },
+      {
+        "t": "Se telefonando",
+        "a": "Mina",
+        "why": "Composed and arranged by Ennio Morricone — the film-score and canzone lines in one record."
+      },
+      {
+        "t": "La canzone di Marinella",
+        "a": "Fabrizio De André"
+      }
+    ]
+  },
+  {
+    "id": "citypop",
+    "name": "City Pop",
+    "fam": "global",
+    "fam2": "soul",
+    "year": 1978,
+    "role": "branch",
+    "yOff": 130,
+    "def": "Japan's boom-era studio pop — disco, funk, AOR and jazz fusion polished into glossy, urbane songs about neon nights and coastal drives.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "Lush jazz-fusion extended chords."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Tight disco-funk bass and drums."
+      },
+      {
+        "k": "Production",
+        "v": "Immaculate big-budget studio session polish."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Bubble-economy Tokyo leisure culture."
+      }
+    ],
+    "why": "It fuses disco groove, funk bass and jazz harmony into an immaculately produced Japanese pop language.",
+    "artists": [
+      "Tatsuro Yamashita",
+      "Mariya Takeuchi",
+      "Taeko Ohnuki"
+    ],
+    "albums": [
+      {
+        "t": "For You",
+        "a": "Tatsuro Yamashita"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Plastic Love",
+        "a": "Mariya Takeuchi",
+        "why": "The algorithm-era rediscovery that made city pop a global genre decades late."
+      },
+      {
+        "t": "Ride on Time",
+        "a": "Tatsuro Yamashita"
+      },
+      {
+        "t": "4:00 A.M.",
+        "a": "Taeko Ohnuki"
+      }
+    ],
+    "tempo": "95–120 BPM"
+  },
+  {
+    "id": "desertblues",
+    "name": "Desert Blues (Tishoumaren)",
+    "fam": "global",
+    "year": 2001,
+    "role": "branch",
+    "yOff": 0,
+    "def": "Tuareg guitar music of the Sahara — hypnotic, pentatonic assouf grooves born in exile camps, electrified and carried worldwide by Tinariwen.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Loping camel-gait shuffle over handclaps."
+      },
+      {
+        "k": "Melody",
+        "v": "Modal, pentatonic guitar lines in call-and-response."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Clean-to-fuzzed electric guitar over droning vamps."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Tuareg exile, rebellion and desert festivals."
+      }
+    ],
+    "why": "It parallels the blues from the other side of the Atlantic — droning pentatonic guitar as memory, exile and trance.",
+    "artists": [
+      "Tinariwen",
+      "Mdou Moctar",
+      "Bombino"
+    ],
+    "albums": [
+      {
+        "t": "Aman Iman",
+        "a": "Tinariwen"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Cler Achel",
+        "a": "Tinariwen",
+        "why": "The loping assouf groove that carried Saharan guitar music to the world."
+      },
+      {
+        "t": "Afrique Victime",
+        "a": "Mdou Moctar"
+      },
+      {
+        "t": "Ahoulaguine Akaline",
+        "a": "Bombino"
+      }
+    ],
+    "tempo": "80–120 BPM"
+  },
+  {
+    "id": "amapiano",
+    "name": "Amapiano",
+    "fam": "global",
+    "fam2": "electronic",
+    "year": 2026,
+    "role": "rising",
+    "yOff": -120,
+    "def": "South Africa's dominant dance sound — deep-house chords and kwaito swing over airy log-drum basslines, jazzy pads and shuffling percussion.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Shuffling, swung percussion over a bouncing log-drum bass."
+      },
+      {
+        "k": "Harmony",
+        "v": "Lush deep-house and jazz chords."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Township-born, globally streaming dance culture."
+      }
+    ],
+    "why": "It grows deep house's warm chords into a distinctly South African groove built on the springy log-drum bassline.",
+    "artists": [
+      "Kabza De Small",
+      "DJ Maphorisa",
+      "Focalistic"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Ke Star",
+        "a": "Focalistic",
+        "why": "Its log-drum bassline became the sound that carried amapiano worldwide."
+      },
+      {
+        "t": "Asibe Happy",
+        "a": "Kabza De Small & DJ Maphorisa"
+      },
+      {
+        "t": "Sponono",
+        "a": "Kabza De Small"
+      }
+    ],
+    "tempo": "110–118 BPM"
+  },
+  {
+    "id": "afrobeats",
+    "name": "Afrobeats",
+    "fam": "global",
+    "year": 2026,
+    "role": "rising",
+    "yOff": 60,
+    "def": "The pop juggernaut of West Africa — a glossy, melodic fusion of highlife, dancehall, hip-hop and R&B (distinct from Fela's Afrobeat) that now tops charts worldwide.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Mid-tempo, syncopated log-drum and dancehall-inflected grooves."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Melodic, pidgin-inflected singing and rap."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Lagos-to-global pop industry."
+      }
+    ],
+    "why": "It scales highlife and Afrobeat's rhythmic DNA into a melodic, global pop language blending dancehall, hip-hop and R&B.",
+    "artists": [
+      "Burna Boy",
+      "Wizkid",
+      "Tems"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Essence",
+        "a": "Wizkid feat. Tems",
+        "why": "The crossover hit that proved Afrobeats could dominate global pop radio."
+      },
+      {
+        "t": "Last Last",
+        "a": "Burna Boy"
+      },
+      {
+        "t": "Love Nwantiti",
+        "a": "CKay"
+      }
+    ],
+    "tempo": "98–110 BPM"
+  },
+  {
+    "id": "afrofunk",
+    "name": "Afro-Funk",
+    "fam": "global",
+    "fam2": "soul",
+    "year": 1970,
+    "role": "hybrid",
+    "yOff": -55,
+    "def": "West and Central African bands metabolising James Brown — funk's syncopation re-rooted in local rhythms, languages and horn traditions.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Funk syncopation interlocked with African polyrhythm."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Horn-heavy dance bands with hand percussion."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Lagos, Accra and Douala club circuits of the early 70s."
+      }
+    ],
+    "why": "American funk arrived by record and radio, and African dance bands answered in their own rhythmic languages.",
+    "artists": [
+      "Manu Dibango",
+      "Orlando Julius",
+      "The Funkees"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Soul Makossa",
+        "a": "Manu Dibango",
+        "why": "The Afro-funk record that echoed from disco to hip-hop to pop."
+      },
+      {
+        "t": "Breakthrough",
+        "a": "The Funkees"
+      },
+      {
+        "t": "Ijo Soul",
+        "a": "Orlando Julius"
+      }
+    ],
+    "tempo": "100–125 BPM"
+  },
+  {
+    "id": "ethiojazz",
+    "name": "Ethio-Jazz",
+    "fam": "global",
+    "fam2": "jazz",
+    "year": 1969,
+    "role": "hybrid",
+    "yOff": 60,
+    "def": "Mulatu Astatke's fusion of Ethiopian pentatonic modes with jazz harmony and funk rhythm — minor-key horn lines drifting over a slow-burning groove.",
+    "traits": [
+      {
+        "k": "Melody",
+        "v": "Qéñét pentatonic modes carrying an unmistakable melancholy."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Slow, smoky funk and Latin-tinged swing."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Swinging Addis — the imperial-era Ethiopian club scene."
+      }
+    ],
+    "why": "Astatke, trained in London and New York, voiced Ethiopian scales through vibraphone, horns and a funk rhythm section.",
+    "artists": [
+      "Mulatu Astatke",
+      "Hailu Mergia",
+      "Wallias Band"
+    ],
+    "albums": [
+      {
+        "t": "Mulatu of Ethiopia",
+        "a": "Mulatu Astatke"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Yèkèrmo Sèw",
+        "a": "Mulatu Astatke",
+        "why": "The defining Ethio-jazz theme — pentatonic melancholy over funk."
+      },
+      {
+        "t": "Tezeta (Nostalgia)",
+        "a": "Mulatu Astatke"
+      },
+      {
+        "t": "Musicawi Silt",
+        "a": "Wallias Band"
+      }
+    ],
+    "tempo": "80–110 BPM"
+  },
+  {
+    "id": "anatolian",
+    "name": "Anatolian Rock",
+    "fam": "global",
+    "fam2": "rock",
+    "year": 1971,
+    "role": "hybrid",
+    "yOff": -170,
+    "def": "Turkish folk melodies and the electric saz run through fuzz and psychedelic rock — protest-era songcraft in odd Anatolian meters.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Electrified bağlama (saz) alongside fuzz guitar and organ."
+      },
+      {
+        "k": "Melody",
+        "v": "Anatolian folk modes and asymmetric aksak rhythms."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Istanbul’s politically charged early-70s scene."
+      }
+    ],
+    "why": "A generation electrified Turkey's folk repertoire through the psychedelic toolkit, keeping its modes and meters intact.",
+    "artists": [
+      "Erkin Koray",
+      "Selda Bağcan",
+      "Barış Manço"
+    ],
+    "albums": [
+      {
+        "t": "Elektronik Türküler",
+        "a": "Erkin Koray"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Ince Ince Bir Kar Yagar",
+        "a": "Selda Bağcan",
+        "why": "Saz and fuzz in protest — later sampled across hip-hop."
+      },
+      {
+        "t": "Estarabim",
+        "a": "Erkin Koray"
+      },
+      {
+        "t": "Dağlar Dağlar",
+        "a": "Barış Manço"
+      }
+    ],
+    "tempo": "90–130 BPM"
+  },
+  {
+    "id": "zamrock",
+    "name": "Zamrock",
+    "fam": "global",
+    "fam2": "rock",
+    "year": 1973,
+    "role": "hybrid",
+    "yOff": 175,
+    "def": "Zambia's 70s rock explosion — fuzz-heavy psych and funk grooves cut in Lusaka during the copper boom, sung in English and Nyanja.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Blown-out fuzz guitar over raw, danceable rhythm sections."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Post-independence Lusaka — state radio quotas fostering local bands."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Funk and local kalindula pulses under garage-rock drive."
+      }
+    ],
+    "why": "Copper-boom Zambia heard Hendrix and James Brown and built its own amplifier culture around them.",
+    "artists": [
+      "WITCH",
+      "Amanaz",
+      "Paul Ngozi"
+    ],
+    "albums": [
+      {
+        "t": "Introduction",
+        "a": "WITCH"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Introduction",
+        "a": "WITCH",
+        "why": "Zamrock’s founding statement — garage fuzz with Lusaka swagger."
+      },
+      {
+        "t": "Khala My Friend",
+        "a": "Amanaz"
+      },
+      {
+        "t": "Hold On",
+        "a": "Paul Ngozi"
+      }
+    ],
+    "tempo": "100–140 BPM"
+  },
+  {
+    "id": "afrorock",
+    "name": "Afro-Rock",
+    "fam": "global",
+    "fam2": "rock",
+    "year": 1972,
+    "role": "hybrid",
+    "yOff": 60,
+    "def": "African rock bands fusing highlife and polyrhythm with heavy guitar — the pan-African, rock-facing sibling of Afro-funk.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Rock drive layered over highlife and traditional percussion."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Twin guitars, congas and horns in equal measure."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Pan-African bands touring Europe — Osibisa’s “criss-cross rhythms”."
+      }
+    ],
+    "why": "Where Afro-funk answered James Brown, Afro-rock answered Santana and the guitar bands — polyrhythm under the riff.",
+    "artists": [
+      "Osibisa",
+      "BLO",
+      "Assagai"
+    ],
+    "albums": [
+      {
+        "t": "Osibisa",
+        "a": "Osibisa"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Sunshine Day",
+        "a": "Osibisa",
+        "why": "Highlife horns and rock guitar in joyful criss-cross rhythm."
+      },
+      {
+        "t": "Chant to Mother Earth",
+        "a": "BLO"
+      },
+      {
+        "t": "Telephone Girl",
+        "a": "Assagai"
+      }
+    ],
+    "tempo": "100–130 BPM"
+  },
+  {
+    "id": "japanesepsych",
+    "name": "Japanese Psych",
+    "fam": "global",
+    "fam2": "rock",
+    "year": 1971,
+    "role": "hybrid",
+    "yOff": 290,
+    "def": "Japan's psychedelic underground — from Group Sounds fallout to blistering heavy psych and endless feedback-drenched jams, often more extreme than its Western models.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Feedback, fuzz and echo pushed past Western psych’s limits."
+      },
+      {
+        "k": "Song structure",
+        "v": "Side-long jams from meditative drone to total freakout."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Tokyo’s underground — communes, art happenings, tiny labels."
+      }
+    ],
+    "why": "Imported psychedelia met Japan's avant-garde and noise traditions, and the volume knob became a philosophical position.",
+    "artists": [
+      "Flower Travellin' Band",
+      "Les Rallizes Dénudés",
+      "Acid Mothers Temple"
+    ],
+    "albums": [
+      {
+        "t": "Satori",
+        "a": "Flower Travellin' Band"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Satori Part II",
+        "a": "Flower Travellin' Band",
+        "why": "Heavy psych as spiritual exercise — Japan’s answer to Sabbath, weirder."
+      },
+      {
+        "t": "Night of the Assassins",
+        "a": "Les Rallizes Dénudés"
+      },
+      {
+        "t": "Pink Lady Lemonade",
+        "a": "Acid Mothers Temple"
+      }
+    ],
+    "tempo": "70–150 BPM",
+    "tempoNote": "Highly variable — meditative drones to full-blast freakouts."
+  },
+  {
+    "id": "latinpsych",
+    "name": "Latin Psych",
+    "fam": "global",
+    "fam2": "rock",
+    "year": 1966,
+    "role": "hybrid",
+    "yOff": -55,
+    "def": "Psychedelia across Latin America — from Peruvian garage fuzz to Brazil's Tropicália — folding local rhythms, protest and pop art into the psychedelic template.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Cumbia, bossa and Andean pulses under fuzz guitar."
+      },
+      {
+        "k": "Scene / context",
+        "v": "60s–70s youth countercultures under authoritarian pressure."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Garage-band fuzz and home-built effects with local color."
+      }
+    ],
+    "why": "Psychedelia arrived as both sound and permission — each scene bent it around its own rhythms and politics.",
+    "artists": [
+      "Os Mutantes",
+      "Traffic Sound",
+      "La Revolución de Emiliano Zapata"
+    ],
+    "albums": [
+      {
+        "t": "Os Mutantes",
+        "a": "Os Mutantes"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "A Minha Menina",
+        "a": "Os Mutantes",
+        "why": "Tropicália’s fuzz-pop joy — psychedelia with a Brazilian accent."
+      },
+      {
+        "t": "Meshkalina",
+        "a": "Traffic Sound"
+      },
+      {
+        "t": "Nasty Sex",
+        "a": "La Revolución de Emiliano Zapata"
+      }
+    ],
+    "tempo": "90–130 BPM"
+  },
+  {
+    "id": "bossanova",
+    "name": "Bossa Nova",
+    "fam": "global",
+    "fam2": "jazz",
+    "year": 1958,
+    "role": "foundational",
+    "yOff": -155,
+    "def": "Samba cooled to a whisper — syncopated nylon-string guitar, hushed vocals and jazz harmony from late-50s Rio apartments.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "The violão’s clave-like plucked syncopation over a soft 2."
+      },
+      {
+        "k": "Harmony",
+        "v": "Extended jazz chords — 9ths, 13ths, chromatic slips."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Intimate, vibrato-less, barely above speech."
+      }
+    ],
+    "why": "It fused samba’s rhythmic DNA with cool-jazz harmony at whisper volume — proof that quiet can be revolutionary.",
+    "artists": [
+      "João Gilberto",
+      "Antônio Carlos Jobim",
+      "Astrud Gilberto"
+    ],
+    "albums": [
+      {
+        "t": "Getz/Gilberto",
+        "a": "Stan Getz & João Gilberto"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Chega de Saudade",
+        "a": "João Gilberto",
+        "why": "Gilberto’s plucked guitar pattern here codified the entire genre."
+      },
+      {
+        "t": "The Girl from Ipanema",
+        "a": "Stan Getz & João Gilberto"
+      },
+      {
+        "t": "Corcovado",
+        "a": "Antônio Carlos Jobim"
+      }
+    ],
+    "tempo": "120–140 BPM",
+    "tempoNote": "Counted in 2 — feels far slower than the number."
+  },
+  {
+    "id": "bailefunk",
+    "name": "Baile Funk",
+    "fam": "global",
+    "fam2": "electronic",
+    "year": 1998,
+    "role": "branch",
+    "yOff": -120,
+    "def": "Rio’s favela party music — Miami bass mutated into the tamborzão drum pattern under chanted MC hooks, raw and relentless.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "The tamborzão — swung 130 BPM kick-and-conga pattern."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Chanted, percussive MC hooks and call-outs."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Favela sound-system bailes and phone-speaker virality."
+      }
+    ],
+    "why": "One drum loop, endlessly recombined with local voices, became a self-sustaining parallel pop industry.",
+    "artists": [
+      "DJ Marlboro",
+      "Deize Tigrona",
+      "Anitta"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Rap das Armas",
+        "a": "Cidinho & Doca",
+        "why": "The tamborzão pattern under favela storytelling — baile funk’s global calling card."
+      },
+      {
+        "t": "Injeção",
+        "a": "Deize Tigrona"
+      },
+      {
+        "t": "Vai Malandra",
+        "a": "Anitta"
+      }
+    ],
+    "tempo": "125–135 BPM"
+  },
+  {
+    "id": "mandelao",
+    "name": "Funk Mandelão",
+    "fam": "global",
+    "fam2": "electronic",
+    "year": 2016,
+    "role": "branch",
+    "yOff": -225,
+    "aka": "Funk Automotivo",
+    "def": "São Paulo's street-party funk — minimal, distorted beats with heavy kicks and overdriven bass, built for car sound systems at the fluxos.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Hard, often four-on-the-floor kicks under repetitive loops."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Clipped, overdriven low end and metallic percussion."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Short, repeated MC phrases used as hooks."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Fluxos street parties and paredões, cars fitted with large sound systems."
+      }
+    ],
+    "why": "It took baile funk out of Rio and stripped it to distortion and repetition, the sound that later spread online.",
+    "artists": [
+      "DJ GBR",
+      "MC Niack",
+      "DJ Henrique de Ferraz"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Ritmo dos Fluxos",
+        "a": "DJ GBR",
+        "why": "The 2016 track that popularised the mandelão sound."
+      },
+      {
+        "t": "Oh Juliana",
+        "a": "MC Niack"
+      },
+      {
+        "t": "Beat Automotivo",
+        "a": "DJ Henrique de Ferraz"
+      }
+    ]
+  },
+  {
+    "id": "brphonk",
+    "name": "Brazilian Phonk",
+    "fam": "global",
+    "fam2": "hiphop",
+    "year": 2022,
+    "role": "hybrid",
+    "yOff": -335,
+    "aka": "Phonk Brasileiro",
+    "def": "Funk mandelão and automotivo rhythms and vocals fused with drift phonk's cowbell leads and nocturnal production — short, distorted and aggressive.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Funk automotivo beats and kicks."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Noisy, distorted mixes with drift-style cowbell and synth leads."
+      },
+      {
+        "k": "Song structure",
+        "v": "Short tracks built around drops."
+      },
+      {
+        "k": "Scene / context",
+        "v": "TikTok edits and streaming playlists; producers in Brazil and abroad."
+      }
+    ],
+    "why": "It joined two online-era scenes, São Paulo funk and drift phonk, and carried Brazilian funk to a global audience.",
+    "artists": [
+      "Slowboy",
+      "Eternxlkz",
+      "ATLXS"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Brazilian Phonk Mano",
+        "a": "Slowboy",
+        "why": "The track that named the style and drew wide attention to it."
+      },
+      {
+        "t": "SLAY!",
+        "a": "Eternxlkz"
+      },
+      {
+        "t": "Passo Bem Solto",
+        "a": "ATLXS"
+      }
+    ]
+  }
+]

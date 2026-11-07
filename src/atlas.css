@@ -1,0 +1,75 @@
+/* Global + structural styles for the Lineage Atlas. Component-level styling stays inline
+   (ported 1:1 from the design prototype); this file holds what inline styles cannot express:
+   resets, keyframes, pseudo-classes (hover/focus), and the mobile media query. */
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;height:100%;background:#0a0c10;overscroll-behavior:none;-webkit-text-size-adjust:100%;}
+#root{height:100%;}
+body{font-family:'Schibsted Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;color:#e7eaee;}
+
+.gx-root{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+.gx-root button,.gx-root input,.gx-root a{touch-action:manipulation;}
+.gx-root button{font-family:'Schibsted Grotesk',system-ui,sans-serif;}
+.gx-panel{-webkit-user-select:text;user-select:text;}
+
+/* perf degrade while a touch pan/pinch/glide is live: glows + label text are what blow the iOS tile re-raster budget */
+.gx-perf [data-node] div{box-shadow:none !important;transition:none !important;}
+.gx-perf svg text{display:none !important;}
+
+@keyframes gxpulse{0%{transform:scale(1);opacity:.6;}70%{transform:scale(1.7);opacity:0;}100%{opacity:0;}}
+@keyframes gxeq{0%,100%{height:4px;}50%{height:15px;}}
+
+.gxscroll::-webkit-scrollbar{width:8px;}
+.gxscroll::-webkit-scrollbar-thumb{background:rgba(255,255,255,.13);border-radius:4px;}
+.gxscroll::-webkit-scrollbar-track{background:transparent;}
+
+input[type=range].gxr{-webkit-appearance:none;appearance:none;width:100%;height:16px;background:transparent;cursor:pointer;}
+input[type=range].gxr::-webkit-slider-runnable-track{height:2px;background:rgba(255,255,255,.18);border-radius:2px;}
+input[type=range].gxr::-webkit-slider-thumb{-webkit-appearance:none;width:15px;height:15px;border-radius:50%;background:#eef0f3;margin-top:-6.5px;box-shadow:0 0 0 4px rgba(238,240,243,.10);}
+input[type=range].gxr::-moz-range-track{height:2px;background:rgba(255,255,255,.18);border-radius:2px;}
+input[type=range].gxr::-moz-range-thumb{width:15px;height:15px;border:none;border-radius:50%;background:#eef0f3;}
+
+/* hover / focus states (the prototype expressed these as style-hover / style-focus attributes) */
+.hv-bg10:hover{background:rgba(255,255,255,.1) !important;}
+.hv-bg12:hover{background:rgba(255,255,255,.12) !important;}
+.hv-bg09:hover{background:rgba(255,255,255,.09) !important;}
+.hv-bg07:hover{background:rgba(255,255,255,.07) !important;border-color:rgba(255,255,255,.16) !important;}
+.hv-bg06:hover{background:rgba(255,255,255,.06) !important;}
+.hv-bg03:hover{background:rgba(255,255,255,.03) !important;}
+.hv-white:hover{color:#fff !important;}
+.hv-light:hover{color:#e7eaee !important;}
+.hv-mid:hover{color:#cbd0d7 !important;}
+.hv-cyan:hover{color:#7fd9e6 !important;}
+.hv-fade:hover{opacity:.82 !important;}
+.hv-bright-white:hover{background:#fff !important;}
+.hv-border35:hover{border-color:rgba(255,255,255,.35) !important;}
+.gx-search input:focus{border-color:rgba(255,255,255,.32) !important;background:rgba(255,255,255,.08) !important;}
+
+@supports (height:100dvh){ .gx-root{ height:100dvh !important; } }
+
+@media (max-width:720px){
+  .gx-title-main{ font-size:16px !important; }
+  .gx-title-sub{ font-size:8px !important; letter-spacing:.13em !important; }
+  .gx-title-wrap{ top:calc(env(safe-area-inset-top, 0px) + 12px) !important; left:14px !important; max-width:46vw !important; }
+  .gx-top{ top:calc(env(safe-area-inset-top, 0px) + 10px) !important; right:12px !important; gap:6px !important; }
+  .gx-top button{ font-size:11px !important; padding:8px 9px !important; }
+  .gx-search input{ width:118px !important; font-size:16px !important; padding:7px 26px 7px 10px !important; }
+  .gx-search input{ background:#15171b !important; backdrop-filter:none !important; }
+  .gx-search input:focus{ width:172px !important; background:#15171b !important; }
+  .gx-top button{ background:#15171b !important; }
+  .gx-srch-dd{ position:fixed !important; left:12px !important; right:12px !important; top:calc(env(safe-area-inset-top, 0px) + 56px) !important; width:auto !important; max-height:46vh !important; }
+  .gx-panel{ top:auto !important; bottom:0 !important; left:0 !important; right:0 !important; width:auto !important; height:60vh !important; border-left:none !important; border-top:1px solid rgba(255,255,255,.12) !important; border-radius:20px 20px 0 0 !important; box-shadow:0 -24px 70px rgba(0,0,0,.55) !important; }
+  .gx-legend{ width:182px !important; bottom:calc(env(safe-area-inset-bottom, 0px) + 16px) !important; left:12px !important; }
+  .gx-ctrl{ right:12px !important; bottom:150px !important; }
+  .gx-sheet .gx-ctrl{ bottom: calc(60vh + 14px) !important; }
+  .gx-peek .gx-panel{ height:auto !important; max-height:222px !important; overflow:hidden !important; }
+  .gx-peek .gx-ctrl{ bottom:236px !important; }
+  .gx-ctrl button{ width:38px !important; height:38px !important; }
+  .gx-slider{ width:auto !important; left:12px !important; right:12px !important; transform:none !important; bottom:calc(env(safe-area-inset-bottom, 0px) + 14px) !important; }
+  .gx-journey{ width:auto !important; left:12px !important; right:12px !important; transform:none !important; bottom:calc(env(safe-area-inset-bottom, 0px) + 14px) !important; }
+  .gx-focus{ top:calc(env(safe-area-inset-top, 0px) + 92px) !important; left:12px !important; transform:none !important; max-width:calc(100vw - 24px) !important; }
+  .gx-focus span{ flex:0 0 auto; }
+  .gx-focus span:nth-child(2){ flex:1 1 auto; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .gx-crumb{ max-width:calc(100vw - 24px) !important; top:92px !important; left:12px !important; transform:none !important; overflow-x:auto; }
+}
+.gx-immersive .gx-top, .gx-immersive .gx-title-wrap, .gx-immersive .gx-legend, .gx-immersive .gx-crumb{ display:none !important; }

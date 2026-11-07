@@ -1,25 +1,26 @@
-# CODING AGENTS: READ THIS FIRST
+# The Music Genre Lineage Atlas
 
-This is a **handoff bundle** from Claude Design (claude.ai/design).
+An interactive map of how music genres evolved and influenced one another, from the aulos and lyre of antiquity
+to the current frontiers. Pan and zoom a timeline-graph of 200+ genres in nine colour-coded super-families, scrub
+the time slider to watch genres emerge, follow curated journeys, search by genre or artist, and open any genre
+for its definition, traits, lineage, representative artists, albums and tracks (with links out to Spotify,
+Apple Music, Bandcamp or YouTube).
 
-A user mocked up designs in HTML/CSS/JS using an AI design tool, then exported this bundle so a coding agent can implement the designs for real.
+Built with Vite, React and TypeScript. All content is plain JSON under `data/`, so the atlas grows by editing data
+and pushing; GitHub Pages redeploys automatically.
 
-## What you should do — IMPORTANT
+## Run locally
 
-**Read the chat transcripts first.** There are 50 chat transcript(s) in `chats/`. The transcripts show the full back-and-forth between the user and the design assistant — they tell you **what the user actually wants** and **where they landed** after iterating. Don't skip them. The final HTML files are the output, but the chat is where the intent lives.
+```bash
+npm install
+npm run dev
+```
 
-**Read `project/The Lineage Atlas.dc.html` in full.** The user had this file open when they triggered the handoff, so it's almost certainly the primary design they want built. Read it top to bottom — don't skim. Then **follow its imports**: open every file it pulls in (shared components, CSS, scripts) so you understand how the pieces fit together before you start implementing.
+## Contribute a genre
 
-**If anything is ambiguous, ask the user to confirm before you start implementing.** It's much cheaper to clarify scope up front than to build the wrong thing.
+See `CLAUDE.md` for the data model, the add-a-genre checklist and the validator (`npm run validate`).
 
-## About the design files
+## Origin
 
-The design medium is **HTML/CSS/JS** — these are prototypes, not production code. Your job is to **recreate them pixel-perfectly** in whatever technology makes sense for the target codebase (React, Vue, native, whatever fits). Match the visual output; don't copy the prototype's internal structure unless it happens to fit.
-
-**Don't render these files in a browser or take screenshots unless the user asks you to.** Everything you need — dimensions, colors, layout rules — is spelled out in the source. Read the HTML and CSS directly; a screenshot won't tell you anything they don't.
-
-## Bundle contents
-
-- `README.md` — this file
-- `chats/` — conversation transcripts (read these!)
-- `project/` — the `Music Genre Evolution Map` project files (HTML prototypes, assets, components)
+The atlas began as a Claude Design prototype; the original export, including the chat transcripts that record every
+editorial decision, is preserved under `design-handoff/` for reference.

@@ -1,0 +1,4797 @@
+[
+  {
+    "from": "psych",
+    "to": "elecrock",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Electronic rock grows out of psychedelia's studio experimentation, swapping guitars for oscillators."
+  },
+  {
+    "from": "elecrock",
+    "to": "krautrock",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Krautrock picks up the electronic-rock pulse and stretches it into motorik repetition."
+  },
+  {
+    "from": "elecrock",
+    "to": "newwave",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Suicide's drum-machine minimalism feeds new wave's synth-and-band format."
+  },
+  {
+    "from": "elecrock",
+    "to": "synthpop",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Synth-pop takes electronic rock's synthesizer core and moves it into pop songwriting."
+  },
+  {
+    "from": "industrial",
+    "to": "industrialrock",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Industrial rock keeps industrial's samples and machine noise, adding verses, choruses and guitars."
+  },
+  {
+    "from": "postpunk",
+    "to": "industrialrock",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Post-punk's cold, bass-led aggression shapes the songwriting."
+  },
+  {
+    "from": "elecrock",
+    "to": "industrialrock",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "The idea of electronics as a rock band's core instrument runs back to electronic rock."
+  },
+  {
+    "from": "alternative",
+    "to": "industrialrock",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "Alternative radio and Lollapalooza carried industrial rock to the mainstream."
+  },
+  {
+    "from": "elecrock",
+    "to": "indietronica",
+    "rel": "stylistic",
+    "strength": 0.3,
+    "note": "Indietronica is usually filed under the electronic-rock umbrella, but its direct sound comes from indie pop meeting 90s electronica rather than from the original 60s electronic rock bands."
+  },
+  {
+    "from": "indie",
+    "to": "indietronica",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Indietronica keeps indie's songwriting and labels, moving the arrangements onto laptops."
+  },
+  {
+    "from": "idm",
+    "to": "indietronica",
+    "rel": "production",
+    "strength": 0.65,
+    "note": "The electronic half: glitchy beats and laptop processing come from 90s electronica and IDM."
+  },
+  {
+    "from": "synthpop",
+    "to": "indietronica",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Synth-pop's warm melodic synths return in an indie register."
+  },
+  {
+    "from": "indietronica",
+    "to": "electropop",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Indietronica's synth-led indie pop is one route into 2000s electropop."
+  },
+  {
+    "from": "indietronica",
+    "to": "bedroompop",
+    "rel": "production",
+    "strength": 0.45,
+    "note": "Bedroom pop inherits the one-person laptop production model."
+  },
+  {
+    "from": "house",
+    "to": "eurodance",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Eurodance is house's four-on-the-floor and piano stabs shrunk to radio length with a rap verse and a chorus."
+  },
+  {
+    "from": "italodisco",
+    "to": "eurodance",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "The sequenced octave bass, accented-English chorus and studio-project model carry straight from Italo and hi-NRG."
+  },
+  {
+    "from": "acid",
+    "to": "eurodance",
+    "rel": "production",
+    "strength": 0.4,
+    "note": "Rave's hoover and stab sounds arrive from the UK acid-house explosion."
+  },
+  {
+    "from": "hiphop",
+    "to": "eurodance",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "The rapped verse — usually by a hired MC — is borrowed from hip-hop as pop furniture."
+  },
+  {
+    "from": "eurodance",
+    "to": "handsup",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Hands Up is Eurodance's next generation: the same pop-club form, faster and harder."
+  },
+  {
+    "from": "trance",
+    "to": "handsup",
+    "rel": "stylistic",
+    "strength": 0.7,
+    "note": "Supersaw leads and the breakdown-and-build come from trance."
+  },
+  {
+    "from": "handsup",
+    "to": "hardstyle",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Hardstyle keeps Hands Up's euphoric melodic breakdown but hardens the kick."
+  },
+  {
+    "from": "techno",
+    "to": "hardstyle",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "The distorted, pitched kick descends through gabber and hard techno."
+  },
+  {
+    "from": "eurodance",
+    "to": "y2kdance",
+    "rel": "revival",
+    "strength": 0.85,
+    "note": "The revival samples and re-sings Eurodance hooks directly."
+  },
+  {
+    "from": "handsup",
+    "to": "y2kdance",
+    "rel": "revival",
+    "strength": 0.5,
+    "note": "Hands Up's supersaw and pitched-vocal nostalgia is the second source."
+  },
+  {
+    "from": "electropop",
+    "to": "y2kdance",
+    "rel": "production",
+    "strength": 0.45,
+    "note": "Modern loud-pop mixing and diva-led vocals come from electropop."
+  },
+  {
+    "from": "classical",
+    "to": "filmscore",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Hollywood's first composers were émigré late-Romantics; the film orchestra is Wagner and Strauss put to picture."
+  },
+  {
+    "from": "modernclassical",
+    "to": "filmscore",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Dissonance, timbre and colour licensed by modernism became the vocabulary of suspense and dread on screen."
+  },
+  {
+    "from": "classical",
+    "to": "canzone",
+    "rel": "origin",
+    "strength": 0.55,
+    "note": "Bel canto phrasing and orchestral arrangement carried from the opera house into the Sanremo ballad."
+  },
+  {
+    "from": "filmscore",
+    "to": "canzone",
+    "rel": "production",
+    "strength": 0.45,
+    "note": "Before the westerns, Morricone arranged RCA Italiana's canzone hits — the same orchestral hand behind Gino Paoli and Mina."
+  },
+  {
+    "from": "filmscore",
+    "to": "libraryfunk",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Library music is film scoring written speculatively — cues by mood, sold to whoever needs them."
+  },
+  {
+    "from": "filmscore",
+    "to": "triphop",
+    "rel": "production",
+    "strength": 0.45,
+    "note": "Portishead and Massive Attack built their sound on sampled and imitated 1960s spy and Morricone scores."
+  },
+  {
+    "from": "filmscore",
+    "to": "postrock",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "The slow cinematic crescendo and cue-like instrumental arc are post-rock's core form."
+  },
+  {
+    "from": "disco",
+    "to": "italodisco",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Italo is disco with the orchestra removed and every part sequenced — the Moroder template industrialised."
+  },
+  {
+    "from": "synthpop",
+    "to": "italodisco",
+    "rel": "production",
+    "strength": 0.55,
+    "note": "Same drum machines and polysynths as British synth pop, aimed at the dancefloor rather than the charts."
+  },
+  {
+    "from": "canzone",
+    "to": "italodisco",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Italo kept canzone's oversized melodic chorus and unabashed sentiment, sung over drum machines."
+  },
+  {
+    "from": "cosmicdisco",
+    "to": "italodisco",
+    "rel": "scene",
+    "strength": 0.4,
+    "note": "The same Italian club circuit and labels at opposite tempos — Cosmic pitched records down, Italo made them to be pitched."
+  },
+  {
+    "from": "italodisco",
+    "to": "house",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Knuckles and Hardy spun Italo imports at the Warehouse and Music Box; their sequenced basslines fed the first house records."
+  },
+  {
+    "from": "italodisco",
+    "to": "synthwave",
+    "rel": "revival",
+    "strength": 0.55,
+    "note": "Synthwave revives Italo's arpeggios and gated drums through an 80s-cinema lens."
+  },
+  {
+    "from": "soul",
+    "to": "psychsoul",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Psychedelic soul runs the soul vocal group through the psychedelic studio."
+  },
+  {
+    "from": "psych",
+    "to": "psychsoul",
+    "rel": "stylistic",
+    "strength": 0.7,
+    "note": "Wah, fuzz and studio effects arrive from psychedelic rock."
+  },
+  {
+    "from": "funk",
+    "to": "deepfunk",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Deep funk is funk's raw, regional 45 underground."
+  },
+  {
+    "from": "deepfunk",
+    "to": "hiphop",
+    "rel": "production",
+    "strength": 0.7,
+    "note": "Its open drum breaks became hip-hop's core sample material."
+  },
+  {
+    "from": "funk",
+    "to": "psychfunk",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Psychedelic funk stretches the funk vamp into acid-rock space."
+  },
+  {
+    "from": "psychsoul",
+    "to": "psychfunk",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "Whitfield-era studio psychedelia deepens into full cosmic funk."
+  },
+  {
+    "from": "acidrock",
+    "to": "psychfunk",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Hendrix-school fuzz lead lands on top of the funk pocket."
+  },
+  {
+    "from": "funk",
+    "to": "libraryfunk",
+    "rel": "stylistic",
+    "strength": 0.7,
+    "note": "Library composers wrote funk grooves to order for broadcast."
+  },
+  {
+    "from": "jazzfunk",
+    "to": "libraryfunk",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Session jazz-funk players staffed the library studios."
+  },
+  {
+    "from": "libraryfunk",
+    "to": "hiphop",
+    "rel": "production",
+    "strength": 0.65,
+    "note": "Obscure library breaks resurfaced as prized hip-hop samples."
+  },
+  {
+    "from": "disco",
+    "to": "cosmicdisco",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Cosmic DJs slowed disco down into hypnotic, synth-led churn."
+  },
+  {
+    "from": "krautrock",
+    "to": "cosmicdisco",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Motorik and synth experiments fed the cosmic sound palette."
+  },
+  {
+    "from": "cosmicdisco",
+    "to": "protohouse",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Its long, eclectic blends prefigured house DJ culture."
+  },
+  {
+    "from": "psych",
+    "to": "acidrock",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Acid rock is psychedelia taken to the stage — louder, longer, heavier."
+  },
+  {
+    "from": "garage",
+    "to": "acidrock",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Garage bands supplied the raw fuzz and attitude."
+  },
+  {
+    "from": "chicago",
+    "to": "acidrock",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Electric blues forms underpin the psychedelic blues-rock jam."
+  },
+  {
+    "from": "acidrock",
+    "to": "heavypsych",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Heavy psych is acid rock with the volume past clean."
+  },
+  {
+    "from": "hardrock",
+    "to": "heavypsych",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Riff-centred hard rock sharpens the heavy psych attack."
+  },
+  {
+    "from": "heavypsych",
+    "to": "heavymetal",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Its saturated riffing feeds directly into metal's vocabulary."
+  },
+  {
+    "from": "heavypsych",
+    "to": "stonerrock",
+    "rel": "revival",
+    "strength": 0.65,
+    "note": "Stoner rock revives heavy psych's fuzz and swing decades on."
+  },
+  {
+    "from": "funk",
+    "to": "funkrock",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Funk supplies the pocket that rock riffing locks into."
+  },
+  {
+    "from": "hardrock",
+    "to": "funkrock",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Distorted riff guitar meets the syncopated rhythm section."
+  },
+  {
+    "from": "psych",
+    "to": "jazzrock",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Late-60s rock experimentation opens the door to horn charts."
+  },
+  {
+    "from": "swing",
+    "to": "jazzrock",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Big-band horn arranging returns inside rock songs."
+  },
+  {
+    "from": "jazzrock",
+    "to": "fusion",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Its pop-facing fusion parallels and feeds jazz fusion proper."
+  },
+  {
+    "from": "funk",
+    "to": "afrofunk",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "James Brown's funk, heard in Lagos and Accra, re-rooted in polyrhythm."
+  },
+  {
+    "from": "highlife",
+    "to": "afrofunk",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "Highlife's dance bands and horn sections are the local foundation."
+  },
+  {
+    "from": "afrobeat",
+    "to": "afrofunk",
+    "rel": "scene",
+    "strength": 0.55,
+    "note": "Sibling scenes in the same West African club circuits."
+  },
+  {
+    "from": "modal",
+    "to": "ethiojazz",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Modal jazz's open harmony hosts Ethiopian pentatonic modes."
+  },
+  {
+    "from": "soul",
+    "to": "ethiojazz",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "American soul and funk rhythm underpin the Addis groove."
+  },
+  {
+    "from": "psych",
+    "to": "anatolian",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "The psychedelic toolkit electrifies Turkish folk repertoire."
+  },
+  {
+    "from": "garage",
+    "to": "anatolian",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Garage-band fuzz and organ drive the Istanbul sound."
+  },
+  {
+    "from": "psych",
+    "to": "zamrock",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Psychedelic rock lands in Lusaka by record and radio."
+  },
+  {
+    "from": "heavypsych",
+    "to": "zamrock",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Zamrock's heaviest bands channel the proto-metal underground."
+  },
+  {
+    "from": "funk",
+    "to": "zamrock",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Funk grooves keep the Zambian sound danceable."
+  },
+  {
+    "from": "highlife",
+    "to": "afrorock",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Highlife rhythm and horns anchor the pan-African rock sound."
+  },
+  {
+    "from": "psych",
+    "to": "afrorock",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Guitar-band psychedelia supplies the rock half of the fusion."
+  },
+  {
+    "from": "psych",
+    "to": "japanesepsych",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Imported psychedelia meets Japan's avant-garde underground."
+  },
+  {
+    "from": "heavypsych",
+    "to": "japanesepsych",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Japanese bands pushed heavy psych's extremity further still."
+  },
+  {
+    "from": "japanesepsych",
+    "to": "neopsych",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Its uncompromising jams inspire later neo-psychedelia."
+  },
+  {
+    "from": "psych",
+    "to": "latinpsych",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "The psychedelic template spreads across Latin American scenes."
+  },
+  {
+    "from": "garage",
+    "to": "latinpsych",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Garage fuzz is the entry point for Lima and Mexico City bands."
+  },
+  {
+    "from": "gospel",
+    "to": "soul",
+    "rel": "origin",
+    "strength": 0.9,
+    "note": "Soul secularises gospel's melismatic, call-and-response singing."
+  },
+  {
+    "from": "gospel",
+    "to": "gospelrock",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "The idiom transfers wholesale — plagal cadences, response singing and the vamp-and-build form, minus the religious text."
+  },
+  {
+    "from": "soul",
+    "to": "gospelrock",
+    "rel": "stylistic",
+    "strength": 0.65,
+    "note": "Soul supplies the horn voicings, organ and rhythm-section feel the rock bands play in."
+  },
+  {
+    "from": "hardrock",
+    "to": "gospelrock",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Electric blues rock provides the instrumentation the gospel grammar is played on."
+  },
+  {
+    "from": "gospelrock",
+    "to": "spacerock",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Spacemen 3 and Spiritualized run the gospel vamp through drone and reverb."
+  },
+  {
+    "from": "gospelrock",
+    "to": "madchester",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Primal Scream take the choir, piano and amen cadence onto the dancefloor."
+  },
+  {
+    "from": "gospelrock",
+    "to": "postpunk",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Nick Cave's organ, backing choir and hymn-form structures carry it into gothic post-punk."
+  },
+  {
+    "from": "gospelrock",
+    "to": "newpostpunk",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "The 2020s guitar-band wave — Geese and adjacent bands — rebuilds the communal build for a new scene."
+  },
+  {
+    "from": "gospel",
+    "to": "rnb",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "R&B borrows gospel's impassioned vocal phrasing."
+  },
+  {
+    "from": "blues",
+    "to": "delta",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Delta blues is the rural Mississippi root form of the blues."
+  },
+  {
+    "from": "blues",
+    "to": "chicago",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Chicago blues is the urban, electrified continuation of the blues."
+  },
+  {
+    "from": "delta",
+    "to": "chicago",
+    "rel": "origin",
+    "strength": 0.9,
+    "note": "Chicago blues is the Delta electrified for the city."
+  },
+  {
+    "from": "blues",
+    "to": "rnb",
+    "rel": "origin",
+    "strength": 0.9,
+    "note": "R&B gives the blues a backbeat, horns and amplification."
+  },
+  {
+    "from": "chicago",
+    "to": "rnb",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Amplified Chicago blues feeds directly into R&B band sound."
+  },
+  {
+    "from": "chicago",
+    "to": "rocknroll",
+    "rel": "production",
+    "strength": 0.6,
+    "note": "Its distorted, amplified guitar tone fed early rock 'n' roll."
+  },
+  {
+    "from": "rnb",
+    "to": "rocknroll",
+    "rel": "origin",
+    "strength": 0.95,
+    "note": "Rock 'n' roll lifts R&B's shuffle and backbeat for teenagers."
+  },
+  {
+    "from": "country",
+    "to": "rockabilly",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Hillbilly boogie and honky-tonk supply the twang, the slap bass and the 'billy' half of the name."
+  },
+  {
+    "from": "rnb",
+    "to": "rockabilly",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "R&B supplies the songs and the backbeat — Elvis's first Sun single was Arthur Crudup's 'That's All Right'."
+  },
+  {
+    "from": "bluegrass",
+    "to": "rockabilly",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "The same single's B-side was Bill Monroe's 'Blue Moon of Kentucky', sped up into a rocker."
+  },
+  {
+    "from": "rockabilly",
+    "to": "rocknroll",
+    "rel": "scene",
+    "strength": 0.6,
+    "note": "Rockabilly is the Southern, country-side strand of 1950s rock 'n' roll; Elvis, Perkins and Lewis took it onto the national charts."
+  },
+  {
+    "from": "rockabilly",
+    "to": "psychobilly",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Psychobilly keeps rockabilly's slapped upright bass, quiff and twang."
+  },
+  {
+    "from": "punk",
+    "to": "psychobilly",
+    "rel": "stylistic",
+    "strength": 0.75,
+    "note": "Punk supplies the speed, volume and confrontational attitude."
+  },
+  {
+    "from": "garage",
+    "to": "psychobilly",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "The Cramps built their sound from 60s garage and surf obscurities — fuzz, reverb and trash."
+  },
+  {
+    "from": "psychobilly",
+    "to": "gothrock",
+    "rel": "scene",
+    "strength": 0.3,
+    "note": "The Cramps' horror-film imagery was a touchstone for deathrock and early goth."
+  },
+  {
+    "from": "rnb",
+    "to": "soul",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Soul grows from R&B charged with gospel intensity."
+  },
+  {
+    "from": "soul",
+    "to": "funk",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Funk emerges from soul, freezing harmony to foreground groove."
+  },
+  {
+    "from": "rnb",
+    "to": "funk",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Funk inherits R&B's horn-driven dance energy."
+  },
+  {
+    "from": "soul",
+    "to": "disco",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Disco descends from soul and funk's dance grooves."
+  },
+  {
+    "from": "funk",
+    "to": "disco",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Disco builds four-on-the-floor on funk's syncopated bass."
+  },
+  {
+    "from": "soul",
+    "to": "phillysoul",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Philadelphia soul dresses the soul vocal group in symphonic strings and horns."
+  },
+  {
+    "from": "funk",
+    "to": "phillysoul",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Its rhythm sections borrow funk's syncopated bass, smoothed into a steady glide."
+  },
+  {
+    "from": "phillysoul",
+    "to": "disco",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "MFSB's strings-and-hi-hat groove at Sigma Sound is a direct template for disco."
+  },
+  {
+    "from": "phillysoul",
+    "to": "contempornb",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Its smooth vocal-group harmony and sweet production carry into later R&B balladry."
+  },
+  {
+    "from": "funk",
+    "to": "hiphop",
+    "rel": "bridge",
+    "strength": 0.85,
+    "note": "Hip-hop is built from looped funk and soul breaks."
+  },
+  {
+    "from": "soul",
+    "to": "hiphop",
+    "rel": "bridge",
+    "strength": 0.5,
+    "note": "Sampled soul supplies hip-hop's melodic material."
+  },
+  {
+    "from": "funk",
+    "to": "afrobeat",
+    "rel": "bridge",
+    "strength": 0.6,
+    "note": "Afrobeat fuses American funk with West-African rhythm."
+  },
+  {
+    "from": "funk",
+    "to": "jazzfunk",
+    "rel": "bridge",
+    "strength": 0.7,
+    "note": "Jazz-funk locks jazz harmony to funk's groove."
+  },
+  {
+    "from": "disco",
+    "to": "house",
+    "rel": "bridge",
+    "strength": 0.8,
+    "note": "House keeps disco's four-on-the-floor pulse and club ethos."
+  },
+  {
+    "from": "funk",
+    "to": "house",
+    "rel": "bridge",
+    "strength": 0.45,
+    "note": "House's bassline language descends from funk and disco."
+  },
+  {
+    "from": "rocknroll",
+    "to": "garage",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Garage strips rock 'n' roll back to its rawest chords."
+  },
+  {
+    "from": "rocknroll",
+    "to": "psych",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Psych rock extends rock 'n' roll through studio experiment."
+  },
+  {
+    "from": "country",
+    "to": "rocknroll",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Country and blues both feed early rock 'n' roll."
+  },
+  {
+    "from": "garage",
+    "to": "protopunk",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Proto-punk hardens garage's primitive energy."
+  },
+  {
+    "from": "garage",
+    "to": "psych",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Garage bands turned toward psychedelic experiment."
+  },
+  {
+    "from": "psych",
+    "to": "protopunk",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Proto-punk reacts against psychedelia's excess."
+  },
+  {
+    "from": "psych",
+    "to": "krautrock",
+    "rel": "bridge",
+    "strength": 0.6,
+    "note": "Krautrock extends psychedelia's jams into motorik repetition."
+  },
+  {
+    "from": "psych",
+    "to": "spacerock",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Space rock revives psychedelia's drones and vastness."
+  },
+  {
+    "from": "psych",
+    "to": "neopsych",
+    "rel": "revival",
+    "strength": 0.7,
+    "note": "Neo-psychedelia revives 60s psychedelic studio textures."
+  },
+  {
+    "from": "folkrock",
+    "to": "psych",
+    "rel": "bridge",
+    "strength": 0.5,
+    "note": "Folk rock's jangle and modal drift feed psychedelia — the Byrds' 'Eight Miles High' is the hinge."
+  },
+  {
+    "from": "protopunk",
+    "to": "punk",
+    "rel": "origin",
+    "strength": 0.9,
+    "note": "Punk formalises proto-punk's minimal, confrontational rock."
+  },
+  {
+    "from": "protopunk",
+    "to": "noiserock",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "The Velvets' drone-noise prefigures noise rock."
+  },
+  {
+    "from": "punk",
+    "to": "nowave",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "No wave pushes punk's year-zero rejection past chords and song form."
+  },
+  {
+    "from": "free",
+    "to": "nowave",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "James Chance's alto sax brings free jazz's skronk into the downtown rock club."
+  },
+  {
+    "from": "experimental",
+    "to": "nowave",
+    "rel": "scene",
+    "strength": 0.45,
+    "note": "Downtown loft composers and no wave bands shared stages, players and audiences."
+  },
+  {
+    "from": "funk",
+    "to": "nowave",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "The Contortions bend James Brown vamps into abrasive punk-funk."
+  },
+  {
+    "from": "nowave",
+    "to": "noiserock",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Sonic Youth and Swans formed in no wave's wake, carrying its atonal guitar into the 80s."
+  },
+  {
+    "from": "nowave",
+    "to": "indiedance",
+    "rel": "revival",
+    "strength": 0.35,
+    "note": "DFA-era dance-punk revives no wave's punk-funk and cowbell."
+  },
+  {
+    "from": "punk",
+    "to": "newwave",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "New wave adds synths and pop polish to punk."
+  },
+  {
+    "from": "punk",
+    "to": "postpunk",
+    "rel": "origin",
+    "strength": 0.9,
+    "note": "Post-punk redirects punk's energy into experiment."
+  },
+  {
+    "from": "punk",
+    "to": "alternative",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Punk's DIY ethic underpins alternative rock."
+  },
+  {
+    "from": "postpunk",
+    "to": "alternative",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Post-punk's sensibility enters the alt-rock mainstream."
+  },
+  {
+    "from": "newwave",
+    "to": "alternative",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "New wave's melodic art-pop feeds alternative."
+  },
+  {
+    "from": "noiserock",
+    "to": "alternative",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Noise rock's dissonance shapes alt-rock dynamics."
+  },
+  {
+    "from": "alternative",
+    "to": "indie",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Indie rock continues alternative on independent labels."
+  },
+  {
+    "from": "indie",
+    "to": "britpop",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Britpop is UK indie going overground into the charts."
+  },
+  {
+    "from": "janglepop",
+    "to": "britpop",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "The Smiths' jangle is the guitar base Britpop builds on."
+  },
+  {
+    "from": "madchester",
+    "to": "britpop",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "The Stone Roses' swagger and groove hand straight on to Oasis."
+  },
+  {
+    "from": "glamrock",
+    "to": "britpop",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Bowie-and-Bolan glam shapes Suede's theatrical first wave."
+  },
+  {
+    "from": "beat",
+    "to": "britpop",
+    "rel": "revival",
+    "strength": 0.55,
+    "note": "Beatles and Kinks-era British beat is the songbook Britpop reclaims."
+  },
+  {
+    "from": "rocknroll",
+    "to": "beat",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "British teens rebuild Chuck Berry and Little Richard's rock 'n' roll as the self-contained beat group."
+  },
+  {
+    "from": "rnb",
+    "to": "beat",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Beat groups cut their teeth on R&B and girl-group covers — Motown songs filled early Beatles setlists."
+  },
+  {
+    "from": "beat",
+    "to": "garage",
+    "rel": "stylistic",
+    "strength": 0.7,
+    "note": "After February 1964, every American garage band wanted to be the Beatles."
+  },
+  {
+    "from": "beat",
+    "to": "folkrock",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "The Byrds electrified Dylan after seeing A Hard Day's Night — beat harmony under folk repertoire."
+  },
+  {
+    "from": "beat",
+    "to": "psych",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Revolver-era studio experiment carries the beat group into psychedelia."
+  },
+  {
+    "from": "beat",
+    "to": "baroquepop",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "'Yesterday' and 'Eleanor Rigby' put the conservatory under the beat group."
+  },
+  {
+    "from": "beat",
+    "to": "powerpop",
+    "rel": "origin",
+    "strength": 0.9,
+    "note": "Power pop is the 1964–66 beat-group sound preserved and amplified."
+  },
+  {
+    "from": "folkrock",
+    "to": "powerpop",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "The Byrds' twelve-string ring is power pop's chime."
+  },
+  {
+    "from": "hardrock",
+    "to": "powerpop",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "The Who's power chords supply the 'power' under the pop."
+  },
+  {
+    "from": "powerpop",
+    "to": "skinnytie",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "The skinny-tie wave is the same songbook timed to punk's pulse and sold to radio."
+  },
+  {
+    "from": "punk",
+    "to": "skinnytie",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Punk's tempo and two-minute economy tighten the late-70s wave."
+  },
+  {
+    "from": "newwave",
+    "to": "skinnytie",
+    "rel": "scene",
+    "strength": 0.55,
+    "note": "Skinny-tie bands charted inside new wave's radio moment — same wardrobe, same playlists."
+  },
+  {
+    "from": "powerpop",
+    "to": "powerpoprevival",
+    "rel": "revival",
+    "strength": 0.85,
+    "note": "Bandwagonesque and Girlfriend rebuild Big Star's songbook for the indie 90s."
+  },
+  {
+    "from": "janglepop",
+    "to": "powerpoprevival",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "College-radio jangle kept the chime alive between waves."
+  },
+  {
+    "from": "indie",
+    "to": "powerpoprevival",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "The revival lives on indie labels and college charts."
+  },
+  {
+    "from": "powerpoprevival",
+    "to": "poppunk",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Weezer's crunch-and-harmony blueprint feeds 2000s pop-punk."
+  },
+  {
+    "from": "beat",
+    "to": "sunshinepop",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Beat harmony pop, transplanted to California and scored for the studio."
+  },
+  {
+    "from": "folkrock",
+    "to": "sunshinepop",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Folk-pop vocal groups going electric supplied the songs and the singers."
+  },
+  {
+    "from": "baroquepop",
+    "to": "sunshinepop",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Sibling orchestral-pop strands sharing LA arrangers and session players."
+  },
+  {
+    "from": "sunshinepop",
+    "to": "yachtrock",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Stacked harmonies and session-pro polish glide into 70s West Coast soft rock."
+  },
+  {
+    "from": "beat",
+    "to": "bubblegum",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Bubblegum reduces the beat group to its hook, then manufactures a band around it."
+  },
+  {
+    "from": "bubblegum",
+    "to": "glamrock",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Glam's chant-and-stomp singles kept the hook factory running — Chinn and Chapman wrote for both."
+  },
+  {
+    "from": "bubblegum",
+    "to": "poppunk",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Pop-punk's sugar rush is bubblegum's — the Ramones set its melodies to downstrokes."
+  },
+  {
+    "from": "mathrock",
+    "to": "mathpop",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Math-pop keeps math rock's tapped counterpoint and odd meters."
+  },
+  {
+    "from": "indiedance",
+    "to": "mathpop",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Dance-punk's hi-hat tightness gives Foals' math its groove."
+  },
+  {
+    "from": "indie",
+    "to": "mathpop",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Indie songwriting supplies the hooks and choruses."
+  },
+  {
+    "from": "midwestemo",
+    "to": "mathpop",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Twinkly emo's clean tapped arpeggios share its guitar vocabulary."
+  },
+  {
+    "from": "noiserock",
+    "to": "shoegaze",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "Noise rock's feedback informs shoegaze's wall of sound."
+  },
+  {
+    "from": "spacerock",
+    "to": "shoegaze",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "Space rock's reverb drift feeds shoegaze."
+  },
+  {
+    "from": "krautrock",
+    "to": "spacerock",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Space rock builds on krautrock's motorik pulse."
+  },
+  {
+    "from": "krautrock",
+    "to": "postrock",
+    "rel": "bridge",
+    "strength": 0.7,
+    "note": "Post-rock inherits krautrock's repetition and patience."
+  },
+  {
+    "from": "noiserock",
+    "to": "postrock",
+    "rel": "origin",
+    "strength": 0.5,
+    "note": "Slint and noise rock seed post-rock."
+  },
+  {
+    "from": "minimalism",
+    "to": "postrock",
+    "rel": "bridge",
+    "strength": 0.45,
+    "note": "Post-rock borrows minimalism's gradual process."
+  },
+  {
+    "from": "fusion",
+    "to": "postrock",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "Post-rock's instrumental interplay draws on fusion."
+  },
+  {
+    "from": "spacerock",
+    "to": "postrock",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Space rock's drift feeds post-rock atmosphere."
+  },
+  {
+    "from": "postpunk",
+    "to": "dreampop",
+    "rel": "production",
+    "strength": 0.65,
+    "note": "Dream pop warms post-punk's cold, reverberant space."
+  },
+  {
+    "from": "postpunk",
+    "to": "ethereal",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Ethereal wave grows from post-punk and goth."
+  },
+  {
+    "from": "dreampop",
+    "to": "ethereal",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Ethereal wave shares dream pop's gauzy palette."
+  },
+  {
+    "from": "ethereal",
+    "to": "shoegaze",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "Ethereal wave's reverb feeds shoegaze texture."
+  },
+  {
+    "from": "dreampop",
+    "to": "shoegaze",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Shoegaze pushes dream pop's textures to extremes."
+  },
+  {
+    "from": "noisepop",
+    "to": "shoegaze",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Shoegaze fuses noise pop's feedback with melody and space."
+  },
+  {
+    "from": "postpunk",
+    "to": "noisepop",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Noise pop keeps post-punk's edge over a pop heart."
+  },
+  {
+    "from": "neopsych",
+    "to": "noisepop",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "The Jesus and Mary Chain bridge neo-psych and noise pop."
+  },
+  {
+    "from": "neopsych",
+    "to": "shoegaze",
+    "rel": "production",
+    "strength": 0.55,
+    "note": "Neo-psych's fuzz and drones feed shoegaze."
+  },
+  {
+    "from": "shoegaze",
+    "to": "nugaze",
+    "rel": "revival",
+    "strength": 0.9,
+    "note": "Nu-gaze revives shoegaze's exact textures."
+  },
+  {
+    "from": "dreampop",
+    "to": "nugaze",
+    "rel": "revival",
+    "strength": 0.5,
+    "note": "Nu-gaze leans on dream pop's intimacy too."
+  },
+  {
+    "from": "dreampop",
+    "to": "slowcore",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "Galaxie 500's hushed drift slows into slowcore's bare rooms."
+  },
+  {
+    "from": "shoegaze",
+    "to": "slowcore",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "The same dream-soaked haze stripped of the wall — Acetone and late Slowdive sit between them."
+  },
+  {
+    "from": "spacerock",
+    "to": "slowcore",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Duster splices space rock's tape-hiss drift into slowcore."
+  },
+  {
+    "from": "slowcore",
+    "to": "postrock",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Codeine's exposed quiet shaped post-rock's hushed passages."
+  },
+  {
+    "from": "slowcore",
+    "to": "zoomergaze",
+    "rel": "revival",
+    "strength": 0.45,
+    "note": "Duster's streaming revival made slowcore a gateway for the TikTok gaze generation."
+  },
+  {
+    "from": "shoegaze",
+    "to": "indie",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "Shoegaze grew up inside the UK indie underground — press and fans filed 'dream rock' as indie's dreamiest wing."
+  },
+  {
+    "from": "shoegaze",
+    "to": "zoomergaze",
+    "rel": "revival",
+    "strength": 0.85,
+    "note": "The fourth wave rebuilds the classic wall of sound on a laptop."
+  },
+  {
+    "from": "nugaze",
+    "to": "zoomergaze",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "The second wave's records are the gateway the zoomers found first."
+  },
+  {
+    "from": "bedroompop",
+    "to": "zoomergaze",
+    "rel": "production",
+    "strength": 0.55,
+    "note": "DAW-native, close-mic bedroom production is its toolkit."
+  },
+  {
+    "from": "grungegaze",
+    "to": "zoomergaze",
+    "rel": "scene",
+    "strength": 0.6,
+    "note": "Overlapping TikTok gaze scenes trading bands and playlists."
+  },
+  {
+    "from": "shoegaze",
+    "to": "postrock",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Shoegaze's textural guitar informs post-rock."
+  },
+  {
+    "from": "dreampop",
+    "to": "postrock",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Guitar as texture over riff — A.R. Kane and Talk Talk's dream-pop drift is the sound Reynolds first called 'post-rock'."
+  },
+  {
+    "from": "bebop",
+    "to": "cool",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Cool jazz relaxes and refines bebop."
+  },
+  {
+    "from": "bebop",
+    "to": "modal",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Modal jazz reacts against bebop's dense changes."
+  },
+  {
+    "from": "bebop",
+    "to": "free",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Free jazz abandons bebop's fixed changes entirely."
+  },
+  {
+    "from": "cool",
+    "to": "modal",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Cool jazz's space anticipates modal openness."
+  },
+  {
+    "from": "modal",
+    "to": "free",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Modal openness opens the door to free improvisation."
+  },
+  {
+    "from": "modal",
+    "to": "spiritual",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Spiritual jazz extends modal vamps devotionally."
+  },
+  {
+    "from": "free",
+    "to": "spiritual",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Spiritual jazz channels free jazz's ecstatic energy."
+  },
+  {
+    "from": "modal",
+    "to": "fusion",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Modal jazz's vamps underpin fusion's electric jams."
+  },
+  {
+    "from": "psych",
+    "to": "fusion",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "Rock's volume and backbeat feed jazz fusion."
+  },
+  {
+    "from": "jazzfunk",
+    "to": "fusion",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Jazz-funk and fusion share electric, groove-led DNA."
+  },
+  {
+    "from": "modal",
+    "to": "ambientjazz",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "ECM-style ambient jazz extends modal space."
+  },
+  {
+    "from": "cool",
+    "to": "ambientjazz",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Cool jazz's restraint anticipates ambient jazz."
+  },
+  {
+    "from": "ambientjazz",
+    "to": "ambient",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Ambient jazz's reverberant space touches ambient."
+  },
+  {
+    "from": "minimalism",
+    "to": "ambient",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Ambient draws on minimalism's stasis and repetition."
+  },
+  {
+    "from": "drone",
+    "to": "ambient",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Drone's sustained tone feeds ambient atmosphere."
+  },
+  {
+    "from": "minimalism",
+    "to": "drone",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Drone shares minimalism's harmonic stasis."
+  },
+  {
+    "from": "minimalism",
+    "to": "krautrock",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Krautrock shares minimalism's pulse and repetition."
+  },
+  {
+    "from": "spiritual",
+    "to": "ambient",
+    "rel": "bridge",
+    "strength": 0.3,
+    "note": "Spiritual jazz's drones touch ambient's stillness."
+  },
+  {
+    "from": "jazzfunk",
+    "to": "hiphop",
+    "rel": "bridge",
+    "strength": 0.55,
+    "note": "Jazz-funk and soul records are core hip-hop sample sources."
+  },
+  {
+    "from": "dub",
+    "to": "ambient",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "Dub's spatial echo informs ambient production."
+  },
+  {
+    "from": "krautrock",
+    "to": "detroit",
+    "rel": "bridge",
+    "strength": 0.55,
+    "note": "Kraftwerk's machine-pop directly inspired Detroit techno."
+  },
+  {
+    "from": "krautrock",
+    "to": "idm",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "Krautrock's repetition prefigures IDM's machine music."
+  },
+  {
+    "from": "ambient",
+    "to": "ambienttechno",
+    "rel": "bridge",
+    "strength": 0.6,
+    "note": "Ambient techno wraps techno beats in ambient pads."
+  },
+  {
+    "from": "ambient",
+    "to": "idm",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "IDM's melodic side draws on ambient texture."
+  },
+  {
+    "from": "minimalism",
+    "to": "techno",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "Techno's repetition echoes minimalist process."
+  },
+  {
+    "from": "disco",
+    "to": "protohouse",
+    "rel": "origin",
+    "strength": 0.9,
+    "note": "Proto-house begins as drum-machine disco edits."
+  },
+  {
+    "from": "protohouse",
+    "to": "house",
+    "rel": "origin",
+    "strength": 0.95,
+    "note": "House formalises the proto-house club sound."
+  },
+  {
+    "from": "house",
+    "to": "deephouse",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Deep house turns house inward with jazz chords."
+  },
+  {
+    "from": "house",
+    "to": "acid",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Acid house adds the resonant 303 to house."
+  },
+  {
+    "from": "house",
+    "to": "techhouse",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Tech house keeps house's groove with techno restraint."
+  },
+  {
+    "from": "house",
+    "to": "proghouse",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "Progressive house extends house into long journeys."
+  },
+  {
+    "from": "detroit",
+    "to": "techno",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Techno hardens Detroit's machine soul."
+  },
+  {
+    "from": "detroit",
+    "to": "house",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "The Detroit and Chicago scenes cross-pollinated."
+  },
+  {
+    "from": "acid",
+    "to": "techno",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Acid house's hypnotic 303 feeds club techno."
+  },
+  {
+    "from": "techno",
+    "to": "techhouse",
+    "rel": "stylistic",
+    "strength": 0.7,
+    "note": "Tech house borrows techno's stripped aesthetic."
+  },
+  {
+    "from": "techno",
+    "to": "melodictechno",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Melodic techno is techno made cinematic and emotive."
+  },
+  {
+    "from": "trance",
+    "to": "melodictechno",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Melodic techno borrows trance's arpeggios."
+  },
+  {
+    "from": "detroit",
+    "to": "trance",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Trance descends from techno's melodic, euphoric side."
+  },
+  {
+    "from": "acid",
+    "to": "trance",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "Trance grows from acid house's 303 and rave euphoria."
+  },
+  {
+    "from": "techno",
+    "to": "trance",
+    "rel": "origin",
+    "strength": 0.55,
+    "note": "Trance splits from techno toward melodic euphoria."
+  },
+  {
+    "from": "deephouse",
+    "to": "proghouse",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Progressive house borrows deep house's chord palette."
+  },
+  {
+    "from": "house",
+    "to": "ukgarage",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "UK garage is a swung, UK take on house."
+  },
+  {
+    "from": "ukgarage",
+    "to": "twostep",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "2-step breaks UK garage's beat into a skipping shuffle."
+  },
+  {
+    "from": "dub",
+    "to": "ukgarage",
+    "rel": "bridge",
+    "strength": 0.5,
+    "note": "Dub's sub-bass weight underpins UK garage."
+  },
+  {
+    "from": "techno",
+    "to": "idm",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "IDM abstracts techno for home listening."
+  },
+  {
+    "from": "acid",
+    "to": "idm",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "IDM's acid lineage runs through 303 experiments."
+  },
+  {
+    "from": "techno",
+    "to": "ambienttechno",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Ambient techno softens techno into atmosphere."
+  },
+  {
+    "from": "deephouse",
+    "to": "melodictechno",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Melodic techno shares deep house's warm chords."
+  },
+  {
+    "from": "trance",
+    "to": "hardtrance",
+    "rel": "revival",
+    "strength": 0.85,
+    "note": "Hypnotic trance revives early-90s trance raw."
+  },
+  {
+    "from": "acid",
+    "to": "hardtrance",
+    "rel": "revival",
+    "strength": 0.5,
+    "note": "It also revives acid house's raw 303 intensity."
+  },
+  {
+    "from": "folk",
+    "to": "folkrock",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Folk rock plugs the folk revival's repertoire and songwriting straight into a rock band."
+  },
+  {
+    "from": "rocknroll",
+    "to": "folkrock",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "Beat-group backbeat and electric guitar supply the rock half of the hybrid."
+  },
+  {
+    "from": "folkrock",
+    "to": "americana",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Its electric-roots blend is the direct ancestor of the Americana band sound."
+  },
+  {
+    "from": "country",
+    "to": "folkrock",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Sweetheart of the Rodeo turns folk rock toward Nashville steel and twang."
+  },
+  {
+    "from": "folk",
+    "to": "country",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Folk and country share Appalachian roots."
+  },
+  {
+    "from": "folk",
+    "to": "americana",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Americana grows from the folk songwriting tradition."
+  },
+  {
+    "from": "country",
+    "to": "americana",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Americana extends country into indie territory."
+  },
+  {
+    "from": "indie",
+    "to": "americana",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Indie sensibility shapes modern Americana."
+  },
+  {
+    "from": "hiphop",
+    "to": "contempornb",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Contemporary R&B sets soul singing on hip-hop beats."
+  },
+  {
+    "from": "soul",
+    "to": "contempornb",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Contemporary R&B updates soul's vocal tradition."
+  },
+  {
+    "from": "hiphop",
+    "to": "triphop",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Trip-hop slows hip-hop's breaks for listening."
+  },
+  {
+    "from": "dub",
+    "to": "triphop",
+    "rel": "bridge",
+    "strength": 0.6,
+    "note": "Trip-hop inherits dub's bass weight and space."
+  },
+  {
+    "from": "jazzfunk",
+    "to": "triphop",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "Jazz and soul samples colour trip-hop."
+  },
+  {
+    "from": "afrobeat",
+    "to": "house",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "Afro-house extends afrobeat rhythm into house."
+  },
+  {
+    "from": "afrobeat",
+    "to": "jazzfunk",
+    "rel": "scene",
+    "strength": 0.4,
+    "note": "Afrobeat and jazz-funk share a horn-driven groove language."
+  },
+  {
+    "from": "spirituals",
+    "to": "gospel",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Gospel is the spirituals tradition formalised in the church."
+  },
+  {
+    "from": "spirituals",
+    "to": "blues",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "The blues secularises the spirituals' field-holler and lament."
+  },
+  {
+    "from": "spirituals",
+    "to": "folk",
+    "rel": "stylistic",
+    "strength": 0.3,
+    "note": "Work-song and spiritual repertoire feeds the American folk canon."
+  },
+  {
+    "from": "blues",
+    "to": "boogie",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Boogie-woogie is the blues rebuilt as a rolling piano dance music."
+  },
+  {
+    "from": "boogie",
+    "to": "rnb",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Its walking-bass drive feeds jump blues and R&B."
+  },
+  {
+    "from": "boogie",
+    "to": "rocknroll",
+    "rel": "production",
+    "strength": 0.45,
+    "note": "Boogie piano is a direct engine of early rock 'n' roll."
+  },
+  {
+    "from": "ragtime",
+    "to": "noladixie",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "New Orleans jazz grows out of ragtime's syncopation."
+  },
+  {
+    "from": "ragtime",
+    "to": "stride",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "Stride extends ragtime's striding left hand into improvisation."
+  },
+  {
+    "from": "blues",
+    "to": "noladixie",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "The blues supplies early jazz its notes, feel and changes."
+  },
+  {
+    "from": "stride",
+    "to": "swing",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Stride piano feeds the swing era's rhythmic drive."
+  },
+  {
+    "from": "noladixie",
+    "to": "swing",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Swing scales New Orleans jazz up into the arranged big band."
+  },
+  {
+    "from": "swing",
+    "to": "bebop",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Bebop is a small-group revolt against swing's dance arrangements."
+  },
+  {
+    "from": "swing",
+    "to": "rnb",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Jump-blues offshoots of swing feed directly into R&B."
+  },
+  {
+    "from": "modernclassical",
+    "to": "minimalism",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Minimalism reacts against modern classical serialism with repetition."
+  },
+  {
+    "from": "modernclassical",
+    "to": "drone",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Modern classical's sustained textures anticipate drone."
+  },
+  {
+    "from": "modernclassical",
+    "to": "concrete",
+    "rel": "origin",
+    "strength": 0.5,
+    "note": "Musique concrète extends modern composition into the tape studio."
+  },
+  {
+    "from": "modernclassical",
+    "to": "ambient",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Satie's 'furniture music' prefigures ambient's environmental aim."
+  },
+  {
+    "from": "concrete",
+    "to": "ambient",
+    "rel": "origin",
+    "strength": 0.5,
+    "note": "Ambient inherits musique concrète's tape and texture craft."
+  },
+  {
+    "from": "concrete",
+    "to": "krautrock",
+    "rel": "bridge",
+    "strength": 0.5,
+    "note": "Krautrock applies concrète's studio experiment to rock."
+  },
+  {
+    "from": "concrete",
+    "to": "idm",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "IDM's editing and sound-design descend from tape composition."
+  },
+  {
+    "from": "concrete",
+    "to": "drone",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Tape-based sustain feeds drone's long tones."
+  },
+  {
+    "from": "concrete",
+    "to": "minimalism",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "Reich's phase pieces began as concrète-style tape loops."
+  },
+  {
+    "from": "concrete",
+    "to": "hiphop",
+    "rel": "bridge",
+    "strength": 0.45,
+    "note": "Sampling — composing with recorded sound — is concrète's method reborn in the break."
+  },
+  {
+    "from": "modernclassical",
+    "to": "electroacoustic",
+    "rel": "origin",
+    "strength": 0.55,
+    "note": "Cologne's elektronische Musik extends serial composition from pitch and rhythm to timbre itself."
+  },
+  {
+    "from": "concrete",
+    "to": "electroacoustic",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "The rival 1950s studio schools: Paris recorded sound, Cologne synthesized it. Stockhausen's Gesang der Jünglinge (1956) and the studios that followed merged the two."
+  },
+  {
+    "from": "electroacoustic",
+    "to": "drone",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Held oscillator tones and slowly shifting noise bands share drone's timbre-first stasis."
+  },
+  {
+    "from": "electroacoustic",
+    "to": "darkambient",
+    "rel": "production",
+    "strength": 0.45,
+    "note": "Unpitched, slowly evolving synthetic noise shaped on tape, as in Vink's Screen, is the studio method behind dark ambient's drones."
+  },
+  {
+    "from": "electroacoustic",
+    "to": "krautrock",
+    "rel": "bridge",
+    "strength": 0.5,
+    "note": "Can's Holger Czukay and Irmin Schmidt studied with Stockhausen and brought Cologne studio method into rock."
+  },
+  {
+    "from": "industrial",
+    "to": "darkambient",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "First called ambient industrial: Lustmord, Zoviet France and Nurse With Wound slowed industrial's tape-and-noise dread into atmosphere."
+  },
+  {
+    "from": "ambient",
+    "to": "darkambient",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Ambient's beatless, environmental form, turned ominous."
+  },
+  {
+    "from": "drone",
+    "to": "darkambient",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Dark, sustained drones are the genre's core material."
+  },
+  {
+    "from": "concrete",
+    "to": "darkambient",
+    "rel": "production",
+    "strength": 0.4,
+    "note": "Lustmord's location recordings from crypts, caves and mines apply concrète's recorded-sound method."
+  },
+  {
+    "from": "kosmische",
+    "to": "darkambient",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "Tangerine Dream's Zeit (1972) and Klaus Schulze's Irrlicht (1972) are its most-cited precursors."
+  },
+  {
+    "from": "krautrock",
+    "to": "kosmische",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "The synth-and-drone wing of the German experimental scene, splitting from krautrock's band-based motorik."
+  },
+  {
+    "from": "electroacoustic",
+    "to": "kosmische",
+    "rel": "production",
+    "strength": 0.45,
+    "note": "Oscillator drones, tape loops and delay carried from the electronic studio into album-length synth music."
+  },
+  {
+    "from": "kosmische",
+    "to": "ambient",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Long-form, beatless synth drift prefigures ambient."
+  },
+  {
+    "from": "kosmische",
+    "to": "newage",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Consonant synth washes become new age's palette."
+  },
+  {
+    "from": "electroacoustic",
+    "to": "computermusic",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Koenig took Cologne serial method into algorithmic software at Utrecht (Project 1, 1964), and Utrecht added a PDP-15 for digital synthesis in 1971."
+  },
+  {
+    "from": "computermusic",
+    "to": "synthpop",
+    "rel": "production",
+    "strength": 0.35,
+    "note": "Chowning's FM synthesis, licensed to Yamaha, became the DX7 sound of 80s pop."
+  },
+  {
+    "from": "computermusic",
+    "to": "idm",
+    "rel": "production",
+    "strength": 0.35,
+    "note": "Algorithmic and software-based composition resurfaces in IDM's programmed complexity."
+  },
+  {
+    "from": "electroacoustic",
+    "to": "elecrock",
+    "rel": "bridge",
+    "strength": 0.35,
+    "note": "Oscillators and tape electronics from the studio enter a band setting."
+  },
+  {
+    "from": "darkambient",
+    "to": "black",
+    "rel": "scene",
+    "strength": 0.35,
+    "note": "Black metal's intros, interludes and ambient side projects draw on dark ambient's atmosphere."
+  },
+  {
+    "from": "hindustani",
+    "to": "drone",
+    "rel": "bridge",
+    "strength": 0.55,
+    "note": "Raga's tanpura drone directly inspired Western drone music."
+  },
+  {
+    "from": "hindustani",
+    "to": "minimalism",
+    "rel": "bridge",
+    "strength": 0.45,
+    "note": "Riley and Glass drew on Indian classical structure and repetition."
+  },
+  {
+    "from": "hindustani",
+    "to": "psych",
+    "rel": "bridge",
+    "strength": 0.45,
+    "note": "Sitar and raga shaped 1960s raga-rock psychedelia."
+  },
+  {
+    "from": "oldtime",
+    "to": "country",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Country is the commercial flowering of old-time string-band music."
+  },
+  {
+    "from": "oldtime",
+    "to": "bluegrass",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Bluegrass accelerates old-time string-band music into virtuosity."
+  },
+  {
+    "from": "oldtime",
+    "to": "folk",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "The folk revival drew its repertoire from old-time tradition."
+  },
+  {
+    "from": "bluegrass",
+    "to": "americana",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Americana folds bluegrass picking into its roots palette."
+  },
+  {
+    "from": "rnb",
+    "to": "ska",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "Jamaican ska was sparked by American R&B heard on the radio."
+  },
+  {
+    "from": "ska",
+    "to": "reggae",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Reggae slows ska's off-beat into a heavier, deeper groove."
+  },
+  {
+    "from": "reggae",
+    "to": "dub",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Dub is reggae remixed at the mixing desk into bass and space."
+  },
+  {
+    "from": "ska",
+    "to": "twotone",
+    "rel": "revival",
+    "strength": 0.85,
+    "note": "2 Tone revives first-wave ska, rebuilt at punk tempo and volume."
+  },
+  {
+    "from": "punk",
+    "to": "twotone",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Punk supplies the tempo, distortion and DIY label economics 2 Tone runs ska through."
+  },
+  {
+    "from": "reggae",
+    "to": "punk",
+    "rel": "scene",
+    "strength": 0.4,
+    "note": "Reggae was punk's adopted second music — Don Letts DJing it at the Roxy, The Clash covering 'Police and Thieves', Marley answering with 'Punky Reggae Party'."
+  },
+  {
+    "from": "dub",
+    "to": "postpunk",
+    "rel": "production",
+    "strength": 0.6,
+    "note": "Post-punk took dub as method: bass to the front, instruments dropped in and out, everything drenched in echo and space."
+  },
+  {
+    "from": "dub",
+    "to": "disco",
+    "rel": "production",
+    "strength": 0.4,
+    "note": "The dub mix and stripped 12-inch version carry dub's remix logic into the disco club."
+  },
+  {
+    "from": "dub",
+    "to": "ambienttechno",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "Dub techno fuses dub's delay-drenched chords with the techno pulse."
+  },
+  {
+    "from": "burundi",
+    "to": "newwave",
+    "rel": "bridge",
+    "strength": 0.6,
+    "note": "Adam and the Ants rebuilt their sound around the Burundi beat in 1980 — two standing drummers playing the rolling low-tom pattern on 'Kings of the Wild Frontier' and 'Antmusic'. Malcolm McLaren gave the same rhythm to Bow Wow Wow ('C·30 C·60 C·90 Go!')."
+  },
+  {
+    "from": "burundi",
+    "to": "postpunk",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Echo & the Bunnymen built 'All My Colours (Zimbo)' (1981) on the Burundi rhythm and later performed it with the Royal Drummers of Burundi."
+  },
+  {
+    "from": "twotone",
+    "to": "skapunk",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "The third wave rebuilds 2 Tone's fusion for American punk."
+  },
+  {
+    "from": "hardcore",
+    "to": "skapunk",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Hardcore's speed and gang vocals are the engine under the horns."
+  },
+  {
+    "from": "hardcore",
+    "to": "skatepunk",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Skate punk keeps hardcore's speed and DIY circuit but sings over it, with stacked harmonies."
+  },
+  {
+    "from": "punk",
+    "to": "skatepunk",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Ramones and Buzzcocks hooks give it its singalong choruses."
+  },
+  {
+    "from": "skapunk",
+    "to": "skatepunk",
+    "rel": "scene",
+    "strength": 0.35,
+    "note": "They shared SoCal venues, Epitaph's roster and Warped Tour bills."
+  },
+  {
+    "from": "skatepunk",
+    "to": "poppunk",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Green Day and Blink-182 slow skate punk's tempo and push the hook to the front."
+  },
+  {
+    "from": "punk",
+    "to": "poppunk",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "The Ramones' and Buzzcocks' melodic punk is the template."
+  },
+  {
+    "from": "alternative",
+    "to": "poppunk",
+    "rel": "scene",
+    "strength": 0.4,
+    "note": "Dookie broke through on the alt-rock radio and MTV that grunge had opened."
+  },
+  {
+    "from": "emo",
+    "to": "poppunk",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "2000s pop-punk takes on emo's confessional lyrics — Fall Out Boy and Paramore's emo-pop."
+  },
+  {
+    "from": "highlife",
+    "to": "afrobeat",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Afrobeat fuses highlife's dance-band template with funk."
+  },
+  {
+    "from": "ancientgreek",
+    "to": "plainchant",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "The church modes are Greek harmoniai renamed and reorganised for the liturgy."
+  },
+  {
+    "from": "plainchant",
+    "to": "renpoly",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Polyphony begins as extra voices sung against a held chant line."
+  },
+  {
+    "from": "renpoly",
+    "to": "opera",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Monteverdi's generation set polyphony aside for a single voice over a bass line so the words could carry."
+  },
+  {
+    "from": "opera",
+    "to": "classical",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Basso continuo, the aria and the theatre orchestra become functional harmony, sonata form and the symphony orchestra."
+  },
+  {
+    "from": "renpoly",
+    "to": "classical",
+    "rel": "origin",
+    "strength": 0.45,
+    "note": "Counterpoint's consonant triads harden into functional tonal harmony."
+  },
+  {
+    "from": "opera",
+    "to": "filmscore",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Wagner's leitmotif and continuous orchestral underscoring are the film composer's working method."
+  },
+  {
+    "from": "opera",
+    "to": "canzone",
+    "rel": "origin",
+    "strength": 0.55,
+    "note": "Bel canto phrasing and the held climactic note pass straight from the opera house into the Sanremo ballad."
+  },
+  {
+    "from": "opera",
+    "to": "artrock",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Persona, staging and the concept album as sung drama — rock opera is the name for a reason."
+  },
+  {
+    "from": "opera",
+    "to": "gothrock",
+    "rel": "stylistic",
+    "strength": 0.25,
+    "note": "Cavernous reverb, baritone drama and Gothic staging draw on the Romantic opera house."
+  },
+  {
+    "from": "ancientgreek",
+    "to": "classical",
+    "rel": "stylistic",
+    "strength": 0.3,
+    "note": "Greek theory — tetrachords, ratios, modal ethos — is the root of Western music theory itself."
+  },
+  {
+    "from": "plainchant",
+    "to": "minimalism",
+    "rel": "stylistic",
+    "strength": 0.3,
+    "note": "Pärt and the holy minimalists return to chant's unmeasured modal line."
+  },
+  {
+    "from": "ancientgreek",
+    "to": "drone",
+    "rel": "stylistic",
+    "strength": 0.3,
+    "note": "The aulos's second pipe holds a drone under the melody — the same premise as modal drone music."
+  },
+  {
+    "from": "ancientgreek",
+    "to": "hindustani",
+    "rel": "scene",
+    "strength": 0.25,
+    "note": "Two ancient modal systems, independently built on melody over drone rather than harmony."
+  },
+  {
+    "from": "renpoly",
+    "to": "baroquepop",
+    "rel": "stylistic",
+    "strength": 0.25,
+    "note": "Choral counterpoint is the vocal-arranging model baroque pop reached back for."
+  },
+  {
+    "from": "classical",
+    "to": "modernclassical",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Modern classical breaks from the Romantic tonal tradition."
+  },
+  {
+    "from": "classical",
+    "to": "ragtime",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Ragtime adapts European march and parlour harmony."
+  },
+  {
+    "from": "classical",
+    "to": "minimalism",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Minimalism strips the classical tradition back to repeating cells."
+  },
+  {
+    "from": "classical",
+    "to": "cool",
+    "rel": "stylistic",
+    "strength": 0.3,
+    "note": "Third-stream cool jazz drew on classical form and restraint."
+  },
+  {
+    "from": "chicago",
+    "to": "heavymetal",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "Metal's distorted riffing descends from electrified blues guitar."
+  },
+  {
+    "from": "psych",
+    "to": "heavymetal",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Sabbath darkened psychedelic blues-rock into heavy metal."
+  },
+  {
+    "from": "garage",
+    "to": "heavymetal",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Garage's raw, primitive drive feeds metal's attack."
+  },
+  {
+    "from": "heavymetal",
+    "to": "thrash",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Thrash accelerates metal's riffing to breakneck precision."
+  },
+  {
+    "from": "hardcore",
+    "to": "thrash",
+    "rel": "bridge",
+    "strength": 0.6,
+    "note": "Hardcore punk's speed collides with metal riffing in thrash."
+  },
+  {
+    "from": "heavymetal",
+    "to": "doom",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Doom slows Sabbath's riffs to a mournful crawl."
+  },
+  {
+    "from": "heavymetal",
+    "to": "grunge",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Grunge fuses metal's riff weight with punk economy."
+  },
+  {
+    "from": "thrash",
+    "to": "death",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Death metal pushes thrash past its limits of extremity."
+  },
+  {
+    "from": "thrash",
+    "to": "black",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "First-wave black metal grows from thrash's raw underground."
+  },
+  {
+    "from": "death",
+    "to": "black",
+    "rel": "scene",
+    "strength": 0.4,
+    "note": "The second wave defined itself against death metal's polish."
+  },
+  {
+    "from": "doom",
+    "to": "postmetal",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Post-metal grows from doom and sludge's tectonic weight."
+  },
+  {
+    "from": "postrock",
+    "to": "postmetal",
+    "rel": "bridge",
+    "strength": 0.65,
+    "note": "Post-metal applies post-rock's crescendo patience to metal."
+  },
+  {
+    "from": "noiserock",
+    "to": "postmetal",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Neurosis carried noise rock's abrasion into post-metal."
+  },
+  {
+    "from": "black",
+    "to": "blackgaze",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Blackgaze keeps black metal's shriek and tremolo wall."
+  },
+  {
+    "from": "shoegaze",
+    "to": "blackgaze",
+    "rel": "bridge",
+    "strength": 0.7,
+    "note": "Shoegaze's blissed-out wall of sound floods black metal."
+  },
+  {
+    "from": "postmetal",
+    "to": "blackgaze",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Its euphoric crescendo form comes via post-metal."
+  },
+  {
+    "from": "postrock",
+    "to": "blackgaze",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Blackgaze's quiet-to-cathartic crescendos draw directly on post-rock."
+  },
+  {
+    "from": "psych",
+    "to": "progrock",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Prog extends psychedelia's studio epics into composed suites."
+  },
+  {
+    "from": "classical",
+    "to": "progrock",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Prog borrows classical's suite forms and virtuosity."
+  },
+  {
+    "from": "fusion",
+    "to": "progrock",
+    "rel": "scene",
+    "strength": 0.4,
+    "note": "Prog and fusion traded odd meters and virtuoso players."
+  },
+  {
+    "from": "progrock",
+    "to": "postrock",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Post-rock inherits prog's long-form ambition, minus the solos."
+  },
+  {
+    "from": "progrock",
+    "to": "progmetal",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Prog metal carries prog's suites into high-gain territory."
+  },
+  {
+    "from": "heavymetal",
+    "to": "progmetal",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "It keeps metal's riff weight beneath the complexity."
+  },
+  {
+    "from": "thrash",
+    "to": "progmetal",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Thrash-era precision underpins prog metal's rhythm grids."
+  },
+  {
+    "from": "hardcore",
+    "to": "metalcore",
+    "rel": "bridge",
+    "strength": 0.6,
+    "note": "Hardcore punk's breakdown culture meets metal riffing."
+  },
+  {
+    "from": "thrash",
+    "to": "metalcore",
+    "rel": "origin",
+    "strength": 0.55,
+    "note": "Metalcore's riffing vocabulary descends from thrash."
+  },
+  {
+    "from": "death",
+    "to": "metalcore",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Melodic death metal riffing shaped 2000s metalcore."
+  },
+  {
+    "from": "metalcore",
+    "to": "newmetalcore",
+    "rel": "revival",
+    "strength": 0.8,
+    "note": "The 2020s wave re-arms metalcore with modern production."
+  },
+  {
+    "from": "death",
+    "to": "newmetalcore",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Deathcore extremity feeds the new wave's low end."
+  },
+  {
+    "from": "psych",
+    "to": "madchester",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "The Roses' guitar psychedelia is 60s revivalism at heart."
+  },
+  {
+    "from": "janglepop",
+    "to": "madchester",
+    "rel": "origin",
+    "strength": 0.55,
+    "note": "Its chiming guitar pop comes straight from the C86 jangle scene."
+  },
+  {
+    "from": "acid",
+    "to": "madchester",
+    "rel": "bridge",
+    "strength": 0.7,
+    "note": "Acid house's Haçienda groove put the indie bands on the dancefloor."
+  },
+  {
+    "from": "funk",
+    "to": "madchester",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Baggy's loose-limbed drumming and wah guitar are funk borrowings."
+  },
+  {
+    "from": "madchester",
+    "to": "indie",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Britpop and 90s UK indie grew directly out of Madchester's swagger."
+  },
+  {
+    "from": "newwave",
+    "to": "synthpop",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Synth-pop grows from new wave, swapping guitars for synthesizers."
+  },
+  {
+    "from": "krautrock",
+    "to": "synthpop",
+    "rel": "bridge",
+    "strength": 0.6,
+    "note": "Kraftwerk's melodic machine-pop is synth-pop's blueprint."
+  },
+  {
+    "from": "postpunk",
+    "to": "synthpop",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Post-punk's cold electronics feed early synth-pop."
+  },
+  {
+    "from": "disco",
+    "to": "synthpop",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "Moroder's all-synth disco pointed pop at the sequencer."
+  },
+  {
+    "from": "synthpop",
+    "to": "detroit",
+    "rel": "bridge",
+    "strength": 0.5,
+    "note": "Detroit techno fused European synth-pop with funk syncopation."
+  },
+  {
+    "from": "synthpop",
+    "to": "coldwave",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Coldwave borrows synth-pop's machines but none of its brightness."
+  },
+  {
+    "from": "synthpop",
+    "to": "hyperpop",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Hyperpop pushes synth-pop's gloss to digital extremes."
+  },
+  {
+    "from": "synthpop",
+    "to": "electropop",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Electropop is synth-pop's template reborn for the DAW-and-chart era."
+  },
+  {
+    "from": "electroclash",
+    "to": "electropop",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Electroclash's trashy synth revival went pop — its sleaze polished into chart hooks."
+  },
+  {
+    "from": "newwave",
+    "to": "electropop",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "The 80s new-wave palette is electropop's constant reference point."
+  },
+  {
+    "from": "disco",
+    "to": "electropop",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "The four-on-the-floor diva-pop lineage runs from disco straight through electropop."
+  },
+  {
+    "from": "house",
+    "to": "electropop",
+    "rel": "production",
+    "strength": 0.45,
+    "note": "EDM-era house production frames electropop's festival-sized drops."
+  },
+  {
+    "from": "contempornb",
+    "to": "electropop",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "2000s R&B stars going electronic pulled electropop onto US radio."
+  },
+  {
+    "from": "electropop",
+    "to": "hyperpop",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "PC Music warped electropop's gloss into hyperpop's overloaded extreme."
+  },
+  {
+    "from": "electropop",
+    "to": "synthwave",
+    "rel": "scene",
+    "strength": 0.3,
+    "note": "Blog-era synth nostalgia fed both — Kavinsky remixes sat beside electropop edits."
+  },
+  {
+    "from": "postpunk",
+    "to": "coldwave",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Coldwave is post-punk chilled through French synths and drum machines."
+  },
+  {
+    "from": "coldwave",
+    "to": "ethereal",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Coldwave's icy synth atmosphere feeds ethereal wave."
+  },
+  {
+    "from": "coldwave",
+    "to": "newpostpunk",
+    "rel": "revival",
+    "strength": 0.4,
+    "note": "The 2020s revival reaches back to coldwave's minimal chill."
+  },
+  {
+    "from": "folkrock",
+    "to": "janglepop",
+    "rel": "bridge",
+    "strength": 0.55,
+    "note": "Folk rock's 12-string chime is jangle pop's source sound."
+  },
+  {
+    "from": "postpunk",
+    "to": "janglepop",
+    "rel": "origin",
+    "strength": 0.55,
+    "note": "The Smiths turn post-punk's bass-led tension toward chiming melody."
+  },
+  {
+    "from": "janglepop",
+    "to": "alternative",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "R.E.M.'s jangle carried college rock into the alt mainstream."
+  },
+  {
+    "from": "janglepop",
+    "to": "indie",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Indie rock's melodic jangle descends straight from jangle pop."
+  },
+  {
+    "from": "janglepop",
+    "to": "dreampop",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Its chiming clean guitar softens into dream pop's shimmer."
+  },
+  {
+    "from": "janglepop",
+    "to": "nugaze",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Nu-gaze's reverb-washed jangle nods back to jangle pop."
+  },
+  {
+    "from": "janglepop",
+    "to": "indiepop",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Indie pop takes jangle pop's clean chime and 60s songcraft as its base sound."
+  },
+  {
+    "from": "punk",
+    "to": "indiepop",
+    "rel": "origin",
+    "strength": 0.5,
+    "note": "Punk's DIY ethic — self-released singles, fanzines, amateur playing — is indie pop's operating model."
+  },
+  {
+    "from": "folkrock",
+    "to": "indiepop",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "The Byrds' ringing 12-string and close harmony echo through indie pop's guitar sound."
+  },
+  {
+    "from": "indiepop",
+    "to": "dreampop",
+    "rel": "scene",
+    "strength": 0.35,
+    "note": "Sarah Records bands like the Field Mice drifted from indie pop into dream-pop haze."
+  },
+  {
+    "from": "indiepop",
+    "to": "bedroompop",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Bedroom pop inherits indie pop's home-made intimacy and soft, untrained voices."
+  },
+  {
+    "from": "disco",
+    "to": "citypop",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "City pop sets disco's groove in Tokyo's boom-era studio gloss."
+  },
+  {
+    "from": "jazzfunk",
+    "to": "citypop",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Its lush extended chords come from jazz-funk and AOR."
+  },
+  {
+    "from": "funk",
+    "to": "citypop",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Funk's syncopated bass anchors the city-pop groove."
+  },
+  {
+    "from": "citypop",
+    "to": "futurefunk",
+    "rel": "revival",
+    "strength": 0.85,
+    "note": "Future funk is built from sped-up, filtered city-pop samples."
+  },
+  {
+    "from": "minimalism",
+    "to": "newage",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "New age softens minimalism's repetition into consolation."
+  },
+  {
+    "from": "hindustani",
+    "to": "newage",
+    "rel": "bridge",
+    "strength": 0.5,
+    "note": "Eastern drone and meditative arc shape new age's stillness."
+  },
+  {
+    "from": "ambientjazz",
+    "to": "newage",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Windham Hill's pastoral acoustics sit next door to ECM."
+  },
+  {
+    "from": "newage",
+    "to": "ambient",
+    "rel": "scene",
+    "strength": 0.35,
+    "note": "New age and ambient share the meditative, environmental aim."
+  },
+  {
+    "from": "newage",
+    "to": "ambienttechno",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Chill-out rooms folded new age pads into ambient techno."
+  },
+  {
+    "from": "synthpop",
+    "to": "synthwave",
+    "rel": "revival",
+    "strength": 0.85,
+    "note": "Synthwave revives synth-pop's 80s analog palette."
+  },
+  {
+    "from": "newwave",
+    "to": "synthwave",
+    "rel": "revival",
+    "strength": 0.4,
+    "note": "It equally mines new wave's neon aesthetic."
+  },
+  {
+    "from": "coldwave",
+    "to": "synthwave",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Synthwave's darker strains inherit coldwave's icy palette."
+  },
+  {
+    "from": "synthwave",
+    "to": "futurefunk",
+    "rel": "scene",
+    "strength": 0.4,
+    "note": "Both scenes grew from the same internet retro-nostalgia."
+  },
+  {
+    "from": "synthwave",
+    "to": "melodictechno",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Melodic techno shares its cinematic analog arpeggios."
+  },
+  {
+    "from": "disco",
+    "to": "futurefunk",
+    "rel": "revival",
+    "strength": 0.7,
+    "note": "Future funk revives disco from sped-up, filtered samples."
+  },
+  {
+    "from": "funk",
+    "to": "futurefunk",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "It leans on funk's syncopated bounce."
+  },
+  {
+    "from": "house",
+    "to": "futurefunk",
+    "rel": "bridge",
+    "strength": 0.35,
+    "note": "Its four-on-the-floor bounce descends from house and disco."
+  },
+  {
+    "from": "postpunk",
+    "to": "newpostpunk",
+    "rel": "revival",
+    "strength": 0.85,
+    "note": "The 2020s revival returns to post-punk's angular tension."
+  },
+  {
+    "from": "alternative",
+    "to": "newpostpunk",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "It carries alternative rock's guitar-band lineage forward."
+  },
+  {
+    "from": "spiritual",
+    "to": "ukjazz",
+    "rel": "revival",
+    "strength": 0.8,
+    "note": "The new London scene revives spiritual jazz's modal, devotional vamps."
+  },
+  {
+    "from": "jazzfunk",
+    "to": "ukjazz",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "It borrows jazz-funk's electric, groove-led drive."
+  },
+  {
+    "from": "afrobeat",
+    "to": "ukjazz",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "Afrobeat rhythm charges the new spiritual-jazz groove."
+  },
+  {
+    "from": "deephouse",
+    "to": "amapiano",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Amapiano grows from deep house's warm chords."
+  },
+  {
+    "from": "house",
+    "to": "amapiano",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "It keeps house's four-on-the-floor as a backbone."
+  },
+  {
+    "from": "afrobeat",
+    "to": "afrobeats",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Modern Afrobeats shares Afrobeat's rhythmic roots, pop-scaled."
+  },
+  {
+    "from": "highlife",
+    "to": "afrobeats",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Highlife melody feeds the Afrobeats pop template."
+  },
+  {
+    "from": "hiphop",
+    "to": "afrobeats",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "Afrobeats absorbs hip-hop's production and cadence."
+  },
+  {
+    "from": "idm",
+    "to": "hyperpop",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Hyperpop inherits IDM's glitch-detailed sound design."
+  },
+  {
+    "from": "contempornb",
+    "to": "hyperpop",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "It warps contemporary R&B and pop into digital maximalism."
+  },
+  {
+    "from": "twostep",
+    "to": "hyperpop",
+    "rel": "bridge",
+    "strength": 0.3,
+    "note": "UK garage's chopped-vocal bounce echoes in hyperpop."
+  },
+  {
+    "from": "country",
+    "to": "cosmicamerican",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Parsons built it on honky-tonk and Bakersfield country."
+  },
+  {
+    "from": "folkrock",
+    "to": "cosmicamerican",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "The Byrds carried folk rock's band and harmonies into country on Sweetheart of the Rodeo."
+  },
+  {
+    "from": "soul",
+    "to": "cosmicamerican",
+    "rel": "stylistic",
+    "strength": 0.3,
+    "note": "Parsons counted soul and R&B among its ingredients."
+  },
+  {
+    "from": "cosmicamerican",
+    "to": "americana",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Parsons and Emmylou Harris are treated as founding figures of Americana."
+  },
+  {
+    "from": "cosmicamerican",
+    "to": "cosmiccountry",
+    "rel": "revival",
+    "strength": 0.7,
+    "note": "Cosmic country takes its name and pedal-steel psychedelia from Parsons."
+  },
+  {
+    "from": "americana",
+    "to": "cosmiccountry",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Cosmic country grows from Americana's roots songwriting."
+  },
+  {
+    "from": "country",
+    "to": "cosmiccountry",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "It keeps country's steel-and-twang core."
+  },
+  {
+    "from": "psych",
+    "to": "cosmiccountry",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "Psychedelic production gives it its cosmic sheen."
+  },
+  {
+    "from": "contempornb",
+    "to": "altrnb",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Alt-R&B extends contemporary R&B into atmosphere and introspection."
+  },
+  {
+    "from": "triphop",
+    "to": "altrnb",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "It inherits trip-hop's nocturnal, spacious mood."
+  },
+  {
+    "from": "dreampop",
+    "to": "altrnb",
+    "rel": "bridge",
+    "strength": 0.35,
+    "note": "Dream pop's reverb-space colours its production."
+  },
+  {
+    "from": "punk",
+    "to": "hardcore",
+    "rel": "origin",
+    "strength": 0.9,
+    "note": "Hardcore strips punk to its fastest, shortest, angriest form."
+  },
+  {
+    "from": "hardcore",
+    "to": "posthardcore",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Post-hardcore keeps hardcore's intensity but opens up its form and dynamics."
+  },
+  {
+    "from": "noiserock",
+    "to": "posthardcore",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Noise rock's angular abrasion shades post-hardcore's guitar language."
+  },
+  {
+    "from": "hardcore",
+    "to": "emocore",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Revolution Summer bands keep D.C. hardcore's speed but turn its aggression into emotional candour."
+  },
+  {
+    "from": "postpunk",
+    "to": "emocore",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Post-punk's chiming, angular guitar colours Rites of Spring and Embrace."
+  },
+  {
+    "from": "emocore",
+    "to": "emo",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "The mid-90s second wave grows directly from Revolution Summer's emotional hardcore."
+  },
+  {
+    "from": "emocore",
+    "to": "posthardcore",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Beefeater and Rites of Spring pioneer post-hardcore; Picciotto and Canty go on to Fugazi."
+  },
+  {
+    "from": "posthardcore",
+    "to": "emo",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Second-wave emo borrows post-hardcore's dynamics and dissonance."
+  },
+  {
+    "from": "emo",
+    "to": "screamo",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Screamo pushes emo's catharsis into shrieked, chaotic extremity."
+  },
+  {
+    "from": "hardcore",
+    "to": "screamo",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "The blast speed and DIY basement scene come straight from hardcore."
+  },
+  {
+    "from": "progrock",
+    "to": "mathrock",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Math rock miniaturises prog's odd meters into knotty, riff-scale puzzles."
+  },
+  {
+    "from": "noiserock",
+    "to": "mathrock",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Slint and Chicago's noise-rock scene seed math rock's angular precision."
+  },
+  {
+    "from": "posthardcore",
+    "to": "mathrock",
+    "rel": "scene",
+    "strength": 0.4,
+    "note": "Both grew from the same Touch and Go / Dischord underground."
+  },
+  {
+    "from": "emo",
+    "to": "midwestemo",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Midwest emo relaxes second-wave emo into porch-light intimacy."
+  },
+  {
+    "from": "mathrock",
+    "to": "midwestemo",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Twinkly, tapped, odd-metered guitar defines the Midwest sound."
+  },
+  {
+    "from": "indie",
+    "to": "midwestemo",
+    "rel": "scene",
+    "strength": 0.35,
+    "note": "It shared basements, labels and lo-fi ethics with 90s indie rock."
+  },
+  {
+    "from": "mathrock",
+    "to": "mathcore",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "Mathcore weaponises math rock's meter chaos at hardcore intensity."
+  },
+  {
+    "from": "hardcore",
+    "to": "mathcore",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Its violence and screamed vocals are metallic hardcore pushed to breaking."
+  },
+  {
+    "from": "mathcore",
+    "to": "metalcore",
+    "rel": "scene",
+    "strength": 0.45,
+    "note": "Converge and Botch sat at the centre of both scenes."
+  },
+  {
+    "from": "emo",
+    "to": "emorevival",
+    "rel": "revival",
+    "strength": 0.85,
+    "note": "The 2010s revival re-embraces second-wave emo's confessional core."
+  },
+  {
+    "from": "midwestemo",
+    "to": "emorevival",
+    "rel": "revival",
+    "strength": 0.75,
+    "note": "Its twinkly guitars and group-shout climaxes come straight from the Midwest."
+  },
+  {
+    "from": "screamo",
+    "to": "blackgaze",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Screamo's cathartic shriek reached blackgaze via Deafheaven."
+  },
+  {
+    "from": "heavymetal",
+    "to": "desertrock",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "Sabbath's downtuned riff, detuned further, is desert rock's bedrock."
+  },
+  {
+    "from": "doom",
+    "to": "desertrock",
+    "rel": "origin",
+    "strength": 0.55,
+    "note": "It inherits doom's slow, massive riff worship — played for groove."
+  },
+  {
+    "from": "psych",
+    "to": "desertrock",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Generator-party jams carry psychedelia's modal, hypnotic drift."
+  },
+  {
+    "from": "hardcore",
+    "to": "desertrock",
+    "rel": "scene",
+    "strength": 0.35,
+    "note": "Kyuss came up through the desert's DIY punk-show circuit."
+  },
+  {
+    "from": "desertrock",
+    "to": "stonerrock",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Stoner rock spreads the Palm Desert recipe worldwide."
+  },
+  {
+    "from": "doom",
+    "to": "stonerrock",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Sleep and Electric Wizard are Sabbath worship at doom's tempo."
+  },
+  {
+    "from": "doom",
+    "to": "sludge",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Sludge keeps doom's glacial riff weight."
+  },
+  {
+    "from": "hardcore",
+    "to": "sludge",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Its bile and lurching bursts are slowed hardcore rage."
+  },
+  {
+    "from": "sludge",
+    "to": "postmetal",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Neurosis grew from sludge into post-metal's tidal form."
+  },
+  {
+    "from": "sludge",
+    "to": "stonerrock",
+    "rel": "scene",
+    "strength": 0.35,
+    "note": "The two shared labels, splits and the 90s riff underground."
+  },
+  {
+    "from": "desertrock",
+    "to": "desertpunk",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Desert punk runs the generator-party fuzz at punk speed."
+  },
+  {
+    "from": "hardcore",
+    "to": "desertpunk",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Its velocity and skate-DIY ethos come from hardcore."
+  },
+  {
+    "from": "garage",
+    "to": "desertpunk",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Blown-out garage scuzz colours its production."
+  },
+  {
+    "from": "blues",
+    "to": "desertblues",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Assouf's droning pentatonics mirror and echo the blues."
+  },
+  {
+    "from": "desertrock",
+    "to": "desertblues",
+    "rel": "scene",
+    "strength": 0.35,
+    "note": "Tinariwen later recorded in the California desert with Kyuss alumni."
+  },
+  {
+    "from": "hardrock",
+    "to": "southernrock",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "Southern rock is blues-based hard rock rebuilt around Southern phrasing and the extended jam."
+  },
+  {
+    "from": "blues",
+    "to": "southernrock",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Slide guitar, shuffle feel and 12-bar changes come straight from the blues."
+  },
+  {
+    "from": "country",
+    "to": "southernrock",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Country phrasing, close harmony and Southern narrative voice shape its songwriting."
+  },
+  {
+    "from": "acidrock",
+    "to": "southernrock",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Ballroom-era improvisation set the precedent for its twenty-minute live jams."
+  },
+  {
+    "from": "southernrock",
+    "to": "arenarock",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Its stadium-scaled boogie and guitar spectacle feed the arena rock era."
+  },
+  {
+    "from": "southernrock",
+    "to": "americana",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Americana inherits its roots-rock band template and Southern songwriting."
+  },
+  {
+    "from": "rocknroll",
+    "to": "heartland",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Heartland rock keeps rock 'n' roll's three chords and backbeat plain while its peers chased polish."
+  },
+  {
+    "from": "folkrock",
+    "to": "heartland",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "The Dylan line of narrative songwriting supplies its working-class storytelling voice."
+  },
+  {
+    "from": "country",
+    "to": "heartland",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Small-town subject matter and a plain twang seep in from country."
+  },
+  {
+    "from": "heartland",
+    "to": "americana",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Americana inherits its roots-rock band sound and blue-collar narrative frame."
+  },
+  {
+    "from": "chicago",
+    "to": "hardrock",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "British blues rock amplifies electric Chicago blues to arena scale."
+  },
+  {
+    "from": "psych",
+    "to": "hardrock",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Cream and Hendrix's heavy psych jams feed the hard rock riff."
+  },
+  {
+    "from": "garage",
+    "to": "hardrock",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Garage's raw power-chord attack toughens into hard rock swagger."
+  },
+  {
+    "from": "hardrock",
+    "to": "heavymetal",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Metal darkens hard rock's blues riff into ritual heaviness."
+  },
+  {
+    "from": "hardrock",
+    "to": "arenarock",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Arena rock scales hard rock's hooks for the stadium."
+  },
+  {
+    "from": "hardrock",
+    "to": "glammetal",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Hair metal is hard rock's swagger, teased and lacquered."
+  },
+  {
+    "from": "hardrock",
+    "to": "grunge",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Grunge keeps the big blues-rock riff under the flannel."
+  },
+  {
+    "from": "progrock",
+    "to": "arenarock",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Prog's pomp and scale feed the stadium spectacle."
+  },
+  {
+    "from": "arenarock",
+    "to": "glammetal",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Hair metal inherits arena rock's pyro-scale hooks and power ballads."
+  },
+  {
+    "from": "heavymetal",
+    "to": "glammetal",
+    "rel": "origin",
+    "strength": 0.55,
+    "note": "It puts metal's twin leads and gallop in service of the pop hook."
+  },
+  {
+    "from": "hardcore",
+    "to": "grunge",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Melvins slowed hardcore to a sludgy crawl in grunge's backyard."
+  },
+  {
+    "from": "postpunk",
+    "to": "gothrock",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Goth darkens post-punk's cavernous space into velvet theatre."
+  },
+  {
+    "from": "gothrock",
+    "to": "ethereal",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Ethereal wave drifts goth's cathedral gloom into 4AD shimmer."
+  },
+  {
+    "from": "industrial",
+    "to": "gothrock",
+    "rel": "scene",
+    "strength": 0.3,
+    "note": "Shared clubs, aesthetics and crossover labels."
+  },
+  {
+    "from": "krautrock",
+    "to": "industrial",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Krautrock's machine pulse and tape process turn punishing."
+  },
+  {
+    "from": "punk",
+    "to": "industrial",
+    "rel": "scene",
+    "strength": 0.4,
+    "note": "Throbbing Gristle rose beside punk's transgressive DIY moment."
+  },
+  {
+    "from": "industrial",
+    "to": "noiserock",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Swans and Big Black carry industrial's punishment into guitar music."
+  },
+  {
+    "from": "industrial",
+    "to": "techno",
+    "rel": "production",
+    "strength": 0.35,
+    "note": "Its metallic clang and machine menace resurface in techno."
+  },
+  {
+    "from": "soul",
+    "to": "yachtrock",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Blue-eyed soul singing over session-tight grooves."
+  },
+  {
+    "from": "fusion",
+    "to": "yachtrock",
+    "rel": "production",
+    "strength": 0.45,
+    "note": "Jazz-fusion session players built its immaculate studio sheen."
+  },
+  {
+    "from": "yachtrock",
+    "to": "citypop",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "City pop is yacht rock refracted through Tokyo's boom economy."
+  },
+  {
+    "from": "rocknroll",
+    "to": "noircrooner",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Roy Orbison's operatic ballads and Spector's echo chamber are the sound being revived and darkened."
+  },
+  {
+    "from": "baroquepop",
+    "to": "noircrooner",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Scott Walker's orchestral baritone melodrama supplies the strings and the gloom."
+  },
+  {
+    "from": "rockabilly",
+    "to": "noircrooner",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Sun-style slapback, twang and quiff carry over, slowed to a ballad."
+  },
+  {
+    "from": "country",
+    "to": "noircrooner",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Lee Hazlewood and countrypolitan ballads give it the desert twang Orville Peck and Marlon Williams lean on."
+  },
+  {
+    "from": "gothrock",
+    "to": "noircrooner",
+    "rel": "scene",
+    "strength": 0.35,
+    "note": "Nick Cave's murder ballads share its baritone, its graveyard imagery and much of its audience."
+  },
+  {
+    "from": "swing",
+    "to": "tradpop",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Big-band singers step out front: Sinatra leaves Tommy Dorsey in 1942 and the vocalist becomes the star."
+  },
+  {
+    "from": "tradpop",
+    "to": "doowop",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "The Ink Spots' and Mills Brothers' smooth ballad harmony is the template street-corner groups copy."
+  },
+  {
+    "from": "rnb",
+    "to": "doowop",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Doo-wop is R&B's vocal-group branch: the same labels and backbeat, with voices in place of horns."
+  },
+  {
+    "from": "gospel",
+    "to": "doowop",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Gospel quartets supply the bass-voice anchor, the high lead and the call-and-response."
+  },
+  {
+    "from": "doowop",
+    "to": "rocknroll",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Doo-wop ballads and vocal groups fill the early rock 'n' roll charts alongside Berry and Little Richard."
+  },
+  {
+    "from": "doowop",
+    "to": "soul",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Soul singers come up through vocal groups; The Drifters and Ben E. King carry the sound into early soul."
+  },
+  {
+    "from": "doowop",
+    "to": "rockabilly",
+    "rel": "stylistic",
+    "strength": 0.3,
+    "note": "Roy Orbison leaves Sun's rockabilly for ballads sung over doo-wop backing voices and changes."
+  },
+  {
+    "from": "doowop",
+    "to": "noircrooner",
+    "rel": "origin",
+    "strength": 0.55,
+    "note": "The I–vi–IV–V changes, the falsetto lead and the slow-dance ballad are what it slows down and darkens."
+  },
+  {
+    "from": "tradpop",
+    "to": "noircrooner",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "The crooner's close-mic baritone and big held climax pass through Orbison to Isaak, Hawley and Marlon Williams."
+  },
+  {
+    "from": "tradpop",
+    "to": "baroquepop",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Scott Walker and Burt Bacharach carry the Sinatra-era orchestral ballad into 60s pop."
+  },
+  {
+    "from": "rockabilly",
+    "to": "postpunk",
+    "rel": "stylistic",
+    "strength": 0.3,
+    "note": "The Birthday Party and The Gun Club twist rockabilly's twang and swagger into post-punk noise."
+  },
+  {
+    "from": "noircrooner",
+    "to": "altpop",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Lana Del Rey carries the retro-noir croon and Lynchian imagery into chart dark pop."
+  },
+  {
+    "from": "artpop",
+    "to": "altpop",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Art pop's auteur control and conceptual image carry straight into alternative pop's star persona."
+  },
+  {
+    "from": "electropop",
+    "to": "altpop",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Alternative pop keeps electropop's programmed production but strips it to sub bass and space."
+  },
+  {
+    "from": "triphop",
+    "to": "altpop",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Trip-hop's slow, nocturnal, noir atmosphere resurfaces in dark pop's mood and tempo."
+  },
+  {
+    "from": "altpop",
+    "to": "bedroompop",
+    "rel": "bridge",
+    "strength": 0.5,
+    "note": "Billie Eilish's home-recorded breakthrough links bedroom pop's intimacy to dark pop's charts."
+  },
+  {
+    "from": "psych",
+    "to": "artrock",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Psychedelia’s studio ambition matures into conceptual, album-length art."
+  },
+  {
+    "from": "protopunk",
+    "to": "artrock",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "The Velvet Underground’s art-school confrontation feeds art rock’s attitude."
+  },
+  {
+    "from": "artrock",
+    "to": "artpop",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Art rock’s auteur concept migrates from the band to the solo pop voice."
+  },
+  {
+    "from": "artrock",
+    "to": "postpunk",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Bowie and Roxy’s angular experiments are post-punk’s stated inspiration."
+  },
+  {
+    "from": "rocknroll",
+    "to": "glamrock",
+    "rel": "revival",
+    "strength": 0.55,
+    "note": "Glam brings back the 50s stomp, handclaps and Chuck Berry boogie, wrapped in glitter."
+  },
+  {
+    "from": "hardrock",
+    "to": "glamrock",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Glam borrows hard rock's crunch and volume for three-minute singles."
+  },
+  {
+    "from": "artrock",
+    "to": "glamrock",
+    "rel": "scene",
+    "strength": 0.6,
+    "note": "Bowie and Roxy Music straddle both — persona as art, glitter as pop."
+  },
+  {
+    "from": "glamrock",
+    "to": "glammetal",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Hair metal takes glam's makeup, platforms and anthem choruses to the Sunset Strip."
+  },
+  {
+    "from": "glamrock",
+    "to": "punk",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "The New York Dolls' trashy glam swagger feeds straight into punk."
+  },
+  {
+    "from": "artrock",
+    "to": "progrock",
+    "rel": "scene",
+    "strength": 0.45,
+    "note": "Parallel 70s ambitions — one theatrical and ironic, one virtuosic and earnest."
+  },
+  {
+    "from": "rocknroll",
+    "to": "baroquepop",
+    "rel": "origin",
+    "strength": 0.55,
+    "note": "Beat-group songcraft is the frame the orchestration hangs on."
+  },
+  {
+    "from": "classical",
+    "to": "baroquepop",
+    "rel": "bridge",
+    "strength": 0.6,
+    "note": "Harpsichords, string quartets and counterpoint borrowed straight from the conservatory."
+  },
+  {
+    "from": "psych",
+    "to": "baroquepop",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "Same 1966 studios and ambitions — one ornate, one lysergic."
+  },
+  {
+    "from": "baroquepop",
+    "to": "artpop",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Orchestral pop ambition resurfaces in the art pop auteurs."
+  },
+  {
+    "from": "concrete",
+    "to": "experimental",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Tape manipulation establishes sound itself as compositional material."
+  },
+  {
+    "from": "modernclassical",
+    "to": "experimental",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "The post-war avant-garde extends notated music past its own rules."
+  },
+  {
+    "from": "experimental",
+    "to": "minimalism",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Process and duration as form emerge from the experimental circle."
+  },
+  {
+    "from": "experimental",
+    "to": "free",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Indeterminacy and extended technique cross into improvised jazz."
+  },
+  {
+    "from": "experimental",
+    "to": "noiserock",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Noise legitimised as music resurfaces through downtown guitar bands."
+  },
+  {
+    "from": "experimental",
+    "to": "ambient",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "Cage’s framing of environmental sound underwrites ambient’s premise."
+  },
+  {
+    "from": "modernclassical",
+    "to": "sprechgesang",
+    "rel": "revival",
+    "strength": 0.4,
+    "note": "Schoenberg's Sprechstimme (Pierrot Lunaire, 1912) named the speech-song technique a century before the Windmill bands revived the word."
+  },
+  {
+    "from": "postpunk",
+    "to": "sprechgesang",
+    "rel": "revival",
+    "strength": 0.7,
+    "note": "The Fall’s talk-song and wiry post-punk return as the 2020s default."
+  },
+  {
+    "from": "hiphop",
+    "to": "sprechgesang",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Rhythmic speech as lead vocal owes hip-hop its permission."
+  },
+  {
+    "from": "sprechgesang",
+    "to": "newpostpunk",
+    "rel": "scene",
+    "strength": 0.6,
+    "note": "The same Windmill-circuit bands power both waves."
+  },
+  {
+    "from": "postpunk",
+    "to": "indiedance",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "Gang of Four’s scratchy funk is the rhythmic source code."
+  },
+  {
+    "from": "disco",
+    "to": "indiedance",
+    "rel": "production",
+    "strength": 0.55,
+    "note": "Disco’s four-and-hats grid returns, played by hand."
+  },
+  {
+    "from": "house",
+    "to": "indiedance",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "DJ-culture dynamics shape the arrangements and 12-inch mixes."
+  },
+  {
+    "from": "electroclash",
+    "to": "indiedance",
+    "rel": "scene",
+    "strength": 0.55,
+    "note": "Shared early-00s New York clubs, labels and after-parties."
+  },
+  {
+    "from": "indiedance",
+    "to": "newpostpunk",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Dance-punk’s groove discipline persists in the new post-punk wave."
+  },
+  {
+    "from": "synthpop",
+    "to": "electroclash",
+    "rel": "revival",
+    "strength": 0.65,
+    "note": "Early-80s synth pop revived with a smirk and cheaper gear."
+  },
+  {
+    "from": "newwave",
+    "to": "electroclash",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "New wave’s deadpan cool and angularity return as fashion-forward provocation."
+  },
+  {
+    "from": "house",
+    "to": "electroclash",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "Club-format production and DJ context frame the songs."
+  },
+  {
+    "from": "electroclash",
+    "to": "hyperpop",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Trash-glamour maximalism and pitch-shifted irony resurface in hyperpop."
+  },
+  {
+    "from": "grunge",
+    "to": "grungegaze",
+    "rel": "revival",
+    "strength": 0.7,
+    "note": "Seattle’s detuned weight returns, softened into texture."
+  },
+  {
+    "from": "shoegaze",
+    "to": "grungegaze",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "The reverb wash and buried vocal come straight from shoegaze."
+  },
+  {
+    "from": "nugaze",
+    "to": "grungegaze",
+    "rel": "scene",
+    "strength": 0.6,
+    "note": "Two faces of the same streaming-era gaze revival."
+  },
+  {
+    "from": "postpunk",
+    "to": "darkpostpunk",
+    "rel": "revival",
+    "strength": 0.7,
+    "note": "1980–83’s grey-concrete sound rerun for a new cold era."
+  },
+  {
+    "from": "coldwave",
+    "to": "darkpostpunk",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "The French coldwave palette is the revival’s direct template."
+  },
+  {
+    "from": "gothrock",
+    "to": "darkpostpunk",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Goth’s theatrical gloom shades the revival’s imagery."
+  },
+  {
+    "from": "darkpostpunk",
+    "to": "newpostpunk",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "Adjacent revival scenes sharing bills and audiences."
+  },
+  {
+    "from": "gothrock",
+    "to": "darkwave",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Goth’s atmosphere carried onto synthesizers and drum machines."
+  },
+  {
+    "from": "coldwave",
+    "to": "darkwave",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Coldwave’s synth minimalism deepens into darkwave’s lushness."
+  },
+  {
+    "from": "ethereal",
+    "to": "darkwave",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "Overlapping 4AD-adjacent rosters and club nights."
+  },
+  {
+    "from": "darkwave",
+    "to": "darkpostpunk",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Darkwave’s electronic gloom resurfaces in the 2010s revival."
+  },
+  {
+    "from": "hiphop",
+    "to": "screwed",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Houston DJs remixing rap tapes at drastically reduced speed."
+  },
+  {
+    "from": "screwed",
+    "to": "witchhouse",
+    "rel": "production",
+    "strength": 0.7,
+    "note": "Screwed tempo and pitch are witch house's core production move."
+  },
+  {
+    "from": "darkwave",
+    "to": "witchhouse",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "Darkwave's minor-key electronic gloom is the mood witch house slows down."
+  },
+  {
+    "from": "ethereal",
+    "to": "witchhouse",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Wordless, cathedral-reverb vocals carried into the haze."
+  },
+  {
+    "from": "industrial",
+    "to": "witchhouse",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Noise, distortion and corroded machine texture used as atmosphere."
+  },
+  {
+    "from": "shoegaze",
+    "to": "witchhouse",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "The wall-of-reverb blur — hence its other name, screwgaze."
+  },
+  {
+    "from": "witchhouse",
+    "to": "altrnb",
+    "rel": "production",
+    "strength": 0.4,
+    "note": "Its pitched, cavernous production surfaces across 2010s alternative R&B."
+  },
+  {
+    "from": "witchhouse",
+    "to": "hyperpop",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "An early internet-native micro-genre whose blown-out digital gloom fed later online pop."
+  },
+  {
+    "from": "postrock",
+    "to": "ambientpostrock",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Post-rock’s guitar language with the crescendo removed."
+  },
+  {
+    "from": "ambient",
+    "to": "ambientpostrock",
+    "rel": "stylistic",
+    "strength": 0.65,
+    "note": "Ambient’s patience and stasis set the clock."
+  },
+  {
+    "from": "indie",
+    "to": "bedroompop",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "Indie’s DIY ethos migrates from the garage to the laptop."
+  },
+  {
+    "from": "dreampop",
+    "to": "bedroompop",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Soft-focus vocals and gauzy guitars at bedroom scale."
+  },
+  {
+    "from": "contempornb",
+    "to": "bedroompop",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "R&B’s close-mic intimacy and programmed drums shape the sound."
+  },
+  {
+    "from": "bedroompop",
+    "to": "altrnb",
+    "rel": "scene",
+    "strength": 0.45,
+    "note": "Adjacent streaming-native scenes trading producers and playlists."
+  },
+  {
+    "from": "yachtrock",
+    "to": "nuyacht",
+    "rel": "revival",
+    "strength": 0.75,
+    "note": "The smooth studio craft revived sincerely, session chops intact."
+  },
+  {
+    "from": "citypop",
+    "to": "nuyacht",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Japan’s parallel smooth tradition feeds the revival’s palette."
+  },
+  {
+    "from": "nuyacht",
+    "to": "futurefunk",
+    "rel": "scene",
+    "strength": 0.45,
+    "note": "Two crate-digger revivals of the same smooth-groove source material."
+  },
+  {
+    "from": "house",
+    "to": "frenchtouch",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Chicago’s four-on-the-floor frame, imported to Paris."
+  },
+  {
+    "from": "disco",
+    "to": "frenchtouch",
+    "rel": "production",
+    "strength": 0.7,
+    "note": "Filtered, looped disco samples are the genre’s entire engine."
+  },
+  {
+    "from": "frenchtouch",
+    "to": "electroclash",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "Turn-of-the-millennium European club circuits overlap."
+  },
+  {
+    "from": "frenchtouch",
+    "to": "futurefunk",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "Future funk is French Touch’s filter-disco method applied to city pop."
+  },
+  {
+    "from": "cool",
+    "to": "bossanova",
+    "rel": "bridge",
+    "strength": 0.6,
+    "note": "Cool jazz’s soft dynamics and extended harmony flow into Rio."
+  },
+  {
+    "from": "bossanova",
+    "to": "latinpsych",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Tropicália’s writers grew up inside bossa’s harmony before electrifying it."
+  },
+  {
+    "from": "bossanova",
+    "to": "citypop",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Bossa’s breezy harmony is baked into city pop’s resort palette."
+  },
+  {
+    "from": "bossanova",
+    "to": "yachtrock",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "The smooth-jazz-pop lineage keeps borrowing bossa’s changes."
+  },
+  {
+    "from": "hiphop",
+    "to": "bailefunk",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "US hip-hop and freestyle records filled Rio's bailes before local MCs took over."
+  },
+  {
+    "from": "hiphop",
+    "to": "miamibass",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Electro-era hip-hop sped up and rebuilt around the 808 kick in South Florida."
+  },
+  {
+    "from": "miamibass",
+    "to": "bailefunk",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Miami bass records landing in Rio, re-sung in Portuguese, became funk carioca."
+  },
+  {
+    "from": "bailefunk",
+    "to": "mandelao",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "São Paulo's bailes and fluxos pushed Rio funk into harder, distorted car-system beats."
+  },
+  {
+    "from": "hiphop",
+    "to": "phonk",
+    "rel": "origin",
+    "strength": 0.5,
+    "note": "Southern hip-hop's online underground revived the Memphis sound."
+  },
+  {
+    "from": "screwed",
+    "to": "phonk",
+    "rel": "production",
+    "strength": 0.55,
+    "note": "Slowed, chopped vocal samples are a core phonk technique."
+  },
+  {
+    "from": "mandelao",
+    "to": "brphonk",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "Funk automotivo rhythms and vocals are the Brazilian phonk base."
+  },
+  {
+    "from": "phonk",
+    "to": "brphonk",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Drift phonk's cowbell leads and production layered over funk beats."
+  },
+  {
+    "from": "bailefunk",
+    "to": "hyperpop",
+    "rel": "production",
+    "strength": 0.45,
+    "note": "Baile drums are a staple transplant in hyperpop and digicore."
+  },
+  {
+    "from": "bailefunk",
+    "to": "afrobeats",
+    "rel": "scene",
+    "strength": 0.4,
+    "note": "Global-south club sounds cross-pollinating on streaming playlists."
+  },
+  {
+    "from": "house",
+    "to": "jerseyclub",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Via Baltimore club — chopped house pushed past 130 with signature kicks."
+  },
+  {
+    "from": "hiphop",
+    "to": "jerseyclub",
+    "rel": "scene",
+    "strength": 0.55,
+    "note": "Newark’s MCs and rap radio raised the style and now borrow it back."
+  },
+  {
+    "from": "jerseyclub",
+    "to": "hyperpop",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "The 5-kick bounce is all over hyperpop and internet rap."
+  },
+  {
+    "from": "artpop",
+    "to": "dreampop",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Art pop’s texture-first auteurism shades into dream pop."
+  },
+  {
+    "from": "artpop",
+    "to": "hyperpop",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Hyperpop is art pop’s concept-first method at internet speed."
+  },
+  {
+    "from": "artpop",
+    "to": "altrnb",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Alternative R&B inherits art pop's auteur production values."
+  },
+  {
+    "from": "concrete",
+    "to": "hauntology",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Tape splicing and found sound — via the BBC Radiophonic Workshop — are its native tools."
+  },
+  {
+    "from": "ambient",
+    "to": "hauntology",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Ambient's drift and stasis set its beatless, atmospheric pace."
+  },
+  {
+    "from": "idm",
+    "to": "hauntology",
+    "rel": "bridge",
+    "strength": 0.5,
+    "note": "Boards of Canada's degraded, nostalgic haze is the direct gateway."
+  },
+  {
+    "from": "dub",
+    "to": "hauntology",
+    "rel": "production",
+    "strength": 0.35,
+    "note": "Dub's cavernous echo and dropout haunt its spectral mixes."
+  },
+  {
+    "from": "folk",
+    "to": "hauntology",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "The haunted-pastoral strain summons British folk revival and rural folklore."
+  },
+  {
+    "from": "dreampop",
+    "to": "hauntology",
+    "rel": "scene",
+    "strength": 0.3,
+    "note": "Broadcast carried dream pop's gauze into the Ghost Box orbit."
+  },
+  {
+    "from": "hauntology",
+    "to": "synthwave",
+    "rel": "bridge",
+    "strength": 0.3,
+    "note": "Its 'lost futures' nostalgia primed the internet's retro-media revivals."
+  },
+  {
+    "from": "folkrock",
+    "to": "countryrock",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "The Byrds took folk rock's band and harmonies to Nashville on Sweetheart of the Rodeo, founding the hybrid."
+  },
+  {
+    "from": "country",
+    "to": "countryrock",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Pedal steel, banjo and close harmony come straight from country, played by rock musicians."
+  },
+  {
+    "from": "cosmicamerican",
+    "to": "countryrock",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Parsons' Byrds and Burritos are country rock's founding records; the broader genre is his idea made commercial."
+  },
+  {
+    "from": "countryrock",
+    "to": "americana",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Americana's roots-plus-rock-band template is country rock's, revived with indie values in the 90s."
+  },
+  {
+    "from": "countryrock",
+    "to": "heartland",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Tom Petty and Mellencamp inherit country rock's Telecaster twang and harmony-chorus writing."
+  },
+  {
+    "from": "countryrock",
+    "to": "softrock",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "The Eagles and Ronstadt smoothed country rock into the soft-rock mainstream by 1973."
+  },
+  {
+    "from": "countryrock",
+    "to": "yachtrock",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Late-70s Eagles and Ronstadt records took on the LA session polish of the smooth sound."
+  },
+  {
+    "from": "folk",
+    "to": "singersongwriter",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Folk's acoustic, lyric-first solo performer is the format; the singer-songwriter turns its topical voice confessional."
+  },
+  {
+    "from": "folkrock",
+    "to": "singersongwriter",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Members of the Byrds, Buffalo Springfield and the Mamas & the Papas became the Laurel Canyon solo writers."
+  },
+  {
+    "from": "singersongwriter",
+    "to": "countryrock",
+    "rel": "scene",
+    "strength": 0.4,
+    "note": "Jackson Browne co-wrote 'Take It Easy'; the Troubadour and Asylum Records housed both camps."
+  },
+  {
+    "from": "singersongwriter",
+    "to": "softrock",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "Carole King and James Taylor's hits gave soft rock its intimate vocal and piano-and-acoustic palette."
+  },
+  {
+    "from": "singersongwriter",
+    "to": "americana",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Americana's weathered narrative voice descends from the 70s confessional writer."
+  },
+  {
+    "from": "singersongwriter",
+    "to": "indie",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Elliott Smith and the Elephant 6 writers brought Nick Drake's and Mitchell's intimacy into indie rock."
+  },
+  {
+    "from": "singersongwriter",
+    "to": "bedroompop",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Bedroom pop's close-miked, first-person confession is the singer-songwriter mode on a laptop."
+  },
+  {
+    "from": "folkrock",
+    "to": "softrock",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "America's and the Eagles' acoustic strum and harmony are folk rock with the edges planed off."
+  },
+  {
+    "from": "sunshinepop",
+    "to": "softrock",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "The Carpenters carried sunshine pop's stacked harmony and orchestration into the 70s."
+  },
+  {
+    "from": "softrock",
+    "to": "yachtrock",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Yacht rock is soft rock given jazz chords, R&B grooves and session-musician sheen."
+  },
+  {
+    "from": "garage",
+    "to": "ozpubpunk",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "The Saints and the Scientists started from 60s garage and R&B covers played too loud."
+  },
+  {
+    "from": "protopunk",
+    "to": "ozpubpunk",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Radio Birdman were formed by a Detroit expatriate in open homage to the Stooges and MC5."
+  },
+  {
+    "from": "punk",
+    "to": "ozpubpunk",
+    "rel": "scene",
+    "strength": 0.6,
+    "note": "The Saints were signed by EMI and flown to London in 1977 on the strength of UK punk, which they predated."
+  },
+  {
+    "from": "blues",
+    "to": "ozpubpunk",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "The swamp strain — Scientists, Beasts of Bourbon — drags slide blues and Howlin' Wolf through punk distortion."
+  },
+  {
+    "from": "ozpubpunk",
+    "to": "postpunk",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "The Birthday Party arrived in London in 1980 and became one of post-punk's most violent acts."
+  },
+  {
+    "from": "ozpubpunk",
+    "to": "gothrock",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "'Release the Bats' and Junkyard fed the Batcave; Nick Cave went from the Birthday Party to the Bad Seeds."
+  },
+  {
+    "from": "ozpubpunk",
+    "to": "noiserock",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "The Birthday Party's and the Scientists' abrasion is a direct source for Sonic Youth and Swans-era noise rock."
+  },
+  {
+    "from": "ozpubpunk",
+    "to": "grunge",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "The Scientists' swamp sludge and loud-quiet dynamics were cited by Mudhoney and the Sub Pop bands."
+  },
+  {
+    "from": "ozpubpunk",
+    "to": "newpostpunk",
+    "rel": "scene",
+    "strength": 0.35,
+    "note": "Amyl and the Sniffers and Tropical Fuck Storm tour the same Rough Trade-era circuit as the UK post-punk wave."
+  },
+  {
+    "from": "postpunk",
+    "to": "postpunkrevival",
+    "rel": "revival",
+    "strength": 0.85,
+    "note": "Interpol, Editors and Bloc Party rebuilt Joy Division's lead bass, clipped guitar and detached vocal."
+  },
+  {
+    "from": "garage",
+    "to": "postpunkrevival",
+    "rel": "revival",
+    "strength": 0.55,
+    "note": "The Strokes, Yeah Yeah Yeahs and the White Stripes led the garage-rock side of the same revival."
+  },
+  {
+    "from": "newwave",
+    "to": "postpunkrevival",
+    "rel": "revival",
+    "strength": 0.5,
+    "note": "Franz Ferdinand and the Killers took new wave's art-school pop hooks and dance pulse."
+  },
+  {
+    "from": "indie",
+    "to": "postpunkrevival",
+    "rel": "origin",
+    "strength": 0.5,
+    "note": "The revival came out of indie labels and college radio before NME and major labels scaled it up."
+  },
+  {
+    "from": "postpunkrevival",
+    "to": "indiedance",
+    "rel": "scene",
+    "strength": 0.6,
+    "note": "The Rapture and DFA shared New York clubs and bills with Interpol and the Strokes."
+  },
+  {
+    "from": "postpunkrevival",
+    "to": "indie",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Its angular guitar and clipped drumming became the default indie-rock sound of the late 2000s."
+  },
+  {
+    "from": "postpunkrevival",
+    "to": "newpostpunk",
+    "rel": "revival",
+    "strength": 0.5,
+    "note": "The 2017 wave is a second revival, replacing the 2000s bands' polish with punk abrasion and spoken vocals."
+  },
+  {
+    "from": "postpunk",
+    "to": "windmill",
+    "rel": "revival",
+    "strength": 0.6,
+    "note": "The Fall's talk-song, Wire's economy and Gang of Four's angularity are the Windmill bands' shared starting point."
+  },
+  {
+    "from": "mathrock",
+    "to": "windmill",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "black midi's and Squid's odd meters, stop-start riffs and tapped guitar come from Don Caballero and Shellac."
+  },
+  {
+    "from": "nowave",
+    "to": "windmill",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Skronking sax, atonal guitar and anti-virtuoso noise re-enter via black midi and Black Country, New Road."
+  },
+  {
+    "from": "krautrock",
+    "to": "windmill",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Squid's motorik lock-grooves and black midi's Damo Suzuki collaboration make the Can lineage explicit."
+  },
+  {
+    "from": "postrock",
+    "to": "windmill",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Slint's quiet-loud through-composition and spoken narration underlie Black Country, New Road."
+  },
+  {
+    "from": "newpostpunk",
+    "to": "windmill",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "Shame, Goat Girl and Fat White Family's Windmill residencies built the venue scene the art-punk bands emerged from."
+  },
+  {
+    "from": "windmill",
+    "to": "sprechgesang",
+    "rel": "scene",
+    "strength": 0.7,
+    "note": "Dry Cleaning and Black Country, New Road belong to both: the Windmill supplied the spoken-vocal wave its bands."
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "soul",
+    "label": "Blues · R&B · Soul · Funk",
+    "short": "Soul Lineage",
+    "color": "#e0a23c",
+    "rgb": "224,162,60",
+    "y": 230
+  },
+  {
+    "id": "rock",
+    "label": "Rock · Punk · Alternative · Indie",
+    "short": "Rock Lineage",
+    "color": "#e8743f",
+    "rgb": "232,116,63",
+    "y": 740
+  },
+  {
+    "id": "metal",
+    "label": "Metal · Doom · Extreme",
+    "short": "Metal Lineage",
+    "color": "#d95a5a",
+    "rgb": "217,90,90",
+    "y": 1300
+  },
+  {
+    "id": "gaze",
+    "label": "Dream Pop · Shoegaze · Post-Punk",
+    "short": "Gaze & Post-Punk",
+    "color": "#b08cf0",
+    "rgb": "176,140,240",
+    "y": 1660
+  },
+  {
+    "id": "jazz",
+    "label": "Jazz · Fusion · Experimental · Ambient",
+    "short": "Jazz & Experimental",
+    "color": "#4fc28a",
+    "rgb": "79,194,138",
+    "y": 2020
+  },
+  {
+    "id": "electronic",
+    "label": "House · Techno · Trance · Bass",
+    "short": "Electronic & Dance",
+    "color": "#54c6d6",
+    "rgb": "84,198,214",
+    "y": 2420
+  },
+  {
+    "id": "roots",
+    "label": "Folk · Country · Americana",
+    "short": "Roots & Americana",
+    "color": "#b6c05a",
+    "rgb": "182,192,90",
+    "y": 2710
+  },
+  {
+    "id": "hiphop",
+    "label": "Hip-Hop · Contemporary R&B",
+    "short": "Hip-Hop & R&B",
+    "color": "#e87bb4",
+    "rgb": "232,123,180",
+    "y": 2950
+  },
+  {
+    "id": "global",
+    "label": "Global · Dub · Afro-diasporic",
+    "short": "Global & Diaspora",
+    "color": "#6f8cf0",
+    "rgb": "111,140,240",
+    "y": 3320
+  }
+]

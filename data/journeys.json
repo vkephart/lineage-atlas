@@ -1,0 +1,400 @@
+[
+  {
+    "id": "italian",
+    "title": "The Italian Connection",
+    "subtitle": "From Sanremo and Cinecittà to the Warehouse",
+    "steps": [
+      {
+        "id": "canzone",
+        "text": "Post-war Italy's popular song borrows opera's melodic sweep: verses that climb to a held note, arrangements for full orchestra, and a national festival — Sanremo — to launch them."
+      },
+      {
+        "id": "filmscore",
+        "text": "The same Rome studios score films. Morricone arranges Mina and Gino Paoli by day and, from 1964, turns the western into whistling, twang and choir."
+      },
+      {
+        "id": "cosmicdisco",
+        "text": "By the late 70s, DJs at lakeside clubs pitch disco records down into slow, hypnotic blends — Italy's first dancefloor invention."
+      },
+      {
+        "id": "italodisco",
+        "text": "Then disco's money disappears. Milan producers keep the chorus, drop the orchestra and sequence everything — cheap, glossy, melodic records for export."
+      },
+      {
+        "id": "house",
+        "text": "Those exports land in Chicago. Knuckles and Hardy loop the basslines; the first house records inherit Italo's sequenced octave bass."
+      }
+    ]
+  },
+  {
+    "id": "antiquity2now",
+    "title": "Antiquity to the Concert Hall",
+    "subtitle": "2,400 years from the aulos to functional harmony",
+    "steps": [
+      {
+        "id": "ancientgreek",
+        "text": "It starts with a single line: voice doubled by lyre or aulos, shaped by poetic meter. No chords, no harmony — but a theory of tetrachords and named modes that will outlive the civilisation."
+      },
+      {
+        "id": "plainchant",
+        "text": "The medieval church inherits those modes, renames them, and sings them unaccompanied. To preserve the repertoire it invents the staff — and Europe gains a way to write music down."
+      },
+      {
+        "id": "renpoly",
+        "text": "Voices are added against the chant line. Once several move at once, consonance between them becomes a rule, and the triad settles in as the resting sound."
+      },
+      {
+        "id": "opera",
+        "text": "Around 1600 the equal voices are set aside. One singer carries the drama over a bass line and chords — melody plus accompaniment, staged with an orchestra, and the words are audible again."
+      },
+      {
+        "id": "classical",
+        "text": "Counterpoint hardens into functional harmony: keys, cadences, long-range tonal structure, and notated forms built to carry them."
+      },
+      {
+        "id": "modernclassical",
+        "text": "By 1900 that tonal system is exhausted enough to break. Impressionism, atonality and serialism dismantle the very grammar antiquity set in motion."
+      },
+      {
+        "id": "minimalism",
+        "text": "And the reaction to that break loops back: repetition, static modal centres and an unmeasured line — chant's logic, rebuilt from the other end of history."
+      }
+    ]
+  },
+  {
+    "id": "hc2emo",
+    "title": "Hardcore to the Emo Revival",
+    "subtitle": "Punk's fury turned inward, four decades on",
+    "steps": [
+      {
+        "id": "punk",
+        "text": "Punk compresses rock into fast, confrontational, DIY bursts — the raw material."
+      },
+      {
+        "id": "hardcore",
+        "text": "American hardcore strips it further: faster, shorter, angrier, and fiercely self-organised."
+      },
+      {
+        "id": "emocore",
+        "text": "In D.C.'s 1985 Revolution Summer, Rites of Spring and Embrace turn that fury inward — emotional hardcore."
+      },
+      {
+        "id": "posthardcore",
+        "text": "Post-hardcore keeps the intensity but opens the form — dynamics, dissonance and space."
+      },
+      {
+        "id": "emo",
+        "text": "The mid-90s second wave makes emo confessional and melodic."
+      },
+      {
+        "id": "midwestemo",
+        "text": "In Midwest basements it relaxes into twinkly, math-inflected intimacy — American Football's porch light."
+      },
+      {
+        "id": "emorevival",
+        "text": "A 2010s generation raised on those records brings the lineage back, group-shouts and all."
+      }
+    ]
+  },
+  {
+    "id": "blues2rock",
+    "title": "Blues to Rock 'n' Roll",
+    "subtitle": "How the blues was electrified for teenagers",
+    "steps": [
+      {
+        "id": "blues",
+        "text": "It begins with the blues — the 12-bar cycle, blue notes and call-and-response that underpin everything that follows."
+      },
+      {
+        "id": "chicago",
+        "text": "Migration north and amplification turn it into Chicago blues: a loud, band-driven sound with a distorted, sustaining guitar tone."
+      },
+      {
+        "id": "rnb",
+        "text": "Given a hard backbeat and horns, it becomes rhythm & blues — urban, danceable and built for the jukebox."
+      },
+      {
+        "id": "rocknroll",
+        "text": "Sped up and aimed at teenagers, R&B's shuffle becomes rock 'n' roll, with Chuck Berry codifying the electric-guitar language."
+      }
+    ]
+  },
+  {
+    "id": "shoegaze",
+    "title": "How Shoegaze Emerged",
+    "subtitle": "Post-punk atmosphere meets pop noise",
+    "steps": [
+      {
+        "id": "postpunk",
+        "text": "Post-punk's cold, cavernous space proves guitars can evoke vast atmosphere, not just aggression."
+      },
+      {
+        "id": "dreampop",
+        "text": "Dream pop warms that space — Cocteau Twins and Mazzy Star drown breathy melody in shimmering reverb."
+      },
+      {
+        "id": "noisepop",
+        "text": "In parallel, noise pop buries sweet pop hooks under feedback, making the noise itself melodic."
+      },
+      {
+        "id": "shoegaze",
+        "text": "Shoegaze fuses both into a single overwhelming wall of glide-guitar texture, perfected on My Bloody Valentine's Loveless."
+      }
+    ]
+  },
+  {
+    "id": "disco2house",
+    "title": "From Disco to House",
+    "subtitle": "The dancefloor goes electronic",
+    "steps": [
+      {
+        "id": "disco",
+        "text": "Disco lays the foundation: four-on-the-floor, the extended 12-inch mix and a club culture born in queer and Black spaces."
+      },
+      {
+        "id": "protohouse",
+        "text": "When disco falls from fashion, Chicago DJs keep it alive with drum-machine edits — proto-house."
+      },
+      {
+        "id": "house",
+        "text": "Those edits become original productions. The 909 kick and soul samples crystallise into house."
+      },
+      {
+        "id": "deephouse",
+        "text": "Larry Heard turns house inward, adding lush jazz chords and a subdued warmth: deep house."
+      }
+    ]
+  },
+  {
+    "id": "jazzspill",
+    "title": "Jazz to Fusion to Spillover",
+    "subtitle": "How jazz seeded the experimental fringe",
+    "steps": [
+      {
+        "id": "bebop",
+        "text": "Bebop reclaims jazz as virtuoso art music — fast, harmonically dense improvisation over rapid changes."
+      },
+      {
+        "id": "modal",
+        "text": "Modal jazz replaces those changes with open, scale-based vamps, trading density for hypnotic space."
+      },
+      {
+        "id": "fusion",
+        "text": "Plugged into rock's volume and backbeat, jazz becomes fusion — electric, aggressive and exploratory."
+      },
+      {
+        "id": "krautrock",
+        "text": "That electric, exploratory spirit echoes in krautrock, whose motorik repetition bridges rock, jazz and electronics."
+      },
+      {
+        "id": "ambient",
+        "text": "At the far end, the experiment dissolves into ambient — beat and progression recede until only tone and drift remain."
+      }
+    ]
+  },
+  {
+    "id": "ppgaze",
+    "title": "Post-Punk to Dream Pop to Shoegaze",
+    "subtitle": "The textural guitar lineage",
+    "steps": [
+      {
+        "id": "postpunk",
+        "text": "Post-punk opens guitar music into cold, dub-treated space and angular, bass-led arrangements."
+      },
+      {
+        "id": "dreampop",
+        "text": "Dream pop warms that space into lush reverb, blurring vocal and guitar into pure mood."
+      },
+      {
+        "id": "shoegaze",
+        "text": "Shoegaze maximises the layering — glide guitar and buried vocals collapse into one overwhelming texture."
+      }
+    ]
+  },
+  {
+    "id": "htt",
+    "title": "House / Techno / Trance",
+    "subtitle": "One 4/4 root, three divergent paths",
+    "steps": [
+      {
+        "id": "house",
+        "text": "It starts with house: Chicago's soulful, sample-led four-on-the-floor, warm and song-like."
+      },
+      {
+        "id": "detroit",
+        "text": "In Detroit, the same machines turn colder and futurist — funk syncopation rebuilt as machine soul."
+      },
+      {
+        "id": "techno",
+        "text": "Europe hardens Detroit's sound into relentless, metallic techno for big, dark rooms."
+      },
+      {
+        "id": "trance",
+        "text": "A melodic branch splits off into trance — sequenced arpeggios and long builds engineered for euphoria."
+      }
+    ]
+  },
+  {
+    "id": "jazzroots",
+    "title": "The Roots of Jazz",
+    "subtitle": "Ragtime to bebop in four moves",
+    "steps": [
+      {
+        "id": "ragtime",
+        "text": "It begins with ragtime — America's first syncopated popular music, a steady striding left hand under a 'ragged' right."
+      },
+      {
+        "id": "noladixie",
+        "text": "In New Orleans those rhythms meet the blues and collective horn improvisation, and jazz is born."
+      },
+      {
+        "id": "swing",
+        "text": "Arranged for big bands, jazz becomes swing — smooth four-to-the-bar dance music for the masses."
+      },
+      {
+        "id": "bebop",
+        "text": "A small-group revolt against swing's polish, bebop reclaims jazz as fast, virtuosic art music."
+      },
+      {
+        "id": "modal",
+        "text": "Bebop's dense changes finally give way to modal jazz's open, scale-based space."
+      }
+    ]
+  },
+  {
+    "id": "garage2desert",
+    "title": "Garage to Psych to the Desert",
+    "subtitle": "Sixties fuzz to nu-psych and the modern frontier",
+    "steps": [
+      {
+        "id": "garage",
+        "text": "It begins in suburban garages — teenage bands playing three distorted chords with attitude over polish."
+      },
+      {
+        "id": "psych",
+        "text": "The studio and the trip expand that raw fuzz into psychedelic rock: modal jams, drones and tape-effect exploration."
+      },
+      {
+        "id": "acidrock",
+        "text": "Acid rock is its heavier, jam-based end — San Francisco ballroom volume and ten-minute improvisations."
+      },
+      {
+        "id": "heavypsych",
+        "text": "Heavy psych pushes it to physical extremes: saturated amp stacks and dragging riffs — the missing link toward metal."
+      },
+      {
+        "id": "heavymetal",
+        "text": "Black Sabbath darkens and codifies that weight into heavy metal — the tritone riff as monolith."
+      },
+      {
+        "id": "doom",
+        "text": "Doom metal slows Sabbath's blueprint to a funereal crawl, keeping the riff sacred through the 80s underground."
+      },
+      {
+        "id": "desertrock",
+        "text": "In Palm Desert, punk kids raised on those doom riffs detune them at generator parties — desert rock: fuzzy, groove-heavy, sun-baked."
+      },
+      {
+        "id": "stonerrock",
+        "text": "Sleep and company take the desert sound worldwide as stoner rock: monolithic Sabbath riffs at a heavy-lidded crawl."
+      },
+      {
+        "id": "neopsych",
+        "text": "In parallel, neo-psychedelia reworks the 60s haze through indie sensibilities — Tame Impala's generation of nu-psych."
+      },
+      {
+        "id": "desertpunk",
+        "text": "The 2020s frontier strips it back to velocity: desert punk, generator-party fuzz played at hardcore speed."
+      }
+    ]
+  },
+  {
+    "id": "frontier2026",
+    "title": "The 2026 Frontier",
+    "subtitle": "Where the lineages are heading now",
+    "steps": [
+      {
+        "id": "deephouse",
+        "text": "Deep house's warm jazz chords travel south, to the townships of South Africa."
+      },
+      {
+        "id": "amapiano",
+        "text": "There they become amapiano — those chords floating over a springy log-drum bassline, the dominant global dance pulse of the 2020s."
+      },
+      {
+        "id": "spiritual",
+        "text": "Meanwhile spiritual jazz's modal, devotional vamps are picked up half a world away."
+      },
+      {
+        "id": "ukjazz",
+        "text": "London's club-jazz scene reforges them as a new spiritual jazz, charged with Afro-diasporic rhythm and broken beat."
+      },
+      {
+        "id": "postpunk",
+        "text": "And post-punk's angular, bass-led tension proves it never really left."
+      },
+      {
+        "id": "newpostpunk",
+        "text": "It returns in the 2020s guitar-band revival — wry, literary and motorik, the lineage still evolving into 2026."
+      }
+    ]
+  },
+  {
+    "id": "noirjourney",
+    "title": "How Noir Crooner Emerged",
+    "subtitle": "From Sinatra and doo-wop to Dead Man’s Bones",
+    "steps": [
+      {
+        "id": "tradpop",
+        "text": "It starts with the crooners. Sinatra leaves the Dorsey band in 1942 and the singer becomes the star; by 1955 In the Wee Small Hours is a whole album of late-night ballads."
+      },
+      {
+        "id": "doowop",
+        "text": "On the R&B side, doo-wop groups fix the slow-dance ballad: I–vi–IV–V changes, a falsetto lead and, on The Flamingos' 'I Only Have Eyes for You', a haze of echo."
+      },
+      {
+        "id": "rockabilly",
+        "text": "Roy Orbison starts at Sun Records in 1956 cutting rockabilly. At Monument he slows down and joins both lines: an operatic croon over doo-wop backing voices and strings on 'Only the Lonely', 'Crying' and 'In Dreams'."
+      },
+      {
+        "id": "postpunk",
+        "text": "Two decades later a darker branch comes out of Melbourne. Nick Cave's Birthday Party bend rockabilly and blues into violent post-punk noise."
+      },
+      {
+        "id": "gothrock",
+        "text": "When the band splits in 1983, Cave carries on as Nick Cave & the Bad Seeds: a baritone crooning murder ballads in a gothic setting."
+      },
+      {
+        "id": "noircrooner",
+        "text": "In 1989 Chris Isaak's 'Wicked Game' puts Orbison's falsetto and tremolo guitar into that same dark mood. Dead Man's Bones (2009) add a children's choir and ghost stories, and Marlon Williams (from 2015) takes the croon back toward country."
+      }
+    ]
+  },
+  {
+    "id": "witchhouse",
+    "title": "How Witch House Emerged",
+    "subtitle": "Houston tape culture meets goth electronics",
+    "steps": [
+      {
+        "id": "screwed",
+        "text": "In early-90s Houston, DJ Screw drags rap tapes down to roughly 60% speed — pitch and tempo alone become the remix."
+      },
+      {
+        "id": "darkwave",
+        "text": "Elsewhere, goth's atmosphere had already left the band behind: darkwave carries minor-key dread on synths and drum machines."
+      },
+      {
+        "id": "ethereal",
+        "text": "Ethereal wave supplies the other half of the voice — wordless soprano dissolved in cathedral reverb."
+      },
+      {
+        "id": "witchhouse",
+        "text": "Around 2009 bedroom producers fuse the two. Salem and Crystal Castles set screwed, unintelligible vocals over blown-out drum machines, and blogs name it witch house."
+      },
+      {
+        "id": "altrnb",
+        "text": "The micro-genre burns out within a few years, but its slowed, cavernous production keeps resurfacing in alternative R&B and pop."
+      }
+    ]
+  }
+]

@@ -1,0 +1,3833 @@
+[
+  {
+    "id": "rocknroll",
+    "name": "Rock 'n' Roll",
+    "fam": "rock",
+    "year": 1954,
+    "role": "foundational",
+    "yOff": -95,
+    "def": "R&B accelerated for a teenage mass market — sharper backbeat, guitar hooks and rebellion packaged as pop. The first youth-culture genre.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Hard backbeat and a driving shuffle."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Electric guitar hooks, piano, upright or electric bass."
+      },
+      {
+        "k": "Song structure",
+        "v": "Tight two- to three-minute verse-chorus singles."
+      }
+    ],
+    "why": "It speeds R&B's shuffle and backbeat into hook-driven singles built for teenagers.",
+    "artists": [
+      "Chuck Berry",
+      "Little Richard",
+      "Elvis Presley"
+    ],
+    "albums": [
+      {
+        "t": "The Great Twenty-Eight",
+        "a": "Chuck Berry"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Johnny B. Goode",
+        "a": "Chuck Berry",
+        "why": "Berry's double-stop intro riff codified the electric-guitar vocabulary of rock."
+      },
+      {
+        "t": "Tutti Frutti",
+        "a": "Little Richard"
+      },
+      {
+        "t": "Jailhouse Rock",
+        "a": "Elvis Presley"
+      }
+    ],
+    "tempo": "130–180 BPM"
+  },
+  {
+    "id": "rockabilly",
+    "name": "Rockabilly",
+    "fam": "rock",
+    "fam2": "roots",
+    "year": 1954,
+    "role": "hybrid",
+    "yOff": 30,
+    "def": "Southern rock 'n' roll built from hillbilly country and R&B — slapback echo, slapped upright bass, twangy electric lead and hiccupping vocals, cut largely at Sam Phillips' Sun Records in Memphis.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Slapback tape echo on voice and guitar."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Slapped upright bass driving a fast two-beat shuffle, often with sparse or no drums."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Hiccups, stutters and yelps."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Sun Records, Memphis, mid-1950s."
+      }
+    ],
+    "why": "It plays country's instrumentation and twang at R&B's tempo and attack — the 'billy' strand of rock 'n' roll.",
+    "artists": [
+      "Elvis Presley",
+      "Carl Perkins",
+      "Jerry Lee Lewis",
+      "Gene Vincent",
+      "Wanda Jackson",
+      "Eddie Cochran"
+    ],
+    "albums": [
+      {
+        "t": "The Sun Sessions",
+        "a": "Elvis Presley"
+      },
+      {
+        "t": "Dance Album of Carl Perkins",
+        "a": "Carl Perkins"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "That's All Right",
+        "a": "Elvis Presley",
+        "why": "His 1954 Sun debut: an Arthur Crudup blues played with a country trio's slap bass and slapback echo."
+      },
+      {
+        "t": "Blue Suede Shoes",
+        "a": "Carl Perkins"
+      },
+      {
+        "t": "Be-Bop-A-Lula",
+        "a": "Gene Vincent"
+      },
+      {
+        "t": "Let's Have a Party",
+        "a": "Wanda Jackson"
+      }
+    ]
+  },
+  {
+    "id": "psychobilly",
+    "name": "Psychobilly",
+    "fam": "rock",
+    "year": 1980,
+    "role": "branch",
+    "yOff": 0,
+    "def": "Rockabilly rebuilt with punk speed and B-movie horror — slapped double bass, reverb-drenched guitar and lyrics about monsters, zombies and the grave.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Rockabilly shuffle at punk tempo, driven by a fast, clicking slapped upright bass."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Twangy, heavily reverbed guitar with fuzz and surf echo."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Snarls, yelps and horror-host howls."
+      },
+      {
+        "k": "Scene / context",
+        "v": "London's Klub Foot and the Meteors' 'wreckin' crew'; quiffs and flat-tops."
+      }
+    ],
+    "why": "It keeps rockabilly's slap bass and twang but plays them with punk's speed and aggression, swapping teen romance for horror-film camp.",
+    "artists": [
+      "The Cramps",
+      "The Meteors",
+      "Demented Are Go",
+      "Guana Batz",
+      "King Kurt",
+      "Reverend Horton Heat",
+      "Tiger Army"
+    ],
+    "albums": [
+      {
+        "t": "Songs the Lord Taught Us",
+        "a": "The Cramps"
+      },
+      {
+        "t": "In Heaven",
+        "a": "The Meteors"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Human Fly",
+        "a": "The Cramps",
+        "why": "The 1978 single that set the template: rockabilly stomp, garage fuzz and B-movie lyrics."
+      },
+      {
+        "t": "Voodoo Rhythm",
+        "a": "The Meteors"
+      },
+      {
+        "t": "Zombie Dance",
+        "a": "The Cramps"
+      }
+    ]
+  },
+  {
+    "id": "progrock",
+    "name": "Progressive Rock",
+    "fam": "rock",
+    "year": 1971,
+    "role": "branch",
+    "yOff": 40,
+    "def": "Rock scaled to classical ambition — suite-length compositions, odd meters, virtuoso playing and concept albums as complete statements.",
+    "traits": [
+      {
+        "k": "Song structure",
+        "v": "Multi-part suites and side-long epics."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Odd meters and through-composed shifts."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Mellotron, organ and synth beside virtuoso guitar."
+      },
+      {
+        "k": "Scene / context",
+        "v": "The album as artwork; post-psychedelic ambition."
+      }
+    ],
+    "why": "It stretches rock into through-composed, odd-metered suites where virtuosity and form outrank the single.",
+    "artists": [
+      "King Crimson",
+      "Yes",
+      "Genesis"
+    ],
+    "albums": [
+      {
+        "t": "In the Court of the Crimson King",
+        "a": "King Crimson"
+      },
+      {
+        "t": "Close to the Edge",
+        "a": "Yes"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "21st Century Schizoid Man",
+        "a": "King Crimson",
+        "why": "Its jazz-metal fury and stop-time precision announced prog’s ambitions in one track."
+      },
+      {
+        "t": "Roundabout",
+        "a": "Yes"
+      },
+      {
+        "t": "Firth of Fifth",
+        "a": "Genesis"
+      }
+    ],
+    "tempo": "60–160 BPM",
+    "tempoNote": "Highly variable — suite-length pieces shift tempo and meter constantly."
+  },
+  {
+    "id": "garage",
+    "name": "Garage Rock",
+    "fam": "rock",
+    "year": 1963,
+    "role": "branch",
+    "yOff": 50,
+    "def": "Raw, amateur, primal rock made by teenage bands in suburban garages — distortion, attitude and three chords over polish.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Distorted, lo-fi, untreated guitar."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Blunt, driving eighth-note pulse."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Suburban teenage amateurism."
+      }
+    ],
+    "why": "It strips rock to three raw chords and amateur energy, making imperfection itself the sound.",
+    "artists": [
+      "The Sonics",
+      "The Kingsmen",
+      "? & the Mysterians"
+    ],
+    "albums": [
+      {
+        "t": "Here Are The Sonics",
+        "a": "The Sonics"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Louie Louie",
+        "a": "The Kingsmen"
+      },
+      {
+        "t": "The Witch",
+        "a": "The Sonics"
+      },
+      {
+        "t": "96 Tears",
+        "a": "? & the Mysterians"
+      }
+    ],
+    "tempo": "120–160 BPM"
+  },
+  {
+    "id": "beat",
+    "name": "Beat / British Invasion",
+    "fam": "rock",
+    "year": 1963,
+    "role": "branch",
+    "yOff": 150,
+    "def": "The self-contained British guitar group — rock 'n' roll, skiffle and R&B compressed into two guitars, bass, drums and shared harmony. Merseybeat swept Britain in 1963; in February 1964 the Beatles took it to America and reset pop.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Two electric guitars, bass and drums — the band writes and plays everything."
+      },
+      {
+        "k": "Melody",
+        "v": "Hook-first two-minute songcraft with close two- and three-part harmony."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "A driving, even backbeat — the \"beat\" itself."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Liverpool's Cavern Club and Hamburg residencies; the 1964 Invasion of the US charts."
+      }
+    ],
+    "why": "It turns American rock 'n' roll and R&B into the self-contained, harmony-singing guitar band that writes its own hooks — the template for nearly every rock group after.",
+    "artists": [
+      "The Beatles",
+      "The Kinks",
+      "The Hollies",
+      "The Searchers",
+      "The Zombies"
+    ],
+    "albums": [
+      {
+        "t": "A Hard Day's Night",
+        "a": "The Beatles"
+      },
+      {
+        "t": "With the Beatles",
+        "a": "The Beatles"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "She Loves You",
+        "a": "The Beatles",
+        "why": "The 1963 single at the heart of Beatlemania — harmony, backbeat and hook in two minutes twenty."
+      },
+      {
+        "t": "Needles and Pins",
+        "a": "The Searchers"
+      },
+      {
+        "t": "She's Not There",
+        "a": "The Zombies"
+      }
+    ],
+    "tempo": "110–160 BPM"
+  },
+  {
+    "id": "powerpop",
+    "name": "Power Pop",
+    "fam": "rock",
+    "year": 1972,
+    "role": "branch",
+    "yOff": 115,
+    "def": "The 1964–66 beat-group sound kept alive and amplified — chiming guitars, Beatlesque harmony and three-minute hooks played with hard-rock muscle. Pete Townshend coined the term in 1967; Badfinger, Raspberries and Big Star made it a genre in the early 70s.",
+    "traits": [
+      {
+        "k": "Melody",
+        "v": "Concise, major-key hooks under stacked Beatlesque harmony."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Big overdriven chords beneath chiming, often twelve-string, guitar."
+      },
+      {
+        "k": "Song structure",
+        "v": "Tight verse-chorus singles — three minutes, no jamming."
+      },
+      {
+        "k": "Scene / context",
+        "v": "A commercial failure in its own time — Big Star barely sold, then became canon."
+      }
+    ],
+    "why": "It preserves the beat group's melodic economy while borrowing hard rock's wattage — pop craft at rock volume.",
+    "artists": [
+      "Big Star",
+      "Raspberries",
+      "Badfinger",
+      "Todd Rundgren"
+    ],
+    "albums": [
+      {
+        "t": "#1 Record",
+        "a": "Big Star"
+      },
+      {
+        "t": "Straight Up",
+        "a": "Badfinger"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "September Gurls",
+        "a": "Big Star",
+        "why": "Chiming twelve-string, aching harmony and a perfect chorus — the genre's sacred text."
+      },
+      {
+        "t": "Go All the Way",
+        "a": "Raspberries"
+      },
+      {
+        "t": "No Matter What",
+        "a": "Badfinger"
+      },
+      {
+        "t": "Couldn't I Just Tell You",
+        "a": "Todd Rundgren"
+      }
+    ],
+    "tempo": "120–160 BPM"
+  },
+  {
+    "id": "skinnytie",
+    "name": "Skinny-Tie Power Pop",
+    "fam": "rock",
+    "year": 1978,
+    "role": "branch",
+    "yOff": 130,
+    "def": "Power pop's late-70s chart moment — punk-tightened tempos, bright radio polish and skinny ties, cresting with The Knack's 'My Sharona' in the summer of 1979.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Punk-era drive — faster, tighter and more nervous than the early-70s wave."
+      },
+      {
+        "k": "Production",
+        "v": "Bright, compressed late-70s radio sheen."
+      },
+      {
+        "k": "Melody",
+        "v": "Handclap choruses, harmonies and songs about girls."
+      },
+      {
+        "k": "Scene / context",
+        "v": "LA and Midwest club scenes and the major-label power pop gold rush of 1979."
+      }
+    ],
+    "why": "It plays power pop's hooks at punk's tempo with new wave's polish — the style's one genuine mass-market wave.",
+    "artists": [
+      "Cheap Trick",
+      "The Knack",
+      "The Records",
+      "20/20",
+      "The Romantics",
+      "Shoes"
+    ],
+    "albums": [
+      {
+        "t": "Heaven Tonight",
+        "a": "Cheap Trick"
+      },
+      {
+        "t": "Get the Knack",
+        "a": "The Knack"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Surrender",
+        "a": "Cheap Trick",
+        "why": "Arena-sized power pop — the bridge between Big Star's cult and the 1979 chart wave."
+      },
+      {
+        "t": "My Sharona",
+        "a": "The Knack"
+      },
+      {
+        "t": "Starry Eyes",
+        "a": "The Records"
+      },
+      {
+        "t": "What I Like About You",
+        "a": "The Romantics"
+      }
+    ],
+    "tempo": "140–175 BPM"
+  },
+  {
+    "id": "powerpoprevival",
+    "name": "Power Pop Revival",
+    "fam": "rock",
+    "year": 1991,
+    "role": "revival",
+    "yOff": 160,
+    "def": "The indie generation rediscovers Big Star — Teenage Fanclub's Bandwagonesque and Matthew Sweet's Girlfriend in 1991, Jellyfish and The Posies alongside, Weezer and Fountains of Wayne carrying the songbook through the decade.",
+    "traits": [
+      {
+        "k": "Melody",
+        "v": "Big Star worship — chime, harmony and ache, now with 90s guitar crunch."
+      },
+      {
+        "k": "Production",
+        "v": "Alt-rock weight under classicist songcraft."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Indie labels, college radio and the Big Star reissue canon."
+      }
+    ],
+    "why": "It reclaims power pop's 70s songbook through indie rock's sound and distribution, turning a commercial failure into a permanent canon.",
+    "artists": [
+      "Teenage Fanclub",
+      "Matthew Sweet",
+      "The Posies",
+      "Jellyfish",
+      "Fountains of Wayne"
+    ],
+    "albums": [
+      {
+        "t": "Bandwagonesque",
+        "a": "Teenage Fanclub"
+      },
+      {
+        "t": "Girlfriend",
+        "a": "Matthew Sweet"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "The Concept",
+        "a": "Teenage Fanclub",
+        "why": "Bandwagonesque topped Spin's 1991 albums of the year over Nevermind — Big Star chime under grunge-era fuzz."
+      },
+      {
+        "t": "Girlfriend",
+        "a": "Matthew Sweet"
+      },
+      {
+        "t": "Dream All Day",
+        "a": "The Posies"
+      },
+      {
+        "t": "Buddy Holly",
+        "a": "Weezer"
+      }
+    ],
+    "tempo": "100–150 BPM"
+  },
+  {
+    "id": "sunshinepop",
+    "name": "Sunshine Pop",
+    "fam": "rock",
+    "year": 1966,
+    "role": "branch",
+    "yOff": -370,
+    "def": "California's bright, orchestrated harmony pop — stacked mixed-voice vocals, lush Wrecking Crew arrangements and folk-pop songcraft radiating mid-60s LA optimism.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Dense, stacked male–female harmony, four and five parts deep."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Strings, horns and woodwinds over LA session-pro rhythm tracks."
+      },
+      {
+        "k": "Melody",
+        "v": "Sweet, major-seventh-tinted and relentlessly sunny."
+      },
+      {
+        "k": "Scene / context",
+        "v": "LA studios, 1966–69 — the soft flipside of the psychedelic era."
+      }
+    ],
+    "why": "It takes beat and folk-rock harmony singing to orchestral, studio-built heights — optimism as an arrangement style.",
+    "artists": [
+      "The Association",
+      "The Turtles",
+      "The 5th Dimension",
+      "The Free Design",
+      "Harpers Bizarre"
+    ],
+    "albums": [
+      {
+        "t": "Insight Out",
+        "a": "The Association"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Windy",
+        "a": "The Association",
+        "why": "Five-part harmony over a Wrecking Crew track — the sunshine sound at its 1967 peak."
+      },
+      {
+        "t": "Happy Together",
+        "a": "The Turtles"
+      },
+      {
+        "t": "Up, Up and Away",
+        "a": "The 5th Dimension"
+      },
+      {
+        "t": "Kites Are Fun",
+        "a": "The Free Design"
+      }
+    ],
+    "tempo": "90–130 BPM"
+  },
+  {
+    "id": "bubblegum",
+    "name": "Bubblegum Pop",
+    "fam": "rock",
+    "year": 1968,
+    "role": "branch",
+    "yOff": 350,
+    "def": "Singles-factory pop aimed at pre-teens — Kasenetz-Katz and Buddah Records studio concoctions and cartoon bands built on a bouncing beat, nursery-rhyme hooks and candy metaphors; The Archies' 'Sugar, Sugar' was Billboard's #1 single of 1969.",
+    "traits": [
+      {
+        "k": "Melody",
+        "v": "One chanted, singalong hook — the whole point of the record."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Bouncy, square, danceable beat."
+      },
+      {
+        "k": "Production",
+        "v": "Anonymous session hands; the \"band\" is often a cartoon or a brand."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Buddah Records, Saturday-morning TV and the pre-teen singles market, 1967–72."
+      }
+    ],
+    "why": "It strips the beat group to pure hook and manufacture — proof the chorus alone can carry a record, a lesson glam and pop-punk both learned.",
+    "artists": [
+      "The Archies",
+      "Ohio Express",
+      "1910 Fruitgum Company",
+      "Tommy Roe"
+    ],
+    "albums": [],
+    "tracks": [
+      {
+        "t": "Sugar, Sugar",
+        "a": "The Archies",
+        "why": "A cartoon band's session-singer confection that outsold everything in 1969."
+      },
+      {
+        "t": "Yummy Yummy Yummy",
+        "a": "Ohio Express"
+      },
+      {
+        "t": "Simon Says",
+        "a": "1910 Fruitgum Company"
+      },
+      {
+        "t": "Dizzy",
+        "a": "Tommy Roe"
+      }
+    ],
+    "tempo": "105–130 BPM"
+  },
+  {
+    "id": "psych",
+    "name": "Psychedelic Rock",
+    "fam": "rock",
+    "year": 1966,
+    "role": "branch",
+    "yOff": -170,
+    "def": "Rock expanded by the studio and the trip — modal jams, drones, tape effects and extended, exploratory arrangements.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Fuzz, phasing, sitar and organ drones, studio tape effects."
+      },
+      {
+        "k": "Harmony",
+        "v": "Modal vamps and drone-based, non-functional progressions."
+      },
+      {
+        "k": "Song structure",
+        "v": "Extended, improvisatory jams and suite-like forms."
+      }
+    ],
+    "why": "Modal, drone-anchored jamming and heavy studio processing trade pop concision for hypnotic, exploratory texture.",
+    "artists": [
+      "Pink Floyd",
+      "Jimi Hendrix",
+      "The 13th Floor Elevators"
+    ],
+    "albums": [
+      {
+        "t": "The Piper at the Gates of Dawn",
+        "a": "Pink Floyd"
+      },
+      {
+        "t": "Are You Experienced",
+        "a": "Jimi Hendrix"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Interstellar Overdrive",
+        "a": "Pink Floyd"
+      },
+      {
+        "t": "Purple Haze",
+        "a": "Jimi Hendrix"
+      },
+      {
+        "t": "You're Gonna Miss Me",
+        "a": "The 13th Floor Elevators"
+      }
+    ],
+    "tempo": "80–130 BPM",
+    "tempoNote": "Variable — extended jams drift across tempos."
+  },
+  {
+    "id": "hardrock",
+    "name": "Hard Rock",
+    "fam": "rock",
+    "year": 1968,
+    "role": "branch",
+    "yOff": -30,
+    "def": "Electric blues turned up to arena scale — riff-led, swaggering rock built on power chords, virtuoso leads and a heavy backbeat.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Overdriven power chords and sustained lead guitar."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Heavy backbeat with blues-shuffle roots."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "High, belted, blues-wailing lead."
+      },
+      {
+        "k": "Song structure",
+        "v": "Riff-verse-chorus with a guitar-solo centrepiece."
+      }
+    ],
+    "why": "It weaponises the electric blues riff — louder, heavier and hook-first, the bridge between blues and metal.",
+    "artists": [
+      "Led Zeppelin",
+      "Deep Purple",
+      "AC/DC"
+    ],
+    "albums": [
+      {
+        "t": "Led Zeppelin II",
+        "a": "Led Zeppelin"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Whole Lotta Love",
+        "a": "Led Zeppelin",
+        "why": "A Chicago-blues riff detonated at stadium scale — the hard rock template."
+      },
+      {
+        "t": "Smoke on the Water",
+        "a": "Deep Purple"
+      },
+      {
+        "t": "Highway to Hell",
+        "a": "AC/DC"
+      }
+    ],
+    "tempo": "100–140 BPM"
+  },
+  {
+    "id": "southernrock",
+    "name": "Southern Rock",
+    "fam": "rock",
+    "fam2": "roots",
+    "year": 1971,
+    "role": "hybrid",
+    "yOff": -145,
+    "def": "Blues rock played with Southern country phrasing and jam-band stamina — harmonised twin lead guitars, slide, boogie shuffles and solos stretched to fill a live set.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Harmonised twin or triple lead guitars, bottleneck slide and Hammond organ."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Blues shuffle and boogie with a loping country lilt; double drummers in the Allmans model."
+      },
+      {
+        "k": "Song structure",
+        "v": "Verse-chorus openings giving way to long modal jams and traded solos."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Macon, Muscle Shoals and Jacksonville; Capricorn Records and the touring circuit."
+      }
+    ],
+    "why": "It welds the electric blues riff to country phrasing and jazz-length improvisation — two leads moving in thirds over a shuffle, with the jam, not the hook, as the destination.",
+    "artists": [
+      "The Allman Brothers Band",
+      "Lynyrd Skynyrd",
+      "ZZ Top"
+    ],
+    "albums": [
+      {
+        "t": "At Fillmore East",
+        "a": "The Allman Brothers Band"
+      },
+      {
+        "t": "(Pronounced 'Lĕh-'nérd 'Skin-'nérd)",
+        "a": "Lynyrd Skynyrd"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Whipping Post",
+        "a": "The Allman Brothers Band",
+        "why": "The Fillmore East reading — a blues in 11/4 stretched past twenty minutes of interlocking lead guitar."
+      },
+      {
+        "t": "Free Bird",
+        "a": "Lynyrd Skynyrd",
+        "why": "A country-gospel ballad that detonates into a three-guitar coda — the genre's two halves in one song."
+      },
+      {
+        "t": "Statesboro Blues",
+        "a": "The Allman Brothers Band"
+      }
+    ]
+  },
+  {
+    "id": "heartland",
+    "name": "Heartland Rock",
+    "fam": "rock",
+    "fam2": "roots",
+    "year": 1978,
+    "role": "hybrid",
+    "yOff": -240,
+    "def": "Straightforward American bar-band rock about working-class life — big open chords, Telecaster and organ, and plain-spoken narratives of small towns, factories and the road, peaking on FM radio from the late 70s through the 80s.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Telecaster and open-chord rhythm guitar with Hammond organ, piano and harmonica over a square 4/4 backbeat."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Plain-spoken, rough-edged narrative voice singing character songs about ordinary lives."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Midwest and Rust Belt America — bar bands scaled up to FM radio and the arena."
+      }
+    ],
+    "why": "It keeps rock 'n' roll's three chords and adds folk's narrative seriousness — working-class American storytelling played by a bar band, against the polish of its arena-era peers.",
+    "artists": [
+      "Bruce Springsteen",
+      "Tom Petty and the Heartbreakers",
+      "John Mellencamp",
+      "Bob Seger",
+      "John Fogerty"
+    ],
+    "albums": [
+      {
+        "t": "Born to Run",
+        "a": "Bruce Springsteen"
+      },
+      {
+        "t": "American Fool",
+        "a": "John Mellencamp"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Hurts So Good",
+        "a": "John Mellencamp",
+        "why": "A 1982 No. 2 hit — bar-band riff, big backbeat and plain-spoken swagger, heartland rock at its chart peak."
+      },
+      {
+        "t": "Thunder Road",
+        "a": "Bruce Springsteen",
+        "why": "Piano, harmonica and a small-town escape narrative — the genre's founding statement."
+      },
+      {
+        "t": "Night Moves",
+        "a": "Bob Seger"
+      },
+      {
+        "t": "American Girl",
+        "a": "Tom Petty and the Heartbreakers"
+      }
+    ]
+  },
+  {
+    "id": "arenarock",
+    "name": "Arena Rock",
+    "fam": "rock",
+    "year": 1975,
+    "role": "branch",
+    "yOff": -105,
+    "def": "Rock engineered for the stadium — huge choruses, power ballads and radio-polished production designed for twenty thousand voices singing along.",
+    "traits": [
+      {
+        "k": "Song structure",
+        "v": "Anthemic verse-lift-chorus with singalong hooks."
+      },
+      {
+        "k": "Production",
+        "v": "Big, layered, FM-radio gloss."
+      },
+      {
+        "k": "Orientation",
+        "v": "Spectacle — lights, pyro and the crowd as instrument."
+      }
+    ],
+    "why": "It optimises hard rock for scale — every chorus a communal anthem, every ballad a lighter-waving set piece.",
+    "artists": [
+      "Queen",
+      "Journey",
+      "Boston"
+    ],
+    "albums": [
+      {
+        "t": "Boston",
+        "a": "Boston"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Don't Stop Believin'",
+        "a": "Journey",
+        "why": "The slow-build power anthem perfected — engineered for mass singalong."
+      },
+      {
+        "t": "We Will Rock You",
+        "a": "Queen"
+      },
+      {
+        "t": "More Than a Feeling",
+        "a": "Boston"
+      }
+    ],
+    "tempo": "100–140 BPM"
+  },
+  {
+    "id": "yachtrock",
+    "name": "Yacht Rock",
+    "fam": "rock",
+    "fam2": "soul",
+    "year": 1976,
+    "role": "hybrid",
+    "yOff": -170,
+    "def": "The smooth West Coast studio sound — session-perfect soft rock gliding on jazz chords, R&B grooves and immaculate late-70s production.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "Immaculate LA session polish."
+      },
+      {
+        "k": "Harmony",
+        "v": "Jazz-derived extended chords under pop hooks."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Relaxed, syncopated R&B-lite grooves."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Smooth, high, blue-eyed-soul harmony stacks."
+      }
+    ],
+    "why": "It fuses soft rock with soul and fusion chops into a frictionless studio sheen — smoothness as the aesthetic itself.",
+    "artists": [
+      "Steely Dan",
+      "The Doobie Brothers",
+      "Toto"
+    ],
+    "albums": [
+      {
+        "t": "Aja",
+        "a": "Steely Dan"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "What a Fool Believes",
+        "a": "The Doobie Brothers",
+        "why": "McDonald's syncopated Rhodes hook is the cornerstone of the smooth sound."
+      },
+      {
+        "t": "Peg",
+        "a": "Steely Dan"
+      },
+      {
+        "t": "Rosanna",
+        "a": "Toto"
+      }
+    ],
+    "tempo": "90–115 BPM"
+  },
+  {
+    "id": "grunge",
+    "name": "Grunge",
+    "fam": "rock",
+    "year": 1990,
+    "role": "branch",
+    "yOff": -100,
+    "def": "Seattle's collision of punk, metal and 70s riff rock — fuzz-caked, loud-quiet dynamics and throat-torn vocals that dragged the underground onto MTV.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Thick fuzz and sludgy, detuned riffs."
+      },
+      {
+        "k": "Song structure",
+        "v": "Quiet verses detonating into roaring choruses."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Torn, howled, disaffected."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Sub Pop, Seattle and the 1991 breakthrough."
+      }
+    ],
+    "why": "It fuses hardcore's economy with metal's weight and hard rock's riff — the underground's sound at mainstream scale.",
+    "artists": [
+      "Nirvana",
+      "Soundgarden",
+      "Mudhoney"
+    ],
+    "albums": [
+      {
+        "t": "Superfuzz Bigmuff",
+        "a": "Mudhoney"
+      },
+      {
+        "t": "Badmotorfinger",
+        "a": "Soundgarden"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Touch Me I'm Sick",
+        "a": "Mudhoney",
+        "why": "Sub Pop's fuzz-caked signature single — grunge before the gold rush."
+      },
+      {
+        "t": "Outshined",
+        "a": "Soundgarden"
+      },
+      {
+        "t": "About a Girl",
+        "a": "Nirvana"
+      }
+    ],
+    "tempo": "100–140 BPM"
+  },
+  {
+    "id": "protopunk",
+    "name": "Proto-Punk",
+    "fam": "rock",
+    "year": 1969,
+    "role": "branch",
+    "yOff": 125,
+    "def": "The raw, confrontational garage-and-art-rock bands who prefigured punk — minimal chords, nihilist attitude and abrasive energy.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Driving, primitive eighth-note pulse."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Distorted, untreated guitar; deadpan or sneering vocals."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Underground art and street provocation."
+      }
+    ],
+    "why": "Minimal distorted riffing and confrontational delivery strip rock toward the speed and attitude punk would formalise.",
+    "artists": [
+      "The Velvet Underground",
+      "The Stooges",
+      "MC5"
+    ],
+    "albums": [
+      {
+        "t": "Fun House",
+        "a": "The Stooges"
+      },
+      {
+        "t": "The Velvet Underground & Nico",
+        "a": "The Velvet Underground"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "I Wanna Be Your Dog",
+        "a": "The Stooges"
+      },
+      {
+        "t": "Sister Ray",
+        "a": "The Velvet Underground"
+      },
+      {
+        "t": "Kick Out the Jams",
+        "a": "MC5"
+      }
+    ],
+    "tempo": "120–160 BPM"
+  },
+  {
+    "id": "punk",
+    "name": "Punk",
+    "fam": "rock",
+    "year": 1976,
+    "role": "branch",
+    "yOff": 45,
+    "def": "A stripped-to-the-bone rejection of rock excess — fast, short, confrontational and defiantly DIY. As much an ethos as a sound.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Fast tempos and relentless downstroke eighths."
+      },
+      {
+        "k": "Song structure",
+        "v": "Two-minute, hook-and-shout verse-chorus blasts."
+      },
+      {
+        "k": "Scene / context",
+        "v": "DIY labels, zines and anti-virtuosity."
+      }
+    ],
+    "why": "It compresses rock to fast, short, confrontational bursts where attitude and speed replace musicianship.",
+    "artists": [
+      "Ramones",
+      "Sex Pistols",
+      "The Clash"
+    ],
+    "albums": [
+      {
+        "t": "Ramones",
+        "a": "Ramones"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Blitzkrieg Bop",
+        "a": "Ramones",
+        "why": "Two-minute four-to-the-floor downstrokes proved a song needs only speed and a hook."
+      },
+      {
+        "t": "Anarchy in the U.K.",
+        "a": "Sex Pistols"
+      },
+      {
+        "t": "London Calling",
+        "a": "The Clash"
+      }
+    ],
+    "tempo": "160–200 BPM"
+  },
+  {
+    "id": "newwave",
+    "name": "New Wave",
+    "fam": "rock",
+    "year": 1978,
+    "role": "branch",
+    "yOff": 190,
+    "def": "Punk's energy made melodic and modern — synths, angular pop hooks and art-school style for the radio.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Synths and drum machines alongside punchy guitars."
+      },
+      {
+        "k": "Melody",
+        "v": "Bright, hooky, often nervy pop melody."
+      },
+      {
+        "k": "Production",
+        "v": "Clean, modern, radio-ready."
+      }
+    ],
+    "why": "It keeps punk's brevity and nervous energy but adds synthesizers and polished pop hooks for the mainstream.",
+    "artists": [
+      "Talking Heads",
+      "Blondie",
+      "Devo"
+    ],
+    "albums": [
+      {
+        "t": "Remain in Light",
+        "a": "Talking Heads"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Once in a Lifetime",
+        "a": "Talking Heads"
+      },
+      {
+        "t": "Heart of Glass",
+        "a": "Blondie"
+      },
+      {
+        "t": "Whip It",
+        "a": "Devo"
+      }
+    ],
+    "tempo": "120–150 BPM"
+  },
+  {
+    "id": "noiserock",
+    "name": "Noise Rock",
+    "fam": "rock",
+    "year": 1984,
+    "role": "branch",
+    "yOff": 50,
+    "def": "Abrasive, dissonant guitar rock that weaponises feedback, atonality and distortion as the music itself.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Detuned, atonal, feedback-saturated guitars."
+      },
+      {
+        "k": "Harmony",
+        "v": "Dissonance and noise over conventional chords."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Pounding, often math- or no-wave-derived."
+      }
+    ],
+    "why": "Feedback and detuned dissonance are treated as primary material, foregrounding raw texture over melody.",
+    "artists": [
+      "Sonic Youth",
+      "Big Black",
+      "Swans"
+    ],
+    "albums": [
+      {
+        "t": "Daydream Nation",
+        "a": "Sonic Youth"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Teen Age Riot",
+        "a": "Sonic Youth"
+      },
+      {
+        "t": "Kerosene",
+        "a": "Big Black"
+      },
+      {
+        "t": "A Screw",
+        "a": "Swans"
+      }
+    ],
+    "tempo": "100–150 BPM",
+    "tempoNote": "Variable — tempo is secondary to texture and noise."
+  },
+  {
+    "id": "nowave",
+    "name": "No Wave",
+    "fam": "rock",
+    "fam2": "jazz",
+    "year": 1978,
+    "role": "hybrid",
+    "yOff": 265,
+    "def": "A short-lived downtown New York scene that rejected rock's grammar outright — atonal slide guitar, free-jazz skronk, broken funk and deliberate amateurism.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "Atonal, unchorded, often deliberately untuned."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Jagged stop-start beats or warped punk-funk vamps."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Scraped, slide-played and skronking guitar and sax."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Lower Manhattan lofts, art galleries and the Eno-produced No New York."
+      }
+    ],
+    "why": "It takes punk's anti-virtuoso stance further than punk did, discarding chords, song form and tuning in favour of free jazz's noise and confrontation.",
+    "artists": [
+      "DNA",
+      "Mars",
+      "The Contortions",
+      "Teenage Jesus and the Jerks"
+    ],
+    "albums": [
+      {
+        "t": "No New York",
+        "a": "Various Artists"
+      },
+      {
+        "t": "Buy",
+        "a": "The Contortions"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Contort Yourself",
+        "a": "The Contortions",
+        "why": "James Chance's alto skronk over a rigid funk vamp shows no wave's punk-funk wing at its most danceable."
+      },
+      {
+        "t": "Egomaniac's Kiss",
+        "a": "DNA"
+      },
+      {
+        "t": "Helen Fordsdale",
+        "a": "Mars"
+      }
+    ]
+  },
+  {
+    "id": "alternative",
+    "name": "Alternative Rock",
+    "fam": "rock",
+    "year": 1986,
+    "role": "branch",
+    "yOff": -170,
+    "def": "The umbrella for guitar bands working outside the mainstream — college radio, indie labels and a broad church of post-punk descendants.",
+    "traits": [
+      {
+        "k": "Song structure",
+        "v": "Loud-quiet-loud dynamics and unconventional forms."
+      },
+      {
+        "k": "Production",
+        "v": "Mid-fi, label-independent."
+      },
+      {
+        "k": "Scene / context",
+        "v": "College radio and the 90s breakthrough."
+      }
+    ],
+    "why": "It channels post-punk's sensibility into guitar bands whose loud-quiet dynamics broke into the mainstream.",
+    "artists": [
+      "Pixies",
+      "R.E.M.",
+      "Nirvana"
+    ],
+    "albums": [
+      {
+        "t": "Doolittle",
+        "a": "Pixies"
+      },
+      {
+        "t": "Nevermind",
+        "a": "Nirvana"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Where Is My Mind?",
+        "a": "Pixies",
+        "why": "Its loud-quiet-loud dynamic became the blueprint for a decade of alt-rock."
+      },
+      {
+        "t": "Losing My Religion",
+        "a": "R.E.M."
+      },
+      {
+        "t": "Smells Like Teen Spirit",
+        "a": "Nirvana"
+      }
+    ],
+    "tempo": "90–140 BPM",
+    "tempoNote": "Wide range — an umbrella genre with no single tempo identity."
+  },
+  {
+    "id": "indie",
+    "name": "Indie Rock",
+    "fam": "rock",
+    "year": 1991,
+    "role": "branch",
+    "yOff": 40,
+    "def": "Guitar pop defined by independent-label ethos — melodic, unpolished and personal rather than arena-scaled.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "Lo-fi to mid-fi, intentionally unglossy."
+      },
+      {
+        "k": "Melody",
+        "v": "Jangly, hook-forward songwriting."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Independent labels and word-of-mouth networks."
+      }
+    ],
+    "why": "It foregrounds songcraft and a deliberately modest, hand-made production over commercial sheen.",
+    "artists": [
+      "Pavement",
+      "Guided by Voices",
+      "Yo La Tengo"
+    ],
+    "albums": [
+      {
+        "t": "Slanted and Enchanted",
+        "a": "Pavement"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Cut Your Hair",
+        "a": "Pavement"
+      },
+      {
+        "t": "I Am a Scientist",
+        "a": "Guided by Voices"
+      },
+      {
+        "t": "Sugarcube",
+        "a": "Yo La Tengo"
+      }
+    ],
+    "tempo": "100–140 BPM",
+    "tempoNote": "Variable across scenes and eras."
+  },
+  {
+    "id": "spacerock",
+    "name": "Space Rock",
+    "fam": "rock",
+    "fam2": "jazz",
+    "year": 1988,
+    "role": "branch",
+    "yOff": -25,
+    "def": "Hypnotic, effects-drenched rock built on repetition and drift — krautrock pulse meets psychedelic vastness.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Motorik, repetition-driven momentum."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Reverb and delay washes over droning synths."
+      },
+      {
+        "k": "Song structure",
+        "v": "Long, gradually evolving builds."
+      }
+    ],
+    "why": "It fuses a steady motorik pulse with cavernous, delayed guitar to create weightless forward drift.",
+    "artists": [
+      "Spacemen 3",
+      "Loop",
+      "Hawkwind"
+    ],
+    "albums": [
+      {
+        "t": "Playing with Fire",
+        "a": "Spacemen 3"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Revolution",
+        "a": "Spacemen 3"
+      },
+      {
+        "t": "Fade Out",
+        "a": "Loop"
+      },
+      {
+        "t": "Silver Machine",
+        "a": "Hawkwind"
+      }
+    ],
+    "tempo": "100–130 BPM"
+  },
+  {
+    "id": "postrock",
+    "name": "Post-Rock",
+    "fam": "rock",
+    "fam2": "jazz",
+    "year": 1994,
+    "role": "hybrid",
+    "yOff": -165,
+    "def": "Rock instrumentation used for texture and dynamics rather than riffs and verses — crescendos, loops and cinematic instrumentals.",
+    "traits": [
+      {
+        "k": "Song structure",
+        "v": "Long dynamic builds; quiet-to-cathartic arcs over verse-chorus."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Layered, treated, tremolo guitars; timbral focus."
+      },
+      {
+        "k": "Harmony",
+        "v": "Modal, suspended, slow-moving."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Strings, brass and glockenspiel beside guitars."
+      }
+    ],
+    "why": "Guitars become timbral and dynamic tools for long crescendos, borrowing jazz and minimalism's patience over rock's hooks.",
+    "artists": [
+      "Godspeed You! Black Emperor",
+      "Slint",
+      "Mogwai",
+      "Tortoise"
+    ],
+    "albums": [
+      {
+        "t": "Lift Your Skinny Fists Like Antennas to Heaven",
+        "a": "Godspeed You! Black Emperor"
+      },
+      {
+        "t": "Spiderland",
+        "a": "Slint"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Mogwai Fear Satan",
+        "a": "Mogwai"
+      },
+      {
+        "t": "Storm",
+        "a": "Godspeed You! Black Emperor"
+      },
+      {
+        "t": "Good Morning, Captain",
+        "a": "Slint"
+      }
+    ],
+    "tempo": "60–140 BPM",
+    "tempoNote": "Highly variable — long builds move through several tempos in one piece."
+  },
+  {
+    "id": "gospelrock",
+    "name": "Gospel-Inflected Rock",
+    "fam": "rock",
+    "fam2": "soul",
+    "year": 1968,
+    "role": "hybrid",
+    "yOff": 215,
+    "def": "Rock built on the musical grammar of Black American gospel — plagal cadences, choir stacks, organ and communal build — independent of any religious lyrical content. Not Christian rock, which is a market and content category rather than a sonic one.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "Plagal IV–I cadences and amen resolutions rather than dominant tension."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Call-and-response between lead and backing, with stacked choir or multi-tracked group vocals."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Hammond organ, upright and electric piano, tambourine, handclaps, horn sections in soul voicings."
+      },
+      {
+        "k": "Song structure",
+        "v": "Vamp-and-build — repeat a figure, add layers, never modulate."
+      },
+      {
+        "k": "Orientation",
+        "v": "Communal build to catharsis instead of verse-chorus contrast."
+      }
+    ],
+    "why": "Borrowing the church's cadences, response singing and layered vamp gives rock a way to reach catharsis by accumulation rather than by contrast — the crowd, not the chorus, is the payoff.",
+    "artists": [
+      "The Rolling Stones",
+      "The Band",
+      "Dexys Midnight Runners",
+      "Primal Scream",
+      "Spiritualized",
+      "Alabama Shakes",
+      "Geese"
+    ],
+    "albums": [
+      {
+        "t": "Music from Big Pink",
+        "a": "The Band"
+      },
+      {
+        "t": "Screamadelica",
+        "a": "Primal Scream"
+      },
+      {
+        "t": "Ladies and Gentlemen We Are Floating in Space",
+        "a": "Spiritualized"
+      },
+      {
+        "t": "Sound & Color",
+        "a": "Alabama Shakes"
+      },
+      {
+        "t": "3D Country",
+        "a": "Geese"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "You Can't Always Get What You Want",
+        "a": "The Rolling Stones",
+        "why": "A choir, a horn section and a vamp that builds without ever resolving into a conventional chorus."
+      },
+      {
+        "t": "Movin’ On Up",
+        "a": "Primal Scream"
+      },
+      {
+        "t": "I Think I’m in Love",
+        "a": "Spiritualized"
+      },
+      {
+        "t": "3D Country",
+        "a": "Geese"
+      }
+    ]
+  },
+  {
+    "id": "hardcore",
+    "name": "Hardcore Punk",
+    "fam": "rock",
+    "year": 1980,
+    "role": "branch",
+    "yOff": 115,
+    "def": "Punk accelerated past its limits — faster, shorter, angrier, and built on a fiercely self-organised network of DIY labels, vans and all-ages shows.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Breakneck tempos, D-beats and shouted unison drive."
+      },
+      {
+        "k": "Song structure",
+        "v": "Sub-two-minute blasts; no solos, no fat."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Barked, shouted, slogan-like delivery."
+      },
+      {
+        "k": "Scene / context",
+        "v": "DIY labels, zines and the all-ages touring circuit."
+      }
+    ],
+    "why": "It compresses punk to maximum velocity and moral intensity, and its DIY infrastructure becomes the template for every underground since.",
+    "artists": [
+      "Black Flag",
+      "Minor Threat",
+      "Bad Brains"
+    ],
+    "albums": [
+      {
+        "t": "Damaged",
+        "a": "Black Flag"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Rise Above",
+        "a": "Black Flag",
+        "why": "A shouted group-chorus over relentless downstrokes — hardcore's defiance distilled."
+      },
+      {
+        "t": "Straight Edge",
+        "a": "Minor Threat"
+      },
+      {
+        "t": "Pay to Cum",
+        "a": "Bad Brains"
+      }
+    ],
+    "tempo": "180–250 BPM"
+  },
+  {
+    "id": "posthardcore",
+    "name": "Post-Hardcore",
+    "fam": "rock",
+    "year": 1988,
+    "role": "branch",
+    "yOff": 120,
+    "def": "Hardcore's intensity opened up — dynamics, dissonance, melody and space let the fury breathe without losing its edge.",
+    "traits": [
+      {
+        "k": "Song structure",
+        "v": "Tension-and-release arcs instead of constant blast."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Angular, syncopated interplay of bass and guitar."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Shouts, spoken word and singing traded freely."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Dischord and the post-Revolution Summer D.C. underground."
+      }
+    ],
+    "why": "It keeps hardcore's urgency but lets arrangements stretch, quiet down and turn dissonant — punk discovering dynamics.",
+    "artists": [
+      "Fugazi",
+      "Hüsker Dü",
+      "At the Drive-In"
+    ],
+    "albums": [
+      {
+        "t": "Repeater",
+        "a": "Fugazi"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Waiting Room",
+        "a": "Fugazi",
+        "why": "Its coiled, dub-tense verse exploding into the chorus is post-hardcore's dynamic blueprint."
+      },
+      {
+        "t": "New Day Rising",
+        "a": "Hüsker Dü"
+      },
+      {
+        "t": "One Armed Scissor",
+        "a": "At the Drive-In"
+      }
+    ],
+    "tempo": "120–180 BPM"
+  },
+  {
+    "id": "emocore",
+    "name": "Emocore",
+    "fam": "rock",
+    "year": 1985,
+    "role": "branch",
+    "yOff": 185,
+    "aka": "D.C. Emotional Hardcore · Revolution Summer",
+    "def": "Washington, D.C. hardcore remade in 1985's Revolution Summer — the same speed and volume, turned from macho aggression toward personal, poetic and openly emotional songs.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Strained, pleading singing that breaks into a scream."
+      },
+      {
+        "k": "Song structure",
+        "v": "Hardcore drive with dynamic drops and improvised, collapsing endings."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Post-punk-tinged, chiming distorted guitars."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Dischord Records, Inner Ear Studios and the 1984–86 Revolution Summer."
+      }
+    ],
+    "why": "It keeps hardcore's velocity but rejects its violent posturing, pointing the music at vulnerability — the seed of both emo and post-hardcore.",
+    "artists": [
+      "Rites of Spring",
+      "Embrace",
+      "Beefeater",
+      "Gray Matter"
+    ],
+    "albums": [
+      {
+        "t": "Rites of Spring",
+        "a": "Rites of Spring"
+      },
+      {
+        "t": "Embrace",
+        "a": "Embrace"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "For Want Of",
+        "a": "Rites of Spring",
+        "why": "The 1985 recording that defined emotional hardcore before the word existed."
+      },
+      {
+        "t": "Spring",
+        "a": "Rites of Spring"
+      },
+      {
+        "t": "Said Gun",
+        "a": "Embrace"
+      }
+    ],
+    "tempo": "140–200 BPM"
+  },
+  {
+    "id": "skapunk",
+    "name": "Ska Punk",
+    "fam": "rock",
+    "fam2": "global",
+    "year": 1989,
+    "role": "hybrid",
+    "yOff": 290,
+    "aka": "Third Wave Ska",
+    "def": "2 Tone's fusion rebuilt on American hardcore — breakneck skank verses, gang-vocal choruses and a horn section riding a punk rhythm section.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Alternating hardcore blast and up-stroke skank."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Brass over distorted power-chord guitar."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Gruff lead with gang-shouted hooks."
+      },
+      {
+        "k": "Scene / context",
+        "v": "East Bay and Southern California DIY punk, then mid-90s radio."
+      }
+    ],
+    "why": "It welds 2 Tone's skank to hardcore's speed and gang-vocal delivery — the third wave, and ska's route onto US radio.",
+    "artists": [
+      "Operation Ivy",
+      "Rancid",
+      "Sublime",
+      "The Mighty Mighty Bosstones"
+    ],
+    "albums": [
+      {
+        "t": "Energy",
+        "a": "Operation Ivy"
+      },
+      {
+        "t": "...And Out Come the Wolves",
+        "a": "Rancid"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Sound System",
+        "a": "Operation Ivy",
+        "why": "Hardcore and skank alternating bar to bar — the third wave's template in ninety seconds."
+      },
+      {
+        "t": "Time Bomb",
+        "a": "Rancid"
+      },
+      {
+        "t": "Date Rape",
+        "a": "Sublime"
+      }
+    ]
+  },
+  {
+    "id": "skatepunk",
+    "name": "Skate Punk",
+    "fam": "rock",
+    "year": 1988,
+    "role": "branch",
+    "yOff": 50,
+    "aka": "Melodic Hardcore · Epi-Fat Sound",
+    "def": "Southern California hardcore given melody — the skate beat's double-time drive under sung leads and stacked harmonies, built around Epitaph and Fat Wreck Chords and taken mainstream by The Offspring's Smash in 1994.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "The \"skate beat\": double-time polka drumming with the snare on every offbeat."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Melodic sung leads over stacked \"oohs\" and three-part backing harmonies."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Tight palm-muted power chords with short melodic leads."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Epitaph, Fat Wreck Chords, skate videos and the Warped Tour."
+      }
+    ],
+    "why": "It keeps hardcore's tempo and DIY network but puts a sung melody and choir-like harmonies on top — the template the 90s pop-punk boom grew from.",
+    "artists": [
+      "Bad Religion",
+      "NOFX",
+      "The Offspring",
+      "Pennywise",
+      "Lagwagon"
+    ],
+    "albums": [
+      {
+        "t": "Suffer",
+        "a": "Bad Religion"
+      },
+      {
+        "t": "Punk in Drublic",
+        "a": "NOFX"
+      },
+      {
+        "t": "Smash",
+        "a": "The Offspring"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Linoleum",
+        "a": "NOFX",
+        "why": "Skate-beat drums, palm-muted verses and a sung hook — the Fat Wreck sound in two and a half minutes."
+      },
+      {
+        "t": "Bro Hymn",
+        "a": "Pennywise"
+      },
+      {
+        "t": "The Kids Aren’t Alright",
+        "a": "The Offspring"
+      }
+    ]
+  },
+  {
+    "id": "poppunk",
+    "name": "Pop-Punk",
+    "fam": "rock",
+    "year": 1994,
+    "role": "branch",
+    "yOff": 255,
+    "def": "Punk's speed and power chords set to bubblegum hooks — rooted in the Ramones, Buzzcocks and Descendents, made a mass-market genre by Green Day's Dookie in 1994 and carried into the 2000s by Blink-182 and the emo-pop wave.",
+    "traits": [
+      {
+        "k": "Melody",
+        "v": "Singalong major-key hooks; the chorus is the point."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Skate-beat verses dropping into straight, mid-tempo choruses."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Nasal, conversational singing about boredom, adolescence and heartbreak."
+      },
+      {
+        "k": "Production",
+        "v": "Bright, tight, radio-ready guitars and drums."
+      }
+    ],
+    "why": "It slows skate punk a notch and pushes the hook to the front, turning punk into teenage pop without losing the distorted guitars.",
+    "artists": [
+      "Green Day",
+      "Blink-182",
+      "Sum 41",
+      "New Found Glory",
+      "Paramore"
+    ],
+    "albums": [
+      {
+        "t": "Dookie",
+        "a": "Green Day"
+      },
+      {
+        "t": "Enema of the State",
+        "a": "Blink-182"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Basket Case",
+        "a": "Green Day",
+        "why": "Three chords, a skate-beat chorus and a confession about anxiety — the song that took pop-punk to MTV."
+      },
+      {
+        "t": "All the Small Things",
+        "a": "Blink-182"
+      },
+      {
+        "t": "Misery Business",
+        "a": "Paramore"
+      }
+    ]
+  },
+  {
+    "id": "emo",
+    "name": "Emo",
+    "fam": "rock",
+    "year": 1994,
+    "role": "branch",
+    "yOff": 125,
+    "def": "Hardcore's fury turned inward — confessional lyrics and soaring, melodic catharsis, born in D.C.'s Revolution Summer and broken open by the mid-90s second wave.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Cracked, impassioned singing that tips into a yell."
+      },
+      {
+        "k": "Melody",
+        "v": "Soaring, bittersweet lines over driving guitars."
+      },
+      {
+        "k": "Song structure",
+        "v": "Quiet-loud builds to cathartic climaxes."
+      },
+      {
+        "k": "Scene / context",
+        "v": "From Rites of Spring's D.C. to 90s basement shows."
+      }
+    ],
+    "why": "It keeps post-hardcore's dynamics and drive but aims them at the diary page — vulnerability delivered at full volume.",
+    "artists": [
+      "Sunny Day Real Estate",
+      "Jawbreaker",
+      "The Get Up Kids"
+    ],
+    "albums": [
+      {
+        "t": "Diary",
+        "a": "Sunny Day Real Estate"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Seven",
+        "a": "Sunny Day Real Estate",
+        "why": "Its hushed verse erupting into a cracked, soaring chorus set the second-wave template."
+      },
+      {
+        "t": "Don’t Hate Me",
+        "a": "The Get Up Kids"
+      },
+      {
+        "t": "Accident Prone",
+        "a": "Jawbreaker"
+      }
+    ],
+    "tempo": "100–160 BPM"
+  },
+  {
+    "id": "screamo",
+    "name": "Screamo",
+    "fam": "rock",
+    "year": 1997,
+    "role": "branch",
+    "yOff": 190,
+    "def": "Emo pushed to its breaking point — shrieked vocals, chaotic dynamics and short, cathartic songs swinging between fragile quiet and total collapse.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Throat-shredding screams over whispered passages."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Blasts, sudden stops and free-falling tempo shifts."
+      },
+      {
+        "k": "Song structure",
+        "v": "Compressed arcs from fragile to annihilating."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Basements, split 7-inches and screen-printed sleeves."
+      }
+    ],
+    "why": "It takes emo's catharsis literally — the voice breaks into a scream and the song form shatters with it.",
+    "artists": [
+      "Saetia",
+      "Orchid",
+      "City of Caterpillar"
+    ],
+    "albums": [
+      {
+        "t": "Chaos Is Me",
+        "a": "Orchid"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Venus and Bacchus",
+        "a": "Saetia",
+        "why": "Whispered arpeggios collapsing into shrieked catharsis — the screamo arc in one song."
+      },
+      {
+        "t": "In Love with an Apparition",
+        "a": "pg.99"
+      },
+      {
+        "t": "And You're Wondering How a Top Floor Could Replace Heaven",
+        "a": "City of Caterpillar"
+      }
+    ],
+    "tempo": "140–220 BPM",
+    "tempoNote": "Highly variable — sudden stops and free-falling tempo shifts are the point."
+  },
+  {
+    "id": "mathrock",
+    "name": "Math Rock",
+    "fam": "rock",
+    "year": 1995,
+    "role": "branch",
+    "yOff": -35,
+    "def": "Rock's rhythm section as puzzle box — odd meters, stop-start riffs and tapped, interlocking guitar figures played with surgical precision.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Shifting odd meters — 7/8 into 11/8 without blinking."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Clean, tapped, interlocking guitar counterpoint."
+      },
+      {
+        "k": "Song structure",
+        "v": "Through-composed riff sequences over verse-chorus."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Chicago, Louisville and the Touch and Go orbit."
+      }
+    ],
+    "why": "It treats the riff as an engineering problem — meters shift constantly and precision itself becomes the expressive point.",
+    "artists": [
+      "Don Caballero",
+      "Shellac",
+      "Hella"
+    ],
+    "albums": [
+      {
+        "t": "American Don",
+        "a": "Don Caballero"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "The Peter Criss Jazz",
+        "a": "Don Caballero",
+        "why": "Looping, tapped guitar cells locking over shifting meters — math rock's method in full."
+      },
+      {
+        "t": "My Black Ass",
+        "a": "Shellac"
+      },
+      {
+        "t": "Biblical Violence",
+        "a": "Hella"
+      }
+    ],
+    "tempo": "≈ 90–180 BPM",
+    "tempoNote": "Range is nearly meaningless — constant odd-meter and tempo changes define the genre."
+  },
+  {
+    "id": "britpop",
+    "name": "Britpop",
+    "fam": "rock",
+    "year": 1993,
+    "role": "branch",
+    "yOff": -60,
+    "def": "Mid-90s British guitar pop reclaiming the Kinks–Beatles–Smiths songbook — big hooks, unhidden regional accents and wry English character studies, sold as the national answer to grunge.",
+    "traits": [
+      {
+        "k": "Melody",
+        "v": "Singalong, chart-ready hooks built on 60s British beat and mod pop."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Regional accents worn openly; arch, observational narration."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Jangle and crunch guitars, Hammond organ, brass and string flourishes."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Camden, the music weeklies and the 1995 Blur vs Oasis chart war."
+      }
+    ],
+    "why": "It rebuilds 60s British songcraft through post-Smiths indie, trading grunge's angst for chart hooks and very English storytelling.",
+    "artists": [
+      "Blur",
+      "Oasis",
+      "Pulp"
+    ],
+    "albums": [
+      {
+        "t": "Parklife",
+        "a": "Blur"
+      },
+      {
+        "t": "Different Class",
+        "a": "Pulp"
+      },
+      {
+        "t": "(What's the Story) Morning Glory?",
+        "a": "Oasis"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Common People",
+        "a": "Pulp",
+        "why": "Class satire over a relentless singalong build — the genre's sharpest song."
+      },
+      {
+        "t": "Girls & Boys",
+        "a": "Blur"
+      },
+      {
+        "t": "Alright",
+        "a": "Supergrass"
+      }
+    ]
+  },
+  {
+    "id": "mathpop",
+    "name": "Math-Pop",
+    "fam": "rock",
+    "year": 2005,
+    "role": "branch",
+    "yOff": -20,
+    "def": "Math rock's tapped, interlocking guitars and shifting meters folded into hooky indie songs — odd-time precision you can dance to. Mid-2000s Oxford, around Youthmovies and early Foals, is its clearest home.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Clean, high-neck tapped guitar cells locking like sequencer patterns."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Odd meters and syncopated hi-hats, dance-punk tight."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Sung melodic hooks over the counterpoint."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Oxford's house-party and Truck Festival circuit; UK labels like Big Scary Monsters."
+      }
+    ],
+    "why": "It keeps math rock's interlocking precision but points it at the chorus and the dancefloor.",
+    "artists": [
+      "Foals",
+      "This Town Needs Guns",
+      "Minus the Bear"
+    ],
+    "albums": [
+      {
+        "t": "Antidotes",
+        "a": "Foals"
+      },
+      {
+        "t": "Animals",
+        "a": "This Town Needs Guns"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Cassius",
+        "a": "Foals",
+        "why": "Tapped guitar loops over a dance-punk hi-hat — Oxford math-pop at its most immediate."
+      },
+      {
+        "t": "26 Is Dancier Than 4",
+        "a": "This Town Needs Guns"
+      },
+      {
+        "t": "Knights",
+        "a": "Minus the Bear"
+      }
+    ]
+  },
+  {
+    "id": "midwestemo",
+    "name": "Midwest Emo",
+    "fam": "rock",
+    "year": 1999,
+    "role": "branch",
+    "yOff": 50,
+    "def": "Emo relaxed into Midwest basements — twinkly, tapped arpeggios, loose math-inflected meters and conversational confession at porch-light volume.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Clean, twinkling, open-tuned arpeggios."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Loose, math-inflected meters at a lope."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Plain-spoken, cracked, half-shouted confession."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Trumpet and brushed drums beside guitars."
+      }
+    ],
+    "why": "It swaps emo's roar for intimacy — math rock's guitar language slowed into bittersweet, autumnal songcraft.",
+    "artists": [
+      "American Football",
+      "Cap'n Jazz",
+      "The Promise Ring"
+    ],
+    "albums": [
+      {
+        "t": "American Football",
+        "a": "American Football"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Never Meant",
+        "a": "American Football",
+        "why": "Twinkling interlocked riffs in shifting meter — the most imitated song in emo."
+      },
+      {
+        "t": "Little League",
+        "a": "Cap'n Jazz"
+      },
+      {
+        "t": "Why Did Ever We Meet",
+        "a": "The Promise Ring"
+      }
+    ],
+    "tempo": "90–140 BPM"
+  },
+  {
+    "id": "mathcore",
+    "name": "Mathcore",
+    "fam": "rock",
+    "fam2": "metal",
+    "year": 2000,
+    "role": "hybrid",
+    "yOff": -100,
+    "def": "Math rock's metric chaos detonated at hardcore intensity — atonal riffs, whiplash meter changes and screamed vocals in constant free-fall.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Whiplash meter changes and blastbeat bursts."
+      },
+      {
+        "k": "Harmony",
+        "v": "Atonal, dissonant riff clusters."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Screamed, percussive — another instrument in the chaos."
+      }
+    ],
+    "why": "It fuses math rock's shifting grids with metallic hardcore's violence — complexity weaponised rather than admired.",
+    "artists": [
+      "The Dillinger Escape Plan",
+      "Converge",
+      "Botch"
+    ],
+    "albums": [
+      {
+        "t": "Calculating Infinity",
+        "a": "The Dillinger Escape Plan"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "43% Burnt",
+        "a": "The Dillinger Escape Plan",
+        "why": "Whiplash meter chaos at hardcore violence — the track that defined the genre outright."
+      },
+      {
+        "t": "Saint Matthew Returns to the Womb",
+        "a": "Botch"
+      },
+      {
+        "t": "The Saddest Day",
+        "a": "Converge"
+      }
+    ],
+    "tempo": "≈ 150–280 BPM",
+    "tempoNote": "Range is nearly meaningless — whiplash meter and tempo chaos is the genre."
+  },
+  {
+    "id": "emorevival",
+    "name": "Emo Revival",
+    "fam": "rock",
+    "year": 2013,
+    "role": "branch",
+    "yOff": 115,
+    "def": "A 2010s generation raised on Midwest emo brings it back — twinkly guitars, group-shout climaxes and sprawling, sincere songwriting for the DIY-streaming era.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Twinkly arpeggios beside post-rock swells."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Group shouts and unguarded, wordy confession."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Bandcamp, DIY houses and festival reunions."
+      }
+    ],
+    "why": "It reclaims second-wave and Midwest emo's sincerity wholesale, scaled up with post-rock dynamics and internet-era reach.",
+    "artists": [
+      "The World Is a Beautiful Place & I Am No Longer Afraid to Die",
+      "Modern Baseball",
+      "Foxing"
+    ],
+    "albums": [
+      {
+        "t": "Whenever, If Ever",
+        "a": "The World Is a Beautiful Place & I Am No Longer Afraid to Die"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Getting Sodas",
+        "a": "The World Is a Beautiful Place & I Am No Longer Afraid to Die",
+        "why": "Its swelling group-shout finale is the revival's communal thesis."
+      },
+      {
+        "t": "Your Graduation",
+        "a": "Modern Baseball"
+      },
+      {
+        "t": "Rory",
+        "a": "Foxing"
+      }
+    ],
+    "tempo": "100–150 BPM"
+  },
+  {
+    "id": "desertpunk",
+    "name": "Desert Punk",
+    "fam": "rock",
+    "fam2": "metal",
+    "year": 2012,
+    "role": "hybrid",
+    "yOff": -30,
+    "def": "Desert rock's fuzz stripped back to punk velocity — scuzzy, skate-culture DIY bands playing generator-party riffs at hardcore speed.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Fast, driving punk tempos under heavy fuzz."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Blown-out, sun-bleached garage distortion."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Skate videos, DIY shows and desert campouts."
+      }
+    ],
+    "why": "It runs the desert's fuzzed riff language at punk speed — Kyuss groove with a hardcore engine.",
+    "artists": [
+      "The Shrine",
+      "Nebula",
+      "Radio Moscow"
+    ],
+    "albums": [
+      {
+        "t": "Primitive Blast",
+        "a": "The Shrine"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Destroyers",
+        "a": "The Shrine",
+        "why": "Skate-punk velocity through a desert fuzz stack — the fusion in one blast."
+      },
+      {
+        "t": "To the Center",
+        "a": "Nebula"
+      },
+      {
+        "t": "Frustrating Sound",
+        "a": "Radio Moscow"
+      }
+    ],
+    "tempo": "120–160 BPM"
+  },
+  {
+    "id": "folkrock",
+    "name": "Folk Rock",
+    "fam": "rock",
+    "fam2": "roots",
+    "year": 1965,
+    "role": "hybrid",
+    "yOff": -60,
+    "def": "Folk repertoire and songwriting played by an electric rock band — chiming twelve-string guitar, close harmony and traditional or topical lyrics over drums and bass.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Twelve-string electric guitar, bass and drums beside acoustic and fiddle."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Close, blended harmony carrying narrative or traditional lyrics."
+      },
+      {
+        "k": "Song structure",
+        "v": "Strophic ballad forms held intact inside a rock arrangement."
+      },
+      {
+        "k": "Scene / context",
+        "v": "1965 Los Angeles — the Byrds, the Mamas & the Papas and, by 1969, CSNY and Joni Mitchell in Laurel Canyon — and, from 1969, the British trad revival."
+      }
+    ],
+    "why": "It electrifies the folk revival without discarding it — the ballad and its lyric survive intact while a rhythm section and ringing twelve-string carry them.",
+    "artists": [
+      "The Byrds",
+      "Fairport Convention",
+      "Buffalo Springfield"
+    ],
+    "albums": [
+      {
+        "t": "Mr. Tambourine Man",
+        "a": "The Byrds"
+      },
+      {
+        "t": "Liege & Lief",
+        "a": "Fairport Convention"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Mr. Tambourine Man",
+        "a": "The Byrds",
+        "why": "McGuinn's twelve-string Rickenbacker over a Dylan lyric is the founding sound of the genre."
+      },
+      {
+        "t": "Matty Groves",
+        "a": "Fairport Convention",
+        "why": "A centuries-old English ballad driven by a rock rhythm section — the British trad wing in one track."
+      },
+      {
+        "t": "For What It’s Worth",
+        "a": "Buffalo Springfield"
+      }
+    ]
+  },
+  {
+    "id": "synthpop",
+    "name": "Synth Pop",
+    "fam": "rock",
+    "fam2": "electronic",
+    "year": 1979,
+    "role": "branch",
+    "yOff": -35,
+    "def": "Pop rebuilt entirely on the synthesizer — sequenced basslines, drum machines and glossy hooks that carried post-punk's machines onto the charts.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "All-electronic: sequencers, drum machines, polysynths."
+      },
+      {
+        "k": "Melody",
+        "v": "Bright, hooky pop lines over a machine pulse."
+      },
+      {
+        "k": "Production",
+        "v": "Clean, quantised, radio-ready gloss."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Post-punk UK gone pop-chart."
+      }
+    ],
+    "why": "It replaces the rock band wholesale with sequencers and drum machines while keeping pop's hooks intact.",
+    "artists": [
+      "The Human League",
+      "Depeche Mode",
+      "Yazoo",
+      "Erasure"
+    ],
+    "albums": [
+      {
+        "t": "Dare",
+        "a": "The Human League"
+      },
+      {
+        "t": "Violator",
+        "a": "Depeche Mode"
+      },
+      {
+        "t": "The Innocents",
+        "a": "Erasure"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Don't You Want Me",
+        "a": "The Human League",
+        "why": "An all-synth chart-topper that proved the synthesizer could replace the band."
+      },
+      {
+        "t": "Enjoy the Silence",
+        "a": "Depeche Mode"
+      },
+      {
+        "t": "Only You",
+        "a": "Yazoo"
+      }
+    ],
+    "tempo": "110–130 BPM"
+  },
+  {
+    "id": "madchester",
+    "name": "Madchester",
+    "fam": "rock",
+    "fam2": "electronic",
+    "year": 1988,
+    "role": "hybrid",
+    "yOff": 190,
+    "def": "Manchester's indie-dance collision — jangling psychedelic guitar pop swung onto acid house's groove, born of the Haçienda and ecstasy culture.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Funky, loose-limbed dance drumming under guitar pop."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Wah and jangle guitar over baggy breakbeats."
+      },
+      {
+        "k": "Scene / context",
+        "v": "The Haçienda, rave culture and baggy fashion."
+      }
+    ],
+    "why": "It puts indie guitar bands on the dancefloor — psychedelic jangle riding acid house's rhythm section.",
+    "artists": [
+      "The Stone Roses",
+      "Happy Mondays",
+      "The Charlatans"
+    ],
+    "albums": [
+      {
+        "t": "The Stone Roses",
+        "a": "The Stone Roses"
+      },
+      {
+        "t": "Pills ’n’ Thrills and Bellyaches",
+        "a": "Happy Mondays"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Fools Gold",
+        "a": "The Stone Roses",
+        "why": "Ten minutes of funk breakbeat under psychedelic guitar — the indie-dance fusion in full."
+      },
+      {
+        "t": "Step On",
+        "a": "Happy Mondays"
+      },
+      {
+        "t": "The Only One I Know",
+        "a": "The Charlatans"
+      }
+    ],
+    "tempo": "100–125 BPM"
+  },
+  {
+    "id": "janglepop",
+    "name": "Jangle Pop",
+    "fam": "rock",
+    "year": 1983,
+    "role": "branch",
+    "yOff": -100,
+    "def": "Chiming, clean arpeggiated guitar pop — 60s folk-rock's 12-string ring revived through post-punk's economy and indie's modesty.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Bright, clean, arpeggiated electric guitar; no distortion."
+      },
+      {
+        "k": "Melody",
+        "v": "Wistful, melodic, harmony-rich songcraft."
+      },
+      {
+        "k": "Scene / context",
+        "v": "College radio and UK indie 45s."
+      }
+    ],
+    "why": "Its ringing, undistorted arpeggios put melody and chime where rock had put riffs and fuzz.",
+    "artists": [
+      "R.E.M.",
+      "The Smiths",
+      "Orange Juice"
+    ],
+    "albums": [
+      {
+        "t": "Murmur",
+        "a": "R.E.M."
+      },
+      {
+        "t": "The Queen Is Dead",
+        "a": "The Smiths"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "This Charming Man",
+        "a": "The Smiths",
+        "why": "Marr's cascading arpeggios are the definitive jangle guitar statement."
+      },
+      {
+        "t": "Radio Free Europe",
+        "a": "R.E.M."
+      },
+      {
+        "t": "Blue Boy",
+        "a": "Orange Juice"
+      }
+    ],
+    "tempo": "110–140 BPM"
+  },
+  {
+    "id": "indiepop",
+    "name": "Indie Pop",
+    "fam": "rock",
+    "year": 1986,
+    "role": "branch",
+    "yOff": -60,
+    "aka": "C86 / Twee Pop",
+    "def": "Melodic guitar pop made on a DIY footing — jangling guitars, a love of 60s pop and deliberately unpolished playing, set against mainstream pop's gloss. Named as a genre by NME's C86 tape in 1986, with roots in Glasgow's Postcard Records (1979) and the Television Personalities.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Clean, jangling guitar; later strings, brass and glockenspiel."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Soft, untrained voices, often boy-girl harmonies."
+      },
+      {
+        "k": "Melody",
+        "v": "60s girl-group and bubblegum hooks in short songs."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Fanzines and 7-inch labels — Postcard, 53rd & 3rd, Sarah. A Glasgow axis runs from Orange Juice to the Pastels, Belle and Sebastian and Camera Obscura."
+      }
+    ],
+    "why": "It keeps punk's DIY ethic but trades its aggression for sweetness — modest, melodic and openly sentimental where indie rock is abrasive.",
+    "artists": [
+      "The Pastels",
+      "Belle and Sebastian",
+      "Camera Obscura",
+      "Television Personalities"
+    ],
+    "albums": [
+      {
+        "t": "If You're Feeling Sinister",
+        "a": "Belle and Sebastian"
+      },
+      {
+        "t": "Up for a Bit with The Pastels",
+        "a": "The Pastels"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Nothing to Be Done",
+        "a": "The Pastels",
+        "why": "Stephen Pastel's untrained vocal over scrappy jangle — the C86 sound at its most direct."
+      },
+      {
+        "t": "The Boy with the Arab Strap",
+        "a": "Belle and Sebastian"
+      },
+      {
+        "t": "Lloyd, I'm Ready to Be Heartbroken",
+        "a": "Camera Obscura"
+      }
+    ]
+  },
+  {
+    "id": "acidrock",
+    "name": "Acid Rock",
+    "fam": "rock",
+    "year": 1967,
+    "role": "branch",
+    "yOff": 230,
+    "def": "The heavier, jam-based end of first-wave psychedelia — garage psych, San Francisco ballroom rock and psychedelic blues-rock built on extended improvisation and volume.",
+    "traits": [
+      {
+        "k": "Song structure",
+        "v": "Open-ended jams stretching songs past the ten-minute mark."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Fuzz, feedback and modal lead guitar at ballroom volume."
+      },
+      {
+        "k": "Scene / context",
+        "v": "San Francisco ballrooms, garage bands and the blues-rock power trio."
+      }
+    ],
+    "why": "Psychedelia's studio trip taken to the stage — blues forms blown open by volume, improvisation and lysergic intent.",
+    "artists": [
+      "Jefferson Airplane",
+      "Grateful Dead",
+      "Cream"
+    ],
+    "albums": [
+      {
+        "t": "Surrealistic Pillow",
+        "a": "Jefferson Airplane"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "White Rabbit",
+        "a": "Jefferson Airplane",
+        "why": "Ballroom psych distilled — a bolero build to a lysergic punchline."
+      },
+      {
+        "t": "You're Gonna Miss Me",
+        "a": "13th Floor Elevators"
+      },
+      {
+        "t": "Sunshine of Your Love",
+        "a": "Cream"
+      }
+    ],
+    "tempo": "100–140 BPM",
+    "tempoNote": "Variable — extended jams speed up and dissolve."
+  },
+  {
+    "id": "heavypsych",
+    "name": "Heavy Psych",
+    "fam": "rock",
+    "year": 1970,
+    "role": "branch",
+    "yOff": -215,
+    "def": "Acid rock pushed to physical extremes — overdriven amp stacks, slow riffs and rhythm sections that traded finesse for sheer weight; the missing link to metal and stoner rock.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Saturated amp distortion as the core sound, not an effect."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Heavy, dragging riffs and pummeling drums."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Post-Hendrix power trios chasing volume — the proto-metal underground."
+      }
+    ],
+    "why": "When the jam bands turned everything up past clean, the riff replaced the raga — and metal's vocabulary was born.",
+    "artists": [
+      "Blue Cheer",
+      "Sir Lord Baltimore",
+      "Leaf Hound"
+    ],
+    "albums": [
+      {
+        "t": "Vincebus Eruptum",
+        "a": "Blue Cheer"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Summertime Blues",
+        "a": "Blue Cheer",
+        "why": "Volume itself as the instrument — proto-metal in 1968."
+      },
+      {
+        "t": "Kingdom Come",
+        "a": "Sir Lord Baltimore"
+      },
+      {
+        "t": "Freelance Fiend",
+        "a": "Leaf Hound"
+      }
+    ],
+    "tempo": "90–140 BPM",
+    "tempoNote": "Wide range — dragging sludge to overdriven freakouts."
+  },
+  {
+    "id": "funkrock",
+    "name": "Funk Rock",
+    "fam": "rock",
+    "fam2": "soul",
+    "year": 1972,
+    "role": "hybrid",
+    "yOff": 215,
+    "def": "Rock riffing welded to funk's rhythm section — syncopated bass and drums under distorted guitar, from Band of Gypsys to the alternative era.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Slap and syncopated bass locked with a rock backbeat."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Distorted riff guitar over clipped funk comping."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Shouted, rhythmic delivery riding the groove."
+      }
+    ],
+    "why": "Hendrix's Band of Gypsys proved a rock guitar could sit on a funk pocket — a blueprint bands have re-run ever since.",
+    "artists": [
+      "Band of Gypsys",
+      "Funkadelic",
+      "Red Hot Chili Peppers"
+    ],
+    "albums": [
+      {
+        "t": "Band of Gypsys",
+        "a": "Jimi Hendrix"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Them Changes",
+        "a": "Buddy Miles",
+        "why": "The founding groove of funk rock — riff and pocket as equals."
+      },
+      {
+        "t": "Super Stupid",
+        "a": "Funkadelic"
+      },
+      {
+        "t": "Give It Away",
+        "a": "Red Hot Chili Peppers"
+      }
+    ],
+    "tempo": "95–125 BPM"
+  },
+  {
+    "id": "artrock",
+    "name": "Art Rock",
+    "fam": "rock",
+    "year": 1972,
+    "role": "branch",
+    "yOff": -70,
+    "def": "Rock treated as fine art — conceptual albums, theatrical personae and avant-garde technique imported from the art school into the stage show.",
+    "traits": [
+      {
+        "k": "Song structure",
+        "v": "Concept-driven albums and suites over verse-chorus habit."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Studio-as-instrument arrangements; sax, synth and treated guitar."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Mannered, persona-driven delivery."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Art-school London and glam-adjacent avant-garde."
+      }
+    ],
+    "why": "It imports conceptual thinking into rock — the persona, the staging and the album itself become the artwork.",
+    "artists": [
+      "David Bowie",
+      "Roxy Music",
+      "Talking Heads"
+    ],
+    "albums": [
+      {
+        "t": "The Rise and Fall of Ziggy Stardust",
+        "a": "David Bowie"
+      },
+      {
+        "t": "For Your Pleasure",
+        "a": "Roxy Music"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Virginia Plain",
+        "a": "Roxy Music",
+        "why": "Art-school collage as a hit single — glamour, irony and the avant-garde in three minutes."
+      },
+      {
+        "t": "Life on Mars?",
+        "a": "David Bowie"
+      },
+      {
+        "t": "\"Heroes\"",
+        "a": "David Bowie"
+      }
+    ],
+    "tempo": "95–140 BPM",
+    "tempoNote": "Variable — theatrical ballads to motorik drive."
+  },
+  {
+    "id": "glamrock",
+    "name": "Glam Rock",
+    "fam": "rock",
+    "year": 1971,
+    "role": "branch",
+    "yOff": 320,
+    "def": "Early-70s British rock in glitter and platform boots — stomping rock 'n' roll beats, big terrace-chant choruses and androgynous, theatrical personae built for Top of the Pops.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Stomping, handclap-heavy backbeat revived from 50s rock 'n' roll."
+      },
+      {
+        "k": "Melody",
+        "v": "Short, chantable hooks and singalong choruses."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Glitter, makeup, costume and gender play as part of the song."
+      }
+    ],
+    "why": "It makes image and persona part of the record — the template for every rock act that treated the stage show as the point.",
+    "artists": [
+      "T. Rex",
+      "David Bowie",
+      "Slade",
+      "Sweet",
+      "New York Dolls"
+    ],
+    "albums": [
+      {
+        "t": "Electric Warrior",
+        "a": "T. Rex"
+      },
+      {
+        "t": "The Rise and Fall of Ziggy Stardust",
+        "a": "David Bowie"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Get It On",
+        "a": "T. Rex",
+        "why": "Chuck Berry boogie slowed to a sultry strut — glam's founding hit."
+      },
+      {
+        "t": "Cum On Feel the Noize",
+        "a": "Slade"
+      },
+      {
+        "t": "Ballroom Blitz",
+        "a": "Sweet"
+      }
+    ],
+    "tempo": "100–140 BPM"
+  },
+  {
+    "id": "baroquepop",
+    "name": "Baroque Pop",
+    "fam": "rock",
+    "year": 1966,
+    "role": "branch",
+    "yOff": -270,
+    "def": "Mid-60s pop ornamented with the conservatory — harpsichords, string quartets, horns and counterpoint wrapped around melancholy songcraft.",
+    "traits": [
+      {
+        "k": "Instrumentation",
+        "v": "Harpsichord, strings, woodwinds and orchestral colour."
+      },
+      {
+        "k": "Harmony",
+        "v": "Chromatic, classically-voiced progressions."
+      },
+      {
+        "k": "Melody",
+        "v": "Bittersweet, through-written vocal lines."
+      }
+    ],
+    "why": "It proved the pop single could carry orchestral harmony and formal ambition — the direct ancestor of every chamber-inclined songwriter since.",
+    "artists": [
+      "The Beach Boys",
+      "The Zombies",
+      "The Left Banke"
+    ],
+    "albums": [
+      {
+        "t": "Pet Sounds",
+        "a": "The Beach Boys"
+      },
+      {
+        "t": "Odessey and Oracle",
+        "a": "The Zombies"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "God Only Knows",
+        "a": "The Beach Boys",
+        "why": "French horn, contrapuntal vocals and unresolved harmony — the baroque pop pinnacle."
+      },
+      {
+        "t": "Walk Away Renée",
+        "a": "The Left Banke"
+      },
+      {
+        "t": "Care of Cell 44",
+        "a": "The Zombies"
+      }
+    ],
+    "tempo": "90–125 BPM"
+  },
+  {
+    "id": "elecrock",
+    "name": "Electronic Rock",
+    "fam": "rock",
+    "fam2": "electronic",
+    "year": 1968,
+    "role": "branch",
+    "yOff": 70,
+    "def": "Rock built around oscillators, early synthesizers and tape electronics rather than guitar alone — an umbrella that runs from 1968 experiments to today's synth-driven bands.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Oscillator drones, primitive synths and tape effects in a band setting."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Repetitive, often machine-like pulse under a rock frame."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Late-60s New York and LA experimental underground."
+      }
+    ],
+    "why": "It proved electronics could be a rock band's core instrument, opening the path to synth-pop, new wave and industrial rock.",
+    "artists": [
+      "Silver Apples",
+      "The United States of America",
+      "Suicide"
+    ],
+    "albums": [
+      {
+        "t": "Silver Apples",
+        "a": "Silver Apples"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Oscillations",
+        "a": "Silver Apples",
+        "why": "Homemade oscillators and drums — electronics as the lead instrument of a rock song."
+      },
+      {
+        "t": "The American Metaphysical Circus",
+        "a": "The United States of America"
+      },
+      {
+        "t": "Ghost Rider",
+        "a": "Suicide"
+      }
+    ]
+  },
+  {
+    "id": "industrialrock",
+    "name": "Industrial Rock",
+    "fam": "rock",
+    "fam2": "gaze",
+    "year": 1989,
+    "role": "hybrid",
+    "yOff": -255,
+    "def": "Industrial's machine noise and samples welded to rock songwriting — distorted guitars, drum programming and aggressive vocals.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Sampled metal percussion, distorted synths and guitars."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Sequenced, mechanical drum programming."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Late-80s Chicago Wax Trax! scene into 90s alternative radio."
+      }
+    ],
+    "why": "It carried industrial's harshness into song form and onto mainstream alternative radio.",
+    "artists": [
+      "Nine Inch Nails",
+      "Ministry",
+      "KMFDM"
+    ],
+    "albums": [
+      {
+        "t": "Pretty Hate Machine",
+        "a": "Nine Inch Nails"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Head Like a Hole",
+        "a": "Nine Inch Nails",
+        "why": "Industrial programming under a pop-structured rock chorus."
+      },
+      {
+        "t": "Jesus Built My Hotrod",
+        "a": "Ministry"
+      },
+      {
+        "t": "Closer",
+        "a": "Nine Inch Nails"
+      }
+    ]
+  },
+  {
+    "id": "indietronica",
+    "name": "Indietronica",
+    "fam": "rock",
+    "fam2": "electronic",
+    "year": 1997,
+    "role": "hybrid",
+    "yOff": -245,
+    "aka": "Indie Electronic",
+    "def": "Indie songwriting framed by laptop production, glitchy beats and warm synths — bedroom electronics with a band's sensibility.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "Laptop sequencing, glitch textures and IDM-derived beats."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Soft, intimate indie vocals."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Late-90s and 2000s indie labels; peaks mid-2000s."
+      }
+    ],
+    "why": "It brought IDM's production into indie pop, setting up the 2000s electropop and bedroom-pop sound.",
+    "artists": [
+      "The Postal Service",
+      "Caribou",
+      "Hot Chip"
+    ],
+    "albums": [
+      {
+        "t": "Give Up",
+        "a": "The Postal Service"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Such Great Heights",
+        "a": "The Postal Service",
+        "why": "Glitchy laptop beats under a plainly indie pop song."
+      },
+      {
+        "t": "Odessa",
+        "a": "Caribou"
+      },
+      {
+        "t": "Over and Over",
+        "a": "Hot Chip"
+      }
+    ]
+  },
+  {
+    "id": "indiedance",
+    "name": "Indie Dance",
+    "fam": "rock",
+    "fam2": "electronic",
+    "year": 2002,
+    "role": "hybrid",
+    "yOff": 250,
+    "aka": "Dance-Punk",
+    "def": "Post-punk’s scratchy guitars pointed at the dancefloor — live bands playing disco and house rhythms with punk attitude and cowbell.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Four-on-the-floor and disco hi-hats played by a live band."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Scratchy funk guitar, analogue synth stabs, cowbell."
+      },
+      {
+        "k": "Scene / context",
+        "v": "DFA-era New York and the mid-00s indie disco."
+      }
+    ],
+    "why": "It re-fused the post-punk/disco split of 1979, letting guitar bands work dancefloor dynamics without machines.",
+    "artists": [
+      "LCD Soundsystem",
+      "The Rapture",
+      "!!!"
+    ],
+    "albums": [
+      {
+        "t": "LCD Soundsystem",
+        "a": "LCD Soundsystem"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "House of Jealous Lovers",
+        "a": "The Rapture",
+        "why": "The DFA-produced shriek-funk single that relit dance-punk."
+      },
+      {
+        "t": "Losing My Edge",
+        "a": "LCD Soundsystem"
+      },
+      {
+        "t": "Daft Punk Is Playing at My House",
+        "a": "LCD Soundsystem"
+      }
+    ],
+    "tempo": "115–128 BPM"
+  },
+  {
+    "id": "grungegaze",
+    "name": "Grunge Gaze",
+    "fam": "rock",
+    "fam2": "gaze",
+    "year": 2016,
+    "role": "rising",
+    "yOff": 150,
+    "def": "90s alt-rock heaviness dissolved into shoegaze wash — detuned Seattle riffs under dreamy, reverb-smeared vocals. A 2010s wave that became a defining 2020s frontier.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Downtuned grunge guitars under gauzy shoegaze reverb."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Soft, buried melody over heavy backing."
+      },
+      {
+        "k": "Scene / context",
+        "v": "2010s heavy-gaze bands feeding TikTok-era 90s nostalgia."
+      }
+    ],
+    "why": "It splices grunge’s weight to shoegaze’s blur — loud-quiet catharsis delivered as texture instead of scream.",
+    "artists": [
+      "Nothing",
+      "Narrow Head",
+      "Teenage Wrist"
+    ],
+    "albums": [
+      {
+        "t": "12th House Rock",
+        "a": "Narrow Head"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Vertigo Flowers",
+        "a": "Nothing",
+        "why": "The 2016 record that proved detuned grunge weight and gaze blur belong together."
+      },
+      {
+        "t": "Sunday",
+        "a": "Narrow Head",
+        "why": "Alice in Chains heaviness sung like Slowdive — the hybrid in one track."
+      },
+      {
+        "t": "Earth Is a Black Hole",
+        "a": "Teenage Wrist"
+      }
+    ],
+    "tempo": "90–130 BPM"
+  },
+  {
+    "id": "ambientpostrock",
+    "name": "Ambient Post-Rock",
+    "fam": "rock",
+    "fam2": "jazz",
+    "year": 2005,
+    "role": "hybrid",
+    "yOff": -180,
+    "def": "Post-rock with the climax removed — guitar swells, e-bow drones and reverb architecture drifting at ambient patience.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "E-bowed, reverb-stacked guitar as pure atmosphere."
+      },
+      {
+        "k": "Song structure",
+        "v": "Slow swells and dissolves; no drop, no chorus."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Often beatless or rubato — pulse implied, not stated."
+      }
+    ],
+    "why": "It keeps post-rock’s guitar language but trades the crescendo for stillness — rock instrumentation, ambient time.",
+    "artists": [
+      "Hammock",
+      "This Will Destroy You",
+      "Eluvium"
+    ],
+    "albums": [
+      {
+        "t": "Kenotic",
+        "a": "Hammock"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Quiet",
+        "a": "This Will Destroy You",
+        "why": "The band’s beatless side became a genre — swells as the whole story."
+      },
+      {
+        "t": "Blankets of Night",
+        "a": "Hammock"
+      },
+      {
+        "t": "The Motion Makes Me Last",
+        "a": "Eluvium"
+      }
+    ],
+    "tempo": "60–110 BPM",
+    "tempoNote": "Often rubato — swells matter more than the grid."
+  },
+  {
+    "id": "bedroompop",
+    "name": "Bedroom Pop",
+    "fam": "rock",
+    "year": 2015,
+    "role": "branch",
+    "yOff": -135,
+    "def": "Intimate, lo-fi pop self-produced in bedrooms — soft vocals close to the mic, woozy guitars and laptop drums, distributed straight to streaming.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "DIY laptop recording; hiss and room tone kept in."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Whispered, conversational closeness."
+      },
+      {
+        "k": "Scene / context",
+        "v": "SoundCloud, Bandcamp and YouTube as the label."
+      }
+    ],
+    "why": "Cheap recording plus direct distribution collapsed the studio system — intimacy itself became the aesthetic.",
+    "artists": [
+      "Clairo",
+      "Rex Orange County",
+      "beabadoobee"
+    ],
+    "albums": [
+      {
+        "t": "Immunity",
+        "a": "Clairo"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Pretty Girl",
+        "a": "Clairo",
+        "why": "A webcam video and a laptop beat reaching millions — the genre’s origin story."
+      },
+      {
+        "t": "Loving Is Easy",
+        "a": "Rex Orange County"
+      },
+      {
+        "t": "Coffee",
+        "a": "beabadoobee"
+      }
+    ],
+    "tempo": "75–110 BPM"
+  },
+  {
+    "id": "altpop",
+    "name": "Alternative Pop",
+    "fam": "rock",
+    "fam2": "electronic",
+    "year": 2013,
+    "role": "hybrid",
+    "yOff": -200,
+    "aka": "Dark Pop / Noir Pop",
+    "def": "Mainstream pop turned dark and downbeat — minimal, bass-heavy production, close whispered vocals and melancholic, world-weary lyrics.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "Sparse, sub-bass-led, headphone-intimate mixes."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Breathy, close-mic, often whispered."
+      },
+      {
+        "k": "Harmony",
+        "v": "Minor-key, moody, unresolved."
+      }
+    ],
+    "why": "It takes art pop's auteur control and trip-hop's nocturnal space into the charts, with electropop's machines stripped down to near-silence.",
+    "artists": [
+      "Lana Del Rey",
+      "Lorde",
+      "Billie Eilish"
+    ],
+    "albums": [
+      {
+        "t": "Pure Heroine",
+        "a": "Lorde"
+      },
+      {
+        "t": "When We All Fall Asleep, Where Do We Go?",
+        "a": "Billie Eilish"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Royals",
+        "a": "Lorde",
+        "why": "Finger snaps, sub bass and a deadpan voice: chart pop with almost nothing in it."
+      },
+      {
+        "t": "Video Games",
+        "a": "Lana Del Rey"
+      },
+      {
+        "t": "Bury a Friend",
+        "a": "Billie Eilish"
+      }
+    ]
+  },
+  {
+    "id": "noircrooner",
+    "name": "Noir Crooner",
+    "fam": "rock",
+    "fam2": "roots",
+    "year": 1989,
+    "role": "hybrid",
+    "yOff": -330,
+    "aka": "Retro-Noir Pop",
+    "def": "Early-60s ballad pop replayed as film noir. Roy Orbison's operatic croon, Spector echo and girl-group chord changes are set to songs about death, longing and haunted romance, sung by a reverb-soaked baritone over twangy guitar.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Baritone or operatic croon, often swooping into falsetto at the climax."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Deep spring and plate reverb, tremolo guitar, slapback echo."
+      },
+      {
+        "k": "Harmony",
+        "v": "Doo-wop and girl-group progressions (I–vi–IV–V) tilted toward minor keys."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Lynchian Americana: dim lounges, desert highways, Halloween and the graveyard."
+      }
+    ],
+    "why": "It keeps the pre-Beatles ballad's croon and echo but darkens the lyrics and slows the tempo, so the 1961 prom slow-dance becomes a ghost story.",
+    "artists": [
+      "Chris Isaak",
+      "Richard Hawley",
+      "Dead Man’s Bones",
+      "Marlon Williams",
+      "Timber Timbre",
+      "Orville Peck",
+      "The Last Shadow Puppets"
+    ],
+    "albums": [
+      {
+        "t": "Heart Shaped World",
+        "a": "Chris Isaak"
+      },
+      {
+        "t": "Dead Man’s Bones",
+        "a": "Dead Man’s Bones"
+      },
+      {
+        "t": "Make Way for Love",
+        "a": "Marlon Williams"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Wicked Game",
+        "a": "Chris Isaak",
+        "why": "Tremolo guitar, a falsetto lament and David Lynch's patronage set the template in 1989."
+      },
+      {
+        "t": "Lost in the Night",
+        "a": "Dead Man’s Bones"
+      },
+      {
+        "t": "Dark Child",
+        "a": "Marlon Williams"
+      }
+    ],
+    "tempo": "60–110 BPM"
+  },
+  {
+    "id": "tradpop",
+    "name": "Traditional Pop",
+    "fam": "rock",
+    "fam2": "jazz",
+    "year": 1942,
+    "role": "branch",
+    "yOff": -250,
+    "aka": "Crooner Pop / Vocal Pop",
+    "def": "Pre-rock popular song built on Tin Pan Alley and Broadway standards: a featured singer in front of an orchestra, phrasing the lyric close to the microphone.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Close-mic croon or full operatic projection, with the lyric at the centre."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "String orchestra or big band, written by a named arranger (Nelson Riddle, Gordon Jenkins)."
+      },
+      {
+        "k": "Song structure",
+        "v": "32-bar AABA standards ending on a held note."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Radio, nightclubs and the long-playing album."
+      }
+    ],
+    "why": "It made the singer the star and the ballad the main event, the starting point for every crooner since.",
+    "artists": [
+      "Frank Sinatra",
+      "Bing Crosby",
+      "Peggy Lee",
+      "Mario Lanza",
+      "Nat King Cole"
+    ],
+    "albums": [
+      {
+        "t": "In the Wee Small Hours",
+        "a": "Frank Sinatra"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "In the Wee Small Hours of the Morning",
+        "a": "Frank Sinatra",
+        "why": "A 1955 album of late-night ballads: the noir mood in its first form."
+      },
+      {
+        "t": "Be My Love",
+        "a": "Mario Lanza"
+      },
+      {
+        "t": "Fever",
+        "a": "Peggy Lee"
+      }
+    ],
+    "tempo": "60–130 BPM",
+    "tempoNote": "Wide range — slow ballads to swinging up-tempo numbers."
+  },
+  {
+    "id": "nuyacht",
+    "name": "Nu-Yacht Rock",
+    "fam": "rock",
+    "fam2": "soul",
+    "year": 2018,
+    "role": "revival",
+    "yOff": -250,
+    "def": "Yacht rock’s studio perfectionism revived sincerely — smooth Rhodes changes, immaculate session playing and West Coast gloss for the streaming era.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "Major-7th and slash-chord smoothness, played straight."
+      },
+      {
+        "k": "Production",
+        "v": "Warm, analogue-styled, session-grade polish."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Crate-digger reverence meeting soft-rock rehabilitation."
+      }
+    ],
+    "why": "A generation raised on irony re-learned the craft behind the smoothness — revival as studied musicianship, not pastiche.",
+    "artists": [
+      "Young Gun Silver Fox",
+      "Thundercat",
+      "Drugdealer"
+    ],
+    "albums": [
+      {
+        "t": "West End Coast",
+        "a": "Young Gun Silver Fox"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Show You the Way",
+        "a": "Thundercat",
+        "why": "Kenny Loggins and Michael McDonald guesting — the torch literally passed."
+      },
+      {
+        "t": "Lenny",
+        "a": "Young Gun Silver Fox"
+      },
+      {
+        "t": "Suddenly",
+        "a": "Drugdealer"
+      }
+    ],
+    "tempo": "88–115 BPM"
+  },
+  {
+    "id": "softrock",
+    "name": "Soft Rock",
+    "fam": "rock",
+    "year": 1971,
+    "role": "branch",
+    "yOff": -300,
+    "def": "The mellow, melodic mainstream of early-70s rock — acoustic guitars and electric piano, smooth lead vocals and layered harmony, produced for AM radio and the living room rather than the arena.",
+    "traits": [
+      {
+        "k": "Vocal approach",
+        "v": "Smooth, unforced lead with lush backing harmony."
+      },
+      {
+        "k": "Instrumentation",
+        "v": "Acoustic and clean electric guitar, Wurlitzer or piano, light strings."
+      },
+      {
+        "k": "Production",
+        "v": "Clean, balanced, radio-friendly — no distortion, no excess."
+      },
+      {
+        "k": "Song structure",
+        "v": "Verse–chorus with a strong hook and a key change or modulation for the last chorus."
+      }
+    ],
+    "why": "It takes folk rock's acoustic warmth and sunshine pop's harmony singing and removes every rough edge, so melody and vocal blend are all that remain.",
+    "artists": [
+      "Bread",
+      "Carpenters",
+      "America",
+      "Fleetwood Mac",
+      "Eagles"
+    ],
+    "albums": [
+      {
+        "t": "Rumours",
+        "a": "Fleetwood Mac"
+      },
+      {
+        "t": "On the Waters",
+        "a": "Bread"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Make It with You",
+        "a": "Bread",
+        "why": "A 1970 No. 1 that set the template — hushed vocal, acoustic strum and strings with nothing abrasive anywhere."
+      },
+      {
+        "t": "(They Long to Be) Close to You",
+        "a": "Carpenters"
+      },
+      {
+        "t": "Dreams",
+        "a": "Fleetwood Mac"
+      }
+    ],
+    "tempo": "70–120 BPM",
+    "tempoNote": "Unhurried ballads and easy mid-tempo — 'Dreams' sits around 120 but feels slower."
+  },
+  {
+    "id": "ozpubpunk",
+    "name": "Australian Pub Punk",
+    "aka": "Oz Punk · Swamp Rock",
+    "fam": "rock",
+    "year": 1976,
+    "role": "branch",
+    "yOff": 230,
+    "def": "The Australian line that ran Detroit proto-punk through the beer-barn circuit — the Saints and Radio Birdman in 1976–77, then a blues-rotted swamp strain (the Scientists, the Birthday Party, Beasts of Bourbon) that persists in the Drones, Tropical Fuck Storm and Amyl and the Sniffers.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Overdriven, trebly guitars; from the 80s, slide, tremolo and swamp-blues sludge."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Flat-out downstroke punk or a lurching, tom-heavy swamp stomp."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Snarled, drawled or howled — Australian accent unhidden."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Brisbane, Sydney, Perth and Melbourne pubs; isolation from UK and US scenes, with the Birthday Party exporting the sound to London in 1980."
+      }
+    ],
+    "why": "Geographic isolation meant the Stooges, MC5 and blues records were absorbed without punk's fashion, so the result is heavier, swampier and more hostile than its UK or New York cousins.",
+    "artists": [
+      "The Saints",
+      "Radio Birdman",
+      "The Scientists",
+      "The Birthday Party",
+      "Beasts of Bourbon",
+      "The Drones",
+      "Tropical Fuck Storm",
+      "Amyl and the Sniffers"
+    ],
+    "albums": [
+      {
+        "t": "(I'm) Stranded",
+        "a": "The Saints"
+      },
+      {
+        "t": "Junkyard",
+        "a": "The Birthday Party"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "(I'm) Stranded",
+        "a": "The Saints",
+        "why": "Self-released in Brisbane in September 1976, before the Damned or the Pistols had a record out — the first punk single from outside the US."
+      },
+      {
+        "t": "Swampland",
+        "a": "The Scientists"
+      },
+      {
+        "t": "Release the Bats",
+        "a": "The Birthday Party"
+      }
+    ],
+    "tempo": "80–190 BPM",
+    "tempoNote": "Two speeds: Saints/Birdman punk tempo and the slow, dragging swamp lurch of the Scientists and Beasts."
+  }
+]
