@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="la-data.js"></script>
+<style>
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;height:100%;background:#0a0c10;overscroll-behavior:none;-webkit-text-size-adjust:100%;}
+.gx-root{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+.gx-root button,.gx-root input,.gx-root a{touch-action:manipulation;}
+.gx-panel{-webkit-user-select:text;user-select:text;}
+/* perf degrade while a touch pan/pinch/glide is live: glows + label text are what blow the iOS tile re-raster budget */
+.gx-perf [data-node] div{box-shadow:none !important;transition:none !important;}
+.gx-perf svg text{display:none !important;}
+body{font-family:'Schibsted Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@keyframes gxpulse{0%{transform:scale(1);opacity:.6;}70%{transform:scale(1.7);opacity:0;}100%{opacity:0;}}
+@keyframes gxeq{0%,100%{height:4px;}50%{height:15px;}}
+.gxscroll::-webkit-scrollbar{width:8px;}
+.gxscroll::-webkit-scrollbar-thumb{background:rgba(255,255,255,.13);border-radius:4px;}
+.gxscroll::-webkit-scrollbar-track{background:transparent;}
+input[type=range].gxr{-webkit-appearance:none;appearance:none;width:100%;height:16px;background:transparent;cursor:pointer;}
+input[type=range].gxr::-webkit-slider-runnable-track{height:2px;background:rgba(255,255,255,.18);border-radius:2px;}
+input[type=range].gxr::-webkit-slider-thumb{-webkit-appearance:none;width:15px;height:15px;border-radius:50%;background:#eef0f3;margin-top:-6.5px;box-shadow:0 0 0 4px rgba(238,240,243,.10);}
+input[type=range].gxr::-moz-range-track{height:2px;background:rgba(255,255,255,.18);border-radius:2px;}
+input[type=range].gxr::-moz-range-thumb{width:15px;height:15px;border:none;border-radius:50%;background:#eef0f3;}
+@supports (height:100dvh){ .gx-root{ height:100dvh !important; } }
+@media (max-width:720px){
+  .gx-title-main{ font-size:16px !important; }
+  .gx-title-sub{ font-size:8px !important; letter-spacing:.13em !important; }
+  .gx-title-wrap{ top:calc(env(safe-area-inset-top, 0px) + 12px) !important; left:14px !important; max-width:46vw !important; }
+  .gx-top{ top:calc(env(safe-area-inset-top, 0px) + 10px) !important; right:12px !important; gap:6px !important; }
+  .gx-top button{ font-size:11px !important; padding:8px 9px !important; }
+  .gx-search input{ width:118px !important; font-size:16px !important; padding:7px 26px 7px 10px !important; }
+  .gx-search input{ background:#15171b !important; backdrop-filter:none !important; }
+  .gx-search input:focus{ width:172px !important; background:#15171b !important; }
+  .gx-top button{ background:#15171b !important; }
+  .gx-srch-dd{ position:fixed !important; left:12px !important; right:12px !important; top:calc(env(safe-area-inset-top, 0px) + 56px) !important; width:auto !important; max-height:46vh !important; }
+  .gx-panel{ top:auto !important; bottom:0 !important; left:0 !important; right:0 !important; width:auto !important; height:60vh !important; border-left:none !important; border-top:1px solid rgba(255,255,255,.12) !important; border-radius:20px 20px 0 0 !important; box-shadow:0 -24px 70px rgba(0,0,0,.55) !important; }
+  .gx-legend{ width:182px !important; bottom:calc(env(safe-area-inset-bottom, 0px) + 16px) !important; left:12px !important; }
+  .gx-ctrl{ right:12px !important; bottom:150px !important; }
+  .gx-sheet .gx-ctrl{ bottom: calc(60vh + 14px) !important; }
+  .gx-peek .gx-panel{ height:auto !important; max-height:222px !important; overflow:hidden !important; }
+  .gx-peek .gx-ctrl{ bottom:236px !important; }
+  .gx-ctrl button{ width:38px !important; height:38px !important; }
+  .gx-slider{ width:auto !important; left:12px !important; right:12px !important; transform:none !important; bottom:calc(env(safe-area-inset-bottom, 0px) + 14px) !important; }
+  .gx-journey{ width:auto !important; left:12px !important; right:12px !important; transform:none !important; bottom:calc(env(safe-area-inset-bottom, 0px) + 14px) !important; }
+  .gx-focus{ top:calc(env(safe-area-inset-top, 0px) + 92px) !important; left:12px !important; transform:none !important; max-width:calc(100vw - 24px) !important; }
+  .gx-focus span{ flex:0 0 auto; }
+  .gx-focus span:nth-child(2){ flex:1 1 auto; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .gx-crumb{ max-width:calc(100vw - 24px) !important; top:92px !important; left:12px !important; transform:none !important; overflow-x:auto; }
+}
+.gx-immersive .gx-top, .gx-immersive .gx-title-wrap, .gx-immersive .gx-legend, .gx-immersive .gx-crumb{ display:none !important; }
+</style>
+</helmet>
+<div data-screen-label="Atlas Overview" ref="{{ rootRef }}" class="{{ rootClass }}" style="position:fixed;inset:0;overflow:hidden;background:radial-gradient(125% 95% at 72% -5%, #11151c 0%, #0a0c10 52%, #07080b 100%);color:#e7eaee;">
+
+  <div ref="{{ viewportRef }}" style="position:absolute;inset:0;cursor:grab;overflow:hidden;touch-action:none;">
+    <div ref="{{ worldRef }}" style="{{ worldStyle }}">
+
+      <sc-for list="{{ dividers }}" as="d" hint-placeholder-count="7">
+        <div style="{{ d.style }}"></div>
+      </sc-for>
+
+      <div style="{{ rootColStyle }}"></div>
+      <div style="{{ rootHeadStyle }}">
+        <div style="font-size:12.5px;">Root · antiquity → 1865</div>
+        <div style="font-size:9.5px;color:#565d68;margin-top:5px;letter-spacing:.12em;">the Western art-music stem · read downward</div>
+      </div>
+      <div style="position:absolute;left:700px;top:0;width:1px;height:3760px;background:linear-gradient(180deg,transparent 0,rgba(255,255,255,.11) 2%,rgba(255,255,255,.11) 98%,transparent);"></div>
+      <div style="position:absolute;left:700px;top:52px;transform:translateX(-50%);text-align:center;font-family:'JetBrains Mono',monospace;letter-spacing:.2em;color:#6b7280;white-space:nowrap;text-transform:uppercase;">
+        <div style="font-size:12.5px;">1865 · recorded era ▶</div>
+        <div style="font-size:9.5px;color:#4d545f;margin-top:5px;">true scale, stretched toward now</div>
+      </div>
+      <sc-for list="{{ ticks }}" as="t" hint-placeholder-count="6">
+        <div style="{{ t.line }}"></div>
+        <div style="{{ t.lab }}">{{ t.label }}</div>
+      </sc-for>
+      <sc-for list="{{ bands }}" as="b" hint-placeholder-count="8">
+        <div data-band="" onClick="{{ b.onClick }}" style="{{ b.style }}">{{ b.label }}</div>
+      </sc-for>
+
+      <svg width="{{ worldW }}" height="{{ worldH }}" style="position:absolute;left:0;top:0;overflow:visible;pointer-events:none;">
+        <sc-for list="{{ edges }}" as="e" hint-placeholder-count="60">
+          <g>
+            <path d="{{ e.d }}" fill="none" stroke="{{ e.color }}" strokeWidth="{{ e.w }}" strokeDasharray="{{ e.dash }}" strokeLinecap="round" opacity="{{ e.op }}" style="{{ e.pathStyle }}"></path>
+            <path d="{{ e.d }}" fill="none" stroke="transparent" strokeWidth="16" style="pointer-events:stroke;cursor:pointer;" onClick="{{ e.onClick }}"></path>
+            <text x="{{ e.mx }}" y="{{ e.my }}" fill="{{ e.color }}" fontSize="12.5" textAnchor="middle" opacity="{{ e.labelOp }}" style="{{ e.labelStyle }}">{{ e.label }}</text>
+          </g>
+        </sc-for>
+      </svg>
+
+      <sc-for list="{{ nodes }}" as="n" hint-placeholder-count="40">
+        <div data-node="" style="{{ n.container }}" onClick="{{ n.onClick }}">
+          <div style="{{ n.disc }}" onMouseEnter="{{ n.onEnter }}" onMouseLeave="{{ n.onLeave }}">
+            <div style="{{ n.ring }}"></div>
+          </div>
+          <div style="{{ n.labelWrap }}">
+            <div style="{{ n.nameStyle }}">{{ n.name }}</div>
+            <div style="{{ n.metaStyle }}">{{ n.meta }}</div>
+          </div>
+        </div>
+      </sc-for>
+
+    </div>
+  </div>
+
+  <div data-ui="" class="gx-title-wrap" style="position:absolute;top:22px;left:28px;z-index:20;pointer-events:none;">
+    <div class="gx-title-main" style="font-family:'Spectral',serif;font-size:22px;color:#f2f4f6;letter-spacing:.005em;">The Music Genre Lineage Atlas</div>
+    <div class="gx-title-sub" style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;color:#6b7280;text-transform:uppercase;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ subtitle }}</div>
+  </div>
+
+  <div data-ui="" class="gx-top" style="position:absolute;top:20px;right:26px;z-index:24;display:flex;gap:10px;">
+    <div class="gx-search" style="position:relative;">
+      <input value="{{ query }}" onInput="{{ onQuery }}" placeholder="Search genres or artists…" style="font-family:'Schibsted Grotesk';font-size:12.5px;padding:9px 30px 9px 13px;width:196px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);color:#eef0f3;border-radius:9px;outline:none;" style-focus="border-color:rgba(255,255,255,.32);background:rgba(255,255,255,.08);">
+      <sc-if value="{{ hasQuery }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ onClearQuery }}" style="position:absolute;right:6px;top:50%;transform:translateY(-50%);background:none;border:none;color:#8a919b;font-size:12px;cursor:pointer;line-height:1;padding:4px;" style-hover="color:#fff;">✕</button>
+        <div class="gxscroll gx-srch-dd" style="position:absolute;top:44px;right:0;width:min(302px,88vw);max-height:56vh;overflow-y:auto;background:#13161c;border:1px solid rgba(255,255,255,.12);border-radius:13px;padding:7px;box-shadow:0 24px 70px rgba(0,0,0,.6);z-index:40;">
+          <sc-for list="{{ searchResults }}" as="r" hint-placeholder-count="3">
+            <button onClick="{{ r.onClick }}" style="display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:none;border:none;border-radius:9px;padding:9px 10px;cursor:pointer;" style-hover="background:rgba(255,255,255,.06);">
+              <span style="{{ r.dotStyle }}"></span>
+              <span style="flex:1;min-width:0;">
+                <span style="display:block;font-family:'Schibsted Grotesk';font-size:13.5px;color:#eef0f3;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ r.name }}</span>
+                <span style="display:block;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#7b828d;margin-top:2px;letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ r.sub }}</span>
+              </span>
+            </button>
+          </sc-for>
+          <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
+            <div style="padding:12px 10px;font-size:12.5px;color:#8a919b;">No genres or artists match "{{ query }}"</div>
+          </sc-if>
+        </div>
+      </sc-if>
+    </div>
+    <button onClick="{{ onTogglePaths }}" style="font-family:'Schibsted Grotesk';font-size:12.5px;padding:9px 15px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);color:#dbe0e6;border-radius:9px;cursor:pointer;display:flex;align-items:center;gap:7px;" style-hover="background:rgba(255,255,255,.1);"><span style="opacity:.7;">◇</span>{{ pathsLabel }}</button>
+    <button onClick="{{ onToggleBridges }}" style="{{ bridgeBtnStyle }}"><span style="opacity:.8;">⤬</span>{{ bridgeWord }}</button>
+    <button onClick="{{ onReset }}" style="font-family:'Schibsted Grotesk';font-size:12.5px;padding:9px 15px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);color:#dbe0e6;border-radius:9px;cursor:pointer;" style-hover="background:rgba(255,255,255,.1);">{{ resetLabel }}</button>
+  </div>
+
+  <sc-if value="{{ showPaths }}" hint-placeholder-val="{{ false }}">
+    <div data-ui="" class="gxscroll" style="position:absolute;top:68px;right:26px;width:318px;max-height:74vh;overflow-y:auto;z-index:30;background:#13161c;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:16px;box-shadow:0 24px 70px rgba(0,0,0,.55);">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;color:#6b7280;text-transform:uppercase;margin-bottom:12px;">Curated Journeys</div>
+      <sc-for list="{{ journeys }}" as="j" hint-placeholder-count="6">
+        <button onClick="{{ j.onStart }}" style="display:block;width:100%;text-align:left;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:11px;padding:13px 14px;margin-bottom:9px;cursor:pointer;" style-hover="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.16);">
+          <div style="font-family:'Spectral',serif;font-size:15.5px;color:#f2f4f6;margin-bottom:3px;">{{ j.title }}</div>
+          <div style="font-size:12px;color:#8a919b;line-height:1.4;">{{ j.subtitle }}</div>
+        </button>
+      </sc-for>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ showCrumbs }}" hint-placeholder-val="{{ false }}">
+    <div data-ui="" class="gx-crumb" style="position:absolute;top:26px;left:50%;transform:translateX(-50%);z-index:18;display:flex;align-items:center;gap:6px;background:rgba(15,17,22,.94);border:1px solid rgba(255,255,255,.08);border-radius:999px;padding:7px 15px;max-width:54vw;overflow:hidden;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.18em;color:#5a626d;margin-right:3px;">LINEAGE</span>
+      <sc-for list="{{ crumbs }}" as="c" hint-placeholder-count="2">
+        <span style="color:#4a515c;font-size:13px;">{{ c.pre }}</span>
+        <button onClick="{{ c.onClick }}" style="{{ c.style }}">{{ c.name }}</button>
+      </sc-for>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ focusActive }}" hint-placeholder-val="{{ false }}">
+    <div data-ui="" class="gx-focus" style="position:absolute;top:26px;left:50%;transform:translateX(-50%);z-index:18;display:flex;align-items:center;gap:9px;background:rgba(15,17,22,.94);border:1px solid rgba(255,255,255,.08);border-radius:999px;padding:7px 8px 7px 14px;">
+      <span style="width:9px;height:9px;border-radius:50%;background:{{ focusColor }};box-shadow:0 0 9px {{ focusColor }};"></span>
+      <span style="font-size:12.5px;color:#dbe0e6;">Focused · {{ focusLabel }}</span>
+      <button onClick="{{ onClearFocus }}" style="background:rgba(255,255,255,.07);border:none;color:#aab0b8;width:20px;height:20px;border-radius:50%;cursor:pointer;font-size:11px;line-height:1;" style-hover="color:#fff;">✕</button>
+    </div>
+  </sc-if>
+
+  <div data-ui="" class="gxscroll gx-legend" style="position:absolute;left:28px;bottom:28px;z-index:18;max-height:72vh;overflow-y:auto;background:rgba(13,16,20,.95);border:1px solid rgba(255,255,255,.08);border-radius:13px;width:228px;">
+    <button onClick="{{ onToggleLegend }}" style="display:flex;align-items:center;justify-content:space-between;width:100%;background:none;border:none;color:#dbe0e6;cursor:pointer;padding:13px 15px;font-family:'Schibsted Grotesk';">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#8a919b;">Legend & Filter</span>
+      <span style="{{ legendChevron }}">⌃</span>
+    </button>
+    <sc-if value="{{ legendOpen }}" hint-placeholder-val="{{ true }}">
+      <div style="padding:2px 15px 15px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:.18em;color:#565d68;margin:6px 0 9px;">SUPER-FAMILY · tap to focus</div>
+        <sc-for list="{{ famList }}" as="f" hint-placeholder-count="8">
+          <button onClick="{{ f.onClick }}" style="{{ f.rowStyle }}">
+            <span style="width:9px;height:9px;border-radius:50%;background:{{ f.color }};box-shadow:0 0 8px {{ f.glow }};flex:0 0 auto;"></span>
+            <span style="font-size:12px;">{{ f.label }}</span>
+          </button>
+        </sc-for>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:.18em;color:#565d68;margin:14px 0 9px;">EDGE TYPE</div>
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:7px;"><svg width="26" height="6"><line x1="1" y1="3" x2="25" y2="3" stroke="#9aa2ad" stroke-width="2"></line></svg><span style="font-size:11.5px;color:#c8cdd4;">Historical origin</span></div>
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:7px;"><svg width="26" height="6"><line x1="1" y1="3" x2="25" y2="3" stroke="#9aa2ad" stroke-width="2" stroke-dasharray="9 7"></line></svg><span style="font-size:11.5px;color:#c8cdd4;">Stylistic influence</span></div>
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:7px;"><svg width="26" height="6"><line x1="1" y1="3" x2="25" y2="3" stroke="#9aa2ad" stroke-width="2" stroke-dasharray="2 5"></line></svg><span style="font-size:11.5px;color:#c8cdd4;">Production influence</span></div>
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:7px;"><svg width="26" height="6"><line x1="1" y1="3" x2="25" y2="3" stroke="#9aa2ad" stroke-width="2" stroke-dasharray="1 7"></line></svg><span style="font-size:11.5px;color:#c8cdd4;">Scene adjacency</span></div>
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:7px;"><svg width="26" height="6"><line x1="1" y1="3" x2="25" y2="3" stroke="#9aa2ad" stroke-width="2" stroke-dasharray="11 5 2 5"></line></svg><span style="font-size:11.5px;color:#c8cdd4;">Revival / reinterpretation</span></div>
+        <div style="display:flex;align-items:center;gap:9px;"><svg width="26" height="6"><line x1="1" y1="3" x2="25" y2="3" stroke="#e7eaee" stroke-width="3" stroke-dasharray="13 5"></line></svg><span style="font-size:11.5px;color:#c8cdd4;">Cross-family bridge</span></div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:.18em;color:#565d68;margin:14px 0 9px;">NODE ROLE</div>
+        <div style="display:flex;flex-wrap:wrap;gap:9px 14px;">
+          <div style="display:flex;align-items:center;gap:7px;"><svg width="16" height="16"><circle cx="8" cy="8" r="6" fill="none" stroke="#aab0b8" stroke-width="1.4"></circle><circle cx="8" cy="8" r="3" fill="#aab0b8"></circle></svg><span style="font-size:11px;color:#c8cdd4;">Foundational</span></div>
+          <div style="display:flex;align-items:center;gap:7px;"><svg width="16" height="16"><circle cx="8" cy="8" r="4.5" fill="#aab0b8"></circle></svg><span style="font-size:11px;color:#c8cdd4;">Branch</span></div>
+          <div style="display:flex;align-items:center;gap:7px;"><svg width="16" height="16"><rect x="3.5" y="3.5" width="9" height="9" transform="rotate(45 8 8)" fill="#aab0b8"></rect></svg><span style="font-size:11px;color:#c8cdd4;">Hybrid</span></div>
+          <div style="display:flex;align-items:center;gap:7px;"><svg width="16" height="16"><circle cx="8" cy="8" r="6" fill="none" stroke="#aab0b8" stroke-width="1.4" stroke-dasharray="2 2"></circle></svg><span style="font-size:11px;color:#c8cdd4;">Revival</span></div>
+          <div style="display:flex;align-items:center;gap:7px;"><svg width="16" height="16"><circle cx="8" cy="8" r="6" fill="none" stroke="#aab0b8" stroke-width="1"></circle><circle cx="8" cy="8" r="3.5" fill="#aab0b8"></circle></svg><span style="font-size:11px;color:#c8cdd4;">Rising</span></div>
+        </div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.06em;line-height:1.6;color:#565d68;margin-top:14px;">Drag to pan · mouse wheel or pinch to zoom · trackpad scroll to pan</div>
+      </div>
+    </sc-if>
+  </div>
+
+  <div data-ui="" class="gx-ctrl" style="position:absolute;right:26px;bottom:120px;z-index:18;display:flex;flex-direction:column;gap:8px;">
+    <sc-if value="{{ fsAvail }}" hint-placeholder-val="{{ false }}">
+      <button onClick="{{ onToggleFs }}" style="width:40px;height:40px;border-radius:11px;background:rgba(15,17,22,.92);border:1px solid rgba(255,255,255,.11);color:#dbe0e6;font-size:16px;cursor:pointer;line-height:1;" style-hover="background:rgba(255,255,255,.1);">{{ fsIcon }}</button>
+    </sc-if>
+    <button onClick="{{ onZoomIn }}" style="width:40px;height:40px;border-radius:11px;background:rgba(15,17,22,.92);border:1px solid rgba(255,255,255,.11);color:#dbe0e6;font-size:19px;cursor:pointer;line-height:1;" style-hover="background:rgba(255,255,255,.1);">+</button>
+    <button onClick="{{ onZoomOut }}" style="width:40px;height:40px;border-radius:11px;background:rgba(15,17,22,.92);border:1px solid rgba(255,255,255,.11);color:#dbe0e6;font-size:19px;cursor:pointer;line-height:1;" style-hover="background:rgba(255,255,255,.1);">−</button>
+    <button onClick="{{ onFit }}" style="width:40px;height:40px;border-radius:11px;background:rgba(15,17,22,.92);border:1px solid rgba(255,255,255,.11);color:#dbe0e6;font-size:15px;cursor:pointer;line-height:1;" style-hover="background:rgba(255,255,255,.1);">⤢</button>
+  </div>
+
+  <sc-if value="{{ showSlider }}" hint-placeholder-val="{{ true }}">
+    <div data-ui="" class="gx-slider" style="position:absolute;left:50%;transform:translateX(-50%);bottom:28px;width:min(640px,62vw);z-index:18;background:rgba(15,17,22,.94);border:1px solid rgba(255,255,255,.08);border-radius:15px;padding:14px 22px 16px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;">
+        <button onClick="{{ onPlay }}" style="font-family:'Schibsted Grotesk';font-size:12.5px;padding:7px 14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);color:#eef0f3;border-radius:8px;cursor:pointer;display:flex;align-items:center;gap:7px;" style-hover="background:rgba(255,255,255,.12);">{{ playLabel }}</button>
+        <div style="text-align:right;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:15px;color:#f2f4f6;letter-spacing:.04em;">{{ yearLabel }}</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#6b7280;letter-spacing:.1em;">{{ visibleLabel }}</div>
+        </div>
+      </div>
+      <input type="range" class="gxr" min="0" max="1000" value="{{ yearPos }}" onInput="{{ onYear }}">
+      <div style="display:flex;justify-content:space-between;margin-top:3px;font-family:'JetBrains Mono',monospace;font-size:9px;color:#565d68;letter-spacing:.05em;">
+        <span>380 BCE</span><span>1875</span><span>1935</span><span>1965</span><span>1987</span><span>NOW</span>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ inJourney }}" hint-placeholder-val="{{ false }}">
+    <div data-ui="" class="gx-journey" style="position:absolute;left:50%;transform:translateX(-50%);bottom:28px;width:min(700px,72vw);z-index:26;background:#12151b;border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:19px 24px 18px;box-shadow:0 28px 80px rgba(0,0,0,.6);">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:11px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#6b7280;text-transform:uppercase;">{{ journeyTitle }} · {{ journeyStepLabel }}</div>
+        <button onClick="{{ onExitJourney }}" style="background:none;border:none;color:#8a919b;font-size:12px;cursor:pointer;font-family:'Schibsted Grotesk';" style-hover="color:#e7eaee;">Exit ✕</button>
+      </div>
+      <div style="font-family:'Spectral',serif;font-size:21px;margin-bottom:8px;color:{{ journeyNodeColor }};">{{ journeyNodeName }}</div>
+      <div style="font-family:'Spectral',serif;font-size:16px;line-height:1.55;color:#cbd0d7;text-wrap:pretty;">{{ journeyText }}</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:16px;">
+        <div style="display:flex;gap:6px;align-items:center;">
+          <sc-for list="{{ journeyDots }}" as="d" hint-placeholder-count="4"><span style="{{ d.style }}"></span></sc-for>
+        </div>
+        <div style="display:flex;gap:9px;">
+          <button onClick="{{ onPrev }}" style="font-family:'Schibsted Grotesk';font-size:13px;padding:8px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);color:#cbd0d7;border-radius:9px;cursor:pointer;" style-hover="background:rgba(255,255,255,.1);">← Prev</button>
+          <button onClick="{{ onNext }}" style="font-family:'Schibsted Grotesk';font-size:13px;padding:8px 18px;background:#e7eaee;border:1px solid #e7eaee;color:#11141a;border-radius:9px;cursor:pointer;font-weight:600;" style-hover="background:#fff;">{{ nextLabel }}</button>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ panelNode }}" hint-placeholder-val="{{ false }}">
+    <div data-ui="" data-screen-label="Genre Detail" class="gxscroll gx-panel" style="position:absolute;top:0;right:0;height:100%;width:408px;z-index:34;background:#0d1014;border-left:1px solid rgba(255,255,255,.09);overflow-y:auto;box-shadow:-24px 0 70px rgba(0,0,0,.5);">
+      <div style="padding:26px 26px 48px;">
+        <sc-if value="{{ mobileSheet }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ onToggleSheet }}" style="display:flex;flex-direction:column;align-items:center;gap:7px;width:100%;background:none;border:none;cursor:pointer;padding:0 0 14px;margin-top:-12px;">
+            <span style="width:44px;height:4px;border-radius:2px;background:rgba(255,255,255,.24);"></span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;color:#8a919b;text-transform:uppercase;">{{ sheetHint }}</span>
+          </button>
+        </sc-if>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px;">
+          <div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap;">
+            <span style="{{ selFamChip }}">{{ selFamLabel }}</span>
+            <sc-if value="{{ selHasFam2 }}" hint-placeholder-val="{{ false }}"><span style="{{ selFam2Chip }}">+ {{ selFam2Label }}</span></sc-if>
+          </div>
+          <button onClick="{{ onClosePanel }}" style="background:none;border:none;color:#8a919b;font-size:18px;cursor:pointer;line-height:1;margin:-4px -4px 0 0;" style-hover="color:#fff;">✕</button>
+        </div>
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:12px;flex-wrap:wrap;">
+          <span style="{{ selStatusChip }}">{{ selStatus }}</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7b828d;">emerged {{ selEra }}</span>
+        </div>
+        <div style="font-family:'Spectral',serif;font-size:33px;line-height:1.05;color:#f4f6f8;margin-bottom:14px;">{{ selName }}</div>
+        <div style="font-family:'Spectral',serif;font-size:16.5px;line-height:1.6;color:#b6bcc4;text-wrap:pretty;">{{ selDef }}</div>
+
+        <sc-if value="{{ hasTempo }}" hint-placeholder-val="{{ false }}">
+          <div style="margin-top:16px;padding:11px 14px;border:1px solid rgba(255,255,255,.08);border-radius:10px;background:rgba(255,255,255,.02);">
+            <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;">
+              <span style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.18em;color:#5a626d;text-transform:uppercase;">Avg Tempo</span>
+              <span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#eef0f3;letter-spacing:.03em;">{{ selTempo }}</span>
+            </div>
+            <sc-if value="{{ hasTempoNote }}" hint-placeholder-val="{{ false }}">
+              <div style="margin-top:7px;font-size:12px;line-height:1.5;color:#8a919b;">{{ selTempoNote }}</div>
+            </sc-if>
+          </div>
+        </sc-if>
+
+        <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#5a626d;text-transform:uppercase;margin:26px 0 11px;">Key Traits · tap to expand</div>
+        <sc-for list="{{ selTraits }}" as="t" hint-placeholder-count="3">
+          <div style="margin-bottom:8px;border:1px solid rgba(255,255,255,.08);border-radius:10px;overflow:hidden;background:rgba(255,255,255,.02);">
+            <button onClick="{{ t.onToggle }}" style="display:flex;align-items:center;justify-content:space-between;width:100%;background:none;border:none;cursor:pointer;padding:10px 13px;color:#dbe0e6;font-family:'Schibsted Grotesk';" style-hover="background:rgba(255,255,255,.03);">
+              <span style="font-size:13px;font-weight:500;">{{ t.label }}</span>
+              <span style="{{ t.chev }}">⌄</span>
+            </button>
+            <sc-if value="{{ t.open }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:0 13px 12px;font-size:13px;line-height:1.5;color:#9aa2ad;">{{ t.detail }}</div>
+            </sc-if>
+          </div>
+        </sc-for>
+
+        <div style="margin-top:24px;padding:16px 17px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:13px;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.18em;color:{{ selFamColor }};text-transform:uppercase;margin-bottom:9px;">◷ Why it sounds this way</div>
+          <div style="font-family:'Spectral',serif;font-size:15.5px;line-height:1.55;color:#d4d9df;text-wrap:pretty;">{{ selWhy }}</div>
+        </div>
+
+        <sc-if value="{{ hasPreds }}" hint-placeholder-val="{{ false }}">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#5a626d;text-transform:uppercase;margin:26px 0 12px;">Predecessors</div>
+          <sc-for list="{{ selPreds }}" as="p" hint-placeholder-count="2">
+            <div style="margin-bottom:13px;">
+              <div style="display:flex;align-items:center;gap:9px;cursor:pointer;" onClick="{{ p.onSelect }}">
+                <span style="{{ p.dotStyle }}"></span>
+                <span style="flex:1;font-size:14.5px;color:#e7eaee;font-weight:500;">{{ p.name }}</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#7b828d;">{{ p.pct }}</span>
+              </div>
+              <div style="padding-left:18px;margin-top:6px;height:3px;background:rgba(255,255,255,.07);border-radius:2px;overflow:hidden;"><div style="{{ p.bar }}"></div></div>
+              <div onClick="{{ p.onEdge }}" style="padding-left:18px;margin-top:6px;font-size:11.5px;color:#868d97;cursor:pointer;" style-hover="color:#cbd0d7;">{{ p.relLabel }} ↗</div>
+            </div>
+          </sc-for>
+        </sc-if>
+
+        <sc-if value="{{ hasDescs }}" hint-placeholder-val="{{ false }}">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#5a626d;text-transform:uppercase;margin:26px 0 12px;">Descendants</div>
+          <sc-for list="{{ selDescs }}" as="p" hint-placeholder-count="2">
+            <div style="margin-bottom:13px;">
+              <div style="display:flex;align-items:center;gap:9px;cursor:pointer;" onClick="{{ p.onSelect }}">
+                <span style="{{ p.dotStyle }}"></span>
+                <span style="flex:1;font-size:14.5px;color:#e7eaee;font-weight:500;">{{ p.name }}</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#7b828d;">{{ p.pct }}</span>
+              </div>
+              <div style="padding-left:18px;margin-top:6px;height:3px;background:rgba(255,255,255,.07);border-radius:2px;overflow:hidden;"><div style="{{ p.bar }}"></div></div>
+              <div onClick="{{ p.onEdge }}" style="padding-left:18px;margin-top:6px;font-size:11.5px;color:#868d97;cursor:pointer;" style-hover="color:#cbd0d7;">{{ p.relLabel }} ↗</div>
+            </div>
+          </sc-for>
+        </sc-if>
+
+        <sc-if value="{{ hasCross }}" hint-placeholder-val="{{ false }}">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#5a626d;text-transform:uppercase;margin:26px 0 12px;">Cross-Scene Connections</div>
+          <sc-for list="{{ selCross }}" as="c" hint-placeholder-count="2">
+            <div onClick="{{ c.onEdge }}" style="margin-bottom:10px;padding:11px 12px;border:1px dashed rgba(255,255,255,.12);border-radius:11px;cursor:pointer;" style-hover="background:rgba(255,255,255,.03);">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <span style="{{ c.dotStyle }}"></span>
+                <span style="flex:1;font-size:14px;color:#e7eaee;font-weight:500;" onClick="{{ c.onSelect }}">{{ c.name }}</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.06em;color:{{ c.relColor }};text-transform:uppercase;">{{ c.relLabel }}</span>
+              </div>
+              <div style="font-size:12px;color:#868d97;line-height:1.45;margin-top:6px;">{{ c.note }}</div>
+            </div>
+          </sc-for>
+        </sc-if>
+
+        <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#5a626d;text-transform:uppercase;margin:26px 0 10px;">Representative Artists</div>
+        <div style="font-size:14.5px;color:#cbd0d7;line-height:1.6;">{{ selArtists }}</div>
+
+        <div style="display:flex;align-items:center;gap:6px;margin:26px 0 0;flex-wrap:wrap;">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.16em;color:#5a626d;text-transform:uppercase;margin-right:3px;">Listen via</span>
+          <sc-for list="{{ svcList }}" as="v" hint-placeholder-count="3">
+            <button onClick="{{ v.onClick }}" style="{{ v.style }}">{{ v.label }}</button>
+          </sc-for>
+        </div>
+        <sc-if value="{{ hasAlbums }}" hint-placeholder-val="{{ false }}">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#5a626d;text-transform:uppercase;margin:24px 0 11px;">Gateway Albums</div>
+          <sc-for list="{{ selAlbums }}" as="al" hint-placeholder-count="2">
+            <a href="{{ al.href }}" onClick="{{ al.onGo }}" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.05);text-decoration:none;" style-hover="opacity:.82;">
+              <span style="{{ al.coverStyle }}">◾</span>
+              <div style="flex:1;min-width:0;">
+                <div style="font-family:'Spectral',serif;font-size:14.5px;color:#eef0f3;font-style:italic;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ al.t }}</div>
+                <div style="font-size:11.5px;color:#868d97;">{{ al.a }}</div>
+              </div>
+              <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:{{ svcAccent }};flex:0 0 auto;">↗</span>
+            </a>
+          </sc-for>
+        </sc-if>
+
+        <div style="display:flex;align-items:center;justify-content:space-between;margin:26px 0 4px;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#5a626d;text-transform:uppercase;">Representative Tracks</div>
+          <button onClick="{{ onOpenListen }}" style="background:none;border:none;color:#54c6d6;font-size:11.5px;cursor:pointer;font-family:'Schibsted Grotesk';" style-hover="color:#7fd9e6;">Listen ↗</button>
+        </div>
+        <sc-for list="{{ selTracks }}" as="t" hint-placeholder-count="2">
+          <div style="padding:11px 0;border-bottom:1px solid rgba(255,255,255,.05);">
+            <a href="{{ t.href }}" onClick="{{ t.onGo }}" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:12px;text-decoration:none;" style-hover="opacity:.82;">
+              <span style="width:34px;height:34px;border-radius:50%;background:{{ svcAccent }};color:#0a0c10;display:flex;align-items:center;justify-content:center;flex:0 0 auto;font-size:12px;padding-left:2px;">▶</span>
+              <div style="flex:1;min-width:0;">
+                <div style="font-size:13.5px;color:#e7eaee;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ t.t }}</div>
+                <div style="font-size:11.5px;color:#868d97;">{{ t.a }}</div>
+              </div>
+              <span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:{{ svcAccent }};letter-spacing:.08em;flex:0 0 auto;">{{ svcTag }}</span>
+            </a>
+            <sc-if value="{{ t.hasWhy }}" hint-placeholder-val="{{ false }}">
+              <div style="font-size:12px;color:#7e858f;line-height:1.45;margin:7px 0 0 46px;font-style:italic;">{{ t.why }}</div>
+            </sc-if>
+          </div>
+        </sc-for>
+        <div style="font-size:10.5px;color:#565d68;line-height:1.5;margin-top:14px;">Listening links are discovery aids — representative, not a definition of lineage.</div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ panelEdge }}" hint-placeholder-val="{{ false }}">
+    <div data-ui="" class="gxscroll gx-panel" style="position:absolute;top:0;right:0;height:100%;width:408px;z-index:34;background:#0d1014;border-left:1px solid rgba(255,255,255,.09);overflow-y:auto;box-shadow:-24px 0 70px rgba(0,0,0,.5);">
+      <div style="padding:26px;">
+        <sc-if value="{{ mobileSheet }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ onToggleSheet }}" style="display:flex;flex-direction:column;align-items:center;gap:7px;width:100%;background:none;border:none;cursor:pointer;padding:0 0 14px;margin-top:-12px;">
+            <span style="width:44px;height:4px;border-radius:2px;background:rgba(255,255,255,.24);"></span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;color:#8a919b;text-transform:uppercase;">{{ sheetHint }}</span>
+          </button>
+        </sc-if>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#5a626d;text-transform:uppercase;">Influence Relationship</span>
+          <button onClick="{{ onClosePanel }}" style="background:none;border:none;color:#8a919b;font-size:18px;cursor:pointer;line-height:1;" style-hover="color:#fff;">✕</button>
+        </div>
+        <div style="display:flex;align-items:center;gap:11px;margin-bottom:24px;flex-wrap:wrap;">
+          <div style="display:flex;align-items:center;gap:7px;"><span style="width:11px;height:11px;border-radius:50%;background:{{ edgeFromColor }};box-shadow:0 0 11px {{ edgeFromColor }};"></span><span style="font-size:15px;color:#e7eaee;font-weight:500;">{{ edgeFromName }}</span></div>
+          <span style="color:#5a626d;font-size:16px;">→</span>
+          <div style="display:flex;align-items:center;gap:7px;"><span style="width:11px;height:11px;border-radius:50%;background:{{ edgeToColor }};box-shadow:0 0 11px {{ edgeToColor }};"></span><span style="font-size:15px;color:#e7eaee;font-weight:500;">{{ edgeToName }}</span></div>
+        </div>
+        <div style="font-family:'Spectral',serif;font-size:25px;color:#f4f6f8;margin-bottom:18px;">{{ edgeRel }}</div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:7px;"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;color:#7b828d;">STRENGTH OF INFLUENCE</span><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#e7eaee;">{{ edgePct }}</span></div>
+        <div style="height:5px;background:rgba(255,255,255,.07);border-radius:3px;overflow:hidden;margin-bottom:26px;"><div style="{{ edgeBar }}"></div></div>
+        <div style="font-family:'Spectral',serif;font-size:17px;line-height:1.6;color:#c4cad1;text-wrap:pretty;">{{ edgeNote }}</div>
+        <div style="display:flex;gap:10px;margin-top:28px;">
+          <button onClick="{{ onViewFrom }}" style="flex:1;font-family:'Schibsted Grotesk';font-size:13px;padding:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);color:#cbd0d7;border-radius:10px;cursor:pointer;" style-hover="background:rgba(255,255,255,.09);">View {{ edgeFromName }}</button>
+          <button onClick="{{ onViewTo }}" style="flex:1;font-family:'Schibsted Grotesk';font-size:13px;padding:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);color:#cbd0d7;border-radius:10px;cursor:pointer;" style-hover="background:rgba(255,255,255,.09);">View {{ edgeToName }}</button>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ showListen }}" hint-placeholder-val="{{ false }}">
+    <div data-ui="" onClick="{{ onCloseListen }}" style="position:absolute;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;background:rgba(4,5,7,.72);">
+      <div onClick="{{ onStop }}" class="gxscroll" style="width:min(470px,90vw);max-height:84vh;overflow-y:auto;background:#13161c;border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:28px;box-shadow:0 40px 110px rgba(0,0,0,.6);">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#5a626d;text-transform:uppercase;">Representative Listening</div>
+          <button onClick="{{ onCloseListen }}" style="background:none;border:none;color:#8a919b;font-size:18px;cursor:pointer;line-height:1;margin-top:-4px;" style-hover="color:#fff;">✕</button>
+        </div>
+        <div style="font-family:'Spectral',serif;font-size:27px;color:#f4f6f8;margin-bottom:14px;">{{ selName }}</div>
+        <div style="display:flex;align-items:center;gap:6px;margin-bottom:18px;flex-wrap:wrap;">
+          <sc-for list="{{ svcList }}" as="v" hint-placeholder-count="3">
+            <button onClick="{{ v.onClick }}" style="{{ v.style }}">{{ v.label }}</button>
+          </sc-for>
+        </div>
+        <a href="{{ playlistHref }}" onClick="{{ onGoPlaylist }}" target="_blank" rel="noopener noreferrer" style="border-radius:14px;padding:20px;background:linear-gradient(135deg, {{ svcTint }}, rgba(255,255,255,.02)), repeating-linear-gradient(45deg, rgba(255,255,255,.025) 0 10px, transparent 10px 20px);border:1px solid rgba(255,255,255,.09);display:flex;align-items:center;gap:14px;margin-bottom:20px;text-decoration:none;" style-hover="border-color:rgba(255,255,255,.35);">
+          <div style="width:46px;height:46px;border-radius:50%;background:{{ svcAccent }};display:flex;align-items:center;justify-content:center;flex:0 0 auto;color:#0a0c10;font-size:18px;padding-left:2px;">▶</div>
+          <div style="flex:1;"><div style="font-size:14px;color:#e7eaee;font-weight:600;">Open the {{ selName }} playlist</div><div style="font-size:11.5px;color:{{ svcAccent }};font-family:'JetBrains Mono',monospace;margin-top:3px;">{{ svcSearchLabel }}</div></div>
+        </a>
+        <sc-for list="{{ selTracks }}" as="t" hint-placeholder-count="2">
+          <a href="{{ t.href }}" onClick="{{ t.onGo }}" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.05);text-decoration:none;" style-hover="opacity:.82;">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#565d68;width:18px;flex:0 0 auto;">{{ t.idx }}</span>
+            <div style="flex:1;min-width:0;"><div style="font-size:13.5px;color:#e7eaee;">{{ t.t }}</div><div style="font-size:11.5px;color:#868d97;">{{ t.a }}</div></div>
+            <span style="color:{{ svcAccent }};font-size:11px;flex:0 0 auto;">↗</span>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:&quot;100%&quot;},&quot;alwaysLabels&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Display&quot;},&quot;dimInactive&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0.22,&quot;min&quot;:0.04,&quot;max&quot;:0.4,&quot;step&quot;:0.02,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Display&quot;,&quot;unit&quot;:&quot;&quot;}}">
+class Component extends DCLogic {
+  constructor(props){
+    super(props);
+    this.viewportRef = React.createRef();
+    this.worldRef = React.createRef();
+    this.rootRef = React.createRef();
+    this.view = { x:0, y:0, k:0.5 };
+    this.dragging = false;
+    this.WW = 3600; this.WH = 3760; this.PX0 = 160; this.PX1 = 560; this.MX0 = 760; this.RX = 360; this.LBX = 156; this.KMAX = 2.0;
+    this.minYear = -380; this.maxYear = 2026;
+    this.CP = [[-380,-0.2164],[900,-0.1418],[1550,-0.0709],[1865,0],[1897,0.09],[1915,0.17],[1935,0.27],[1945,0.34],[1955,0.42],[1965,0.50],[1972,0.58],[1978,0.65],[1985,0.73],[1992,0.81],[2000,0.88],[2010,0.94],[2026,1]];
+    this.relLabel = { origin:'Historical origin', stylistic:'Stylistic influence', production:'Production influence', scene:'Scene adjacency', revival:'Revival / reinterpretation', bridge:'Cross-family bridge' };
+    this.statusMap = { foundational:'Foundational', branch:'Branch-forming', classic:'Classic', hybrid:'Hybrid genre', revival:'Revivalist', rising:'Emerging' };
+    this._ready = false;
+    var _mob = (typeof window!=='undefined') && window.innerWidth<=720;
+    var _svc='spotify'; try{ _svc=localStorage.getItem('la-svc')||'spotify'; }catch(_){ }
+    this._ptrs = {}; this._pinch = null;
+    this.state = { year:2026, selectedNodeId:null, selectedEdgeId:null, hoverNodeId:null, mode:'explore', activeJourney:null, journeyStep:0, breadcrumb:[], showPaths:false, showListen:false, nowPlaying:null, playing:false, bridgeMode:false, focusFam:null, openTrait:null, legendOpen:!_mob, isMobile:_mob, query:'', svc:_svc, fsAvail:false, isFs:false, immersive:false, sheetFull:false };
+  }
+
+  ensureData(){
+    if(this._ready) return true;
+    var D = (typeof globalThis!=='undefined' && globalThis.LA_DATA) || (typeof window!=='undefined' && window.LA_DATA);
+    if(!D){ this.GENRES=[]; this.EDGES=[]; this.JOURNEYS=[]; this.FAM={}; this.famOrder=[]; return false; }
+    this.FAM=D.families; this.famOrder=D.famOrder; this.GENRES=D.genres; this.EDGES=D.edges; this.JOURNEYS=D.journeys;
+    this.byId={}; this.outDeg={}; this.inDeg={};
+    var self=this;
+    // Densest rows (rock, electronic) get extra height so the declutter pass can separate them without crossing dividers.
+    if(!this.FAM.__spaced){
+      var extra={ rock:90, metal:90, electronic:70, roots:70 }, acc=0;
+      this.famOrder.forEach(function(k){ acc+=extra[k]||0; self.FAM[k].y+=acc; });
+      Object.defineProperty(this.FAM,'__spaced',{value:true,enumerable:false});
+    }
+    this.WH=this.FAM[this.famOrder[this.famOrder.length-1]].y+440;
+    this.GENRES.forEach(function(g){ self.byId[g.id]=g; g.x=self.xFromYear(g.year); g.y=self.FAM[g.fam].y + (g.yOff||0); });
+    // Pre-1865 art-music roots form a single vertical stem, read top-down, centred on the map — not a stray column inside one family row
+    var roots=this.GENRES.filter(function(g){ return g.year<1865; }).sort(function(a,b){ return a.year-b.year; });
+    var mid=(this.FAM[this.famOrder[0]].y+this.FAM[this.famOrder[this.famOrder.length-1]].y)/2, gap=250;
+    var ry0=mid-(roots.length-1)*gap/2;
+    roots.forEach(function(g,i){ g.x=self.RX; g.y=ry0+i*gap; g._root=true; });
+    this.rootSpan={ y0:ry0-150, y1:ry0+(roots.length-1)*gap+120 };
+    this.EDGES.forEach(function(e){ self.outDeg[e.from]=(self.outDeg[e.from]||0)+1; self.inDeg[e.to]=(self.inDeg[e.to]||0)+1; });
+    this.declutter();
+    this.EDGES.forEach(function(e,i){
+      e._i='ed'+i;
+      var a=self.byId[e.from], b=self.byId[e.to];
+      e._d=self.bez(a,b); e._mx=(a.x+b.x)/2; e._my=(a.y+b.y)/2-7;   // geometry is static — compute once, not per render
+    });
+    // Main lineage: each genre's strongest same-family parent link (origin preferred), used when a family is focused.
+    this.backbone={}; var bestIn={};
+    this.EDGES.forEach(function(e){ var a=self.byId[e.from], b=self.byId[e.to]; if(a.fam!==b.fam) return;
+      var sc=(e.rel==='origin'?10:0)+(e.strength||0); var cur=bestIn[e.to]; if(!cur||sc>cur.sc) bestIn[e.to]={e:e,sc:sc}; });
+    Object.keys(bestIn).forEach(function(k){ self.backbone[bestIn[k].e._i]=true; });
+    // Artist search index: curated index (primary genre first, parents as roll-up) merged with each genre's representative artists
+    this.artistMap={};
+    var addArtist=function(name,gid){ if(!self.byId[gid])return; var k=name.toLowerCase(); var rec=self.artistMap[k]||(self.artistMap[k]={name:name,ids:[]}); if(rec.ids.indexOf(gid)<0) rec.ids.push(gid); };
+    var AI=D.artistIndex||{};
+    Object.keys(AI).forEach(function(name){ AI[name].forEach(function(gid){ addArtist(name,gid); }); });
+    this.GENRES.forEach(function(g){ (g.artists||[]).forEach(function(a){ addArtist(a,g.id); }); });
+    this._ready=true;
+    return true;
+  }
+
+  // Push apart nodes whose disc + label boxes overlap. Mostly vertical moves inside the family band; small x nudges so year order stays readable.
+  declutter(){
+    var self=this, fo=this.famOrder, F=this.FAM;
+    var band={};
+    fo.forEach(function(k,i){
+      var y=F[k].y, py=i>0?F[fo[i-1]].y:y-420, ny=i<fo.length-1?F[fo[i+1]].y:y+420;
+      band[k]={ lo:(py+y)/2, hi:(y+ny)/2 };
+    });
+    var G=this.GENRES.filter(function(g){ return !g._root; });
+    var N=G.map(function(g){
+      var r=self.nodeR(g), lw=Math.min(g.name.length*7.2+14, 2*r+150), lines=Math.ceil((g.name.length*7.2)/(2*r+150));
+      var bd=band[g.fam];
+      // Disc centre stays inside its own row; nodes hand-placed outside keep their authored y as the limit.
+      var lo=Math.min(bd.lo+r+8, g.y), hi=Math.max(bd.hi-r-28, g.y);
+      return { g:g, r:r, hw:Math.max(r+8, lw/2), top:r+6, bot:r+20+lines*15+14, x0:g.x, y0:g.y, b:{lo:lo, hi:hi} };
+    });
+    // Greedy placement: most-connected genres first, each takes the free spot nearest its authored position.
+    var XR=160, GX=8, GY=6;
+    N.sort(function(a,b){ var da=(self.outDeg[a.g.id]||0)+(self.inDeg[a.g.id]||0), db=(self.outDeg[b.g.id]||0)+(self.inDeg[b.g.id]||0); return (db-da) || (a.x0-b.x0); });
+    var placed=[];
+    var hits=function(n,x,y,list){ var c=0; for(var q=0;q<list.length;q++){ var p=list[q];
+      var ox=n.hw+p.hw+GX-Math.abs(x-p.x); if(ox<=0) continue;
+      var oy=Math.min(y+n.bot,p.y+p.bot)-Math.max(y-n.top,p.y-p.top)+GY; if(oy<=0) continue;
+      c+=ox*oy; } return c; };
+    N.forEach(function(n){
+      var near=placed.filter(function(p){ return Math.abs(p.x-n.x0) < XR+n.hw+p.hw+GX; });
+      var cands=[];
+      for(var dy=-(n.y0-n.b.lo); dy<=n.b.hi-n.y0+0.01; dy+=10){ for(var dx=-XR; dx<=XR; dx+=12){ cands.push({x:n.x0+dx, y:n.y0+dy, c:dy*dy+2.2*dx*dx}); } }
+      cands.push({x:n.x0,y:n.y0,c:-1});
+      cands.sort(function(a,b){ return a.c-b.c; });
+      var best=null, bestHit=Infinity;
+      for(var ci=0; ci<cands.length; ci++){ var cd=cands[ci], h=hits(n,cd.x,cd.y,near);
+        if(h===0){ best=cd; break; } if(h<bestHit){ bestHit=h; best=cd; } }
+      n.g.x=best.x; n.g.y=best.y; n.x=best.x; n.y=best.y; placed.push(n);
+    });
+  }
+
+  fFromYear(y){
+    var cp=this.CP;
+    if(y<=cp[0][0]) return cp[0][1];
+    if(y>=cp[cp.length-1][0]) return cp[cp.length-1][1];
+    for(var i=0;i<cp.length-1;i++){ if(y>=cp[i][0]&&y<=cp[i+1][0]){ var t=(y-cp[i][0])/(cp[i+1][0]-cp[i][0]); return cp[i][1]+t*(cp[i+1][1]-cp[i][1]); } }
+    return 0;
+  }
+
+  xFromYear(y){
+    var f=this.fFromYear(y);
+    if(f<0){ var f0=this.CP[0][1]; return this.PX0 + ((f-f0)/(0-f0))*(this.PX1-this.PX0); }
+    return this.MX0 + f*(this.WW-this.MX0-170);
+  }
+
+  posFromYear(y){ var f0=this.CP[0][1]; return (this.fFromYear(y)-f0)/(1-f0); }
+
+  yearFromPos(p){
+    var cp=this.CP, f0=cp[0][1];
+    var f=f0+Math.max(0,Math.min(1,p))*(1-f0);
+    if(f<=cp[0][1]) return cp[0][0];
+    if(f>=cp[cp.length-1][1]) return cp[cp.length-1][0];
+    for(var i=0;i<cp.length-1;i++){ if(f>=cp[i][1]&&f<=cp[i+1][1]){ var t=(f-cp[i][1])/(cp[i+1][1]-cp[i][1]); return Math.round(cp[i][0]+t*(cp[i+1][0]-cp[i][0])); } }
+    return cp[cp.length-1][0];
+  }
+
+  fmtYear(y){ return y<0 ? (-y)+' BCE' : (y<1000 ? y+' CE' : ''+y); }
+
+  rgba(fam,a){ return 'rgba('+this.FAM[fam].rgb+','+a+')'; }
+  spfy(q){ return 'https://open.spotify.com/search/'+encodeURIComponent(q); }
+  musicHref(q){ var v=this.state.svc; return v==='apple' ? 'https://music.apple.com/search?term='+encodeURIComponent(q) : v==='bandcamp' ? 'https://bandcamp.com/search?q='+encodeURIComponent(q) : v==='youtube' ? 'https://www.youtube.com/results?search_query='+encodeURIComponent(q) : this.spfy(q); }
+  setSvc(k){ try{ localStorage.setItem('la-svc',k); }catch(_){ } this.setState({svc:k}); }
+  goLink(q){
+    var self=this;
+    return function(e){
+      if(self.state.svc!=='spotify' || self.state.isMobile) return;
+      e.preventDefault(); e.stopPropagation();
+      var web=self.spfy(q), done=false;
+      var timer=setTimeout(function(){ cleanup(); window.open(web,'_blank','noopener'); },1300);
+      function cleanup(){ if(done)return; done=true; clearTimeout(timer); window.removeEventListener('blur',onAway); document.removeEventListener('visibilitychange',onVis); }
+      function onAway(){ cleanup(); }
+      function onVis(){ if(document.hidden) cleanup(); }
+      window.addEventListener('blur',onAway);
+      document.addEventListener('visibilitychange',onVis);
+      try{ window.location.href='spotify:search:'+encodeURIComponent(q); }catch(_){ cleanup(); window.open(web,'_blank','noopener'); }
+    };
+  }
+  hex(fam){ return this.FAM[fam].color; }
+  bez(a,b){ var dx=b.x-a.x; return 'M '+a.x+' '+a.y+' C '+(a.x+dx*0.42)+' '+a.y+', '+(a.x+dx*0.58)+' '+b.y+', '+b.x+' '+b.y; }
+  dashFor(rel){ return rel==='origin'?'none':rel==='stylistic'?'9 7':rel==='production'?'2 6':rel==='scene'?'1 8':rel==='revival'?'12 5 2 6':'14 5'; }
+  baseR(role){ return role==='foundational'?30:role==='hybrid'?25:role==='revival'?23:role==='rising'?24:23; }
+  nodeR(g){ return this.baseR(g.role) + Math.min(9,((this.outDeg[g.id]||0)+(this.inDeg[g.id]||0))*0.9); }
+
+  _setPerf(on){ var r=this.rootRef&&this.rootRef.current; if(!r)return; if(on)r.classList.add('gx-perf'); else r.classList.remove('gx-perf'); }
+
+  _stopGlide(){ if(this._glide){ cancelAnimationFrame(this._glide); this._glide=null; this._setPerf(false); } }
+
+  _startGlide(){
+    var self=this, v=this._vel||{x:0,y:0};
+    var speed=Math.hypot(v.x,v.y);
+    if(speed<0.08) return;                       // not a flick, just a slow release
+    var vx=Math.max(-3.2,Math.min(3.2,v.x)), vy=Math.max(-3.2,Math.min(3.2,v.y));
+    var prev=performance.now();
+    var step=function(now){
+      var dt=Math.min(34, now-prev); prev=now;
+      var decay=Math.pow(0.9955, dt*2);
+      vx*=decay; vy*=decay;
+      self.view.x+=vx*dt; self.view.y+=vy*dt;
+      self.applyTransform(false);
+      if(Math.hypot(vx,vy)>0.02){ self._glide=requestAnimationFrame(step); } else { self._glide=null; self._setPerf(false); }
+    };
+    this._glide=requestAnimationFrame(step);
+  }
+
+  applyTransform(animated){ var w=this.worldRef.current; if(!w)return; w.style.transition=animated?'transform .7s cubic-bezier(.22,.61,.36,1)':'none'; w.style.transform='translate('+this.view.x+'px,'+this.view.y+'px) scale('+this.view.k+')'; }
+
+  fitView(animated){
+    var vp=this.viewportRef.current; if(!vp||!this.GENRES||!this.GENRES.length)return;
+    var r=vp.getBoundingClientRect();
+    var x0=Infinity,y0=Infinity,x1=-Infinity,y1=-Infinity;
+    this.GENRES.forEach(function(g){ x0=Math.min(x0,g.x); y0=Math.min(y0,g.y); x1=Math.max(x1,g.x); y1=Math.max(y1,g.y); });
+    x0=this.LBX-24; y0-=120; x1+=150; y1+=120;
+    var cw=x1-x0, ch=y1-y0;
+    var k=Math.max(0.16,Math.min(0.7,Math.min((r.width-60)/cw,(r.height-200)/ch)));
+    var vx = cw*k > r.width-24 ? 12 - x0*k : (r.width-cw*k)/2 - x0*k;
+    this.view={ x:vx, y:(r.height-ch*k)/2 - y0*k - 8, k:k };
+    this.applyTransform(animated);
+  }
+
+  // Fit a set of nodes into the viewport area not covered by overlays (header, bottom panel/slider).
+  fitNodes(list, opts){
+    opts=opts||{};
+    var vp=this.viewportRef.current; if(!vp||!list||!list.length)return false;
+    var r=vp.getBoundingClientRect(); var mob=this.state.isMobile;
+    var top = mob?80:72, bottom = mob?40:40, left = mob?16:32, right = mob?16:32, pad=20;
+    var root=this.rootRef&&this.rootRef.current||document;
+    // Every visible top-level overlay (header, legend, focus chip, side panel, slider/journey) pushes in from whichever edge costs the least area.
+    var els=root.querySelectorAll?Array.prototype.slice.call(root.querySelectorAll('[data-ui]')):[];
+    els.forEach(function(el){
+      if(el.parentElement && el.parentElement.closest('[data-ui]')) return;
+      var b=el.getBoundingClientRect(); if(b.width<4||b.height<4) return;
+      if(getComputedStyle(el).visibility==='hidden'||+getComputedStyle(el).opacity===0) return;
+      if(b.right<=r.left||b.left>=r.right||b.bottom<=r.top||b.top>=r.bottom) return;
+      var c=[
+        {s:'left', v:b.right-r.left+pad},
+        {s:'right', v:r.right-b.left+pad},
+        {s:'top', v:b.bottom-r.top+pad},
+        {s:'bottom', v:r.bottom-b.top+pad}
+      ].map(function(o){
+        var L=left,R=right,T=top,B=bottom;
+        if(o.s==='left')L=Math.max(L,o.v); if(o.s==='right')R=Math.max(R,o.v); if(o.s==='top')T=Math.max(T,o.v); if(o.s==='bottom')B=Math.max(B,o.v);
+        o.area=Math.max(0,r.width-L-R)*Math.max(0,r.height-T-B); return o;
+      }).sort(function(a,b2){ return b2.area-a.area; })[0];
+      if(c.s==='left')left=Math.max(left,c.v); else if(c.s==='right')right=Math.max(right,c.v); else if(c.s==='top')top=Math.max(top,c.v); else bottom=Math.max(bottom,c.v);
+    });
+    var x0=Infinity,y0=Infinity,x1=-Infinity,y1=-Infinity, self=this;
+    list.forEach(function(g){ var rr=self.nodeR?self.nodeR(g):30; x0=Math.min(x0,g.x-rr-60); x1=Math.max(x1,g.x+rr+60); y0=Math.min(y0,g.y-rr-20); y1=Math.max(y1,g.y+rr+56); });
+    var aw=Math.max(80,r.width-left-right), ah=Math.max(80,r.height-top-bottom);
+    var k=Math.min(aw/(x1-x0), ah/(y1-y0));
+    if(opts.minK && k<opts.minK) return false;
+    k=Math.max(0.16, Math.min(this.KMAX||2, opts.maxK||1.1, k));
+    var cx=(x0+x1)/2, cy=(y0+y1)/2;
+    this.view={ x:left+aw/2-cx*k, y:top+ah/2-cy*k, k:k };
+    this.applyTransform(true);
+    return true;
+  }
+  fitJourney(){
+    var j=this.state.activeJourney; if(!j)return; var self=this;
+    var ids=j.steps.map(function(x){return x.id;}), i=this.state.journeyStep;
+    var all=ids.map(function(id){return self.byId[id];});
+    var minK=this.state.isMobile?0.32:0.4;
+    if(i===0 && this.fitNodes(all,{minK:minK})) return;
+    var win=all.slice(0, Math.min(all.length, i+2));
+    if(this.fitNodes(win,{minK:minK})) return;
+    this.fitNodes(all.slice(Math.max(0,i-1), Math.min(all.length, i+2)));
+  }
+
+  centerOnNode(node,k,panelOpen){
+    var vp=this.viewportRef.current; if(!vp)return;
+    var r=vp.getBoundingClientRect();
+    var tx = (panelOpen && !this.state.isMobile) ? (r.width-408)/2 : r.width/2;
+    var ty = this.state.isMobile ? Math.max(110,(r.height-230)*0.45) : r.height*0.46;
+    this.view={ x:tx-node.x*k, y:ty-node.y*k, k:k };
+    this.applyTransform(true);
+  }
+
+  zoom(f){
+    var vp=this.viewportRef.current; if(!vp)return;
+    var r=vp.getBoundingClientRect(); var mx=r.width/2, my=r.height/2;
+    var wx=(mx-this.view.x)/this.view.k, wy=(my-this.view.y)/this.view.k;
+    var nk=Math.min(this.KMAX,Math.max(0.16,this.view.k*f));
+    this.view={ x:mx-wx*nk, y:my-wy*nk, k:nk };
+    this.applyTransform(true);
+  }
+
+  // Hover highlighting is applied imperatively (direct DOM writes), never through setState:
+  // a React re-render of the full map repaints staggered over several frames and reads as a blink.
+  setState(u,cb){ this._clearHoverDim(); return super.setState(u,cb); }
+
+  _hoverEls(){
+    var w=this.worldRef&&this.worldRef.current; if(!w) return null;
+    if(!this._hEls || this._hEls.nodes.length!==this.GENRES.length){
+      this._hEls={ nodes:Array.prototype.slice.call(w.querySelectorAll('[data-node]')),
+                   gs:Array.prototype.slice.call(w.querySelectorAll('svg > g')) };
+    }
+    return this._hEls;
+  }
+
+  _clearHoverDim(){
+    this._hoverId=null;
+    if(!this._hoverDimOn) return;
+    this._hoverDimOn=false;
+    var E=this._hEls; if(!E) return;
+    E.nodes.forEach(function(el){ el.style.opacity=''; });
+    E.gs.forEach(function(g){ var c=g.children;
+      if(c[0]) c[0].style.opacity='';
+      if(c[2]){ c[2].style.opacity=''; }
+    });
+  }
+
+  _applyHover(id){
+    var s=this.state;
+    // hover dim only in neutral explore mode — selection, journeys, bridge and family focus own the highlight
+    if(s.selectedNodeId||s.selectedEdgeId||s.bridgeMode||s.focusFam||s.playing||s.mode==='journey'){ this._clearHoverDim(); return; }
+    var E=this._hoverEls(); if(!E) return;
+    if(!id){ this._clearHoverDim(); return; }
+    var self=this, dimAmt=(this.props.dimInactive!=null)?this.props.dimInactive:0.22;
+    var rel=new Set([id]);
+    this.EDGES.forEach(function(e){ if(e.from===id)rel.add(e.to); if(e.to===id)rel.add(e.from); });
+    this._hoverDimOn=true;
+    this.GENRES.forEach(function(g,i){ var el=E.nodes[i]; if(!el||g.year>s.year) return;
+      el.style.opacity = rel.has(g.id)?'1':String(dimAmt);
+    });
+    this.EDGES.forEach(function(e,i){ var gEl=E.gs[i]; if(!gEl) return;
+      var a=self.byId[e.from], b=self.byId[e.to];
+      if(a.year>s.year||b.year>s.year) return;
+      var act=(e.from===id||e.to===id), c=gEl.children;
+      if(c[0]) c[0].style.opacity = act?'0.95':'0.05';
+      if(c[2]){ if(act){ c[2].style.display='block'; c[2].style.opacity='0.92'; } else { c[2].style.opacity=''; } }
+    });
+  }
+
+  setHover(id){
+    if(this.dragging || this.state.playing) return;
+    var self=this;
+    clearTimeout(this._hoverT);
+    if(id){
+      if(this._hoverId===id) return;
+      if(this._hoverId){ this._hoverId=id; this._applyHover(id); }
+      else this._hoverT=setTimeout(function(){ if(!self.dragging){ self._hoverId=id; self._applyHover(id); } },90);
+    }
+    else { this._hoverT=setTimeout(function(){ self._clearHoverDim(); },250); }
+  }
+
+  selectNode(id, viaLink){
+    clearInterval(this._t);
+    var self=this;
+    this.setState(function(p){
+      var bc=p.breadcrumb.slice();
+      if(viaLink){ var i=bc.indexOf(id); bc = i>=0 ? bc.slice(0,i+1) : bc.concat([id]); } else bc=[id];
+      return { selectedNodeId:id, selectedEdgeId:null, mode:'explore', activeJourney:null, showPaths:false, showListen:false, breadcrumb:bc, year:Math.max(p.year, self.byId[id].year), playing:false, hoverNodeId:null, bridgeMode:false, focusFam:null, openTrait:null, sheetFull:false, query:'' };
+    });
+    var node=this.byId[id];
+    var k = self.state.isMobile ? Math.max(self.view.k,0.6) : Math.max(self.view.k,0.85);
+    requestAnimationFrame(function(){ self.centerOnNode(node, k, true); });
+  }
+
+  selectEdge(i){
+    clearInterval(this._t);
+    this.setState({ selectedEdgeId:i, selectedNodeId:null, showPaths:false, showListen:false, playing:false, hoverNodeId:null, sheetFull:false });
+    var e=this.EDGES.find(function(x){return x._i===i;});
+    var self=this;
+    if(e){ var a=this.byId[e.from], b=this.byId[e.to]; requestAnimationFrame(function(){ self.centerOnNode({x:(a.x+b.x)/2,y:(a.y+b.y)/2}, Math.max(self.view.k,0.8), true); }); }
+  }
+
+  closePanel(){ this.setState({ selectedNodeId:null, selectedEdgeId:null, breadcrumb:[], showListen:false, showPaths:false, sheetFull:false }); }
+
+  togglePlay(){
+    if(this.state.playing){ clearInterval(this._t); this.setState({playing:false}); return; }
+    this._pos = this.state.year>=this.maxYear ? 0 : this.posFromYear(this.state.year);
+    this.setState({ year:this.yearFromPos(this._pos), playing:true, selectedNodeId:null, selectedEdgeId:null });
+    var self=this;
+    this._t=setInterval(function(){
+      self._pos += 0.008;
+      if(self._pos>=1){ clearInterval(self._t); self.setState({year:self.maxYear, playing:false}); return; }
+      self.setState({ year:self.yearFromPos(self._pos) });
+    },110);
+  }
+
+  startJourney(id){
+    clearInterval(this._t);
+    var j=this.JOURNEYS.find(function(x){return x.id===id;});
+    this.setState({ mode:'journey', activeJourney:j, journeyStep:0, selectedNodeId:null, selectedEdgeId:null, showPaths:false, showListen:false, breadcrumb:[], year:this.maxYear, playing:false, hoverNodeId:null, bridgeMode:false, focusFam:null });
+    var self=this;
+    requestAnimationFrame(function(){ requestAnimationFrame(function(){ self.fitJourney(); }); });
+  }
+  journeyGo(delta){
+    var self=this;
+    this.setState(function(p){ var ns=Math.max(0, Math.min(p.activeJourney.steps.length-1, p.journeyStep+delta)); return {journeyStep:ns}; },
+      function(){ requestAnimationFrame(function(){ self.fitJourney(); }); });
+  }
+  exitJourney(){ this.setState({ mode:'explore', activeJourney:null, journeyStep:0 }); this.fitView(true); }
+
+  toggleBridges(){ clearInterval(this._t); this.setState(function(p){ return { bridgeMode:!p.bridgeMode, focusFam:null, selectedNodeId:null, selectedEdgeId:null, breadcrumb:[], mode:'explore', activeJourney:null, showPaths:false, playing:false }; }); }
+  focusFamily(k){
+    var self=this; this._focusT=Date.now(); clearInterval(this._focusTick);
+    this._focusTick=setInterval(function(){ if(Date.now()-self._focusT>3600 || !self.state.focusFam){ clearInterval(self._focusTick); } self.forceUpdate(); }, 90);
+    this.setState(function(p){ return { focusFam: p.focusFam===k?null:k, bridgeMode:false, selectedNodeId:null, selectedEdgeId:null }; }, function(){
+      var f=self.state.focusFam; if(!f) return;
+      var yr=self.state.year, list=self.GENRES.filter(function(g){ return g.fam===f && g.year<=yr; });
+      requestAnimationFrame(function(){ self.fitNodes(list,{maxK:0.95}); });
+    }); }
+
+  resetView(){ clearInterval(this._t); this.setState({ year:this.maxYear, selectedNodeId:null, selectedEdgeId:null, breadcrumb:[], mode:'explore', activeJourney:null, showPaths:false, showListen:false, hoverNodeId:null, playing:false, bridgeMode:false, focusFam:null, openTrait:null, query:'' }); this.fitView(true); }
+
+  playTrack(t){ this.setState(function(p){ return { nowPlaying: p.nowPlaying===t ? null : t }; }); }
+  toggleImmersive(){ var self=this; this.setState(function(p){ return {immersive:!p.immersive}; }, function(){ self.fitView(true); }); }
+  toggleFs(){
+    var self=this, el=this.rootRef.current||document.documentElement, d=document;
+    var canFs = !!(el.requestFullscreen||el.webkitRequestFullscreen);
+    if(!canFs){ this.toggleImmersive(); return; }
+    var fsEl=d.fullscreenElement||d.webkitFullscreenElement;
+    try{
+      var p = fsEl
+        ? (d.exitFullscreen||d.webkitExitFullscreen).call(d)
+        : (el.requestFullscreen||el.webkitRequestFullscreen).call(el);
+      if(p && p.catch){ p.catch(function(){ self.toggleImmersive(); }); }
+    }catch(e){ this.toggleImmersive(); }
+  }
+  toggleTrait(key){ this.setState(function(p){ return { openTrait: p.openTrait===key ? null : key }; }); }
+
+  doFit(){ var vp=this.viewportRef.current; if(!vp)return false; var r=vp.getBoundingClientRect(); if(r.width<60||r.height<60) return false; this.fitView(false); this._fitDone=true; return true; }
+
+  componentDidMount(){
+    var self=this;
+    if(!this.ensureData()){
+      this._poll=setInterval(function(){ if(self.ensureData()){ clearInterval(self._poll); self.forceUpdate(); requestAnimationFrame(function(){ self.doFit(); }); setTimeout(function(){ self.doFit(); },140); } },40);
+    }
+    var vp=this.viewportRef.current;
+    this._onDown=function(e){
+      if(e.pointerType==='mouse' && e.button!==0) return;
+      if(e.target.closest('[data-ui]')) return;
+      self._stopGlide(); self._suppressClick=false;
+      self._ptrs[e.pointerId]={x:e.clientX,y:e.clientY};
+      var ids=Object.keys(self._ptrs);
+      if(ids.length>=2){ try{ vp.setPointerCapture(e.pointerId); }catch(_){} }
+      if(ids.length===1){
+        self.dragging=true; self._moved=false; self._start={x:e.clientX,y:e.clientY,vx:self.view.x,vy:self.view.y};
+        self._vel={x:0,y:0}; self._last={x:e.clientX,y:e.clientY,t:(e.timeStamp||performance.now())};
+        vp.style.cursor='grabbing'; clearTimeout(self._hoverT); self._clearHoverDim();
+      } else if(ids.length>=2){ self.dragging=false; self._pinch=null; self._moved=true; self._suppressClick=true; self._vel={x:0,y:0}; }
+    };
+    // a pan that started on a node must not fire that node's click
+    this._onClickCapture=function(e){
+      if(self._suppressClick && !e.target.closest('[data-ui]')){ self._suppressClick=false; e.stopPropagation(); e.preventDefault(); }
+    };
+    vp.addEventListener('click',this._onClickCapture,true);
+    this._onMove=function(e){
+      if(self._ptrs[e.pointerId]) self._ptrs[e.pointerId]={x:e.clientX,y:e.clientY};
+      var ids=Object.keys(self._ptrs);
+      if(ids.length>=2){
+        var a=self._ptrs[ids[0]], b=self._ptrs[ids[1]];
+        var dist=Math.hypot(a.x-b.x,a.y-b.y); if(dist<1) return;
+        var r=vp.getBoundingClientRect();
+        var midX=(a.x+b.x)/2-r.left, midY=(a.y+b.y)/2-r.top;
+        if(!self._pinch){ self._pinch={dist:dist, k:self.view.k, vx:self.view.x, vy:self.view.y}; self._setPerf(true); return; }
+        var nk=Math.min(self.KMAX, Math.max(0.12, self._pinch.k*(dist/self._pinch.dist)));
+        var wx=(midX-self._pinch.vx)/self._pinch.k, wy=(midY-self._pinch.vy)/self._pinch.k;
+        self.view={ x:midX-wx*nk, y:midY-wy*nk, k:nk }; self.applyTransform(false);
+        return;
+      }
+      if(!self.dragging) return;
+      var dx=e.clientX-self._start.x, dy=e.clientY-self._start.y;
+      var thresh = e.pointerType==='mouse' ? 4 : 7;
+      if(!self._moved && Math.abs(dx)+Math.abs(dy)>thresh){
+        self._moved=true; self._suppressClick=true;
+        if(e.pointerType!=='mouse') self._setPerf(true);
+        var w0=self.worldRef.current; if(w0) w0.style.pointerEvents='none';
+      }
+      if(self._moved){
+        var t=(e.timeStamp||performance.now()), L=self._last||{x:e.clientX,y:e.clientY,t:t}, dt=Math.max(1,t-L.t);
+        var vx=(e.clientX-L.x)/dt, vy=(e.clientY-L.y)/dt;
+        self._vel={ x:self._vel.x*0.7+vx*0.3, y:self._vel.y*0.7+vy*0.3 };
+        self._last={x:e.clientX,y:e.clientY,t:t};
+      }
+      self.view.x=self._start.vx+dx; self.view.y=self._start.vy+dy; self.applyTransform(false);
+    };
+    this._onUp=function(e){
+      delete self._ptrs[e.pointerId];
+      var ids=Object.keys(self._ptrs);
+      if(ids.length<2) self._pinch=null;
+      if(ids.length===1){ var rem=self._ptrs[ids[0]]; self.dragging=true; self._moved=true; self._start={x:rem.x,y:rem.y,vx:self.view.x,vy:self.view.y}; self._vel={x:0,y:0}; self._last={x:rem.x,y:rem.y,t:performance.now()}; return; }
+      if(ids.length===0 && self.dragging){
+        self.dragging=false; if(vp)vp.style.cursor='grab';
+        var w1=self.worldRef.current; if(w1) w1.style.pointerEvents='';
+        if(self._moved){ self._startGlide(); }
+        if(!self._glide) self._setPerf(false);
+        if(!self._moved && self.state.mode!=='journey'){ if(self.state.selectedNodeId||self.state.selectedEdgeId||self.state.showListen||self.state.showPaths||self.state.focusFam){ self.setState({selectedNodeId:null,selectedEdgeId:null,breadcrumb:[],showListen:false,showPaths:false,focusFam:null}); } }
+      }
+    };
+    this._onWheel=function(e){
+      e.preventDefault(); self._stopGlide();
+      // Trackpad vs wheel: trackpads emit 2D/fractional pixel deltas where wheelDeltaY === -3*deltaY; wheels/trackballs don't.
+      var now=Date.now();
+      var padSig = e.deltaMode===0 && !e.ctrlKey && ( (e.deltaX!==0 && !e.shiftKey) || (e.wheelDeltaY!==undefined && e.wheelDeltaY!==0 && e.wheelDeltaY===-3*e.deltaY) || (e.wheelDeltaY===undefined && !Number.isInteger(e.deltaY)) );
+      if(padSig) self._padUntil=now+400; else if(self._padUntil && now<self._padUntil && e.deltaMode===0) self._padUntil=now+400;
+      var isPad = !!(self._padUntil && now<self._padUntil);
+      var notched = !isPad && !e.shiftKey;
+      var isZoom = e.ctrlKey || e.metaKey || notched;
+      if(!isZoom){
+        if(e.shiftKey && e.deltaX===0){ var m0=e.deltaMode===1?16:1; self.view.x-=e.deltaY*m0; self.applyTransform(false); return; } var m=e.deltaMode===1?16:1; self.view.x-=e.deltaX*m; self.view.y-=e.deltaY*m; self.applyTransform(false); return; }
+      var r=vp.getBoundingClientRect(); var mx=e.clientX-r.left, my=e.clientY-r.top;
+      var wx=(mx-self.view.x)/self.view.k, wy=(my-self.view.y)/self.view.k;
+      var dy = e.deltaY*(e.deltaMode===1?33:e.deltaMode===2?800:1);
+      var f = notched ? Math.exp(-Math.max(-150,Math.min(150,dy))*0.0012) : Math.exp(-e.deltaY*0.012);
+      var nk=Math.min(self.KMAX,Math.max(0.16,self.view.k*f));
+      self.view={x:mx-wx*nk,y:my-wy*nk,k:nk}; self.applyTransform(false);
+    };
+    vp.addEventListener('pointerdown',this._onDown);
+    window.addEventListener('pointermove',this._onMove);
+    window.addEventListener('pointerup',this._onUp);
+    this._onCancel=function(e){
+      delete self._ptrs[e.pointerId]; self._pinch=null;
+      var ids=Object.keys(self._ptrs);
+      if(ids.length===1){ var rem=self._ptrs[ids[0]]; self.dragging=true; self._moved=true; self._start={x:rem.x,y:rem.y,vx:self.view.x,vy:self.view.y}; }
+      else if(ids.length===0){ self.dragging=false; self._moved=true; if(vp)vp.style.cursor='grab'; var w2=self.worldRef.current; if(w2) w2.style.pointerEvents=''; self._setPerf(false); }
+    };
+    window.addEventListener('pointercancel',this._onCancel);
+    vp.addEventListener('wheel',this._onWheel,{passive:false});
+    // iOS Safari: block native page pinch-zoom (it ignores user-scalable=no) so our pointer pinch owns the gesture
+    this._onGesture=function(e){ e.preventDefault(); };
+    ['gesturestart','gesturechange','gestureend'].forEach(function(n){ document.addEventListener(n,self._onGesture,{passive:false}); });
+    // iOS: block long-press context menu / callout on the map surface
+    this._onCtx=function(e){ if(!e.target.closest('.gx-panel')) e.preventDefault(); };
+    vp.addEventListener('contextmenu',this._onCtx);
+    // belt-and-braces: kill Safari's scaling touchmove inside the viewport
+    this._onTm=function(e){ if(e.scale!==undefined && e.scale!==1) e.preventDefault(); };
+    vp.addEventListener('touchmove',this._onTm,{passive:false});
+
+    try{
+      var vm=document.querySelector('meta[name=viewport]');
+      var vc='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover';
+      if(vm){ vm.setAttribute('content',vc); } else { vm=document.createElement('meta'); vm.name='viewport'; vm.content=vc; document.head.appendChild(vm); }
+      ['apple-mobile-web-app-capable','mobile-web-app-capable'].forEach(function(nm){ if(!document.querySelector('meta[name="'+nm+'"]')){ var m=document.createElement('meta'); m.name=nm; m.content='yes'; document.head.appendChild(m); } });
+      if(!document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]')){ var sb=document.createElement('meta'); sb.name='apple-mobile-web-app-status-bar-style'; sb.content='black-translucent'; document.head.appendChild(sb); }
+    }catch(_){ }
+    this.setState({ fsAvail:true });
+    this._onResize=function(){ var m=window.innerWidth<=720; if(m!==self.state.isMobile) self.setState({isMobile:m}); requestAnimationFrame(function(){ self.fitView(false); }); };
+    window.addEventListener('resize',this._onResize);
+    this._onFs=function(){ self.setState({ isFs: !!(document.fullscreenElement||document.webkitFullscreenElement) }); requestAnimationFrame(function(){ self.fitView(false); }); };
+    document.addEventListener('fullscreenchange',this._onFs);
+    document.addEventListener('webkitfullscreenchange',this._onFs);
+
+    this._fitDone=false;
+    requestAnimationFrame(function(){ self.doFit(); });
+    setTimeout(function(){ self.doFit(); },120);
+    setTimeout(function(){ self.doFit(); },360);
+  }
+
+  componentDidUpdate(){
+    if(this._ready && !this._fitDone){ this.doFit(); return; }
+    var w=this.worldRef.current;
+    if(w && !w.style.transform){ this.applyTransform(false); }
+  }
+
+  componentWillUnmount(){
+    clearInterval(this._t); clearInterval(this._poll); clearTimeout(this._hoverT); this._stopGlide();
+    var vp=this.viewportRef.current;
+    if(vp) vp.removeEventListener('click',this._onClickCapture,true);
+    window.removeEventListener('pointermove',this._onMove);
+    window.removeEventListener('pointerup',this._onUp);
+    window.removeEventListener('pointercancel',this._onCancel);
+    window.removeEventListener('resize',this._onResize);
+    document.removeEventListener('fullscreenchange',this._onFs);
+    document.removeEventListener('webkitfullscreenchange',this._onFs); clearInterval(this._focusTick);
+    var od=this._onGesture; if(od){ ['gesturestart','gesturechange','gestureend'].forEach(function(n){ document.removeEventListener(n,od); }); }
+    if(vp){ vp.removeEventListener('pointerdown',this._onDown); vp.removeEventListener('wheel',this._onWheel); vp.removeEventListener('contextmenu',this._onCtx); vp.removeEventListener('touchmove',this._onTm); }
+  }
+
+  buildLink(e, otherId){
+    var o=this.byId[otherId], self=this;
+    return {
+      id:otherId, name:o.name,
+      relLabel:this.relLabel[e.rel], pct:Math.round(e.strength*100)+'%',
+      dotStyle:{ width:'9px', height:'9px', borderRadius:'50%', background:this.hex(o.fam), flex:'0 0 auto', boxShadow:'0 0 10px '+this.rgba(o.fam,0.6) },
+      bar:{ width:Math.round(e.strength*100)+'%', height:'100%', background:this.hex(o.fam), borderRadius:'2px', transition:'width .4s' },
+      onSelect:function(){ self.selectNode(otherId,true); },
+      onEdge:function(){ self.selectEdge(e._i); }
+    };
+  }
+  buildCross(e, otherId){
+    var o=this.byId[otherId], self=this;
+    return {
+      id:otherId, name:o.name,
+      relLabel:this.relLabel[e.rel], relColor:this.hex(o.fam),
+      note:e.note,
+      dotStyle:{ width:'9px', height:'9px', borderRadius:'50%', background:this.hex(o.fam), flex:'0 0 auto', boxShadow:'0 0 10px '+this.rgba(o.fam,0.6) },
+      onSelect:function(){ self.selectNode(otherId,true); },
+      onEdge:function(){ self.selectEdge(e._i); }
+    };
+  }
+
+  jEdge(e){
+    var st=this.state.activeJourney; if(!st)return false;
+    var steps=st.steps;
+    for(var i=0;i<this.state.journeyStep;i++){ var f=steps[i].id, t=steps[i+1].id; if((e.from===f&&e.to===t)||(e.from===t&&e.to===f)) return true; }
+    return false;
+  }
+
+  renderVals(){
+    var ok=this.ensureData();
+    var s=this.state, self=this;
+    var dimAmt = (this.props.dimInactive!=null) ? this.props.dimInactive : 0.22;
+    var alwaysLabels = !!this.props.alwaysLabels;
+    var year=s.year;
+    var inJourney = s.mode==='journey' && !!s.activeJourney;
+
+    var active = s.selectedNodeId || s.hoverNodeId;
+    var rel=null;
+    if(active && ok){ rel=new Set([active]); this.EDGES.forEach(function(e){ if(e.from===active)rel.add(e.to); if(e.to===active)rel.add(e.from); }); }
+    var jset=null, curJ=null;
+    if(inJourney){ jset=new Set(s.activeJourney.steps.map(function(x){return x.id;})); curJ=s.activeJourney.steps[s.journeyStep].id; }
+    var bridgeSet=null;
+    if(s.bridgeMode && ok){ bridgeSet=new Set(); this.EDGES.forEach(function(e){ if(e.rel==='bridge'){ bridgeSet.add(e.from); bridgeSet.add(e.to); } }); }
+
+    var nodes=(ok?this.GENRES:[]).map(function(g){
+      var vis=g.year<=year;
+      var dim;
+      if(inJourney) dim=!jset.has(g.id);
+      else if(s.bridgeMode) dim=!(g.role==='hybrid'||bridgeSet.has(g.id));
+      else if(active) dim=!rel.has(g.id);
+      else if(s.focusFam) dim=g.fam!==s.focusFam;
+      else dim=false;
+      var sel=g.id===s.selectedNodeId, cur=g.id===curJ, glow=sel||cur;
+      var r=self.nodeR(g);
+      var scale=!vis?0.4:1;
+      var op=!vis?0:(dim?((active && s.focusFam && g.fam===s.focusFam)?0.42:dimAmt):1);
+      var hex=self.hex(g.fam);
+      var bg, border, boxShadow;
+      if(g.role==='hybrid' && g.fam2){
+        bg='linear-gradient(135deg, '+self.rgba(g.fam,glow?0.62:0.5)+', '+self.rgba(g.fam2,glow?0.6:0.46)+')';
+        border='1px solid '+self.rgba(g.fam2,glow?0.95:0.5);
+      } else if(g.role==='revival'){
+        bg='radial-gradient(circle at 50% 33%, '+self.rgba(g.fam,glow?0.4:0.22)+', '+self.rgba(g.fam,0.05)+' 78%)';
+        border='1.5px dashed '+self.rgba(g.fam,glow?0.95:0.6);
+      } else {
+        bg='radial-gradient(circle at 50% 33%, '+self.rgba(g.fam,glow?0.64:0.46)+', '+self.rgba(g.fam,0.06)+' 76%)';
+        border='1px solid '+self.rgba(g.fam,glow?0.95:0.45);
+      }
+      bg+=', #0d1015';
+      if(g.role==='foundational') boxShadow=(glow?'0 0 0 4px '+self.rgba(g.fam,0.12)+', ':'0 0 0 3px '+self.rgba(g.fam,0.07)+', ')+'0 0 '+(glow?40:12)+'px '+self.rgba(g.fam,glow?0.5:0.24);
+      else boxShadow='0 0 '+(glow?36:9)+'px '+self.rgba(g.fam,glow?0.5:0.18);
+      var ringOn = g.role==='rising' || g.role==='revival';
+      return {
+        id:g.id, name:g.name,
+        meta: g.role==='rising' ? (self.fmtYear(g.year)+' · rising') : self.fmtYear(g.year),
+        onClick:function(){ self.selectNode(g.id,false); },
+        onEnter:function(){ self.setHover(g.id); },
+        onLeave:function(){ self.setHover(null); },
+        container:{ position:'absolute', left:g.x+'px', top:g.y+'px', transform:'translate(-50%,-50%) scale('+scale+')', opacity:op, pointerEvents:vis?'auto':'none', transition:'opacity .22s ease, transform .35s cubic-bezier(.22,.61,.36,1)', cursor:'pointer', display:'flex', flexDirection:'column', alignItems:'center', gap:'8px', width:(2*r+64)+'px', zIndex: sel?7:(cur?6:2) },
+        disc:{ position:'relative', width:(2*r)+'px', height:(2*r)+'px', borderRadius:'50%', background:bg, border:border, boxShadow:boxShadow, transition:'box-shadow .3s ease, border-color .3s ease' },
+        ring:{ position:'absolute', inset:'-7px', borderRadius:'50%', border:(g.role==='revival'?'1.5px dotted ':'2px solid ')+hex, opacity: ringOn?(g.role==='rising'?0.9:0.55):0, display: ringOn?'block':'none', animation: g.role==='rising'?'gxpulse 2.6s ease-out infinite':'none', pointerEvents:'none' },
+        labelWrap:{ textAlign:'center', transition:'opacity .4s', maxWidth:(2*r+150)+'px', background:'rgba(11,13,17,.84)', padding:'2px 6px 3px', borderRadius:'6px' },
+        nameStyle:{ fontSize:(sel?14.5:12.5)+'px', fontWeight:'600', color: sel?'#ffffff':(dim?'#5a626d':'#e7eaee'), letterSpacing:'.005em', lineHeight:'1.12', transition:'color .4s, font-size .3s', textShadow:'0 1px 4px rgba(0,0,0,.7)' },
+        metaStyle:{ fontFamily:"'JetBrains Mono',monospace", fontSize:'9.5px', color: g.role==='rising'?hex:(dim?'#454c56':'#7b828d'), letterSpacing:'.06em', marginTop:'2px', transition:'color .4s' }
+      };
+    });
+
+    // Family focus: light the family's internal lineage in chronological order instead of all at once.
+    var famOnly = !inJourney && !s.bridgeMode && !active && s.focusFam;
+    var famRank={}, famStep=0, famElapsed=0;
+    if(famOnly && ok){
+      var intra=this.EDGES.filter(function(e){ var a=self.byId[e.from], b=self.byId[e.to]; return a.fam===s.focusFam && b.fam===s.focusFam && a.year<=year && b.year<=year && self.backbone[e._i]; });
+      intra.sort(function(x,y){ return Math.max(self.byId[x.from].year,self.byId[x.to].year)-Math.max(self.byId[y.from].year,self.byId[y.to].year); });
+      intra.forEach(function(e,i){ famRank[e._i]=i; });
+      famStep=Math.min(220, 3200/Math.max(1,intra.length));
+      famElapsed=Date.now()-(this._focusT||0);
+    }
+    var edges=(ok?this.EDGES:[]).map(function(e){
+      var a=self.byId[e.from], b=self.byId[e.to];
+      var vis=a.year<=year && b.year<=year;
+      var act, side=false;
+      if(inJourney) act=self.jEdge(e);
+      else if(s.bridgeMode) act=(e.rel==='bridge');
+      else if(active) act=(e.from===active||e.to===active);
+      else if(s.focusFam){ act=(e._i in famRank); side=!act && (a.fam===s.focusFam||b.fam===s.focusFam); }
+      else act=false;
+      if(active && s.focusFam && !act && (a.fam===s.focusFam && b.fam===s.focusFam)) side=true;
+      var anyMode=inJourney||s.bridgeMode||active||s.focusFam;
+      var dim=anyMode?!act:false;
+      var selE=e._i===s.selectedEdgeId, hot=act||selE;
+      var op=!vis?0:(side?((a.fam===b.fam)?0.16:0.07):(dim?0.04:(hot?0.95:(e.rel==='bridge'?0.12:0.08))));
+      var lop=!vis?0:((hot&&!famOnly)||selE?0.92:(alwaysLabels&&!dim?0.38:0));
+      if(famOnly && act && famElapsed < famRank[e._i]*famStep){ op=vis?0.04:0; }
+      var pathStyle={ transition:'opacity .45s ease', pointerEvents:'none' };
+      return {
+        d:e._d, color:self.hex(a.fam),
+        w:(1 + e.strength*2.7) + (e.rel==='bridge'?0.6:0) + (hot?1.2:0),
+        dash:self.dashFor(e.rel), op:op, pathStyle:pathStyle,
+        mx:e._mx, my:e._my,
+        label:self.relLabel[e.rel], labelOp:lop,
+        labelStyle:{ display:lop>0?'block':'none', pointerEvents:'none', fontFamily:"'JetBrains Mono',monospace", letterSpacing:'.05em' },
+        onClick:function(){ self.selectEdge(e._i); }
+      };
+    });
+
+    var bands=(ok?this.famOrder:[]).map(function(k){
+      var fam=self.FAM[k];
+      return { label:fam.short.toUpperCase(),
+        onClick:function(){ self.focusFamily(k); },
+        style:{ position:'absolute', left:self.LBX+'px', top:fam.y+'px', transform:'translate(-50%,-50%) rotate(-90deg)', transformOrigin:'center', whiteSpace:'nowrap', fontFamily:"'Spectral',serif", fontSize:'13px', letterSpacing:'.12em', color: s.focusFam===k?self.rgba(k,1):self.rgba(k,0.62), cursor:'pointer', pointerEvents:'auto', transition:'color .4s' } };
+    });
+    var ticks=(ok?[1900,1925,1950,1975,2000,2026]:[]).map(function(y){
+      var x=self.xFromYear(y);
+      return { label: y===2026?'NOW':''+y,
+        line:{ position:'absolute', left:x+'px', top:'0', width:'1px', height:self.WH+'px', background:'linear-gradient(180deg,transparent 0,rgba(255,255,255,.035) 2%,rgba(255,255,255,.035) 98%,transparent)' },
+        lab:{ position:'absolute', left:x+'px', top:'56px', transform:'translateX(-50%)', fontFamily:"'JetBrains Mono',monospace", fontSize:'11px', letterSpacing:'.18em', color:'#4d545f' } };
+    });
+    var dividers=[];
+    if(ok){ for(var di=0;di<this.famOrder.length-1;di++){ var y=(this.FAM[this.famOrder[di]].y+this.FAM[this.famOrder[di+1]].y)/2; dividers.push({ style:{ position:'absolute', left:'-620px', top:y+'px', width:(this.WW+620)+'px', height:'1px', background:'linear-gradient(90deg,transparent,rgba(255,255,255,.045),transparent)' } }); } }
+    var rs=ok?this.rootSpan:{y0:0,y1:0};
+    var rootColStyle={ position:'absolute', left:(this.RX-170)+'px', top:rs.y0+'px', width:'340px', height:(rs.y1-rs.y0)+'px', borderRadius:'26px', background:'linear-gradient(180deg,rgba(255,255,255,.022),rgba(255,255,255,.012))', border:'1px solid rgba(255,255,255,.05)' };
+    var rootHeadStyle={ position:'absolute', left:this.RX+'px', top:(rs.y0+26)+'px', transform:'translateX(-50%)', textAlign:'center', fontFamily:"'JetBrains Mono',monospace", letterSpacing:'.16em', color:'#6b727d', width:'290px', lineHeight:'1.6', textWrap:'balance', textTransform:'uppercase' };
+
+    var famList=(ok?this.famOrder:[]).map(function(k){
+      var fam=self.FAM[k], on=s.focusFam===k;
+      return { key:k, label:fam.short, color:fam.color, glow:self.rgba(k,0.6),
+        onClick:function(){ self.focusFamily(k); },
+        rowStyle:{ display:'flex', alignItems:'center', gap:'9px', width:'100%', textAlign:'left', background:on?'rgba(255,255,255,.07)':'none', border:'none', borderRadius:'7px', padding:'5px 7px', marginBottom:'2px', cursor:'pointer', color:on?'#f2f4f6':'#c8cdd4' } };
+    });
+
+    var visCount=nodes.filter(function(n){ return self.byId[n.id].year<=year; }).length;
+
+    var q=s.query.trim().toLowerCase(), sres=[], noRes=false;
+    if(ok && q){
+      var scored=[], seen={};
+      var push=function(g,sc,via){ var cur=seen[g.id]; if(cur){ if(sc<cur.sc){ cur.sc=sc; cur.via=via||''; } return; } var it={g:g,sc:sc,via:via||''}; seen[g.id]=it; scored.push(it); };
+      this.GENRES.forEach(function(g){
+        var n=g.name.toLowerCase(), aka=(g.aka||'').toLowerCase();
+        if(n.indexOf(q)===0) push(g,0);
+        else if(aka && aka.indexOf(q)===0) push(g,0.2,g.aka);
+        else if(n.indexOf(q)>=0) push(g,1);
+        else if(aka && aka.indexOf(q)>=0) push(g,1.2,g.aka);
+        else if(self.FAM[g.fam].label.toLowerCase().indexOf(q)>=0) push(g,4);
+      });
+      if(q.length>=2){
+        Object.keys(this.artistMap).forEach(function(an){
+          var pos=an.indexOf(q); if(pos<0) return;
+          var rec=self.artistMap[an];
+          var base = pos===0 ? 2 : (an.indexOf(' '+q)>=0 ? 2.3 : 2.6); // prefix > word start > substring
+          rec.ids.forEach(function(gid,i){ push(self.byId[gid], base + i*0.01, rec.name); }); // i preserves specific-first order
+        });
+      }
+      scored.sort(function(a,b){ return a.sc-b.sc || a.g.year-b.g.year; });
+      sres=scored.slice(0,10).map(function(x){
+        var g=x.g;
+        return { name:g.name,
+          sub:(x.via ? x.via+' · ' : '') + self.fmtYear(g.year) + ' · ' + self.FAM[g.fam].short,
+          dotStyle:{ width:'9px', height:'9px', borderRadius:'50%', background:self.hex(g.fam), boxShadow:'0 0 8px '+self.rgba(g.fam,0.6), flex:'0 0 auto' },
+          onClick:function(){ self.selectNode(g.id,false); } };
+      });
+      noRes=scored.length===0;
+    }
+
+    var SVCS=[{k:'spotify',n:'Spotify',c:'#1ed760',tint:'rgba(30,215,96,.14)'},{k:'apple',n:'Apple Music',c:'#fa586a',tint:'rgba(250,88,106,.14)'},{k:'bandcamp',n:'Bandcamp',c:'#63b1c0',tint:'rgba(99,177,192,.14)'},{k:'youtube',n:'YouTube',c:'#ff4e45',tint:'rgba(255,78,69,.14)'}];
+    var curSvc=SVCS.filter(function(v){return v.k===s.svc;})[0]||SVCS[0];
+
+    var out = {
+      svcAccent:curSvc.c, svcTint:curSvc.tint,
+      svcTag:curSvc.n.toUpperCase()+' ↗',
+      svcSearchLabel:'Search on '+curSvc.n+' ↗',
+      svcList:SVCS.map(function(v){
+        var on=s.svc===v.k;
+        return { label:v.n, onClick:function(){ self.setSvc(v.k); },
+          style:{ fontFamily:"'Schibsted Grotesk'", fontSize:'11px', padding:'5px 11px', borderRadius:'999px', cursor:'pointer', transition:'background .25s, color .25s',
+            background:on?v.c:'rgba(255,255,255,.04)', color:on?'#0a0c10':'#aab0b8', border:'1px solid '+(on?v.c:'rgba(255,255,255,.12)'), fontWeight:on?'600':'400' } };
+      }),
+      query:s.query, hasQuery:q.length>0, searchResults:sres, noResults:noRes,
+      onQuery:function(e){ self.setState({query:e.target.value}); },
+      onClearQuery:function(){ self.setState({query:''}); },
+      viewportRef:this.viewportRef, worldRef:this.worldRef, rootRef:this.rootRef,
+      rootClass: 'gx-root' + (s.immersive?' gx-immersive':'') + ((s.isMobile && (s.selectedNodeId||s.selectedEdgeId))?' gx-sheet':'') + ((s.isMobile && (s.selectedNodeId||s.selectedEdgeId) && !s.sheetFull)?' gx-peek':''),
+      fsAvail:true, fsIcon: (s.isFs||s.immersive) ? '⤡' : '⛶', onToggleFs:function(){ self.toggleFs(); },
+      pathsLabel: s.isMobile ? '' : ' Guided Paths',
+      bridgeWord: s.isMobile ? '' : ' Bridges',
+      resetLabel: s.isMobile ? '↺' : 'Reset',
+      worldW:this.WW, worldH:this.WH,
+      worldStyle:{ position:'absolute', left:'0', top:'0', width:this.WW+'px', height:this.WH+'px', transformOrigin:'0 0', willChange:'transform', backfaceVisibility:'hidden' },
+      nodes:nodes, edges:edges, bands:bands, dividers:dividers, ticks:ticks, famList:famList, rootColStyle:rootColStyle, rootHeadStyle:rootHeadStyle,
+      subtitle: s.bridgeMode ? 'Cross-Family Bridge Mode' : (s.focusFam ? this.FAM[s.focusFam].label : 'Genre Evolution · 380 BCE — Now'),
+      onTogglePaths:function(){ self.setState(function(p){return {showPaths:!p.showPaths};}); },
+      onToggleBridges:function(){ self.toggleBridges(); },
+      bridgeBtnStyle: s.bridgeMode
+        ? "font-family:'Schibsted Grotesk';font-size:12.5px;padding:9px 15px;background:#e7eaee;border:1px solid #e7eaee;color:#11141a;border-radius:9px;cursor:pointer;font-weight:600;display:flex;align-items:center;gap:7px;"
+        : "font-family:'Schibsted Grotesk';font-size:12.5px;padding:9px 15px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);color:#dbe0e6;border-radius:9px;cursor:pointer;display:flex;align-items:center;gap:7px;",
+      onReset:function(){ self.resetView(); },
+      onZoomIn:function(){ self.zoom(1.25); }, onZoomOut:function(){ self.zoom(1/1.25); }, onFit:function(){ self.fitView(true); },
+      showPaths:s.showPaths,
+      journeys:(ok?this.JOURNEYS:[]).map(function(j){ return { title:j.title, subtitle:j.subtitle, onStart:function(){ self.startJourney(j.id); } }; }),
+      showCrumbs: !inJourney && !s.bridgeMode && s.breadcrumb.length>0,
+      crumbs: s.breadcrumb.map(function(id,i){ return { name:self.byId[id].name, pre: i===0?'':'›', onClick:function(){ self.selectNode(id,true); }, style:{ background: id===s.selectedNodeId ? 'rgba(255,255,255,.1)' : 'transparent', border:'none', color: id===s.selectedNodeId ? '#f2f4f6' : '#aab0b8', fontSize:'13px', fontFamily:"'Schibsted Grotesk'", padding:'3px 9px', borderRadius:'7px', cursor:'pointer', whiteSpace:'nowrap' } }; }),
+      focusActive: !!s.focusFam,
+      focusLabel: s.focusFam?this.FAM[s.focusFam].label:'',
+      focusColor: s.focusFam?this.FAM[s.focusFam].color:'#fff',
+      onClearFocus:function(){ self.setState({focusFam:null}); },
+      legendOpen:s.legendOpen,
+      onToggleLegend:function(){ self.setState(function(p){return {legendOpen:!p.legendOpen};}); },
+      legendChevron:{ display:'inline-block', transition:'transform .3s', transform: s.legendOpen?'rotate(0deg)':'rotate(180deg)', color:'#8a919b', fontSize:'12px' },
+      showSlider: !inJourney,
+      year:s.year,
+      yearPos: Math.round(this.posFromYear(s.year)*1000),
+      yearLabel: s.year>=this.maxYear ? 'Present' : this.fmtYear(s.year),
+      visibleLabel: visCount + ' of ' + (ok?this.GENRES.length:0) + ' genres',
+      playLabel: s.playing ? '❚❚ Pause' : '▶ Play history',
+      onYear:function(e){ clearInterval(self._t); self.setState({year:self.yearFromPos(+e.target.value/1000), playing:false}); },
+      onPlay:function(){ self.togglePlay(); },
+      inJourney:inJourney,
+      panelNode: !!s.selectedNodeId, panelEdge: !!s.selectedEdgeId, showListen:s.showListen,
+      onClosePanel:function(){ self.closePanel(); },
+      onOpenListen:function(){ self.setState({showListen:true}); },
+      onCloseListen:function(){ self.setState({showListen:false}); },
+      onStop:function(e){ e.stopPropagation(); },
+      mobileSheet: s.isMobile && (!!s.selectedNodeId || !!s.selectedEdgeId),
+      sheetHint: s.sheetFull ? 'Collapse — see the map' : 'Tap for full details',
+      onToggleSheet:function(){ self.setState(function(p){ return {sheetFull:!p.sheetFull}; }); }
+    };
+
+    if(inJourney){
+      var st=s.activeJourney, step=st.steps[s.journeyStep], sn=this.byId[step.id];
+      out.journeyTitle=st.title; out.journeyStepLabel=(s.journeyStep+1)+' / '+st.steps.length;
+      out.journeyNodeName=sn.name; out.journeyNodeColor=this.hex(sn.fam); out.journeyText=step.text;
+      out.journeyDots=st.steps.map(function(x,i){ return { style:{ width:'7px', height:'7px', borderRadius:'50%', background: i===s.journeyStep ? self.hex(self.byId[x.id].fam) : 'rgba(255,255,255,.2)', transition:'background .3s' } }; });
+      out.onPrev=function(){ self.journeyGo(-1); };
+      var last=s.journeyStep===st.steps.length-1;
+      out.nextLabel=last?'Finish':'Next →';
+      out.onNext=last?function(){ self.exitJourney(); }:function(){ self.journeyGo(1); };
+      out.onExitJourney=function(){ self.exitJourney(); };
+    }
+
+    if(s.selectedNodeId && ok){
+      var g=this.byId[s.selectedNodeId];
+      out.selName=g.name; out.selDef=g.def; out.selEra=this.fmtYear(g.year); out.selWhy=g.why;
+      out.hasTempo=!!g.tempo; out.selTempo=g.tempo||''; out.hasTempoNote=!!g.tempoNote; out.selTempoNote=g.tempoNote||'';
+      out.selFamLabel=this.FAM[g.fam].label; out.selFamColor=this.hex(g.fam);
+      out.selFamChip={ fontSize:'10.5px', fontFamily:"'JetBrains Mono',monospace", letterSpacing:'.08em', textTransform:'uppercase', color:this.hex(g.fam), background:this.rgba(g.fam,0.12), border:'1px solid '+this.rgba(g.fam,0.3), padding:'4px 9px', borderRadius:'6px' };
+      out.selHasFam2=!!g.fam2;
+      if(g.fam2){ out.selFam2Label=this.FAM[g.fam2].label; out.selFam2Chip={ fontSize:'10.5px', fontFamily:"'JetBrains Mono',monospace", letterSpacing:'.08em', textTransform:'uppercase', color:this.hex(g.fam2), background:this.rgba(g.fam2,0.1), border:'1px solid '+this.rgba(g.fam2,0.28), padding:'4px 9px', borderRadius:'6px' }; }
+      out.selStatus=this.statusMap[g.role]||'Classic';
+      out.selStatusChip={ fontSize:'10.5px', fontFamily:"'JetBrains Mono',monospace", letterSpacing:'.08em', textTransform:'uppercase', color:'#0a0c10', background:this.hex(g.fam), padding:'4px 9px', borderRadius:'6px', fontWeight:'500' };
+      out.selTraits=(g.traits||[]).map(function(t,i){ var key=g.id+':'+i, open=s.openTrait===key; return { label:t.k, detail:t.v, open:open, onToggle:function(){ self.toggleTrait(key); }, chev:{ display:'inline-block', transition:'transform .3s', transform:open?'rotate(180deg)':'rotate(0deg)', color:'#8a919b', fontSize:'12px' } }; });
+      var preds=[], descs=[], cross=[];
+      this.EDGES.forEach(function(e){
+        if(e.rel==='scene'||e.rel==='bridge'||e.rel==='revival'){
+          if(e.from===g.id) cross.push(self.buildCross(e,e.to));
+          else if(e.to===g.id) cross.push(self.buildCross(e,e.from));
+        } else {
+          if(e.to===g.id) preds.push(self.buildLink(e,e.from));
+          else if(e.from===g.id) descs.push(self.buildLink(e,e.to));
+        }
+      });
+      out.selPreds=preds; out.selDescs=descs; out.selCross=cross;
+      out.hasPreds=preds.length>0; out.hasDescs=descs.length>0; out.hasCross=cross.length>0;
+      out.selArtists=(g.artists||[]).join('  ·  ');
+      var plq = s.svc==='spotify' ? g.name+' essential' : s.svc==='youtube' ? g.name+' music mix' : g.name;
+      out.playlistHref=self.musicHref(plq); out.onGoPlaylist=self.goLink(plq);
+      out.selAlbums=(g.albums||[]).map(function(al){ return { t:al.t, a:al.a, href:self.musicHref(al.t+' '+al.a), onGo:self.goLink(al.t+' '+al.a), coverStyle:{ width:'34px', height:'34px', borderRadius:'5px', flex:'0 0 auto', display:'flex', alignItems:'center', justifyContent:'center', fontSize:'14px', color:self.rgba(g.fam,0.9), background:'linear-gradient(135deg,'+self.rgba(g.fam,0.22)+','+self.rgba(g.fam,0.05)+')', border:'1px solid '+self.rgba(g.fam,0.25) } }; });
+      out.hasAlbums=(g.albums||[]).length>0;
+      out.selTracks=(g.tracks||[]).map(function(t,i){ return { t:t.t, a:t.a, idx:(i+1<10?'0':'')+(i+1), href:self.musicHref(t.t+' '+t.a), onGo:self.goLink(t.t+' '+t.a), hasWhy:!!t.why, why:t.why||'' }; });
+    }
+
+    if(s.selectedEdgeId && ok){
+      var eg=this.EDGES.find(function(x){return x._i===s.selectedEdgeId;});
+      if(eg){ var ea=this.byId[eg.from], eb=this.byId[eg.to];
+        out.edgeFromName=ea.name; out.edgeToName=eb.name; out.edgeFromColor=this.hex(ea.fam); out.edgeToColor=this.hex(eb.fam);
+        out.edgeRel=this.relLabel[eg.rel]; out.edgePct=Math.round(eg.strength*100)+'%';
+        out.edgeBar={ width:Math.round(eg.strength*100)+'%', height:'100%', background:'linear-gradient(90deg,'+this.hex(ea.fam)+','+this.hex(eb.fam)+')', borderRadius:'3px' };
+        out.edgeNote=eg.note;
+        out.onViewFrom=function(){ self.selectNode(eg.from,true); };
+        out.onViewTo=function(){ self.selectNode(eg.to,true); };
+      }
+    }
+
+    return out;
+  }
+}
+</script>
+</body>
+</html>

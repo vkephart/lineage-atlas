@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;height:100%;background:#0a0c10;}
+body{font-family:'Schibsted Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@keyframes gxpulse{0%{transform:scale(1);opacity:.65;}70%{transform:scale(1.75);opacity:0;}100%{opacity:0;}}
+@keyframes gxeq{0%,100%{height:4px;}50%{height:15px;}}
+.gxscroll::-webkit-scrollbar{width:8px;}
+.gxscroll::-webkit-scrollbar-thumb{background:rgba(255,255,255,.13);border-radius:4px;}
+.gxscroll::-webkit-scrollbar-track{background:transparent;}
+input[type=range].gxr{-webkit-appearance:none;appearance:none;width:100%;height:16px;background:transparent;cursor:pointer;}
+input[type=range].gxr::-webkit-slider-runnable-track{height:2px;background:rgba(255,255,255,.18);border-radius:2px;}
+input[type=range].gxr::-webkit-slider-thumb{-webkit-appearance:none;width:15px;height:15px;border-radius:50%;background:#eef0f3;margin-top:-6.5px;box-shadow:0 0 0 4px rgba(238,240,243,.10);}
+input[type=range].gxr::-moz-range-track{height:2px;background:rgba(255,255,255,.18);border-radius:2px;}
+input[type=range].gxr::-moz-range-thumb{width:15px;height:15px;border:none;border-radius:50%;background:#eef0f3;}
+</style>
+</helmet>
+<div data-screen-label="Genre Map" style="position:fixed;inset:0;overflow:hidden;background:radial-gradient(120% 90% at 70% 0%, #11151c 0%, #0a0c10 55%, #07080b 100%);color:#e7eaee;">
+
+  <div ref="{{ viewportRef }}" style="position:absolute;inset:0;cursor:grab;overflow:hidden;">
+    <div ref="{{ worldRef }}" style="{{ worldStyle }}">
+
+      <div style="position:absolute;left:0;top:500px;width:2480px;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.05),transparent);"></div>
+      <div style="position:absolute;left:0;top:870px;width:2480px;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.05),transparent);"></div>
+      <div style="position:absolute;left:130px;top:150px;font-family:'Spectral',serif;font-size:30px;letter-spacing:.16em;color:rgba(224,162,60,.15);text-transform:uppercase;pointer-events:none;">Blues · Rock</div>
+      <div style="position:absolute;left:1470px;top:560px;font-family:'Spectral',serif;font-size:30px;letter-spacing:.16em;color:rgba(176,140,240,.15);text-transform:uppercase;pointer-events:none;">Dream · Shoegaze</div>
+      <div style="position:absolute;left:1060px;top:892px;font-family:'Spectral',serif;font-size:30px;letter-spacing:.16em;color:rgba(84,198,214,.14);text-transform:uppercase;pointer-events:none;">Dance · Electronic</div>
+
+      <svg width="{{ worldW }}" height="{{ worldH }}" style="position:absolute;left:0;top:0;overflow:visible;pointer-events:none;">
+        <sc-for list="{{ edges }}" as="e" hint-placeholder-count="24">
+          <g>
+            <path d="{{ e.d }}" fill="none" stroke="{{ e.color }}" strokeWidth="{{ e.w }}" strokeDasharray="{{ e.dash }}" strokeLinecap="round" opacity="{{ e.op }}" style="transition:opacity .5s ease;pointer-events:none;"></path>
+            <path d="{{ e.d }}" fill="none" stroke="transparent" strokeWidth="22" style="pointer-events:stroke;cursor:pointer;" onClick="{{ e.onClick }}"></path>
+            <text x="{{ e.mx }}" y="{{ e.my }}" fill="{{ e.color }}" fontSize="12.5" textAnchor="middle" opacity="{{ e.labelOp }}" style="pointer-events:none;font-family:'JetBrains Mono',monospace;letter-spacing:.06em;transition:opacity .4s;">{{ e.label }}</text>
+          </g>
+        </sc-for>
+      </svg>
+
+      <sc-for list="{{ nodes }}" as="n" hint-placeholder-count="18">
+        <div data-node="" style="{{ n.container }}" onClick="{{ n.onClick }}" onMouseEnter="{{ n.onEnter }}" onMouseLeave="{{ n.onLeave }}">
+          <div style="{{ n.disc }}">
+            <div style="{{ n.ring }}"></div>
+          </div>
+          <div style="{{ n.labelWrap }}">
+            <div style="{{ n.nameStyle }}">{{ n.name }}</div>
+            <div style="{{ n.metaStyle }}">{{ n.meta }}</div>
+          </div>
+        </div>
+      </sc-for>
+
+    </div>
+  </div>
+
+  <div data-ui="" style="position:absolute;top:22px;left:28px;z-index:20;pointer-events:none;">
+    <div style="font-family:'Spectral',serif;font-size:22px;color:#f2f4f6;letter-spacing:.005em;">The Lineage Atlas</div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.24em;color:#6b7280;text-transform:uppercase;margin-top:5px;">A Map of Genre Evolution · 1900 — Now</div>
+  </div>
+
+  <div data-ui="" style="position:absolute;top:20px;right:26px;z-index:24;display:flex;gap:10px;">
+    <button onClick="{{ onTogglePaths }}" style="font-family:'Schibsted Grotesk';font-size:12.5px;padding:9px 15px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);color:#dbe0e6;border-radius:9px;cursor:pointer;backdrop-filter:blur(8px);display:flex;align-items:center;gap:7px;" style-hover="background:rgba(255,255,255,.1);"><span style="opacity:.7;">◇</span> Guided Paths</button>
+    <button onClick="{{ onReset }}" style="font-family:'Schibsted Grotesk';font-size:12.5px;padding:9px 15px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);color:#dbe0e6;border-radius:9px;cursor:pointer;backdrop-filter:blur(8px);" style-hover="background:rgba(255,255,255,.1);">Reset view</button>
+  </div>
+
+  <sc-if value="{{ showPaths }}" hint-placeholder-val="{{ false }}">
+    <div data-ui="" style="position:absolute;top:68px;right:26px;width:312px;z-index:30;background:#13161c;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:16px;box-shadow:0 24px 70px rgba(0,0,0,.55);">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;color:#6b7280;text-transform:uppercase;margin-bottom:12px;">Curated Journeys</div>
+      <sc-for list="{{ journeys }}" as="j" hint-placeholder-count="3">
+        <button onClick="{{ j.onStart }}" style="display:block;width:100%;text-align:left;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:11px;padding:13px 14px;margin-bottom:9px;cursor:pointer;" style-hover="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.16);">
+          <div style="font-family:'Spectral',serif;font-size:16px;color:#f2f4f6;margin-bottom:3px;">{{ j.title }}</div>
+          <div style="font-size:12px;color:#8a919b;line-height:1.4;">{{ j.subtitle }}</div>
+        </button>
+      </sc-for>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ showCrumbs }}" hint-placeholder-val="{{ false }}">
+    <div data-ui="" style="position:absolute;top:26px;left:50%;transform:translateX(-50%);z-index:18;display:flex;align-items:center;gap:6px;background:rgba(15,17,22,.72);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.08);border-radius:999px;padding:7px 15px;max-width:62vw;overflow:hidden;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.18em;color:#5a626d;margin-right:3px;">LINEAGE</span>
+      <sc-for list="{{ crumbs }}" as="c" hint-placeholder-count="2">
+        <span style="color:#4a515c;font-size:13px;">{{ c.pre }}</span>
+        <button onClick="{{ c.onClick }}" style="{{ c.style }}">{{ c.name }}</button>
+      </sc-for>
+    </div>
+  </sc-if>
+
+  <div data-ui="" style="position:absolute;left:28px;bottom:28px;z-index:18;background:rgba(15,17,22,.66);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.08);border-radius:13px;padding:14px 16px;display:flex;gap:26px;">
+    <div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.18em;color:#5a626d;margin-bottom:9px;">SUPER-FAMILY</div>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:7px;"><span style="width:9px;height:9px;border-radius:50%;background:#e0a23c;box-shadow:0 0 9px rgba(224,162,60,.6);"></span><span style="font-size:12px;color:#c8cdd4;">Blues · Rock</span></div>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:7px;"><span style="width:9px;height:9px;border-radius:50%;background:#b08cf0;box-shadow:0 0 9px rgba(176,140,240,.6);"></span><span style="font-size:12px;color:#c8cdd4;">Dream · Shoegaze</span></div>
+      <div style="display:flex;align-items:center;gap:8px;"><span style="width:9px;height:9px;border-radius:50%;background:#54c6d6;box-shadow:0 0 9px rgba(84,198,214,.6);"></span><span style="font-size:12px;color:#c8cdd4;">Dance · Electronic</span></div>
+    </div>
+    <div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.18em;color:#5a626d;margin-bottom:9px;">INFLUENCE TYPE</div>
+      <div style="display:flex;align-items:center;gap:9px;margin-bottom:7px;"><svg width="26" height="6"><line x1="1" y1="3" x2="25" y2="3" stroke="#9aa2ad" stroke-width="2"></line></svg><span style="font-size:12px;color:#c8cdd4;">Historical origin</span></div>
+      <div style="display:flex;align-items:center;gap:9px;margin-bottom:7px;"><svg width="26" height="6"><line x1="1" y1="3" x2="25" y2="3" stroke="#9aa2ad" stroke-width="2" stroke-dasharray="6 4"></line></svg><span style="font-size:12px;color:#c8cdd4;">Stylistic influence</span></div>
+      <div style="display:flex;align-items:center;gap:9px;"><svg width="26" height="6"><line x1="1" y1="3" x2="25" y2="3" stroke="#9aa2ad" stroke-width="2" stroke-dasharray="1 5"></line></svg><span style="font-size:12px;color:#c8cdd4;">Scene adjacency</span></div>
+    </div>
+  </div>
+
+  <div data-ui="" style="position:absolute;right:26px;bottom:120px;z-index:18;display:flex;flex-direction:column;gap:8px;">
+    <button onClick="{{ onZoomIn }}" style="width:40px;height:40px;border-radius:11px;background:rgba(15,17,22,.72);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.11);color:#dbe0e6;font-size:19px;cursor:pointer;line-height:1;" style-hover="background:rgba(255,255,255,.1);">+</button>
+    <button onClick="{{ onZoomOut }}" style="width:40px;height:40px;border-radius:11px;background:rgba(15,17,22,.72);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.11);color:#dbe0e6;font-size:19px;cursor:pointer;line-height:1;" style-hover="background:rgba(255,255,255,.1);">−</button>
+    <button onClick="{{ onFit }}" style="width:40px;height:40px;border-radius:11px;background:rgba(15,17,22,.72);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.11);color:#dbe0e6;font-size:15px;cursor:pointer;line-height:1;" style-hover="background:rgba(255,255,255,.1);">⤢</button>
+  </div>
+
+  <sc-if value="{{ showSlider }}" hint-placeholder-val="{{ true }}">
+    <div data-ui="" style="position:absolute;left:50%;transform:translateX(-50%);bottom:28px;width:min(640px,68vw);z-index:18;background:rgba(15,17,22,.74);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.08);border-radius:15px;padding:14px 22px 16px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;">
+        <button onClick="{{ onPlay }}" style="font-family:'Schibsted Grotesk';font-size:12.5px;padding:7px 14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);color:#eef0f3;border-radius:8px;cursor:pointer;display:flex;align-items:center;gap:7px;" style-hover="background:rgba(255,255,255,.12);">{{ playLabel }}</button>
+        <div style="text-align:right;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:15px;color:#f2f4f6;letter-spacing:.04em;">{{ yearLabel }}</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#6b7280;letter-spacing:.1em;">{{ visibleLabel }}</div>
+        </div>
+      </div>
+      <input type="range" class="gxr" min="1900" max="2025" value="{{ year }}" onInput="{{ onYear }}">
+      <div style="display:flex;justify-content:space-between;margin-top:3px;font-family:'JetBrains Mono',monospace;font-size:9px;color:#565d68;letter-spacing:.05em;">
+        <span>1900</span><span>1940</span><span>1960</span><span>1980</span><span>2000</span><span>NOW</span>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ inJourney }}" hint-placeholder-val="{{ false }}">
+    <div data-ui="" style="position:absolute;left:50%;transform:translateX(-50%);bottom:28px;width:min(700px,76vw);z-index:26;background:#12151b;border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:19px 24px 18px;box-shadow:0 28px 80px rgba(0,0,0,.6);">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:11px;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#6b7280;text-transform:uppercase;">{{ journeyTitle }} · {{ journeyStepLabel }}</div>
+        <button onClick="{{ onExitJourney }}" style="background:none;border:none;color:#8a919b;font-size:12px;cursor:pointer;font-family:'Schibsted Grotesk';" style-hover="color:#e7eaee;">Exit ✕</button>
+      </div>
+      <div style="font-family:'Spectral',serif;font-size:21px;margin-bottom:8px;color:{{ journeyNodeColor }};">{{ journeyNodeName }}</div>
+      <div style="font-family:'Spectral',serif;font-size:16px;line-height:1.55;color:#cbd0d7;text-wrap:pretty;">{{ journeyText }}</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:16px;">
+        <div style="display:flex;gap:6px;align-items:center;">
+          <sc-for list="{{ journeyDots }}" as="d" hint-placeholder-count="4"><span style="{{ d.style }}"></span></sc-for>
+        </div>
+        <div style="display:flex;gap:9px;">
+          <button onClick="{{ onPrev }}" style="font-family:'Schibsted Grotesk';font-size:13px;padding:8px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);color:#cbd0d7;border-radius:9px;cursor:pointer;" style-hover="background:rgba(255,255,255,.1);">← Prev</button>
+          <button onClick="{{ onNext }}" style="font-family:'Schibsted Grotesk';font-size:13px;padding:8px 18px;background:#e7eaee;border:1px solid #e7eaee;color:#11141a;border-radius:9px;cursor:pointer;font-weight:600;" style-hover="background:#fff;">{{ nextLabel }}</button>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ panelNode }}" hint-placeholder-val="{{ false }}">
+    <div data-ui="" data-screen-label="Genre Detail" class="gxscroll" style="position:absolute;top:0;right:0;height:100%;width:400px;z-index:34;background:#0d1014;border-left:1px solid rgba(255,255,255,.09);overflow-y:auto;box-shadow:-24px 0 70px rgba(0,0,0,.5);">
+      <div style="padding:26px 26px 40px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px;">
+          <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap;">
+            <span style="{{ selFamChip }}">{{ selFamLabel }}</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7b828d;">est. {{ selEra }}</span>
+            <sc-if value="{{ selEmerging }}" hint-placeholder-val="{{ false }}"><span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;color:#0a0c10;background:{{ selFamColor }};padding:3px 7px;border-radius:5px;">RISING</span></sc-if>
+          </div>
+          <button onClick="{{ onClosePanel }}" style="background:none;border:none;color:#8a919b;font-size:18px;cursor:pointer;line-height:1;margin:-4px -4px 0 0;" style-hover="color:#fff;">✕</button>
+        </div>
+        <div style="font-family:'Spectral',serif;font-size:33px;line-height:1.05;color:#f4f6f8;margin-bottom:14px;">{{ selName }}</div>
+        <div style="font-family:'Spectral',serif;font-size:16.5px;line-height:1.6;color:#b6bcc4;text-wrap:pretty;">{{ selDef }}</div>
+
+        <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#5a626d;text-transform:uppercase;margin:26px 0 12px;">Key Traits</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;">
+          <sc-for list="{{ selTraits }}" as="t" hint-placeholder-count="4"><span style="font-size:12.5px;color:#cbd0d7;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08);padding:6px 11px;border-radius:8px;">{{ t }}</span></sc-for>
+        </div>
+
+        <sc-if value="{{ hasPreds }}" hint-placeholder-val="{{ false }}">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#5a626d;text-transform:uppercase;margin:26px 0 12px;">Predecessors</div>
+          <sc-for list="{{ selPreds }}" as="p" hint-placeholder-count="2">
+            <div style="margin-bottom:13px;">
+              <div style="display:flex;align-items:center;gap:9px;cursor:pointer;" onClick="{{ p.onSelect }}">
+                <span style="{{ p.dotStyle }}"></span>
+                <span style="flex:1;font-size:14.5px;color:#e7eaee;font-weight:500;">{{ p.name }}</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#7b828d;">{{ p.pct }}</span>
+              </div>
+              <div style="padding-left:18px;margin-top:6px;height:3px;background:rgba(255,255,255,.07);border-radius:2px;overflow:hidden;"><div style="{{ p.bar }}"></div></div>
+              <div onClick="{{ p.onEdge }}" style="padding-left:18px;margin-top:6px;font-size:11.5px;color:#868d97;cursor:pointer;" style-hover="color:#cbd0d7;">{{ p.typeLabel }} · {{ p.relLabel }} ↗</div>
+            </div>
+          </sc-for>
+        </sc-if>
+
+        <sc-if value="{{ hasDescs }}" hint-placeholder-val="{{ false }}">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#5a626d;text-transform:uppercase;margin:26px 0 12px;">Descendants</div>
+          <sc-for list="{{ selDescs }}" as="p" hint-placeholder-count="2">
+            <div style="margin-bottom:13px;">
+              <div style="display:flex;align-items:center;gap:9px;cursor:pointer;" onClick="{{ p.onSelect }}">
+                <span style="{{ p.dotStyle }}"></span>
+                <span style="flex:1;font-size:14.5px;color:#e7eaee;font-weight:500;">{{ p.name }}</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#7b828d;">{{ p.pct }}</span>
+              </div>
+              <div style="padding-left:18px;margin-top:6px;height:3px;background:rgba(255,255,255,.07);border-radius:2px;overflow:hidden;"><div style="{{ p.bar }}"></div></div>
+              <div onClick="{{ p.onEdge }}" style="padding-left:18px;margin-top:6px;font-size:11.5px;color:#868d97;cursor:pointer;" style-hover="color:#cbd0d7;">{{ p.typeLabel }} · {{ p.relLabel }} ↗</div>
+            </div>
+          </sc-for>
+        </sc-if>
+
+        <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#5a626d;text-transform:uppercase;margin:26px 0 10px;">Representative Artists</div>
+        <div style="font-size:14.5px;color:#cbd0d7;line-height:1.6;">{{ selArtists }}</div>
+
+        <sc-if value="{{ selHasRep }}" hint-placeholder-val="{{ false }}">
+          <div style="margin-top:24px;padding:16px 17px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:13px;">
+            <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.18em;color:{{ selFamColor }};text-transform:uppercase;margin-bottom:9px;">◷ Why it sounds this way</div>
+            <div style="font-family:'Spectral',serif;font-size:15.5px;line-height:1.55;color:#d4d9df;text-wrap:pretty;">{{ selRepWhy }}</div>
+            <div style="font-size:12px;color:#868d97;margin-top:10px;font-family:'JetBrains Mono',monospace;">{{ selRepT }} — {{ selRepA }}</div>
+          </div>
+        </sc-if>
+
+        <div style="display:flex;align-items:center;justify-content:space-between;margin:26px 0 4px;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#5a626d;text-transform:uppercase;">Representative Tracks</div>
+          <button onClick="{{ onOpenListen }}" style="background:none;border:none;color:#54c6d6;font-size:11.5px;cursor:pointer;font-family:'Schibsted Grotesk';" style-hover="color:#7fd9e6;">Listen ↗</button>
+        </div>
+        <sc-for list="{{ selTracks }}" as="t" hint-placeholder-count="2">
+          <div style="display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.05);">
+            <button onClick="{{ t.onPlay }}" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05);color:#eef0f3;cursor:pointer;flex:0 0 auto;font-size:11px;" style-hover="background:rgba(255,255,255,.12);">{{ t.icon }}</button>
+            <div style="flex:1;min-width:0;">
+              <div style="font-size:13.5px;color:#e7eaee;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ t.t }}</div>
+              <div style="font-size:11.5px;color:#868d97;">{{ t.a }}</div>
+            </div>
+            <div style="{{ t.eqStyle }}">
+              <span style="display:block;width:3px;background:currentColor;border-radius:2px;animation:gxeq .7s ease-in-out infinite;"></span>
+              <span style="display:block;width:3px;background:currentColor;border-radius:2px;animation:gxeq .7s ease-in-out infinite .2s;"></span>
+              <span style="display:block;width:3px;background:currentColor;border-radius:2px;animation:gxeq .7s ease-in-out infinite .38s;"></span>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ panelEdge }}" hint-placeholder-val="{{ false }}">
+    <div data-ui="" class="gxscroll" style="position:absolute;top:0;right:0;height:100%;width:400px;z-index:34;background:#0d1014;border-left:1px solid rgba(255,255,255,.09);overflow-y:auto;box-shadow:-24px 0 70px rgba(0,0,0,.5);">
+      <div style="padding:26px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#5a626d;text-transform:uppercase;">Influence Relationship</span>
+          <button onClick="{{ onClosePanel }}" style="background:none;border:none;color:#8a919b;font-size:18px;cursor:pointer;line-height:1;" style-hover="color:#fff;">✕</button>
+        </div>
+        <div style="display:flex;align-items:center;gap:11px;margin-bottom:24px;">
+          <div style="display:flex;align-items:center;gap:7px;"><span style="width:11px;height:11px;border-radius:50%;background:{{ edgeFromColor }};box-shadow:0 0 11px {{ edgeFromColor }};"></span><span style="font-size:15px;color:#e7eaee;font-weight:500;">{{ edgeFromName }}</span></div>
+          <span style="color:#5a626d;font-size:16px;">→</span>
+          <div style="display:flex;align-items:center;gap:7px;"><span style="width:11px;height:11px;border-radius:50%;background:{{ edgeToColor }};box-shadow:0 0 11px {{ edgeToColor }};"></span><span style="font-size:15px;color:#e7eaee;font-weight:500;">{{ edgeToName }}</span></div>
+        </div>
+        <div style="font-family:'Spectral',serif;font-size:25px;color:#f4f6f8;margin-bottom:6px;">{{ edgeRel }}</div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
+          <span style="font-size:12.5px;color:#cbd0d7;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);padding:5px 11px;border-radius:8px;">{{ edgeType }} influence</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:7px;"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;color:#7b828d;">STRENGTH OF INFLUENCE</span><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#e7eaee;">{{ edgePct }}</span></div>
+        <div style="height:5px;background:rgba(255,255,255,.07);border-radius:3px;overflow:hidden;margin-bottom:26px;"><div style="{{ edgeBar }}"></div></div>
+        <div style="font-family:'Spectral',serif;font-size:17px;line-height:1.6;color:#c4cad1;text-wrap:pretty;">{{ edgeNote }}</div>
+        <div style="display:flex;gap:10px;margin-top:28px;">
+          <button onClick="{{ onViewFrom }}" style="flex:1;font-family:'Schibsted Grotesk';font-size:13px;padding:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);color:#cbd0d7;border-radius:10px;cursor:pointer;" style-hover="background:rgba(255,255,255,.09);">View {{ edgeFromName }}</button>
+          <button onClick="{{ onViewTo }}" style="flex:1;font-family:'Schibsted Grotesk';font-size:13px;padding:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);color:#cbd0d7;border-radius:10px;cursor:pointer;" style-hover="background:rgba(255,255,255,.09);">View {{ edgeToName }}</button>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ showListen }}" hint-placeholder-val="{{ false }}">
+    <div data-ui="" onClick="{{ onCloseListen }}" style="position:absolute;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;background:rgba(4,5,7,.62);backdrop-filter:blur(5px);">
+      <div onClick="{{ onStop }}" style="width:min(470px,90vw);max-height:84vh;overflow-y:auto;background:#13161c;border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:28px;box-shadow:0 40px 110px rgba(0,0,0,.6);" class="gxscroll">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:#5a626d;text-transform:uppercase;">Representative Listening</div>
+          <button onClick="{{ onCloseListen }}" style="background:none;border:none;color:#8a919b;font-size:18px;cursor:pointer;line-height:1;margin-top:-4px;" style-hover="color:#fff;">✕</button>
+        </div>
+        <div style="font-family:'Spectral',serif;font-size:27px;color:#f4f6f8;margin-bottom:18px;">{{ selName }}</div>
+        <div style="border-radius:14px;padding:20px;background:linear-gradient(135deg, rgba(30,215,96,.14), rgba(255,255,255,.02)), repeating-linear-gradient(45deg, rgba(255,255,255,.025) 0 10px, transparent 10px 20px);border:1px solid rgba(255,255,255,.09);display:flex;align-items:center;gap:14px;margin-bottom:20px;">
+          <div style="width:46px;height:46px;border-radius:50%;background:#1ed760;display:flex;align-items:center;justify-content:center;flex:0 0 auto;color:#06210f;font-size:18px;">▶</div>
+          <div><div style="font-size:14px;color:#e7eaee;font-weight:600;">Open the {{ selName }} playlist</div><div style="font-size:11.5px;color:#868d97;font-family:'JetBrains Mono',monospace;margin-top:3px;">Spotify embed placeholder · connect to play</div></div>
+        </div>
+        <sc-for list="{{ selTracks }}" as="t" hint-placeholder-count="2">
+          <div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.05);">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#565d68;width:18px;flex:0 0 auto;">{{ t.idx }}</span>
+            <div style="flex:1;min-width:0;"><div style="font-size:13.5px;color:#e7eaee;">{{ t.t }}</div><div style="font-size:11.5px;color:#868d97;">{{ t.a }}</div></div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:&quot;100%&quot;},&quot;alwaysLabels&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Display&quot;},&quot;dimInactive&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0.26,&quot;min&quot;:0.06,&quot;max&quot;:0.45,&quot;step&quot;:0.02,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Display&quot;,&quot;unit&quot;:&quot;&quot;}}">
+class Component extends DCLogic {
+  constructor(props){
+    super(props);
+    this.viewportRef = React.createRef();
+    this.worldRef = React.createRef();
+    this.view = { x:0, y:0, k:0.6 };
+    this.dragging = false;
+    this.WW = 2480; this.WH = 1340;
+    this.minYear = 1900; this.maxYear = 2025;
+    this.HEX = { blues_rock:'#e0a23c', ambient_shoegaze:'#b08cf0', electronic:'#54c6d6' };
+    this.RGB = { blues_rock:'224,162,60', ambient_shoegaze:'176,140,240', electronic:'84,198,214' };
+    this.famLabel = { blues_rock:'Blues · Rock', ambient_shoegaze:'Dream · Shoegaze', electronic:'Dance · Electronic' };
+    this.typeLabel = { rhythmic:'Rhythmic', production:'Production', harmonic:'Harmonic', cultural:'Cultural', scene:'Scene' };
+    this.relLabel = { origin:'Historical origin', stylistic:'Stylistic influence', scene:'Scene adjacency' };
+    this.relShort = { origin:'origin', stylistic:'stylistic', scene:'scene' };
+
+    this.GENRES = [
+      { id:'blues', name:'Blues', fam:'blues_rock', year:1903, x:140, y:320, def:"The foundational African American form built on the 12-bar progression, blue notes, and call-and-response — the harmonic and emotional bedrock of nearly all popular music that followed.", traits:['12-bar form','Blue notes','Call & response','Guitar & voice'], artists:['Robert Johnson','Muddy Waters','Bessie Smith','B.B. King'], tracks:[{t:'Cross Road Blues',a:'Robert Johnson',why:"The bent 'blue' thirds and stinging slide guitar became the DNA of nearly every rock lead that followed."},{t:'Hoochie Coochie Man',a:'Muddy Waters'}] },
+      { id:'rnb', name:'Rhythm & Blues', fam:'blues_rock', year:1947, x:440, y:320, def:"Electrified, urban, and groove-forward — blues amplified with a backbeat, horns, and dancefloor intent. The pivot from rural lament to city celebration.", traits:['Backbeat','Horn sections','Electrified','Danceable'], artists:['Big Joe Turner','Ray Charles','Ruth Brown','Louis Jordan'], tracks:[{t:'Shake, Rattle and Roll',a:'Big Joe Turner',why:"Its driving backbeat and twelve-bar shuffle is the literal template rock 'n' roll copied wholesale."},{t:"What'd I Say",a:'Ray Charles'}] },
+      { id:'rocknroll', name:"Rock 'n' Roll", fam:'blues_rock', year:1954, x:720, y:250, def:"R&B accelerated for a teenage mass market — sharper backbeat, guitar hooks, and rebellion packaged as pop. The first true youth-culture genre.", traits:['Backbeat','Guitar hooks','Teen rebellion','2-minute songs'], artists:['Chuck Berry','Little Richard','Elvis Presley','Bo Diddley'], tracks:[{t:'Johnny B. Goode',a:'Chuck Berry',why:"Berry's double-stop intro riff codified the electric-guitar vocabulary every rock band still draws on."},{t:'Tutti Frutti',a:'Little Richard'}] },
+      { id:'garage', name:'Garage Rock', fam:'blues_rock', year:1963, x:1000, y:300, def:"Raw, amateur, primal rock made by teenage bands in suburban garages — distortion, attitude, and three chords over polish.", traits:['Distorted','Lo-fi','Three chords','Amateur energy'], artists:['The Sonics','The Kingsmen','The Standells','? & the Mysterians'], tracks:[{t:'Louie Louie',a:'The Kingsmen',why:"Its murky, barely-intelligible take made imperfection itself a sound — a direct seed of punk."},{t:'Psycho',a:'The Sonics'}] },
+      { id:'punk', name:'Punk', fam:'blues_rock', year:1976, x:1320, y:235, def:"A stripped-to-the-bone rejection of rock excess — fast, short, confrontational, and defiantly DIY. As much an ethos as a sound.", traits:['Fast tempos','DIY ethic','Anti-virtuosity','Confrontational'], artists:['Ramones','Sex Pistols','The Clash','Buzzcocks'], tracks:[{t:'Blitzkrieg Bop',a:'Ramones',why:"Two-minute, four-to-the-floor downstrokes proved a song needs nothing but speed and a hook."},{t:'Anarchy in the U.K.',a:'Sex Pistols'}] },
+      { id:'postpunk', name:'Post-Punk', fam:'blues_rock', year:1978, x:1560, y:400, def:"Punk's energy redirected into art-school experimentation — angular basslines, cavernous production, dub space, and emotional ambiguity.", traits:['Angular bass','Atmospheric','Art-damaged','Dub space'], artists:['Joy Division','Siouxsie and the Banshees','Wire','The Cure'], tracks:[{t:"She's Lost Control",a:'Joy Division',why:"Martin Hannett's icy, spacious production invented the cold atmosphere dream pop would later warm."},{t:'A Forest',a:'The Cure'}] },
+      { id:'alternative', name:'Alternative', fam:'blues_rock', year:1986, x:1900, y:285, def:"The umbrella for guitar bands working outside the mainstream — college radio, indie labels, and a broad church of post-punk descendants.", traits:['Indie labels','College radio','Eclectic','Guitar-forward'], artists:['Pixies','R.E.M.','Sonic Youth','Dinosaur Jr.'], tracks:[{t:'Where Is My Mind?',a:'Pixies',why:"The loud-quiet-loud dynamic here became the structural blueprint for a decade of alt-rock."}] },
+      { id:'dreampop', name:'Dream Pop', fam:'ambient_shoegaze', year:1983, x:1600, y:660, def:"Gauzy, reverb-soaked pop prioritising texture and mood over riffs — breathy vocals floating in shimmering, effects-laden guitar.", traits:['Reverb-drenched','Breathy vocals','Atmospheric','Slow-mid tempo'], artists:['Cocteau Twins','Mazzy Star','Galaxie 500','This Mortal Coil'], tracks:[{t:'Cherry-Coloured Funk',a:'Cocteau Twins',why:"Elizabeth Fraser's wordless vocal as pure texture showed melody could dissolve into atmosphere."},{t:'Fade Into You',a:'Mazzy Star'}] },
+      { id:'noisepop', name:'Noise Pop', fam:'ambient_shoegaze', year:1985, x:1700, y:820, def:"Sweet pop melodies buried under squalls of feedback and distortion — sugar and noise in equal, deliberate measure.", traits:['Feedback','Pop melodies','Distortion','Fuzz'], artists:['The Jesus and Mary Chain','Yo La Tengo','The Vaselines'], tracks:[{t:'Just Like Honey',a:'The Jesus and Mary Chain',why:"A girl-group melody drowned in feedback proved noise and pop could be a single gesture."}] },
+      { id:'shoegaze', name:'Shoegaze', fam:'ambient_shoegaze', year:1988, x:1960, y:730, def:"Walls of layered, effects-saturated guitar where melody, vocal, and noise blur into one overwhelming texture — named for the pedalboard stare.", traits:["Guitar 'glide'",'Buried vocals','Wall of sound','Pedal-driven'], artists:['My Bloody Valentine','Slowdive','Ride','Lush'], tracks:[{t:'Only Shallow',a:'My Bloody Valentine',why:"Kevin Shields' pitch-bending glide guitar is the defining timbre the whole genre is measured against."},{t:'Alison',a:'Slowdive'}] },
+      { id:'nugaze', name:'Nu-Gaze', fam:'ambient_shoegaze', year:2019, x:2240, y:720, emerging:true, def:"A streaming-era revival blending classic shoegaze textures with bedroom-pop intimacy and online scenes — proof the wall of sound never left.", traits:['Bedroom production','Online scenes','Texture-forward','Revivalist'], artists:['DIIV','Whirr','Hatchie','Julie'], tracks:[{t:'Doused',a:'DIIV',why:"Its propulsive, reverb-washed jangle updated shoegaze for the indie streaming generation."}] },
+      { id:'disco', name:'Disco', fam:'electronic', year:1974, x:1160, y:1080, def:"Four-on-the-floor dance music born in queer, Black, and Latino clubs — lush orchestration, syncopated bass, and the 12-inch extended mix.", traits:['Four-on-the-floor','String sections','Syncopated bass','Club culture'], artists:['Donna Summer','Chic','Giorgio Moroder','Sylvester'], tracks:[{t:'I Feel Love',a:'Donna Summer',why:"Moroder's all-synthesizer arpeggio pointed directly at the machine-made future of dance music."},{t:'Good Times',a:'Chic'}] },
+      { id:'protohouse', name:'Proto-House', fam:'electronic', year:1981, x:1460, y:1080, def:"The transitional Chicago sound — DJs splicing disco, drum machines, and edits at clubs like the Warehouse, before 'house' was even a name.", traits:['Disco edits','Drum machines','DJ tools','Chicago clubs'], artists:['Frankie Knuckles','Ron Hardy','Jamie Principle'], tracks:[{t:'Your Love',a:'Jamie Principle & Frankie Knuckles',why:"Its hypnotic synth-bass loop and machine pulse marks the exact bridge from disco to house."}] },
+      { id:'house', name:'House', fam:'electronic', year:1985, x:1700, y:1080, def:"Chicago's machine-driven dance form — the 909 kick four-on-the-floor, soulful samples, and an endlessly extendable groove.", traits:['909 kick','4/4 groove','Soul samples','Repetition'], artists:['Marshall Jefferson','Mr. Fingers','Steve Silk Hurley','Farley Jackmaster Funk'], tracks:[{t:'Move Your Body',a:'Marshall Jefferson',why:"The piano-led house anthem template defined the genre's euphoric, song-like side."},{t:'Can You Feel It',a:'Mr. Fingers'}] },
+      { id:'techno', name:'Techno', fam:'electronic', year:1985, x:1760, y:940, def:"Detroit's futurist answer to house — colder, more mechanical and sci-fi, built on funk's syncopation and a love of the machine.", traits:['Mechanical','Futurist','Syncopated funk','Detroit'], artists:['Juan Atkins','Derrick May','Kevin Saunderson','Jeff Mills'], tracks:[{t:'Strings of Life',a:'Derrick May',why:"Its stabbing, string-like sequences showed techno could be euphoric as well as cerebral."}] },
+      { id:'acid', name:'Acid House', fam:'electronic', year:1987, x:1820, y:1240, def:"House mutated by the squelching, resonant TB-303 bassline — hypnotic, psychedelic, and the engine of the UK rave explosion.", traits:['TB-303 squelch','Hypnotic','Psychedelic','Rave culture'], artists:['Phuture','DJ Pierre','Adonis'], tracks:[{t:'Acid Tracks',a:'Phuture',why:"An accidental misuse of the 303 created an entirely new timbre that named a whole genre."}] },
+      { id:'deephouse', name:'Deep House', fam:'electronic', year:1988, x:1990, y:1140, def:"House's introspective, jazz- and soul-infused branch — warm chords, subdued tempos, and a focus on mood over peak-time impact.", traits:['Lush 7th chords','Soulful','Sub-bass','Subdued tempo'], artists:['Larry Heard','Kerri Chandler','Moodymann','Ron Trent'], tracks:[{t:'Can You Feel It',a:'Mr. Fingers',why:"Larry Heard's warm, pad-driven chords set the blueprint for deep house's emotional warmth."}] },
+      { id:'techhouse', name:'Tech House', fam:'electronic', year:1993, x:2170, y:1020, def:"The pragmatic fusion of house's groove with techno's stripped, hypnotic precision — DJ-functional, percussive, and minimal.", traits:['Minimal','Percussive','Hypnotic','DJ-functional'], artists:['Mr. C','Terry Francis','Eats Everything'], tracks:[{t:'Heater',a:'Samim',why:"Its cuíca-driven minimal groove epitomised tech house's playful, percussive functionality."}] },
+      { id:'proghouse', name:'Progressive House', fam:'electronic', year:1993, x:2210, y:1230, def:"House built for the long journey — gradually evolving arrangements, layered builds, and emotional, melodic peaks across extended tracks.", traits:['Long builds','Layered','Melodic peaks','Journey arcs'], artists:['Sasha','John Digweed','Leftfield','BT'], tracks:[{t:'Xpander',a:'Sasha',why:"Its slow, cinematic build and emotive lead defined progressive house's long-arc euphoria."}] },
+      { id:'organic', name:'Organic House', fam:'electronic', year:2016, x:2330, y:1100, emerging:true, def:"A contemporary, downtempo strain weaving world-music instrumentation, organic percussion, and melodic warmth into the house framework.", traits:['Organic percussion','World instruments','Downtempo','Melodic'], artists:['Bedouin','Âme','Lee Burridge','Black Coffee'], tracks:[{t:'Drive',a:'Black Coffee',why:"Its blend of African percussion and deep melodic chords typifies organic house's textural warmth."}] }
+    ];
+
+    this.EDGES = [
+      {from:'blues',to:'rnb',rel:'origin',type:'harmonic',strength:0.95,note:"R&B is electrified blues: the 12-bar harmony and blue notes carried straight over, now with a backbeat and amplification."},
+      {from:'rnb',to:'rocknroll',rel:'origin',type:'rhythmic',strength:0.95,note:"Rock 'n' roll lifted R&B's shuffle and backbeat almost verbatim, repackaging it for a teenage audience."},
+      {from:'blues',to:'rocknroll',rel:'stylistic',type:'harmonic',strength:0.6,note:"Beyond R&B, early rockers drew their guitar vocabulary and 12-bar forms directly from Delta and Chicago blues."},
+      {from:'rocknroll',to:'garage',rel:'origin',type:'rhythmic',strength:0.85,note:"Garage bands stripped rock 'n' roll back to its rawest chords and beat, minus the showbiz polish."},
+      {from:'garage',to:'punk',rel:'origin',type:'scene',strength:0.8,note:"Punk inherited garage's amateur, three-chord primitivism and hardened it into an ideology."},
+      {from:'rocknroll',to:'punk',rel:'stylistic',type:'rhythmic',strength:0.4,note:"Punk's speed and brevity echo early rock 'n' roll's two-minute, high-energy singles."},
+      {from:'punk',to:'postpunk',rel:'origin',type:'scene',strength:0.9,note:"Post-punk emerged from the same scene and often the same musicians, redirecting punk's energy toward experimentation."},
+      {from:'punk',to:'alternative',rel:'stylistic',type:'cultural',strength:0.6,note:"Punk's DIY, independent-label ethic became the organising principle of alternative rock."},
+      {from:'postpunk',to:'alternative',rel:'origin',type:'harmonic',strength:0.7,note:"Much of alternative rock is post-punk's atmospheric, art-damaged sensibility entering the mainstream."},
+      {from:'postpunk',to:'dreampop',rel:'stylistic',type:'production',strength:0.65,note:"Dream pop warmed post-punk's cold, cavernous, reverb-heavy production into something lush and romantic."},
+      {from:'dreampop',to:'shoegaze',rel:'origin',type:'production',strength:0.85,note:"Shoegaze took dream pop's reverb-soaked atmosphere and pushed the guitar textures to overwhelming extremes."},
+      {from:'noisepop',to:'shoegaze',rel:'origin',type:'production',strength:0.8,note:"Shoegaze fused noise pop's feedback and distortion with dream pop's melody and sense of space."},
+      {from:'postpunk',to:'noisepop',rel:'stylistic',type:'scene',strength:0.5,note:"Noise pop drew on post-punk's confrontational edge while keeping a pop heart."},
+      {from:'garage',to:'noisepop',rel:'stylistic',type:'production',strength:0.45,note:"The lo-fi fuzz and distortion of garage rock fed directly into noise pop's wall of feedback."},
+      {from:'alternative',to:'shoegaze',rel:'scene',type:'scene',strength:0.45,note:"Shoegaze and alternative shared bills, labels, and audiences as adjacent guitar scenes of the late '80s."},
+      {from:'shoegaze',to:'nugaze',rel:'origin',type:'production',strength:0.9,note:"Nu-gaze revives shoegaze's exact textures for a new generation of bedroom and online artists."},
+      {from:'dreampop',to:'nugaze',rel:'stylistic',type:'production',strength:0.5,note:"The revival leans equally on dream pop's intimacy and melodic warmth."},
+      {from:'disco',to:'protohouse',rel:'origin',type:'production',strength:0.9,note:"Proto-house began as DJs re-editing and extending disco records with drum machines."},
+      {from:'protohouse',to:'house',rel:'origin',type:'rhythmic',strength:0.95,note:"House is proto-house formalised: the Chicago club sound given its own productions and identity."},
+      {from:'disco',to:'house',rel:'stylistic',type:'cultural',strength:0.6,note:"House kept disco's four-on-the-floor pulse and club-culture ethos as its very foundation."},
+      {from:'house',to:'deephouse',rel:'origin',type:'harmonic',strength:0.85,note:"Deep house is house turned inward — the same groove, with richer jazz chords and a subdued mood."},
+      {from:'house',to:'acid',rel:'origin',type:'production',strength:0.8,note:"Acid house is house plus one machine: the resonant TB-303 bassline transformed the sound."},
+      {from:'house',to:'techhouse',rel:'origin',type:'rhythmic',strength:0.7,note:"Tech house keeps house's groove as its backbone while borrowing techno's restraint."},
+      {from:'techno',to:'techhouse',rel:'stylistic',type:'production',strength:0.7,note:"From techno, tech house takes its stripped, hypnotic, machine-precise aesthetic."},
+      {from:'house',to:'proghouse',rel:'origin',type:'harmonic',strength:0.65,note:"Progressive house extends house's structure into long, evolving, journey-like arrangements."},
+      {from:'deephouse',to:'proghouse',rel:'stylistic',type:'harmonic',strength:0.4,note:"Progressive house borrows deep house's lush, emotive chord palette for its melodic peaks."},
+      {from:'acid',to:'techno',rel:'scene',type:'scene',strength:0.4,note:"Acid house and Detroit techno cross-pollinated heavily through the UK rave scene."},
+      {from:'disco',to:'techno',rel:'stylistic',type:'rhythmic',strength:0.35,note:"Techno's syncopation traces back through funk and disco's machine-driven grooves."},
+      {from:'deephouse',to:'organic',rel:'origin',type:'harmonic',strength:0.7,note:"Organic house grows from deep house's warm, melodic, mood-first approach."},
+      {from:'house',to:'organic',rel:'stylistic',type:'rhythmic',strength:0.45,note:"It retains house's 4/4 framework beneath organic percussion and world instrumentation."},
+      {from:'rnb',to:'disco',rel:'stylistic',type:'cultural',strength:0.5,note:"Disco's groove descends from R&B, soul, and funk — the same Black dance-music continuum."}
+    ];
+
+    this.JOURNEYS = [
+      { id:'shoegaze', title:'How Shoegaze Emerged', subtitle:'Post-punk atmosphere meets pop noise', steps:[
+        {id:'postpunk', text:"It starts with post-punk's cold, cavernous spaces — bands like Joy Division and The Cure proving guitars could evoke vast atmosphere, not just aggression."},
+        {id:'dreampop', text:"Dream pop warmed that atmosphere: Cocteau Twins and Mazzy Star drowned breathy melodies in shimmering reverb, mood chosen over riff."},
+        {id:'noisepop', text:"In parallel, noise pop — The Jesus and Mary Chain especially — buried sweet pop hooks under squalls of feedback, making the noise itself melodic."},
+        {id:'shoegaze', text:"Shoegaze fused both: dream pop's texture and noise pop's distortion collapsed into a single overwhelming wall of sound, perfected on My Bloody Valentine's Loveless."}
+      ]},
+      { id:'disco2house', title:'From Disco to House', subtitle:'How the dancefloor went electronic', steps:[
+        {id:'disco', text:"Disco built the foundation: four-on-the-floor, the extended 12-inch mix, and a club culture born in queer and Black spaces."},
+        {id:'protohouse', text:"When disco fell from fashion, Chicago DJs like Frankie Knuckles kept it alive — re-editing records with drum machines into a rawer 'proto-house'."},
+        {id:'house', text:"Those edits became original productions. The 909 kick, soul samples, and endless groove crystallised into house — disco rebuilt by machines."},
+        {id:'deephouse', text:"Larry Heard turned house inward, adding lush jazz chords and a subdued, emotional warmth: deep house, the genre's introspective soul."}
+      ]},
+      { id:'blues2punk', title:'Blues to Punk', subtitle:"Six decades of rock's backbone", steps:[
+        {id:'blues', text:"Everything begins with the blues: the 12-bar form, blue notes, and call-and-response that underpin all of rock."},
+        {id:'rnb', text:"Electrified and given a backbeat, blues became rhythm & blues — urban, danceable, and amplified."},
+        {id:'rocknroll', text:"R&B accelerated for teenagers became rock 'n' roll, with Chuck Berry's riffs codifying the electric-guitar language."},
+        {id:'garage', text:"Garage bands stripped it back to three raw chords and amateur energy in suburban garages."},
+        {id:'punk', text:"Punk took that primitivism to its logical extreme — fast, short, DIY, and confrontational."}
+      ]}
+    ];
+
+    this.state = { year:2025, selectedNodeId:null, selectedEdgeId:null, hoverNodeId:null, mode:'explore', activeJourney:null, journeyStep:0, breadcrumb:[], showPaths:false, showListen:false, nowPlaying:null, playing:false };
+  }
+
+  rgba(fam,a){ return 'rgba('+this.RGB[fam]+','+a+')'; }
+  bez(a,b){ var dx=b.x-a.x; return 'M '+a.x+' '+a.y+' C '+(a.x+dx*0.42)+' '+a.y+', '+(a.x+dx*0.58)+' '+b.y+', '+b.x+' '+b.y; }
+  nodeR(g){ return Math.min(48, 23 + (this.outDeg[g.id]||0)*3 + (this.inDeg[g.id]||0)*2.2); }
+
+  build(){
+    if(this._built) return;
+    this.byId={}; this.outDeg={}; this.inDeg={};
+    this.GENRES.forEach(g=>{ this.byId[g.id]=g; });
+    this.EDGES.forEach((e,i)=>{ e._i='ed'+i; this.outDeg[e.from]=(this.outDeg[e.from]||0)+1; this.inDeg[e.to]=(this.inDeg[e.to]||0)+1; });
+    this._built=true;
+  }
+
+  applyTransform(animated){ var w=this.worldRef.current; if(!w)return; w.style.transition=animated?'transform .7s cubic-bezier(.22,.61,.36,1)':'none'; w.style.transform='translate('+this.view.x+'px,'+this.view.y+'px) scale('+this.view.k+')'; }
+
+  fitView(animated){
+    var vp=this.viewportRef.current; if(!vp)return;
+    var r=vp.getBoundingClientRect();
+    var x0=Infinity,y0=Infinity,x1=-Infinity,y1=-Infinity;
+    this.GENRES.forEach(g=>{ x0=Math.min(x0,g.x); y0=Math.min(y0,g.y); x1=Math.max(x1,g.x); y1=Math.max(y1,g.y); });
+    x0-=130; y0-=110; x1+=150; y1+=110;
+    var cw=x1-x0, ch=y1-y0;
+    var k=Math.max(0.24,Math.min(0.92,Math.min((r.width-60)/cw,(r.height-210)/ch)));
+    this.view={ x:(r.width-cw*k)/2 - x0*k, y:(r.height-ch*k)/2 - y0*k - 8, k:k };
+    this.applyTransform(animated);
+  }
+
+  centerOnNode(node,k,panelOpen){
+    var vp=this.viewportRef.current; if(!vp)return;
+    var r=vp.getBoundingClientRect();
+    var tx = panelOpen ? (r.width-400)/2 : r.width/2;
+    var ty = r.height*0.46;
+    this.view={ x:tx-node.x*k, y:ty-node.y*k, k:k };
+    this.applyTransform(true);
+  }
+
+  zoom(f){
+    var vp=this.viewportRef.current; if(!vp)return;
+    var r=vp.getBoundingClientRect();
+    var mx=r.width/2, my=r.height/2;
+    var wx=(mx-this.view.x)/this.view.k, wy=(my-this.view.y)/this.view.k;
+    var nk=Math.min(2.4,Math.max(0.24,this.view.k*f));
+    this.view={ x:mx-wx*nk, y:my-wy*nk, k:nk };
+    this.applyTransform(true);
+  }
+
+  setHover(id){ if(this.dragging)return; if(this.state.hoverNodeId!==id) this.setState({hoverNodeId:id}); }
+
+  selectNode(id, viaLink){
+    clearInterval(this._t);
+    this.setState(p=>{
+      var bc=p.breadcrumb.slice();
+      if(viaLink){ var i=bc.indexOf(id); bc = i>=0 ? bc.slice(0,i+1) : bc.concat([id]); }
+      else bc=[id];
+      return { selectedNodeId:id, selectedEdgeId:null, mode:'explore', activeJourney:null, showPaths:false, showListen:false, breadcrumb:bc, year:Math.max(p.year, this.byId[id].year), playing:false, hoverNodeId:null };
+    });
+    var node=this.byId[id];
+    requestAnimationFrame(()=>this.centerOnNode(node, Math.max(this.view.k,0.9), true));
+  }
+
+  selectEdge(i){
+    clearInterval(this._t);
+    this.setState({ selectedEdgeId:i, selectedNodeId:null, showPaths:false, showListen:false, playing:false, hoverNodeId:null });
+    var e=this.EDGES.find(x=>x._i===i);
+    if(e){ var a=this.byId[e.from], b=this.byId[e.to]; requestAnimationFrame(()=>this.centerOnNode({x:(a.x+b.x)/2,y:(a.y+b.y)/2}, Math.max(this.view.k,0.85), true)); }
+  }
+
+  closePanel(){ this.setState({ selectedNodeId:null, selectedEdgeId:null, breadcrumb:[], showListen:false, showPaths:false }); }
+
+  togglePlay(){
+    if(this.state.playing){ clearInterval(this._t); this.setState({playing:false}); return; }
+    var start = this.state.year>=this.maxYear ? this.minYear : this.state.year;
+    this.setState({ year:start, playing:true, selectedNodeId:null, selectedEdgeId:null });
+    this._t=setInterval(()=>{
+      this.setState(p=>{ var ny=p.year+2; if(ny>=this.maxYear){ clearInterval(this._t); return {year:this.maxYear, playing:false}; } return {year:ny}; });
+    },110);
+  }
+
+  startJourney(id){
+    clearInterval(this._t);
+    var j=this.JOURNEYS.find(x=>x.id===id);
+    this.setState({ mode:'journey', activeJourney:j, journeyStep:0, selectedNodeId:null, selectedEdgeId:null, showPaths:false, showListen:false, breadcrumb:[], year:this.maxYear, playing:false, hoverNodeId:null });
+    requestAnimationFrame(()=>this.centerOnNode(this.byId[j.steps[0].id], 0.95, false));
+  }
+
+  journeyGo(delta){
+    this.setState(p=>{ var ns=Math.max(0, Math.min(p.activeJourney.steps.length-1, p.journeyStep+delta)); return {journeyStep:ns}; },
+      ()=>{ var s=this.state.activeJourney.steps[this.state.journeyStep]; this.centerOnNode(this.byId[s.id], 0.95, false); });
+  }
+
+  exitJourney(){ this.setState({ mode:'explore', activeJourney:null, journeyStep:0 }); this.fitView(true); }
+
+  resetView(){ clearInterval(this._t); this.setState({ year:this.maxYear, selectedNodeId:null, selectedEdgeId:null, breadcrumb:[], mode:'explore', activeJourney:null, showPaths:false, showListen:false, hoverNodeId:null, playing:false }); this.fitView(true); }
+
+  playTrack(t){ this.setState(p=>({ nowPlaying: p.nowPlaying===t ? null : t })); }
+
+  componentDidMount(){
+    this.build();
+    var vp=this.viewportRef.current;
+    this._onDown=(e)=>{ if(e.button!==0)return; if(e.target.closest('[data-node]')||e.target.closest('[data-ui]'))return; this.dragging=true; this._moved=false; this._start={x:e.clientX,y:e.clientY,vx:this.view.x,vy:this.view.y}; vp.style.cursor='grabbing'; if(this.state.hoverNodeId)this.setState({hoverNodeId:null}); };
+    this._onMove=(e)=>{ if(!this.dragging)return; var dx=e.clientX-this._start.x, dy=e.clientY-this._start.y; if(Math.abs(dx)+Math.abs(dy)>4)this._moved=true; this.view.x=this._start.vx+dx; this.view.y=this._start.vy+dy; this.applyTransform(false); };
+    this._onUp=()=>{ if(!this.dragging)return; this.dragging=false; if(vp)vp.style.cursor='grab'; if(!this._moved && this.state.mode!=='journey'){ if(this.state.selectedNodeId||this.state.selectedEdgeId||this.state.showListen||this.state.showPaths) this.setState({selectedNodeId:null,selectedEdgeId:null,breadcrumb:[],showListen:false,showPaths:false}); } };
+    this._onWheel=(e)=>{ e.preventDefault(); var r=vp.getBoundingClientRect(); var mx=e.clientX-r.left, my=e.clientY-r.top; var wx=(mx-this.view.x)/this.view.k, wy=(my-this.view.y)/this.view.k; var f=e.deltaY<0?1.12:1/1.12; var nk=Math.min(2.4,Math.max(0.24,this.view.k*f)); this.view={x:mx-wx*nk,y:my-wy*nk,k:nk}; this.applyTransform(false); };
+    vp.addEventListener('pointerdown',this._onDown);
+    window.addEventListener('pointermove',this._onMove);
+    window.addEventListener('pointerup',this._onUp);
+    vp.addEventListener('wheel',this._onWheel,{passive:false});
+    this._fitDone=false;
+    requestAnimationFrame(()=>this.doFit());
+    setTimeout(()=>this.doFit(),90);
+    setTimeout(()=>this.doFit(),320);
+  }
+
+  doFit(){
+    var vp=this.viewportRef.current; if(!vp)return false;
+    var r=vp.getBoundingClientRect();
+    if(r.width<60||r.height<60) return false;
+    this.fitView(false);
+    this._fitDone=true;
+    return true;
+  }
+
+  componentDidUpdate(){
+    if(!this._fitDone){ this.doFit(); return; }
+    var w=this.worldRef.current;
+    if(w && !w.style.transform){ this.applyTransform(false); }
+  }
+
+  componentWillUnmount(){
+    clearInterval(this._t);
+    var vp=this.viewportRef.current;
+    window.removeEventListener('pointermove',this._onMove);
+    window.removeEventListener('pointerup',this._onUp);
+    if(vp){ vp.removeEventListener('pointerdown',this._onDown); vp.removeEventListener('wheel',this._onWheel); }
+  }
+
+  buildRel(e, otherId){
+    var o=this.byId[otherId];
+    return {
+      id:otherId, name:o.name,
+      typeLabel:this.typeLabel[e.type], relLabel:this.relShort[e.rel],
+      pct:Math.round(e.strength*100)+'%',
+      dotStyle:{ width:'9px', height:'9px', borderRadius:'50%', background:this.HEX[o.fam], flex:'0 0 auto', boxShadow:'0 0 10px '+this.rgba(o.fam,0.6) },
+      bar:{ width:Math.round(e.strength*100)+'%', height:'100%', background:this.HEX[o.fam], borderRadius:'2px', transition:'width .4s' },
+      onSelect:()=>this.selectNode(otherId,true),
+      onEdge:()=>this.selectEdge(e._i)
+    };
+  }
+
+  jEdge(e){
+    var st=this.state.activeJourney; if(!st)return false;
+    var steps=st.steps;
+    for(var i=0;i<this.state.journeyStep;i++){
+      var f=steps[i].id, t=steps[i+1].id;
+      if((e.from===f&&e.to===t)||(e.from===t&&e.to===f)) return true;
+    }
+    return false;
+  }
+
+  renderVals(){
+    this.build();
+    var s=this.state;
+    var alwaysLabels = !!this.props.alwaysLabels;
+    var dimAmt = (this.props.dimInactive!=null) ? this.props.dimInactive : 0.26;
+    var year=s.year;
+    var inJourney = s.mode==='journey' && !!s.activeJourney;
+    var active = s.selectedNodeId || s.hoverNodeId;
+    var rel=null;
+    if(active){ rel=new Set([active]); this.EDGES.forEach(e=>{ if(e.from===active)rel.add(e.to); if(e.to===active)rel.add(e.from); }); }
+    var jset=null, curJ=null;
+    if(inJourney){ jset=new Set(s.activeJourney.steps.map(x=>x.id)); curJ=s.activeJourney.steps[s.journeyStep].id; }
+
+    var nodes=this.GENRES.map(g=>{
+      var vis=g.year<=year;
+      var dim = inJourney ? !jset.has(g.id) : (rel ? !rel.has(g.id) : false);
+      var sel = g.id===s.selectedNodeId;
+      var cur = g.id===curJ;
+      var r=this.nodeR(g);
+      var glow = sel||cur;
+      var scale = !vis ? 0.4 : 1;
+      var op = !vis ? 0 : (dim ? dimAmt : 1);
+      var hex=this.HEX[g.fam];
+      return {
+        id:g.id, name:g.name, emerging:!!g.emerging,
+        meta: g.emerging ? (g.year+' · rising') : (''+g.year),
+        onClick:()=>this.selectNode(g.id,false),
+        onEnter:()=>this.setHover(g.id),
+        onLeave:()=>this.setHover(null),
+        container:{ position:'absolute', left:g.x+'px', top:g.y+'px', transform:'translate(-50%,-50%) scale('+scale+')', opacity:op, pointerEvents:vis?'auto':'none', transition:'opacity .55s ease, transform .55s cubic-bezier(.22,.61,.36,1)', cursor:'pointer', display:'flex', flexDirection:'column', alignItems:'center', gap:'9px', width:(2*r+70)+'px', willChange:'transform,opacity', zIndex: sel?6:(cur?5:2) },
+        disc:{ position:'relative', width:(2*r)+'px', height:(2*r)+'px', borderRadius:'50%', background:'radial-gradient(circle at 50% 33%, '+this.rgba(g.fam,glow?0.62:0.42)+', '+this.rgba(g.fam,0.06)+' 76%)', border:'1px solid '+this.rgba(g.fam,glow?0.95:0.42), boxShadow: glow ? ('0 0 0 5px '+this.rgba(g.fam,0.1)+', 0 0 55px '+this.rgba(g.fam,0.5)) : ('0 0 24px '+this.rgba(g.fam,0.16)), transition:'box-shadow .45s ease, border-color .45s ease, background .45s ease' },
+        ring:{ position:'absolute', inset:'-7px', borderRadius:'50%', border:'2px solid '+hex, opacity:g.emerging?0.9:0, display:g.emerging?'block':'none', animation:'gxpulse 2.6s ease-out infinite', pointerEvents:'none' },
+        labelWrap:{ textAlign:'center', transition:'opacity .4s', maxWidth:(2*r+130)+'px' },
+        nameStyle:{ fontSize:(sel?15:13.5)+'px', fontWeight:'600', color: sel?'#ffffff':(dim?'#5a626d':'#e7eaee'), letterSpacing:'.005em', lineHeight:'1.15', transition:'color .4s, font-size .3s', textShadow:'0 2px 10px rgba(0,0,0,.6)' },
+        metaStyle:{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', color: g.emerging?hex:(dim?'#454c56':'#7b828d'), letterSpacing:'.08em', marginTop:'3px', transition:'color .4s' }
+      };
+    });
+
+    var edges=this.EDGES.map(e=>{
+      var a=this.byId[e.from], b=this.byId[e.to];
+      var vis = a.year<=year && b.year<=year;
+      var act = inJourney ? this.jEdge(e) : (active ? (e.from===active||e.to===active) : false);
+      var dim = inJourney ? !act : (active ? !act : false);
+      var selE = e._i===s.selectedEdgeId;
+      var hot = act||selE;
+      var op = !vis ? 0 : (dim ? 0.05 : (hot ? 0.95 : 0.32));
+      return {
+        d:this.bez(a,b),
+        color:this.HEX[a.fam],
+        w:(1.1 + e.strength*3.0) + (hot?1.3:0),
+        dash: e.rel==='origin' ? 'none' : (e.rel==='stylistic' ? '9 7' : '1 8'),
+        op:op,
+        mx:(a.x+b.x)/2, my:(a.y+b.y)/2-7,
+        label:this.typeLabel[e.type],
+        labelOp: !vis ? 0 : (hot ? 0.92 : (alwaysLabels && !dim ? 0.4 : 0)),
+        onClick:()=>this.selectEdge(e._i)
+      };
+    });
+
+    var out = {
+      viewportRef:this.viewportRef, worldRef:this.worldRef,
+      worldW:this.WW, worldH:this.WH,
+      worldStyle:{ position:'absolute', left:'0', top:'0', width:this.WW+'px', height:this.WH+'px', transformOrigin:'0 0' },
+      nodes:nodes, edges:edges,
+      onTogglePaths:()=>this.setState(p=>({showPaths:!p.showPaths})),
+      onReset:()=>this.resetView(),
+      onZoomIn:()=>this.zoom(1.25), onZoomOut:()=>this.zoom(1/1.25), onFit:()=>this.fitView(true),
+      showPaths:s.showPaths,
+      journeys:this.JOURNEYS.map(j=>({ title:j.title, subtitle:j.subtitle, onStart:()=>this.startJourney(j.id) })),
+      showCrumbs: !inJourney && s.breadcrumb.length>0,
+      crumbs: s.breadcrumb.map((id,i)=>({ name:this.byId[id].name, pre: i===0?'':'›', onClick:()=>this.selectNode(id,true), style:{ background: id===s.selectedNodeId ? 'rgba(255,255,255,.1)' : 'transparent', border:'none', color: id===s.selectedNodeId ? '#f2f4f6' : '#aab0b8', fontSize:'13px', fontFamily:"'Schibsted Grotesk'", padding:'3px 9px', borderRadius:'7px', cursor:'pointer', whiteSpace:'nowrap' } })),
+      showSlider: !inJourney,
+      year:s.year,
+      yearLabel: s.year>=this.maxYear ? 'Present' : (''+s.year),
+      visibleLabel: nodes.filter(n=>this.byId[n.id].year<=year).length + ' of ' + this.GENRES.length + ' genres',
+      playLabel: s.playing ? '❚❚ Pause' : '▶ Play history',
+      onYear:(e)=>{ clearInterval(this._t); this.setState({year:+e.target.value, playing:false}); },
+      onPlay:()=>this.togglePlay(),
+      inJourney:inJourney,
+      panelNode: !!s.selectedNodeId,
+      panelEdge: !!s.selectedEdgeId,
+      showListen: s.showListen,
+      onClosePanel:()=>this.closePanel(),
+      onOpenListen:()=>this.setState({showListen:true}),
+      onCloseListen:()=>this.setState({showListen:false}),
+      onStop:(e)=>e.stopPropagation()
+    };
+
+    if(inJourney){
+      var st=s.activeJourney, step=st.steps[s.journeyStep], sn=this.byId[step.id];
+      out.journeyTitle=st.title;
+      out.journeyStepLabel=(s.journeyStep+1)+' / '+st.steps.length;
+      out.journeyNodeName=sn.name;
+      out.journeyNodeColor=this.HEX[sn.fam];
+      out.journeyText=step.text;
+      out.journeyDots=st.steps.map((x,i)=>({ style:{ width:'7px', height:'7px', borderRadius:'50%', background: i===s.journeyStep ? this.HEX[this.byId[x.id].fam] : 'rgba(255,255,255,.2)', transition:'background .3s' } }));
+      out.onPrev=()=>this.journeyGo(-1);
+      var last = s.journeyStep===st.steps.length-1;
+      out.nextLabel = last ? 'Finish' : 'Next →';
+      out.onNext = last ? (()=>this.exitJourney()) : (()=>this.journeyGo(1));
+      out.onExitJourney=()=>this.exitJourney();
+    }
+
+    if(s.selectedNodeId){
+      var g=this.byId[s.selectedNodeId];
+      out.selName=g.name; out.selDef=g.def; out.selEra=g.year; out.selEmerging=!!g.emerging;
+      out.selFamLabel=this.famLabel[g.fam]; out.selFamColor=this.HEX[g.fam];
+      out.selFamChip={ fontSize:'11px', fontFamily:"'JetBrains Mono',monospace", letterSpacing:'.1em', textTransform:'uppercase', color:this.HEX[g.fam], background:this.rgba(g.fam,0.12), border:'1px solid '+this.rgba(g.fam,0.3), padding:'4px 9px', borderRadius:'6px' };
+      out.selTraits=g.traits;
+      out.selArtists=g.artists.join('  ·  ');
+      var preds=this.EDGES.filter(e=>e.to===g.id).map(e=>this.buildRel(e,e.from));
+      var descs=this.EDGES.filter(e=>e.from===g.id).map(e=>this.buildRel(e,e.to));
+      out.selPreds=preds; out.selDescs=descs; out.hasPreds=preds.length>0; out.hasDescs=descs.length>0;
+      out.selTracks=g.tracks.map((t,i)=>({ t:t.t, a:t.a, idx:(i+1<10?'0':'')+(i+1), icon: s.nowPlaying===t.t ? '❚❚' : '▶', onPlay:()=>this.playTrack(t.t), eqStyle:{ display: s.nowPlaying===t.t ? 'flex':'none', alignItems:'flex-end', gap:'2px', height:'16px', color:this.HEX[g.fam], flex:'0 0 auto' } }));
+      var rep=g.tracks.find(t=>t.why);
+      out.selHasRep=!!rep; out.selRepT=rep?rep.t:''; out.selRepA=rep?rep.a:''; out.selRepWhy=rep?rep.why:'';
+    }
+
+    if(s.selectedEdgeId){
+      var eg=this.EDGES.find(x=>x._i===s.selectedEdgeId);
+      if(eg){
+        var ea=this.byId[eg.from], eb=this.byId[eg.to];
+        out.edgeFromName=ea.name; out.edgeToName=eb.name;
+        out.edgeFromColor=this.HEX[ea.fam]; out.edgeToColor=this.HEX[eb.fam];
+        out.edgeRel=this.relLabel[eg.rel]; out.edgeType=this.typeLabel[eg.type];
+        out.edgePct=Math.round(eg.strength*100)+'%';
+        out.edgeBar={ width:Math.round(eg.strength*100)+'%', height:'100%', background:'linear-gradient(90deg,'+this.HEX[ea.fam]+','+this.HEX[eb.fam]+')', borderRadius:'3px' };
+        out.edgeNote=eg.note;
+        out.onViewFrom=()=>this.selectNode(eg.from,true);
+        out.onViewTo=()=>this.selectNode(eg.to,true);
+      }
+    }
+
+    return out;
+  }
+}
+</script>
+</body>
+</html>
