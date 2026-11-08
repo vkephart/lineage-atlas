@@ -24,3 +24,10 @@ See `CLAUDE.md` for the data model, the add-a-genre checklist and the validator 
 
 The atlas began as a Claude Design prototype; the original export, including the chat transcripts that record every
 editorial decision, is preserved under `design-handoff/` for reference.
+
+## License
+
+Copyright © 2026 vkephart. The Lineage Atlas, its code and its genre data are released under the
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+license (see `LICENSE`). You may copy, share and adapt it with credit, for non-commercial purposes only, and any
+adaptation must be shared under the same terms. Commercial use requires the author's permission.

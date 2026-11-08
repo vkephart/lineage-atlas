@@ -2,7 +2,8 @@
   "name": "lineage-atlas",
   "private": true,
   "version": "1.0.0",
-  "description": "The Music Genre Lineage Atlas — an interactive map of how music genres evolved and influenced one another.",
+  "description": "The Music Genre Lineage Atlas \u2014 an interactive map of how music genres evolved and influenced one another.",
+  "license": "CC-BY-NC-SA-4.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
