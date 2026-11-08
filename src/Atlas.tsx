@@ -159,14 +159,16 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     this.famOrder.forEach((k) => { acc += extra[k] || 0; this.FAM[k].y += acc; });
     this.WH = this.FAM[this.famOrder[this.famOrder.length - 1]].y + 440;
     this.GENRES.forEach((g) => { this.byId[g.id] = g; g.x = this.xFromYear(g.year); g.y = this.FAM[g.fam].y + (g.yOff || 0); });
-    // Pre-1865 art-music roots form a single vertical stem, read top-down, centred on the map
+    // Pre-1865 art-music roots form a single vertical stem (positioned after the rows are compacted below)
     const roots = this.GENRES.filter((g) => g.year < 1865).sort((a, b) => a.year - b.year);
-    const mid = (this.FAM[this.famOrder[0]].y + this.FAM[this.famOrder[this.famOrder.length - 1]].y) / 2, gap = 250;
-    const ry0 = mid - (roots.length - 1) * gap / 2;
-    roots.forEach((g, i) => { g.x = this.RX; g.y = ry0 + i * gap; g._root = true; });
-    this.rootSpan = { y0: ry0 - 150, y1: ry0 + (roots.length - 1) * gap + 120 };
+    roots.forEach((g) => { g._root = true; });
     this.EDGES.forEach((e) => { this.outDeg[e.from] = (this.outDeg[e.from] || 0) + 1; this.inDeg[e.to] = (this.inDeg[e.to] || 0) + 1; });
     this.declutter();
+    this.famOrder.forEach((k) => { let sx = Infinity; this.GENRES.forEach((g) => { if (g.fam === k && !g._root) sx = Math.min(sx, g.x); }); this.famStart[k] = sx === Infinity ? this.MX0 : sx; });
+    const mid = (this.FAM[this.famOrder[0]].y + this.FAM[this.famOrder[this.famOrder.length - 1]].y) / 2, gap = 250;
+    const ry0 = mid - (roots.length - 1) * gap / 2;
+    roots.forEach((g, i) => { g.x = this.RX; g.y = ry0 + i * gap; });
+    this.rootSpan = { y0: ry0 - 150, y1: ry0 + (roots.length - 1) * gap + 120 };
     this.EDGES.forEach((e) => {
       const a = this.byId[e.from], b = this.byId[e.to];
       const dx = b.x - a.x; // geometry is static — compute once, not per render
@@ -233,6 +235,8 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     });
   }
 
+  /** Where each family's content begins (x of its earliest node) so row labels sit next to the lineage, not in empty space. */
+  famStart: Record<string, number> = {};
   fFromYear(y: number) {
     const cp = this.CP;
     if (y <= cp[0][0]) return cp[0][1];
@@ -456,6 +460,21 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     });
   }
 
+  /** Desktop landing view: the recorded era at a readable zoom, starting on the Soul and Rock rows. Phones keep the
+   *  whole-map fit (their own layout pass is pending). The ⤢ button still shows the full overview. */
+  homeView(animated: boolean) {
+    const vp = this.viewportRef.current; if (!vp || !this.GENRES.length) return;
+    if (this.state.isMobile) { this.fitView(animated); return; }
+    const r = vp.getBoundingClientRect();
+    let x1 = -Infinity; this.GENRES.forEach((g) => { if (!g._root) x1 = Math.max(x1, g.x); });
+    const x0 = this.xFromYear(1896) - 60; x1 += 110;
+    const k = Math.max(0.42, Math.min(0.9, (r.width - 64) / (x1 - x0)));
+    const topY = this.FAM[this.famOrder[0]].y - 240;
+    const vx = (r.width - (x1 - x0) * k) / 2 - x0 * k;
+    this.view = { x: vx, y: 96 - topY * k, k };
+    this.applyTransform(animated);
+  }
+
   fitView(animated: boolean) {
     const vp = this.viewportRef.current; if (!vp || !this.GENRES.length) return;
     const r = vp.getBoundingClientRect();
@@ -625,7 +644,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
       requestAnimationFrame(() => { this.fitNodes(list, { maxK: 0.95 }); });
     });
   }
-  resetView() { clearInterval(this._t); this.setState({ year: this.maxYear, selectedNodeId: null, selectedEdgeId: null, breadcrumb: [], mode: 'explore', activeJourney: null, showPaths: false, showListen: false, hoverNodeId: null, playing: false, bridgeMode: false, focusFam: null, openTrait: null, query: '' }); this.fitView(true); }
+  resetView() { clearInterval(this._t); this.setState({ year: this.maxYear, selectedNodeId: null, selectedEdgeId: null, breadcrumb: [], mode: 'explore', activeJourney: null, showPaths: false, showListen: false, hoverNodeId: null, playing: false, bridgeMode: false, focusFam: null, openTrait: null, query: '' }); this.homeView(true); }
   toggleImmersive() { this.setState((p) => ({ immersive: !p.immersive } as State), () => { this.fitView(true); }); }
   toggleFs() {
     const el: any = this.rootRef.current || document.documentElement, d: any = document;
@@ -638,7 +657,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     } catch { this.toggleImmersive(); }
   }
   toggleTrait(key: string) { this.setState((p) => ({ openTrait: p.openTrait === key ? null : key } as State)); }
-  doFit() { const vp = this.viewportRef.current; if (!vp) return false; const r = vp.getBoundingClientRect(); if (r.width < 60 || r.height < 60) return false; this.fitView(false); this._fitDone = true; return true; }
+  doFit() { const vp = this.viewportRef.current; if (!vp) return false; const r = vp.getBoundingClientRect(); if (r.width < 60 || r.height < 60) return false; this.homeView(false); this._fitDone = true; return true; }
 
   // ── lifecycle: pointer / wheel / gesture plumbing ────────────────────────
   componentDidMount() {
@@ -751,7 +770,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     this._onTm = (e) => { const te = e as TouchEvent & { scale?: number }; if (te.scale !== undefined && te.scale !== 1) e.preventDefault(); };
     vp.addEventListener('touchmove', this._onTm, { passive: false });
 
-    this._onResize = () => { const m = window.innerWidth <= 720; if (m !== this.state.isMobile) this.setState({ isMobile: m }); requestAnimationFrame(() => { this.fitView(false); }); };
+    this._onResize = () => { const m = window.innerWidth <= 720; if (m !== this.state.isMobile) this.setState({ isMobile: m }); requestAnimationFrame(() => { this.homeView(false); }); };
     window.addEventListener('resize', this._onResize);
     this._onFs = () => { const d: any = document; this.setState({ isFs: !!(d.fullscreenElement || d.webkitFullscreenElement) }); requestAnimationFrame(() => { this.fitView(false); }); };
     document.addEventListener('fullscreenchange', this._onFs);
@@ -907,7 +926,8 @@ export class Atlas extends React.Component<Record<string, never>, State> {
 
             {ok && this.famOrder.slice(0, -1).map((k, di) => {
               const y = (this.FAM[k].y + this.FAM[this.famOrder[di + 1]].y) / 2;
-              return <div key={'dv' + k} style={{ position: 'absolute', left: '-620px', top: y + 'px', width: (this.WW + 620) + 'px', height: '1px', background: 'linear-gradient(90deg,transparent,rgba(255,255,255,.045),transparent)' }}></div>;
+              const x0 = Math.min(this.famStart[k] || this.MX0, this.famStart[this.famOrder[di + 1]] || this.MX0) - 170;
+              return <div key={'dv' + k} style={{ position: 'absolute', left: x0 + 'px', top: y + 'px', width: (this.WW - x0) + 'px', height: '1px', background: 'linear-gradient(90deg,transparent,rgba(255,255,255,.045) 12%,rgba(255,255,255,.045),transparent)' }}></div>;
             })}
 
             <div style={{ position: 'absolute', left: (this.RX - 170) + 'px', top: rs.y0 + 'px', width: '340px', height: (rs.y1 - rs.y0) + 'px', borderRadius: '26px', background: 'linear-gradient(180deg,rgba(255,255,255,.022),rgba(255,255,255,.012))', border: '1px solid rgba(255,255,255,.05)' }}></div>
@@ -927,7 +947,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
               </React.Fragment>
             ); })}
             {ok && this.famOrder.map((k) => { const fam = this.FAM[k]; return (
-              <div key={'band' + k} data-band="" onClick={() => this.focusFamily(k)} style={{ position: 'absolute', left: this.LBX + 'px', top: fam.y + 'px', transform: 'translate(-50%,-50%) rotate(-90deg)', transformOrigin: 'center', whiteSpace: 'nowrap', fontFamily: SERIF, fontSize: '13px', letterSpacing: '.12em', color: s.focusFam === k ? this.rgba(k, 1) : this.rgba(k, 0.62), cursor: 'pointer', pointerEvents: 'auto', transition: 'color .4s' }}>{fam.short.toUpperCase()}</div>
+              <div key={'band' + k} data-band="" onClick={() => this.focusFamily(k)} style={{ position: 'absolute', left: Math.max(this.LBX, (this.famStart[k] || this.MX0) - 100) + 'px', top: fam.y + 'px', transform: 'translate(-50%,-50%) rotate(-90deg)', transformOrigin: 'center', whiteSpace: 'nowrap', fontFamily: SERIF, fontSize: '13px', letterSpacing: '.12em', color: s.focusFam === k ? this.rgba(k, 1) : this.rgba(k, 0.62), cursor: 'pointer', pointerEvents: 'auto', transition: 'color .4s' }}>{fam.short.toUpperCase()}</div>
             ); })}
 
 
