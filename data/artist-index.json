@@ -2110,5 +2110,81 @@
   "Shame": [
     "newpostpunk",
     "punk"
+  ],
+  "Soft Machine": [
+    "canterbury",
+    "psych",
+    "jazzrock"
+  ],
+  "Robert Wyatt": [
+    "canterbury",
+    "artrock"
+  ],
+  "Caravan": [
+    "canterbury",
+    "progrock"
+  ],
+  "Hatfield and the North": [
+    "canterbury"
+  ],
+  "National Health": [
+    "canterbury",
+    "progrock"
+  ],
+  "Egg": [
+    "canterbury",
+    "progrock"
+  ],
+  "Gong": [
+    "canterbury",
+    "spacerock"
+  ],
+  "Daevid Allen": [
+    "canterbury",
+    "spacerock"
+  ],
+  "Kevin Ayers": [
+    "canterbury",
+    "psych"
+  ],
+  "Dave Stewart (Egg)": [
+    "canterbury"
+  ],
+  "Richard Sinclair": [
+    "canterbury"
+  ],
+  "Camel": [
+    "progrock",
+    "canterbury"
+  ],
+  "Henry Cow": [
+    "avantprog",
+    "canterbury"
+  ],
+  "Fred Frith": [
+    "avantprog",
+    "experimental"
+  ],
+  "Art Bears": [
+    "avantprog"
+  ],
+  "Univers Zero": [
+    "avantprog"
+  ],
+  "This Heat": [
+    "avantprog",
+    "postpunk",
+    "postrock"
+  ],
+  "Thinking Plague": [
+    "avantprog"
+  ],
+  "Hawkwind": [
+    "spacerock",
+    "psych"
+  ],
+  "Loop": [
+    "spacerock",
+    "shoegaze"
   ]
 }

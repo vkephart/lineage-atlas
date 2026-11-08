@@ -1432,10 +1432,10 @@
     "name": "Space Rock",
     "fam": "rock",
     "fam2": "jazz",
-    "year": 1988,
+    "year": 1970,
     "role": "branch",
-    "yOff": -25,
-    "def": "Hypnotic, effects-drenched rock built on repetition and drift — krautrock pulse meets psychedelic vastness.",
+    "yOff": -270,
+    "def": "Hypnotic, effects-drenched rock built on repetition, drone and the imagery of flight — Hawkwind's amplified free-festival pulse in 1970, revived in the late 80s by Spacemen 3 and Loop as the bridge into shoegaze.",
     "traits": [
       {
         "k": "Rhythm / groove",
@@ -1448,15 +1448,24 @@
       {
         "k": "Song structure",
         "v": "Long, gradually evolving builds."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Ladbroke Grove free festivals and Hawkwind's light-show happenings, 1970 on; the Rugby-born Spacemen 3 revival from 1986."
       }
     ],
-    "why": "It fuses a steady motorik pulse with cavernous, delayed guitar to create weightless forward drift.",
+    "why": "It fuses a steady, repeating pulse with cavernous, delayed guitar and synth drones to create weightless forward drift.",
     "artists": [
+      "Hawkwind",
+      "Gong",
       "Spacemen 3",
-      "Loop",
-      "Hawkwind"
+      "Loop"
     ],
     "albums": [
+      {
+        "t": "In Search of Space",
+        "a": "Hawkwind"
+      },
       {
         "t": "Playing with Fire",
         "a": "Spacemen 3"
@@ -1464,16 +1473,17 @@
     ],
     "tracks": [
       {
+        "t": "Silver Machine",
+        "a": "Hawkwind",
+        "why": "A one-chord riff, phased synth whoosh and chanted lift-off — the 1972 template every later space rock band restaged."
+      },
+      {
         "t": "Revolution",
         "a": "Spacemen 3"
       },
       {
         "t": "Fade Out",
         "a": "Loop"
-      },
-      {
-        "t": "Silver Machine",
-        "a": "Hawkwind"
       }
     ],
     "tempo": "100–130 BPM"
@@ -3829,5 +3839,151 @@
     ],
     "tempo": "80–190 BPM",
     "tempoNote": "Two speeds: Saints/Birdman punk tempo and the slow, dragging swamp lurch of the Scientists and Beasts."
+  },
+  {
+    "id": "canterbury",
+    "name": "Canterbury Scene",
+    "fam": "rock",
+    "fam2": "jazz",
+    "year": 1968,
+    "role": "hybrid",
+    "yOff": -120,
+    "aka": "Canterbury Sound",
+    "def": "The English jazz-rock strain that grew out of one Canterbury friendship circle — fuzz-boxed organ and electric piano leading instead of guitar, shifting odd meters over a light jazz pulse, suite-length pieces, and wry, understated lyrics about golf, tea and the weather. Named for a place, defined by a sound; its membership has been argued over ever since.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Odd and shifting meters — 7/4, 11/8 — carried lightly, with a jazz drummer's touch rather than rock weight."
+      },
+      {
+        "k": "Harmony",
+        "v": "Extended jazz chords and modal vamps under long instrumental suites; tunes modulate mid-phrase."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Fuzz-boxed Lowrey and Hammond organ, electric piano and saxophone take the lead; guitar is often absent."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Understated, conversational English singing — Robert Wyatt's high, plaintive tenor and Richard Sinclair's gentle croon — with whimsical, Dada-tinged lyrics."
+      },
+      {
+        "k": "Scene / context",
+        "v": "The Wilde Flowers (Canterbury, 1964) split into Soft Machine and Caravan; the same players recombined for a decade in Hatfield and the North, National Health and Gong."
+      }
+    ],
+    "why": "It plays jazz harmony and odd meters through a psychedelic pop sensibility, with the keyboard, not the guitar, as the distorted lead voice.",
+    "artists": [
+      "Soft Machine",
+      "Caravan",
+      "Robert Wyatt",
+      "Hatfield and the North",
+      "Gong",
+      "Kevin Ayers",
+      "National Health"
+    ],
+    "albums": [
+      {
+        "t": "Third",
+        "a": "Soft Machine"
+      },
+      {
+        "t": "In the Land of Grey and Pink",
+        "a": "Caravan"
+      },
+      {
+        "t": "Rock Bottom",
+        "a": "Robert Wyatt"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Moon in June",
+        "a": "Soft Machine",
+        "why": "Wyatt's stream-of-consciousness vocal over nineteen minutes of fuzz organ and shifting meter — the whole style in one side of vinyl."
+      },
+      {
+        "t": "Golf Girl",
+        "a": "Caravan"
+      },
+      {
+        "t": "Sea Song",
+        "a": "Robert Wyatt"
+      }
+    ],
+    "tempo": "90–160 BPM",
+    "tempoNote": "Highly variable — pieces change tempo and meter several times within a suite."
+  },
+  {
+    "id": "avantprog",
+    "name": "Avant-Prog / Rock in Opposition",
+    "fam": "rock",
+    "fam2": "jazz",
+    "year": 1978,
+    "role": "hybrid",
+    "yOff": -300,
+    "aka": "RIO · Avant-Rock",
+    "def": "Progressive rock's dissonant, politically engaged wing — through-composed chamber-rock pieces drawing on free jazz, Stravinsky and musique concrète, organised around Henry Cow's 1978 Rock in Opposition festival of bands the industry would not release.",
+    "traits": [
+      {
+        "k": "Harmony",
+        "v": "Atonal and polytonal writing, dense counterpoint, deliberate dissonance; melody rarely resolves."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Irregular, additive meters and abrupt tempo changes; grooves appear only to be broken."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Chamber-rock scoring — bassoon, oboe, violin and reeds alongside guitar, bass and drums; tape manipulation and studio collage."
+      },
+      {
+        "k": "Song structure",
+        "v": "Through-composed suites and improvised episodes rather than verse and chorus."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Henry Cow (Cambridge, 1968) and the March 1978 RIO festival with Univers Zero, Etron Fou Leloublan, Samla Mammas Manna and Stormy Six; a self-run, anti-industry network."
+      }
+    ],
+    "why": "It keeps prog's compositional ambition but swaps its virtuoso pomp for modernist dissonance, free improvisation and political intent.",
+    "artists": [
+      "Henry Cow",
+      "Art Bears",
+      "Univers Zero",
+      "This Heat",
+      "Thinking Plague"
+    ],
+    "albums": [
+      {
+        "t": "Legend",
+        "a": "Henry Cow"
+      },
+      {
+        "t": "Heresie",
+        "a": "Univers Zero"
+      },
+      {
+        "t": "This Heat",
+        "a": "This Heat"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Nirvana for Mice",
+        "a": "Henry Cow",
+        "why": "Fred Frith's angular theme in shifting meters, played by a rock band with the discipline of a chamber ensemble."
+      },
+      {
+        "t": "In Memoriam",
+        "a": "Art Bears"
+      },
+      {
+        "t": "Horizontal Hold",
+        "a": "This Heat"
+      }
+    ],
+    "tempo": "60–180 BPM",
+    "tempoNote": "Wide range — through-composed pieces change tempo constantly; tempo is rarely a defining feature."
   }
 ]

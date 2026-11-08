@@ -886,7 +886,7 @@
     "to": "spacerock",
     "rel": "origin",
     "strength": 0.6,
-    "note": "Space rock revives psychedelia's drones and vastness."
+    "note": "Space rock stretches psychedelia's drones and cosmic imagery into long, repetitive flight."
   },
   {
     "from": "psych",
@@ -1248,9 +1248,9 @@
   {
     "from": "krautrock",
     "to": "spacerock",
-    "rel": "origin",
+    "rel": "stylistic",
     "strength": 0.6,
-    "note": "Space rock builds on krautrock's motorik pulse."
+    "note": "Space rock's late-80s revival takes krautrock's motorik repetition as its pulse; the 1970 Hawkwind original ran in parallel."
   },
   {
     "from": "krautrock",
@@ -4793,5 +4793,96 @@
     "rel": "scene",
     "strength": 0.7,
     "note": "Dry Cleaning and Black Country, New Road belong to both: the Windmill supplied the spoken-vocal wave its bands."
+  },
+  {
+    "from": "psych",
+    "to": "canterbury",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Soft Machine shared UFO-club bills with Pink Floyd; the Canterbury sound starts as British psychedelia with jazz chords."
+  },
+  {
+    "from": "free",
+    "to": "canterbury",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Elton Dean and the Third-era Soft Machine bring free-jazz blowing into the rock band."
+  },
+  {
+    "from": "experimental",
+    "to": "canterbury",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Tape loops, Dada humour and long-form composition filter in from the avant-garde."
+  },
+  {
+    "from": "canterbury",
+    "to": "progrock",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "Caravan and Egg's suite-length, keyboard-led records are part of progressive rock's founding stock."
+  },
+  {
+    "from": "canterbury",
+    "to": "fusion",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Soft Machine's Third (1970) is British jazz-rock before the word fusion caught on."
+  },
+  {
+    "from": "canterbury",
+    "to": "spacerock",
+    "rel": "scene",
+    "strength": 0.4,
+    "note": "Gong's Radio Gnome trilogy sits beside Hawkwind at the same free festivals."
+  },
+  {
+    "from": "canterbury",
+    "to": "avantprog",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Henry Cow's early records grow directly out of the Canterbury idiom before turning harder and more political."
+  },
+  {
+    "from": "progrock",
+    "to": "avantprog",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Avant-prog keeps prog's long compositions and odd meters while rejecting its virtuoso pomp."
+  },
+  {
+    "from": "free",
+    "to": "avantprog",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Free improvisation is written into the pieces as a structural element."
+  },
+  {
+    "from": "experimental",
+    "to": "avantprog",
+    "rel": "origin",
+    "strength": 0.5,
+    "note": "Stravinsky, Bartók and musique concrète supply the harmonic language and the collage method."
+  },
+  {
+    "from": "avantprog",
+    "to": "postpunk",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "This Heat's tape-spliced dissonance is absorbed directly into post-punk."
+  },
+  {
+    "from": "avantprog",
+    "to": "postrock",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "This Heat and Henry Cow are the through-composed, dynamics-led ancestors post-rock bands cite."
+  },
+  {
+    "from": "avantprog",
+    "to": "mathrock",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Math rock's additive meters and angular counterpoint run back through avant-prog."
   }
 ]
