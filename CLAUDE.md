@@ -1,6 +1,7 @@
 # The Music Genre Lineage Atlas — project guide for Claude Code
 
-An interactive, dark-mode map of how music genres evolved and influenced one another (380 BCE → now).
+An interactive, dark-mode map of how music genres evolved and influenced one another (1865 → now, with the
+Western art-music antecedents shown as an undated stem).
 Static site: Vite + React 19 + TypeScript, no backend. Deployed to GitHub Pages on every push to `main`.
 
 ## Layout

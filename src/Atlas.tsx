@@ -33,6 +33,7 @@ interface State {
   focusFam: FamilyId | null;
   openTrait: string | null;
   legendOpen: boolean;
+  legendKey: boolean;
   isMobile: boolean;
   query: string;
   svc: string;
@@ -78,8 +79,8 @@ export class Atlas extends React.Component<Record<string, never>, State> {
   view = { x: 0, y: 0, k: 0.5 };
   dragging = false;
   WW = 3600; WH = 3760; PX0 = 160; PX1 = 560; MX0 = 760; RX = 360; LBX = 156; KMAX = 2.0;
-  minYear = -380; maxYear = 2026;
-  CP: [number, number][] = [[-380, -0.2164], [900, -0.1418], [1550, -0.0709], [1865, 0], [1897, 0.09], [1915, 0.17], [1935, 0.27], [1945, 0.34], [1955, 0.42], [1965, 0.50], [1972, 0.58], [1978, 0.65], [1985, 0.73], [1992, 0.81], [2000, 0.88], [2010, 0.94], [2026, 1]];
+  minYear = 1865; maxYear = 2026;
+  CP: [number, number][] = [[1865, 0], [1897, 0.09], [1915, 0.17], [1935, 0.27], [1945, 0.34], [1955, 0.42], [1965, 0.50], [1972, 0.58], [1978, 0.65], [1985, 0.73], [1992, 0.81], [2000, 0.88], [2010, 0.94], [2026, 1]];
 
   FAM: Record<string, Fam> = {};
   famOrder: FamilyId[] = [];
@@ -137,7 +138,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     const mob = typeof window !== 'undefined' && window.innerWidth <= 720;
     let svc = 'spotify';
     try { svc = localStorage.getItem('la-svc') || 'spotify'; } catch { /* private mode */ }
-    this.state = { year: 2026, selectedNodeId: null, selectedEdgeId: null, hoverNodeId: null, mode: 'explore', activeJourney: null, journeyStep: 0, breadcrumb: [], showPaths: false, showListen: false, playing: false, bridgeMode: false, focusFam: null, openTrait: null, legendOpen: !mob, isMobile: mob, query: '', svc, isFs: false, immersive: false, sheetFull: false };
+    this.state = { year: 2026, selectedNodeId: null, selectedEdgeId: null, hoverNodeId: null, mode: 'explore', activeJourney: null, journeyStep: 0, breadcrumb: [], showPaths: false, showListen: false, playing: false, bridgeMode: false, focusFam: null, openTrait: null, legendOpen: !mob, legendKey: false, isMobile: mob, query: '', svc, isFs: false, immersive: false, sheetFull: false };
   }
 
   // ── data + layout ────────────────────────────────────────────────────────
@@ -441,7 +442,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     }
     this.EDGES.forEach((e, i) => {
       const a = this.byId[e.from], b = this.byId[e.to];
-      const vis = a.year <= year && b.year <= year;
+      const vis = (a._root || a.year <= year) && (b._root || b.year <= year);
       let act = false, side = false;
       if (inJourney) act = this.jEdge(e);
       else if (s.bridgeMode) act = (e.rel === 'bridge');
@@ -582,7 +583,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     const rel = new Set([id]);
     this.EDGES.forEach((e) => { if (e.from === id) rel.add(e.to); if (e.to === id) rel.add(e.from); });
     this._hoverDimOn = true;
-    this.GENRES.forEach((g, i) => { const el = E.nodes[i]; if (!el || g.year > s.year) return; el.style.opacity = rel.has(g.id) ? '1' : String(DIM_INACTIVE); });
+    this.GENRES.forEach((g, i) => { const el = E.nodes[i]; if (!el || (!g._root && g.year > s.year)) return; el.style.opacity = rel.has(g.id) ? '1' : String(DIM_INACTIVE); });
     this._hoverEdgeId = id; this.edgeTargets(id); this.requestDraw();
   }
   setHover(id: string | null) {
@@ -832,11 +833,11 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     if (ok) this.edgeTargets(this._hoverEdgeId);
 
     const curSvc = SVCS.find((v) => v.k === s.svc) || SVCS[0];
-    const visCount = this.GENRES.filter((g) => g.year <= year).length;
+    const visCount = this.GENRES.filter((g) => g._root || g.year <= year).length;
     const sel = s.selectedNodeId ? this.byId[s.selectedNodeId] : null;
     const selEdge = s.selectedEdgeId ? this.EDGES.find((x) => x._i === s.selectedEdgeId) : null;
     const rootClass = 'gx-root' + (s.immersive ? ' gx-immersive' : '') + ((s.isMobile && (s.selectedNodeId || s.selectedEdgeId)) ? ' gx-sheet' : '') + ((s.isMobile && (s.selectedNodeId || s.selectedEdgeId) && !s.sheetFull) ? ' gx-peek' : '');
-    const subtitle = s.bridgeMode ? 'Cross-Family Bridge Mode' : (s.focusFam ? this.FAM[s.focusFam].label : 'Genre Evolution · 380 BCE — Now');
+    const subtitle = s.bridgeMode ? 'Cross-Family Bridge Mode' : (s.focusFam ? this.FAM[s.focusFam].label : 'Genre Evolution · 1865 — Now');
     const q = s.query.trim().toLowerCase();
     const rs = this.rootSpan;
     const mobileSheet = s.isMobile && (!!s.selectedNodeId || !!s.selectedEdgeId);
@@ -932,13 +933,13 @@ export class Atlas extends React.Component<Record<string, never>, State> {
 
             <div style={{ position: 'absolute', left: (this.RX - 170) + 'px', top: rs.y0 + 'px', width: '340px', height: (rs.y1 - rs.y0) + 'px', borderRadius: '26px', background: 'linear-gradient(180deg,rgba(255,255,255,.022),rgba(255,255,255,.012))', border: '1px solid rgba(255,255,255,.05)' }}></div>
             <div style={{ position: 'absolute', left: this.RX + 'px', top: (rs.y0 + 26) + 'px', transform: 'translateX(-50%)', textAlign: 'center', fontFamily: MONO, letterSpacing: '.16em', color: '#6b727d', width: '290px', lineHeight: 1.6, textWrap: 'balance', textTransform: 'uppercase' } as React.CSSProperties}>
-              <div style={css('font-size:12.5px;')}>Root · antiquity → 1865</div>
-              <div style={css('font-size:9.5px;color:#565d68;margin-top:5px;letter-spacing:.12em;')}>the Western art-music stem · read downward</div>
+              <div style={css('font-size:12.5px;')}>Antecedents · before 1865</div>
+              <div style={css('font-size:9.5px;color:#565d68;margin-top:5px;letter-spacing:.12em;')}>Western art-music traditions · read downward · not on the timeline</div>
             </div>
             <div style={{ position: 'absolute', left: '700px', top: 0, width: '1px', height: this.WH + 'px', background: 'linear-gradient(180deg,transparent 0,rgba(255,255,255,.11) 2%,rgba(255,255,255,.11) 98%,transparent)' }}></div>
             <div style={css("position:absolute;left:700px;top:52px;transform:translateX(-50%);text-align:center;font-family:'JetBrains Mono',monospace;letter-spacing:.2em;color:#6b7280;white-space:nowrap;text-transform:uppercase;")}>
-              <div style={css('font-size:12.5px;')}>1865 · recorded era ▶</div>
-              <div style={css('font-size:9.5px;color:#4d545f;margin-top:5px;')}>true scale, stretched toward now</div>
+              <div style={css('font-size:12.5px;')}>1865 · the genre era begins ▶</div>
+              <div style={css('font-size:9.5px;color:#4d545f;margin-top:5px;')}>timeline · stretched toward now</div>
             </div>
             {ok && [1900, 1925, 1950, 1975, 2000, 2026].map((y) => { const x = this.xFromYear(y); return (
               <React.Fragment key={'tk' + y}>
@@ -952,7 +953,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
 
 
             {ok && this.GENRES.map((g) => {
-              const vis = g.year <= year;
+              const vis = !!g._root || g.year <= year;
               let dim: boolean;
               if (inJourney) dim = !jset!.has(g.id);
               else if (s.bridgeMode) dim = !(g.role === 'hybrid' || bridgeSet!.has(g.id));
@@ -1078,6 +1079,11 @@ export class Atlas extends React.Component<Record<string, never>, State> {
                   <span style={css('font-size:12px;')}>{fam.short}</span>
                 </button>
               ); })}
+              <button onClick={() => this.setState((p) => ({ legendKey: !p.legendKey } as State))} className="hv-bg03" style={css("display:flex;align-items:center;justify-content:space-between;width:100%;background:none;border:1px solid rgba(255,255,255,.08);border-radius:8px;color:#8a919b;cursor:pointer;padding:7px 9px;margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;")}>
+                <span>Key · edge types &amp; node roles</span>
+                <span style={{ display: 'inline-block', transition: 'transform .3s', transform: s.legendKey ? 'rotate(180deg)' : 'rotate(0deg)', fontSize: '11px' }}>⌄</span>
+              </button>
+              {s.legendKey && (<>
               <div style={css("font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:.18em;color:#565d68;margin:14px 0 9px;")}>EDGE TYPE</div>
               <div style={legendRow}><svg width="26" height="6"><line x1="1" y1="3" x2="25" y2="3" stroke="#9aa2ad" strokeWidth="2"></line></svg><span style={legendTxt}>Historical origin</span></div>
               <div style={legendRow}><svg width="26" height="6"><line x1="1" y1="3" x2="25" y2="3" stroke="#9aa2ad" strokeWidth="2" strokeDasharray="9 7"></line></svg><span style={legendTxt}>Stylistic influence</span></div>
@@ -1093,6 +1099,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
                 <div style={roleRow}><svg width="16" height="16"><circle cx="8" cy="8" r="6" fill="none" stroke="#aab0b8" strokeWidth="1.4" strokeDasharray="2 2"></circle></svg><span style={roleTxt}>Revival</span></div>
                 <div style={roleRow}><svg width="16" height="16"><circle cx="8" cy="8" r="6" fill="none" stroke="#aab0b8" strokeWidth="1"></circle><circle cx="8" cy="8" r="3.5" fill="#aab0b8"></circle></svg><span style={roleTxt}>Rising</span></div>
               </div>
+              </>)}
               <div style={css("font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.06em;line-height:1.6;color:#565d68;margin-top:14px;")}>Drag to pan · mouse wheel or pinch to zoom · trackpad scroll to pan</div>
             </div>
           )}
@@ -1118,7 +1125,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
             </div>
             <input type="range" className="gxr" min={0} max={1000} value={Math.round(this.posFromYear(s.year) * 1000)} aria-label="Year" onChange={(e) => { clearInterval(this._t); this.setState({ year: this.yearFromPos(+e.target.value / 1000), playing: false }); }} />
             <div style={css("display:flex;justify-content:space-between;margin-top:3px;font-family:'JetBrains Mono',monospace;font-size:9px;color:#565d68;letter-spacing:.05em;")}>
-              <span>380 BCE</span><span>1875</span><span>1935</span><span>1965</span><span>1987</span><span>NOW</span>
+              {[0, 0.2, 0.4, 0.6, 0.8, 1].map((pp) => <span key={pp}>{pp === 1 ? 'NOW' : this.fmtYear(this.yearFromPos(pp))}</span>)}
             </div>
           </div>
         )}
