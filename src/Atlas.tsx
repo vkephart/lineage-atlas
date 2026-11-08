@@ -117,6 +117,9 @@ export class Atlas extends React.Component<Record<string, never>, State> {
   private _edgeCur = new Float32Array(0);
   private _edgeStyle: { w: number; lop: number }[] = [];
   private _hoverEdgeId: string | null = null;
+  /** Genres currently drawn at full opacity (from the last render, or the hovered neighbourhood); only these block edge labels. */
+  private _litRender: Set<string> | null = null;
+  private _litHover: Set<string> | null = null;
   private _drawReq: number | null = null;
   private _animUntil = 0;
   private _perfOn = false;
@@ -374,6 +377,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     octx.lineCap = 'round';
     if (showLabels) { octx.font = fontPx + 'px ' + MONO; octx.textAlign = 'center'; }
     let lastDash: number[] | null = null;
+    const labels: { e: GEdge; a: number; pri: number }[] = [];
     for (let i = 0; i < E.length; i++) {
       let cur = C[i]; const tgt = T[i];
       if (cur !== tgt) { if (Math.abs(cur - tgt) < 0.006) cur = tgt; else { cur += (tgt - cur) * 0.2; more = true; } C[i] = cur; }
@@ -386,17 +390,48 @@ export class Atlas extends React.Component<Record<string, never>, State> {
       const dash = (perf || (e._dash.length && (e._dash[0] + e._dash[1]) * k < 3)) ? [] : e._dash;
       if (dash !== lastDash) { octx.setLineDash(dash.length ? dash.map((v) => v * k) : []); lastDash = dash; }
       octx.beginPath(); octx.moveTo(p[0] * k + vx, p[1] * k + vy); octx.bezierCurveTo(p[2] * k + vx, p[3] * k + vy, p[4] * k + vx, p[5] * k + vy, p[6] * k + vx, p[7] * k + vy); octx.stroke();
-      if (showLabels && st.lop > 0 && tgt > 0) {
-        octx.setLineDash([]); lastDash = null;
-        octx.globalAlpha = st.lop * Math.min(1, cur / tgt); octx.fillStyle = e._color;
-        octx.fillText(REL_LABEL[e.rel], e._mx * k + vx, e._my * k + vy);
-      }
+      if (showLabels && st.lop > 0 && tgt > 0) labels.push({ e, a: st.lop * Math.min(1, cur / tgt), pri: (e._i === this.state.selectedEdgeId ? 10 : 0) + e.strength });
     }
+    if (labels.length) this.placeEdgeLabels(octx, labels, vx, vy, k, fontPx);
     octx.globalAlpha = 1;
     this._edgesDirty = false; this._opAnim = more;
     ctx.drawImage(oc, -mX, -mY, ow, oh);
     if (more || animating) this.requestDraw();
   };
+  /** Edge labels are placed strongest-first and skipped when they would overlap a genre disc, a genre name or a label
+   *  already placed, so a hub with fifteen lit relationships does not print fifteen overlapping captions. The relation
+   *  is always still readable in the side panel and by tapping the line. */
+  private placeEdgeLabels(ctx: CanvasRenderingContext2D, labels: { e: GEdge; a: number; pri: number }[], vx: number, vy: number, k: number, fontPx: number) {
+    type Rect = [number, number, number, number];
+    const hit = (a: Rect, b: Rect) => a[0] < b[2] && a[2] > b[0] && a[1] < b[3] && a[3] > b[1];
+    const obstacles: Rect[] = [];
+    const year = this.state.year, lit = this._litHover || this._litRender;
+    this.GENRES.forEach((g) => {
+      if (!g._root && g.year > year) return;
+      if (lit && !lit.has(g.id)) return; // dimmed background nodes do not block captions
+      // The node container (disc + 8px gap + name/year block) is centred on (g.x, g.y), so the disc sits above the
+      // anchor and the text block below it; mirror that geometry here.
+      const r0 = this.nodeR(g), lines = Math.ceil((g.name.length * 7.2) / (2 * r0 + 150)), lh = 14 * lines + 14;
+      const r = r0 * k, x = g.x * k + vx, cy = (g.y - (8 + lh) / 2) * k + vy;
+      const lw = Math.min(g.name.length * 7.2 + 14, 2 * r0 + 150) * k;
+      obstacles.push([x - r - 2, cy - r - 2, x + r + 2, cy + r + 2]);                                   // disc
+      obstacles.push([x - lw / 2, cy + r + 6 * k, x + lw / 2, cy + r + (8 + lh + 4) * k]);              // name + year
+    });
+    labels.sort((p, q) => q.pri - p.pri);
+    const placed: Rect[] = [];
+    const h = fontPx * 1.15, pad = 3;
+    ctx.setLineDash([]);
+    for (const L of labels) {
+      const text = REL_LABEL[L.e.rel];
+      const w = ctx.measureText(text).width;
+      const cx = L.e._mx * k + vx, cy = L.e._my * k + vy;
+      const rect: Rect = [cx - w / 2 - pad, cy - h + pad, cx + w / 2 + pad, cy + pad];
+      if (obstacles.some((o) => hit(o, rect)) || placed.some((o) => hit(o, rect))) continue;
+      placed.push(rect);
+      ctx.globalAlpha = L.a; ctx.fillStyle = L.e._color;
+      ctx.fillText(text, cx, cy);
+    }
+  }
   /** Nearest visible edge within ~10 screen px of a tap, or null. Replaces the SVG hit paths. */
   hitEdge(clientX: number, clientY: number): string | null {
     const vp = this.viewportRef.current; if (!vp) return null;
@@ -570,6 +605,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     this._hoverId = null;
     if (!this._hoverDimOn) return;
     this._hoverDimOn = false;
+    this._litHover = null;
     if (this._hoverEdgeId) { this._hoverEdgeId = null; if (this._ready) { this.edgeTargets(null); this.requestDraw(); } }
     const E = this._hEls; if (!E) return;
     E.nodes.forEach((el) => { el.style.opacity = ''; });
@@ -584,7 +620,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     this.EDGES.forEach((e) => { if (e.from === id) rel.add(e.to); if (e.to === id) rel.add(e.from); });
     this._hoverDimOn = true;
     this.GENRES.forEach((g, i) => { const el = E.nodes[i]; if (!el || (!g._root && g.year > s.year)) return; el.style.opacity = rel.has(g.id) ? '1' : String(DIM_INACTIVE); });
-    this._hoverEdgeId = id; this.edgeTargets(id); this.requestDraw();
+    this._hoverEdgeId = id; this._litHover = rel; this.edgeTargets(id); this.requestDraw();
   }
   setHover(id: string | null) {
     if (this.dragging || this.state.playing) return;
@@ -750,6 +786,9 @@ export class Atlas extends React.Component<Record<string, never>, State> {
       const nk = Math.min(this.KMAX, Math.max(0.16, this.view.k * f));
       this.view = { x: mx - wx * nk, y: my - wy * nk, k: nk }; this.applyTransform(false);
     };
+    // The viewport is overflow:hidden; browsers can still scroll it (focus, find-in-page, scrollIntoView), which
+    // would silently shift the whole map. Keep it pinned.
+    vp.addEventListener('scroll', () => { if (vp.scrollTop || vp.scrollLeft) { vp.scrollTop = 0; vp.scrollLeft = 0; } });
     vp.addEventListener('pointerdown', this._onDown);
     window.addEventListener('pointermove', this._onMove);
     window.addEventListener('pointerup', this._onUp);
@@ -952,7 +991,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
             ); })}
 
 
-            {ok && this.GENRES.map((g) => {
+            {ok && (this._litRender = new Set<string>()) && this.GENRES.map((g) => {
               const vis = !!g._root || g.year <= year;
               let dim: boolean;
               if (inJourney) dim = !jset!.has(g.id);
@@ -960,6 +999,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
               else if (active) dim = !rel!.has(g.id);
               else if (s.focusFam) dim = g.fam !== s.focusFam;
               else dim = false;
+              if (vis && !dim) this._litRender!.add(g.id);
               const isSel = g.id === s.selectedNodeId, cur = g.id === curJ, glow = isSel || cur;
               const r = this.nodeR(g);
               const scale = !vis ? 0.4 : 1;
