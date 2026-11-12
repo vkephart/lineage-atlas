@@ -241,7 +241,7 @@ footer{padding:44px 0 60px;font-size:12.5px;color:var(--dim);max-width:80ch;}
 
   <figure class="figframe" style="margin:0">
     <div class="figscroll" id="figscroll">
-      <svg id="amp" viewBox="0 0 1480 770" role="img" aria-label="A Telecaster with a Bigsby seen from the front, headstock to the left. Strings run from the tuners across the nut, the fingerboard and three bridge saddles to the vibrato. Wiring runs from the neck and bridge pickups to a three-way switch, volume and tone controls and the output jack. Below, the same circuit is drawn as a schematic and continued through the cable to an amplifier input."></svg>
+      <svg id="amp" viewBox="0 0 1480 770" role="img" aria-label="A Telecaster with a Bigsby seen from the front, headstock to the left. Strings run from the tuners across the nut, the fingerboard and three brass bridge saddles to the vibrato. Wiring runs from the neck and bridge pickups to a three-way switch, volume and tone controls and the output jack. Below, the same circuit is drawn as a schematic and continued through the cable to an amplifier input."></svg>
     </div>
     <figcaption>Workbench view: headstock left, treble side up. Drag sideways on a phone. The body is drawn solid and the <span style="color:var(--sig)">amber</span> lines show the wiring that runs inside it. The strip underneath is the same circuit as a schematic, continued in <span style="color:var(--load)">red</span> through the cable to whatever it plugs into. Proportions are approximate.</figcaption>
   </figure>
@@ -288,18 +288,19 @@ footer{padding:44px 0 60px;font-size:12.5px;color:var(--dim);max-width:80ch;}
         <h3><span class="pill v">Checked</span>Listings and Fender’s catalogue</h3>
         <ul>
           <li>Double-bound alder body in nitro lacquer; maple neck with a ’60s C profile; round-laminated rosewood board, 9.5-inch radius, 21 vintage-tall frets; bone nut, 1.650 inches.</li>
-          <li>25.5-inch scale; three-saddle vintage-style bridge with steel saddles; three-position switch, master volume, master tone.</li>
+          <li>25.5-inch scale; three-saddle vintage-style bridge, stock with steel saddles; three-position switch, master volume, master tone.</li>
           <li>Pure Vintage ’64 pickups: alnico 5, enamel wire, staggered bridge poles, a metal plate under the bridge pickup. Neck 7.4 kΩ and 2.1 H, bridge 6.0 kΩ and 2.8 H.</li>
           <li>The stock model has a fixed bridge. No factory Bigsby version turned up.</li>
           <li>Rosewood boards arrived in September 1959. The both-pickups switch position became standard in late 1967.</li>
         </ul>
       </div>
       <div>
-        <h3><span class="pill o">Your list</span>Taken from your sheet</h3>
+        <h3><span class="pill o">From you</span>Your sheet and what you told me</h3>
         <ul>
           <li>Model year 2019.</li>
           <li>Lake Placid Blue.</li>
           <li>A Bigsby vibrato is fitted.</li>
+          <li>The saddles were changed to brass for better intonation.</li>
           <li>The other gear named in the chains.</li>
         </ul>
       </div>
@@ -307,6 +308,7 @@ footer{padding:44px 0 60px;font-size:12.5px;color:var(--dim);max-width:80ch;}
         <h3><span class="pill m">From memory</span>Not confirmed for this guitar</h3>
         <ul>
           <li>Which Bigsby it is and how it is mounted. The drawing assumes a B5 behind the original bridge plate.</li>
+          <li>Whether the brass saddles are a compensated set, and what brass does to the tone, which is player consensus and not a measurement.</li>
           <li>250 kΩ pots, the tone capacitor value, and the order of the switch positions.</li>
           <li>Whether the neck pickup is reverse-wound, which decides if the middle position cancels hum.</li>
           <li>Player credits in the genre cards, the model’s 2018 start, the 1948 Bigsby guitar and the 1967 factory Bigsby option.</li>
@@ -351,13 +353,13 @@ const BASIS = {
   fit:  { label:'Design fit',    cls:'u', text:'inferred from how the guitar works' },
   crowd:{ label:'Crowd-sourced', cls:'u', text:'from gear-listing sites, unconfirmed' }
 };
-const CONF = { v:['Checked','v'], m:['Partly from memory','m'], o:['From your list','o'] };
+const CONF = { v:['Checked','v'], m:['Partly from memory','m'], o:['From you','o'] };
 
 const EQUIPMENT = {
   id:'fender-ao60-telecaster-2019', name:'Fender American Original ’60s Telecaster', maker:'Fender', kind:'Solid-body electric guitar', years:[2019,2019],
-  specs:[['Year','2019'],['Finish','Lake Placid Blue'],['Scale','25.5″'],['Body','bound alder'],['Board','rosewood · 9.5″'],['Bridge pickup','6.0 kΩ · 2.8 H'],['Neck pickup','7.4 kΩ · 2.1 H'],['Bridge','3 steel saddles'],['Vibrato','Bigsby, added']],
+  specs:[['Year','2019'],['Finish','Lake Placid Blue'],['Scale','25.5″'],['Body','bound alder'],['Board','rosewood · 9.5″'],['Bridge pickup','6.0 kΩ · 2.8 H'],['Neck pickup','7.4 kΩ · 2.1 H'],['Saddles','brass, swapped in'],['Vibrato','Bigsby, added']],
   overview:{ title:'Bright, direct and simple on purpose', sub:'Follow the strings left to right, then the amber wiring',
-    wired:'Six strings on a 25.5-inch scale cross three steel saddles and end at a Bigsby. Two single-coil pickups sense them at very different points: one beside the saddles, one at the end of the fingerboard. A three-way switch, one volume and one tone control are all that stand between the pickups and the jack.',
+    wired:'Six strings on a 25.5-inch scale cross three brass saddles and end at a Bigsby. Two single-coil pickups sense them at very different points: one beside the saddles, one at the end of the fingerboard. A three-way switch, one volume and one tone control are all that stand between the pickups and the jack.',
     sound:'A hard, fast attack with a lot of upper harmonics at the bridge and a round, soft voice at the neck. Nothing in the circuit adds gain or colour, so the guitar passes along exactly what the strings and the player do, and the cable and the first thing it plugs into finish the sound.',
     start:'Nine stages: four follow the strings and hardware, four the pickups and controls, and one the cable and input.' },
 
@@ -370,10 +372,10 @@ const EQUIPMENT = {
       wired:'A maple neck with a ’60s C profile is bolted to a solid alder body with binding on both edges and a nitro lacquer finish. The round-laminated rosewood fingerboard has a 9.5-inch radius and 21 vintage-tall frets.',
       sound:'A solid slab with a bolted maple neck gives a quick attack and a clear fundamental, and it resists feedback at stage volume. How much the rosewood or the alder adds is argued over; the hardware and pickups matter more.',
       conf:'v', confText:'Woods, profile, radius, frets and finish agree across dealer listings (one says ash, which looks like an error). The tonal remarks are general.' },
-    { id:'bridge', layer:'mech', mk:[1036,342], title:'Bridge plate and saddles', sub:'Three steel barrels on a stamped steel plate',
-      wired:'Three steel barrel saddles sit on a steel plate screwed to the body. Each saddle carries two strings, and the same plate holds the bridge pickup.',
-      sound:'Paired saddles make intonation a compromise within each pair, part of the slightly sour sweetness of Telecaster chords. Hard steel under the strings keeps the attack bright, and the plate sits inside the pickup’s magnetic field.',
-      conf:'v', confText:'A three-saddle vintage-style bridge with steel saddles is confirmed; listings differ on whether they are plain barrels or slotted.' },
+    { id:'bridge', layer:'mech', mk:[1036,342], title:'Bridge plate and saddles', sub:'Three brass saddles on a stamped steel plate · saddles swapped by you',
+      wired:'Three barrel saddles sit on a steel plate screwed to the body. Each saddle carries two strings, and the same plate holds the bridge pickup. The stock saddles are steel; you replaced them with brass for more accurate intonation.',
+      sound:'With one saddle for each pair of strings, intonation is a compromise within the pair. Compensated saddles, angled or notched so each string gets its own break point, narrow that gap. Brass is softer than steel and is generally heard as rounder, with a less glassy attack, closer to the earliest 1950s Telecasters. The steel plate still sits inside the pickup’s magnetic field.',
+      conf:'o', confText:'The brass saddles come from you. That they are a compensated set is assumed from your reason for the swap. Stock steel saddles are confirmed by listings; the tonal difference is player consensus, and brass on the first Telecasters is from memory.' },
     { id:'bigsby', layer:'mech', mk:[1140,342], title:'Bigsby vibrato', sub:'Added to this guitar · the stock model has a fixed bridge',
       wired:'Behind the bridge the strings wrap around a bar that turns against a spring when the arm moves. The travel is small: about a semitone down and a little up. The drawing assumes a B5 unit mounted behind the original bridge plate.',
       sound:'Slow shimmer on chords and soft dips into notes, not dive bombs. Ending the strings at a tailpiece also changes how hard they press on the saddles, which owners describe as a rounder attack and a little less sustain. Tuning return depends on the strings sliding freely at the nut and saddles.',
@@ -491,6 +493,7 @@ function drawGuitar(){
   s.push(`<defs>
     <linearGradient id="gBody" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6f9fd6"/><stop offset=".45" stop-color="#4577b6"/><stop offset="1" stop-color="#2b5590"/></linearGradient>
     <linearGradient id="gChrome" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef0f3"/><stop offset=".5" stop-color="#c3c8cf"/><stop offset="1" stop-color="#9299a3"/></linearGradient>
+    <linearGradient id="gBrass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f0d68c"/><stop offset="1" stop-color="#b8923f"/></linearGradient>
     <linearGradient id="gAlu" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dcdfe3"/><stop offset="1" stop-color="#a4a9b1"/></linearGradient>
     <linearGradient id="gRose" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a3026"/><stop offset="1" stop-color="#33211b"/></linearGradient>
     <linearGradient id="gMaple" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e0c08c"/><stop offset="1" stop-color="#c7a56f"/></linearGradient>
@@ -522,7 +525,7 @@ function drawGuitar(){
   s.push(`<g ${tag('bridge')}>
     <rect x="958" y="222" width="102" height="96" rx="3" fill="url(#gChrome)" stroke="#5c626b"/>
     <path d="M958 225 H1060 M1056 222 V318" stroke="#7b828c" stroke-width="2"/>
-    ${[-26.4,0,26.4].map(o=>`<rect x="1025" y="${Y0+o-11}" width="12" height="22" rx="4" fill="#d9dde2" stroke="#4d535c"/><path d="M1037 ${Y0+o} H1056" stroke="#4d535c" stroke-width="1.5"/>`).join('')}
+    ${[-26.4,0,26.4].map(o=>`<rect x="1024" y="${Y0+o-11.5}" width="14" height="23" rx="4" fill="url(#gBrass)" stroke="#6b5622" stroke-width="1.2"/><path d="M1037 ${Y0+o} H1056" stroke="#4d535c" stroke-width="1.5"/>`).join('')}
   </g>`);
   let poles='';
   for(let i=0;i<6;i++){ const y=Y0+(i-2.5)*12.8; poles+=`<circle cx="${(992-(y-Y0)*0.306).toFixed(1)}" cy="${y.toFixed(1)}" r="3.2"/>`; }
