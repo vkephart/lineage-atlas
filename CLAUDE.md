@@ -101,16 +101,23 @@ them on the PR branch and reports back (as a PR comment) before merge:
 
 1. `npm install`, then `npm run build` (validate + typecheck + production build). Must pass. Compare the
    validate warning count with `main`: any new warning needs a reason.
-2. **Layout regression**, with `npm run dev` running:
+2. **Layout regression.** Serve `origin/main` from a separate worktree and the PR branch from the checkout, and
+   run the PR branch's copy of the script against both:
    ```bash
-   git checkout main && node scripts/check-layout.cjs snapshot /tmp/before.json
-   git checkout <pr-branch> && node scripts/check-layout.cjs snapshot /tmp/after.json /tmp
+   git fetch origin main && git worktree add /tmp/verify-main origin/main
+   (cd /tmp/verify-main && npm install && npx vite --port 5174 --strictPort) &
+   npx vite --port 5173 --strictPort &
+   ATLAS_URL=http://localhost:5174/ node scripts/check-layout.cjs snapshot /tmp/before.json
+   node scripts/check-layout.cjs snapshot /tmp/after.json /tmp
    node scripts/check-layout.cjs compare /tmp/before.json /tmp/after.json
    ```
    It fails on any new overlapping node pair at desktop (1440px) or phone (390px) width and lists displaced nodes
-   for review.
-3. **In the browser** at both widths: search for each new or changed genre, select it, and check that its panel,
-   predecessors and lit edges render. For UI changes, also exercise the touched interaction (pan, pinch, journeys).
+   for review. Its screenshots show only the initial fitted view, so new nodes are checked in step 3. Stop the
+   servers and `git worktree remove /tmp/verify-main` afterwards.
+3. **In the browser** at both widths, against the production build (`npm run build && npx vite preview`; the
+   edge canvas does not draw under `npm run dev`): search for each new or changed genre, select it, and check that
+   its panel, predecessors and lit edges render. For UI changes, also exercise the touched interaction (pan,
+   pinch, journeys).
 4. **Data review**: each new genre follows *Adding or changing a genre* and *Editorial tone*. Check the
    date is the first canonical record, there are exactly 3 tracks, the edges are plausible with no duplicate
    `from`/`to`, and the artist-index entries are correct. Spot-check facts by search, and flag anything doubtful

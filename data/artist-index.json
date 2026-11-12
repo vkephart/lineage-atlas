@@ -2189,7 +2189,7 @@
   ],
   "Nicola Cruz": [
     "organichouse",
-    "deephouse"
+    "house"
   ],
   "Sabo": [
     "organichouse",
@@ -2198,7 +2198,6 @@
   ],
   "Acid Pauli": [
     "organichouse",
-    "deephouse",
     "house"
   ],
   "Bedouin": [
@@ -2227,7 +2226,8 @@
     "house"
   ],
   "Monolink": [
+    "melodictechno",
     "organichouse",
-    "melodictechno"
+    "techno"
   ]
 }
