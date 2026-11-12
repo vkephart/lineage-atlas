@@ -832,7 +832,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
 
   componentWillUnmount() {
     clearInterval(this._t); clearTimeout(this._hoverT); this._stopGlide(); clearInterval(this._focusTick);
-    if (this._drawReq != null) cancelAnimationFrame(this._drawReq);
+    if (this._drawReq != null) { cancelAnimationFrame(this._drawReq); this._drawReq = null; } // StrictMode remounts this instance
     const vp = this.viewportRef.current;
     if (vp) vp.removeEventListener('click', this._onClickCapture, true);
     window.removeEventListener('pointermove', this._onMove);
@@ -875,7 +875,7 @@ export class Atlas extends React.Component<Record<string, never>, State> {
     const visCount = this.GENRES.filter((g) => g._root || g.year <= year).length;
     const sel = s.selectedNodeId ? this.byId[s.selectedNodeId] : null;
     const selEdge = s.selectedEdgeId ? this.EDGES.find((x) => x._i === s.selectedEdgeId) : null;
-    const rootClass = 'gx-root' + (s.immersive ? ' gx-immersive' : '') + ((s.isMobile && (s.selectedNodeId || s.selectedEdgeId)) ? ' gx-sheet' : '') + ((s.isMobile && (s.selectedNodeId || s.selectedEdgeId) && !s.sheetFull) ? ' gx-peek' : '');
+    const rootClass = 'gx-root' + (s.immersive ? ' gx-immersive' : '') + ((s.isMobile && (s.selectedNodeId || s.selectedEdgeId)) ? ' gx-sheet' : '') + ((s.isMobile && (s.selectedNodeId || s.selectedEdgeId) && !s.sheetFull) ? ' gx-peek' : '') + ((!s.isMobile && (s.selectedNodeId || s.selectedEdgeId)) ? ' gx-side' : '');
     const subtitle = s.bridgeMode ? 'Cross-Family Bridge Mode' : (s.focusFam ? this.FAM[s.focusFam].label : 'Genre Evolution · 1865 — Now');
     const q = s.query.trim().toLowerCase();
     const rs = this.rootSpan;

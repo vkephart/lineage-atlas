@@ -115,8 +115,8 @@ them on the PR branch and reports back (as a PR comment) before merge:
    It fails on any new overlapping node pair at desktop (1440px) or phone (390px) width and lists displaced nodes
    for review. Its screenshots show only the initial fitted view, so new nodes are checked in step 3. Stop the
    servers and `git worktree remove --force /tmp/verify-main` afterwards.
-3. **In the browser** at both widths, against the production build (`npm run build && npx vite preview`; the
-   edge canvas does not draw under `npm run dev`): search for each new or changed genre, select it, and check that
+3. **In the browser** at both widths (the dev server is fine; use `npm run build && npx vite preview` for anything
+   that might differ in production): search for each new or changed genre, select it, and check that
    its panel, predecessors and lit edges render. For UI changes, also exercise the touched interaction (pan,
    pinch, journeys).
 4. **Data review**: each new genre follows *Adding or changing a genre* and *Editorial tone*. Check the
