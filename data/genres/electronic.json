@@ -1484,5 +1484,70 @@
       }
     ],
     "tempo": "130–142 BPM"
+  },
+  {
+    "id": "organichouse",
+    "name": "Organic House",
+    "fam": "electronic",
+    "year": 2015,
+    "role": "branch",
+    "yOff": 60,
+    "aka": "Organic House / Downtempo · Ethnic House · Playa Tech",
+    "def": "A slow, meditative strain of deep house that sets a soft four-on-the-floor kick under hand drums, plucked and blown acoustic instruments and field recordings, favouring hypnotic, unhurried journeys over peak-time drops.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Rounded, low-impact kick at sub-club tempos, carried by congas, djembe, frame drums and shakers rather than hi-hat drive."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Kalimba, oud, flutes, handpan, nylon guitar and violin over warm pads, with rain, birdsong and crowd recordings as glue."
+      },
+      {
+        "k": "Harmony",
+        "v": "Static minor-key or modal vamps — often Middle-Eastern, Andean or West-African scales — that drift rather than resolve."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Sunset and daytime DJ culture: Berlin open-air and after-hours clubs, Tulum and desert gatherings; labels Sol Selectas, Ouïe, ZZK and Human By Default; codified as a Beatport category in June 2020."
+      }
+    ],
+    "why": "It keeps deep house's warm chords and steady pulse but swaps machine percussion for hand-played and sampled acoustic sources, slowing the tempo so the groove reads as ritual rather than rave.",
+    "artists": [
+      "Nicola Cruz",
+      "Sabo",
+      "Acid Pauli",
+      "Bedouin",
+      "Be Svendsen"
+    ],
+    "albums": [
+      {
+        "t": "Prender el Alma",
+        "a": "Nicola Cruz"
+      },
+      {
+        "t": "Temple of Dreams",
+        "a": "Bedouin"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Colibria",
+        "a": "Nicola Cruz",
+        "why": "Andean percussion and a hand-made flute over a slow electronic pulse — the template in 2015."
+      },
+      {
+        "t": "Stone Flower",
+        "a": "Namito",
+        "why": "A Sol Selectas underground anthem of hand drums and plucked melody."
+      },
+      {
+        "t": "Syria",
+        "a": "Unders",
+        "why": "Middle-Eastern modal melody riding a soft, rolling kick."
+      }
+    ],
+    "tempo": "105–122 BPM",
+    "tempoNote": "The downtempo end of the category dips below 100 BPM."
   }
 ]
