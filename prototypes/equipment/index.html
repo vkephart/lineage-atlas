@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<!--
+  Equipment Map prototype for the Lineage Atlas: a studio room that opens a signal map for each mapped piece.
+  No build step. Open this file in a browser, or serve the folder.
+
+    index.html            this shell: styles and the two views (studio room, equipment page)
+    engine.js             renders an equipment record as a page; hash routing (#studio, #telecaster, #bassman-70)
+    studio.js             the room drawing and the inventory
+    gear/*.js             one record per piece: data, provenance, tracks and its drawing
+
+  Nothing here is wired into the atlas app yet. Genre ids are real ids from data/genres/*.json.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Studio Equipment Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Layout idea: one wide cutaway drawing as the hero, a stepper that walks the signal through it, reference sections below. */
+  color-scheme:dark;
+  --bg:#0a0c10; --surface:#10131a; --surface2:#151920; --rule:rgba(255,255,255,.10);
+  --text:#e7eaee; --mid:#aab1bb; --dim:#78808c;
+  --sig:#f2b84b;   /* audio signal */
+  --pwr:#e8665c;   /* high voltage supply */
+  --ctl:#72b4f2;   /* bias and feedback loops */
+  --serif:'Spectral',Georgia,serif;
+  --ui:'Schibsted Grotesk',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);}
+body{font-family:var(--ui);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-webkit-text-size-adjust:100%;}
+a{color:var(--mid);text-underline-offset:3px;}
+a:hover{color:#fff;}
+.wrap{max-width:1340px;margin:0 auto;padding:0 22px;}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);}
+h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;text-wrap:balance;}
+h1{font-size:clamp(34px,5.2vw,54px);line-height:1.05;letter-spacing:-.01em;}
+h2{font-size:26px;line-height:1.2;}
+h3{font-size:19px;line-height:1.25;}
+p{margin:0;}
+
+header.top{padding:38px 0 22px;display:flex;flex-direction:column;gap:14px;}
+.lede{font-family:var(--serif);font-size:19px;line-height:1.5;color:#cfd4da;max-width:66ch;}
+.specs{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px;}
+.spec{font-family:var(--mono);font-size:11.5px;padding:6px 10px;border:1px solid var(--rule);border-radius:999px;color:var(--mid);white-space:nowrap;font-variant-numeric:tabular-nums;}
+.spec b{font-weight:500;color:var(--text);}
+
+/* ---------- figure ---------- */
+.figbar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:6px 0 12px;}
+.chips{display:flex;flex-wrap:wrap;gap:6px;}
+.chip{font-family:var(--ui);font-size:13px;font-weight:500;color:var(--mid);background:rgba(255,255,255,.04);border:1px solid var(--rule);border-radius:999px;padding:7px 12px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;touch-action:manipulation;}
+.chip:hover{background:rgba(255,255,255,.08);color:#fff;}
+.chip[aria-pressed="true"]{background:#eef0f3;color:#0a0c10;border-color:#eef0f3;}
+.chip:focus-visible,.step:focus-visible,.navbtn:focus-visible,.sigrow:focus-visible{outline:2px solid #fff;outline-offset:2px;}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;}
+.hint{font-family:var(--mono);font-size:11px;color:var(--dim);margin-left:auto;}
+
+.figframe{border:1px solid var(--rule);border-radius:16px;background:linear-gradient(180deg,#0d1016,#0a0c10);overflow:hidden;}
+.figscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.15) transparent;}
+#amp{display:block;width:100%;height:auto;min-width:0;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;}
+figcaption{font-family:var(--mono);font-size:11px;color:var(--dim);padding:10px 16px 12px;border-top:1px solid var(--rule);line-height:1.6;}
+
+/* drawing */
+#amp text{font-family:var(--mono);}
+.ln{fill:none;stroke:#8f97a3;stroke-width:1.2;}
+.lnf{fill:#12161c;stroke:#8f97a3;stroke-width:1.2;}
+.lbl{font-size:12px;fill:#aab1bb;}
+.lbl-s{font-size:10.5px;fill:#868e9a;}
+.tname{font-size:12px;fill:#e7eaee;font-weight:500;}
+.pan-t{font-size:9px;fill:#1d3f86;letter-spacing:.08em;}
+.halo{fill:none;stroke:#0b0d11;stroke-width:6.5;stroke-linecap:round;stroke-linejoin:round;}
+.w{fill:none;stroke-linecap:round;stroke-linejoin:round;}
+.w-sig{stroke:var(--sig);stroke-width:2.3;}
+.w-pwr{stroke:var(--pwr);stroke-width:2.1;}
+.w-ctl{stroke:var(--ctl);stroke-width:1.9;}
+.w-mains{stroke:#c9ced6;stroke-width:2;}
+.flow{fill:none;stroke:#fff8e4;stroke-width:2.6;stroke-linecap:round;stroke-dasharray:.1 17;opacity:.8;animation:flow 1.5s linear infinite;}
+@keyframes flow{to{stroke-dashoffset:-17.1;}}
+.blk{stroke-width:1.3;}
+.blk-sig{fill:rgba(242,184,75,.09);stroke:var(--sig);}
+.blk-pwr{fill:rgba(232,102,92,.09);stroke:var(--pwr);}
+.blk-ctl{fill:rgba(114,180,242,.09);stroke:var(--ctl);}
+.blk-t{font-size:10.5px;fill:#e7eaee;letter-spacing:.04em;}
+.kring{fill:none;stroke:var(--sig);stroke-width:2;opacity:0;}
+.mk circle.mkc{stroke-width:1.5;fill:#0b0d11;}
+.mk text{font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central;}
+.mk{cursor:pointer;}
+.mk:focus{outline:none;}
+.mk:focus-visible circle.mkc{stroke:#fff;stroke-width:2.5;}
+[data-stage]{transition:opacity .25s ease;cursor:pointer;}
+/* a stage is selected: everything not in it steps back */
+#amp.sel [data-stage]{opacity:.3;}
+#amp.sel [data-stage].on{opacity:1;}
+#amp.sel .mk{opacity:.6;}
+#amp.sel .mk.on{opacity:1;}
+#amp .mk.on circle.mkc{fill:currentColor;}
+#amp .mk.on text{fill:#0b0d11 !important;}
+#amp.sel .on .kring{opacity:1;}
+#amp:not(.sel) .flow, #amp.sel [data-stage]:not(.on) .flow{opacity:.5;}
+/* layer filter */
+#amp .layer-off{opacity:.1 !important;}
+
+/* ---------- stepper + detail ---------- */
+.stepper{display:flex;align-items:center;gap:10px;margin:0 0 12px;}
+.navbtn{width:42px;height:42px;border-radius:50%;border:1px solid var(--rule);background:rgba(255,255,255,.05);color:var(--text);font-size:17px;cursor:pointer;flex:none;touch-action:manipulation;}
+.navbtn:hover{background:rgba(255,255,255,.12);}
+.steps{display:flex;gap:6px;overflow-x:auto;padding:4px 2px;scrollbar-width:none;flex:1;}
+.steps::-webkit-scrollbar{display:none;}
+.step{flex:none;font-family:var(--mono);font-size:11.5px;color:var(--mid);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:7px 11px 7px 8px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;touch-action:manipulation;}
+.step .n{width:19px;height:19px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:10.5px;border:1.5px solid currentColor;}
+.step:hover{color:#fff;background:rgba(255,255,255,.05);}
+.step[aria-current="true"]{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.35);}
+.detail{margin-top:14px;border:1px solid var(--rule);border-radius:16px;background:var(--surface);padding:22px 24px 20px;display:grid;gap:18px;}
+.detail-head{display:flex;flex-direction:column;gap:6px;}
+.detail-head .eyebrow{display:flex;align-items:center;gap:8px;}
+.detail h2{font-size:28px;}
+.detail .sub{font-family:var(--mono);font-size:12px;color:var(--mid);}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+.col h4{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin:0 0 8px;font-weight:500;}
+.col p{font-family:var(--serif);font-size:17px;line-height:1.55;color:#d5dae0;max-width:62ch;}
+.conf{font-size:12.5px;color:var(--dim);border-top:1px solid var(--rule);padding-top:12px;display:flex;gap:10px;align-items:baseline;line-height:1.5;}
+.pill{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;border-radius:4px;padding:3px 7px;white-space:nowrap;flex:none;}
+.pill.v{background:rgba(79,194,138,.14);color:#6fd6a0;}
+.pill.m{background:rgba(242,184,75,.14);color:#f2b84b;}
+.pill.u{background:rgba(255,255,255,.08);color:#aab1bb;}
+
+/* ---------- reference sections ---------- */
+section.block{padding:54px 0 0;display:grid;gap:20px;}
+.block>.intro{font-size:15px;color:var(--mid);max-width:70ch;}
+.sigs{border-top:1px solid var(--rule);}
+.sigrow{display:grid;grid-template-columns:44px 1.05fr 1.5fr 1.2fr;gap:18px;padding:16px 4px;border-bottom:1px solid var(--rule);width:100%;text-align:left;background:none;border-left:0;border-right:0;border-top:0;color:inherit;font:inherit;cursor:pointer;align-items:baseline;}
+.sigrow:hover{background:rgba(255,255,255,.03);}
+.sigrow .num{font-family:var(--mono);font-size:12px;color:var(--dim);}
+.sigrow .what{font-family:var(--serif);font-size:18px;color:#fff;line-height:1.3;}
+.sigrow .hear{color:#cfd4da;}
+.sigrow .use{color:var(--mid);font-size:14px;}
+.sighead{display:grid;grid-template-columns:44px 1.05fr 1.5fr 1.2fr;gap:18px;padding:0 4px 8px;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);}
+
+.uses{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.use-card{border:1px solid var(--rule);border-radius:14px;background:var(--surface);padding:20px;display:flex;flex-direction:column;gap:12px;}
+.use-card p{color:#cfd4da;font-size:14.5px;}
+.use-card .basis{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+.genres{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:4px;}
+.genre{font-family:var(--mono);font-size:11px;color:#d5dae0;border:1px solid var(--rule);border-radius:999px;padding:4px 9px 4px 8px;display:inline-flex;align-items:center;gap:6px;white-space:nowrap;}
+.basis-key{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--mid);}
+.basis-key span{display:inline-flex;gap:8px;align-items:baseline;}
+
+.lineage{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border-top:1px solid var(--rule);}
+.lin{padding:16px 16px 4px 0;position:relative;display:flex;flex-direction:column;gap:5px;}
+.lin::before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;border-radius:50%;background:var(--bg);border:1.5px solid var(--mid);}
+.lin.this::before{background:var(--sig);border-color:var(--sig);box-shadow:0 0 0 4px rgba(242,184,75,.18);}
+.lin .yr{font-family:var(--mono);font-size:12px;color:var(--mid);font-variant-numeric:tabular-nums;}
+.lin .nm{font-family:var(--serif);font-size:17px;color:#fff;line-height:1.25;}
+.lin .nt{font-size:13px;color:var(--mid);line-height:1.45;}
+.lin .br{margin-top:6px;padding:8px 10px;border:1.5px dashed rgba(255,255,255,.28);border-radius:8px;font-size:12.5px;color:#cfd4da;line-height:1.4;}
+.lin .br b{font-weight:600;color:#fff;}
+
+.notes{display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px;border-top:1px solid var(--rule);}
+.note{padding:16px 0;border-bottom:1px solid var(--rule);display:grid;gap:4px;}
+.note b{font-family:var(--serif);font-weight:500;font-size:17px;color:#fff;}
+.note span{color:#cfd4da;font-size:14.5px;}
+
+.checked{display:grid;grid-template-columns:1fr 1fr;gap:30px;}
+.checked h3{margin-bottom:10px;display:flex;align-items:center;gap:10px;}
+.checked ul{margin:0;padding-left:18px;color:#cfd4da;display:grid;gap:7px;font-size:14.5px;}
+.srcs{font-size:13px;color:var(--mid);max-width:none;line-height:1.9;}
+details{border:1px solid var(--rule);border-radius:14px;background:var(--surface);}
+summary{cursor:pointer;padding:16px 20px;font-weight:500;}
+pre{margin:0;padding:0 20px 20px;overflow-x:auto;font-family:var(--mono);font-size:12px;line-height:1.6;color:#cfd4da;}
+footer{padding:44px 0 60px;font-size:12.5px;color:var(--dim);max-width:80ch;}
+
+@media (max-width:720px){
+  .wrap{padding:0 16px;}
+  header.top{padding:26px 0 16px;}
+  .lede{font-size:17px;}
+  #amp{min-width:1180px;}
+  .hint{display:none;}
+  .specs,.chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-right:-16px;padding-right:16px;}
+  .specs::-webkit-scrollbar,.chips::-webkit-scrollbar{display:none;}
+  .chip{flex:none;}
+  .figbar{margin:0 0 10px;}
+  .navbtn{width:40px;height:40px;}
+  .detail{padding:18px 16px 16px;}
+  .detail h2{font-size:24px;}
+  .cols{grid-template-columns:1fr;gap:16px;}
+  .col p{font-size:16px;}
+  .conf{flex-direction:column;gap:6px;}
+  .sighead{display:none;}
+  .sigrow{grid-template-columns:30px 1fr;gap:4px 10px;}
+  .sigrow .hear,.sigrow .use{grid-column:2;}
+  .uses{grid-template-columns:1fr;}
+  .lineage{grid-template-columns:1fr;border-top:0;border-left:1px solid var(--rule);margin-left:5px;}
+  .lin{padding:0 0 20px 20px;}
+  .lin::before{top:6px;left:-5px;}
+  .notes{grid-template-columns:1fr;}
+  .checked{grid-template-columns:1fr;}
+  section.block{padding-top:42px;}
+}
+@media (prefers-reduced-motion:reduce){
+  .flow{animation:none;display:none;}
+  [data-stage]{transition:none;}
+}
+:root{ --mech:#cfd6df; --load:#e8665c; }
+.w-mech{stroke:var(--mech);stroke-width:1.6;}
+.w-load{stroke:var(--load);stroke-width:2.3;}
+.blk-load{fill:rgba(232,102,92,.09);stroke:var(--load);}
+.sym{fill:none;stroke:#e7eaee;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
+.dim{fill:none;stroke:#8f97a3;stroke-width:1;stroke-dasharray:2 4;}
+.pill.o{background:rgba(114,180,242,.14);color:#8cc2f5;}
+.checked.three{grid-template-columns:1.15fr .8fr 1.15fr;}
+@media (max-width:720px){ .checked.three{grid-template-columns:1fr;} }
+
+/* ---------- shell: two views ---------- */
+[hidden]{display:none !important;}
+.back{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mid);text-decoration:none;}
+.back:hover{color:#fff;}
+.crumb{display:flex;gap:10px;align-items:center;}
+
+/* ---------- studio room ---------- */
+#room{display:block;width:100%;height:auto;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;}
+#room text{font-family:var(--mono);}
+#room .rlbl{font-size:12px;letter-spacing:.1em;fill:#78808c;stroke:none;}
+#room .rlbl.on{fill:var(--sig);font-weight:500;}
+#room .grp{fill:none;stroke:#566070;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;cursor:pointer;transition:stroke .2s;}
+#room .grp:hover,#room .grp.on,#room .grp:focus-visible{stroke:#d6dbe2;}
+#room .grp:hover .rlbl,#room .grp.on .rlbl,#room .grp:focus-visible .rlbl{fill:#e7eaee;}
+#room .open{cursor:pointer;}
+#room .open:hover .rlbl,#room .open:focus-visible .rlbl{fill:#fff;}
+#room [tabindex]:focus{outline:none;}
+.pulse{fill:none;stroke:var(--sig);stroke-width:2;transform-box:fill-box;transform-origin:center;animation:pulse 2.4s ease-out infinite;pointer-events:none;}
+@keyframes pulse{0%{transform:scale(.5);opacity:.9;}70%{transform:scale(2.3);opacity:0;}100%{opacity:0;}}
+.roomp{font-family:var(--serif);font-size:17px;line-height:1.55;color:#d5dae0;max-width:66ch;}
+.inv-list{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;}
+.inv{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;align-items:start;}
+.inv-card{border:1px solid var(--rule);border-radius:14px;background:var(--surface);padding:16px 18px 8px;}
+.inv-card h3{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;}
+.inv-card h3 span{font-family:var(--mono);font-size:12px;color:var(--dim);}
+.inv-row{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-top:1px solid var(--rule);font-size:13.5px;color:#cfd4da;text-decoration:none;}
+.inv-row .inv-n{flex:1;min-width:0;}
+.inv-row .inv-t{font-family:var(--mono);font-size:10.5px;color:var(--dim);text-align:right;}
+a.inv-row.mapped{flex-wrap:wrap;gap:4px 10px;}
+a.inv-row.mapped .inv-n{color:#fff;font-weight:500;flex:1 0 100%;}
+a.inv-row.mapped .inv-t{text-align:left;flex:1;}
+a.inv-row.mapped:hover .inv-n{text-decoration:underline;}
+
+/* ---------- representative tracks in the genre cards ---------- */
+.tracks{display:grid;gap:14px;border-top:1px solid var(--rule);padding-top:14px;}
+.tracks h4,.also{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin:0;font-weight:500;}
+.trk{display:grid;gap:3px;}
+.trk-top{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:2px;}
+.trk-t{font-family:var(--serif);font-size:18px;line-height:1.25;color:#fff;}
+.trk-a{font-family:var(--mono);font-size:11px;color:var(--mid);}
+.trk-n{font-size:13.5px;line-height:1.5;color:#b9c0c9;}
+.pill.a{background:rgba(176,140,240,.15);color:#c3a8f5;}
+.genres .also{width:100%;margin-bottom:2px;}
+.use-card .genres{border-top:1px solid var(--rule);padding-top:12px;}
+
+@media (max-width:720px){
+  #room{min-width:1100px;}
+  .inv{grid-template-columns:1fr;}
+  .inv-list{grid-template-columns:1fr;}
+}
+@media (max-width:1100px) and (min-width:721px){ .inv{grid-template-columns:repeat(2,1fr);} }
+@media (prefers-reduced-motion:reduce){ .pulse{animation:none;opacity:.6;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ================= studio room ================= -->
+<div id="view-studio">
+  <header class="top">
+    <div class="eyebrow">Lineage Atlas · Equipment Map · Prototype</div>
+    <h1>The Studio</h1>
+    <p class="lede">Your equipment list as a room. The pieces drawn in colour have a signal map: how they are built, what that does to the sound, and which records carry it. Tap one to open it.</p>
+  </header>
+  <main>
+    <figure class="figframe" style="margin:0">
+      <div class="figscroll" id="roomscroll">
+        <svg id="room" viewBox="0 0 1480 710" role="img" aria-label="A studio room. A blue Telecaster on a stand and a Bassman 70 amplifier stack are drawn in colour and can be opened. Guitars, basses, pedals, microphones, synths, a rack and percussion are outlined and not mapped yet."></svg>
+      </div>
+      <figcaption>Drag sideways on a phone. Colour means mapped; an outline means the piece is on your sheet and not mapped yet. The room is a sketch, not a floor plan.</figcaption>
+    </figure>
+    <article class="detail" id="roominfo" aria-live="polite"></article>
+
+    <section class="block">
+      <div class="eyebrow">Inventory</div>
+      <h2>Everything on the sheet</h2>
+      <p class="intro">Names and groups only, taken from your Equipment List sheet. The Bassman 70 is the one piece here that is not on it.</p>
+      <div class="inv" id="inventory"></div>
+    </section>
+  </main>
+  <footer>Brand and model names are trademarks of their owners and are used descriptively to identify the equipment.</footer>
+</div>
+
+<!-- ================= equipment page ================= -->
+<div id="view-gear" hidden>
+  <header class="top">
+    <div class="crumb"><a class="back" href="#studio">← Studio</a><span class="eyebrow">·</span><span class="eyebrow" id="g-eyebrow"></span></div>
+    <h1 id="g-title"></h1>
+    <p class="lede" id="g-lede"></p>
+    <div class="specs" id="specs"></div>
+  </header>
+  <main>
+    <div class="figbar">
+      <div class="chips" id="layers" role="group" aria-label="Show layer"></div>
+      <span class="hint">Tap any part, or step through with the arrows</span>
+    </div>
+    <div class="stepper">
+      <button class="navbtn" id="prev" aria-label="Previous stage">←</button>
+      <div class="steps" id="steps"></div>
+      <button class="navbtn" id="next" aria-label="Next stage">→</button>
+    </div>
+    <figure class="figframe" style="margin:0">
+      <div class="figscroll" id="figscroll"><svg id="amp" role="img"></svg></div>
+      <figcaption id="g-caption"></figcaption>
+    </figure>
+    <article class="detail" id="detail" aria-live="polite"></article>
+
+    <section class="block">
+      <div class="eyebrow">Design to sound</div>
+      <h2>Six design choices you can hear</h2>
+      <div>
+        <div class="sighead"><span></span><span>Choice</span><span>What it does to the sound</span><span>What that is good for</span></div>
+        <div class="sigs" id="sigs"></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="eyebrow">Genre links</div>
+      <h2>Where it turns up</h2>
+      <p class="intro" id="g-uses-intro"></p>
+      <div class="basis-key" id="basiskey"></div>
+      <div class="uses" id="uses"></div>
+    </section>
+
+    <section class="block">
+      <div class="eyebrow">Equipment lineage</div>
+      <h2 id="g-lin-title"></h2>
+      <p class="intro" id="g-lin-intro"></p>
+      <div class="lineage" id="lineage"></div>
+    </section>
+
+    <section class="block">
+      <div class="eyebrow" id="g-notes-eyebrow"></div>
+      <h2 id="g-notes-title"></h2>
+      <p class="intro" id="g-notes-intro"></p>
+      <div class="notes" id="notes"></div>
+    </section>
+
+    <section class="block">
+      <div class="eyebrow">Provenance</div>
+      <h2>What was checked</h2>
+      <p class="intro" id="g-prov-intro"></p>
+      <div class="checked" id="g-prov"></div>
+      <p class="intro srcs" id="srcs"></p>
+    </section>
+
+    <section class="block">
+      <details>
+        <summary>Record shape this page is rendered from</summary>
+        <pre id="shape"></pre>
+      </details>
+    </section>
+  </main>
+  <footer id="g-footer"></footer>
+</div>
+
+</div>
+<script src="engine.js"></script>
+<script src="gear/telecaster-ao60.js"></script>
+<script src="gear/bassman-70.js"></script>
+<script src="studio.js"></script>
+<script>STUDIO.start(); EQ.start();</script>
+</body>
+</html>
