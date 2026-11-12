@@ -1,12 +1,12 @@
 // Layout regression check for the map (the project has no unit-test suite; this plus `npm run build` is the test).
-// Needs a dev server running (`npm run dev`). Loads the map at a desktop (1440px) and a phone (390px) width and records
+// Needs a server running (`npm run dev`, or set ATLAS_URL). Loads the map at a desktop (1440px) and a phone (390px) width and records
 // every genre node's position and every pair of overlapping node boxes, plus a screenshot per width.
 //
 //   node scripts/check-layout.cjs snapshot <out.json> [screenshotDir]   # record the current layout
 //   node scripts/check-layout.cjs compare  <before.json> <after.json>   # report new overlaps and displaced nodes
 //
-// Typical PR check: `git stash` (or check out main) → snapshot before.json → back to the branch → snapshot after.json
-// → compare. Exit code 1 when the change introduces an overlap; moved nodes are listed for review, not failed, since
+// PR check (see "Verifying a pull request" in CLAUDE.md): serve origin/main from a worktree on another port and
+// snapshot it with ATLAS_URL → snapshot the PR branch → compare. Exit code 1 when the change introduces an overlap; moved nodes are listed for review, not failed, since
 // the de-overlap pass may legitimately nudge a neighbour.
 const fs = require('node:fs');
 const path = require('node:path');

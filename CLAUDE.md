@@ -105,15 +105,16 @@ them on the PR branch and reports back (as a PR comment) before merge:
    run the PR branch's copy of the script against both:
    ```bash
    git fetch origin main && git worktree add /tmp/verify-main origin/main
-   (cd /tmp/verify-main && npm install && npx vite --port 5174 --strictPort) &
+   (cd /tmp/verify-main && npm ci && npx vite --port 5174 --strictPort) &
    npx vite --port 5173 --strictPort &
+   until curl -sf localhost:5173 >/dev/null && curl -sf localhost:5174 >/dev/null; do sleep 1; done
    ATLAS_URL=http://localhost:5174/ node scripts/check-layout.cjs snapshot /tmp/before.json
    node scripts/check-layout.cjs snapshot /tmp/after.json /tmp
    node scripts/check-layout.cjs compare /tmp/before.json /tmp/after.json
    ```
    It fails on any new overlapping node pair at desktop (1440px) or phone (390px) width and lists displaced nodes
    for review. Its screenshots show only the initial fitted view, so new nodes are checked in step 3. Stop the
-   servers and `git worktree remove /tmp/verify-main` afterwards.
+   servers and `git worktree remove --force /tmp/verify-main` afterwards.
 3. **In the browser** at both widths, against the production build (`npm run build && npx vite preview`; the
    edge canvas does not draw under `npm run dev`): search for each new or changed genre, select it, and check that
    its panel, predecessors and lit edges render. For UI changes, also exercise the touched interaction (pan,
