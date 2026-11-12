@@ -18,7 +18,7 @@ const STUDIO = (function(){
       { name:'Fender American Professional II Precision Bass', note:'2025' },
       { name:'Höfner H500/1 ’62 Reissue', note:'2003' } ] },
     { id:'amps', label:'Amplifiers', items:[
-      { name:'Fender Bassman 70', note:'c. 1979 · not on your sheet', map:'bassman-70' } ] },
+      { name:'Fender Bassman 70', note:'c. 1979 · head only, no cabinet', map:'bassman-70' } ] },
     { id:'mics', label:'Microphones', items:[
       { name:'Shure SM57', note:'dynamic' }, { name:'Shure SM58', note:'dynamic' }, { name:'Shure Beta 52A', note:'kick' }, { name:'CAD KBM412', note:'kick' },
       { name:'Audix Micro-D', note:'drum condenser' }, { name:'Neumann TLM 103', note:'condenser' }, { name:'Royer R-121', note:'ribbon' },

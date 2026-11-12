@@ -18,11 +18,11 @@ const BASIS = {
   lineage:   { label:'Lineage',    cls:'u', text:'belongs to an ancestor of this model' }
 };
 
-const CONF = { v:['Checked','v'], m:['Partly from memory','m'] };
+const CONF = { v:['Checked','v'], m:['Partly from memory','m'], o:['From you','o'] };
 
 const EQUIPMENT = {
   id:'fender-bassman-70', name:'Fender Bassman 70', maker:'Fender', kind:'Tube bass amplifier head', years:[1977,1983], drawnAs:1979,
-  specs:[['Built','1977–83'],['Output','70 W RMS'],['Preamp','3 × 7025'],['Inverter','12AT7'],['Power','2 × 6L6GC'],['Output stage','ultralinear'],['Rectifier','silicon'],['Load','4 Ω'],['Cabinet','2 × 15″']],
+  specs:[['Built','1977–83'],['Output','70 W RMS'],['Preamp','3 × 7025'],['Inverter','12AT7'],['Power','2 × 6L6GC'],['Output stage','ultralinear'],['Rectifier','silicon'],['Load','4 Ω'],['Cabinet','none yet · stock 2 × 15″']],
 
   stages:[
     { id:'inputs', layer:'signal', mk:[50,205], title:'Inputs', sub:'Two channels, two jacks each',
@@ -57,10 +57,10 @@ const EQUIPMENT = {
       wired:'In earlier Bassmans the 6L6 screen grids run from their own filtered supply through a choke. Here each screen connects to a tap partway along its half of the transformer primary, so a fraction of the output voltage returns to the screen on every cycle. That local feedback puts the tube between pentode and triode operation. Fender deleted the choke when it adopted the design.',
       sound:'More clean power from the same two tubes (70 W against the Bassman 50’s 50), lower distortion and a firmer grip on the speaker. The cost is feel: less compression, and clipping that arrives late and abruptly. This is why players call these amps loud, clean and stiff, and why some rewire them for conventional pentode operation.',
       conf:'v', confText:'Ultralinear operation and the rise to 70 W are confirmed; the choke deletion is documented for the Twin Reverb of the same years.' },
-    { id:'cab', layer:'signal', mk:[1284,172], title:'Speaker cabinet', sub:'2 × 15″ · 4 Ω',
-      wired:'The matching enclosure holds two 15-inch, 8 Ω speakers wired in parallel for a 4 Ω load. Surviving cabinets carry CTS, Eminence or JBL drivers.',
-      sound:'Fifteens move a lot of air and roll off early at the top, so the full stack is deep and soft-edged. Through 10s or 12s the same head is noticeably brighter and reads as a guitar amp.',
-      conf:'v', confText:'2×15 at 4 Ω is confirmed by cabinet listings. The factory driver for 1979 is not settled.' },
+    { id:'cab', layer:'signal', mk:[1284,172], title:'Speaker cabinet', sub:'Stock 2 × 15″ at 4 Ω · you have the head only',
+      wired:'The matching enclosure holds two 15-inch, 8 Ω speakers wired in parallel for a 4 Ω load. Surviving cabinets carry CTS, Eminence or JBL drivers. Yours is a head with no cabinet at present, so this is the one stage still to be chosen: any cabinet presenting 4 Ω and rated above 70 W will do.',
+      sound:'Fifteens move a lot of air and roll off early at the top, so the full stack is deep and soft-edged. Through 10s or 12s the same head is noticeably brighter and reads as a guitar amp. With no cabinet yet, that choice is open, and it decides the voice of the whole amp more than any knob on the panel.',
+      conf:'o', confText:'That you have no cabinet comes from you. 2×15 at 4 Ω for the stock enclosure is confirmed by cabinet listings; the factory driver for 1979 is not settled.' },
 
     { id:'mains', layer:'power', mk:[1166,250], title:'Mains and power transformer', sub:'Three secondary windings',
       wired:'Wall power passes the fuse and power switch on the rear panel into the power transformer. Its secondaries supply high voltage for the plates, a tap for the negative bias supply, and 6.3 V AC for every tube heater and the pilot lamp.',
@@ -125,12 +125,12 @@ const EQUIPMENT = {
   ],
 
   notes:[
+    ['Until there is a cabinet','Do not play through the head with nothing connected. Either borrow a 4 Ω cabinet rated above 70 W, or use a reactive load box rated for the power at 4 Ω and record its line output into the Apollo with a cabinet impulse response.'],
     ['Bass','Bass channel, Deep off, Master high. Blend a DI with a microphone on one of the 15s to get string definition and cone together.'],
     ['Guitar','Normal channel with Bright on. Expect headroom well past the point where a small room needs it, and shape breakup with pedals in front.'],
     ['Low-volume dirt','Volume high and Master low gives preamp fizz. It works better as a texture under a clean take than as the main rhythm sound.'],
-    ['Re-voice with the cabinet','A 2×12 or 4×10 presenting 4 Ω brings back the upper mids that 15s remove.'],
     ['Keys and re-amping','Flat, loud and clean makes it a useful re-amp target for electric piano, synths and drum machines when the aim is air and cone movement without grit.'],
-    ['Look after it','Always keep a 4 Ω load connected. A tube output stage run with no speaker can destroy its output transformer.']
+    ['Choosing a cabinet','A 2×15 gives the deep, soft-edged stock voice for bass. A 2×12 or 4×10 at 4 Ω suits guitar. Decide by which job the amp will do most.']
   ],
 
   sources:[
@@ -164,7 +164,7 @@ const TEXT = {
   lineageTitle:'The Bassman line, 1952 to 1983',
   lineageIntro:'Equipment has descent the same way genres do. The 70 is the last tube branch of a line whose most famous member was a bass amp that guitarists adopted.',
   notesEyebrow:'In the room', notesTitle:'Using one',
-  notesIntro:'These follow from the circuit and from owner reports. Treat them as starting points to test by ear.',
+  notesIntro:'These follow from the circuit and from owner reports. Treat them as starting points to test by ear. A tube output stage run with no load can destroy its output transformer, so the first note comes first.',
   provenance:{ intro:'The factory schematic could not be opened while this was drawn, so the wiring is shown at block level and no component values are claimed beyond the ones listed as checked.',
     lists:[
       { pill:'Checked', cls:'v', title:'Against listings, value guides and tech forums', items:[
@@ -183,7 +183,11 @@ const TEXT = {
         'Input 2 padded to half level; standby interrupting the high-voltage supply.',
         'B+ near 500 V comes from a single owner measurement (523 V), not a factory chart.',
         'Lineage dates before 1972, and the vertical layout of the 2×15 cabinet.',
-        'This amp is not on your equipment sheet; it is in the room because you asked for it first.' ] }
+        'The load-box suggestion is general practice, not a tested setup.' ] },
+      { pill:'From you', cls:'o', title:'Your sheet and what you told me', items:[
+        'The amp is from around 1979.',
+        'It is on your equipment sheet as a head.',
+        'You have no speaker cabinet for it at present.' ] }
     ] },
   footer:'Reference drawing for understanding signal flow. It is not a service guide: filter capacitors in a tube amplifier hold a lethal charge after the amp is unplugged. Fender and Bassman are trademarks of Fender Musical Instruments Corporation, used here descriptively; this page is not affiliated with or endorsed by Fender.'
 };
@@ -348,7 +352,7 @@ function drawAmp(){
     <rect x="1262" y="150" width="200" height="475" rx="12" fill="#0c0e12" stroke="#4b515b" stroke-width="1.6"/>
     <rect x="1276" y="164" width="172" height="420" rx="5" fill="url(#grille)" stroke="rgba(255,255,255,.07)"/>
     ${[278,474].map(cy=>`<circle cx="1362" cy="${cy}" r="80" fill="url(#gCone)" class="ln"/><circle cx="1362" cy="${cy}" r="70" class="ln" opacity=".5"/><circle cx="1362" cy="${cy}" r="46" class="ln" opacity=".3"/><circle cx="1362" cy="${cy}" r="22" fill="#191c21" class="ln"/>`).join('')}
-    <text x="1362" y="606" text-anchor="middle" class="lbl">2 × 15″ · 8 Ω + 8 Ω</text>
+    <text x="1362" y="600" text-anchor="middle" class="lbl">2 × 15″ · 8 Ω + 8 Ω</text><text x="1362" y="615" text-anchor="middle" class="lbl-s">STOCK CABINET · NOT IN YOUR ROOM</text>
     <circle cx="1262" cy="516" r="5" fill="#8e949d" stroke="#4b5059"/>
   </g>`);
   s.push(`<rect x="1284" y="632" width="46" height="9" rx="2" fill="#1a1d22"/><rect x="1394" y="632" width="46" height="9" rx="2" fill="#1a1d22"/>`);
@@ -362,10 +366,10 @@ const ROOM = { w:200, h:400, draw(){
   return `<rect x="0" y="0" width="200" height="86" rx="7" fill="#0c0e12" stroke="#5b616b" stroke-width="1.5"/>
     <rect x="8" y="8" width="184" height="22" rx="2" fill="url(#rPanel)"/>${k}<circle cx="184" cy="19" r="3.2" fill="#ff5a4d"/>
     <rect x="8" y="34" width="184" height="44" rx="2" fill="url(#rGrille)" stroke="rgba(255,255,255,.1)"/>
-    <rect x="0" y="92" width="200" height="300" rx="9" fill="#0c0e12" stroke="#5b616b" stroke-width="1.5"/>
-    <rect x="10" y="102" width="180" height="270" rx="3" fill="url(#rGrille)" stroke="rgba(255,255,255,.1)"/>
-    ${[172,304].map(cy=>`<circle cx="100" cy="${cy}" r="60" fill="rgba(20,24,30,.7)" stroke="#6b7280" stroke-width="1"/><circle cx="100" cy="${cy}" r="18" fill="#191c21" stroke="#6b7280" stroke-width="1"/>`).join('')}
-    <rect x="18" y="392" width="30" height="8" rx="2" fill="#1a1d22"/><rect x="152" y="392" width="30" height="8" rx="2" fill="#1a1d22"/>`;
+    <rect x="0" y="92" width="200" height="300" rx="9" fill="none" stroke="#566070" stroke-width="1.6" stroke-dasharray="6 6"/>
+    <text x="100" y="242" text-anchor="middle" class="rlbl">NO CABINET YET</text>
+    ${[172,304].map(cy=>`<circle cx="100" cy="${cy}" r="60" fill="none" stroke="#566070" stroke-width="1.3" stroke-dasharray="4 6"/>`).join('')}
+`;
 } };
 
 EQ.register(Object.assign(EQUIPMENT, TEXT, { layers:LAYERS, basis:BASIS, conf:CONF, room:ROOM,
