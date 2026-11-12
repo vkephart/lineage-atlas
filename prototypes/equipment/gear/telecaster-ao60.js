@@ -100,10 +100,15 @@ const EQUIPMENT = {
         { g:'punk', t:'London Calling', a:'The Clash', y:1979, src:'d', atlas:'Punk', note:'Joe Strummer’s rhythm guitar. Most accounts give his 1966 Telecaster; Fender credits an Esquire for this era.' },
         { g:'newwave', t:'Message in a Bottle', a:'The Police', y:1979, src:'v', note:'Andy Summers’s early-60s Telecaster Custom, bound like this one but heavily modified, through a chorus pedal.' }
       ] },
-    { title:'With the Bigsby: drift and shimmer', basis:['fit','crowd'],
-      text:'A vibrato adds slow pitch movement to an otherwise dry, direct guitar, which suits styles built on reverb and delay. Gear listings credit Bigsby Telecasters to Mark Arm of Mudhoney and Dean DeLeo of Stone Temple Pilots.',
-      genres:['dreampop','shoegaze','cosmiccountry','indie','grunge','alternative'],
-      noTracks:'No track is documented for a Bigsby Telecaster yet.' }
+    { title:'With the Bigsby: drift and shimmer', basis:['era','fit','crowd'],
+      text:'A vibrato adds slow pitch movement to an otherwise dry, direct guitar, which suits styles built on reverb and delay. The closest documented match to this guitar is David Roback of Mazzy Star, who owned Bigsby-equipped Telecasters. Gear listings also credit Bigsby Telecasters to Mark Arm of Mudhoney and Dean DeLeo of Stone Temple Pilots.',
+      genres:['dreampop','shoegaze','alternative','cosmiccountry','indie','grunge'],
+      tracks:[
+        { g:'dreampop', t:'Fade Into You', a:'Mazzy Star', y:1993, src:'r', atlas:'Dream Pop', note:'The sale of David Roback’s collection confirms he owned Bigsby-equipped Telecasters. A gear database and a tab site credit a 1968 blonde one for the slide part here; no primary source ties it to this track.' },
+        { g:'shoegaze', t:'Alison', a:'Slowdive', y:1993, src:'r', atlas:'Shoegaze', note:'Neil Halstead and Rachel Goswell both played Telecasters in the Souvlaki period, next to Halstead’s Rickenbackers, through chorus, delay and reverb. No track-by-track breakdown exists. No vibrato.' },
+        { g:'shoegaze', t:'Only Shallow', a:'My Bloody Valentine', y:1991, src:'v', sim:'Different guitar', atlas:'Shoegaze', note:'A Jazzmaster, not a Telecaster. Kevin Shields strums while holding the vibrato arm, the glide technique behind Loveless. A Bigsby allows the same move over a smaller range.' },
+        { g:'alternative', t:'Hallelujah', a:'Jeff Buckley', y:1994, src:'v', note:'A borrowed 1983 Telecaster, his main guitar for Grace, played clean into deep reverb. No vibrato.' }
+      ] }
   ],
 
   lineage:[
@@ -141,7 +146,11 @@ const EQUIPMENT = {
     ['Vintage Guitar: Bloomfield’s ’63 Telecaster','https://vintageguitar.com/25061/michael-bloomfields-63-telecaster'],
     ['Ground Guitar: Jimmy Page’s 1959 Telecaster','https://www.groundguitar.com/jimmy-page-gear/jimmy-pages-1959-fender-telecaster-dragon-tele/'],
     ['Fender: Joe Strummer Esquire announcement','https://www.fender.com/newsroom/272114-fender-launches-joe-strummer-campfire-acoustic-and-limited-edition-joe-strummer-esquire-guitars-to-celebrate-the-legacy-of-one-of-the-/'],
-    ['Guitar World: Andy Summers’s Telecaster','https://www.guitarworld.com/features/andy-summers-modded-fender-telecaster']
+    ['Guitar World: Andy Summers’s Telecaster','https://www.guitarworld.com/features/andy-summers-modded-fender-telecaster'],
+    ['Reverb: Mazzy Star’s gear collection','https://reverb.com/news/mazzy-stars-gear-collection-is-for-sale-on-reverb'],
+    ['Guitar.com: the genius of Souvlaki','https://guitar.com/reviews/album/the-genius-of-souvlaki-by-slowdive/'],
+    ['Fender: Kevin Shields on the Jazzmaster','https://fender.com/articles/artists/my-bloody-valentines-kevin-shields-on-the-jazzmaster-and-his-iconic-albums'],
+    ['Ground Guitar: Jeff Buckley’s 1983 Telecaster','https://www.groundguitar.com/jeff-buckley-gear/jeff-buckleys-1983-fender-telecaster-toploader/']
   ]
 };
 

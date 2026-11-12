@@ -60,7 +60,7 @@ const EQ = (function(){
   function trackRow(t){
     const s=TRACK_SRC[t.src];
     return `<div class="trk">
-      <div class="trk-top">${genreChip(t.g)}<span class="pill ${s[1]}">${s[0]}</span>${t.atlas?`<span class="pill a" title="Also a representative track for ${t.atlas} in the atlas">In the atlas</span>`:''}</div>
+      <div class="trk-top">${genreChip(t.g)}<span class="pill ${s[1]}">${s[0]}</span>${t.sim?`<span class="pill u">${t.sim}</span>`:''}${t.atlas?`<span class="pill a" title="Also a representative track for ${t.atlas} in the atlas">In the atlas</span>`:''}</div>
       <div class="trk-t">${t.t}</div>
       <div class="trk-a">${t.a} · ${t.y} · <a href="${listen(t)}" target="_blank" rel="noopener">Listen</a></div>
       <div class="trk-n">${t.note}</div>
