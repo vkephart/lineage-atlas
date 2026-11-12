@@ -11,6 +11,13 @@ body{font-family:'Schibsted Grotesk',system-ui,sans-serif;-webkit-font-smoothing
 .gx-root button,.gx-root input,.gx-root a{touch-action:manipulation;}
 .gx-root button{font-family:'Schibsted Grotesk',system-ui,sans-serif;}
 .gx-panel{-webkit-user-select:text;user-select:text;}
+/* Desktop: the 408px detail panel covers the right edge. While it is open the map controls move left of it and sit
+   above the year-slider row, and the slider re-centres in the gap between the legend (ends at 256px) and the
+   controls, never narrower than 360px. Below ~1130px wide that gap is too small and the slider overlaps the legend,
+   as it already did at those widths with no panel open. */
+.gx-ctrl,.gx-slider{transition:right .25s cubic-bezier(.22,.61,.36,1),bottom .25s cubic-bezier(.22,.61,.36,1),left .25s cubic-bezier(.22,.61,.36,1),width .25s cubic-bezier(.22,.61,.36,1);}
+.gx-side .gx-ctrl{right:434px !important;bottom:156px !important;}
+.gx-side .gx-slider{left:calc(50vw - 109px) !important;width:clamp(360px, calc(100vw - 770px), 640px) !important;}
 
 /* perf degrade while a pinch is live: node glows are what blow the iOS tile re-raster budget when the scale changes */
 .gx-perf [data-node] div{box-shadow:none !important;transition:none !important;}
