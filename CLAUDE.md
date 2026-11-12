@@ -60,8 +60,13 @@ npm run build        # validate + typecheck + production build into dist/
    edge will not light up, backwards-in-time influences, orphans).
 6. Optional: add a journey in `data/journeys.json` when a lineage tells a story (6–10 steps, each step a genre id
    plus 1–2 sentences). Consecutive steps must be connected by an edge.
-7. Commit with a message like `data: add Country Rock, Soft Rock; re-date New Post-Punk to 2017` and push to
-   `main`. GitHub Pages redeploys automatically in about a minute.
+7. Commit on a branch (not `main`) with a message like
+   `data: add Country Rock, Soft Rock; re-date New Post-Punk to 2017`, push it, and **open a pull request into
+   `main`**. The PR body lists what changed, which facts were verified by search vs. from memory, and the results
+   of the checks below.
+8. **Have a second agent verify the PR** before it is merged (see *Verifying a pull request*). The author's own
+   checks don't count as the verification. Merging to `main` is the owner's call; GitHub Pages redeploys about a
+   minute after the merge.
 
 For a batch of several genres, write one additions JSON (see the header comment in
 `scripts/merge-additions.mjs` for the shape) and run `node scripts/merge-additions.mjs file.json`.
@@ -88,6 +93,39 @@ genre to its first canonical records, not its naming or commercial peak. Keep "r
   width (≤430px). Use Playwright screenshots; `npm run dev` then script against `http://localhost:5173`.
 - Mobile rules live in the `@media (max-width:720px)` block of `src/atlas.css`; `isMobile` in the component is the
   same breakpoint.
+
+## Verifying a pull request
+
+There is no unit-test suite. These checks are the tests, and a separate agent that did not write the change runs
+them on the PR branch and reports back (as a PR comment) before merge:
+
+1. `npm install`, then `npm run build` (validate + typecheck + production build). Must pass. Compare the
+   validate warning count with `main`: any new warning needs a reason.
+2. **Layout regression.** Serve `origin/main` from a separate worktree and the PR branch from the checkout, and
+   run the PR branch's copy of the script against both:
+   ```bash
+   git fetch origin main && git worktree add /tmp/verify-main origin/main
+   (cd /tmp/verify-main && npm ci && npx vite --port 5174 --strictPort) &
+   npx vite --port 5173 --strictPort &
+   until curl -sf localhost:5173 >/dev/null && curl -sf localhost:5174 >/dev/null; do sleep 1; done
+   ATLAS_URL=http://localhost:5174/ node scripts/check-layout.cjs snapshot /tmp/before.json
+   node scripts/check-layout.cjs snapshot /tmp/after.json /tmp
+   node scripts/check-layout.cjs compare /tmp/before.json /tmp/after.json
+   ```
+   It fails on any new overlapping node pair at desktop (1440px) or phone (390px) width and lists displaced nodes
+   for review. Its screenshots show only the initial fitted view, so new nodes are checked in step 3. Stop the
+   servers and `git worktree remove --force /tmp/verify-main` afterwards.
+3. **In the browser** at both widths, against the production build (`npm run build && npx vite preview`; the
+   edge canvas does not draw under `npm run dev`): search for each new or changed genre, select it, and check that
+   its panel, predecessors and lit edges render. For UI changes, also exercise the touched interaction (pan,
+   pinch, journeys).
+4. **Data review**: each new genre follows *Adding or changing a genre* and *Editorial tone*. Check the
+   date is the first canonical record, there are exactly 3 tracks, the edges are plausible with no duplicate
+   `from`/`to`, and the artist-index entries are correct. Spot-check facts by search, and flag anything doubtful
+   rather than silently fixing it.
+
+The verifier reports each check as passed or failed with evidence (command output, screenshots). It does not
+approve or merge.
 
 ## Deployment
 

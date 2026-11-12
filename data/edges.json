@@ -4884,5 +4884,26 @@
     "rel": "stylistic",
     "strength": 0.4,
     "note": "Math rock's additive meters and angular counterpoint run back through avant-prog."
+  },
+  {
+    "from": "deephouse",
+    "to": "organichouse",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Organic house slows deep house down and trades its drum machines for hand drums and acoustic colour."
+  },
+  {
+    "from": "melodictechno",
+    "to": "organichouse",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "The two share DJs, labels and sunset-to-after-hours sets, blurring at their edges."
+  },
+  {
+    "from": "triphop",
+    "to": "organichouse",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Its downtempo end inherits trip-hop-era downbeat's slow, hazy, sample-woven mood."
   }
 ]
