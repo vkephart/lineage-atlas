@@ -889,7 +889,10 @@ export class Atlas extends React.Component<Record<string, never>, State> {
       const push = (g: GNode, sc: number, via?: string) => { const cur = seen[g.id]; if (cur) { if (sc < cur.sc) { cur.sc = sc; cur.via = via || ''; } return; } const it = { g, sc, via: via || '' }; seen[g.id] = it; scored.push(it); };
       this.GENRES.forEach((g) => {
         const n = g.name.toLowerCase(), aka = (g.aka || '').toLowerCase();
-        if (n.indexOf(q) === 0) push(g, 0);
+        // Closest name first: an exact match, then a prefix that ends on a word boundary ("minimal" → Minimal Techno
+        // before Minimalism), then any other prefix. All three stay ahead of the aka tier (0.2).
+        if (n === q) push(g, -1);
+        else if (n.indexOf(q) === 0) push(g, /^[\p{L}\p{N}]/u.test(n.slice(q.length)) ? 0 : -0.5);
         else if (aka && aka.indexOf(q) === 0) push(g, 0.2, g.aka);
         else if (n.indexOf(q) >= 0) push(g, 1);
         else if (aka && aka.indexOf(q) >= 0) push(g, 1.2, g.aka);
