@@ -1249,7 +1249,8 @@
   ],
   "Juan Atkins": [
     "detroit",
-    "techno"
+    "techno",
+    "electro"
   ],
   "Derrick May": [
     "detroit"
@@ -1267,6 +1268,7 @@
     "techhouse"
   ],
   "Richie Hawtin": [
+    "minimaltechno",
     "techno"
   ],
   "Green Velvet": [
@@ -1287,6 +1289,7 @@
     "techno"
   ],
   "The Prodigy": [
+    "breakbeathardcore",
     "acid",
     "techno"
   ],
@@ -1307,7 +1310,8 @@
     "idm"
   ],
   "Squarepusher": [
-    "idm"
+    "idm",
+    "drumandbass"
   ],
   "Four Tet": [
     "idm",
@@ -1320,15 +1324,18 @@
     "indietronica"
   ],
   "Burial": [
+    "dubstep",
     "twostep",
     "ukgarage",
     "ambienttechno"
   ],
   "James Blake": [
+    "postdubstep",
     "twostep",
     "altrnb"
   ],
   "Jamie xx": [
+    "postdubstep",
     "ukgarage",
     "house"
   ],
@@ -2229,5 +2236,350 @@
     "melodictechno",
     "organichouse",
     "techno"
+  ],
+  "Afrika Bambaataa": [
+    "electro",
+    "hiphop"
+  ],
+  "Soulsonic Force": [
+    "electro",
+    "hiphop"
+  ],
+  "Hashim": [
+    "electro"
+  ],
+  "Newcleus": [
+    "electro",
+    "hiphop"
+  ],
+  "Mantronix": [
+    "electro",
+    "hiphop"
+  ],
+  "Arthur Baker": [
+    "electro"
+  ],
+  "Model 500": [
+    "detroit",
+    "electro"
+  ],
+  "Dopplereffekt": [
+    "electro",
+    "detroit"
+  ],
+  "Drexciya": [
+    "electro",
+    "detroit"
+  ],
+  "Cybotron": [
+    "electro",
+    "detroit"
+  ],
+  "World Class Wreckin' Cru": [
+    "electro"
+  ],
+  "Wayne Smith": [
+    "dancehall"
+  ],
+  "Sister Nancy": [
+    "dancehall"
+  ],
+  "Chaka Demus & Pliers": [
+    "dancehall"
+  ],
+  "Barrington Levy": [
+    "dancehall",
+    "reggae"
+  ],
+  "Eek-A-Mouse": [
+    "dancehall",
+    "reggae"
+  ],
+  "King Jammy": [
+    "dancehall",
+    "dub"
+  ],
+  "Super Cat": [
+    "dancehall"
+  ],
+  "Bounty Killer": [
+    "dancehall"
+  ],
+  "Buju Banton": [
+    "dancehall",
+    "reggae"
+  ],
+  "Sean Paul": [
+    "dancehall"
+  ],
+  "Shaggy": [
+    "dancehall"
+  ],
+  "Popcaan": [
+    "dancehall"
+  ],
+  "Acen": [
+    "breakbeathardcore"
+  ],
+  "Liquid": [
+    "breakbeathardcore"
+  ],
+  "4hero": [
+    "breakbeathardcore",
+    "jungle",
+    "drumandbass"
+  ],
+  "Lennie De Ice": [
+    "breakbeathardcore",
+    "jungle"
+  ],
+  "Origin Unknown": [
+    "jungle",
+    "drumandbass"
+  ],
+  "UK Apachi": [
+    "jungle"
+  ],
+  "General Levy": [
+    "jungle",
+    "dancehall"
+  ],
+  "Congo Natty": [
+    "jungle"
+  ],
+  "DJ Hype": [
+    "jungle",
+    "drumandbass"
+  ],
+  "Andy C": [
+    "drumandbass",
+    "jungle"
+  ],
+  "Goldie": [
+    "drumandbass",
+    "jungle"
+  ],
+  "Reprazent": [
+    "drumandbass"
+  ],
+  "Dillinja": [
+    "drumandbass",
+    "jungle"
+  ],
+  "Pendulum": [
+    "drumandbass"
+  ],
+  "Chase & Status": [
+    "drumandbass"
+  ],
+  "Noisia": [
+    "drumandbass"
+  ],
+  "High Contrast": [
+    "drumandbass"
+  ],
+  "Basic Channel": [
+    "dubtechno",
+    "techno"
+  ],
+  "Maurizio": [
+    "dubtechno",
+    "minimaltechno",
+    "techno"
+  ],
+  "Moritz von Oswald": [
+    "dubtechno",
+    "techno"
+  ],
+  "Rhythm & Sound": [
+    "dubtechno",
+    "dub"
+  ],
+  "Porter Ricks": [
+    "dubtechno",
+    "techno"
+  ],
+  "DeepChord": [
+    "dubtechno"
+  ],
+  "Echospace": [
+    "dubtechno"
+  ],
+  "Monolake": [
+    "dubtechno",
+    "techno"
+  ],
+  "Pole": [
+    "dubtechno",
+    "glitch"
+  ],
+  "Vladislav Delay": [
+    "dubtechno",
+    "glitch",
+    "microhouse"
+  ],
+  "Yagya": [
+    "dubtechno",
+    "ambienttechno"
+  ],
+  "Andy Stott": [
+    "dubtechno",
+    "techno"
+  ],
+  "Gas": [
+    "ambienttechno",
+    "dubtechno"
+  ],
+  "Robert Hood": [
+    "minimaltechno",
+    "techno",
+    "detroit"
+  ],
+  "DBX": [
+    "minimaltechno",
+    "detroit"
+  ],
+  "Daniel Bell": [
+    "minimaltechno",
+    "detroit"
+  ],
+  "Thomas Brinkmann": [
+    "minimaltechno",
+    "microhouse"
+  ],
+  "Farben": [
+    "microhouse",
+    "glitch"
+  ],
+  "Jan Jelinek": [
+    "microhouse",
+    "glitch"
+  ],
+  "Herbert": [
+    "microhouse",
+    "deephouse"
+  ],
+  "Michael Mayer": [
+    "microhouse",
+    "minimaltechno"
+  ],
+  "Superpitcher": [
+    "microhouse"
+  ],
+  "The Field": [
+    "microhouse",
+    "ambienttechno"
+  ],
+  "Ricardo Villalobos": [
+    "microhouse",
+    "minimaltechno"
+  ],
+  "Yasunao Tone": [
+    "glitch"
+  ],
+  "Kid606": [
+    "glitch",
+    "idm"
+  ],
+  "Fennesz": [
+    "glitch",
+    "ambient"
+  ],
+  "El-B": [
+    "dubstep",
+    "twostep"
+  ],
+  "Zed Bias": [
+    "twostep",
+    "dubstep"
+  ],
+  "Mala": [
+    "dubstep"
+  ],
+  "Coki": [
+    "dubstep"
+  ],
+  "Loefah": [
+    "dubstep"
+  ],
+  "Kode9": [
+    "dubstep"
+  ],
+  "Pinch": [
+    "dubstep"
+  ],
+  "Shackleton": [
+    "dubstep"
+  ],
+  "Magnetic Man": [
+    "dubstep"
+  ],
+  "Youngstar": [
+    "grime"
+  ],
+  "More Fire Crew": [
+    "grime"
+  ],
+  "Lethal Bizzle": [
+    "grime"
+  ],
+  "Roll Deep": [
+    "grime"
+  ],
+  "JME": [
+    "grime"
+  ],
+  "Ruff Sqwad": [
+    "grime"
+  ],
+  "Dizzee Rascal": [
+    "grime",
+    "hiphop"
+  ],
+  "Ramadanman": [
+    "postdubstep"
+  ],
+  "Pangaea": [
+    "postdubstep"
+  ],
+  "SBTRKT": [
+    "postdubstep",
+    "ukgarage"
+  ],
+  "Joker": [
+    "postdubstep",
+    "grime"
+  ],
+  "Zomby": [
+    "postdubstep",
+    "dubstep"
+  ],
+  "Overmono": [
+    "postdubstep",
+    "ukgarage",
+    "techno"
+  ],
+  "Datsik": [
+    "brostep"
+  ],
+  "Zeds Dead": [
+    "brostep"
+  ],
+  "Doctor P": [
+    "brostep"
+  ],
+  "Knife Party": [
+    "brostep"
+  ],
+  "Bassnectar": [
+    "brostep"
+  ],
+  "Rusko": [
+    "brostep",
+    "dubstep"
+  ],
+  "Caspa": [
+    "brostep",
+    "dubstep"
   ]
 }

@@ -396,5 +396,40 @@
         "text": "The micro-genre burns out within a few years, but its slowed, cavernous production keeps resurfacing in alternative R&B and pop."
       }
     ]
+  },
+  {
+    "id": "hardcorecontinuum",
+    "title": "The Hardcore Continuum",
+    "subtitle": "Twenty years of UK pirate-radio bass music, from rave to post-dubstep",
+    "steps": [
+      {
+        "id": "acid",
+        "text": "Acid house reaches Britain in 1988 and fills fields and warehouses. The raves outgrow the imported records, and UK producers start making their own."
+      },
+      {
+        "id": "breakbeathardcore",
+        "text": "They loop hip-hop breakbeats under the house kick, add sub-bass and pitched-up vocals, and raise the tempo month by month. By 1991 it is called hardcore."
+      },
+      {
+        "id": "jungle",
+        "text": "The pianos drop out and the breaks are chopped hit by hit over half-speed reggae bass. Jungle is the first wholly British dance music, soon refined into drum and bass."
+      },
+      {
+        "id": "ukgarage",
+        "text": "In jungle's second rooms, DJs pitch up American garage house for a crowd that wants bass and swing at a slower pace. Pirate radio does the rest."
+      },
+      {
+        "id": "twostep",
+        "text": "Around 1997 the four-on-the-floor kick is removed, leaving a skipping two-step pattern with gaps where the bass can move."
+      },
+      {
+        "id": "dubstep",
+        "text": "South London producers take the vocals out of those gaps, halve the drums and fill the space with sub-bass and echo. The B-side experiments become dubstep."
+      },
+      {
+        "id": "postdubstep",
+        "text": "After 2009 the formula opens up again: garage swing, house chords and chopped R&B voices return, and the continuum scatters into bass music."
+      }
+    ]
   }
 ]

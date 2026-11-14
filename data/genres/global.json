@@ -585,9 +585,9 @@
     "name": "Amapiano",
     "fam": "global",
     "fam2": "electronic",
-    "year": 2026,
+    "year": 2015,
     "role": "rising",
-    "yOff": -120,
+    "yOff": -105,
     "def": "South Africa's dominant dance sound — deep-house chords and kwaito swing over airy log-drum basslines, jazzy pads and shuffling percussion.",
     "traits": [
       {
@@ -631,9 +631,9 @@
     "id": "afrobeats",
     "name": "Afrobeats",
     "fam": "global",
-    "year": 2026,
+    "year": 2004,
     "role": "rising",
-    "yOff": 60,
+    "yOff": 75,
     "def": "The pop juggernaut of West Africa — a glossy, melodic fusion of highlife, dancehall, hip-hop and R&B (distinct from Fela's Afrobeat) that now tops charts worldwide.",
     "traits": [
       {
@@ -1234,5 +1234,69 @@
         "a": "ATLXS"
       }
     ]
+  },
+  {
+    "id": "dancehall",
+    "name": "Dancehall",
+    "fam": "global",
+    "year": 1979,
+    "role": "branch",
+    "yOff": 255,
+    "aka": "Ragga · Raggamuffin · Bashment",
+    "def": "Reggae stripped back for the sound-system dance: a deejay or singjay riding a hard, sparse riddim, played by a studio band at first and digital from 1985, with the same backing track voiced by dozens of vocalists.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Slower, heavier and sparser than roots reggae at first, then drum-machine riddims, from the early 1990s often on the 3+3+2 'Dem Bow' kick pattern."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Deejay toasting and half-sung 'singjay' delivery in patois, percussive and built on call-and-response with the crowd."
+      },
+      {
+        "k": "Production",
+        "v": "Riddim culture: one instrumental voiced by many artists. The Roots Radics band set the early sound until King Jammy's Casio-built 'Sleng Teng' (1985) turned production digital."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Kingston sound systems such as Volcano, Jammy's and Stone Love, and producers Henry 'Junjo' Lawes and King Jammy; carried to London, New York and Toronto by the Jamaican diaspora."
+      }
+    ],
+    "why": "It moves reggae's centre of gravity from the band and the song to the riddim and the deejay, so the rhythm track itself becomes the unit of composition.",
+    "artists": [
+      "Yellowman",
+      "Barrington Levy",
+      "Shabba Ranks",
+      "Beenie Man",
+      "Vybz Kartel"
+    ],
+    "albums": [
+      {
+        "t": "Bounty Hunter",
+        "a": "Barrington Levy"
+      },
+      {
+        "t": "Mister Yellowman",
+        "a": "Yellowman"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Under Mi Sleng Teng",
+        "a": "Wayne Smith",
+        "why": "King Jammy's 1985 single on a Casio keyboard preset, widely credited as the first fully digital riddim."
+      },
+      {
+        "t": "Bam Bam",
+        "a": "Sister Nancy",
+        "why": "A 1982 deejay cut over the Stalag riddim that became one of reggae's most sampled records."
+      },
+      {
+        "t": "Murder She Wrote",
+        "a": "Chaka Demus & Pliers",
+        "why": "A deejay-and-singer duo over a Sly & Robbie riddim; the early-1990s crossover template."
+      }
+    ],
+    "tempo": "85–110 BPM"
   }
 ]
