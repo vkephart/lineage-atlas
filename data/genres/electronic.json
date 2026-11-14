@@ -256,7 +256,7 @@
     "fam": "electronic",
     "year": 1987,
     "role": "branch",
-    "yOff": -10,
+    "yOff": -110,
     "def": "House mutated by the squelching, resonant TB-303 bassline — hypnotic, psychedelic and the engine of the UK rave explosion.",
     "traits": [
       {
@@ -646,7 +646,7 @@
     "fam": "electronic",
     "year": 1997,
     "role": "branch",
-    "yOff": 30,
+    "yOff": 60,
     "def": "UK garage's broken-beat mutation — a skipping, syncopated kick pattern that drops four-on-the-floor for a stuttering shuffle.",
     "traits": [
       {
@@ -1129,7 +1129,7 @@
     "fam2": "rock",
     "year": 2001,
     "role": "hybrid",
-    "yOff": 140,
+    "yOff": 150,
     "def": "Trashy analogue synths, deadpan vocals and fashion-world sleaze — new wave and electro revived as knowing, confrontational club music.",
     "traits": [
       {
@@ -1181,7 +1181,7 @@
     "fam2": "soul",
     "year": 1997,
     "role": "hybrid",
-    "yOff": -260,
+    "yOff": -200,
     "def": "Parisian house built from filtered disco loops — compressed, phase-swept samples turned into euphoric, endlessly cresting grooves.",
     "traits": [
       {
@@ -1237,7 +1237,7 @@
     "fam2": "soul",
     "year": 1992,
     "role": "branch",
-    "yOff": 220,
+    "yOff": 210,
     "def": "Mid-90s European club-pop — a 130–150 BPM four-on-the-floor kick, rave synth stabs, a rapped male verse and a belted female chorus. House and hi-NRG rebuilt as radio song.",
     "traits": [
       {
@@ -1346,7 +1346,7 @@
     "fam": "electronic",
     "year": 2003,
     "role": "branch",
-    "yOff": 290,
+    "yOff": -210,
     "def": "Dutch hard dance — a distorted, pitched reverse-bass kick at 150 BPM, euphoric trance melodies in the breakdown and a stadium-rave scale that now fills Defqon.1 and Tomorrowland.",
     "traits": [
       {
@@ -1445,7 +1445,7 @@
     "fam2": "hiphop",
     "year": 2001,
     "role": "hybrid",
-    "yOff": -140,
+    "yOff": -320,
     "def": "Newark’s chopped, 130+ BPM club style — stuttering kick triplets, bed-squeak samples and vocal chops — now rewiring mainstream rap and pop.",
     "traits": [
       {
@@ -1558,7 +1558,7 @@
     "fam2": "hiphop",
     "year": 1982,
     "role": "hybrid",
-    "yOff": -260,
+    "yOff": 290,
     "aka": "Electro-Funk · Electro-Boogie",
     "def": "Drum-machine funk built on the Roland TR-808: syncopated, unswung machine beats, synthesizer bass and vocoder voices, pitched between Kraftwerk's sequencer precision and the breakbeat logic of early hip-hop.",
     "traits": [
@@ -1622,7 +1622,7 @@
     "fam": "electronic",
     "year": 1990,
     "role": "branch",
-    "yOff": -260,
+    "yOff": -300,
     "aka": "Hardcore · Rave · Oldskool",
     "def": "The UK rave sound of 1990–92: sped-up hip-hop breakbeats looped under house pianos, 'hoover' and stab synths, pitched-up vocal samples and sub-bass, running faster with every month.",
     "traits": [
@@ -1809,7 +1809,7 @@
     "fam2": "global",
     "year": 1993,
     "role": "hybrid",
-    "yOff": -170,
+    "yOff": 270,
     "def": "Techno reduced to a muted four-on-the-floor kick, sub-bass and one or two minor-chord stabs fed through tape delay, reverb and filters, so that echo, hiss and slow timbral change stand in for melody and arrangement.",
     "traits": [
       {
@@ -1872,7 +1872,7 @@
     "fam": "electronic",
     "year": 1994,
     "role": "branch",
-    "yOff": -140,
+    "yOff": -180,
     "aka": "Minimal",
     "def": "Techno pared to its working parts: a kick, a hi-hat and one or two short synthetic figures that change by tiny increments, so the groove comes from repetition and subtraction and not from riffs or samples.",
     "traits": [
@@ -1935,7 +1935,7 @@
     "fam": "electronic",
     "year": 1998,
     "role": "branch",
-    "yOff": -280,
+    "yOff": 290,
     "aka": "Minimal House · Click House",
     "def": "House rebuilt from very small sounds: clicks, pops, vocal slivers and sampled fragments sequenced into a soft, swinging 4/4, with deep house's warmth kept and its big gestures removed.",
     "traits": [
@@ -2000,7 +2000,7 @@
     "fam2": "global",
     "year": 2000,
     "role": "hybrid",
-    "yOff": 250,
+    "yOff": 290,
     "def": "South London's dark offshoot of 2-step: around 140 BPM with the drums at half-time, a snare on the third beat, enormous sub-bass and wide empty space, borrowing dub's echo and sound-system pressure.",
     "traits": [
       {
@@ -2129,7 +2129,7 @@
     "fam": "electronic",
     "year": 2009,
     "role": "branch",
-    "yOff": 290,
+    "yOff": 270,
     "aka": "UK Bass · Bass Music · Future Garage",
     "def": "The scattering of dubstep after 2009: producers keep its sub-bass and space but bring back garage swing, house tempos and chords, and pitched R&B vocal fragments, in tracks that range from club tools to near-songs.",
     "traits": [
