@@ -174,8 +174,8 @@
     "name": "Alternative R&B",
     "fam": "hiphop",
     "fam2": "gaze",
-    "year": 2026,
-    "role": "rising",
+    "year": 2011,
+    "role": "hybrid",
     "yOff": -95,
     "def": "A moody, atmospheric strain of R&B — spacious, alternative production and confessional songwriting that blurs soul with indie, ambient and electronic texture.",
     "traits": [
@@ -385,5 +385,70 @@
         "a": "PlayaPhonk"
       }
     ]
+  },
+  {
+    "id": "grime",
+    "name": "Grime",
+    "fam": "hiphop",
+    "fam2": "electronic",
+    "year": 2002,
+    "role": "hybrid",
+    "yOff": -180,
+    "aka": "Eskibeat · Sublow",
+    "def": "East London's MC music: cold, sparse 140 BPM instrumentals made of square-wave bass, synthetic strings and stuttering 2-step drums, with fast, clipped, competitive bars over the top.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Irregular, jabbing kick-and-clap patterns at about 140 BPM, descended from 2-step but stripped of its swing and warmth."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Rapid, staccato MCing in London accents, typically in 8- and 16-bar bursts built for clashes and radio sets."
+      },
+      {
+        "k": "Production",
+        "v": "Made on cheap software and preset sounds: square-wave bass, icy synth stabs, gunshot and video-game samples."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Bow and wider East London: pirate stations Rinse FM and Deja Vu, crews such as Roll Deep, Pay As U Go and Boy Better Know, white labels and MC clashes."
+      }
+    ],
+    "why": "It keeps UK garage's tempo and pirate-radio MC culture but replaces the polish with bare, aggressive beats and bars shaped by dancehall and jungle chat as much as by US rap.",
+    "artists": [
+      "Wiley",
+      "Dizzee Rascal",
+      "Kano",
+      "Skepta",
+      "Stormzy"
+    ],
+    "albums": [
+      {
+        "t": "Boy in da Corner",
+        "a": "Dizzee Rascal"
+      },
+      {
+        "t": "Konnichiwa",
+        "a": "Skepta"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Pulse X",
+        "a": "Youngstar",
+        "why": "A 2002 white label of little more than a kick, a clap and a bass pulse, often named the first grime instrumental."
+      },
+      {
+        "t": "Eskimo",
+        "a": "Wiley",
+        "why": "The 2002 release whose hollow, icy bass gave 'eskibeat' its name."
+      },
+      {
+        "t": "I Luv U",
+        "a": "Dizzee Rascal",
+        "why": "A he-said-she-said argument over a brutal stop-start beat; his debut single."
+      }
+    ],
+    "tempo": "136–142 BPM"
   }
 ]

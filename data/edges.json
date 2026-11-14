@@ -2307,7 +2307,7 @@
     "to": "ambienttechno",
     "rel": "production",
     "strength": 0.5,
-    "note": "Dub techno fuses dub's delay-drenched chords with the techno pulse."
+    "note": "The Orb built ambient house on dub basslines and echo, from 'Towers of Dub' to Jah Wobble's bass on 'Blue Room'."
   },
   {
     "from": "burundi",
@@ -4270,8 +4270,8 @@
     "note": "R&B’s close-mic intimacy and programmed drums shape the sound."
   },
   {
-    "from": "bedroompop",
-    "to": "altrnb",
+    "from": "altrnb",
+    "to": "bedroompop",
     "rel": "scene",
     "strength": 0.45,
     "note": "Adjacent streaming-native scenes trading producers and playlists."
@@ -4291,8 +4291,8 @@
     "note": "Japan’s parallel smooth tradition feeds the revival’s palette."
   },
   {
-    "from": "nuyacht",
-    "to": "futurefunk",
+    "from": "futurefunk",
+    "to": "nuyacht",
     "rel": "scene",
     "strength": 0.45,
     "note": "Two crate-digger revivals of the same smooth-groove source material."
@@ -4905,5 +4905,390 @@
     "rel": "stylistic",
     "strength": 0.35,
     "note": "Its downtempo end inherits trip-hop-era downbeat's slow, hazy, sample-woven mood."
+  },
+  {
+    "from": "synthpop",
+    "to": "electro",
+    "rel": "bridge",
+    "strength": 0.7,
+    "note": "'Planet Rock' replays the melody of Kraftwerk's 'Trans-Europe Express' and the beat of 'Numbers'; electro is the Bronx answering Düsseldorf's machine pop."
+  },
+  {
+    "from": "hiphop",
+    "to": "electro",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Bronx DJs and MCs swapped the breakbeat band for a TR-808, and for a few years electro was hip-hop's main sound."
+  },
+  {
+    "from": "funk",
+    "to": "electro",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Electro keeps funk's syncopated bass and party chants, rebuilt on synthesizers in the wake of P-Funk and Zapp."
+  },
+  {
+    "from": "electro",
+    "to": "detroit",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Juan Atkins went from Cybotron's electro to Model 500; Detroit techno begins as electro with the funk straightened into a sequenced pulse."
+  },
+  {
+    "from": "electro",
+    "to": "miamibass",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Miami bass takes electro's 808 programming, speeds it up and lengthens the kick into a sustained sub-bass boom."
+  },
+  {
+    "from": "electro",
+    "to": "electroclash",
+    "rel": "revival",
+    "strength": 0.5,
+    "note": "Electroclash revived electro's drum-machine patterns and vocoders alongside synth-pop's hooks."
+  },
+  {
+    "from": "electro",
+    "to": "idm",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Much early IDM runs on electro's syncopated drum programming in place of a 4/4 kick, as on Autechre's first records."
+  },
+  {
+    "from": "reggae",
+    "to": "dancehall",
+    "rel": "origin",
+    "strength": 0.9,
+    "note": "Dancehall is reggae pared down for the sound-system dance, with the deejay and the riddim taking over from the band and the song."
+  },
+  {
+    "from": "dub",
+    "to": "dancehall",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "Deejays toasted over dub versions, and dancehall's habit of re-voicing one riddim comes straight from the version B-side."
+  },
+  {
+    "from": "dancehall",
+    "to": "jungle",
+    "rel": "bridge",
+    "strength": 0.7,
+    "note": "Jungle samples dancehall deejays, rewinds and sound-clash slang, and puts ragga MCs over the breakbeats."
+  },
+  {
+    "from": "dancehall",
+    "to": "grime",
+    "rel": "bridge",
+    "strength": 0.5,
+    "note": "Grime's clashes, reloads and rapid-fire patois-inflected delivery come from sound-system deejay culture."
+  },
+  {
+    "from": "dancehall",
+    "to": "afrobeats",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Afrobeats borrows dancehall's riddim feel, patois-tinged melodies and singjay phrasing."
+  },
+  {
+    "from": "acid",
+    "to": "breakbeathardcore",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Hardcore is what UK acid house raves turned into once producers added breakbeats and pushed the tempo."
+  },
+  {
+    "from": "hiphop",
+    "to": "breakbeathardcore",
+    "rel": "bridge",
+    "strength": 0.6,
+    "note": "Hip-hop supplied the sampled funk breaks, and several hardcore pioneers, Shut Up and Dance among them, began as UK rap crews."
+  },
+  {
+    "from": "techno",
+    "to": "breakbeathardcore",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Hardcore took its stab and 'hoover' riffs from Belgian and Detroit techno."
+  },
+  {
+    "from": "breakbeathardcore",
+    "to": "jungle",
+    "rel": "origin",
+    "strength": 0.9,
+    "note": "As hardcore darkened in 1992–93, producers kept the breakbeats and sub-bass, dropped the pianos and stabs, and jungle emerged."
+  },
+  {
+    "from": "dub",
+    "to": "jungle",
+    "rel": "bridge",
+    "strength": 0.5,
+    "note": "Jungle's half-speed sub-bass, dubplates and sound-system mixing descend from dub."
+  },
+  {
+    "from": "jungle",
+    "to": "drumandbass",
+    "rel": "origin",
+    "strength": 0.9,
+    "note": "During 1994–95 jungle shed its ragga samples and chopped Amens for cleaner two-step breaks and engineered bass, and took the name drum and bass."
+  },
+  {
+    "from": "jungle",
+    "to": "ukgarage",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "UK garage grew up in the second rooms of jungle raves and on the same pirate stations, inheriting the sub-bass and the MCs."
+  },
+  {
+    "from": "jungle",
+    "to": "grime",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Many first-generation grime MCs, Wiley included, started out chatting over jungle, and grime keeps its speed of delivery and pirate-radio format."
+  },
+  {
+    "from": "jungle",
+    "to": "idm",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Squarepusher and Aphex Twin pushed jungle's break-chopping to extreme density in what was nicknamed drill 'n' bass."
+  },
+  {
+    "from": "drumandbass",
+    "to": "dubstep",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Dubstep inherits drum and bass's sub-bass engineering and dubplate culture, and several of its producers came from that scene."
+  },
+  {
+    "from": "drumandbass",
+    "to": "brostep",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Brostep's distorted, modulated midrange bass is built with sound-design methods developed in techstep and neurofunk."
+  },
+  {
+    "from": "techno",
+    "to": "dubtechno",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Basic Channel began by making hard Berlin techno and then removed almost everything but the kick and a chord."
+  },
+  {
+    "from": "dub",
+    "to": "dubtechno",
+    "rel": "bridge",
+    "strength": 0.8,
+    "note": "Dub techno treats delay, reverb and the mixing desk as the composition, and its makers went on to record with Jamaican vocalists as Rhythm & Sound."
+  },
+  {
+    "from": "deephouse",
+    "to": "dubtechno",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "The sustained minor chords and soft kick come from Chicago deep house, a debt made plain on the Main Street label."
+  },
+  {
+    "from": "dubtechno",
+    "to": "minimaltechno",
+    "rel": "scene",
+    "strength": 0.6,
+    "note": "Two reductions of techno reached in the same years on the Berlin–Detroit axis: Basic Channel's in Berlin, Robert Hood's in Detroit, with Hood's 'Internal Empire' issued by Berlin's Tresor."
+  },
+  {
+    "from": "dubtechno",
+    "to": "microhouse",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Luomo's 'Vocalcity' came from Chain Reaction's Vladislav Delay, and microhouse keeps dub techno's hazy chords and muted kick."
+  },
+  {
+    "from": "dubtechno",
+    "to": "dubstep",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Burial's crackle and submerged chords, and the Berlin wing of dubstep around Scuba's Hotflush, draw directly on Basic Channel."
+  },
+  {
+    "from": "dubtechno",
+    "to": "glitch",
+    "rel": "scene",
+    "strength": 0.4,
+    "note": "Pole's crackling dub, made with a faulty filter unit, sits exactly where the Chain Reaction sound meets clicks and cuts."
+  },
+  {
+    "from": "techno",
+    "to": "minimaltechno",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Robert Hood left Underground Resistance's hard techno behind and cut the form back to kick, hat and one figure on 'Minimal Nation'."
+  },
+  {
+    "from": "detroit",
+    "to": "minimaltechno",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Minimal techno was framed by its Detroit founders as a return to the funk and economy of the city's first techno records."
+  },
+  {
+    "from": "acid",
+    "to": "minimaltechno",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Plastikman's early minimalism is acid house slowed and emptied out: a 303 line and a drum machine with nothing else."
+  },
+  {
+    "from": "minimaltechno",
+    "to": "microhouse",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Microhouse applies minimal techno's reduction to house tempo and swing, through Cologne and Frankfurt labels that released both."
+  },
+  {
+    "from": "idm",
+    "to": "glitch",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Glitch grew out of the same home-listening electronic culture as IDM, pushing its interest in digital process to the point of malfunction."
+  },
+  {
+    "from": "concrete",
+    "to": "glitch",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Building music from found and accidental sound is musique concrète's method; glitch turns it on the playback medium."
+  },
+  {
+    "from": "computermusic",
+    "to": "glitch",
+    "rel": "production",
+    "strength": 0.4,
+    "note": "Glitch uses the tools of computer music, DSP and granular synthesis, pointed at their own errors."
+  },
+  {
+    "from": "glitch",
+    "to": "microhouse",
+    "rel": "production",
+    "strength": 0.6,
+    "note": "Microhouse makes its percussion from glitch's clicks and cuts and adopts its micro-sampling."
+  },
+  {
+    "from": "glitch",
+    "to": "indietronica",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "The stutters, clicks and digital crackle under indietronica songs are glitch techniques applied to pop structure."
+  },
+  {
+    "from": "deephouse",
+    "to": "microhouse",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Microhouse keeps deep house's warm chords, swing and vocals, heard in fragments instead of whole phrases."
+  },
+  {
+    "from": "techhouse",
+    "to": "microhouse",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Microhouse shares tech house's dry, percussive, DJ-functional build, and was often filed under it before it had a name."
+  },
+  {
+    "from": "microhouse",
+    "to": "melodictechno",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Kompakt's melodic, pop-leaning minimal of the 2000s prefigures melodic techno's long, emotive builds."
+  },
+  {
+    "from": "twostep",
+    "to": "dubstep",
+    "rel": "origin",
+    "strength": 0.9,
+    "note": "Dubstep began as the dark, instrumental B-sides of 2-step records, with the vocals and swing taken out."
+  },
+  {
+    "from": "dub",
+    "to": "dubstep",
+    "rel": "bridge",
+    "strength": 0.7,
+    "note": "The name is literal: dub's sub-bass weight, echo and sound-system ethos applied to 2-step."
+  },
+  {
+    "from": "dubstep",
+    "to": "grime",
+    "rel": "scene",
+    "strength": 0.6,
+    "note": "Dubstep and grime came up side by side at FWD>> and on Rinse FM, at the same tempo and from the same garage roots."
+  },
+  {
+    "from": "dubstep",
+    "to": "postdubstep",
+    "rel": "origin",
+    "strength": 0.9,
+    "note": "Post-dubstep producers kept dubstep's bass and space and reopened its rhythm and tempo."
+  },
+  {
+    "from": "dubstep",
+    "to": "brostep",
+    "rel": "origin",
+    "strength": 0.9,
+    "note": "Brostep keeps dubstep's half-time drums and moves the weight from sub-bass to distorted midrange."
+  },
+  {
+    "from": "dubstep",
+    "to": "hauntology",
+    "rel": "scene",
+    "strength": 0.4,
+    "note": "Burial's crackle and half-remembered rave vocals made him a central figure in writing on hauntology, alongside the Ghost Box label."
+  },
+  {
+    "from": "twostep",
+    "to": "grime",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Grime came out of 2-step's MC crews and pirate stations, hardening the beats until the garage scene disowned it."
+  },
+  {
+    "from": "hiphop",
+    "to": "grime",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Grime is the UK's own MC form, taking rap's bars and crew structure while keeping a British tempo and accent."
+  },
+  {
+    "from": "grime",
+    "to": "postdubstep",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Night Slugs and the Bristol 'purple' producers rebuilt instrumental grime's square-wave melodies into club tracks."
+  },
+  {
+    "from": "twostep",
+    "to": "postdubstep",
+    "rel": "revival",
+    "strength": 0.6,
+    "note": "Post-dubstep brought back the 2-step shuffle and chopped R&B vocals that dubstep had removed."
+  },
+  {
+    "from": "house",
+    "to": "postdubstep",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Tracks such as 'Hyph Mngo' pulled bass music down toward house tempo and four-on-the-floor kicks."
+  },
+  {
+    "from": "postdubstep",
+    "to": "altrnb",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "James Blake carried post-dubstep's sub-bass, silence and processed vocals into song form, a production language alternative R&B adopted."
+  },
+  {
+    "from": "brostep",
+    "to": "hyperpop",
+    "rel": "production",
+    "strength": 0.4,
+    "note": "Hyperpop reuses brostep's distorted bass drops and maximal sound design inside pop songs."
   }
 ]

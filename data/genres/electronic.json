@@ -256,7 +256,7 @@
     "fam": "electronic",
     "year": 1987,
     "role": "branch",
-    "yOff": 115,
+    "yOff": -110,
     "def": "House mutated by the squelching, resonant TB-303 bassline — hypnotic, psychedelic and the engine of the UK rave explosion.",
     "traits": [
       {
@@ -302,7 +302,7 @@
     "fam": "electronic",
     "year": 1990,
     "role": "branch",
-    "yOff": -45,
+    "yOff": -60,
     "def": "The harder, more mechanical and hypnotic European descendant of Detroit's sound — relentless, stripped and built for big rooms.",
     "traits": [
       {
@@ -510,7 +510,7 @@
     "fam": "electronic",
     "year": 1993,
     "role": "hybrid",
-    "yOff": 30,
+    "yOff": -230,
     "def": "The pragmatic fusion of house's groove with techno's stripped, hypnotic precision — DJ-functional, percussive and minimal.",
     "traits": [
       {
@@ -556,7 +556,7 @@
     "fam": "electronic",
     "year": 1993,
     "role": "branch",
-    "yOff": 175,
+    "yOff": 290,
     "def": "House built for the long journey — gradually evolving arrangements, layered builds and emotional, melodic peaks across extended tracks.",
     "traits": [
       {
@@ -601,7 +601,7 @@
     "fam": "electronic",
     "year": 1995,
     "role": "branch",
-    "yOff": -95,
+    "yOff": -300,
     "def": "A swung, bass-heavy UK take on house — chopped soulful vocals, skippy syncopated drums and sub-bass weight.",
     "traits": [
       {
@@ -646,7 +646,7 @@
     "fam": "electronic",
     "year": 1997,
     "role": "branch",
-    "yOff": 30,
+    "yOff": 60,
     "def": "UK garage's broken-beat mutation — a skipping, syncopated kick pattern that drops four-on-the-floor for a stuttering shuffle.",
     "traits": [
       {
@@ -752,7 +752,7 @@
     "fam2": "jazz",
     "year": 1992,
     "role": "hybrid",
-    "yOff": 115,
+    "yOff": 190,
     "def": "Techno's pulse softened into atmosphere — beats present but gentle, wrapped in ambient pads and deep space.",
     "traits": [
       {
@@ -1129,7 +1129,7 @@
     "fam2": "rock",
     "year": 2001,
     "role": "hybrid",
-    "yOff": 140,
+    "yOff": 150,
     "def": "Trashy analogue synths, deadpan vocals and fashion-world sleaze — new wave and electro revived as knowing, confrontational club music.",
     "traits": [
       {
@@ -1237,7 +1237,7 @@
     "fam2": "soul",
     "year": 1992,
     "role": "branch",
-    "yOff": 200,
+    "yOff": 210,
     "def": "Mid-90s European club-pop — a 130–150 BPM four-on-the-floor kick, rave synth stabs, a rapped male verse and a belted female chorus. House and hi-NRG rebuilt as radio song.",
     "traits": [
       {
@@ -1291,7 +1291,7 @@
     "fam": "electronic",
     "year": 1999,
     "role": "branch",
-    "yOff": 245,
+    "yOff": 240,
     "aka": "Eurotrance",
     "def": "Eurodance sped up and fed through trance — supersaw leads, pitched-up female vocals and a hard, bouncy kick, the sound of 2000s European teen clubs and ringtone charts.",
     "traits": [
@@ -1346,7 +1346,7 @@
     "fam": "electronic",
     "year": 2003,
     "role": "branch",
-    "yOff": 290,
+    "yOff": -210,
     "def": "Dutch hard dance — a distorted, pitched reverse-bass kick at 150 BPM, euphoric trance melodies in the breakdown and a stadium-rave scale that now fills Defqon.1 and Tomorrowland.",
     "traits": [
       {
@@ -1443,9 +1443,9 @@
     "name": "Jersey Club",
     "fam": "electronic",
     "fam2": "hiphop",
-    "year": 2026,
-    "role": "rising",
-    "yOff": 30,
+    "year": 2001,
+    "role": "hybrid",
+    "yOff": -320,
     "def": "Newark’s chopped, 130+ BPM club style — stuttering kick triplets, bed-squeak samples and vocal chops — now rewiring mainstream rap and pop.",
     "traits": [
       {
@@ -1458,11 +1458,12 @@
       },
       {
         "k": "Scene / context",
-        "v": "From Newark parties to drill, K-pop and TikTok ubiquity."
+        "v": "Grew out of Baltimore club records played at Newark parties; DJ Tameil's 'Dat Butt' EP (2001) and the Brick Bandits crew made it a local style, first called Brick City club. Two decades on it reached drill, K-pop and TikTok."
       }
     ],
     "why": "Its kick pattern is currently pop’s favourite rhythmic transplant — the clearest case of a regional club style colonising the mainstream.",
     "artists": [
+      "DJ Tameil",
       "DJ Sliink",
       "UNIIQU3",
       "Cookiee Kawaii"
@@ -1549,5 +1550,641 @@
     ],
     "tempo": "105–122 BPM",
     "tempoNote": "The downtempo end of the category dips below 100 BPM."
+  },
+  {
+    "id": "electro",
+    "name": "Electro",
+    "fam": "electronic",
+    "fam2": "hiphop",
+    "year": 1982,
+    "role": "hybrid",
+    "yOff": 290,
+    "aka": "Electro-Funk · Electro-Boogie",
+    "def": "Drum-machine funk built on the Roland TR-808: syncopated, unswung machine beats, synthesizer bass and vocoder voices, pitched between Kraftwerk's sequencer precision and the breakbeat logic of early hip-hop.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Programmed TR-808 patterns with a syncopated kick, dry snare and handclap in place of four-on-the-floor; rigid, unswung and made for breaking."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Analogue synth bass, string-machine stabs and vocoder or robot voices; almost no live instruments."
+      },
+      {
+        "k": "Production",
+        "v": "Sequencer and drum machine as the whole band, with scratches, orchestra-hit samples and tape edits layered on top."
+      },
+      {
+        "k": "Scene / context",
+        "v": "New York's Bronx and downtown clubs around the Tommy Boy and Streetwise labels, then Detroit, Los Angeles and Miami; the soundtrack of breakdancing and body-popping."
+      }
+    ],
+    "why": "It replaces the disco band with an 808 and a sequencer, taking Kraftwerk's melodies and machine pulse and hitting them with hip-hop's sense of the break.",
+    "artists": [
+      "Afrika Bambaataa & Soulsonic Force",
+      "Cybotron",
+      "Man Parrish",
+      "Egyptian Lover",
+      "Drexciya"
+    ],
+    "albums": [
+      {
+        "t": "Planet Rock: The Album",
+        "a": "Afrika Bambaataa & Soulsonic Force"
+      },
+      {
+        "t": "Enter",
+        "a": "Cybotron"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Planet Rock",
+        "a": "Afrika Bambaataa & Soulsonic Force",
+        "why": "Kraftwerk's 'Trans-Europe Express' melody and 'Numbers' beat replayed over an 808; the 1982 single that defined the style."
+      },
+      {
+        "t": "Clear",
+        "a": "Cybotron",
+        "why": "Juan Atkins and Rick Davis's 1983 Detroit single, the hinge between electro and techno."
+      },
+      {
+        "t": "Al-Naafiysh (The Soul)",
+        "a": "Hashim",
+        "why": "A 1983 instrumental that showed electro needed no MC."
+      }
+    ],
+    "tempo": "110–135 BPM"
+  },
+  {
+    "id": "breakbeathardcore",
+    "name": "Breakbeat Hardcore",
+    "fam": "electronic",
+    "year": 1990,
+    "role": "branch",
+    "yOff": -300,
+    "aka": "Hardcore · Rave · Oldskool",
+    "def": "The UK rave sound of 1990–92: sped-up hip-hop breakbeats looped under house pianos, 'hoover' and stab synths, pitched-up vocal samples and sub-bass, running faster with every month.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Looped and accelerated funk breaks layered over, or replacing, the four-on-the-floor kick."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Rave stabs and 'hoover' leads, euphoric piano riffs, chipmunk-pitched vocals and sub-bass borrowed from reggae sound systems."
+      },
+      {
+        "k": "Production",
+        "v": "Sampler collage: everything lifted, time-stretched or pitched up, with abrupt cuts between sections."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Orbital and warehouse raves, pirate radio and white-label 12-inches; labels such as Shut Up and Dance, XL, Moving Shadow, Reinforced and Suburban Base."
+      }
+    ],
+    "why": "British producers put hip-hop breakbeats under acid house and Belgian techno riffs and kept raising the tempo, which split rave away from house and opened the way to jungle.",
+    "artists": [
+      "Shut Up and Dance",
+      "4hero",
+      "The Prodigy",
+      "SL2",
+      "Altern-8"
+    ],
+    "albums": [
+      {
+        "t": "Experience",
+        "a": "The Prodigy"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Mr. Kirk's Nightmare",
+        "a": "4hero",
+        "why": "A 1990 white label of a breakbeat, a bassline and a spoken sample; one of the style's earliest records."
+      },
+      {
+        "t": "Charly",
+        "a": "The Prodigy",
+        "why": "The 1991 single built on a children's public-information film sample that took hardcore into the UK charts."
+      },
+      {
+        "t": "On a Ragga Tip",
+        "a": "SL2",
+        "why": "A 1992 hit that foregrounds the reggae samples about to define jungle."
+      }
+    ],
+    "tempo": "135–155 BPM",
+    "tempoNote": "Tempos climbed year by year, from house pace in 1990 to 150 BPM and beyond by 1992."
+  },
+  {
+    "id": "jungle",
+    "name": "Jungle",
+    "fam": "electronic",
+    "fam2": "global",
+    "year": 1992,
+    "role": "hybrid",
+    "yOff": 90,
+    "aka": "Jungle Techno · Ragga Jungle · Hardcore Jungle",
+    "def": "Chopped and re-sequenced breakbeats at 160 BPM and above over half-speed reggae sub-bass, with dancehall vocal samples and MCs; hardcore's breakbeat science with the rave euphoria stripped out.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "The Amen and other breaks sliced into single hits and re-programmed into rolling, constantly shifting patterns, against a bassline moving at half the tempo."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Deep sine and 808 sub-bass, time-stretched vocals, ragga chat, gunshot and siren samples, dark pads."
+      },
+      {
+        "k": "Production",
+        "v": "Sampler editing of breaks at the level of individual drum hits, with pitch-shifting and time-stretching as signature effects."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Black British London and the Midlands: pirate radio, dubplate culture and raves such as AWOL and Jungle Fever; labels Ibiza, Suburban Base, RAM and SOUR."
+      }
+    ],
+    "why": "It joins hardcore's accelerated breakbeats to the bass weight and vocal culture of Jamaican sound systems, so fast drums and slow bass run at two tempos at once.",
+    "artists": [
+      "Shy FX",
+      "Rebel MC",
+      "M-Beat",
+      "Remarc",
+      "A Guy Called Gerald"
+    ],
+    "albums": [
+      {
+        "t": "28 Gun Bad Boy",
+        "a": "A Guy Called Gerald"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Valley of the Shadows",
+        "a": "Origin Unknown",
+        "why": "The 1993 RAM B-side regarded as one of the first records to sound like jungle and not hardcore."
+      },
+      {
+        "t": "Original Nuttah",
+        "a": "Shy FX & UK Apachi",
+        "why": "A 1994 ragga-jungle anthem that reached the UK top 40."
+      },
+      {
+        "t": "Incredible",
+        "a": "M-Beat feat. General Levy",
+        "why": "First released in 1994; its reissue took jungle into the UK top ten."
+      }
+    ],
+    "tempo": "155–170 BPM"
+  },
+  {
+    "id": "drumandbass",
+    "name": "Drum and Bass",
+    "fam": "electronic",
+    "year": 1994,
+    "role": "branch",
+    "yOff": -320,
+    "aka": "Drum 'n' Bass · D&B · DnB",
+    "def": "Jungle refined into a producer's music: breakbeats tightened into a two-step kick-and-snare pattern at 165–175 BPM, engineered sub-bass and 'Reese' basslines, and substyles running from jazz-tinged atmospherics to cold techstep.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "A streamlined two-step break, with the snare on two and four, replacing jungle's chopped Amen flurries; fast drums over half-time bass."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Detuned 'Reese' bass, clean sub, lush pads and Rhodes on the atmospheric side; metallic, distorted midrange on the techstep side."
+      },
+      {
+        "k": "Production",
+        "v": "High-fidelity, heavily engineered drum edits and bass synthesis; the album and the named producer replace the anonymous white label."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Metalheadz at the Blue Note, LTJ Bukem's Speed night and Good Looking label, Bristol's Full Cycle, RAM and Virus; later a global festival circuit."
+      }
+    ],
+    "why": "It drops jungle's ragga samples and concentrates on drum programming and bass design, which lets the same tempo carry jazz, soul or industrial moods.",
+    "artists": [
+      "Goldie",
+      "LTJ Bukem",
+      "Roni Size",
+      "Photek",
+      "Ed Rush & Optical"
+    ],
+    "albums": [
+      {
+        "t": "Timeless",
+        "a": "Goldie"
+      },
+      {
+        "t": "New Forms",
+        "a": "Roni Size / Reprazent"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Inner City Life",
+        "a": "Goldie",
+        "why": "The November 1994 single of strings, Diane Charlemagne's vocal and time-stretched breaks that put the music on national radio."
+      },
+      {
+        "t": "Horizons",
+        "a": "LTJ Bukem",
+        "why": "The atmospheric style in one track: Rhodes chords over a rolling break."
+      },
+      {
+        "t": "Brown Paper Bag",
+        "a": "Roni Size / Reprazent",
+        "why": "A double-bass riff under live-sounding breaks, from 'New Forms' (1997)."
+      }
+    ],
+    "tempo": "160–180 BPM"
+  },
+  {
+    "id": "dubtechno",
+    "name": "Dub Techno",
+    "fam": "electronic",
+    "fam2": "global",
+    "year": 1993,
+    "role": "hybrid",
+    "yOff": 270,
+    "def": "Techno reduced to a muted four-on-the-floor kick, sub-bass and one or two minor-chord stabs fed through tape delay, reverb and filters, so that echo, hiss and slow timbral change stand in for melody and arrangement.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Soft, steady 4/4 kick with a hi-hat or chord stab on the off-beat, echoing reggae's skank; little or no fill or build."
+      },
+      {
+        "k": "Harmony",
+        "v": "A single minor seventh or ninth chord, sustained or stabbed, rarely changing for the length of the track."
+      },
+      {
+        "k": "Production",
+        "v": "Dub's mixing-desk method applied to machines: tape-echo and spring-reverb sends ridden by hand, filters opened and closed in real time, hiss and crackle left in as texture."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Berlin's Hard Wax shop and the Basic Channel family of labels (Chain Reaction, Main Street, Burial Mix), formed in 1993; later Detroit's Echospace and Iceland's Yagya."
+      }
+    ],
+    "why": "It keeps techno's pulse but hands the foreground to the effects chain, treating delay and reverb as the composition itself, the way Jamaican dub engineers did.",
+    "artists": [
+      "Basic Channel",
+      "Maurizio",
+      "Rhythm & Sound",
+      "Porter Ricks",
+      "DeepChord presents Echospace"
+    ],
+    "albums": [
+      {
+        "t": "BCD",
+        "a": "Basic Channel"
+      },
+      {
+        "t": "The Coldest Season",
+        "a": "DeepChord presents Echospace"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Phylyps Trak II/II",
+        "a": "Basic Channel",
+        "why": "One shimmering chord smeared across a steady pulse; the archetype."
+      },
+      {
+        "t": "Quadrant Dub",
+        "a": "Basic Channel",
+        "why": "A looped house chord dissolving in filters across a side of vinyl (1994)."
+      },
+      {
+        "t": "King in My Empire",
+        "a": "Rhythm & Sound w/ Cornel Campbell",
+        "why": "A Jamaican vocal over a near-static, hissing riddim; the reggae root made explicit (2001)."
+      }
+    ],
+    "tempo": "115–130 BPM"
+  },
+  {
+    "id": "minimaltechno",
+    "name": "Minimal Techno",
+    "fam": "electronic",
+    "year": 1994,
+    "role": "branch",
+    "yOff": -180,
+    "aka": "Minimal",
+    "def": "Techno pared to its working parts: a kick, a hi-hat and one or two short synthetic figures that change by tiny increments, so the groove comes from repetition and subtraction and not from riffs or samples.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Dry, funky 4/4 built from very few drum voices; interest comes from accent shifts and elements dropping in and out."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Bare drum-machine hits, a single filtered synth line or blip, and wide empty space between sounds."
+      },
+      {
+        "k": "Song structure",
+        "v": "Long linear tracks made as DJ tools: no breakdown-and-drop arc, only gradual addition, removal and filter movement."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Detroit (Robert Hood's M-Plant, Daniel Bell's Accelerate) and Windsor's Plus 8, then Cologne and Berlin through Studio 1, Kompakt, Perlon and M_nus."
+      }
+    ],
+    "why": "It answers the sample-heavy, ever-faster rave of the early 1990s by removing everything but rhythm, on the idea that a stripped track swings harder.",
+    "artists": [
+      "Robert Hood",
+      "Plastikman",
+      "Daniel Bell",
+      "Wolfgang Voigt"
+    ],
+    "albums": [
+      {
+        "t": "Minimal Nation",
+        "a": "Robert Hood"
+      },
+      {
+        "t": "Consumed",
+        "a": "Plastikman"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Minus",
+        "a": "Robert Hood",
+        "why": "From 'Internal Empire' (1994): a kick, a hi-hat and one looping synth figure, the style in a single track."
+      },
+      {
+        "t": "Spastik",
+        "a": "Plastikman",
+        "why": "A 1993 Plus 8 single of little more than a kick and rolling snares, anticipating the style a year before 'Minimal Nation' named it."
+      },
+      {
+        "t": "Losing Control",
+        "a": "DBX",
+        "why": "Daniel Bell's 1994 track of a dry beat and a pitched-down voice, a template for later minimal house."
+      }
+    ],
+    "tempo": "125–135 BPM"
+  },
+  {
+    "id": "microhouse",
+    "name": "Microhouse",
+    "fam": "electronic",
+    "year": 1998,
+    "role": "branch",
+    "yOff": 290,
+    "aka": "Minimal House · Click House",
+    "def": "House rebuilt from very small sounds: clicks, pops, vocal slivers and sampled fragments sequenced into a soft, swinging 4/4, with deep house's warmth kept and its big gestures removed.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Shuffling, lightly swung 4/4 at a relaxed house tempo, the percussion assembled from clicks, static and clipped samples in place of drum-machine hits."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Dry, close and detailed: tiny sampled particles, muted bass, a chord or vocal syllable heard in fragments."
+      },
+      {
+        "k": "Production",
+        "v": "Micro-sampling and digital editing, cutting radio, voice and instrument recordings into grains and re-sequencing them."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Cologne's Kompakt, Frankfurt's Playhouse and Perlon, Berlin after-hours clubs and Montreal's Mutek festival; named by Philip Sherburne in The Wire in 2001."
+      }
+    ],
+    "why": "It applies minimal techno's reduction and glitch's cut-up sound sources to house's swing, giving a groove that is intricate at low volume and still works on a dancefloor.",
+    "artists": [
+      "Isolée",
+      "Akufen",
+      "Ricardo Villalobos",
+      "Luomo",
+      "Jan Jelinek"
+    ],
+    "albums": [
+      {
+        "t": "Vocalcity",
+        "a": "Luomo"
+      },
+      {
+        "t": "Alcachofa",
+        "a": "Ricardo Villalobos"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Beau Mot Plage",
+        "a": "Isolée",
+        "why": "First issued on Playhouse in 1998: a plucked, guitar-like loop over a dry shuffle; the style's first anthem."
+      },
+      {
+        "t": "Deck the House",
+        "a": "Akufen",
+        "why": "Hundreds of radio fragments cut into a swinging groove (2002)."
+      },
+      {
+        "t": "Easy Lee",
+        "a": "Ricardo Villalobos",
+        "why": "A vocoded murmur over a skeletal beat; the opening track of 'Alcachofa' (2003)."
+      }
+    ],
+    "tempo": "118–128 BPM"
+  },
+  {
+    "id": "dubstep",
+    "name": "Dubstep",
+    "fam": "electronic",
+    "fam2": "global",
+    "year": 2000,
+    "role": "hybrid",
+    "yOff": 290,
+    "def": "South London's dark offshoot of 2-step: around 140 BPM with the drums at half-time, a snare on the third beat, enormous sub-bass and wide empty space, borrowing dub's echo and sound-system pressure.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Half-step: a kick on one and a snare on three at 138–142 BPM, with syncopated hi-hats and percussion hinting at the garage shuffle underneath."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Sub-bass felt more than heard, LFO-modulated 'wobble' basslines, sparse melodic fragments, long reverb and delay tails."
+      },
+      {
+        "k": "Production",
+        "v": "Mixed for large sound systems, with the low end as the lead instrument and the midrange left open; tested on dubplates before release."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Croydon's Big Apple Records, the FWD>> night and Rinse FM, DMZ in Brixton; labels Tempa, DMZ, Hyperdub and Tectonic. Dated here to the first Tempa and El-B records of 2000; the name followed around 2002."
+      }
+    ],
+    "why": "It takes the vocals and swing out of UK garage and slows the drums to half-time, leaving room for bass weight and dub space to carry the track.",
+    "artists": [
+      "Horsepower Productions",
+      "Digital Mystikz",
+      "Skream",
+      "Benga",
+      "Burial"
+    ],
+    "albums": [
+      {
+        "t": "In Fine Style",
+        "a": "Horsepower Productions"
+      },
+      {
+        "t": "Untrue",
+        "a": "Burial"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Midnight Request Line",
+        "a": "Skream",
+        "why": "The 2005 Tempa single whose arpeggiated melody carried dubstep beyond its core scene."
+      },
+      {
+        "t": "Anti War Dub",
+        "a": "Digital Mystikz",
+        "why": "DMZ's meditative, bass-led sound on one plate."
+      },
+      {
+        "t": "Archangel",
+        "a": "Burial",
+        "why": "Pitched R&B vocal ghosts over crackle and a garage skip, from 'Untrue' (2007)."
+      }
+    ],
+    "tempo": "138–142 BPM",
+    "tempoNote": "Usually felt at half-time, around 70 BPM."
+  },
+  {
+    "id": "brostep",
+    "name": "Brostep",
+    "fam": "electronic",
+    "year": 2007,
+    "role": "branch",
+    "yOff": -320,
+    "aka": "Tear-out · Wobble · EDM Dubstep",
+    "def": "Dubstep turned inside out: the sub-bass and space give way to distorted, heavily modulated midrange bass 'growls', big build-ups and drops, engineered for maximum impact on festival rigs.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Half-time kick and snare at 140–150 BPM, with the bassline carrying the rhythmic detail in rapid call-and-response phrases."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Metallic, vocal-like midrange bass made with FM and wavetable synthesis and stacked distortion; bright, compressed and loud."
+      },
+      {
+        "k": "Song structure",
+        "v": "Intro, build, drop, breakdown, second drop: the drop takes the place of a chorus, or of a metal breakdown."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Begun by UK producers Rusko and Caspa in 2007, then taken up in North America from 2010 by Skrillex, Excision and Datsik; the name, coined around 2009, started as an insult."
+      }
+    ],
+    "why": "It shifts dubstep's energy from the sub-bass to the midrange, where it reads on any speaker, and organises the whole track around the drop.",
+    "artists": [
+      "Rusko",
+      "Caspa",
+      "Skrillex",
+      "Flux Pavilion",
+      "Excision"
+    ],
+    "albums": [
+      {
+        "t": "FabricLive.37",
+        "a": "Caspa & Rusko"
+      },
+      {
+        "t": "Scary Monsters and Nice Sprites",
+        "a": "Skrillex"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Cockney Thug",
+        "a": "Rusko",
+        "why": "First heard on FabricLive.37 in 2007 and issued as a single in 2009; its lurching midrange wobble pointed dubstep toward the mosh pit."
+      },
+      {
+        "t": "Scary Monsters and Nice Sprites",
+        "a": "Skrillex",
+        "why": "The 2010 track that set the American template: sweet melody, then a screaming bass drop."
+      },
+      {
+        "t": "Bass Cannon",
+        "a": "Flux Pavilion",
+        "why": "A 2011 festival anthem built around one enormous modulated riff."
+      }
+    ],
+    "tempo": "140–150 BPM",
+    "tempoNote": "Felt at half-time, around 70–75 BPM."
+  },
+  {
+    "id": "postdubstep",
+    "name": "Post-Dubstep",
+    "fam": "electronic",
+    "year": 2009,
+    "role": "branch",
+    "yOff": 270,
+    "aka": "UK Bass · Bass Music · Future Garage",
+    "def": "The scattering of dubstep after 2009: producers keep its sub-bass and space but bring back garage swing, house tempos and chords, and pitched R&B vocal fragments, in tracks that range from club tools to near-songs.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Loose and varied, from 2-step shuffles and broken beats to straight house kicks, usually between 125 and 140 BPM."
+      },
+      {
+        "k": "Harmony",
+        "v": "Warm, often jazz- or gospel-tinged chords and pads, in contrast with dubstep's sparse minor-key motifs."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Deep sub-bass, pitch-shifted and chopped vocal syllables, soft synth pads, field noise and crackle."
+      },
+      {
+        "k": "Scene / context",
+        "v": "London, Bristol and Leeds around the labels Hessle Audio, Hotflush, Hemlock, Night Slugs and R&S, the FWD>> night and Rinse FM."
+      }
+    ],
+    "why": "Once dubstep's half-step formula hardened, its producers reopened the tempo and rhythm and let melody and voice back in, reconnecting bass music with house, garage and R&B.",
+    "artists": [
+      "Joy Orbison",
+      "Mount Kimbie",
+      "James Blake",
+      "Pearson Sound",
+      "Untold"
+    ],
+    "albums": [
+      {
+        "t": "Crooks & Lovers",
+        "a": "Mount Kimbie"
+      },
+      {
+        "t": "James Blake",
+        "a": "James Blake"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Hyph Mngo",
+        "a": "Joy Orbison",
+        "why": "House chords, a garage skip and a clipped vocal over heavy sub; the scene's 2009 anthem."
+      },
+      {
+        "t": "CMYK",
+        "a": "James Blake",
+        "why": "Kelis and Aaliyah samples cut into a stuttering, melancholy hook (2010)."
+      },
+      {
+        "t": "Maybes",
+        "a": "Mount Kimbie",
+        "why": "Guitar haze and a halting beat from the 2009 debut EP."
+      }
+    ],
+    "tempo": "125–140 BPM"
   }
 ]

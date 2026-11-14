@@ -585,8 +585,8 @@
     "name": "Future Funk",
     "fam": "soul",
     "fam2": "electronic",
-    "year": 2026,
-    "role": "rising",
+    "year": 2013,
+    "role": "revival",
     "yOff": 0,
     "def": "A sample-based revival that speeds up and chops disco, funk and Japanese city-pop into glossy, nostalgic dance loops — a streaming-era descendant of disco by way of vaporwave.",
     "traits": [
@@ -605,11 +605,17 @@
     ],
     "why": "It rebuilds disco and funk from sped-up, filtered samples, extending the dancefloor into vaporwave-era internet nostalgia.",
     "artists": [
+      "Saint Pepsi",
       "Yung Bae",
       "Night Tempo",
       "Macross 82-99"
     ],
-    "albums": [],
+    "albums": [
+      {
+        "t": "Hit Vibes",
+        "a": "Saint Pepsi"
+      }
+    ],
     "tracks": [
       {
         "t": "Bad Boy",

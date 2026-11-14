@@ -1434,7 +1434,7 @@
     "id": "ukjazz",
     "name": "New Spiritual Jazz",
     "fam": "jazz",
-    "year": 2026,
+    "year": 2015,
     "role": "rising",
     "yOff": -115,
     "def": "A new wave of spiritual jazz led from London and beyond — modal vamps and devotional energy fused with Afro-Caribbean rhythm, broken beat and club sensibility.",
@@ -1449,7 +1449,7 @@
       },
       {
         "k": "Scene / context",
-        "v": "London club-jazz and diaspora scenes."
+        "v": "London club-jazz and diaspora scenes, alongside the Los Angeles circle around the Brainfeeder label, whose 'The Epic' (2015) opened the wave."
       }
     ],
     "why": "It revives spiritual jazz's modal, devotional vamps and charges them with Afro-diasporic rhythm and club energy.",
@@ -1458,7 +1458,16 @@
       "Shabaka Hutchings",
       "Kamasi Washington"
     ],
-    "albums": [],
+    "albums": [
+      {
+        "t": "The Epic",
+        "a": "Kamasi Washington"
+      },
+      {
+        "t": "Your Queen Is a Reptile",
+        "a": "Sons of Kemet"
+      }
+    ],
     "tracks": [
       {
         "t": "Source",
@@ -1577,6 +1586,69 @@
       {
         "t": "O Superman",
         "a": "Laurie Anderson"
+      }
+    ]
+  },
+  {
+    "id": "glitch",
+    "name": "Glitch",
+    "fam": "jazz",
+    "fam2": "electronic",
+    "year": 1994,
+    "role": "hybrid",
+    "yOff": 40,
+    "aka": "Clicks & Cuts",
+    "def": "Music made from the sounds of digital failure: skipping CDs, clipping, buffer errors and line noise looped and arranged into rhythm or ambient texture.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Clicks, pops, skips, sine tones and digital hiss, with fragments of source music heard through the malfunction."
+      },
+      {
+        "k": "Rhythm / groove",
+        "v": "Pulse arises from the loop of a skip or stutter, ranging from irregular and ambient to tightly gridded patterns of pure tones."
+      },
+      {
+        "k": "Production",
+        "v": "Deliberately damaged CDs, DSP errors and software such as Max/MSP; the fault itself is the sound source."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Frankfurt's Mille Plateaux label and its 'Clicks & Cuts' compilations (2000), Raster-Noton in Chemnitz, Vienna's Mego, and Japanese sound art around Ryoji Ikeda."
+      }
+    ],
+    "why": "It treats the errors that digital audio was designed to hide as raw material, extending musique concrète's found sound to the machine's own faults.",
+    "artists": [
+      "Oval",
+      "Ryoji Ikeda",
+      "Alva Noto",
+      "Fennesz"
+    ],
+    "albums": [
+      {
+        "t": "94 Diskont",
+        "a": "Oval"
+      },
+      {
+        "t": "Endless Summer",
+        "a": "Fennesz"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Do While",
+        "a": "Oval",
+        "why": "A skipping-CD loop turned into a long, slowly shifting chime, from '94 Diskont' (1995)."
+      },
+      {
+        "t": "Endless Summer",
+        "a": "Fennesz",
+        "why": "Guitar chords breaking up into digital grain; glitch at its most melodic (2001)."
+      },
+      {
+        "t": "Headphonics 0/0",
+        "a": "Ryoji Ikeda",
+        "why": "Sine tones and clicks at the edge of hearing, from '+/-' (1996)."
       }
     ]
   }
