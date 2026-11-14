@@ -585,7 +585,7 @@
     "name": "Amapiano",
     "fam": "global",
     "fam2": "electronic",
-    "year": 2015,
+    "year": 2016,
     "role": "rising",
     "yOff": -105,
     "def": "South Africa's dominant dance sound — deep-house chords and kwaito swing over airy log-drum basslines, jazzy pads and shuffling percussion.",
@@ -600,7 +600,7 @@
       },
       {
         "k": "Scene / context",
-        "v": "Township-born, globally streaming dance culture."
+        "v": "Born in Gauteng's townships in the early 2010s and passed around as shared files; first gathered on record by the 'AmaPiano Volume 1' compilation and Kabza De Small's debut album in 2016, and global by 2020."
       }
     ],
     "why": "It grows deep house's warm chords into a distinctly South African groove built on the springy log-drum bassline.",
@@ -609,7 +609,16 @@
       "DJ Maphorisa",
       "Focalistic"
     ],
-    "albums": [],
+    "albums": [
+      {
+        "t": "AmaPiano Volume 1",
+        "a": "Various Artists"
+      },
+      {
+        "t": "Scorpion Kings",
+        "a": "Kabza De Small & DJ Maphorisa"
+      }
+    ],
     "tracks": [
       {
         "t": "Ke Star",
@@ -638,7 +647,7 @@
     "traits": [
       {
         "k": "Rhythm / groove",
-        "v": "Mid-tempo, syncopated log-drum and dancehall-inflected grooves."
+        "v": "Mid-tempo, syncopated grooves with a highlife guitar lilt and dancehall-inflected drum patterns."
       },
       {
         "k": "Vocal approach",
@@ -646,17 +655,24 @@
       },
       {
         "k": "Scene / context",
-        "v": "Lagos-to-global pop industry."
+        "v": "Lagos labels such as Kennis Music and Mo' Hits in the 2000s; the name 'Afrobeats' took hold in the UK around 2011, and the music reached global pop charts in the late 2010s."
       }
     ],
     "why": "It scales highlife and Afrobeat's rhythmic DNA into a melodic, global pop language blending dancehall, hip-hop and R&B.",
     "artists": [
-      "Burna Boy",
+      "2Face Idibia",
+      "D'banj",
       "Wizkid",
+      "Burna Boy",
       "Tems"
     ],
     "albums": [],
     "tracks": [
+      {
+        "t": "African Queen",
+        "a": "2Face Idibia",
+        "why": "The 2004 ballad that carried Nigerian pop across Africa and into Europe; an early landmark of the sound."
+      },
       {
         "t": "Essence",
         "a": "Wizkid feat. Tems",
@@ -665,10 +681,6 @@
       {
         "t": "Last Last",
         "a": "Burna Boy"
-      },
-      {
-        "t": "Love Nwantiti",
-        "a": "CKay"
       }
     ],
     "tempo": "98–110 BPM"

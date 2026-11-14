@@ -1449,7 +1449,7 @@
       },
       {
         "k": "Scene / context",
-        "v": "London club-jazz and diaspora scenes."
+        "v": "London club-jazz and diaspora scenes, alongside the Los Angeles circle around the Brainfeeder label, whose 'The Epic' (2015) opened the wave."
       }
     ],
     "why": "It revives spiritual jazz's modal, devotional vamps and charges them with Afro-diasporic rhythm and club energy.",
@@ -1458,7 +1458,16 @@
       "Shabaka Hutchings",
       "Kamasi Washington"
     ],
-    "albums": [],
+    "albums": [
+      {
+        "t": "The Epic",
+        "a": "Kamasi Washington"
+      },
+      {
+        "t": "Your Queen Is a Reptile",
+        "a": "Sons of Kemet"
+      }
+    ],
     "tracks": [
       {
         "t": "Source",

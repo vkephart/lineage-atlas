@@ -4270,8 +4270,8 @@
     "note": "R&B’s close-mic intimacy and programmed drums shape the sound."
   },
   {
-    "from": "bedroompop",
-    "to": "altrnb",
+    "from": "altrnb",
+    "to": "bedroompop",
     "rel": "scene",
     "strength": 0.45,
     "note": "Adjacent streaming-native scenes trading producers and playlists."
@@ -4291,8 +4291,8 @@
     "note": "Japan’s parallel smooth tradition feeds the revival’s palette."
   },
   {
-    "from": "nuyacht",
-    "to": "futurefunk",
+    "from": "futurefunk",
+    "to": "nuyacht",
     "rel": "scene",
     "strength": 0.45,
     "note": "Two crate-digger revivals of the same smooth-groove source material."
@@ -4925,7 +4925,7 @@
     "to": "electro",
     "rel": "stylistic",
     "strength": 0.5,
-    "note": "Electro keeps funk's syncopated bass and party chants, rebuilt on synthesisers in the wake of P-Funk and Zapp."
+    "note": "Electro keeps funk's syncopated bass and party chants, rebuilt on synthesizers in the wake of P-Funk and Zapp."
   },
   {
     "from": "electro",
@@ -5093,7 +5093,7 @@
     "to": "minimaltechno",
     "rel": "scene",
     "strength": 0.6,
-    "note": "The Berlin–Detroit axis around Hard Wax linked Basic Channel and Robert Hood, two reductions of techno arrived at in the same years."
+    "note": "Two reductions of techno reached in the same years on the Berlin–Detroit axis: Basic Channel's in Berlin, Robert Hood's in Detroit, with Hood's 'Internal Empire' issued by Berlin's Tresor."
   },
   {
     "from": "dubtechno",
@@ -5191,7 +5191,7 @@
     "to": "microhouse",
     "rel": "stylistic",
     "strength": 0.45,
-    "note": "Perlon and Playhouse came out of the tech-house scene, and microhouse shares its dry, percussive, DJ-functional build."
+    "note": "Microhouse shares tech house's dry, percussive, DJ-functional build, and was often filed under it before it had a name."
   },
   {
     "from": "microhouse",

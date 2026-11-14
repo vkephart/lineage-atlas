@@ -556,7 +556,7 @@
     "fam": "electronic",
     "year": 1993,
     "role": "branch",
-    "yOff": 180,
+    "yOff": 290,
     "def": "House built for the long journey — gradually evolving arrangements, layered builds and emotional, melodic peaks across extended tracks.",
     "traits": [
       {
@@ -601,7 +601,7 @@
     "fam": "electronic",
     "year": 1995,
     "role": "branch",
-    "yOff": -95,
+    "yOff": -300,
     "def": "A swung, bass-heavy UK take on house — chopped soulful vocals, skippy syncopated drums and sub-bass weight.",
     "traits": [
       {
@@ -752,7 +752,7 @@
     "fam2": "jazz",
     "year": 1992,
     "role": "hybrid",
-    "yOff": 115,
+    "yOff": 190,
     "def": "Techno's pulse softened into atmosphere — beats present but gentle, wrapped in ambient pads and deep space.",
     "traits": [
       {
@@ -1181,7 +1181,7 @@
     "fam2": "soul",
     "year": 1997,
     "role": "hybrid",
-    "yOff": -220,
+    "yOff": -260,
     "def": "Parisian house built from filtered disco loops — compressed, phase-swept samples turned into euphoric, endlessly cresting grooves.",
     "traits": [
       {
@@ -1237,7 +1237,7 @@
     "fam2": "soul",
     "year": 1992,
     "role": "branch",
-    "yOff": 200,
+    "yOff": 220,
     "def": "Mid-90s European club-pop — a 130–150 BPM four-on-the-floor kick, rave synth stabs, a rapped male verse and a belted female chorus. House and hi-NRG rebuilt as radio song.",
     "traits": [
       {
@@ -1291,7 +1291,7 @@
     "fam": "electronic",
     "year": 1999,
     "role": "branch",
-    "yOff": 245,
+    "yOff": 240,
     "aka": "Eurotrance",
     "def": "Eurodance sped up and fed through trance — supersaw leads, pitched-up female vocals and a hard, bouncy kick, the sound of 2000s European teen clubs and ringtone charts.",
     "traits": [
@@ -1445,7 +1445,7 @@
     "fam2": "hiphop",
     "year": 2001,
     "role": "hybrid",
-    "yOff": -100,
+    "yOff": -140,
     "def": "Newark’s chopped, 130+ BPM club style — stuttering kick triplets, bed-squeak samples and vocal chops — now rewiring mainstream rap and pop.",
     "traits": [
       {
@@ -1458,11 +1458,12 @@
       },
       {
         "k": "Scene / context",
-        "v": "From Newark parties to drill, K-pop and TikTok ubiquity."
+        "v": "Grew out of Baltimore club records played at Newark parties; DJ Tameil's 'Dat Butt' EP (2001) and the Brick Bandits crew made it a local style, first called Brick City club. Two decades on it reached drill, K-pop and TikTok."
       }
     ],
     "why": "Its kick pattern is currently pop’s favourite rhythmic transplant — the clearest case of a regional club style colonising the mainstream.",
     "artists": [
+      "DJ Tameil",
       "DJ Sliink",
       "UNIIQU3",
       "Cookiee Kawaii"
@@ -1557,9 +1558,9 @@
     "fam2": "hiphop",
     "year": 1982,
     "role": "hybrid",
-    "yOff": -300,
+    "yOff": -260,
     "aka": "Electro-Funk · Electro-Boogie",
-    "def": "Drum-machine funk built on the Roland TR-808: syncopated, unswung machine beats, synthesiser bass and vocoder voices, pitched between Kraftwerk's sequencer precision and the breakbeat logic of early hip-hop.",
+    "def": "Drum-machine funk built on the Roland TR-808: syncopated, unswung machine beats, synthesizer bass and vocoder voices, pitched between Kraftwerk's sequencer precision and the breakbeat logic of early hip-hop.",
     "traits": [
       {
         "k": "Rhythm / groove",
@@ -1621,7 +1622,7 @@
     "fam": "electronic",
     "year": 1990,
     "role": "branch",
-    "yOff": 290,
+    "yOff": -260,
     "aka": "Hardcore · Rave · Oldskool",
     "def": "The UK rave sound of 1990–92: sped-up hip-hop breakbeats looped under house pianos, 'hoover' and stab synths, pitched-up vocal samples and sub-bass, running faster with every month.",
     "traits": [
@@ -1683,7 +1684,7 @@
     "fam2": "global",
     "year": 1992,
     "role": "hybrid",
-    "yOff": 290,
+    "yOff": 90,
     "aka": "Jungle Techno · Ragga Jungle · Hardcore Jungle",
     "def": "Chopped and re-sequenced breakbeats at 160 BPM and above over half-speed reggae sub-bass, with dancehall vocal samples and MCs; hardcore's breakbeat science with the rave euphoria stripped out.",
     "traits": [
@@ -1743,7 +1744,7 @@
     "fam": "electronic",
     "year": 1994,
     "role": "branch",
-    "yOff": -300,
+    "yOff": -320,
     "aka": "Drum 'n' Bass · D&B · DnB",
     "def": "Jungle refined into a producer's music: breakbeats tightened into a two-step kick-and-snare pattern at 165–175 BPM, engineered sub-bass and 'Reese' basslines, and substyles running from jazz-tinged atmospherics to cold techstep.",
     "traits": [
@@ -1808,7 +1809,7 @@
     "fam2": "global",
     "year": 1993,
     "role": "hybrid",
-    "yOff": 290,
+    "yOff": -170,
     "def": "Techno reduced to a muted four-on-the-floor kick, sub-bass and one or two minor-chord stabs fed through tape delay, reverb and filters, so that echo, hiss and slow timbral change stand in for melody and arrangement.",
     "traits": [
       {
@@ -1871,7 +1872,7 @@
     "fam": "electronic",
     "year": 1994,
     "role": "branch",
-    "yOff": -280,
+    "yOff": -140,
     "aka": "Minimal",
     "def": "Techno pared to its working parts: a kick, a hi-hat and one or two short synthetic figures that change by tiny increments, so the groove comes from repetition and subtraction and not from riffs or samples.",
     "traits": [
@@ -1918,7 +1919,7 @@
       {
         "t": "Spastik",
         "a": "Plastikman",
-        "why": "A 1993 Plus 8 single made of little more than a kick and rolling snares; an early minimal club hit."
+        "why": "A 1993 Plus 8 single of little more than a kick and rolling snares, anticipating the style a year before 'Minimal Nation' named it."
       },
       {
         "t": "Losing Control",
@@ -1934,7 +1935,7 @@
     "fam": "electronic",
     "year": 1998,
     "role": "branch",
-    "yOff": 100,
+    "yOff": -280,
     "aka": "Minimal House · Click House",
     "def": "House rebuilt from very small sounds: clicks, pops, vocal slivers and sampled fragments sequenced into a soft, swinging 4/4, with deep house's warmth kept and its big gestures removed.",
     "traits": [
@@ -1999,7 +2000,7 @@
     "fam2": "global",
     "year": 2000,
     "role": "hybrid",
-    "yOff": 290,
+    "yOff": 250,
     "def": "South London's dark offshoot of 2-step: around 140 BPM with the drums at half-time, a snare on the third beat, enormous sub-bass and wide empty space, borrowing dub's echo and sound-system pressure.",
     "traits": [
       {
@@ -2106,7 +2107,7 @@
       {
         "t": "Cockney Thug",
         "a": "Rusko",
-        "why": "A 2007 single whose lurching midrange wobble pointed dubstep toward the mosh pit."
+        "why": "First heard on FabricLive.37 in 2007 and issued as a single in 2009; its lurching midrange wobble pointed dubstep toward the mosh pit."
       },
       {
         "t": "Scary Monsters and Nice Sprites",
@@ -2128,7 +2129,7 @@
     "fam": "electronic",
     "year": 2009,
     "role": "branch",
-    "yOff": 110,
+    "yOff": 290,
     "aka": "UK Bass · Bass Music · Future Garage",
     "def": "The scattering of dubstep after 2009: producers keep its sub-bass and space but bring back garage swing, house tempos and chords, and pitched R&B vocal fragments, in tracks that range from club tools to near-songs.",
     "traits": [
