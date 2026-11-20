@@ -450,5 +450,130 @@
       }
     ],
     "tempo": "136–142 BPM"
+  },
+  {
+    "id": "insthiphop",
+    "name": "Instrumental Hip-Hop",
+    "fam": "hiphop",
+    "year": 1996,
+    "role": "branch",
+    "yOff": 15,
+    "aka": "Beat Music · Beat Tapes · Instrumental Beats",
+    "def": "Hip-hop beats released without a rapper: sample collages and drum programming made to stand as finished pieces, from DJ Shadow’s crate-dug suites to J Dilla’s off-grid loops and Nujabes’s jazz-piano warmth.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Boom-bap drums; after Dilla, kicks and snares played by hand off the grid for a loose, lagging swing."
+      },
+      {
+        "k": "Production",
+        "v": "MPC, SP-303 and SP-404 samplers (the SP series carries a dedicated ‘lo-fi’ effect button); chopped soul, jazz and library records, with the vinyl noise left in."
+      },
+      {
+        "k": "Song structure",
+        "v": "Beat-tape form: one- to two-minute loops and sketches sequenced as a continuous suite."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Mo’ Wax and Ninja Tune in Britain, Stones Throw and Low End Theory in Los Angeles, Hydeout in Tokyo."
+      }
+    ],
+    "why": "Once the sampler made the producer an author, the beat no longer needed an MC to count as a record.",
+    "artists": [
+      "DJ Shadow",
+      "J Dilla",
+      "Madlib",
+      "Nujabes",
+      "Flying Lotus"
+    ],
+    "albums": [
+      {
+        "t": "Endtroducing.....",
+        "a": "DJ Shadow"
+      },
+      {
+        "t": "Donuts",
+        "a": "J Dilla"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Midnight in a Perfect World",
+        "a": "DJ Shadow"
+      },
+      {
+        "t": "Time: The Donut of the Heart",
+        "a": "J Dilla"
+      },
+      {
+        "t": "Aruarian Dance",
+        "a": "Nujabes",
+        "why": "From the Samurai Champloo soundtrack (2004), the anime-and-beats pairing lo-fi hip-hop later took as its whole identity."
+      }
+    ],
+    "tempo": "80–100 BPM"
+  },
+  {
+    "id": "lofihiphop",
+    "name": "Lo-Fi Hip-Hop",
+    "fam": "hiphop",
+    "fam2": "jazz",
+    "year": 2014,
+    "role": "hybrid",
+    "yOff": 150,
+    "aka": "Lofi Hip Hop · Chillhop · Lo-Fi Beats · Beats to Study To",
+    "def": "Short, mostly instrumental hip-hop beats made for background listening: soft swung drums under looped jazz piano or guitar, wrapped in vinyl crackle and tape wobble and streamed around the clock on YouTube.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Boom-bap patterns at 70–90 BPM, slightly off the grid, with muted kicks and soft snares."
+      },
+      {
+        "k": "Harmony",
+        "v": "Jazz seventh and ninth chords on electric piano, nylon guitar or sampled records."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Added vinyl crackle, tape hiss and pitch wobble; highs rolled off; side-chain pumping."
+      },
+      {
+        "k": "Scene / context",
+        "v": "SoundCloud beat-makers, then 24-hour YouTube streams: Chillhop Music and ChilledCow’s ‘beats to relax/study to’ (2017), now Lofi Girl."
+      }
+    ],
+    "why": "It takes the Dilla and Nujabes beat tape and removes whatever asks for attention (the rapper, the drop, the ending) so it can run under study or work.",
+    "artists": [
+      "Jinsang",
+      "Tomppabeats",
+      "bsd.u",
+      "idealism",
+      "Kupla"
+    ],
+    "albums": [
+      {
+        "t": "Kona Park",
+        "a": "Jinsang"
+      },
+      {
+        "t": "Harbor",
+        "a": "Tomppabeats"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Affection",
+        "a": "Jinsang"
+      },
+      {
+        "t": "Monday Loop",
+        "a": "Tomppabeats"
+      },
+      {
+        "t": "death bed (coffee for your head)",
+        "a": "Powfu",
+        "why": "A rapped verse over a loop of beabadoobee’s ‘Coffee’ that reached No. 23 on the Hot 100 in 2020: lo-fi beats and bedroom pop in one hit."
+      }
+    ],
+    "tempo": "70–90 BPM"
   }
 ]

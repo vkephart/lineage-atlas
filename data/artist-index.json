@@ -1,4 +1,8 @@
 {
+  "2814": [
+    "vaporwave",
+    "ambient"
+  ],
   "Chris Isaak": [
     "noircrooner",
     "rockabilly"
@@ -167,7 +171,8 @@
   ],
   "The Beach Boys": [
     "baroquepop",
-    "rocknroll"
+    "rocknroll",
+    "lofi"
   ],
   "The Kinks": [
     "beat",
@@ -193,7 +198,8 @@
     "powerpop"
   ],
   "Todd Rundgren": [
-    "powerpop"
+    "powerpop",
+    "lofi"
   ],
   "Cheap Trick": [
     "skinnytie",
@@ -895,6 +901,7 @@
     "dreampop"
   ],
   "Toro y Moi": [
+    "chillwave",
     "bedroompop",
     "indiedance"
   ],
@@ -1203,10 +1210,12 @@
     "hiphop"
   ],
   "J Dilla": [
+    "insthiphop",
     "hiphop",
     "jazzfunk"
   ],
   "Madlib": [
+    "insthiphop",
     "hiphop",
     "libraryfunk"
   ],
@@ -1452,7 +1461,8 @@
     "synthwave"
   ],
   "Com Truise": [
-    "synthwave"
+    "synthwave",
+    "chillwave"
   ],
   "Perturbator": [
     "synthwave",
@@ -1504,6 +1514,7 @@
     "coldwave"
   ],
   "Macintosh Plus": [
+    "vaporwave",
     "futurefunk"
   ],
   "Miles Davis": [
@@ -2598,7 +2609,8 @@
     "afrobeats"
   ],
   "Saint Pepsi": [
-    "futurefunk"
+    "futurefunk",
+    "vaporwave"
   ],
   "A Guy Called Gerald": [
     "jungle",
@@ -2606,5 +2618,265 @@
   ],
   "Sons of Kemet": [
     "ukjazz"
+  ],
+  "R. Stevie Moore": [
+    "lofi"
+  ],
+  "Daniel Johnston": [
+    "lofi",
+    "singersongwriter"
+  ],
+  "Beat Happening": [
+    "lofi",
+    "indiepop"
+  ],
+  "Sebadoh": [
+    "lofi",
+    "indie"
+  ],
+  "Lou Barlow": [
+    "lofi",
+    "indie"
+  ],
+  "Guided by Voices": [
+    "lofi",
+    "indie"
+  ],
+  "Pavement": [
+    "indie",
+    "lofi"
+  ],
+  "Tall Dwarfs": [
+    "lofi"
+  ],
+  "The Mountain Goats": [
+    "lofi",
+    "folk"
+  ],
+  "The Microphones": [
+    "lofi",
+    "indie"
+  ],
+  "Elliott Smith": [
+    "indie",
+    "singersongwriter",
+    "lofi"
+  ],
+  "Liz Phair": [
+    "indie",
+    "lofi"
+  ],
+  "Beck": [
+    "alternative",
+    "lofi"
+  ],
+  "Alex G": [
+    "lofi",
+    "bedroompop",
+    "indie"
+  ],
+  "Car Seat Headrest": [
+    "lofi",
+    "indie"
+  ],
+  "Ariel Pink": [
+    "hypnagogic",
+    "lofi"
+  ],
+  "Ariel Pink’s Haunted Graffiti": [
+    "hypnagogic",
+    "lofi"
+  ],
+  "Ariel Pink's Haunted Graffiti": [
+    "hypnagogic",
+    "lofi"
+  ],
+  "James Ferraro": [
+    "hypnagogic",
+    "vaporwave"
+  ],
+  "The Skaters": [
+    "hypnagogic"
+  ],
+  "John Maus": [
+    "hypnagogic",
+    "synthpop"
+  ],
+  "Ducktails": [
+    "hypnagogic",
+    "chillwave"
+  ],
+  "Oneohtrix Point Never": [
+    "hypnagogic",
+    "vaporwave",
+    "ambient"
+  ],
+  "Daniel Lopatin": [
+    "hypnagogic",
+    "vaporwave"
+  ],
+  "Emeralds": [
+    "hypnagogic",
+    "kosmische"
+  ],
+  "Sun Araw": [
+    "hypnagogic",
+    "neopsych"
+  ],
+  "Gary War": [
+    "hypnagogic"
+  ],
+  "Pocahaunted": [
+    "hypnagogic"
+  ],
+  "Washed Out": [
+    "chillwave",
+    "dreampop"
+  ],
+  "Neon Indian": [
+    "chillwave",
+    "synthpop"
+  ],
+  "Memory Tapes": [
+    "chillwave"
+  ],
+  "Small Black": [
+    "chillwave"
+  ],
+  "Tycho": [
+    "chillwave",
+    "ambient"
+  ],
+  "Panda Bear": [
+    "neopsych",
+    "chillwave"
+  ],
+  "Blackbird Blackbird": [
+    "chillwave"
+  ],
+  "Vektroid": [
+    "vaporwave"
+  ],
+  "Chuck Person": [
+    "vaporwave",
+    "hypnagogic"
+  ],
+  "Blank Banshee": [
+    "vaporwave"
+  ],
+  "George Clanton": [
+    "vaporwave",
+    "chillwave"
+  ],
+  "DJ Shadow": [
+    "insthiphop",
+    "triphop"
+  ],
+  "DJ Krush": [
+    "insthiphop",
+    "triphop"
+  ],
+  "Nujabes": [
+    "insthiphop",
+    "lofihiphop"
+  ],
+  "Flying Lotus": [
+    "insthiphop",
+    "idm"
+  ],
+  "RJD2": [
+    "insthiphop"
+  ],
+  "Pete Rock": [
+    "hiphop",
+    "insthiphop"
+  ],
+  "Knxwledge": [
+    "insthiphop",
+    "lofihiphop"
+  ],
+  "Blockhead": [
+    "insthiphop"
+  ],
+  "Powfu": [
+    "lofihiphop",
+    "bedroompop"
+  ],
+  "potsu": [
+    "lofihiphop"
+  ],
+  "eevee": [
+    "lofihiphop"
+  ],
+  "Shiloh Dynasty": [
+    "lofihiphop"
+  ],
+  "Lofi Girl": [
+    "lofihiphop"
+  ],
+  "ChilledCow": [
+    "lofihiphop"
+  ],
+  "Chillhop Music": [
+    "lofihiphop"
+  ],
+  "Jandek": [
+    "lofi"
+  ],
+  "Half Japanese": [
+    "lofi"
+  ],
+  "Chris Knox": [
+    "lofi"
+  ],
+  "The Cleaners from Venus": [
+    "lofi"
+  ],
+  "Neutral Milk Hotel": [
+    "indie",
+    "lofi"
+  ],
+  "Silver Jews": [
+    "indie",
+    "lofi"
+  ],
+  "Smog": [
+    "lofi",
+    "indie"
+  ],
+  "Royal Trux": [
+    "noiserock",
+    "lofi"
+  ],
+  "Young Marble Giants": [
+    "postpunk",
+    "lofi"
+  ],
+  "Madvillain": [
+    "hiphop"
+  ],
+  "Boy Pablo": [
+    "bedroompop"
+  ],
+  "Cuco": [
+    "bedroompop"
+  ],
+  "Jakob Ogawa": [
+    "bedroompop"
+  ],
+  "Jinsang": [
+    "lofihiphop"
+  ],
+  "Tomppabeats": [
+    "lofihiphop"
+  ],
+  "bsd.u": [
+    "lofihiphop"
+  ],
+  "idealism": [
+    "lofihiphop"
+  ],
+  "Kupla": [
+    "lofihiphop"
   ]
 }

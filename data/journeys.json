@@ -431,5 +431,36 @@
         "text": "After 2009 the formula opens up again: garage swing, house chords and chopped R&B voices return, and the continuum scatters into bass music."
       }
     ]
+  },
+  {
+    "id": "lofi",
+    "title": "Hiss as a Feature",
+    "subtitle": "Lo-fi from the home four-track to the 24-hour study stream",
+    "steps": [
+      {
+        "id": "baroquepop",
+        "text": "In 1967 the Beach Boys abandon the orchestral Smile and cut Smiley Smile at Brian Wilson’s house on radio broadcast gear. Studio pop’s most ambitious band makes the first famous record that sounds like a home demo."
+      },
+      {
+        "id": "lofi",
+        "text": "R. Stevie Moore’s Phonography (1976) and the four-track cassette Portastudio (1979) turn that accident into a method. Through Daniel Johnston, Beat Happening, Sebadoh and Guided by Voices, hiss and wobble come to stand for honesty."
+      },
+      {
+        "id": "hypnagogic",
+        "text": "Around 2004 Ariel Pink and James Ferraro point the cassette at memory itself, replaying 1980s radio and VHS soundtracks through deliberate murk. David Keenan names it hypnagogic pop in 2009."
+      },
+      {
+        "id": "chillwave",
+        "text": "That same summer, laptop producers add a steady beat and a clean hook. Washed Out, Neon Indian and Toro y Moi simulate the tape wobble in software, and for a while the style is also called glo-fi."
+      },
+      {
+        "id": "bedroompop",
+        "text": "By the mid-2010s the laptop has replaced the four-track and streaming the cassette club. Bedroom pop keeps lo-fi’s closeness and home-made grain, and critics use the two words almost interchangeably."
+      },
+      {
+        "id": "lofihiphop",
+        "text": "Hip-hop reaches the same texture through J Dilla’s and Nujabes’s beat tapes, cut by 2014 into short loops and streamed from 2017 as ‘beats to relax/study to’."
+      }
+    ]
   }
 ]

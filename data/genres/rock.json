@@ -3985,5 +3985,196 @@
     ],
     "tempo": "60–180 BPM",
     "tempoNote": "Wide range — through-composed pieces change tempo constantly; tempo is rarely a defining feature."
+  },
+  {
+    "id": "lofi",
+    "name": "Lo-Fi",
+    "fam": "rock",
+    "year": 1976,
+    "role": "branch",
+    "yOff": -380,
+    "aka": "Lofi · DIY · Slacker Rock · Low-Fi · Home Recording",
+    "def": "Pop and rock recorded at home on consumer tape machines, with the hiss, distortion, wobbling pitch and room noise left in as part of the sound. The Beach Boys’ home-made Smiley Smile (1967) is the usual prototype.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "Reel-to-reel, then four-track cassette (the first Portastudio arrived in 1979); saturation, hiss and dropouts kept."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Thin, boxy and mid-heavy; overdriven guitar, cheap keyboards and audible room."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Untrained, close and unguarded, often double-tracked slightly out of tune."
+      },
+      {
+        "k": "Song structure",
+        "v": "Short sketches and fragments; albums as piles of twenty or more songs."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Mail-order cassette clubs, college radio and tiny labels such as K, Flying Nun and Shrimper. WFMU’s ‘Low-Fi’ show popularised the term in 1986; the press declared a movement in 1992–94."
+      }
+    ],
+    "why": "Cheap multitrack tape put a studio in the bedroom, and the flaws of the machine came to signal that nothing stood between the writer and the listener.",
+    "artists": [
+      "R. Stevie Moore",
+      "Daniel Johnston",
+      "Beat Happening",
+      "Sebadoh",
+      "Guided by Voices"
+    ],
+    "albums": [
+      {
+        "t": "Phonography",
+        "a": "R. Stevie Moore"
+      },
+      {
+        "t": "Bee Thousand",
+        "a": "Guided by Voices"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Goodbye Piano",
+        "a": "R. Stevie Moore",
+        "why": "From Phonography (1976), Moore’s first label release after eight years of home taping."
+      },
+      {
+        "t": "Walking the Cow",
+        "a": "Daniel Johnston"
+      },
+      {
+        "t": "I Am a Scientist",
+        "a": "Guided by Voices"
+      }
+    ]
+  },
+  {
+    "id": "hypnagogic",
+    "name": "Hypnagogic Pop",
+    "fam": "rock",
+    "fam2": "electronic",
+    "year": 2004,
+    "role": "hybrid",
+    "yOff": -370,
+    "def": "Lo-fi pop that replays half-remembered 1980s radio, TV themes and VHS soundtracks through cassette murk, as if heard on the edge of sleep. David Keenan named it in The Wire in 2009.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "Cassette and eight-track murk, warble, chorus and heavy reverb; fidelity degraded on purpose."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Cheap synths, drum machines or mouth-made drums, soft-rock guitar tone."
+      },
+      {
+        "k": "Melody",
+        "v": "Hooks in the manner of AM radio, new wave and soft rock, smeared until only half recognisable."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Los Angeles and the US noise-cassette underground; Paw Tracks, Not Not Fun, Olde English Spelling Bee."
+      }
+    ],
+    "why": "Musicians raised on worn VHS tapes and FM radio rebuilt pop from memory instead of from the records, so the decay of the medium became the subject.",
+    "artists": [
+      "Ariel Pink’s Haunted Graffiti",
+      "James Ferraro",
+      "John Maus",
+      "Ducktails",
+      "Oneohtrix Point Never"
+    ],
+    "albums": [
+      {
+        "t": "The Doldrums",
+        "a": "Ariel Pink’s Haunted Graffiti"
+      },
+      {
+        "t": "We Must Become the Pitiless Censors of Ourselves",
+        "a": "John Maus"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "For Kate I Wait",
+        "a": "Ariel Pink’s Haunted Graffiti",
+        "why": "Home-recorded in 1999–2000 and reissued by Paw Tracks in 2004, the record the style is dated from."
+      },
+      {
+        "t": "Nobody Here",
+        "a": "Oneohtrix Point Never",
+        "why": "A 2009 YouTube loop of Chris de Burgh’s ‘The Lady in Red’, posted as sunsetcorp: the hypnagogic method that became vaporwave a year later."
+      },
+      {
+        "t": "Believer",
+        "a": "John Maus"
+      }
+    ],
+    "tempo": "80–125 BPM"
+  },
+  {
+    "id": "chillwave",
+    "name": "Chillwave",
+    "fam": "rock",
+    "fam2": "electronic",
+    "year": 2009,
+    "role": "hybrid",
+    "yOff": -400,
+    "aka": "Glo-Fi",
+    "def": "Hazy, mid-tempo synth-pop made on laptops in the blog summer of 2009: soft vocals sunk in reverb, looped and side-chained samples, and simulated tape wobble evoking a faded 1980s cassette.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "Laptop DAWs; side-chain pumping, pitch drift, low-pass filtering and heavy reverb."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Vintage synth pads and sampled loops, warm and washed out."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Soft, multitracked and half buried in the mix."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Named half as a joke by the blog Hipster Runoff in July 2009; spread by MP3 blogs, not by any one city."
+      }
+    ],
+    "why": "It gave hypnagogic pop’s nostalgia a steady beat and a clean hook, using software to imitate the tape damage earlier lo-fi came by honestly.",
+    "artists": [
+      "Washed Out",
+      "Neon Indian",
+      "Toro y Moi",
+      "Memory Tapes",
+      "Small Black"
+    ],
+    "albums": [
+      {
+        "t": "Psychic Chasms",
+        "a": "Neon Indian"
+      },
+      {
+        "t": "Causers of This",
+        "a": "Toro y Moi"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Feel It All Around",
+        "a": "Washed Out",
+        "why": "A slowed loop of Gary Low’s 1983 Italo single ‘I Want You’; later the Portlandia theme."
+      },
+      {
+        "t": "Deadbeat Summer",
+        "a": "Neon Indian"
+      },
+      {
+        "t": "Blessa",
+        "a": "Toro y Moi"
+      }
+    ],
+    "tempo": "80–110 BPM"
   }
 ]
