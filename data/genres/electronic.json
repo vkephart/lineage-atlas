@@ -2186,5 +2186,66 @@
       }
     ],
     "tempo": "125–140 BPM"
+  },
+  {
+    "id": "vaporwave",
+    "name": "Vaporwave",
+    "fam": "electronic",
+    "year": 2010,
+    "role": "branch",
+    "yOff": -160,
+    "aka": "Eccojams · Mallsoft",
+    "def": "Internet-born sample music that slows, loops and smears 1980s and 90s smooth jazz, muzak, R&B and corporate jingles into an uneasy nostalgic haze, part tribute to consumer culture and part satire of it.",
+    "traits": [
+      {
+        "k": "Production",
+        "v": "Chopped-and-screwed pitch-down, looping, skipping edits and reverb applied to found recordings."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Smooth-jazz saxophone, digital electric piano, hold music and early-CD sheen."
+      },
+      {
+        "k": "Song structure",
+        "v": "Short loops repeated until they turn hypnotic or eerie."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Tumblr, Bandcamp and YouTube; anonymous aliases, Japanese text, shopping-mall and early-web imagery."
+      }
+    ],
+    "why": "Producers who grew up online treated the forgotten background music of the 1980s and 90s as raw material, the way hip-hop had treated funk breaks.",
+    "artists": [
+      "Macintosh Plus",
+      "Chuck Person",
+      "James Ferraro",
+      "Blank Banshee",
+      "Saint Pepsi"
+    ],
+    "albums": [
+      {
+        "t": "Floral Shoppe",
+        "a": "Macintosh Plus"
+      },
+      {
+        "t": "Chuck Person’s Eccojams Vol. 1",
+        "a": "Chuck Person"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "リサフランク420 / 現代のコンピュー",
+        "a": "Macintosh Plus"
+      },
+      {
+        "t": "Nobody Here",
+        "a": "Oneohtrix Point Never",
+        "why": "A 2009 YouTube loop of Chris de Burgh’s ‘The Lady in Red’, posted as sunsetcorp: the first eccojam many people saw."
+      },
+      {
+        "t": "Global Lunch",
+        "a": "James Ferraro"
+      }
+    ]
   }
 ]

@@ -5290,5 +5290,278 @@
     "rel": "production",
     "strength": 0.4,
     "note": "Hyperpop reuses brostep's distorted bass drops and maximal sound design inside pop songs."
+  },
+  {
+    "from": "baroquepop",
+    "to": "lofi",
+    "rel": "origin",
+    "strength": 0.45,
+    "note": "After Smile collapsed, the Beach Boys cut Smiley Smile (1967) on a home rig: studio pop’s first deliberate retreat to the house, and lo-fi’s usual prototype."
+  },
+  {
+    "from": "punk",
+    "to": "lofi",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Punk’s do-it-yourself rule moved from the self-pressed single to the home cassette in the 1980s."
+  },
+  {
+    "from": "garage",
+    "to": "lofi",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Garage rock’s cheap-studio rawness is the sound lo-fi later chose on purpose."
+  },
+  {
+    "from": "lofi",
+    "to": "indie",
+    "rel": "production",
+    "strength": 0.6,
+    "note": "Pavement, Sebadoh and Guided by Voices made four-track hiss the default sound of early-90s indie rock."
+  },
+  {
+    "from": "lofi",
+    "to": "indiepop",
+    "rel": "scene",
+    "strength": 0.45,
+    "note": "Beat Happening and K Records tied home taping to indie pop’s amateur ideal."
+  },
+  {
+    "from": "lofi",
+    "to": "hypnagogic",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Ariel Pink, an avowed R. Stevie Moore disciple, turned cassette murk into a way of remembering pop."
+  },
+  {
+    "from": "lofi",
+    "to": "bedroompop",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Bedroom pop is lo-fi’s home-recording premise after the laptop replaced the four-track."
+  },
+  {
+    "from": "lofi",
+    "to": "chillwave",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "Chillwave’s other name was glo-fi: cassette saturation and wobble, applied to synths and samples."
+  },
+  {
+    "from": "lofi",
+    "to": "lofihiphop",
+    "rel": "production",
+    "strength": 0.35,
+    "note": "It borrows the name and the premise (hiss, wobble and crackle kept as texture), though its own roots are in beat-making, not indie rock."
+  },
+  {
+    "from": "softrock",
+    "to": "hypnagogic",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "1970s AM-radio soft rock is the half-remembered source Ariel Pink keeps returning to."
+  },
+  {
+    "from": "synthpop",
+    "to": "hypnagogic",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "1980s synth-pop hooks, recalled through tape murk instead of revived cleanly."
+  },
+  {
+    "from": "newage",
+    "to": "hypnagogic",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "James Ferraro, Emeralds and Oneohtrix Point Never reclaimed new age’s cassette-era synth washes."
+  },
+  {
+    "from": "neopsych",
+    "to": "hypnagogic",
+    "rel": "scene",
+    "strength": 0.45,
+    "note": "Animal Collective signed Ariel Pink to Paw Tracks, and the style was first heard as a lo-fi turn in neo-psychedelia."
+  },
+  {
+    "from": "hypnagogic",
+    "to": "hauntology",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "Critics paired them as American and British answers to the same question: pop built from decaying media memory."
+  },
+  {
+    "from": "hypnagogic",
+    "to": "chillwave",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Chillwave is hypnagogic pop with a steady beat and a clean hook; Ariel Pink was called its godfather."
+  },
+  {
+    "from": "hypnagogic",
+    "to": "vaporwave",
+    "rel": "origin",
+    "strength": 0.75,
+    "note": "Daniel Lopatin and James Ferraro, both hypnagogic figures, made vaporwave’s two founding records."
+  },
+  {
+    "from": "hypnagogic",
+    "to": "bedroompop",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Mac DeMarco’s chorus-warbled guitar and home-taped looseness run back through Ariel Pink."
+  },
+  {
+    "from": "synthpop",
+    "to": "chillwave",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Chillwave slows synth-pop’s pads and drum machines and blurs them with reverb."
+  },
+  {
+    "from": "dreampop",
+    "to": "chillwave",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Reverb-sunk vocals and soft-focus haze, moved from guitars to synths."
+  },
+  {
+    "from": "indietronica",
+    "to": "chillwave",
+    "rel": "production",
+    "strength": 0.5,
+    "note": "The one-person laptop method; before the name arrived these records were filed as indietronica."
+  },
+  {
+    "from": "neopsych",
+    "to": "chillwave",
+    "rel": "stylistic",
+    "strength": 0.5,
+    "note": "Panda Bear’s Person Pitch (2007), looped samples under reverb-drenched harmonies, was the immediate model."
+  },
+  {
+    "from": "idm",
+    "to": "chillwave",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Boards of Canada’s detuned, sun-faded synths are its clearest sonic ancestor."
+  },
+  {
+    "from": "italodisco",
+    "to": "chillwave",
+    "rel": "production",
+    "strength": 0.35,
+    "note": "Washed Out’s ‘Feel It All Around’ is a slowed loop of Gary Low’s Italo single ‘I Want You’."
+  },
+  {
+    "from": "insthiphop",
+    "to": "chillwave",
+    "rel": "production",
+    "strength": 0.35,
+    "note": "Toro y Moi and Washed Out built tracks the Dilla way, from looped, side-chained samples."
+  },
+  {
+    "from": "chillwave",
+    "to": "bedroompop",
+    "rel": "stylistic",
+    "strength": 0.6,
+    "note": "Chillwave made the solo laptop producer with a soft voice a pop format, which bedroom pop inherited."
+  },
+  {
+    "from": "chillwave",
+    "to": "vaporwave",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "Vaporwave began as chillwave’s ironic shadow on the same blogs, keeping the samples and dropping the songs."
+  },
+  {
+    "from": "chillwave",
+    "to": "lofihiphop",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "The same hazy nostalgia and side-chained warmth, carried over once the online audience moved from blogs to beat streams."
+  },
+  {
+    "from": "screwed",
+    "to": "vaporwave",
+    "rel": "production",
+    "strength": 0.65,
+    "note": "Eccojams apply DJ Screw’s slow-and-chop method to 1980s pop."
+  },
+  {
+    "from": "newage",
+    "to": "vaporwave",
+    "rel": "production",
+    "strength": 0.4,
+    "note": "New age and smooth-jazz cassettes are prime source material."
+  },
+  {
+    "from": "hauntology",
+    "to": "vaporwave",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "The same mourning for lost futures, moved from British public television to American malls and office software."
+  },
+  {
+    "from": "vaporwave",
+    "to": "futurefunk",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Future funk is vaporwave’s upbeat offshoot: the same sample-flipping, sped up for dancing."
+  },
+  {
+    "from": "vaporwave",
+    "to": "lofihiphop",
+    "rel": "scene",
+    "strength": 0.45,
+    "note": "The looped anime visuals, VHS nostalgia and YouTube-channel culture came across from vaporwave."
+  },
+  {
+    "from": "hiphop",
+    "to": "insthiphop",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "The producer’s beat, released without the MC."
+  },
+  {
+    "from": "triphop",
+    "to": "insthiphop",
+    "rel": "scene",
+    "strength": 0.55,
+    "note": "Mo’ Wax issued DJ Shadow and DJ Krush alongside the Bristol sound; in the mid-90s the two were one conversation."
+  },
+  {
+    "from": "insthiphop",
+    "to": "lofihiphop",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Dilla’s Donuts and Nujabes’s Modal Soul are the templates: short, swung, sample-led instrumentals."
+  },
+  {
+    "from": "triphop",
+    "to": "lofihiphop",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Trip-hop first made slowed hip-hop breaks and vinyl crackle into home-listening music."
+  },
+  {
+    "from": "cool",
+    "to": "lofihiphop",
+    "rel": "production",
+    "strength": 0.4,
+    "note": "Soft-toned jazz piano, guitar and trumpet, sampled or replayed, supply its harmony."
+  },
+  {
+    "from": "ambient",
+    "to": "lofihiphop",
+    "rel": "bridge",
+    "strength": 0.35,
+    "note": "It works as Eno’s ambient did: music designed to sit under study or work without demanding attention."
+  },
+  {
+    "from": "lofihiphop",
+    "to": "bedroompop",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "The same SoundCloud bedrooms and playlists; Powfu’s ‘death bed’ loops beabadoobee’s ‘Coffee’."
   }
 ]
