@@ -439,7 +439,7 @@
     "steps": [
       {
         "id": "baroquepop",
-        "text": "In 1967 the Beach Boys abandon the orchestral Smile and cut Smiley Smile at Brian Wilson’s house on borrowed radio gear. Studio pop’s most ambitious band makes the first famous record that sounds like a home demo."
+        "text": "In 1967 the Beach Boys abandon the orchestral Smile and cut Smiley Smile at Brian Wilson’s house on radio broadcast gear. Studio pop’s most ambitious band makes the first famous record that sounds like a home demo."
       },
       {
         "id": "lofi",
@@ -454,16 +454,12 @@
         "text": "That same summer, laptop producers add a steady beat and a clean hook. Washed Out, Neon Indian and Toro y Moi simulate the tape wobble in software, and for a while the style is also called glo-fi."
       },
       {
-        "id": "insthiphop",
-        "text": "Hip-hop had reached the same texture by another road. DJ Shadow, J Dilla, Madlib and Nujabes released beats without rappers, built from dusty records on samplers that kept the crackle, and chillwave’s producers were listening."
+        "id": "bedroompop",
+        "text": "By the mid-2010s the laptop has replaced the four-track and streaming has replaced the cassette club. Bedroom pop keeps lo-fi’s closeness and home-made grain, and critics use the two words almost interchangeably."
       },
       {
         "id": "lofihiphop",
-        "text": "On SoundCloud around 2014 those beat tapes shrink into two-minute loops of jazz chords, soft drums and added vinyl noise. From 2017 a looping animation of a girl at her desk streams them around the clock as ‘beats to relax/study to’."
-      },
-      {
-        "id": "bedroompop",
-        "text": "By the mid-2010s the laptop has replaced the four-track and streaming has replaced the cassette club. Bedroom pop keeps lo-fi’s closeness and sings over it; in 2020 Powfu’s ‘death bed’ put a lo-fi beat and beabadoobee’s ‘Coffee’ in the US Top 40."
+        "text": "Hip-hop reached the same texture by another road, through the sampler beat tapes of J Dilla, Madlib and Nujabes. Around 2014 SoundCloud producers shrink them into two-minute loops of jazz chords and vinyl crackle, and from 2017 a 24-hour YouTube stream offers them as ‘beats to relax/study to’."
       }
     ]
   }

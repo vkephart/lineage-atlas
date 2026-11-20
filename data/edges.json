@@ -5294,7 +5294,7 @@
   {
     "from": "baroquepop",
     "to": "lofi",
-    "rel": "origin",
+    "rel": "production",
     "strength": 0.45,
     "note": "After Smile collapsed, the Beach Boys cut Smiley Smile and Wild Honey (both 1967) in Brian Wilson’s makeshift home studio: studio pop’s first deliberate retreat to the house, and lo-fi’s usual prototype."
   },
@@ -5401,7 +5401,7 @@
     "to": "vaporwave",
     "rel": "origin",
     "strength": 0.75,
-    "note": "Daniel Lopatin and James Ferraro, both hypnagogic figures, made vaporwave’s two founding records."
+    "note": "Daniel Lopatin and James Ferraro, both hypnagogic figures, made two of vaporwave’s founding records, Eccojams Vol. 1 and Far Side Virtual."
   },
   {
     "from": "hypnagogic",
@@ -5457,7 +5457,7 @@
     "to": "chillwave",
     "rel": "production",
     "strength": 0.35,
-    "note": "Toro y Moi and Washed Out built tracks the Dilla way, from looped, side-chained samples."
+    "note": "J Dilla’s Donuts was a stated influence on early Toro y Moi, and chillwave tracks are built the beat-maker’s way, from short looped samples."
   },
   {
     "from": "chillwave",
