@@ -5296,7 +5296,7 @@
     "to": "lofi",
     "rel": "origin",
     "strength": 0.45,
-    "note": "After Smile collapsed, the Beach Boys cut Smiley Smile (1967) on a home rig: studio pop’s first deliberate retreat to the house, and lo-fi’s usual prototype."
+    "note": "After Smile collapsed, the Beach Boys cut Smiley Smile and Wild Honey (both 1967) in Brian Wilson’s makeshift home studio: studio pop’s first deliberate retreat to the house, and lo-fi’s usual prototype."
   },
   {
     "from": "punk",
@@ -5338,7 +5338,7 @@
     "to": "bedroompop",
     "rel": "origin",
     "strength": 0.7,
-    "note": "Bedroom pop is lo-fi’s home-recording premise after the laptop replaced the four-track."
+    "note": "Bedroom pop is lo-fi’s home-recording premise after the laptop replaced the four-track; critics treat the two terms as near-synonyms."
   },
   {
     "from": "lofi",
@@ -5352,7 +5352,7 @@
     "to": "lofihiphop",
     "rel": "production",
     "strength": 0.35,
-    "note": "It borrows the name and the premise (hiss, wobble and crackle kept as texture), though its own roots are in beat-making, not indie rock."
+    "note": "The name and the premise are shared (hiss, wobble and crackle kept as texture), but the roots are in beat-making, where ‘lo-fi’ was already an effect button on the SP samplers."
   },
   {
     "from": "softrock",
@@ -5534,7 +5534,7 @@
     "to": "lofihiphop",
     "rel": "origin",
     "strength": 0.8,
-    "note": "Dilla’s Donuts and Nujabes’s Modal Soul are the templates: short, swung, sample-led instrumentals."
+    "note": "Donuts, Madvillainy and Nujabes’s Samurai Champloo score are the shared touchstones: short, swung, sample-led beats from the 2000s underground."
   },
   {
     "from": "triphop",

@@ -198,7 +198,8 @@
     "powerpop"
   ],
   "Todd Rundgren": [
-    "powerpop"
+    "powerpop",
+    "lofi"
   ],
   "Cheap Trick": [
     "skinnytie",
@@ -1206,7 +1207,8 @@
     "contempornb"
   ],
   "MF DOOM": [
-    "hiphop"
+    "hiphop",
+    "insthiphop"
   ],
   "J Dilla": [
     "insthiphop",
@@ -2818,5 +2820,50 @@
   ],
   "Chillhop Music": [
     "lofihiphop"
+  ],
+  "Jandek": [
+    "lofi"
+  ],
+  "Half Japanese": [
+    "lofi"
+  ],
+  "Chris Knox": [
+    "lofi"
+  ],
+  "The Cleaners from Venus": [
+    "lofi"
+  ],
+  "Neutral Milk Hotel": [
+    "indie",
+    "lofi"
+  ],
+  "Silver Jews": [
+    "indie",
+    "lofi"
+  ],
+  "Smog": [
+    "lofi",
+    "indie"
+  ],
+  "Royal Trux": [
+    "noiserock",
+    "lofi"
+  ],
+  "Young Marble Giants": [
+    "postpunk",
+    "lofi"
+  ],
+  "Madvillain": [
+    "hiphop",
+    "insthiphop"
+  ],
+  "Boy Pablo": [
+    "bedroompop"
+  ],
+  "Cuco": [
+    "bedroompop"
+  ],
+  "Jakob Ogawa": [
+    "bedroompop"
   ]
 }
