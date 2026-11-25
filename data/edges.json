@@ -5590,7 +5590,7 @@
     "to": "reggaeton",
     "rel": "origin",
     "strength": 0.85,
-    "note": "Reggaeton's dembow is the drum pattern of Shabba Ranks' 'Dem Bow' riddim, looped under Spanish lyrics by way of Panama's reggae en español."
+    "note": "Reggaeton's dembow descends from the Steely & Clevie riddim behind Shabba Ranks' 'Dem Bow', re-versioned for Spanish-language deejays in Panama and New York and then looped in San Juan."
   },
   {
     "from": "hiphop",
@@ -5675,13 +5675,6 @@
     "rel": "stylistic",
     "strength": 0.45,
     "note": "The four-on-the-floor frame and the DJ-mix format come straight from house."
-  },
-  {
-    "from": "afrobeat",
-    "to": "afrohouse",
-    "rel": "stylistic",
-    "strength": 0.35,
-    "note": "Fela's interlocking percussion and chanted vocals are a standing reference for Afro house drum programming."
   },
   {
     "from": "afrohouse",

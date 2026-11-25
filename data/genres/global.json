@@ -1376,7 +1376,7 @@
     "year": 1936,
     "role": "foundational",
     "yOff": 190,
-    "aka": "Conjunto · Música Norteña · Corrido · Sierreño · Regional Mexican",
+    "aka": "Conjunto · Música Norteña · Corrido · Sierreño",
     "def": "The accordion-and-bajo-sexto music of the Texas–Mexico border — polkas, waltzes and rancheras for dancing, and the corrido, a narrative ballad that reports on outlaws, migrants and smugglers.",
     "traits": [
       {
@@ -1508,7 +1508,7 @@
     "traits": [
       {
         "k": "Rhythm / groove",
-        "v": "The dembow: a four-on-the-floor kick against a syncopated 3+3+2 snare, lifted from Shabba Ranks' 'Dem Bow' riddim."
+        "v": "The dembow: a four-on-the-floor kick against a syncopated 3+3+2 snare, named after Shabba Ranks' 'Dem Bow' (1990) and looped from versions of the Steely & Clevie riddim behind it."
       },
       {
         "k": "Vocal approach",
@@ -1583,7 +1583,7 @@
       },
       {
         "k": "Scene / context",
-        "v": "Seo Taiji and Boys' 'Nan Arayo' (1992) brought new jack swing and rap to Korean television; SM, JYP and YG then built the trainee system, launching H.O.T. in 1996."
+        "v": "Seo Taiji and Boys' 'Nan Arayo' (1992) brought new jack swing and rap to Korean television; SM Entertainment launched H.O.T. in 1996, and SM, YG and JYP built the trainee system around that model."
       }
     ],
     "why": "Agencies turned the imported hip-hop and R&B of 1992 into a training and production system, so the sound is defined less by one beat than by how tightly song, voice and dance are engineered together.",
@@ -1680,7 +1680,7 @@
       },
       {
         "t": "Move",
-        "a": "Adam Port, Stryv & Keinemusik"
+        "a": "Adam Port, Stryv & Keinemusik feat. Orso & Malachiii"
       }
     ],
     "tempo": "118–125 BPM"
@@ -1722,7 +1722,7 @@
     ],
     "albums": [
       {
-        "t": "God's Window",
+        "t": "Gods Window Pt. 1",
         "a": "Thakzin"
       }
     ],
@@ -1738,10 +1738,10 @@
       },
       {
         "t": "Uzizwa Kanjan",
-        "a": "Jazzworx, Thukuthela & MaWhoo"
+        "a": "Jazzworx, Thukuthela, MaWhoo & GL_Ceejay"
       }
     ],
-    "tempo": "108–120 BPM"
+    "tempo": "113–120 BPM"
   },
   {
     "id": "corridostumbados",
