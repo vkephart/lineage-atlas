@@ -1310,5 +1310,503 @@
       }
     ],
     "tempo": "85–110 BPM"
+  },
+  {
+    "id": "son",
+    "name": "Son Cubano",
+    "fam": "global",
+    "year": 1918,
+    "role": "foundational",
+    "yOff": 60,
+    "aka": "Son · Son Montuno",
+    "def": "Cuba's foundational dance-song form — Spanish-derived verse and African-derived call-and-response over the clave, played by sextets and septets of tres, guitar, bongó, maracas, bass and, later, trumpet.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Everything hangs on the two-bar son clave; the bass anticipates the beat while bongó and maracas subdivide."
+      },
+      {
+        "k": "Song structure",
+        "v": "A sung verse section, then the montuno: an open-ended vamp where a lead singer improvises against a fixed chorus."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "The bright doubled strings of the tres over guitar and hand percussion, with a trumpet added when sextets became septets in the late 1920s."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Rural eastern Cuba in the late 19th century, Havana by about 1910. A quartet recorded sones for Columbia around 1917; the Sexteto Habanero Godínez's Victor sides of February 1918 are the first firmly dated, and Victor's 1925–28 sessions with the Sexteto Habanero and Trío Matamoros fixed the canon."
+      }
+    ],
+    "why": "It bound the Spanish song and the African drum ensemble into one clave-led form, and nearly every later Cuban and New York Latin style rearranges it.",
+    "artists": [
+      "Sexteto Habanero",
+      "Trío Matamoros",
+      "Septeto Nacional",
+      "Arsenio Rodríguez",
+      "Benny Moré"
+    ],
+    "albums": [
+      {
+        "t": "Buena Vista Social Club",
+        "a": "Buena Vista Social Club"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Son de la loma",
+        "a": "Trío Matamoros",
+        "why": "Recorded for Victor in 1928 and still the form's calling card."
+      },
+      {
+        "t": "Échale salsita",
+        "a": "Septeto Nacional"
+      },
+      {
+        "t": "Chan Chan",
+        "a": "Buena Vista Social Club"
+      }
+    ],
+    "tempo": "80–125 BPM"
+  },
+  {
+    "id": "norteno",
+    "name": "Norteño",
+    "fam": "global",
+    "year": 1936,
+    "role": "foundational",
+    "yOff": 190,
+    "aka": "Conjunto · Música Norteña · Corrido · Sierreño",
+    "def": "The accordion-and-bajo-sexto music of the Texas–Mexico border — polkas, waltzes and rancheras for dancing, and the corrido, a narrative ballad that reports on outlaws, migrants and smugglers.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Polka's oom-pah in 2/4 and the waltz in 3/4, driven by bajo sexto strums and a string bass or tololoche."
+      },
+      {
+        "k": "Melody",
+        "v": "Button accordion in parallel thirds answering nasal, close-harmony duet vocals."
+      },
+      {
+        "k": "Song structure",
+        "v": "Strophic corridos: a story told verse by verse with no chorus, opening with a date or place and closing with a farewell."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Grew from the polkas of German, Czech and Polish settlers meeting Mexican song in the late 19th century. Solo accordionists were recording by 1930; Narciso Martínez and Santiago Almeida's 1936 Bluebird sides set the accordion and bajo sexto pairing. Sierreño later swapped the accordion for requinto guitars."
+      }
+    ],
+    "why": "Two portable instruments and a song form built for carrying news gave working people on both sides of the border a music that travelled with them.",
+    "artists": [
+      "Narciso Martínez",
+      "Los Alegres de Terán",
+      "Los Tigres del Norte",
+      "Ramón Ayala",
+      "Ariel Camacho"
+    ],
+    "albums": [
+      {
+        "t": "Contrabando y Traición",
+        "a": "Los Tigres del Norte"
+      },
+      {
+        "t": "Jefe de Jefes",
+        "a": "Los Tigres del Norte"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "La Chicharronera",
+        "a": "Narciso Martínez",
+        "why": "The 1936 polka that fixed accordion and bajo sexto as the conjunto's core."
+      },
+      {
+        "t": "Contrabando y Traición",
+        "a": "Los Tigres del Norte",
+        "why": "The smuggling ballad that opened the modern narcocorrido."
+      },
+      {
+        "t": "Tragos Amargos",
+        "a": "Ramón Ayala y Sus Bravos del Norte"
+      }
+    ],
+    "tempo": "100–160 BPM",
+    "tempoNote": "Polka and corrido tempos; waltz-time rancheras run slower."
+  },
+  {
+    "id": "salsa",
+    "name": "Salsa",
+    "fam": "global",
+    "year": 1967,
+    "role": "branch",
+    "yOff": -345,
+    "aka": "Salsa Dura · Salsa Brava · Nuyorican Salsa",
+    "def": "Cuban son and mambo rebuilt in New York's Puerto Rican barrios — harder, faster and brass-heavy, with trombones and timbales pushing street-level lyrics over the clave.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Clave-locked layers of congas, timbales and bongó, with cowbell in the montuno, piano guajeos and an anticipated tumbao bass."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Trombone- or trumpet-led horn sections, raw and loud, usually without the mambo big bands' saxophone sections."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "A sonero improvising against a fixed coro in the montuno."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Fania Records signed New York's young bandleaders in the mid-60s; Willie Colón's 'El Malo' (1967) set the tone and 'salsa' became the trade name in the early 70s. Bad Bunny's 'BAILE INoLVIDABLE' put it back on global charts in 2025."
+      }
+    ],
+    "why": "A generation raised on son, mambo, jazz and soul needed one sound for being Latino in New York, and Fania sold it to the whole Spanish-speaking world.",
+    "artists": [
+      "Willie Colón",
+      "Héctor Lavoe",
+      "Celia Cruz",
+      "Rubén Blades",
+      "Fania All-Stars"
+    ],
+    "albums": [
+      {
+        "t": "Siembra",
+        "a": "Willie Colón & Rubén Blades"
+      },
+      {
+        "t": "Live at the Cheetah, Vol. 1",
+        "a": "Fania All-Stars"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Pedro Navaja",
+        "a": "Willie Colón & Rubén Blades",
+        "why": "A seven-minute street story from 'Siembra', Fania's best-selling album."
+      },
+      {
+        "t": "Quimbara",
+        "a": "Celia Cruz & Johnny Pacheco"
+      },
+      {
+        "t": "El Cantante",
+        "a": "Héctor Lavoe"
+      }
+    ],
+    "tempo": "160–220 BPM",
+    "tempoNote": "Counted at the dancers' pulse; track databases often list half these figures."
+  },
+  {
+    "id": "reggaeton",
+    "name": "Reggaeton",
+    "fam": "global",
+    "fam2": "hiphop",
+    "year": 1993,
+    "role": "hybrid",
+    "yOff": 160,
+    "aka": "Reggaetón · Reguetón · Underground · Urbano Latino",
+    "def": "Puerto Rico's fusion of Jamaican dancehall riddims and Spanish-language rap — the looping dembow drum pattern under sung-rapped hooks, built by mixtape DJs and now Latin pop's default beat.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "The dembow: a four-on-the-floor kick against a syncopated 3+3+2 snare, named after Shabba Ranks' 'Dem Bow' (1990) and looped from versions of the Steely & Clevie riddim behind it."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Rapped verses and melodic, often Auto-Tuned hooks aimed at the dancefloor."
+      },
+      {
+        "k": "Production",
+        "v": "Sampled dancehall riddims and hip-hop breaks on the early mixtapes, then glossy synth-led productions from the 2000s on."
+      },
+      {
+        "k": "Scene / context",
+        "v": "San Juan's 'underground' cassettes of the early 90s — DJ Playero's 'Playero 37' (1993) and The Noise — copied hand to hand; 'Gasolina' took the sound worldwide in 2004."
+      }
+    ],
+    "why": "One portable drum pattern let rappers and singers share the same track, turning a mixtape scene into the common rhythm of Spanish-language pop.",
+    "artists": [
+      "Daddy Yankee",
+      "Tego Calderón",
+      "Ivy Queen",
+      "Don Omar",
+      "Bad Bunny"
+    ],
+    "albums": [
+      {
+        "t": "Barrio Fino",
+        "a": "Daddy Yankee"
+      },
+      {
+        "t": "Un Verano Sin Ti",
+        "a": "Bad Bunny"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Gasolina",
+        "a": "Daddy Yankee",
+        "why": "The 2004 single that carried reggaeton out of Puerto Rico."
+      },
+      {
+        "t": "Quiero Bailar",
+        "a": "Ivy Queen"
+      },
+      {
+        "t": "Pa' Que Retozen",
+        "a": "Tego Calderón"
+      }
+    ],
+    "tempo": "85–100 BPM"
+  },
+  {
+    "id": "kpop",
+    "name": "K-Pop",
+    "fam": "global",
+    "fam2": "hiphop",
+    "year": 1992,
+    "role": "hybrid",
+    "yOff": -265,
+    "aka": "Korean Pop · Idol Pop",
+    "def": "South Korea's idol pop — songs assembled from hip-hop, R&B and dance-pop parts, with rap verses, belted bridges and abrupt changes of style written for groups and their choreography.",
+    "traits": [
+      {
+        "k": "Song structure",
+        "v": "Sectional, high-contrast writing: rap verse, sung pre-chorus, a chant or drop chorus and a dance break, often switching style between sections."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Parts split among members by role — main vocal, rapper, sub-vocal — mixing Korean with English hook lines."
+      },
+      {
+        "k": "Production",
+        "v": "Dense, bright tracks co-written internationally, with Scandinavian and US writers supplying songs to Seoul agencies."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Seo Taiji and Boys' 'Nan Arayo' (1992) brought new jack swing and rap to Korean television; SM Entertainment launched H.O.T. in 1996, and SM, YG and JYP built the trainee system around that model."
+      }
+    ],
+    "why": "Agencies turned the imported hip-hop and R&B of 1992 into a training and production system, so the sound is defined less by one beat than by how tightly song, voice and dance are engineered together.",
+    "artists": [
+      "Seo Taiji and Boys",
+      "H.O.T.",
+      "BIGBANG",
+      "Girls' Generation",
+      "BTS"
+    ],
+    "albums": [
+      {
+        "t": "Seo Taiji and Boys",
+        "a": "Seo Taiji and Boys"
+      },
+      {
+        "t": "Love Yourself: Tear",
+        "a": "BTS"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Nan Arayo (I Know)",
+        "a": "Seo Taiji and Boys",
+        "why": "First performed on MBC in April 1992, the usual starting point for K-pop."
+      },
+      {
+        "t": "Gee",
+        "a": "Girls' Generation"
+      },
+      {
+        "t": "DDU-DU DDU-DU",
+        "a": "BLACKPINK"
+      }
+    ],
+    "tempo": "95–130 BPM",
+    "tempoNote": "A production system more than a tempo; ballads and half-time trap tracks sit outside the range."
+  },
+  {
+    "id": "afrohouse",
+    "name": "Afro House",
+    "fam": "global",
+    "fam2": "electronic",
+    "year": 2005,
+    "role": "hybrid",
+    "yOff": -210,
+    "aka": "Afro-House · Afro Tech · South African House",
+    "def": "House music re-centred on African percussion and voice — a steady four-on-the-floor kick under layered hand drums and shakers, minor-key pads and long, soulful vocals.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Four-on-the-floor at deep-house tempo with polyrhythmic conga, djembe and shaker patterns on top."
+      },
+      {
+        "k": "Harmony",
+        "v": "Minor-key deep-house pads and sparse, sustained chords."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Soulful, often chant-like leads and choral responses, in Zulu, Xhosa or English."
+      },
+      {
+        "k": "Scene / context",
+        "v": "House took root in South Africa in the 1990s; Black Coffee's self-titled 2005 debut and 'Home Brewed' (2009) defined the local sound, and Keinemusik's 'Move' (2024) made it a global festival default."
+      }
+    ],
+    "why": "South African producers kept deep house's patience and replaced its drum-machine swing with the hand-drum patterns they grew up with.",
+    "artists": [
+      "Black Coffee",
+      "Culoe De Song",
+      "Da Capo",
+      "Zakes Bantwini",
+      "Keinemusik"
+    ],
+    "albums": [
+      {
+        "t": "Home Brewed",
+        "a": "Black Coffee"
+      },
+      {
+        "t": "Subconsciously",
+        "a": "Black Coffee"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Superman",
+        "a": "Black Coffee feat. Bucie",
+        "why": "The 2009 single that set the template: patient drums and one soulful voice."
+      },
+      {
+        "t": "Osama",
+        "a": "Zakes Bantwini & Kasango"
+      },
+      {
+        "t": "Move",
+        "a": "Adam Port, Stryv, Keinemusik, Orso & Malachiii"
+      }
+    ],
+    "tempo": "118–125 BPM"
+  },
+  {
+    "id": "threestep",
+    "name": "3-Step",
+    "fam": "global",
+    "fam2": "electronic",
+    "year": 2022,
+    "role": "rising",
+    "yOff": 45,
+    "aka": "3 Step · Three-Step · 3Step",
+    "def": "A South African hybrid of Afro house and amapiano built on a broken kick — three drum hits to the bar instead of four — under Afro-tech synths and amapiano's log-drum bass.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "A 4/4 bar with one kick removed, leaving a lurching three-kick pattern under shakers and hand drums."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Afro house percussion and pads joined to amapiano's log drum."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Guest singers from the amapiano and Afro house circuits, such as MaWhoo and Murumba Pitch."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Thakzin developed the pattern around 2020 and 'The Magnificent Dance' (2022) brought national attention; by 2025 it was South Africa's newest dance export, with its authorship publicly disputed."
+      }
+    ],
+    "why": "Dropping a single kick loosened house's grid enough for Afro house and amapiano producers to meet on one rhythm.",
+    "artists": [
+      "Thakzin",
+      "JAZZWRLD & Thukuthela",
+      "Mörda",
+      "Heavy K"
+    ],
+    "albums": [
+      {
+        "t": "Gods Window Pt. 1",
+        "a": "Thakzin"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "The Magnificent Dance",
+        "a": "Thakzin",
+        "why": "The 2022 release that put the three-kick pattern in front of a national audience."
+      },
+      {
+        "t": "Mohigan Sun",
+        "a": "Mörda, Oscar Mbo & Murumba Pitch"
+      },
+      {
+        "t": "Uzizwa Kanjan",
+        "a": "JAZZWRLD, Thukuthela, MaWhoo & GL_Ceejay"
+      }
+    ],
+    "tempo": "113–120 BPM"
+  },
+  {
+    "id": "corridostumbados",
+    "name": "Corridos Tumbados",
+    "fam": "global",
+    "fam2": "hiphop",
+    "year": 2019,
+    "role": "rising",
+    "yOff": 210,
+    "aka": "Trap Corridos · Corridos Bélicos · Corridos Urbanos",
+    "def": "The Mexican corrido retold by a generation raised on trap — sierreño's requinto guitars, tololoche and brass kept acoustic, with hip-hop's slurred flows and first-person swagger in place of the third-person ballad.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Acoustic waltz and polka pulses slapped out on tololoche or tuba, usually with no drum kit; trap supplies the phrasing, not the beat."
+      },
+      {
+        "k": "Melody",
+        "v": "Fast, ornamented requinto runs over twelve-string strums, answered by trombone or charcheta."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Raspy, behind-the-beat delivery borrowed from Latin trap, sung in the first person."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Natanael Cano and the Los Angeles label Rancho Humilde named the style with 'Soy el Diablo' and the album 'Corridos Tumbados' (2019); Peso Pluma took it to the top of global charts in 2023."
+      }
+    ],
+    "why": "Young Mexican and Mexican-American musicians wanted their grandparents' instruments to carry the attitude of the rap they actually listened to.",
+    "artists": [
+      "Natanael Cano",
+      "Peso Pluma",
+      "Junior H",
+      "Fuerza Regida",
+      "Gabito Ballesteros"
+    ],
+    "albums": [
+      {
+        "t": "Corridos Tumbados",
+        "a": "Natanael Cano"
+      },
+      {
+        "t": "Génesis",
+        "a": "Peso Pluma"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Soy El Diablo",
+        "a": "Natanael Cano",
+        "why": "Cano's first corrido tumbado; Bad Bunny joined the remix."
+      },
+      {
+        "t": "Ella Baila Sola",
+        "a": "Eslabon Armado & Peso Pluma",
+        "why": "A sierreño love song with a corrido tumbado twist, and the crossover that topped Billboard's Global 200 in 2023."
+      },
+      {
+        "t": "AMG",
+        "a": "Natanael Cano, Gabito Ballesteros & Peso Pluma"
+      }
+    ],
+    "tempo": "110–155 BPM",
+    "tempoNote": "Much of the repertoire is in waltz time, so the pulse reads faster than it feels."
   }
 ]

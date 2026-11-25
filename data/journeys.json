@@ -322,6 +322,10 @@
         "text": "There they become amapiano — those chords floating over a springy log-drum bassline, the dominant global dance pulse of the 2020s."
       },
       {
+        "id": "threestep",
+        "text": "By 2022 Thakzin and others take one kick out of the bar, and 3-Step — Afro house weight under amapiano's log drum — becomes the next South African export."
+      },
+      {
         "id": "spiritual",
         "text": "Meanwhile spiritual jazz's modal, devotional vamps are picked up half a world away."
       },
@@ -460,6 +464,29 @@
       {
         "id": "lofihiphop",
         "text": "Hip-hop reaches the same texture through J Dilla’s and Nujabes’s beat tapes, cut by 2014 into short loops and streamed from 2017 as ‘beats to relax/study to’."
+      }
+    ]
+  },
+  {
+    "id": "latin",
+    "title": "The Latin Circuit",
+    "subtitle": "From Havana's sextets to San Juan and Los Angeles",
+    "steps": [
+      {
+        "id": "son",
+        "text": "In eastern Cuba, Spanish verse meets the African drum ensemble. By the 1920s Havana's sextets have fixed the form: the clave, the tres and a montuno where singer and chorus trade lines."
+      },
+      {
+        "id": "salsa",
+        "text": "Forty years on, New York's Puerto Rican bandleaders play the same montunos louder and faster, with trombones up front. Fania calls it salsa and sells it across the Spanish-speaking world."
+      },
+      {
+        "id": "reggaeton",
+        "text": "In 1990s San Juan the next generation raps over Jamaican riddims on underground cassettes. The dembow loop replaces the clave on the dancefloor, though salsa's piano and horns keep resurfacing."
+      },
+      {
+        "id": "corridostumbados",
+        "text": "By 2019 urbano's swagger has crossed into Mexico's oldest storytelling form. Natanael Cano and Peso Pluma keep the acoustic guitars and tololoche and sing the corrido like trap."
       }
     ]
   }
