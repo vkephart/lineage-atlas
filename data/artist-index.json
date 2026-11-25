@@ -790,6 +790,7 @@
     "janglepop"
   ],
   "Wednesday": [
+    "countrygaze",
     "grungegaze"
   ],
   "Duster": [
@@ -1381,7 +1382,8 @@
   "Charli XCX": [
     "hyperpop",
     "electroclash",
-    "electropop"
+    "electropop",
+    "electroclashrevival"
   ],
   "100 gecs": [
     "hyperpop"
@@ -2878,5 +2880,351 @@
   ],
   "Kupla": [
     "lofihiphop"
+  ],
+  "Sexteto Habanero": [
+    "son"
+  ],
+  "Trío Matamoros": [
+    "son"
+  ],
+  "Septeto Nacional": [
+    "son"
+  ],
+  "Arsenio Rodríguez": [
+    "son"
+  ],
+  "Benny Moré": [
+    "son"
+  ],
+  "Buena Vista Social Club": [
+    "son"
+  ],
+  "Compay Segundo": [
+    "son"
+  ],
+  "Willie Colón": [
+    "salsa"
+  ],
+  "Héctor Lavoe": [
+    "salsa"
+  ],
+  "Celia Cruz": [
+    "salsa",
+    "son"
+  ],
+  "Rubén Blades": [
+    "salsa"
+  ],
+  "Fania All-Stars": [
+    "salsa"
+  ],
+  "Johnny Pacheco": [
+    "salsa"
+  ],
+  "Eddie Palmieri": [
+    "salsa"
+  ],
+  "Tito Puente": [
+    "salsa",
+    "son"
+  ],
+  "Marc Anthony": [
+    "salsa"
+  ],
+  "Daddy Yankee": [
+    "reggaeton"
+  ],
+  "Tego Calderón": [
+    "reggaeton"
+  ],
+  "Ivy Queen": [
+    "reggaeton"
+  ],
+  "Don Omar": [
+    "reggaeton"
+  ],
+  "DJ Playero": [
+    "reggaeton"
+  ],
+  "Bad Bunny": [
+    "reggaeton",
+    "hiphop",
+    "salsa"
+  ],
+  "J Balvin": [
+    "reggaeton"
+  ],
+  "Karol G": [
+    "reggaeton"
+  ],
+  "Rauw Alejandro": [
+    "reggaeton"
+  ],
+  "Narciso Martínez": [
+    "norteno"
+  ],
+  "Los Alegres de Terán": [
+    "norteno"
+  ],
+  "Los Tigres del Norte": [
+    "norteno"
+  ],
+  "Ramón Ayala": [
+    "norteno"
+  ],
+  "Flaco Jiménez": [
+    "norteno"
+  ],
+  "Ariel Camacho": [
+    "norteno"
+  ],
+  "Chalino Sánchez": [
+    "norteno"
+  ],
+  "Natanael Cano": [
+    "corridostumbados"
+  ],
+  "Peso Pluma": [
+    "corridostumbados"
+  ],
+  "Junior H": [
+    "corridostumbados"
+  ],
+  "Fuerza Regida": [
+    "corridostumbados"
+  ],
+  "Gabito Ballesteros": [
+    "corridostumbados"
+  ],
+  "Eslabon Armado": [
+    "corridostumbados",
+    "norteno"
+  ],
+  "Sahir Montoya": [
+    "corridostumbados",
+    "norteno"
+  ],
+  "Seo Taiji and Boys": [
+    "kpop"
+  ],
+  "H.O.T.": [
+    "kpop"
+  ],
+  "BIGBANG": [
+    "kpop"
+  ],
+  "G-DRAGON": [
+    "kpop",
+    "hiphop"
+  ],
+  "Girls' Generation": [
+    "kpop"
+  ],
+  "BTS": [
+    "kpop"
+  ],
+  "BLACKPINK": [
+    "kpop"
+  ],
+  "NewJeans": [
+    "kpop"
+  ],
+  "TWICE": [
+    "kpop"
+  ],
+  "PSY": [
+    "kpop"
+  ],
+  "Saja Boys": [
+    "kpop"
+  ],
+  "HUNTR/X": [
+    "kpop"
+  ],
+  "Black Coffee": [
+    "afrohouse",
+    "deephouse"
+  ],
+  "Culoe De Song": [
+    "afrohouse"
+  ],
+  "Da Capo": [
+    "afrohouse"
+  ],
+  "Zakes Bantwini": [
+    "afrohouse"
+  ],
+  "Keinemusik": [
+    "afrohouse",
+    "melodictechno"
+  ],
+  "Adam Port": [
+    "afrohouse"
+  ],
+  "Thakzin": [
+    "threestep",
+    "afrohouse"
+  ],
+  "Jazzworx & Thukuthela": [
+    "threestep",
+    "amapiano"
+  ],
+  "Mörda": [
+    "threestep",
+    "afrohouse"
+  ],
+  "Heavy K": [
+    "threestep",
+    "afrohouse"
+  ],
+  "Prince Kaybee": [
+    "afrohouse",
+    "threestep"
+  ],
+  "The Dare": [
+    "electroclashrevival",
+    "indiedance"
+  ],
+  "Snow Strippers": [
+    "electroclashrevival"
+  ],
+  "Frost Children": [
+    "electroclashrevival",
+    "hyperpop"
+  ],
+  "Fcukers": [
+    "electroclashrevival"
+  ],
+  "Slayyyter": [
+    "electroclashrevival",
+    "electropop",
+    "hyperpop"
+  ],
+  "MJ Lenderman": [
+    "countrygaze",
+    "americana"
+  ],
+  "Florry": [
+    "countrygaze",
+    "americana"
+  ],
+  "Greg Freeman": [
+    "countrygaze",
+    "americana"
+  ],
+  "Mind Against": [
+    "melodictechno"
+  ],
+  "ANOTR": [
+    "house"
+  ],
+  "Viagra Boys": [
+    "newpostpunk",
+    "postpunk"
+  ],
+  "sombr": [
+    "altpop",
+    "indiepop"
+  ],
+  "Addison Rae": [
+    "altpop",
+    "electropop"
+  ],
+  "PinkPantheress": [
+    "twostep",
+    "ukgarage",
+    "drumandbass"
+  ],
+  "The Last Dinner Party": [
+    "baroquepop",
+    "artrock"
+  ],
+  "John Cale": [
+    "artrock",
+    "drone",
+    "protopunk"
+  ],
+  "KAYTRANADA": [
+    "house",
+    "altrnb"
+  ],
+  "Dijon": [
+    "altrnb"
+  ],
+  "Cameron Winter": [
+    "singersongwriter"
+  ],
+  "Sam Deep": [
+    "amapiano"
+  ],
+  "DJ Jaivane": [
+    "amapiano"
+  ],
+  "Harry Styles": [
+    "synthpop",
+    "softrock"
+  ],
+  "KI/KI": [
+    "hardtrance",
+    "trance"
+  ],
+  "Marlon Hoffstadt": [
+    "hardtrance",
+    "trance"
+  ],
+  "crushed": [
+    "dreampop",
+    "triphop"
+  ],
+  "Odeal": [
+    "altrnb",
+    "afrobeats"
+  ],
+  "Kim Gordon": [
+    "noiserock"
+  ],
+  "Labrinth": [
+    "altrnb",
+    "electropop"
+  ],
+  "Angine de Poitrine": [
+    "mathrock"
+  ],
+  "GIVĒON": [
+    "contempornb"
+  ],
+  "Boys Noize": [
+    "electro",
+    "techno"
+  ],
+  "Temper City": [
+    "neopsych",
+    "alternative"
+  ],
+  "Olivia Rodrigo": [
+    "poppunk",
+    "altpop"
+  ],
+  "Genesis Owusu": [
+    "hiphop",
+    "funk"
+  ],
+  "underscores": [
+    "hyperpop",
+    "electropop"
+  ],
+  "John Summit": [
+    "techhouse",
+    "house"
+  ],
+  "The Chainsmokers": [
+    "electropop",
+    "house"
+  ],
+  "Clipse": [
+    "hiphop"
+  ],
+  "Pusha T": [
+    "hiphop"
   ]
 }

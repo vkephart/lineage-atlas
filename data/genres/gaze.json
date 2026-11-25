@@ -1092,5 +1092,67 @@
         "a": "Black Country, New Road"
       }
     ]
+  },
+  {
+    "id": "countrygaze",
+    "name": "Countrygaze",
+    "fam": "gaze",
+    "fam2": "roots",
+    "year": 2021,
+    "role": "rising",
+    "yOff": -235,
+    "aka": "Country-Gaze · Alt-Country Shoegaze",
+    "def": "Southern alt-country songwriting played at shoegaze and 90s noise-rock volume — lap steel and twang bending into walls of fuzz, with plain-spoken small-town detail on top.",
+    "traits": [
+      {
+        "k": "Texture / timbre",
+        "v": "Lap or pedal steel smeared with distortion alongside detuned, feedback-heavy guitars."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Conversational and drawled, sometimes cracked or screamed, mixed dry against the noise."
+      },
+      {
+        "k": "Song structure",
+        "v": "Country verse-and-chorus songs that swell into loud, slow, shoegaze-weight codas."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Asheville, North Carolina, around Wednesday and MJ Lenderman; 'Twin Plagues' (2021) put lap steel inside the noise, and 'Bleeds' (2025) turned a nickname into a recognised lane."
+      }
+    ],
+    "why": "Musicians who grew up on both Drive-By Truckers and My Bloody Valentine stopped treating country storytelling and guitar noise as separate vocabularies.",
+    "artists": [
+      "Wednesday",
+      "MJ Lenderman",
+      "Florry",
+      "Greg Freeman"
+    ],
+    "albums": [
+      {
+        "t": "Rat Saw God",
+        "a": "Wednesday"
+      },
+      {
+        "t": "Bleeds",
+        "a": "Wednesday"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Chosen to Deserve",
+        "a": "Wednesday",
+        "why": "A Southern-rock confessional over a riff heavy enough for a shoegaze bill."
+      },
+      {
+        "t": "Townies",
+        "a": "Wednesday"
+      },
+      {
+        "t": "Rudolph",
+        "a": "MJ Lenderman"
+      }
+    ],
+    "tempo": "80–130 BPM"
   }
 ]

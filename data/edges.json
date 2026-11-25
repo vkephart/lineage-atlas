@@ -5563,5 +5563,215 @@
     "rel": "scene",
     "strength": 0.5,
     "note": "The same SoundCloud bedrooms and playlists; Powfu’s ‘death bed’ loops beabadoobee’s ‘Coffee’."
+  },
+  {
+    "from": "son",
+    "to": "salsa",
+    "rel": "origin",
+    "strength": 0.9,
+    "note": "Salsa is son montuno's clave, montuno section and sonero-and-coro form, re-voiced for New York brass."
+  },
+  {
+    "from": "swing",
+    "to": "salsa",
+    "rel": "bridge",
+    "strength": 0.45,
+    "note": "The mambo orchestras of Machito, Tito Puente and Tito Rodríguez were swing big bands over Cuban rhythm; salsa inherited their horn writing."
+  },
+  {
+    "from": "soul",
+    "to": "salsa",
+    "rel": "bridge",
+    "strength": 0.4,
+    "note": "Boogaloo, the mid-60s Nuyorican blend of son montuno with soul and R&B, was the bridge Fania's first bandleaders crossed."
+  },
+  {
+    "from": "dancehall",
+    "to": "reggaeton",
+    "rel": "origin",
+    "strength": 0.85,
+    "note": "Reggaeton's dembow is the drum pattern of Shabba Ranks' 'Dem Bow' riddim, looped under Spanish lyrics by way of Panama's reggae en español."
+  },
+  {
+    "from": "hiphop",
+    "to": "reggaeton",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "San Juan's underground mixtapes put Spanish-language rappers over the riddims, and reggaeton kept rap's verses, crews and rivalries."
+  },
+  {
+    "from": "salsa",
+    "to": "reggaeton",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Reggaeton's artists grew up on salsa and keep folding its piano montunos and horn hooks into dembow tracks, from Tego Calderón to Bad Bunny."
+  },
+  {
+    "from": "norteno",
+    "to": "corridostumbados",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "Corridos tumbados keep the corrido's story form and the sierreño string band of requinto, twelve-string and tololoche."
+  },
+  {
+    "from": "hiphop",
+    "to": "corridostumbados",
+    "rel": "bridge",
+    "strength": 0.6,
+    "note": "Trap supplies the flows, the first-person swagger and the streetwear, though the instruments stay acoustic."
+  },
+  {
+    "from": "reggaeton",
+    "to": "corridostumbados",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Latin urbano's melodic cadences and feature culture carried over; Bad Bunny joined the 'Soy el Diablo' remix in 2019."
+  },
+  {
+    "from": "norteno",
+    "to": "americana",
+    "rel": "scene",
+    "strength": 0.35,
+    "note": "Flaco Jiménez's accordion with Doug Sahm and Ry Cooder, and Los Lobos' norteño sets, put conjunto inside American roots rock."
+  },
+  {
+    "from": "contempornb",
+    "to": "kpop",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "K-pop starts from new jack swing: Seo Taiji and Boys and the first idol groups copied early-90s R&B's swung drum programming and vocal-group format."
+  },
+  {
+    "from": "hiphop",
+    "to": "kpop",
+    "rel": "stylistic",
+    "strength": 0.55,
+    "note": "Idol groups carry designated rappers, and hip-hop beats and fashion have been in the formula since 1992."
+  },
+  {
+    "from": "eurodance",
+    "to": "kpop",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Mid-90s Korean dance groups ran on Eurodance's fast four-on-the-floor and its rapped-verse, sung-chorus format."
+  },
+  {
+    "from": "electropop",
+    "to": "kpop",
+    "rel": "bridge",
+    "strength": 0.45,
+    "note": "From the late 2000s Seoul agencies bought electropop tracks from Scandinavian and US writers, setting the genre's glossy synth-led second wave."
+  },
+  {
+    "from": "deephouse",
+    "to": "afrohouse",
+    "rel": "origin",
+    "strength": 0.7,
+    "note": "Afro house keeps deep house's tempo, pads and patience and replaces its drum-machine swing with hand percussion."
+  },
+  {
+    "from": "house",
+    "to": "afrohouse",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "The four-on-the-floor frame and the DJ-mix format come straight from house."
+  },
+  {
+    "from": "afrobeat",
+    "to": "afrohouse",
+    "rel": "stylistic",
+    "strength": 0.35,
+    "note": "Fela's interlocking percussion and chanted vocals are a standing reference for Afro house drum programming."
+  },
+  {
+    "from": "afrohouse",
+    "to": "amapiano",
+    "rel": "scene",
+    "strength": 0.45,
+    "note": "The two share South Africa's clubs, vocalists and producers, and many DJs play both in one set."
+  },
+  {
+    "from": "afrohouse",
+    "to": "organichouse",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "Organic house borrows Afro house's hand-drum layering and slows it further."
+  },
+  {
+    "from": "afrohouse",
+    "to": "melodictechno",
+    "rel": "scene",
+    "strength": 0.4,
+    "note": "Afro house and melodic techno share festival stages, labels and long-build arrangements."
+  },
+  {
+    "from": "afrohouse",
+    "to": "threestep",
+    "rel": "origin",
+    "strength": 0.8,
+    "note": "3-Step is Afro house with one kick taken out of the bar."
+  },
+  {
+    "from": "amapiano",
+    "to": "threestep",
+    "rel": "origin",
+    "strength": 0.65,
+    "note": "The log-drum bass, shakers and vocalists come from amapiano."
+  },
+  {
+    "from": "electroclash",
+    "to": "electroclashrevival",
+    "rel": "revival",
+    "strength": 0.85,
+    "note": "The revival reuses electroclash's distorted synth bass, drum-machine stomp and deadpan sleaze almost unchanged."
+  },
+  {
+    "from": "indiedance",
+    "to": "electroclashrevival",
+    "rel": "revival",
+    "strength": 0.5,
+    "note": "The Dare's cowbell and talk-sung hooks pick up directly from DFA-era dance-punk."
+  },
+  {
+    "from": "frenchtouch",
+    "to": "electroclashrevival",
+    "rel": "stylistic",
+    "strength": 0.4,
+    "note": "Blog-house's clipped, overdriven French electro is the other half of the palette."
+  },
+  {
+    "from": "hyperpop",
+    "to": "electroclashrevival",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "Slayyyter and Frost Children came up through hyperpop, and Charli xcx's 'Brat' joined the two crowds."
+  },
+  {
+    "from": "shoegaze",
+    "to": "countrygaze",
+    "rel": "origin",
+    "strength": 0.6,
+    "note": "The wall of distorted guitar and the swelling, buried dynamics come from shoegaze."
+  },
+  {
+    "from": "americana",
+    "to": "countrygaze",
+    "rel": "bridge",
+    "strength": 0.65,
+    "note": "Lap steel, Southern storytelling and the alt-country song form come from Americana."
+  },
+  {
+    "from": "grungegaze",
+    "to": "countrygaze",
+    "rel": "scene",
+    "strength": 0.5,
+    "note": "Both belong to the 2020s heavy-gaze wave and share bills, labels and playlists."
+  },
+  {
+    "from": "indie",
+    "to": "countrygaze",
+    "rel": "stylistic",
+    "strength": 0.45,
+    "note": "The slack, lo-fi looseness of 90s indie rock holds the country and the noise together."
   }
 ]

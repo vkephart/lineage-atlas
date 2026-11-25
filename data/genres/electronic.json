@@ -2246,5 +2246,68 @@
         "a": "James Ferraro"
       }
     ]
+  },
+  {
+    "id": "electroclashrevival",
+    "name": "Electroclash Revival",
+    "fam": "electronic",
+    "year": 2022,
+    "role": "rising",
+    "yOff": -200,
+    "aka": "Indie Sleaze Revival · New Electroclash · Bloghouse Revival",
+    "def": "The 2000s electroclash and blog-house sound returned as post-lockdown party music — distorted synth bass, cowbell and drum-machine punch under shouted, deadpan, deliberately crass vocals.",
+    "traits": [
+      {
+        "k": "Rhythm / groove",
+        "v": "Four-on-the-floor or electro-house stomp with dance-punk cowbell and clipped snares."
+      },
+      {
+        "k": "Texture / timbre",
+        "v": "Overdriven sawtooth bass, cheap-sounding synth stabs and loud, compressed mixes."
+      },
+      {
+        "k": "Vocal approach",
+        "v": "Talk-sung or chanted hooks, sardonic and sexual, in the Peaches and LCD Soundsystem line."
+      },
+      {
+        "k": "Scene / context",
+        "v": "Downtown New York parties after lockdown; The Dare's 'Girls' (2022) was the flashpoint, Charli xcx's 'Brat' era carried it into pop, and Slayyyter's 'WOR$T GIRL IN AMERICA' (2026) made it an album-length statement."
+      }
+    ],
+    "why": "After lockdown a new club generation wanted music that sounded like a messy night out, and the trashy electro of twenty years earlier was the nearest model.",
+    "artists": [
+      "The Dare",
+      "Snow Strippers",
+      "Frost Children",
+      "Fcukers",
+      "Slayyyter"
+    ],
+    "albums": [
+      {
+        "t": "What's Wrong with New York?",
+        "a": "The Dare"
+      },
+      {
+        "t": "WOR$T GIRL IN AMERICA",
+        "a": "Slayyyter"
+      }
+    ],
+    "tracks": [
+      {
+        "t": "Girls",
+        "a": "The Dare",
+        "why": "A two-minute shout-along that restarted the style in 2022."
+      },
+      {
+        "t": "Guess",
+        "a": "Charli xcx",
+        "why": "Produced by The Dare — the revival's sound on a pop star's record."
+      },
+      {
+        "t": "DANCE...",
+        "a": "Slayyyter"
+      }
+    ],
+    "tempo": "120–140 BPM"
   }
 ]
