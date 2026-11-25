@@ -3093,6 +3093,8 @@
     "hyperpop"
   ],
   "Fcukers": [
+    "house",
+    "ukgarage",
     "electroclashrevival"
   ],
   "Slayyyter": [
@@ -3102,15 +3104,15 @@
   ],
   "MJ Lenderman": [
     "countrygaze",
-    "americana"
+    "americana",
+    "indie"
   ],
   "Florry": [
-    "countrygaze",
     "americana"
   ],
   "Greg Freeman": [
-    "countrygaze",
-    "americana"
+    "americana",
+    "indie"
   ],
   "Mind Against": [
     "melodictechno"
@@ -3123,17 +3125,19 @@
     "postpunk"
   ],
   "sombr": [
-    "altpop",
-    "indiepop"
+    "indiepop",
+    "bedroompop"
   ],
   "Addison Rae": [
     "altpop",
-    "electropop"
+    "electropop",
+    "triphop"
   ],
   "PinkPantheress": [
     "twostep",
     "ukgarage",
-    "drumandbass"
+    "drumandbass",
+    "bedroompop"
   ],
   "The Last Dinner Party": [
     "baroquepop",
@@ -3181,7 +3185,8 @@
     "afrobeats"
   ],
   "Kim Gordon": [
-    "noiserock"
+    "noiserock",
+    "industrial"
   ],
   "Labrinth": [
     "altrnb",
@@ -3194,8 +3199,8 @@
     "contempornb"
   ],
   "Boys Noize": [
-    "electro",
-    "techno"
+    "techno",
+    "acid"
   ],
   "Temper City": [
     "alternative"
@@ -3206,7 +3211,8 @@
   ],
   "Genesis Owusu": [
     "hiphop",
-    "funk"
+    "funk",
+    "postpunk"
   ],
   "underscores": [
     "hyperpop",
@@ -3225,5 +3231,20 @@
   ],
   "Pusha T": [
     "hiphop"
+  ],
+  "Grave Saddles": [
+    "countrygaze"
+  ],
+  "Greet Death": [
+    "countrygaze",
+    "shoegaze"
+  ],
+  "JAZZWRLD & Thukuthela": [
+    "threestep",
+    "amapiano"
+  ],
+  "JAZZWRLD": [
+    "threestep",
+    "amapiano"
   ]
 }

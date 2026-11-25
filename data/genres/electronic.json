@@ -2254,12 +2254,12 @@
     "year": 2022,
     "role": "rising",
     "yOff": -200,
-    "aka": "Indie Sleaze Revival · New Electroclash · Bloghouse Revival",
-    "def": "The 2000s electroclash and blog-house sound returned as post-lockdown party music — distorted synth bass, cowbell and drum-machine punch under shouted, deadpan, deliberately crass vocals.",
+    "aka": "Indie Sleaze Revival · Indie Sleaze",
+    "def": "The 2000s electroclash and blog-house sound returned as post-lockdown party music — distorted synth bass and drum-machine punch under shouted, deadpan, deliberately crass vocals.",
     "traits": [
       {
         "k": "Rhythm / groove",
-        "v": "Four-on-the-floor or electro-house stomp with dance-punk cowbell and clipped snares."
+        "v": "Four-on-the-floor or electro-house stomp with dance-punk drive and clipped snares."
       },
       {
         "k": "Texture / timbre",
@@ -2279,7 +2279,6 @@
       "The Dare",
       "Snow Strippers",
       "Frost Children",
-      "Fcukers",
       "Slayyyter"
     ],
     "albums": [
@@ -2308,6 +2307,6 @@
         "a": "Slayyyter"
       }
     ],
-    "tempo": "120–140 BPM"
+    "tempo": "110–140 BPM"
   }
 ]

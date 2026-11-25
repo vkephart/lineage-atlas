@@ -1335,7 +1335,7 @@
       },
       {
         "k": "Scene / context",
-        "v": "Rural eastern Cuba in the late 19th century, Havana by about 1910. The Sexteto Habanero Godínez cut the first sextet sides in 1918; Victor's 1925–28 sessions with the Sexteto Habanero and Trío Matamoros fixed the canon."
+        "v": "Rural eastern Cuba in the late 19th century, Havana by about 1910. A quartet recorded sones for Columbia around 1917; the Sexteto Habanero Godínez's Victor sides of February 1918 are the first firmly dated, and Victor's 1925–28 sessions with the Sexteto Habanero and Trío Matamoros fixed the canon."
       }
     ],
     "why": "It bound the Spanish song and the African drum ensemble into one clave-led form, and nearly every later Cuban and New York Latin style rearranges it.",
@@ -1367,7 +1367,7 @@
         "a": "Buena Vista Social Club"
       }
     ],
-    "tempo": "90–140 BPM"
+    "tempo": "90–125 BPM"
   },
   {
     "id": "norteno",
@@ -1393,7 +1393,7 @@
       },
       {
         "k": "Scene / context",
-        "v": "Grew from the polkas of German, Czech and Polish settlers meeting Mexican song in the late 19th century; Narciso Martínez and Santiago Almeida's 1936 Bluebird sides set the accordion and bajo sexto pairing. Sierreño later swapped the accordion for requinto guitars."
+        "v": "Grew from the polkas of German, Czech and Polish settlers meeting Mexican song in the late 19th century. Solo accordionists were recording by 1930; Narciso Martínez and Santiago Almeida's 1936 Bluebird sides set the accordion and bajo sexto pairing. Sierreño later swapped the accordion for requinto guitars."
       }
     ],
     "why": "Two portable instruments and a song form built for carrying news gave working people on both sides of the border a music that travelled with them.",
@@ -1430,7 +1430,7 @@
         "a": "Ramón Ayala y Sus Bravos del Norte"
       }
     ],
-    "tempo": "100–140 BPM",
+    "tempo": "100–160 BPM",
     "tempoNote": "Polka and corrido tempos; waltz-time rancheras run slower."
   },
   {
@@ -1449,7 +1449,7 @@
       },
       {
         "k": "Texture / timbre",
-        "v": "Trombone- or trumpet-led horn sections, raw and loud, in place of the mambo era's saxophones."
+        "v": "Trombone- or trumpet-led horn sections, raw and loud, usually without the mambo big bands' saxophone sections."
       },
       {
         "k": "Vocal approach",
@@ -1493,7 +1493,8 @@
         "a": "Héctor Lavoe"
       }
     ],
-    "tempo": "160–220 BPM"
+    "tempo": "160–220 BPM",
+    "tempoNote": "Counted at the dancers' pulse; track databases often list half these figures."
   },
   {
     "id": "reggaeton",
@@ -1566,7 +1567,7 @@
     "year": 1992,
     "role": "hybrid",
     "yOff": -265,
-    "aka": "Korean Pop · Idol Pop · Hallyu",
+    "aka": "Korean Pop · Idol Pop",
     "def": "South Korea's idol pop — songs assembled from hip-hop, R&B and dance-pop parts, with rap verses, belted bridges and abrupt changes of style written for groups and their choreography.",
     "traits": [
       {
@@ -1706,7 +1707,7 @@
       },
       {
         "k": "Vocal approach",
-        "v": "Sung hooks and chants carried over from Afro house and amapiano."
+        "v": "Guest singers from the amapiano and Afro house circuits, such as MaWhoo and Murumba Pitch."
       },
       {
         "k": "Scene / context",
@@ -1716,7 +1717,7 @@
     "why": "Dropping a single kick loosened house's grid enough for Afro house and amapiano producers to meet on one rhythm.",
     "artists": [
       "Thakzin",
-      "Jazzworx & Thukuthela",
+      "JAZZWRLD & Thukuthela",
       "Mörda",
       "Heavy K"
     ],
@@ -1738,7 +1739,7 @@
       },
       {
         "t": "Uzizwa Kanjan",
-        "a": "Jazzworx, Thukuthela, MaWhoo & GL_Ceejay"
+        "a": "JAZZWRLD, Thukuthela, MaWhoo & GL_Ceejay"
       }
     ],
     "tempo": "113–120 BPM"
@@ -1756,7 +1757,7 @@
     "traits": [
       {
         "k": "Rhythm / groove",
-        "v": "Acoustic waltz and polka pulses slapped out on tololoche or tuba with no drum kit; trap supplies the phrasing, not the beat."
+        "v": "Acoustic waltz and polka pulses slapped out on tololoche or tuba, usually with no drum kit; trap supplies the phrasing, not the beat."
       },
       {
         "k": "Melody",
@@ -1797,14 +1798,15 @@
       },
       {
         "t": "Ella Baila Sola",
-        "a": "Eslabon Armado & Peso Pluma"
+        "a": "Eslabon Armado & Peso Pluma",
+        "why": "A sierreño love song with a corrido tumbado twist, and the crossover that topped Billboard's Global 200 in 2023."
       },
       {
         "t": "AMG",
         "a": "Natanael Cano, Gabito Ballesteros & Peso Pluma"
       }
     ],
-    "tempo": "110–150 BPM",
+    "tempo": "110–155 BPM",
     "tempoNote": "Much of the repertoire is in waltz time, so the pulse reads faster than it feels."
   }
 ]

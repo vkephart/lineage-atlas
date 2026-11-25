@@ -5590,14 +5590,14 @@
     "to": "reggaeton",
     "rel": "origin",
     "strength": 0.85,
-    "note": "Reggaeton's dembow descends from the Steely & Clevie riddim behind Shabba Ranks' 'Dem Bow', re-versioned for Spanish-language deejays in Panama and New York and then looped in San Juan."
+    "note": "Reggaeton's dembow descends from the Steely & Clevie riddim behind Shabba Ranks' 'Dem Bow', re-versioned for Panama's Spanish-language deejays and then looped in San Juan."
   },
   {
     "from": "hiphop",
     "to": "reggaeton",
     "rel": "origin",
     "strength": 0.65,
-    "note": "San Juan's underground mixtapes put Spanish-language rappers over the riddims, and reggaeton kept rap's verses, crews and rivalries."
+    "note": "San Juan's underground mixtapes put Spanish-language rappers over the riddims; reggaeton grew directly out of that underground rap scene."
   },
   {
     "from": "salsa",
@@ -5623,9 +5623,9 @@
   {
     "from": "reggaeton",
     "to": "corridostumbados",
-    "rel": "stylistic",
+    "rel": "scene",
     "strength": 0.4,
-    "note": "Latin urbano's melodic cadences and feature culture carried over; Bad Bunny joined the 'Soy el Diablo' remix in 2019."
+    "note": "Bad Bunny joined the 'Soy el Diablo' remix within months of the original, tying the new corridos to Latin urbano's audience from the start."
   },
   {
     "from": "norteno",
@@ -5639,7 +5639,7 @@
     "to": "kpop",
     "rel": "origin",
     "strength": 0.65,
-    "note": "K-pop starts from new jack swing: Seo Taiji and Boys and the first idol groups copied early-90s R&B's swung drum programming and vocal-group format."
+    "note": "K-pop starts from new jack swing: Seo Taiji and Boys' 1992 debut set Korean lyrics to early-90s R&B's swung drum programming, rap breaks and group choreography."
   },
   {
     "from": "hiphop",
@@ -5660,7 +5660,7 @@
     "to": "kpop",
     "rel": "bridge",
     "strength": 0.45,
-    "note": "From the late 2000s Seoul agencies bought electropop tracks from Scandinavian and US writers, setting the genre's glossy synth-led second wave."
+    "note": "K-pop's 2009 electropop turn ran on tracks from Scandinavian and US writers, setting the glossy synth-led sound of its second wave."
   },
   {
     "from": "deephouse",
@@ -5681,7 +5681,7 @@
     "to": "amapiano",
     "rel": "scene",
     "strength": 0.45,
-    "note": "The two share South Africa's clubs, vocalists and producers, and many DJs play both in one set."
+    "note": "The two grew up side by side in South Africa's house scene and share vocalists and producers."
   },
   {
     "from": "afrohouse",
@@ -5723,7 +5723,7 @@
     "to": "electroclashrevival",
     "rel": "revival",
     "strength": 0.5,
-    "note": "The Dare's cowbell and talk-sung hooks pick up directly from DFA-era dance-punk."
+    "note": "The Dare's talk-sung dance-punk picks up directly from LCD Soundsystem and the DFA era."
   },
   {
     "from": "frenchtouch",
@@ -5758,7 +5758,7 @@
     "to": "countrygaze",
     "rel": "scene",
     "strength": 0.5,
-    "note": "Both belong to the 2020s heavy-gaze wave and share bills, labels and playlists."
+    "note": "Both are counted in the 2020s wave of heavy American shoegaze."
   },
   {
     "from": "indie",
